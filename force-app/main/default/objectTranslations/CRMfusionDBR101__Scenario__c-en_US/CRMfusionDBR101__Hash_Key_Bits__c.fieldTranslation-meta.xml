@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field determines the number of bits we use for our hash key and is automatically calculated by the key builder. Please do not change this without contacting support. --></help>
+    <label><!-- Hash Key Bits --></label>
+    <name>CRMfusionDBR101__Hash_Key_Bits__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zType_of_Services__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>IW - In warranty, SC - service contract, OOW - out of warranty, PT- payroll transfer, CC - collect calls, No Coverage - unknown, Other - send details to PM</inlineHelpText>
+    <label>zFTC_Type of Services</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In-Home</fullName>
+                <default>false</default>
+                <label>In-Home</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>Install</fullName>
+                <default>false</default>
+                <label>Install</label>
+            </value>
+            <value>
+                <fullName>Setup</fullName>
+                <default>false</default>
+                <label>Setup</label>
+            </value>
+            <value>
+                <fullName>Recall</fullName>
+                <default>false</default>
+                <label>Recall</label>
+            </value>
+            <value>
+                <fullName>Rework</fullName>
+                <default>false</default>
+                <label>Rework</label>
+            </value>
+            <value>
+                <fullName>CarryIn</fullName>
+                <default>false</default>
+                <label>CarryIn</label>
+            </value>
+            <value>
+                <fullName>Repair-Replace</fullName>
+                <default>false</default>
+                <label>Repair-Replace</label>
+            </value>
+            <value>
+                <fullName>PM Check</fullName>
+                <default>false</default>
+                <label>PM Check</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Home_Services_BRD</fullName>
+    <availability>online</availability>
+    <description>Used to create Home Services BRD records from an Opportunity record</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Home Services BRD</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/a0I/e?CF00N30000007Z9oc={!Opportunity.Name}
+&amp;CF00N30000007Z9oc_lkid={!Opportunity.Id}
+&amp;CF00N3000000AT9qm={!Opportunity.Account}
+&amp;CF00N3000000AT9qm_lkid={!Opportunity.AccountId}
+&amp;retURL=%2F{!Opportunity.Id}
+&amp;RecordType=01230000001GchP&amp;ent=01I30000001zTDM</url>
+</WebLink>

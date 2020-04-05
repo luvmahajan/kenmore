@@ -1,0 +1,7 @@
+Hello,
+
+The "{!Opportunity.Name}" Opportunity that is related to the {!Opportunity.Account} Account has not had the Next Steps modified in the last 14 days. Please proceed with making the necessary changes to ensure the deal is worked appropriately.  
+
+Click on the link below to review and update the opportunity accordingly.
+
+{!Opportunity.Link}

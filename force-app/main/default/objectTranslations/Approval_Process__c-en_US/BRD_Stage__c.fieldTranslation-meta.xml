@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Locked field that is updated based on Approval Stage Details --></help>
+    <label><!-- BRD Stage --></label>
+    <name>BRD_Stage__c</name>
+    <picklistValues>
+        <masterLabel>BRD Approval</masterLabel>
+        <translation><!-- BRD Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Get Contract</masterLabel>
+        <translation><!-- Get Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Launch</masterLabel>
+        <translation><!-- Launch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Launch Audit</masterLabel>
+        <translation><!-- Post Launch Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre Distribution</masterLabel>
+        <translation><!-- Pre Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Setup &amp; Testing</masterLabel>
+        <translation><!-- Setup &amp; Testing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

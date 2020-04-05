@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select what is standard pricing module for this Account. --></help>
+    <label><!-- Pricing Assignment --></label>
+    <name>Pricing_Assignment__c</name>
+    <picklistValues>
+        <masterLabel>CPL (Custom Price List)</masterLabel>
+        <translation><!-- CPL (Custom Price List) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPL (District Price List)</masterLabel>
+        <translation><!-- GPL (District Price List) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPL 10</masterLabel>
+        <translation><!-- NPL 10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPL 20</masterLabel>
+        <translation><!-- NPL 20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPL 30</masterLabel>
+        <translation><!-- NPL 30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OB</masterLabel>
+        <translation><!-- OB --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

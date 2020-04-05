@@ -1,0 +1,22 @@
+<apex:page Controller="DemarChargesController" lightningStylesheets="true" action="{!redirectQLE}">
+    <!--
+<apex:page Controller="DemarChargesController" lightningStylesheets="true" docType="html-5.0">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton value="Cancel" action="{!actionCancel}" />
+                <apex:commandButton value="Submit" action="{!actionSubmit}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <apex:pageBlock title="Select Accessorials">
+            <apex:pageBlockTable value="{!lstAccessorials}" var="acc">
+                <apex:column value="{!mapAccesorialCodes[acc.AccessorialCode]}" headerValue="Accessorial Code"/>
+                <apex:column headerValue="Quantity">
+                    <apex:input type="number" value="{!acc.Quantity}">
+                	</apex:input>
+            </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+-->
+</apex:page>

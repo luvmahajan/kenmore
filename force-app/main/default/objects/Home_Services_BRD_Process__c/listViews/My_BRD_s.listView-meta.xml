@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_BRD_s</fullName>
+    <columns>NAME</columns>
+    <columns>BIT__c</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Account__c</columns>
+    <columns>Approval_Status__c</columns>
+    <columns>Approval_Status_Salesforce__c</columns>
+    <columns>Approval_Status_DocuSign__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My BRD&#39;s</label>
+</ListView>

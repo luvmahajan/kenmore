@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>ROLL-OUT: Leadership Message to AMs</name>
+    <style>formalLetter</style>
+    <subject>Enabling the growth of Sears Commercial with Salesforce.com</subject>
+    <textOnly>Dear {!Receiving_User.FirstName},
+
+The development of world-class processes and systems will enable our business for growth.  During your Salesforce.com training, you will learn to rely on this system to help you secure more new business, close more opportunities and increase sales to existing accounts. 
+ 
+I am not the star of the following video, but having used Salesforce.com for several years, I believe in its message.  Please click on the link below, or paste it into your browser window, and select Leadership Message in order to learn more about our plans for enabling your success with Salesforce.com.
+ 
+http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx
+ 
+Best Regards,
+{!User.Name}
+{!User.Title}
+
+Sears Commercial has partnered with Salesforce.com to bring the world’s leading sales enablement technology to its Account Managers.  Go to https://login.salesforce.com to login to Salesforce.com and begin seeing the positive impact on sales revenues which has been achieved by Salesforce.com customers across its base of over 77,500 companies and over 2,000,000 sales users.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

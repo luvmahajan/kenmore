@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Programs__c</fullName>
+    <externalId>false</externalId>
+    <label>Programs</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Best Western</fullName>
+                <default>false</default>
+                <label>Best Western</label>
+            </value>
+            <value>
+                <fullName>Builder Radio</fullName>
+                <default>false</default>
+                <label>Builder Radio</label>
+            </value>
+            <value>
+                <fullName>Building, Remodeling, Moving (BRM)</fullName>
+                <default>false</default>
+                <label>Building, Remodeling, Moving (BRM)</label>
+            </value>
+            <value>
+                <fullName>Commercial Marketplace</fullName>
+                <default>false</default>
+                <label>Commercial Marketplace</label>
+            </value>
+            <value>
+                <fullName>Employee Purchase Plan</fullName>
+                <default>false</default>
+                <label>Employee Purchase Plan</label>
+            </value>
+            <value>
+                <fullName>HUD</fullName>
+                <default>false</default>
+                <label>HUD</label>
+            </value>
+            <value>
+                <fullName>One Time Buy</fullName>
+                <default>false</default>
+                <label>One Time Buy</label>
+            </value>
+            <value>
+                <fullName>SHIP (Sears Home Improvement)</fullName>
+                <default>false</default>
+                <label>SHIP (Sears Home Improvement)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

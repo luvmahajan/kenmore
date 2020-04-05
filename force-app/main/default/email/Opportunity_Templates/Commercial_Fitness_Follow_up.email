@@ -1,0 +1,17 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face="Times New Roman,Times,Serif">Dear<SPAN style="mso-spacerun: yes">&nbsp;{!Contact.FirstName} {!Contact.LastName}</SPAN>,</FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p><FONT face="Times New Roman,Times,Serif">&nbsp;</FONT></o:p></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face="Times New Roman,Times,Serif">Thank you for the opportunity to meet and discuss how Sears Commercial can benefit your company.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>We look forward to becoming your commercial fitness destination.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Sears Commercial has been servicing businesses for over 60 years.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>While other fitness distributors are closing their doors, we continue to expand our fitness offerings.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Sears Commercial features some of the top brands in the industry including FreeMotion and Nautilus Commercial.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Our incredible buying power and national scope allow us to provide very competitive pricing and outstanding service.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>I look forward to the opportunity to present our fitness offerings to you. </FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><o:p><FONT face="Times New Roman,Times,Serif">&nbsp;</FONT></o:p></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face="Times New Roman,Times,Serif">Please do not hesitate to contact me with any questions you may have.</FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><o:p><FONT face="Times New Roman,Times,Serif">&nbsp;</FONT></o:p></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face="Times New Roman,Times,Serif">Sincerely, </FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face="Times New Roman,Times,Serif">{!Contact.OwnerFullName}</FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face="Times New Roman,Times,Serif">{!Contact.OwnerTitle}</FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face="Times New Roman,Times,Serif">{!Contact.OwnerPhone}</FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face="Times New Roman,Times,Serif">{!Contact.OwnerEmail}</FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal>&nbsp;</P>]]></td>
+</tr>
+</table>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>flsleads@searshc.com</email>
+    <name>Augusta Support Center</name>
+    <queueMembers>
+        <users>
+            <user>angela.craig@searshc.com</user>
+            <user>april.moore0@searshc.com</user>
+            <user>ashley.jacheo@searshc.com</user>
+            <user>carmella.mobley@searshc.com</user>
+            <user>danyetta.banks@searshc.com</user>
+            <user>dewanna.hines@searshc.com</user>
+            <user>elizabeth.medina-hardy@kenmoredirect.com</user>
+            <user>jacqueline.williams33@searshc.com</user>
+            <user>jwonosk@searshc.com</user>
+            <user>khunt02@searshc.com</user>
+            <user>larose.eaton@searshc.com</user>
+            <user>nanda.key@searshc.com</user>
+            <user>lmorg05@searshc.com</user>
+            <user>paul.lachman@searshc.com</user>
+            <user>teri.thompson@searshc.com</user>
+            <user>gjohn26@searshc.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

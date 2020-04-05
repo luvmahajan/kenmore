@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Contract_Result_Alert</fullName>
+        <description>Contract Result Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Contract_Result_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Final_Approval_Actions_for_Contract</fullName>
+        <description>Final Approval Actions to Contract Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Contracts_New_approved_notification_Commercial</template>
+    </alerts>
+    <alerts>
+        <fullName>Final_Rejection_Actions_for_Contract_Owner</fullName>
+        <description>Final Rejection Actions for Contract Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Contracts_Final_Rejection_Actions_Commercial</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_Contract_Approval_Approved</fullName>
+        <description>Home Services Contract Approval Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Home_Services_Contract_Approval_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_Contract_Approved</fullName>
+        <description>Home Services Contract Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Contract_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_Contract_Pending_DocuSign</fullName>
+        <description>Home Services Contract Pending DocuSign</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Home_Services_Contract_Pending_DocuSign</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_Contract_Rejected_Final</fullName>
+        <description>Home Services Contract Rejected (Final)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Home_Services_Contract_Approval_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_Contract_Sent_for_eSignature</fullName>
+        <description>Home Services Contract Sent for eSignature</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>CompanySignedId</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Home_Services_Contract_Sent_for_eSignature</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_Contract_eSignature_Completed</fullName>
+        <description>Home Services Contract eSignature Completed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Home_Services_Contract_eSignature_Completed</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_Contract_eSignature_Rejected</fullName>
+        <description>Home Services Contract eSignature Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Home_Services_Contract_eSignature_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Initial_Submission_Action_for_User</fullName>
+        <description>Initial Submission Action to Contract Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Contracts_New_approval_request_notification_Commercial_for_contract_owner</template>
+    </alerts>
+    <alerts>
+        <fullName>Initial_Submission_Actions_for_User</fullName>
+        <description>Initial Submission Actions Email</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/ContractsApprovalNotification</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Contract_Created</fullName>
+        <ccEmails>Cheryl.Morrison@kenmoredirect.com</ccEmails>
+        <description>New Contract Created</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>greg.kogut@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>keith.bower@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>michelle.wiggins@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sharon.younce@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/New_Contract_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Referral_Fee_Rebate_Notification</fullName>
+        <ccEmails>Seth.Traubenberg@searshc.com</ccEmails>
+        <ccEmails>William.Thomas@searshc.com</ccEmails>
+        <ccEmails>Daryl.Matthews@aefactoryservice.com</ccEmails>
+        <description>Referral Fee/Rebate Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>ActivatedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>BIT__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Referral_Fee_or_Rebate_for_Activated_Contract</template>
+    </alerts>
+    <alerts>
+        <fullName>X30_Day_Audit_Check</fullName>
+        <description>30 Day Audit Check</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>refugio.atilano@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>BIT__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/X30_Day_Audit_Check</template>
+    </alerts>
+    <alerts>
+        <fullName>X60_Day_Audit_Check</fullName>
+        <description>60 Day Audit Check</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>refugio.atilano@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>BIT__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/X60_Day_Audit_Check</template>
+    </alerts>
+    <alerts>
+        <fullName>X90_Day_Audit_Check</fullName>
+        <description>90 Day Audit Check</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>refugio.atilano@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>BIT__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/X90_Day_Audit_Check</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_Assigned_Date_SFDC_to_NOW</fullName>
+        <field>Approval_Assigned_Date_Salesforce__c</field>
+        <formula>NOW()</formula>
+        <name>Approval Assigned Date (SFDC) to NOW</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Date_Salesforce_to_NOW</fullName>
+        <field>Approval_Date_Salesforce__c</field>
+        <formula>NOW()</formula>
+        <name>Approval Date (Salesforce) to NOW</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Date_to_NOW</fullName>
+        <field>Approval_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Approval Date to NOW</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_Approved</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Status (Salesforce) - Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_Internal</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Pending Internal</literalValue>
+        <name>Approval Status (Salesforce) - Internal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_NCM</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Pending NCM</literalValue>
+        <name>Approval Status (Salesforce) - NCM</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_Recalled</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Recalled</literalValue>
+        <name>Approval Status (Salesforce) - Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_Rejected</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Approval Status (Salesforce) - Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contract_Status_Approved</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Contract Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contract_Status_Cancelled</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Cancelled</literalValue>
+        <name>Contract Status Cancelled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contract_Status_Pending</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Contract Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contract_Status_Rejected</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Contract Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contract_Submission_Date_to_NOW</fullName>
+        <field>Contract_Submission_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Contract Submission Date to NOW</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Credit_Approved</fullName>
+        <field>Status</field>
+        <literalValue>Credit</literalValue>
+        <name>Credit Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_to_Customer</fullName>
+        <field>Status</field>
+        <literalValue>Send to Customer</literalValue>
+        <name>Send to Customer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Activated</fullName>
+        <field>Status</field>
+        <literalValue>Activated</literalValue>
+        <name>Status - Activated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Approved</fullName>
+        <field>Status</field>
+        <literalValue>Approved / Ready for Customer</literalValue>
+        <name>Status - Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Draft</fullName>
+        <field>Status</field>
+        <literalValue>Draft</literalValue>
+        <name>Status - Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_In_Approval_Process</fullName>
+        <field>Status</field>
+        <literalValue>In Approval Process</literalValue>
+        <name>Status - In Approval Process</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Out_for_eSignature</fullName>
+        <field>Status</field>
+        <literalValue>Out for eSignature</literalValue>
+        <name>Status - Out for eSignature</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Pending_DocuSign</fullName>
+        <field>Status</field>
+        <literalValue>Pending DocuSign Approval</literalValue>
+        <name>Status - Pending DocuSign</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Pending_Salesforce</fullName>
+        <field>Status</field>
+        <literalValue>Pending Salesforce Approval</literalValue>
+        <name>Status - Pending Salesforce</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Resend_to_Customer</fullName>
+        <field>Status</field>
+        <literalValue>Resend to Customer</literalValue>
+        <name>Status - Resend to Customer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_to_Project_Created</fullName>
+        <field>Status</field>
+        <literalValue>Create Project</literalValue>
+        <name>Status to Project Created</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Submitted_for_Approval</fullName>
+        <field>Submitted_for_Approval__c</field>
+        <literalValue>0</literalValue>
+        <name>Update Submitted for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>New_Contract_Approval_Action_Requested</fullName>
+        <apiVersion>18.0</apiVersion>
+        <description>When a new contract is created, and in the Commercial business unit, Approval from Manager is required.</description>
+        <endpointUrl>https://na1.salesforce.com/80030000000XOpW</endpointUrl>
+        <fields>AccountId</fields>
+        <fields>ContractNumber</fields>
+        <fields>CreatedById</fields>
+        <fields>Description</fields>
+        <fields>Id</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>mmadmin@searshc.com</integrationUser>
+        <name>New Contract Approval Action Requested</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Approved Credit</fullName>
+        <actions>
+            <name>Credit_Approved</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contract.Credit_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contract.Status</field>
+            <operation>equals</operation>
+            <value>Pending Credit Approval</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract - Activated Status - Email %2F Update</fullName>
+        <actions>
+            <name>Home_Services_Contract_eSignature_Completed</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Status_Activated</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>DocuSign_eSignature_Status__c = &quot;Completed&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract - Activated by Admin %28Activate Button%29 - Update</fullName>
+        <actions>
+            <name>Status_Activated</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Changes the Status of a Contract to Activated when the Activated button is clicked by a System Administrator.</description>
+        <formula>AND(
+  NOT( ISPICKVAL( Status , &quot;Activated&quot;) ) ,
+  ISCHANGED( ActivatedDate )
+)
+
+&amp;&amp; $User.ProfileId = &quot;00e30000001FeAR&quot; /* System Administrator */</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract - Draft Status - Update</fullName>
+        <actions>
+            <name>Status_Draft</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>OR(   Approval_Status_DocuSign__c = &quot;Voided&quot; ,   Approval_Status_DocuSign__c = &quot;Declined&quot; ,   AND(     Approval_Status_DocuSign__c = &quot;&quot;,     Pre_Approved__c = FALSE   ),   ISPICKVAL( Approval_Status_Salesforce__c , &quot;Recalled&quot; ),   ISPICKVAL( Approval_Status_Salesforce__c , &quot;Rejected&quot; ),   ISPICKVAL( Approval_Status_Salesforce__c , &quot;&quot; ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract - In Approval Process Status - Update</fullName>
+        <actions>
+            <name>Status_In_Approval_Process</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(    OR(      Approval_Status_DocuSign__c = &quot;Sent&quot; ,      Approval_Status_DocuSign__c = &quot;Viewed&quot;,      Approval_Status_DocuSign__c = &quot;&quot;    ),    OR(      ISPICKVAL( Approval_Status_Salesforce__c , &quot;Pending NCM&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Pending Internal&quot; )   )  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract - Notify AM of Referral Fee or Rebate - Email</fullName>
+        <actions>
+            <name>Referral_Fee_Rebate_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Contract.Referral_Fee_or_Rebate__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contract.Referral_Fee_Rebate_Language__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contract.Status</field>
+            <operation>equals</operation>
+            <value>Activated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contract.ActivatedDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>If a Referral Fee or Rebate is included in the contract, once activated an email will trigger to Analytics and Finance (AM) to proceed with reporting and payment.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract - Out for eSignature Status - Email %2F Update</fullName>
+        <actions>
+            <name>Home_Services_Contract_Sent_for_eSignature</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Status_Out_for_eSignature</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>OR(    DocuSign_eSignature_Status__c = &quot;Sent&quot;,    DocuSign_eSignature_Status__c = &quot;Viewed&quot; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract - Pending DocuSign Status - Email %2F Update</fullName>
+        <actions>
+            <name>Home_Services_Contract_Pending_DocuSign</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Status_Pending_DocuSign</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(    OR(      Approval_Status_DocuSign__c = &quot;Sent&quot; ,      Approval_Status_DocuSign__c = &quot;Viewed&quot; ,     Approval_Status_DocuSign__c = &quot;Voided&quot; ,     Approval_Status_DocuSign__c = &quot;Declined&quot; ,     AND(       Approval_Status_DocuSign__c = &quot;&quot;,       Pre_Approved__c = FALSE     )   ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Approved&quot; ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract - Pending Salesforce Status - Update</fullName>
+        <actions>
+            <name>Status_Pending_Salesforce</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(   OR(     Approval_Status_DocuSign__c = &quot;Completed&quot; ,     AND(       Approval_Status_DocuSign__c = &quot;&quot;,       Pre_Approved__c = TRUE     )   ),   OR(     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Pending NCM&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Pending Internal&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Recalled&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Rejected&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;&quot; )   ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract - Resend to Customer Status - Email %2F Update</fullName>
+        <actions>
+            <name>Home_Services_Contract_eSignature_Rejected</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Status_Resend_to_Customer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>OR(
+  DocuSign_eSignature_Status__c = &quot;Voided&quot;,
+  DocuSign_eSignature_Status__c = &quot;Declined&quot;
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Delivery Date Populated</fullName>
+        <actions>
+            <name>Status_to_Project_Created</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Contract.Delivery_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Contract Created</fullName>
+        <actions>
+            <name>New_Contract_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contract.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

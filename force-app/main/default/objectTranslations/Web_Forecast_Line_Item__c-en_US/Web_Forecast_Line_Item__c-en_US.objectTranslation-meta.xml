@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Web Forecast Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Web Forecast Line Items</value>
+    </caseValues>
+    <layouts>
+        <layout>Web Forecast Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Weekly Quantities --></label>
+            <section>Weekly Quantities</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Item length should be 4 or 5 characters --></errorMessage>
+        <name>Item_Length</name>
+    </validationRules>
+</CustomObjectTranslation>

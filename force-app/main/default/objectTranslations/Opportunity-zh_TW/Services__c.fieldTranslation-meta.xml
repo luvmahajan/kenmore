@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Services --></label>
+    <name>Services__c</name>
+    <picklistValues>
+        <masterLabel>Business to Business Paid Service</masterLabel>
+        <translation><!-- Business to Business Paid Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carry-in Repair</masterLabel>
+        <translation><!-- Carry-in Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleaning</masterLabel>
+        <translation><!-- Cleaning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery</masterLabel>
+        <translation><!-- Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haul-Away</masterLabel>
+        <translation><!-- Haul-Away --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Improvement</masterLabel>
+        <translation><!-- Home Improvement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Home Repair</masterLabel>
+        <translation><!-- In-Home Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection</masterLabel>
+        <translation><!-- Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installation</masterLabel>
+        <translation><!-- Installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of Warranty Repair</masterLabel>
+        <translation><!-- Out of Warranty Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preventative Maintenance</masterLabel>
+        <translation><!-- Preventative Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Refurbishment</masterLabel>
+        <translation><!-- Product Refurbishment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recalls/Reworks</masterLabel>
+        <translation><!-- Recalls/Reworks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replacements</masterLabel>
+        <translation><!-- Replacements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Contracts</masterLabel>
+        <translation><!-- Service Contracts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty Repair</masterLabel>
+        <translation><!-- Warranty Repair --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

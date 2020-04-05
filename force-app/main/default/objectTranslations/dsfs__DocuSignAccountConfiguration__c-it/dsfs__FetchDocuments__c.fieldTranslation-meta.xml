@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Supporta le buste DocuSign di grandi dimensioni, inviando le buste a DocuSign senza i dati del documento e permettendo a DocuSign di recuperare tali dati quando necessario. Attiva solo se l&#39;invio di buste supera i limiti di chiamata di Salesforce.</help>
+    <label><!-- Fetch Documents --></label>
+    <name>dsfs__FetchDocuments__c</name>
+</CustomFieldTranslation>

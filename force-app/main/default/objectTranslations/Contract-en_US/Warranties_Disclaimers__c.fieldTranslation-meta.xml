@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 30 Day is Recommended (Most OEM use 90 day).  Parts is normally 90 day. --></help>
+    <label><!-- Warranties &amp; Disclaimers --></label>
+    <name>Warranties_Disclaimers__c</name>
+</CustomFieldTranslation>

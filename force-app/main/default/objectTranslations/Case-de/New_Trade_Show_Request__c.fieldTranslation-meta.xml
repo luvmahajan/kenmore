@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- New Trade Show Request --></label>
+    <name>New_Trade_Show_Request__c</name>
+    <picklistValues>
+        <masterLabel>Booth Display (Booth size &lt; 10x10)</masterLabel>
+        <translation><!-- Booth Display (Booth size &lt; 10x10) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booth Display (Booth size &gt; 10x10)</masterLabel>
+        <translation><!-- Booth Display (Booth size &gt; 10x10) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral</masterLabel>
+        <translation><!-- Collateral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Program Ad</masterLabel>
+        <translation><!-- Program Ad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raffle</masterLabel>
+        <translation><!-- Raffle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Show Deal</masterLabel>
+        <translation><!-- Show Deal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sponsorship</masterLabel>
+        <translation><!-- Sponsorship --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

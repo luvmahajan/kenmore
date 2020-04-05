@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sales Representative OLD --></label>
+    <name>Sales_Representative_OLD__c</name>
+    <picklistValues>
+        <masterLabel>Albert Nelson</masterLabel>
+        <translation><!-- Albert Nelson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Andrew Davis</masterLabel>
+        <translation><!-- Andrew Davis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Andrew Schanuth</masterLabel>
+        <translation><!-- Andrew Schanuth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bill Boney</masterLabel>
+        <translation><!-- Bill Boney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bill Gillette</masterLabel>
+        <translation><!-- Bill Gillette --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brad Bodnar</masterLabel>
+        <translation><!-- Brad Bodnar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brian Blodgett</masterLabel>
+        <translation><!-- Brian Blodgett --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carl Cramer</masterLabel>
+        <translation><!-- Carl Cramer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charles Davis</masterLabel>
+        <translation><!-- Charles Davis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chris Harris</masterLabel>
+        <translation><!-- Chris Harris --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Christine Smith</masterLabel>
+        <translation><!-- Christine Smith --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Christopher Smith</masterLabel>
+        <translation><!-- Christopher Smith --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Curt Thrasher</masterLabel>
+        <translation><!-- Curt Thrasher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>David Anderson</masterLabel>
+        <translation><!-- David Anderson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>David Taylor</masterLabel>
+        <translation><!-- David Taylor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deb Caton</masterLabel>
+        <translation><!-- Deb Caton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deborah Beeman</masterLabel>
+        <translation><!-- Deborah Beeman --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Don Huff</masterLabel>
+        <translation><!-- Don Huff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Don Stoeckel</masterLabel>
+        <translation><!-- Don Stoeckel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Douglas Walker</masterLabel>
+        <translation><!-- Douglas Walker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ed Abraham</masterLabel>
+        <translation><!-- Ed Abraham --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ed Osborne</masterLabel>
+        <translation><!-- Ed Osborne --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edward Breaux</masterLabel>
+        <translation><!-- Edward Breaux --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edward Novak III</masterLabel>
+        <translation><!-- Edward Novak III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edward Ramos</masterLabel>
+        <translation><!-- Edward Ramos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eric Johnson</masterLabel>
+        <translation><!-- Eric Johnson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eric Strait</masterLabel>
+        <translation><!-- Eric Strait --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erik Baez</masterLabel>
+        <translation><!-- Erik Baez --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Francisco Pérez</masterLabel>
+        <translation><!-- Francisco Pérez --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fred Matos</masterLabel>
+        <translation><!-- Fred Matos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fredrickson, Victor</masterLabel>
+        <translation><!-- Fredrickson, Victor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gail Cairnie</masterLabel>
+        <translation><!-- Gail Cairnie --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gary Coley</masterLabel>
+        <translation><!-- Gary Coley --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>George Spady</masterLabel>
+        <translation><!-- George Spady --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gerry Gargaro</masterLabel>
+        <translation><!-- Gerry Gargaro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greg Shaw</masterLabel>
+        <translation><!-- Greg Shaw --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guy Stricker</masterLabel>
+        <translation><!-- Guy Stricker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harris Fujita</masterLabel>
+        <translation><!-- Harris Fujita --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ignacio Socorro</masterLabel>
+        <translation><!-- Ignacio Socorro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>James Maggio</masterLabel>
+        <translation><!-- James Maggio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jay Levine</masterLabel>
+        <translation><!-- Jay Levine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jeffrey Turner</masterLabel>
+        <translation><!-- Jeffrey Turner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jennifer Breunig</masterLabel>
+        <translation><!-- Jennifer Breunig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jennifer Brown</masterLabel>
+        <translation><!-- Jennifer Brown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joe Swafford</masterLabel>
+        <translation><!-- Joe Swafford --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>John Martinez</masterLabel>
+        <translation><!-- John Martinez --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>John Washington</masterLabel>
+        <translation><!-- John Washington --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joseph Rosenblum</masterLabel>
+        <translation><!-- Joseph Rosenblum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kathy Loftus</masterLabel>
+        <translation><!-- Kathy Loftus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kent Redmond</masterLabel>
+        <translation><!-- Kent Redmond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kenton Evans</masterLabel>
+        <translation><!-- Kenton Evans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kevin McGinnis</masterLabel>
+        <translation><!-- Kevin McGinnis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kristin Wieczorkowski</masterLabel>
+        <translation><!-- Kristin Wieczorkowski --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kurt Habenicht</masterLabel>
+        <translation><!-- Kurt Habenicht --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kurt Hinchman</masterLabel>
+        <translation><!-- Kurt Hinchman --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lorri Tomasino</masterLabel>
+        <translation><!-- Lorri Tomasino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mark Christofaro</masterLabel>
+        <translation><!-- Mark Christofaro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mark Mitchell</masterLabel>
+        <translation><!-- Mark Mitchell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Martin Waite</masterLabel>
+        <translation><!-- Martin Waite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mary Conway</masterLabel>
+        <translation><!-- Mary Conway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Melinda Moody</masterLabel>
+        <translation><!-- Melinda Moody --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Michael Armstrong</masterLabel>
+        <translation><!-- Michael Armstrong --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Michael Gersztyn</masterLabel>
+        <translation><!-- Michael Gersztyn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Michael Surina</masterLabel>
+        <translation><!-- Michael Surina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mike Simones</masterLabel>
+        <translation><!-- Mike Simones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paula Matthews</masterLabel>
+        <translation><!-- Paula Matthews --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ralph Cole</masterLabel>
+        <translation><!-- Ralph Cole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Randy Nehl</masterLabel>
+        <translation><!-- Randy Nehl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Randy Rust</masterLabel>
+        <translation><!-- Randy Rust --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raymond Phillips</masterLabel>
+        <translation><!-- Raymond Phillips --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rick Kops</masterLabel>
+        <translation><!-- Rick Kops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Robert Elson</masterLabel>
+        <translation><!-- Robert Elson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Robert Wiggins</masterLabel>
+        <translation><!-- Robert Wiggins --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rod Simsiman</masterLabel>
+        <translation><!-- Rod Simsiman --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rudy Becerra</masterLabel>
+        <translation><!-- Rudy Becerra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ryan Myers</masterLabel>
+        <translation><!-- Ryan Myers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sally Karpen</masterLabel>
+        <translation><!-- Sally Karpen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sara Antes</masterLabel>
+        <translation><!-- Sara Antes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scott Scheyer</masterLabel>
+        <translation><!-- Scott Scheyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steve Avakian</masterLabel>
+        <translation><!-- Steve Avakian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steve Kramer</masterLabel>
+        <translation><!-- Steve Kramer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steve Ricci</masterLabel>
+        <translation><!-- Steve Ricci --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steven Sisler</masterLabel>
+        <translation><!-- Steven Sisler --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thaddeus Lazorka</masterLabel>
+        <translation><!-- Thaddeus Lazorka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tim (George) Frye</masterLabel>
+        <translation><!-- Tim (George) Frye --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tim Bodnar</masterLabel>
+        <translation><!-- Tim Bodnar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Timothy McClintic</masterLabel>
+        <translation><!-- Timothy McClintic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Timothy McCurry</masterLabel>
+        <translation><!-- Timothy McCurry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tom Richardson</masterLabel>
+        <translation><!-- Tom Richardson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tony Karlovich</masterLabel>
+        <translation><!-- Tony Karlovich --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>William Hunter</masterLabel>
+        <translation><!-- William Hunter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zachery Hopson</masterLabel>
+        <translation><!-- Zachery Hopson --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

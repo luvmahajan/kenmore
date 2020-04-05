@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Where will the records of the permit and post work inspection be kept? --></help>
+    <label><!-- Who keeps records of permit work --></label>
+    <name>Who_keeps_records_of_permit_work__c</name>
+</CustomFieldTranslation>

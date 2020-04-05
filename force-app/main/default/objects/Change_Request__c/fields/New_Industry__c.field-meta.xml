@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>New Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administrative and Support and Waste Management and Remediation Services</fullName>
+                <default>false</default>
+                <label>Administrative and Support and Waste Management and Remediation Services</label>
+            </value>
+            <value>
+                <fullName>Agriculture, Forestry, Fishing &amp; Hunting</fullName>
+                <default>false</default>
+                <label>Agriculture, Forestry, Fishing &amp; Hunting</label>
+            </value>
+            <value>
+                <fullName>Arts, Entertainment, and Recreation</fullName>
+                <default>false</default>
+                <label>Arts, Entertainment, and Recreation</label>
+            </value>
+            <value>
+                <fullName>Builders</fullName>
+                <default>false</default>
+                <label>Builders</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Healthcare &amp; Social Assistance</fullName>
+                <default>false</default>
+                <label>Healthcare &amp; Social Assistance</label>
+            </value>
+            <value>
+                <fullName>Information</fullName>
+                <default>false</default>
+                <label>Information</label>
+            </value>
+            <value>
+                <fullName>Insurance Companies</fullName>
+                <default>false</default>
+                <label>Insurance Companies</label>
+            </value>
+            <value>
+                <fullName>Lodging</fullName>
+                <default>false</default>
+                <label>Lodging</label>
+            </value>
+            <value>
+                <fullName>Management of Companies and Enterprises</fullName>
+                <default>false</default>
+                <label>Management of Companies and Enterprises</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Military</fullName>
+                <default>false</default>
+                <label>Military</label>
+            </value>
+            <value>
+                <fullName>Mining, Quarrying, and Oil and Gas</fullName>
+                <default>false</default>
+                <label>Mining, Quarrying, and Oil and Gas</label>
+            </value>
+            <value>
+                <fullName>Other Services (except Public Administration)</fullName>
+                <default>false</default>
+                <label>Other Services (except Public Administration)</label>
+            </value>
+            <value>
+                <fullName>Professional, Scientific, and Technical Services</fullName>
+                <default>false</default>
+                <label>Professional, Scientific, and Technical Services</label>
+            </value>
+            <value>
+                <fullName>Property Management</fullName>
+                <default>false</default>
+                <label>Property Management</label>
+            </value>
+            <value>
+                <fullName>Retail Trade</fullName>
+                <default>false</default>
+                <label>Retail Trade</label>
+            </value>
+            <value>
+                <fullName>Transportation and Warehousing</fullName>
+                <default>false</default>
+                <label>Transportation and Warehousing</label>
+            </value>
+            <value>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <label>Utilities</label>
+            </value>
+            <value>
+                <fullName>Wholesale Trade</fullName>
+                <default>false</default>
+                <label>Wholesale Trade</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

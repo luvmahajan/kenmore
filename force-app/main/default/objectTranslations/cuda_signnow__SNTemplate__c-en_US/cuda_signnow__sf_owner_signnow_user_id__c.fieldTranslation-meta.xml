@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- SignNow user id --></help>
+    <label><!-- sf_owner_signnow_user_id --></label>
+    <name>cuda_signnow__sf_owner_signnow_user_id__c</name>
+</CustomFieldTranslation>

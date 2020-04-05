@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>csist@searshc.com</email>
+    <name>Customer Success Specialist</name>
+    <queueMembers>
+        <roles>
+            <role>Inside_Sales_Customer_Success_Specialist</role>
+        </roles>
+        <users>
+            <user>shalotta.griner@kenmoredirect.com</user>
+            <user>shanissa.mckie@kenmoredirect.com</user>
+            <user>sheila.styles@kenmoredirect.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

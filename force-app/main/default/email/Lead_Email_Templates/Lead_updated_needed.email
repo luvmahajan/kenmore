@@ -1,0 +1,15 @@
+Hello {!Lead.OwnerFirstName},
+
+This is a notification that a Lead has not been updated in the last 5 days.
+
+Company: {!Lead.Company}
+Lead Name: {!Lead.FirstName} {!Lead.LastName}
+Rating:  {!Lead.Rating}
+Created Date: {!Lead.CreatedDate}
+Last Modified Date: {!Lead.LastModifiedDate}
+
+Please log into Salesforce.com and click on the link below to view the details of this lead and update accordingly.
+
+{!Lead.Link}
+
+Thank you.

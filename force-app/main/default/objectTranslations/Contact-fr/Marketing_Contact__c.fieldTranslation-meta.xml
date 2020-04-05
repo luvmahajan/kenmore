@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check box if appropriate to send printed marketing materials to this contact --></help>
+    <label><!-- Marketing Contact --></label>
+    <name>Marketing_Contact__c</name>
+</CustomFieldTranslation>

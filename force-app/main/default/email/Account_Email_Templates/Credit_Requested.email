@@ -1,0 +1,13 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0);"><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><font face="Arial, sans-serif">Hello Credit
+Team,</font></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><font face="Arial, sans-serif"><br></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><font face="Arial, sans-serif">A new SAP
+account was created and&nbsp;<span style="background-color: rgb(255, 255, 255);"><b>{!Account.OwnerFullName}</b></span>&nbsp;wanted to notiify you that
+they will be requesting credit for this customer. Click on the link below to access the account in SFDC.</font></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p><font face="Arial, sans-serif">&nbsp;</font></o:p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p><font face="Arial, sans-serif"><br></font></o:p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><font face="Arial, sans-serif"><o:p><span style="background-color: rgb(255, 255, 255);">Account Name:&nbsp;</span></o:p><b>{!Account.Name}</b></font></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p><span style="background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif">Account Owner: <b>{!Account.OwnerFullName}</b></font></span></o:p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><font face="Arial, sans-serif"><o:p></o:p></font></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><font face="Arial, sans-serif"><o:p><span style="background-color: rgb(255, 255, 255);">Link :&nbsp;</span></o:p><b>{!Account.Link}</b></font></p></div>]]></td>
+</tr>
+</table>

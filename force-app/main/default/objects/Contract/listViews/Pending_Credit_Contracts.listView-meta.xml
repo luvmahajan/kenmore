@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Credit_Contracts</fullName>
+    <columns>CONTRACT.CREATED_DATE</columns>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>CONTRACT.STATUS</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>Project_Manager__c</columns>
+    <columns>Delivery_Date__c</columns>
+    <columns>Credit_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Credit_Status__c</field>
+        <operation>equals</operation>
+        <value>Pending</value>
+    </filters>
+    <label>Pending Credit Contracts</label>
+    <language>en_US</language>
+</ListView>

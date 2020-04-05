@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How has the BI demonstrated honest, open communication?  Do they answer all of your questions completely? --></help>
+    <label><!-- BI engage in open/honest communication --></label>
+    <name>BI_engage_in_open_honest_communication__c</name>
+</CustomFieldTranslation>

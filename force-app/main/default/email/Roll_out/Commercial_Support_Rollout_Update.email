@@ -1,0 +1,28 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">Dear {!Contact.FirstName},<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">&nbsp;&nbsp;<o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">As we continue to learn together, it is important that we assess the skills which each trainee has developed.&nbsp; If you have not done so already, please take 15 minutes to complete this Application Assessment regarding the materials covered in your Training Roadmap up to, and including your classroom training session.<o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black"><o:p>&nbsp;</o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">Instructions on how to complete your Application Assessment (Test) and guidance on the next steps in your training roadmap are listed below.&nbsp; In order to download the appropriate document, or complete the appropriate assessment, please click on the link or copy/paste it into your browser.<o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">&nbsp;<o:p></o:p></SPAN></P>
+<P><A href="http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx"><SPAN style="FONT-FAMILY: Arial"><FONT color=#606420>http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx</FONT></SPAN></A><FONT face="Times New Roman"> </FONT></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">(select course 3072)<o:p></o:p></SPAN></P>
+<P><BR style="mso-special-character: line-break"><BR style="mso-special-character: line-break"></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">Looking ahead at the Training Roadmap, please be aware that we are ready for the next steps which include the following:&nbsp; <o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">&nbsp;<o:p></o:p></SPAN></P>
+<P style="TEXT-INDENT: -0.25in; MARGIN-LEFT: 0.25in; mso-list: l0 level1 lfo2; tab-stops: list .25in"><SPAN style="FONT-FAMILY: 'Courier New'; COLOR: black; mso-fareast-font-family: 'Courier New'"><SPAN style="mso-list: Ignore">o<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: Arial; COLOR: black"><STRONG>Application Assessment</STRONG> to be complete after classroom training<o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">&nbsp;<o:p></o:p></SPAN></P>
+<P style="TEXT-INDENT: -0.25in; MARGIN-LEFT: 0.25in; mso-list: l1 level1 lfo1; tab-stops: list .25in"><SPAN style="FONT-FAMILY: 'Courier New'; COLOR: black; mso-fareast-font-family: 'Courier New'"><SPAN style="mso-list: Ignore">o<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: Arial; COLOR: black"><STRONG>Reporting Fundamentals E-learning</STRONG> course to be completed week of 8/16.<SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN></SPAN><SPAN style="FONT-FAMILY: Arial; COLOR: black">(See Job Aid #2 link below) <o:p></o:p></SPAN></P>
+<P style="TEXT-INDENT: 0.25in"><SPAN style="FONT-FAMILY: Arial; COLOR: black"><o:p>&nbsp;</o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black"><A href="https://na1.salesforce.com/sfc/#version?selectedDocumentId=06930000000I6QN"><FONT color=#606420>https://na1.salesforce.com/sfc/#version?selectedDocumentId=06930000000I6QN</FONT></A><SPAN style="mso-spacerun: yes">&nbsp; </SPAN><o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">&nbsp;&nbsp;<o:p></o:p></SPAN></P>
+<P style="TEXT-INDENT: -0.25in; MARGIN-LEFT: 0.25in; mso-list: l1 level1 lfo1; tab-stops: list .25in"><SPAN style="FONT-FAMILY: 'Courier New'; COLOR: black; mso-fareast-font-family: 'Courier New'"><SPAN style="mso-list: Ignore">o<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: Arial; COLOR: black"><STRONG>Lead Best Practice Webmeeting</STRONG>:<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>The support team will work together to develop a Best Practices webmeeting to help the District Managers understand how best to interact with support functions on SFDC.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Meeting to occur the week of 8/30.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN><o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">&nbsp;<o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">Thank you for being part of this exciting time as Sears Commercial partners with Salesforce.com to bring the world's leading sales enablement technology to our business and to ensure the best Customer Relationship Management (CRM).&nbsp;&nbsp; </SPAN><SPAN style="FONT-FAMILY: Arial; COLOR: black"></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">&nbsp;<o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">Best,<o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: black">{!User.FirstName}<o:p></o:p></SPAN></P>]]></td>
+</tr>
+</table>

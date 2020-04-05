@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Lines</fullName>
+    <columns>SBQQ__Quote__c</columns>
+    <columns>SBQQ__Number__c</columns>
+    <columns>Delivery_Charge__c</columns>
+    <columns>NAME</columns>
+    <columns>SBQQ__ProductCode__c</columns>
+    <columns>Recommended_Service_List_Price__c</columns>
+    <columns>SBQQ__ListPrice__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SBQQ__ProductFamily__c</field>
+        <operation>equals</operation>
+        <value>Services</value>
+    </filters>
+    <filters>
+        <field>Delivery_Charge__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>List_Price__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Service Lines</label>
+    <language>en_US</language>
+</ListView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Are you still on schedule for the order you requested to be delivered on? --></help>
+    <label><!-- Still on Schedule? --></label>
+    <name>Still_on_Schedule__c</name>
+</CustomFieldTranslation>

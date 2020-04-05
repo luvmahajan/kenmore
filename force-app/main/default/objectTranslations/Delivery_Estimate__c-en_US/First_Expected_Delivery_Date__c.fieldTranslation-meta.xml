@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the first expected delivery date --></help>
+    <label><!-- First Expected Delivery Date --></label>
+    <name>First_Expected_Delivery_Date__c</name>
+</CustomFieldTranslation>

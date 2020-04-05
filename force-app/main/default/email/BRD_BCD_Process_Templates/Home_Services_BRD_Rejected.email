@@ -1,0 +1,10 @@
+Hello, 
+
+This is a notification that a BRD has been rejected.  Please review the record and resubmit the BRD for approval.  Click on the link below for further information.
+
+BRD Link: {!Home_Services_BRD_Process__c.Link}
+Opportunity: {!Opportunity.Name} ({!Opportunity.Link})
+Account: {!Home_Services_BRD_Process__c.Account__c}
+
+
+Thank you.

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Liste der PDF-Dokumente auf Ihrer Salesforce-Registerkarte „Dokumente“. Zum Senden mit DocuSign müssen Sie eine PDF-Datei in einen der Order auf dieser Registerkarte aufnehmen. Klicken Sie zum Senden mit anderen Formaten auf „Weitere Informationen“.</help>
+    <label><!-- Document Name --></label>
+    <name>dsfs__Document_Name__c</name>
+</CustomFieldTranslation>

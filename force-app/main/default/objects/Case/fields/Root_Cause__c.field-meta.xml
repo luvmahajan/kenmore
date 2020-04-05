@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Root_Cause__c</fullName>
+    <description>CSI Team root cause of issue</description>
+    <externalId>false</externalId>
+    <inlineHelpText>CSI Team to utilize showing the root case of the issue or case request</inlineHelpText>
+    <label>Root Cause</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>48 hour block on due</fullName>
+                <default>false</default>
+                <label>48 hour block on due</label>
+            </value>
+            <value>
+                <fullName>Sales team checking availability</fullName>
+                <default>false</default>
+                <label>Sales team checking availability</label>
+            </value>
+            <value>
+                <fullName>Sales team checking status of order</fullName>
+                <default>false</default>
+                <label>Sales team checking status of order</label>
+            </value>
+            <value>
+                <fullName>Sales team order entry process</fullName>
+                <default>false</default>
+                <label>Sales team order entry process</label>
+            </value>
+            <value>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+                <label>Backorder</label>
+            </value>
+            <value>
+                <fullName>CCN process issues</fullName>
+                <default>false</default>
+                <label>CCN process issues</label>
+            </value>
+            <value>
+                <fullName>Common carrier delivery issues</fullName>
+                <default>false</default>
+                <label>Common carrier delivery issues</label>
+            </value>
+            <value>
+                <fullName>Day added to item travel time</fullName>
+                <default>false</default>
+                <label>Day added to item travel time</label>
+            </value>
+            <value>
+                <fullName>DDC truck full to MDO</fullName>
+                <default>false</default>
+                <label>DDC truck full to MDO</label>
+            </value>
+            <value>
+                <fullName>DOS system issues</fullName>
+                <default>false</default>
+                <label>DOS system issues</label>
+            </value>
+            <value>
+                <fullName>DOS system shows product available but no freight lane capacity</fullName>
+                <default>false</default>
+                <label>DOS system shows product available but no freight lane capacity</label>
+            </value>
+            <value>
+                <fullName>Freight lane capacity MDO</fullName>
+                <default>false</default>
+                <label>Freight lane capacity MDO</label>
+            </value>
+            <value>
+                <fullName>Freight lane capacity Hybrid</fullName>
+                <default>false</default>
+                <label>Freight lane capacity Hybrid</label>
+            </value>
+            <value>
+                <fullName>Hybrid delivery date issue</fullName>
+                <default>false</default>
+                <label>Hybrid delivery date issue</label>
+            </value>
+            <value>
+                <fullName>Hybrid order process</fullName>
+                <default>false</default>
+                <label>Hybrid order process</label>
+            </value>
+            <value>
+                <fullName>Item damaged</fullName>
+                <default>false</default>
+                <label>Item damaged</label>
+            </value>
+            <value>
+                <fullName>Item set up</fullName>
+                <default>false</default>
+                <label>Item set up</label>
+            </value>
+            <value>
+                <fullName>Item not at MDO from the DDC</fullName>
+                <default>false</default>
+                <label>Item not at MDO from the DDC</label>
+            </value>
+            <value>
+                <fullName>Late due in</fullName>
+                <default>false</default>
+                <label>Late due in</label>
+            </value>
+            <value>
+                <fullName>MDO received item late</fullName>
+                <default>false</default>
+                <label>MDO received item late</label>
+            </value>
+            <value>
+                <fullName>MDO/SDO delivery to customer issue</fullName>
+                <default>false</default>
+                <label>MDO/SDO delivery to customer issue</label>
+            </value>
+            <value>
+                <fullName>Move up date from vendor</fullName>
+                <default>false</default>
+                <label>Move up date from vendor</label>
+            </value>
+            <value>
+                <fullName>No available stock/no due in’s</fullName>
+                <default>false</default>
+                <label>No available stock/no due in’s</label>
+            </value>
+            <value>
+                <fullName>No DOS connection</fullName>
+                <default>false</default>
+                <label>No DOS connection</label>
+            </value>
+            <value>
+                <fullName>Not enough stock avail</fullName>
+                <default>false</default>
+                <label>Not enough stock avail</label>
+            </value>
+            <value>
+                <fullName>Not enough stock on order</fullName>
+                <default>false</default>
+                <label>Not enough stock on order</label>
+            </value>
+            <value>
+                <fullName>OMC checking availability</fullName>
+                <default>false</default>
+                <label>OMC checking availability</label>
+            </value>
+            <value>
+                <fullName>OMC checking status of order</fullName>
+                <default>false</default>
+                <label>OMC checking status of order</label>
+            </value>
+            <value>
+                <fullName>OMC order entry process</fullName>
+                <default>false</default>
+                <label>OMC order entry process</label>
+            </value>
+            <value>
+                <fullName>RMA orders needing same day expedite</fullName>
+                <default>false</default>
+                <label>RMA orders needing same day expedite</label>
+            </value>
+            <value>
+                <fullName>SCAMP system issue</fullName>
+                <default>false</default>
+                <label>SCAMP system issue</label>
+            </value>
+            <value>
+                <fullName>SCOPES system issues</fullName>
+                <default>false</default>
+                <label>SCOPES system issues</label>
+            </value>
+            <value>
+                <fullName>SDO locations del date</fullName>
+                <default>false</default>
+                <label>SDO locations del date</label>
+            </value>
+            <value>
+                <fullName>Zip code delivery frequency</fullName>
+                <default>false</default>
+                <label>Zip code delivery frequency</label>
+            </value>
+            <value>
+                <fullName>Zip code set up incorrectly</fullName>
+                <default>false</default>
+                <label>Zip code set up incorrectly</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

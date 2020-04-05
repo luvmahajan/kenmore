@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Carry-in Approval of BRD --></label>
+    <name>Carry_in_Approval_of_BRD__c</name>
+</CustomFieldTranslation>

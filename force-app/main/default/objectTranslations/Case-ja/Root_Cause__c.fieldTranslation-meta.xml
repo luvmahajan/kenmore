@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- CSI Team to utilize showing the root case of the issue or case request --></help>
+    <label><!-- Root Cause --></label>
+    <name>Root_Cause__c</name>
+    <picklistValues>
+        <masterLabel>48 hour block on due</masterLabel>
+        <translation><!-- 48 hour block on due --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Backorder</masterLabel>
+        <translation><!-- Backorder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCN process issues</masterLabel>
+        <translation><!-- CCN process issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Common carrier delivery issues</masterLabel>
+        <translation><!-- Common carrier delivery issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DDC truck full to MDO</masterLabel>
+        <translation><!-- DDC truck full to MDO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOS system issues</masterLabel>
+        <translation><!-- DOS system issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOS system shows product available but no freight lane capacity</masterLabel>
+        <translation><!-- DOS system shows product available but no freight lane capacity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day added to item travel time</masterLabel>
+        <translation><!-- Day added to item travel time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freight lane capacity Hybrid</masterLabel>
+        <translation><!-- Freight lane capacity Hybrid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freight lane capacity MDO</masterLabel>
+        <translation><!-- Freight lane capacity MDO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hybrid delivery date issue</masterLabel>
+        <translation><!-- Hybrid delivery date issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hybrid order process</masterLabel>
+        <translation><!-- Hybrid order process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Item damaged</masterLabel>
+        <translation><!-- Item damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Item not at MDO from the DDC</masterLabel>
+        <translation><!-- Item not at MDO from the DDC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Item set up</masterLabel>
+        <translation><!-- Item set up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late due in</masterLabel>
+        <translation><!-- Late due in --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDO received item late</masterLabel>
+        <translation><!-- MDO received item late --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDO/SDO delivery to customer issue</masterLabel>
+        <translation><!-- MDO/SDO delivery to customer issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Move up date from vendor</masterLabel>
+        <translation><!-- Move up date from vendor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No DOS connection</masterLabel>
+        <translation><!-- No DOS connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No available stock/no due in’s</masterLabel>
+        <translation><!-- No available stock/no due in’s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not enough stock avail</masterLabel>
+        <translation><!-- Not enough stock avail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not enough stock on order</masterLabel>
+        <translation><!-- Not enough stock on order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OMC checking availability</masterLabel>
+        <translation><!-- OMC checking availability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OMC checking status of order</masterLabel>
+        <translation><!-- OMC checking status of order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OMC order entry process</masterLabel>
+        <translation><!-- OMC order entry process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA orders needing same day expedite</masterLabel>
+        <translation><!-- RMA orders needing same day expedite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCAMP system issue</masterLabel>
+        <translation><!-- SCAMP system issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCOPES system issues</masterLabel>
+        <translation><!-- SCOPES system issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDO locations del date</masterLabel>
+        <translation><!-- SDO locations del date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales team checking availability</masterLabel>
+        <translation><!-- Sales team checking availability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales team checking status of order</masterLabel>
+        <translation><!-- Sales team checking status of order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales team order entry process</masterLabel>
+        <translation><!-- Sales team order entry process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zip code delivery frequency</masterLabel>
+        <translation><!-- Zip code delivery frequency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zip code set up incorrectly</masterLabel>
+        <translation><!-- Zip code set up incorrectly --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+Hello,
+
+This is a notification that the following Contract was completed!
+
+Contract Link: {!Contract.Link} 
+Opportunity: {!Contract.Opportunity__c} 
+Account: {!Contract.Account} 
+
+Please reach out to the National Contract Manager to discuss next steps in activating the contract.
+
+
+Thank you.

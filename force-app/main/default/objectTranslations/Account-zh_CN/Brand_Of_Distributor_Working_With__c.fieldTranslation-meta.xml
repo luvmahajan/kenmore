@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select as many as applicable --></help>
+    <label><!-- Brand Of Distributor Working With --></label>
+    <name>Brand_Of_Distributor_Working_With__c</name>
+    <picklistValues>
+        <masterLabel>Do not have a regularly used distributor</masterLabel>
+        <translation><!-- Do not have a regularly used distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ferguson</masterLabel>
+        <translation><!-- Ferguson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH Gregg</masterLabel>
+        <translation><!-- HH Gregg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Depot</masterLabel>
+        <translation><!-- Home Depot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local merchant</masterLabel>
+        <translation><!-- Local merchant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lowes</masterLabel>
+        <translation><!-- Lowes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

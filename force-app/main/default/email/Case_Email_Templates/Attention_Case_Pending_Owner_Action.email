@@ -1,0 +1,7 @@
+{!Receiving_User.FirstName}: 
+
+Case {!Case.CaseNumber} was submitted {!Case.CreatedDate} by {!Case.CreatedBy} and is Pending Owner Action.  This case has not been modified in 24 business hours.  Please take actions appropriate to close this case.  
+
+{!Case.Link} 
+
+Thank you.

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Contact Information for SearsCommercial.com Notice</name>
+    <style>freeForm</style>
+    <subject>Sears Commercial</subject>
+    <textOnly>{!Contact.FirstName}, thanks for your time. 
+ 
+You will get an email in a couple of days from Sears Commercial which will allow you access to the administrative side and your special pricing for www.searscommercial.com.  This is one way to quickly check on pricing, availability, set standards, order and check your order history.
+ 
+I’ll go over this exclusive portal briefly with you when you have a minute. If you need anything in the meantime, please email or call.
+ 
+Warm Regards, 
+{!Contact.OwnerFullName}
+{!Contact.OwnerTitle}
+{!Contact.OwnerPhone}
+{!Contact.OwnerEmail}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

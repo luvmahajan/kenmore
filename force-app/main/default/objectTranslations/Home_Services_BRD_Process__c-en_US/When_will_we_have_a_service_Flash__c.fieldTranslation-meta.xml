@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- When will we have a service Flash? --></label>
+    <name>When_will_we_have_a_service_Flash__c</name>
+</CustomFieldTranslation>

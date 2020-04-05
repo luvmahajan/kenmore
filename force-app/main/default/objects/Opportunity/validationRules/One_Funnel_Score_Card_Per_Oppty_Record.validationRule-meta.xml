@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>One_Funnel_Score_Card_Per_Oppty_Record</fullName>
+    <active>true</active>
+    <description>Only one score card to be created per record.   Edit existing Score Card</description>
+    <errorConditionFormula>AND(IF(ISCHANGED(Automation_Control__c),
+   IF( CONTAINS(Automation_Control_Type__c, &quot;Validation&quot;),FALSE,TRUE),TRUE),
+Funnel_Scorecard_Total__c  &gt; 100)</errorConditionFormula>
+    <errorMessage>Only one Funnel Score Card can be created per Opportunity.   Edit existing Score Card</errorMessage>
+</ValidationRule>

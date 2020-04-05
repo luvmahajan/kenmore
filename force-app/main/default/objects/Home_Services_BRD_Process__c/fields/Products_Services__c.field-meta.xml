@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_Services__c</fullName>
+    <externalId>false</externalId>
+    <label>Products / Services</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Air Conditioners</fullName>
+                <default>false</default>
+                <label>Air Conditioners</label>
+            </value>
+            <value>
+                <fullName>Business to Business Paid Service</fullName>
+                <default>false</default>
+                <label>Business to Business Paid Service</label>
+            </value>
+            <value>
+                <fullName>Carry-in Repair</fullName>
+                <default>false</default>
+                <label>Carry-in Repair</label>
+            </value>
+            <value>
+                <fullName>Cleaning</fullName>
+                <default>false</default>
+                <label>Cleaning</label>
+            </value>
+            <value>
+                <fullName>Commercial Fitness</fullName>
+                <default>false</default>
+                <label>Commercial Fitness</label>
+            </value>
+            <value>
+                <fullName>Commercial Mattresses</fullName>
+                <default>false</default>
+                <label>Commercial Mattresses</label>
+            </value>
+            <value>
+                <fullName>Commercial Parts</fullName>
+                <default>false</default>
+                <label>Commercial Parts</label>
+            </value>
+            <value>
+                <fullName>Commercial TVs</fullName>
+                <default>false</default>
+                <label>Commercial TVs</label>
+            </value>
+            <value>
+                <fullName>Cook-top</fullName>
+                <default>false</default>
+                <label>Cook-top</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>Dishwasher</fullName>
+                <default>false</default>
+                <label>Dishwasher</label>
+            </value>
+            <value>
+                <fullName>Dryer</fullName>
+                <default>false</default>
+                <label>Dryer</label>
+            </value>
+            <value>
+                <fullName>Fitness Equipment</fullName>
+                <default>false</default>
+                <label>Fitness Equipment</label>
+            </value>
+            <value>
+                <fullName>Floor Care</fullName>
+                <default>false</default>
+                <label>Floor Care</label>
+            </value>
+            <value>
+                <fullName>Footwear</fullName>
+                <default>false</default>
+                <label>Footwear</label>
+            </value>
+            <value>
+                <fullName>Gift Cards</fullName>
+                <default>false</default>
+                <label>Gift Cards</label>
+            </value>
+            <value>
+                <fullName>Haul-Away</fullName>
+                <default>false</default>
+                <label>Haul-Away</label>
+            </value>
+            <value>
+                <fullName>Home Improvement</fullName>
+                <default>false</default>
+                <label>Home Improvement</label>
+            </value>
+            <value>
+                <fullName>In-Home Repair</fullName>
+                <default>false</default>
+                <label>In-Home Repair</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>Lawn &amp; Garden</fullName>
+                <default>false</default>
+                <label>Lawn &amp; Garden</label>
+            </value>
+            <value>
+                <fullName>Major Appliances</fullName>
+                <default>false</default>
+                <label>Major Appliances</label>
+            </value>
+            <value>
+                <fullName>Mattresses</fullName>
+                <default>false</default>
+                <label>Mattresses</label>
+            </value>
+            <value>
+                <fullName>Microwave</fullName>
+                <default>false</default>
+                <label>Microwave</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Out of Warranty Repair</fullName>
+                <default>false</default>
+                <label>Out of Warranty Repair</label>
+            </value>
+            <value>
+                <fullName>PA &amp; Warranty</fullName>
+                <default>false</default>
+                <label>PA &amp; Warranty</label>
+            </value>
+            <value>
+                <fullName>Preventative Maintenance</fullName>
+                <default>false</default>
+                <label>Preventative Maintenance</label>
+            </value>
+            <value>
+                <fullName>Product Refurbishment</fullName>
+                <default>false</default>
+                <label>Product Refurbishment</label>
+            </value>
+            <value>
+                <fullName>Range</fullName>
+                <default>false</default>
+                <label>Range</label>
+            </value>
+            <value>
+                <fullName>Recalls/Reworks</fullName>
+                <default>false</default>
+                <label>Recalls/Reworks</label>
+            </value>
+            <value>
+                <fullName>Refrigerator</fullName>
+                <default>false</default>
+                <label>Refrigerator</label>
+            </value>
+            <value>
+                <fullName>Replacements</fullName>
+                <default>false</default>
+                <label>Replacements</label>
+            </value>
+            <value>
+                <fullName>Service Contracts</fullName>
+                <default>false</default>
+                <label>Service Contracts</label>
+            </value>
+            <value>
+                <fullName>Small Appliances</fullName>
+                <default>false</default>
+                <label>Small Appliances</label>
+            </value>
+            <value>
+                <fullName>Small Refrigerator</fullName>
+                <default>false</default>
+                <label>Small Refrigerator</label>
+            </value>
+            <value>
+                <fullName>Tool Calibration</fullName>
+                <default>false</default>
+                <label>Tool Calibration</label>
+            </value>
+            <value>
+                <fullName>Tools</fullName>
+                <default>false</default>
+                <label>Tools</label>
+            </value>
+            <value>
+                <fullName>TVs &amp; Electronics</fullName>
+                <default>false</default>
+                <label>TVs &amp; Electronics</label>
+            </value>
+            <value>
+                <fullName>Warranty Repair</fullName>
+                <default>false</default>
+                <label>Warranty Repair</label>
+            </value>
+            <value>
+                <fullName>Washer</fullName>
+                <default>false</default>
+                <label>Washer</label>
+            </value>
+            <value>
+                <fullName>Water Heaters</fullName>
+                <default>false</default>
+                <label>Water Heaters</label>
+            </value>
+            <value>
+                <fullName>Water Treatment</fullName>
+                <default>false</default>
+                <label>Water Treatment</label>
+            </value>
+            <value>
+                <fullName>Window AC (12,000 BTU &amp; Above)</fullName>
+                <default>false</default>
+                <label>Window AC (12,000 BTU &amp; Above)</label>
+            </value>
+            <value>
+                <fullName>Window AC (Under 12,000 BTU)</fullName>
+                <default>false</default>
+                <label>Window AC (Under 12,000 BTU)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

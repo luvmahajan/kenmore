@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Is the business client engaging SHC install/repair services on behalf of a consumer customer purchasing from client? (ex. Joe buys from Big Box, SHC installs it) --></help>
+    <label><!-- Install/services on behalf of retailer --></label>
+    <name>Install_services_on_behalf_of_retailer__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

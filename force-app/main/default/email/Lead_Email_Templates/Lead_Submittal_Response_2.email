@@ -1,0 +1,19 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p class="MsoNormal" style="text-align: left;"><span class="Apple-style-span" style="font-size: 13px;">Hello {!Lead.Name},</span></p>
+
+<p class="MsoNormal"><span style="font-size: 10pt;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size: 10pt;">Thank you for expressing interest in Sears Commercial. Our goal is to enhance your
+business by providing high quality products,
+programs, and services.&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-size: 10pt;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size: 10pt;">To determine how best we can help meet your business objectives, your local Sears Commercial Account Manager will contact you within 2 business days to follow-up on the inquiry you submitted today. &nbsp;If you need help immediately, please contact our National Support Center at 1-800-359-2000.&nbsp;&nbsp;</span></p><span style="font-size: 10pt;"><o:p>&nbsp;</o:p></span>
+
+<p class="MsoNormal"><span style="font-size: 10pt;">Thanks again for reaching out
+to Sears Commercial; we look forward to working with you!</span></p>]]></td>
+</tr>
+</table>

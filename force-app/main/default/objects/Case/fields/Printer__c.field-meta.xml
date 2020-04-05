@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Printer__c</fullName>
+    <description>Printer company for existing marketing orders</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Printer company for existing marketing orders</inlineHelpText>
+    <label>Printer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sears Headquarters</fullName>
+                <default>false</default>
+                <label>Sears Headquarters</label>
+            </value>
+            <value>
+                <fullName>Blooming Color</fullName>
+                <default>false</default>
+                <label>Blooming Color</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

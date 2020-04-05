@@ -1,0 +1,14 @@
+Hi {!Case.CreatedBy},
+
+{!Case.OwnerFullName} has added comments to your case.  Please review the details:
+
+Case Number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+
+Comments: {!Case.Last_Case_Comment}
+
+Case Link: {!Case.Link}
+
+If these comments resolve your inquiry, please login Salesforce and close your case.  If not, please add a comment to your case for additional support.
+
+Thank you.

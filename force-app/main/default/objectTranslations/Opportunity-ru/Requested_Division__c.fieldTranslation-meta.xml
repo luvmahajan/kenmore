@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Which appliance division did the customer want to purchase? --></help>
+    <label><!-- Requested Division --></label>
+    <name>Requested_Division__c</name>
+    <picklistValues>
+        <masterLabel>10, HOME IMPROVEMT PROD/SERV</masterLabel>
+        <translation><!-- 10, HOME IMPROVEMT PROD/SERV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14, LUGGAGE</masterLabel>
+        <translation><!-- 14, LUGGAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20, FLOORCARE/SEWING</masterLabel>
+        <translation><!-- 20, FLOORCARE/SEWING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>22, COOKING &amp; CLEANUP</masterLabel>
+        <translation><!-- 22, COOKING &amp; CLEANUP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>24, WINDOW SHOP</masterLabel>
+        <translation><!-- 24, WINDOW SHOP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>26, LAUNDRY</masterLabel>
+        <translation><!-- 26, LAUNDRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>28, AUTOMOTIVE</masterLabel>
+        <translation><!-- 28, AUTOMOTIVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3, HOME OFFICE</masterLabel>
+        <translation><!-- 3, HOME OFFICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30, PAINT</masterLabel>
+        <translation><!-- 30, PAINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>32, HOME ENVIRONMENT</masterLabel>
+        <translation><!-- 32, HOME ENVIRONMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>34, ELECTRICAL</masterLabel>
+        <translation><!-- 34, ELECTRICAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>400, Services - Miscellaneous</masterLabel>
+        <translation><!-- 400, Services - Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>42, AIR &amp; WATER APPLIANCES</masterLabel>
+        <translation><!-- 42, AIR &amp; WATER APPLIANCES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>44, FINE JEWELRY</masterLabel>
+        <translation><!-- 44, FINE JEWELRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46, FOOD STORAGE</masterLabel>
+        <translation><!-- 46, FOOD STORAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>49, CHILDREN&#39;S FURNITURE</masterLabel>
+        <translation><!-- 49, CHILDREN&apos;S FURNITURE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>57, HOME ELECTRONICS</masterLabel>
+        <translation><!-- 57, HOME ELECTRONICS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>58, ENTERTAINMENT SOFTWARE</masterLabel>
+        <translation><!-- 58, ENTERTAINMENT SOFTWARE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6, SPORTING GOODS</masterLabel>
+        <translation><!-- 6, SPORTING GOODS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>70, PROTECTION AGREEMENT SALE</masterLabel>
+        <translation><!-- 70, PROTECTION AGREEMENT SALE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>71, LAWN, GARDEN, PATIO</masterLabel>
+        <translation><!-- 71, LAWN, GARDEN, PATIO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8, HOUSEWARES</masterLabel>
+        <translation><!-- 8, HOUSEWARES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>82, BEDDING</masterLabel>
+        <translation><!-- 82, BEDDING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9, TOOLS</masterLabel>
+        <translation><!-- 9, TOOLS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

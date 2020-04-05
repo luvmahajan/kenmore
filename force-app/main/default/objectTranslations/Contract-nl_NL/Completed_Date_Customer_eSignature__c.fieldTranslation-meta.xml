@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Customer, NCM, Sales --></help>
+    <label><!-- Completed Date (Customer eSignature) --></label>
+    <name>Completed_Date_Customer_eSignature__c</name>
+</CustomFieldTranslation>

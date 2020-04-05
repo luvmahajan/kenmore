@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please add your updates for the weekly funnel call here. --></help>
+    <label><!-- Weekly Updates --></label>
+    <name>Weekly_Updates_255__c</name>
+</CustomFieldTranslation>

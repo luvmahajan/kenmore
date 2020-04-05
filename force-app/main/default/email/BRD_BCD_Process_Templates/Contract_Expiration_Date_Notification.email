@@ -1,0 +1,8 @@
+Dear {!Opportunity.OwnerFullName}, 
+
+The Contract Associated with the BRD for {!Opportunity.Name} opportunity related to the {!Account.Name} account is set to expire in 60 days.  Please begin the renewal BRD process or begin the termination process with the client.  For any clarifications, please feel free to reach out to the account lead by using the activity creation functionality. 
+
+To view the details of this Opportunity, please click on the link below: 
+{!Opportunity.Link} 
+
+Thank you.

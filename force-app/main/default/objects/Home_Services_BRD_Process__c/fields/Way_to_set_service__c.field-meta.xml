@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Way_to_set_service__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If other is chosen, explain in Other CCN needs/requirements</inlineHelpText>
+    <label>Primary way to set service</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SPI</fullName>
+                <default>false</default>
+                <label>SPI</label>
+            </value>
+            <value>
+                <fullName>SPI2</fullName>
+                <default>false</default>
+                <label>SPI2</label>
+            </value>
+            <value>
+                <fullName>Service Bench</fullName>
+                <default>false</default>
+                <label>Service Bench</label>
+            </value>
+            <value>
+                <fullName>Phone</fullName>
+                <default>false</default>
+                <label>Phone</label>
+            </value>
+            <value>
+                <fullName>B2B Web Portal</fullName>
+                <default>false</default>
+                <label>B2B Web Portal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

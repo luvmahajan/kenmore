@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Process_Changes_if_Renewal</fullName>
+    <active>true</active>
+    <description>If Existing client or new client = renewal then Process changes if renewal are required.</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL( BRD_Type__c ,&quot;Renewal&quot;),  
+  ISBLANK( Process_changes_if_renewal__c  )
+)</errorConditionFormula>
+    <errorDisplayField>Process_changes_if_renewal__c</errorDisplayField>
+    <errorMessage>Process changes if renewal are required</errorMessage>
+</ValidationRule>

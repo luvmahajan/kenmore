@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scorecard_B9_through_O6_Commercial__c</fullName>
+    <description>Commercial Scores Only</description>
+    <externalId>false</externalId>
+    <formula>VALUE(TEXT(  B9_100K_purchases_A_C_Client_Profile__c  ))+ 
+VALUE(TEXT(  B10_Open_honest_communication_style__c  ))+ 
+VALUE(TEXT(  O1_Well_thought_out_B_G_Sheets_drive_SSO__c  ))+ 
+VALUE(TEXT(  O2_EBI_Supports_our_solution__c  ))+ 
+VALUE(TEXT(  O3_Identified_Coach__c  ))+ 
+VALUE(TEXT(  O4_Is_in_Trouble_Growth_mode__c  ))+ 
+VALUE(TEXT(  O5_Met_3_BI_s_know_their_Win_Results__c  ))+ 
+VALUE(TEXT(  O6_No_RFP_in_play_or_we_wrote_it__c  ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Scorecard B9 through O6 Commercial</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

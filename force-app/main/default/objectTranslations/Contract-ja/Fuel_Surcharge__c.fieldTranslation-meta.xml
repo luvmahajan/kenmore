@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If &apos;Per Claim&apos; please fill out the Fuel Surcharge Limit --></help>
+    <label><!-- Fuel Surcharge --></label>
+    <name>Fuel_Surcharge__c</name>
+    <picklistValues>
+        <masterLabel>Invoiced</masterLabel>
+        <translation><!-- Invoiced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Per Claim</masterLabel>
+        <translation><!-- Per Claim --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

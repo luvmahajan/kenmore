@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_User_is_CSS_on_Account__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( GetFeedback_Aut__Contact__r.Account.CSS__c = $User.Id, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Current User is CSS on Account?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

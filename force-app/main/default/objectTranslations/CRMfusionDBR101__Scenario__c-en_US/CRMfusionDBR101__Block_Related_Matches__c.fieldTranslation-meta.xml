@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Normally only Leads are blocked by Lead to Account or Lead to Contact scenarios.  If this option is enabled, Accounts and Contacts are blocked if they match an existing record as well. --></help>
+    <label><!-- Block Account/Contact Matches --></label>
+    <name>CRMfusionDBR101__Block_Related_Matches__c</name>
+</CustomFieldTranslation>

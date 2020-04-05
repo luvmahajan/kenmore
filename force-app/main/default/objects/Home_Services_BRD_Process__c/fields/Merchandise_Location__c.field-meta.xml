@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Merchandise_Location__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Where will we SHC/A&amp;E be picking up merchandise?</inlineHelpText>
+    <label>Merchandise Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client Premise</fullName>
+                <default>false</default>
+                <label>Client Premise</label>
+            </value>
+            <value>
+                <fullName>Customer Premise</fullName>
+                <default>false</default>
+                <label>Customer Premise</label>
+            </value>
+            <value>
+                <fullName>Sears Premise</fullName>
+                <default>false</default>
+                <label>Sears Premise</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

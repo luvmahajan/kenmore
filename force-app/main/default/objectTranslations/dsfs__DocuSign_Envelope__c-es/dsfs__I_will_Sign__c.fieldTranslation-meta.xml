@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Marque esta casilla de verificación si desea que se le añada como destinatario/signatario adicional en este documento.  Si no la marca, recibirá notificación de que el contacto ha firmado a través de DocuSign pero no podrá firmar el documento usted mismo.</help>
+    <label><!-- I will also Sign --></label>
+    <name>dsfs__I_will_Sign__c</name>
+</CustomFieldTranslation>

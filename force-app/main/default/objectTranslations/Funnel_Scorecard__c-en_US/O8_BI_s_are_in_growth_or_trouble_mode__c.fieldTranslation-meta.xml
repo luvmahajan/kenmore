@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The key BI&apos;s have communicated to us and / or our coaches a sense of urgency as it relates to this SSO. --></help>
+    <label><!-- O8 BI’s are in growth or trouble mode --></label>
+    <name>O8_BI_s_are_in_growth_or_trouble_mode__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4</masterLabel>
+        <translation><!-- 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5</masterLabel>
+        <translation><!-- 5 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

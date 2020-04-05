@@ -1,0 +1,5 @@
+Hello {!Opportunity.OwnerFullName},
+
+The Blue Sheet related to your opportunity {!Opportunity.Name} has been reviewed by your manager on {!Opportunity.mh_Manager_Review_Date__c}.  Please click on the link below and open the Blue Sheet to review your manager’s notes and update information as needed. 
+
+{!Opportunity.Link}

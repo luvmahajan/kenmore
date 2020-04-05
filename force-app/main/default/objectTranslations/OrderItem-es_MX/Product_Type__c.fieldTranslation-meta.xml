@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Type --></label>
+    <name>Product_Type__c</name>
+    <picklistValues>
+        <masterLabel>Adjustment</masterLabel>
+        <translation><!-- Adjustment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Catalog</masterLabel>
+        <translation><!-- Catalog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>InstallationService</masterLabel>
+        <translation><!-- InstallationService --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OrderItem</masterLabel>
+        <translation><!-- OrderItem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAWarranty</masterLabel>
+        <translation><!-- PAWarranty --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

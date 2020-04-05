@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>AccountName__c</field>
+        <field>Parent_Account_Name__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Approval_Comment_Required</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>File_Admin_Approval_Status_is_Updated</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>update_the_file_admin_name</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>aglenn99@searshc.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>diane.allen@kenmoredirect.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>The approval request is sent to File Administrator - Second Apporver</description>
+        <label>Approval by File Administrator</label>
+        <name>Approval_by_File_Administrator</name>
+        <rejectionActions>
+            <action>
+                <name>Approval_Comment_Required</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>File_Admin_Approval_Status_is_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>update_the_file_admin_name_on_reject</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <description>On click of Submit for Approval, Approval request is sent to File Admin. On Approval by the File Admin, the Approver Status will be changed to Approved.</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+OR( 
+CreatedBy.Id = Account_Name__r.Owner.Id,
+CreatedBy.District_Territory_ID__c = Account_Name__r.Owner.District_Territory_ID__c 
+),
+CreatedBy.Profile.Name = &#39;Standard Commercial Management User&#39;
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Change_Request_Approved_Update</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Change_Request_Completed_Email_Notification_4</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Change_Request_Denied_Update</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Change_Request_Rejected_Email_Notification_4</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Field_Update_of_Request_Status_field</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>CR District Manager Owns Or In District</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

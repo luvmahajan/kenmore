@@ -1,0 +1,6 @@
+Hi {!User.Name},
+
+ Account Name: {!Account.Name}
+Account Link : {!Account.Link}
+
+Thank you.

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How many records of each type can show up on a map at any one time. (1-200 recommended) --></help>
+    <label><!-- How Many --></label>
+    <name>FN__How_Many__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,43 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<P style="TEXT-ALIGN: right" class=MsoNormal><FONT class=Apple-style-span size=3><SPAN style="FONT-SIZE: 13px" class=Apple-style-span>{!Today}</SPAN></FONT></P></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE>
+<P>&nbsp;</P>
+<P><FONT face=Arial,Sans-Serif>Hi Again {!Lead.OwnerFirstName},</FONT></P>
+<P><FONT face=Arial,Sans-Serif>&nbsp;</FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face=Arial,Sans-Serif>Attached, for your reference, is the merchandise price sheet we discussed for MedAssets members.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>MedAssets is one of the largest GPO’s in the country with over 30,000 members like hospitals, nursing homes, and health centers.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Like LeadingAge members (formerly AAHSA), that have been doing business with us for years and now is part of the MedAssets membership,&nbsp;MedAssets members buy&nbsp;from us and if the lead is qualified they must have their own account.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>MedAssets just does their merchandising and price negotiation functions with the various vendors, we being one of them.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>I attached a fax/email order form that the account can use if they rather not call <?xml:namespace prefix = st1 ns = "urn:schemas-microsoft-com:office:smarttags" /><st1:City><st1:place>Augusta</st1:place></st1:City>.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>It can be faxed or emailed, and the number or email address is right on the sheet.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>As with any list, the price schedule may have a few numbers that have gone into transition already, and will be changing shortly.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>You should also know that some health centers or health related facilities may be tax exempt, so you may want to ask about that if it applies to your account.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>The Augusta Corp Desk is aware of this contract, and the pricing is in SCOPES if the account is set up as outlined below.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face=Arial,Sans-Serif>Your initial set-up and account update in Salesforce should reflect the information below.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Please send me a note when this prospect gets their LOC and a new Comm-One Account number.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Thanks for your help {!Lead.OwnerFirstName}, and please call if you have any questions.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face="Times New Roman"><SPAN style="mso-spacerun: yes"></SPAN></FONT><FONT face="Times New Roman"><SPAN style="mso-spacerun: yes"></SPAN></FONT>&nbsp;</P>
+<UL>
+<LI>
+<DIV style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-spacerun: yes"><FONT face=Arial,Sans-Serif>ME3 Market Segment</FONT></SPAN></DIV>
+<LI>
+<DIV style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-spacerun: yes"><FONT face=Arial,Sans-Serif>CPL590012</FONT></SPAN></DIV>
+<LI>
+<DIV style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-spacerun: yes"><FONT face=Arial,Sans-Serif>NPL30 (col default)</FONT></SPAN></DIV>
+<LI>
+<DIV style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-spacerun: yes"><FONT face=Arial,Sans-Serif>DLPMU Delivery</FONT></SPAN></DIV>
+<LI>
+<DIV style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-spacerun: yes"><FONT face=Arial,Sans-Serif>Operational Group need to be set up as:&nbsp; <STRONG>MEDASSETS</STRONG></FONT></SPAN></DIV></LI></UL>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face="Times New Roman"><SPAN style="mso-spacerun: yes"></SPAN></FONT><FONT face=Arial,Sans-Serif>&nbsp;</FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-spacerun: yes"><FONT face=Arial,Sans-Serif>Sincerely, </FONT></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-spacerun: yes"><FONT face=Arial,Sans-Serif>Zish Trocki</FONT></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-spacerun: yes">Field Imp Mgr-Pm</SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-spacerun: yes">(267) 972-5414</SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-spacerun: yes">ztrocki@searshc.com</SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal>&nbsp;</P>
+<P>&nbsp;</P>]]></td>
+</tr>
+</table>

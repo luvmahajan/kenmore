@@ -1,0 +1,15 @@
+Hello,
+
+Delivery estimate feedback has been updated by the Delivery Manager(s).  Please review the details:
+
+Delivery Estimate: {!Delivery_Estimate_Feedback__c.Delivery_Estimate__c}
+
+Total Number of Trucks: {!Delivery_Estimate_Feedback__c.Total_Number_of_Trucks__c}
+
+Recommended Delivery Amount: {!Delivery_Estimate_Feedback__c.Recommended_Delivery__c}
+
+Minimum Delivery Amount: {!Delivery_Estimate_Feedback__c.Minimum_Delivery_Amount__c}
+
+Notes: {!Delivery_Estimate_Feedback__c.Notes__c}
+
+Link: {!Delivery_Estimate_Feedback__c.Link}

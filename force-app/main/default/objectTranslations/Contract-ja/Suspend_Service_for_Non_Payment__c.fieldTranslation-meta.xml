@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Term Section --></help>
+    <label><!-- Suspend Service for Non-Payment --></label>
+    <name>Suspend_Service_for_Non_Payment__c</name>
+</CustomFieldTranslation>

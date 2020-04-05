@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>完了の期日が近づいている受信者に対してアラートの電子メールを送る場合、有効期間終了の何日前にメッセージを送信するのかを指定してください。 この電子メールは、まだ取引を完了していない受信者だけに送信されます。</help>
+    <label><!-- Warn of expiration in N day(s) prior --></label>
+    <name>dsfs__Day_Prior_to_Warn_of_expiration__c</name>
+</CustomFieldTranslation>

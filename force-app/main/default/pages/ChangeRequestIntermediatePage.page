@@ -1,0 +1,14 @@
+<apex:page standardController="Change_Request__c"  extensions="ChangeRequestIPController" action="{!goNext}">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:inputField value="{!change_request_obj.Account_Name__c}"/>      
+                </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Continue" action="{!Next}"/>
+                <apex:commandButton value="Cancel" action="{!Cancel}"/>    
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

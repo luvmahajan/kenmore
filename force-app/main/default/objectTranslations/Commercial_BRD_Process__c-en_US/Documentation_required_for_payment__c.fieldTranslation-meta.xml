@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Documentation required for payment --></label>
+    <name>Documentation_required_for_payment__c</name>
+    <picklistValues>
+        <masterLabel>Invoice</masterLabel>
+        <translation><!-- Invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lien Waiver</masterLabel>
+        <translation><!-- Lien Waiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order</masterLabel>
+        <translation><!-- Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POD</masterLabel>
+        <translation><!-- POD --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What kind of warranties does the client provide? Need the information to be sent electronically. For example what parts and labor are covered under what conditions? --></help>
+    <label><!-- Warranty information --></label>
+    <name>Warranty_information__c</name>
+</CustomFieldTranslation>

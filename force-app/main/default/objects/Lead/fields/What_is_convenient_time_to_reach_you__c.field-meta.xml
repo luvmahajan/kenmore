@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_is_convenient_time_to_reach_you__c</fullName>
+    <externalId>false</externalId>
+    <label>What is convenient time to reach you?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>During Business Hours</fullName>
+                <default>false</default>
+                <label>During Business Hours</label>
+            </value>
+            <value>
+                <fullName>8 AM to 12 PM</fullName>
+                <default>false</default>
+                <label>8 AM to 12 PM</label>
+            </value>
+            <value>
+                <fullName>12 PM to 4 PM</fullName>
+                <default>false</default>
+                <label>12 PM to 4 PM</label>
+            </value>
+            <value>
+                <fullName>4 PM to 8 PM</fullName>
+                <default>false</default>
+                <label>4 PM to 8 PM</label>
+            </value>
+            <value>
+                <fullName>No Information Available</fullName>
+                <default>false</default>
+                <label>No Information Available</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

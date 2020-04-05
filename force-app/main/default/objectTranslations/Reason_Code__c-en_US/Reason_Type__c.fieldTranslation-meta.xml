@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Type --></label>
+    <name>Reason_Type__c</name>
+    <picklistValues>
+        <masterLabel>Cancel</masterLabel>
+        <translation><!-- Cancel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reschedule</masterLabel>
+        <translation><!-- Reschedule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cmr_dmr</masterLabel>
+        <translation><!-- cmr_dmr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>return_exchange</masterLabel>
+        <translation><!-- return_exchange --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

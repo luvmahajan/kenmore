@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow-up and reiterate discussion topics</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Follow-Up to Initial Meeting</name>
+    <style>freeForm</style>
+    <subject>Sears Commercial Follow-Up</subject>
+    <textOnly>{!Today}
+
+Hello {!Lead.FirstName},
+ 
+I enjoyed meeting and speaking with you about some of the ways that Sears Commercial and {!Lead.Company} can work together. Per our conversation, I believe our Commercial division of Sears can provide you with a variety of programs and services that fit the exact needs of {!Lead.Company}. I just wanted to follow-up with you, and reiterate some main points of our discussion:
+ 
+{!Lead.Products_Services__c}
+{!Lead.Programs__c}
+ 
+Please feel free to schedule an appointment or reach out to me via email or phone if you are interested, or if you have any questions. It would be my pleasure to discuss this further with you.
+ 
+Thank you,
+
+	{!User.FirstName} {!User.LastName}
+	{!User.Title}
+	{!User.Division}
+	{!User.CompanyName}
+	{!User.Email}
+	{!User.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

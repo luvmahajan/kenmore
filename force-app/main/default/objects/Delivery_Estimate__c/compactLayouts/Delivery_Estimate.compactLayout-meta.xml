@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Estimate</fullName>
+    <fields>Account_Name__c</fields>
+    <fields>Shipping_Address__c</fields>
+    <fields>Account_Number__c</fields>
+    <fields>First_Expected_Delivery_Date__c</fields>
+    <fields>Expected_Delivery_Completion_Date__c</fields>
+    <fields>Delivery_Estimate_Amount__c</fields>
+    <fields>Quote__c</fields>
+    <fields>Opportunity_Name__c</fields>
+    <label>Delivery Estimate</label>
+</CompactLayout>

@@ -1,0 +1,7 @@
+*** NEW CONTRACT APPROVED NOTIFICATION ***
+
+The following contract has been approved by your manager.
+Company: {!Contract.Account}
+Contract Name: {!Contract.Name}
+
+Click on the link to access the contract directly: {!Contract.Link}

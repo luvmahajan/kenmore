@@ -1,0 +1,8 @@
+Dear {!Contract.BIT__c},
+
+The Account {!Contract.Account} had a Contract Start Date of {!Contract.StartDate}.  Please start preparing for the 30 day audit.  For your reference below is a link to the associated Contract.
+
+Contract Link: {!Contract.Link}
+
+
+Thank you.

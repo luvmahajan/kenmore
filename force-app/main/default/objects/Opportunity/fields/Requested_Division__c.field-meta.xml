@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_Division__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Which appliance division did the customer want to purchase?</inlineHelpText>
+    <label>Requested Division</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason_Lost__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3, HOME OFFICE</fullName>
+                <default>false</default>
+                <label>3, HOME OFFICE</label>
+            </value>
+            <value>
+                <fullName>6, SPORTING GOODS</fullName>
+                <default>false</default>
+                <label>6, SPORTING GOODS</label>
+            </value>
+            <value>
+                <fullName>8, HOUSEWARES</fullName>
+                <default>false</default>
+                <label>8, HOUSEWARES</label>
+            </value>
+            <value>
+                <fullName>9, TOOLS</fullName>
+                <default>false</default>
+                <label>9, TOOLS</label>
+            </value>
+            <value>
+                <fullName>10, HOME IMPROVEMT PROD/SERV</fullName>
+                <default>false</default>
+                <label>10, HOME IMPROVEMT PROD/SERV</label>
+            </value>
+            <value>
+                <fullName>14, LUGGAGE</fullName>
+                <default>false</default>
+                <label>14, LUGGAGE</label>
+            </value>
+            <value>
+                <fullName>20, FLOORCARE/SEWING</fullName>
+                <default>false</default>
+                <label>20, FLOORCARE/SEWING</label>
+            </value>
+            <value>
+                <fullName>22, COOKING &amp; CLEANUP</fullName>
+                <default>false</default>
+                <label>22, COOKING &amp; CLEANUP</label>
+            </value>
+            <value>
+                <fullName>24, WINDOW SHOP</fullName>
+                <default>false</default>
+                <label>24, WINDOW SHOP</label>
+            </value>
+            <value>
+                <fullName>26, LAUNDRY</fullName>
+                <default>false</default>
+                <label>26, LAUNDRY</label>
+            </value>
+            <value>
+                <fullName>28, AUTOMOTIVE</fullName>
+                <default>false</default>
+                <label>28, AUTOMOTIVE</label>
+            </value>
+            <value>
+                <fullName>30, PAINT</fullName>
+                <default>false</default>
+                <label>30, PAINT</label>
+            </value>
+            <value>
+                <fullName>32, HOME ENVIRONMENT</fullName>
+                <default>false</default>
+                <label>32, HOME ENVIRONMENT</label>
+            </value>
+            <value>
+                <fullName>34, ELECTRICAL</fullName>
+                <default>false</default>
+                <label>34, ELECTRICAL</label>
+            </value>
+            <value>
+                <fullName>42, AIR &amp; WATER APPLIANCES</fullName>
+                <default>false</default>
+                <label>42, AIR &amp; WATER APPLIANCES</label>
+            </value>
+            <value>
+                <fullName>44, FINE JEWELRY</fullName>
+                <default>false</default>
+                <label>44, FINE JEWELRY</label>
+            </value>
+            <value>
+                <fullName>46, FOOD STORAGE</fullName>
+                <default>false</default>
+                <label>46, FOOD STORAGE</label>
+            </value>
+            <value>
+                <fullName>49, CHILDREN&#39;S FURNITURE</fullName>
+                <default>false</default>
+                <label>49, CHILDREN&#39;S FURNITURE</label>
+            </value>
+            <value>
+                <fullName>57, HOME ELECTRONICS</fullName>
+                <default>false</default>
+                <label>57, HOME ELECTRONICS</label>
+            </value>
+            <value>
+                <fullName>58, ENTERTAINMENT SOFTWARE</fullName>
+                <default>false</default>
+                <label>58, ENTERTAINMENT SOFTWARE</label>
+            </value>
+            <value>
+                <fullName>70, PROTECTION AGREEMENT SALE</fullName>
+                <default>false</default>
+                <label>70, PROTECTION AGREEMENT SALE</label>
+            </value>
+            <value>
+                <fullName>71, LAWN, GARDEN, PATIO</fullName>
+                <default>false</default>
+                <label>71, LAWN, GARDEN, PATIO</label>
+            </value>
+            <value>
+                <fullName>82, BEDDING</fullName>
+                <default>false</default>
+                <label>82, BEDDING</label>
+            </value>
+            <value>
+                <fullName>400, Services - Miscellaneous</fullName>
+                <default>false</default>
+                <label>400, Services - Miscellaneous</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>3, HOME OFFICE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>6, SPORTING GOODS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>8, HOUSEWARES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>9, TOOLS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>10, HOME IMPROVEMT PROD/SERV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>14, LUGGAGE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>20, FLOORCARE/SEWING</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>22, COOKING &amp; CLEANUP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>24, WINDOW SHOP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>26, LAUNDRY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>28, AUTOMOTIVE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>30, PAINT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>32, HOME ENVIRONMENT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>34, ELECTRICAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>42, AIR &amp; WATER APPLIANCES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>44, FINE JEWELRY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>46, FOOD STORAGE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>49, CHILDREN&#39;S FURNITURE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>57, HOME ELECTRONICS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>58, ENTERTAINMENT SOFTWARE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>70, PROTECTION AGREEMENT SALE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>71, LAWN, GARDEN, PATIO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>82, BEDDING</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>400, Services - Miscellaneous</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

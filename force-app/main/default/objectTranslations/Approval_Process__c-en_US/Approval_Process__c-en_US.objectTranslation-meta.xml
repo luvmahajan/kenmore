@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>BRD Checklist</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>BRD Checklist</value>
+    </caseValues>
+    <layouts>
+        <layout>Home Services BRD Approval Process Layout</layout>
+        <sections>
+            <label><!-- BRD Update Notes --></label>
+            <section>BRD Update Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Final Stages --></label>
+            <section>Final Stages</section>
+        </sections>
+        <sections>
+            <label><!-- Program Manager Checklist --></label>
+            <section>Program Manager Checklist</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- BRD Stage cannot be edited and is updated based on the Stage Detail selected --></errorMessage>
+        <name>BRD_Stage_is_locked</name>
+    </validationRules>
+</CustomObjectTranslation>

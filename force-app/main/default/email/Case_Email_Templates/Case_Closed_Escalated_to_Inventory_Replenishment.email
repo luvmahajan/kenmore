@@ -1,0 +1,23 @@
+Hello {!Case.CreatedBy},
+
+The {!Case.Type} Case you submitted on {!Case.CreatedDate} regarding "{!Case.Subject}" has been {!Case.Status}.  Your support partner has {!Case.Reason}.  Your case has been escalated to Inventory Replenishment for further processing and they will respond back with an update on your case.  Please find additional information below:
+
+Solution Reference:  {!Case.Solution_Subject_and_Description}
+
+Comments:  {!Case.Comments__c}
+
+Original Case Information:
+Item #: {!Case.Item__c} 
+Quantity: {!Case.Quantity_Requested__c} 
+For delivery: {!Case.Estimated_Delivery_Date__c} 
+To be delivered to (zip): {!Case.Delivery_Zip_Code__c} 
+Subject: {!Case.Subject} 
+Message: {!Case.Description} 
+
+This is related to the following: 
+Account: {!Case.Account} 
+Opportunity: {!Case.Opportunity__c} 
+Sales Order #: {!Case.Sales_Order__c} 
+
+
+Thank you.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- MDO Status --></label>
+    <name>MDO_Status__c</name>
+    <picklistValues>
+        <masterLabel>Back Charge Illegible</masterLabel>
+        <translation><!-- Back Charge Illegible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Back Charge Not Found</masterLabel>
+        <translation><!-- Back Charge Not Found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Found Manually</masterLabel>
+        <translation><!-- Found Manually --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Found in Portal</masterLabel>
+        <translation><!-- Found in Portal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No POD Required</masterLabel>
+        <translation><!-- No POD Required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

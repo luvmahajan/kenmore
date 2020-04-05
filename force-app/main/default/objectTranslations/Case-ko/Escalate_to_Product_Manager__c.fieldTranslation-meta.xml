@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Administrator use only --></help>
+    <label><!-- Escalate to Product Manager --></label>
+    <name>Escalate_to_Product_Manager__c</name>
+</CustomFieldTranslation>

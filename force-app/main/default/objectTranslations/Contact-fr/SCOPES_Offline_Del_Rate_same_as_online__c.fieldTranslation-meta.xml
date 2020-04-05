@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Include Online Delivery Rate as SCOPES note for offline orders --></help>
+    <label><!-- SCOPES Offline Del Rate same as online --></label>
+    <name>SCOPES_Offline_Del_Rate_same_as_online__c</name>
+</CustomFieldTranslation>

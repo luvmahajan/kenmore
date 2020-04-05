@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto generated response sent to Store Associate for new lead</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Lead Submittal Response to Store Associate</name>
+    <style>freeForm</style>
+    <subject>Thank you for the Customer Referral to Sears Commercial</subject>
+    <textOnly>Hello {!Lead.Store_Associate_Name__c},
+ 
+This email notification is confirmation that your referral for {!Lead.Company} has been forwarded to a Sears Commercial Account Manager.  The Account Manager will be contacting {!Lead.Name} shortly in order to discuss their {!Lead.Products_Services__c} needs. We look forward to assisting the customer and ensuring they stay with Sears for the products and services they need!
+ 
+Best Regards, 
+Sears Commercial Team
+ 
+ 
+ 
+ 
+ 
+ 
+ </textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

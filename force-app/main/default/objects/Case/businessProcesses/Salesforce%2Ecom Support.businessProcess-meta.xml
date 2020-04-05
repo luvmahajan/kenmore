@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salesforce%2Ecom Support</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Not Started</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Reopened</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Resolved</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Reviewed%2C Pending Case Creator Action</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Reviewed%2C Pending Case Owner Action</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Reviewed%2C Pending Outside Assistance</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Submitted</fullName>
+        <default>true</default>
+    </values>
+</BusinessProcess>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date that Salesforce approval was sent to the Sears Executive Team --></help>
+    <label><!-- Approval Assigned Date (Salesforce) --></label>
+    <name>Approval_Assigned_Date_Salesforce__c</name>
+</CustomFieldTranslation>

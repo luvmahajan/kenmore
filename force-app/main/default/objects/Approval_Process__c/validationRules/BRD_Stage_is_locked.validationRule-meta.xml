@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BRD_Stage_is_locked</fullName>
+    <active>true</active>
+    <description>BRD Stage is locked and updated via workflow rules only.</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(  BRD_Stage__c  ), $User.ProfileId &lt;&gt; &quot;00e30000001FeAR&quot;)</errorConditionFormula>
+    <errorDisplayField>BRD_Stage__c</errorDisplayField>
+    <errorMessage>BRD Stage cannot be edited and is updated based on the Stage Detail selected</errorMessage>
+</ValidationRule>

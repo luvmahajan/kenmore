@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>O9_Sales_stages_synch_with_buying_stages__c</fullName>
+    <description>Our sales stages are synchronized with client buying process stages</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Commercial: Client validates our understanding of their process and our position in that process
+A&amp;E: Client validates our understanding of their process and our position is aligned with their buying stage.</inlineHelpText>
+    <label>O9 Sales stages synch with buying stages</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Business__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>3</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

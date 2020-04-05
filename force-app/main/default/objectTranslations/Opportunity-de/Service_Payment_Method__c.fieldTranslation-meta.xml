@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Displays the intended method of payment for services rendered --></help>
+    <label><!-- Service Payment Method --></label>
+    <name>Service_Payment_Method__c</name>
+    <picklistValues>
+        <masterLabel>Credit Card/Commercial One Account</masterLabel>
+        <translation><!-- Credit Card/Commercial One Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct Monthly Invoices</masterLabel>
+        <translation><!-- Direct Monthly Invoices --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

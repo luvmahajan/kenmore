@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sears provides pigtail installation only, and any appliances requiring hard-wiring must be specified in advance (with final electrical hook up by an electrician). --></help>
+    <label><!-- Any Appliances Require Hard-Wiring? --></label>
+    <name>Any_Appliances_Require_Hard_Wiring__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

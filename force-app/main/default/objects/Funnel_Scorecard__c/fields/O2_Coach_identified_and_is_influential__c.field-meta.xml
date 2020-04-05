@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>O2_Coach_identified_and_is_influential__c</fullName>
+    <description>A supportive coach with a high degree of influence has been identified</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A developed coach’s criteria:1) We have credibility with them 2)They have credibility with the key BIs 3)They want our solution 4)They are willing &amp; able to take action on our behalf.  If multiple departments are involved, you need to have coaches in each</inlineHelpText>
+    <label>O2 Coach identified and is influential</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Business__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>8</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>7</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>8</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

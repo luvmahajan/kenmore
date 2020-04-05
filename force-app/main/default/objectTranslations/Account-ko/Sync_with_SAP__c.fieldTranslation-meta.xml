@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- File Administration to utilize when an Account Request has been updated in SAP and/or Citi  for the requested account changes. (i.e. Billing Address, Phone Number, SAP Account Created, etc.) --></help>
+    <label><!-- Sync with SAP --></label>
+    <name>Sync_with_SAP__c</name>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Up to Date</masterLabel>
+        <translation><!-- Up to Date --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

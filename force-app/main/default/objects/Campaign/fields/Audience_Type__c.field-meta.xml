@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audience_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Audience Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Builders - Single Family</fullName>
+                <default>false</default>
+                <label>Builders - Single Family</label>
+            </value>
+            <value>
+                <fullName>Builders - Multifamily</fullName>
+                <default>false</default>
+                <label>Builders - Multifamily</label>
+            </value>
+            <value>
+                <fullName>Builders - Developers/ General Contractors/ Remodelers</fullName>
+                <default>false</default>
+                <label>Builders - Developers/ General Contractors/ Remodelers</label>
+            </value>
+            <value>
+                <fullName>Property Managers - Residential</fullName>
+                <default>false</default>
+                <label>Property Managers - Residential</label>
+            </value>
+            <value>
+                <fullName>Property Managers - Commercial</fullName>
+                <default>false</default>
+                <label>Property Managers - Commercial</label>
+            </value>
+            <value>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+                <label>Platinum</label>
+            </value>
+            <value>
+                <fullName>Gold</fullName>
+                <default>false</default>
+                <label>Gold</label>
+            </value>
+            <value>
+                <fullName>Silver</fullName>
+                <default>false</default>
+                <label>Silver</label>
+            </value>
+            <value>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+                <label>Bronze</label>
+            </value>
+            <value>
+                <fullName>Top Geography Markets</fullName>
+                <default>false</default>
+                <label>Top Geography Markets</label>
+            </value>
+            <value>
+                <fullName>Architecture</fullName>
+                <default>false</default>
+                <label>Architecture</label>
+            </value>
+            <value>
+                <fullName>Government/Education/Non-profit</fullName>
+                <default>false</default>
+                <label>Government/Education/Non-profit</label>
+            </value>
+            <value>
+                <fullName>Bosch/Frigidaire</fullName>
+                <default>false</default>
+                <label>Bosch/Frigidaire</label>
+            </value>
+            <value>
+                <fullName>Reactivation</fullName>
+                <default>false</default>
+                <label>Reactivation</label>
+            </value>
+            <value>
+                <fullName>Tier Upgrade</fullName>
+                <default>false</default>
+                <label>Tier Upgrade</label>
+            </value>
+            <value>
+                <fullName>Inside Sales Team</fullName>
+                <default>false</default>
+                <label>Inside Sales Team</label>
+            </value>
+            <value>
+                <fullName>Customers</fullName>
+                <default>false</default>
+                <label>Customers</label>
+            </value>
+            <value>
+                <fullName>Dormant</fullName>
+                <default>false</default>
+                <label>Dormant</label>
+            </value>
+            <value>
+                <fullName>House Accounts</fullName>
+                <default>false</default>
+                <label>House Accounts</label>
+            </value>
+            <value>
+                <fullName>Sales Team</fullName>
+                <default>false</default>
+                <label>Sales Team</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

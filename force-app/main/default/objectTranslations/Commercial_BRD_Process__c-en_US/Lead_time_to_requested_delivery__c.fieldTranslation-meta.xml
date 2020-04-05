@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Minimum of 72 business hours --></help>
+    <label><!-- Lead time to requested delivery --></label>
+    <name>Lead_time_to_requested_delivery__c</name>
+    <picklistValues>
+        <masterLabel>3 Days</masterLabel>
+        <translation><!-- 3 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5 Days</masterLabel>
+        <translation><!-- 5 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 Days</masterLabel>
+        <translation><!-- 7 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Or Greater</masterLabel>
+        <translation><!-- Or Greater --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

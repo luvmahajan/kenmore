@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the type of opportunity (project or flow business) that will created after the lead is converted.
+Commercial Project Business: The start date, number of units, AND price have all been defined.
+Commercial Flow Business: Any business that doesn&#39;t</inlineHelpText>
+    <label>Opportunity Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Commercial - Project</fullName>
+                <default>false</default>
+                <label>Commercial - Project</label>
+            </value>
+            <value>
+                <fullName>Commercial - Flow Business</fullName>
+                <default>false</default>
+                <label>Commercial - Flow Business</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

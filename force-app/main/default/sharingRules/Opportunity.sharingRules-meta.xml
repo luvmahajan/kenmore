@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Executive2InsideSales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Executive2InsideSales</label>
+        <sharedTo>
+            <group>Inside_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sears_Commercial_Executive</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Inside_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Inside Sales</label>
+        <sharedTo>
+            <group>Inside_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Commercial_Support</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>PrimaryInsideSales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>PrimaryInsideSales</label>
+        <sharedTo>
+            <roleAndSubordinates>Inside_Sales_Manager</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Inside_Sales_Manager</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sears_Commercial_Support_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sears Commercial Support Group</label>
+        <sharedTo>
+            <group>Commercial_Support</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Commercial_Support</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>ROLL-OUT: Reminder to complete e-Learning</name>
+    <style>formalLetter</style>
+    <subject>Reminder to complete Salesforce.com e-Learning</subject>
+    <textOnly>Dear {!Receiving_User.FirstName},
+
+On Wednesday, July 14th, all Sears Commercial Account Managers will receive access to Salesforce.com.  Your Training Roadmap was structured to help you become familiar with the system before that time.  Please remember to complete the e-Learning modules outlined in your Training Roadmap, including:
+
+(1) Salesforce.com Fundamentals, and
+(2) Salesforce.com Representative Fundamentals.
+
+All Training Roadmaps are posted in the Custom Links section of your Salesforce.com Home Page as is Job Aid #2 which provides instruction for e-Learning Navigation.
+ 
+The District Manager Training Roadmap is intended for all Sales Management and Administrative professionals.  If have a question on which roadmap is appropriate for you, please let me know.
+ 
+Sincerely,
+{!User.FirstName}
+
+Sears Commercial has partnered with Salesforce.com to bring the world’s leading sales enablement technology to its Account Managers.  Go to http://login.salesforce.com to login to Salesforce.com and begin seeing the positive impact in sales revenues which has been achieved by Salesforce.com customers across its base of over 65,000 companies and over 2,000,000 sales users.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

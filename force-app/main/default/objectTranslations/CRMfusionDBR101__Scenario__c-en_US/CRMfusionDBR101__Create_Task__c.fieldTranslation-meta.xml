@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If set to &quot;No&quot;, no tasks are created when a duplicate match is found.
+If set to &quot;Yes - Scenario Owner&quot;, a task is created and assigned to the scenario owner.
+If set to &quot;Yes - Current User&quot;, a task is created and assigned to the current user. --></help>
+    <label><!-- Create Task for Warning --></label>
+    <name>CRMfusionDBR101__Create_Task__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Current User</masterLabel>
+        <translation><!-- Yes - Current User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Current User and Scenario Owner</masterLabel>
+        <translation><!-- Yes - Current User and Scenario Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Scenario Owner</masterLabel>
+        <translation><!-- Yes - Scenario Owner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

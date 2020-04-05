@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Product_Manuals_Item_Require</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Type,&quot;Request Product Manuals&quot;),
+ISBLANK(Item__c)
+)</errorConditionFormula>
+    <errorDisplayField>Item__c</errorDisplayField>
+    <errorMessage>Item # is required for the case type &quot;Request Product Manuals&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- zFTC_Who notifies cust of Recall/Rework --></label>
+    <name>zWho_notifies_customer_of_Recall_Rework__c</name>
+</CustomFieldTranslation>

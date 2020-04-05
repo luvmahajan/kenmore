@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B1_Willing_to_invest_in_viable_solutions__c</fullName>
+    <description>The client is willing to invest in viable solutions</description>
+    <externalId>false</externalId>
+    <inlineHelpText>There is a need and a budget and the EBI is willing to allocate resources</inlineHelpText>
+    <label>B1 Willing to invest in viable solutions</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Business__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>9</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>7</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>9</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Descr_Required_when_SAP_System_Prodcut_I</fullName>
+    <active>false</active>
+    <description>Description is the Issue required when SAP System Product Issues is picked for the type</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(   Type  , &quot;SAP System Product Issues&quot;),  LEN(    Description ) = 0)</errorConditionFormula>
+    <errorDisplayField>Description</errorDisplayField>
+    <errorMessage>Field required when Type = SAP System Product Issues</errorMessage>
+</ValidationRule>

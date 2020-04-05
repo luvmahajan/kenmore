@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_New_Feature_Benefits</fullName>
+    <active>true</active>
+    <description>If the case type is New Feature Request, then the New Feature Benefits field is required</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL( Type , &#39;New Feature Request&#39; ), 
+ISBLANK( New_Feature_Benefits__c ) 
+
+)</errorConditionFormula>
+    <errorMessage>New Feature Benefits field is required for new feature requests.</errorMessage>
+</ValidationRule>

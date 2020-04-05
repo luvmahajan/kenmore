@@ -1,0 +1,8 @@
+Dear User, 
+
+A BCD for {!Opportunity.Name} opportunity related to the {!Account.Name} account is available for review and approval. 
+
+To view the details of this Opportunity, please click on the link below: 
+{!Opportunity.Link} 
+
+Thank you.

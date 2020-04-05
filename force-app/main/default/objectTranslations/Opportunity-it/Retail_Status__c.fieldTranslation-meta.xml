@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Retail Status --></label>
+    <name>Retail_Status__c</name>
+    <picklistValues>
+        <masterLabel>Contacting Customer</masterLabel>
+        <translation><!-- Contacting Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Rejects Proposal</masterLabel>
+        <translation><!-- Customer Rejects Proposal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Negotiating with Customer</masterLabel>
+        <translation><!-- Negotiating with Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Received</masterLabel>
+        <translation><!-- Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sale Completed</masterLabel>
+        <translation><!-- Sale Completed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

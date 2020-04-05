@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please indicate which DocuSign envelope corresponds to the document sent out for Customer eSignature --></help>
+    <label><!-- DocuSign Envelope - Customer eSignature --></label>
+    <name>DocuSign_Envelope_Customer_eSignature__c</name>
+    <relationshipLabel><!-- Contracts (Customer eSignature) --></relationshipLabel>
+</CustomFieldTranslation>

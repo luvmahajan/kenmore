@@ -1,0 +1,12 @@
+Hello, 
+
+The following pricing tier exception has been requested.  Please review the information below and login to Salesforce to approve/deny the request.
+
+Account Name: {!Change_Request__c.Account_Name__c}
+Account Owner: {!Change_Request__c.Account_Owner__c}
+
+New Pricing Tier: {!Change_Request__c.New_Pricing_Tier__c}
+
+Reason for Update: {!Change_Request__c.Reason_for_Update__c}
+
+Link: {!Change_Request__c.Link}

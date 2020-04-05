@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Web2Lead Response</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Campaign.Name</field>
+                <operation>contains</operation>
+                <value>Web Lead Pilot Campaign</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.NAICS_Code_del__c</field>
+                <operation>notEqual</operation>
+                <value>61,22</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Campaign.Name</field>
+                <operation>notEqual</operation>
+                <value>Full Line Store Lead Program 2013</value>
+            </criteriaItems>
+            <senderEmail>scsweb@searshc.com</senderEmail>
+            <senderName>Sears Commercial</senderName>
+            <template>Lead_Email_Templates/Web_Lead_Submittal_Response</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Campaign.Name</field>
+                <operation>equals</operation>
+                <value>Baltimore ASC Telesale Blitz</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Campaign.Name</field>
+                <operation>notEqual</operation>
+                <value>Full Line Store Lead Program 2013</value>
+            </criteriaItems>
+            <senderEmail>scsweb@searshc.com</senderEmail>
+            <senderName>Sears Commercial</senderName>
+            <template>Lead_Email_Templates/Web_Lead_Response_Baltimore_Blitz</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Campaign.Name</field>
+                <operation>notEqual</operation>
+                <value>A&amp;E Web2Lead Form,Full Line Store Lead Program 2013</value>
+            </criteriaItems>
+            <senderEmail>scsweb@searshc.com</senderEmail>
+            <senderName>Sears Commercial</senderName>
+            <template>Lead_Email_Templates/Lead_Submittal_Response_2</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

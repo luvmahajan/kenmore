@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This includes - list of brands, products and model numbers --></help>
+    <label><!-- Date receive list of products details --></label>
+    <name>Date_receive_list_of_products_details__c</name>
+</CustomFieldTranslation>

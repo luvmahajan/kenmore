@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_SCO_Account__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to tell Sears Commercial Online that an account needs to be created and linked</description>
+    <externalId>false</externalId>
+    <label>Create SCO Account</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

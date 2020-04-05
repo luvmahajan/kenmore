@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Case Assignment Rules</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Customer_Success_Specialist</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Customer Success Specialist Requests</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/CSS_Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>integration.user@searshc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Marketing</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Sears_Commercial_Reporting</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Sears Commercial Reporting</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Salesforce_com_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Salesforce.com Support</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>integration.user@searshc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Online Catalog</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Contract_Sales_Business_Systems</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SAP Support</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Master_Data_File_Administration</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Master Data (File Administration)</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Salesforce_com_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Sears Commercial Wiki</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Site Administration and Technical Issues</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Sears_Commercial_Wiki</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Sears Commercial Wiki</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>notEqual</operation>
+                <value>Site Administration and Technical Issues</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Salesforce_com_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Web Support</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>InventoryReplenishment</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Inventory Replenishment</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Assignment_Inventory_Replenishment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ProductManagers</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>SAP System Product Issues</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Escalated_to_Product_Manager</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Pricing_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Pricing</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ProductManagers</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Product Manager Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Product Information</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ProductManagers</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Product Manager Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>New Product Request</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>integration.user@searshc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Product Manager Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Spec Sheet Support</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Pricing_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Product Manager Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Pricing Support</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ProductManagers</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Product Manager Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Report Quality Issue</value>
+            </criteriaItems>
+            <template>Case_Email_Templates/Case_Created_General_Notification_for_Owners</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Pre_Delivery_OM</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Pre-Delivery OM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Post_Delivery_OM</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Post-Delivery OM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ORDER</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Order Intake</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Credit_Team</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Credit</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Open</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

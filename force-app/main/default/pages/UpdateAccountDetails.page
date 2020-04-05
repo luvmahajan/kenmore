@@ -1,0 +1,30 @@
+<apex:page action="{!init}" Controller="UpdateAccountDetailsController"  sidebar="false" showHeader="true">
+    <apex:form >
+        <apex:pageBlock >   
+            <apex:pageMessages />
+          
+            <apex:pageBlockButtons rendered="{!render}">
+                <apex:commandButton action="{!Save}" value="Save" status="closer" />          
+                <apex:commandButton action="{!Cancel}" value="Cancel" onclick="CloseWindow();"/>                   
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection columns="1" rendered="{!render}">
+                <apex:pageBlockSectionItem helpText="Does this account need credit? If “Yes” a notification email will be sent to the credit team to investigate further.">
+                    <apex:outputText >Credit Needed?</apex:outputText> 
+                    <apex:inputField value="{!account_Object.Credit_Needed__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem helpText="Is this account a Reseller? If “Yes” a notification email will be sent to the file administration team to investigate further.">
+                    <apex:outputText >Reseller?</apex:outputText>
+                    <apex:inputField value="{!account_Object.Reseller__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem helpText="Is this account Tax Exempt? If “Yes” a notification email will be sent to the file administration team to investigate further.">
+                    <apex:outputText >Tax Exempt?</apex:outputtext>
+                    <apex:inputField value="{!account_Object.Tax_Exempt__c}" required="true"/>
+                </apex:pageBlockSectionItem>     
+            </apex:pageBlockSection>
+            
+         </apex:pageBlock>       
+    </apex:form>   
+</apex:page>

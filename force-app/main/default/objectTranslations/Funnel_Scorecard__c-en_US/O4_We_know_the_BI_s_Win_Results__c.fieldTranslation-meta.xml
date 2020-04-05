@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- We understand what corporate results the BI&apos;s want to achieve (what they buy) and have the ability to deliver them, and understand their personal wins (why they buy). --></help>
+    <label><!-- O4 We know the BI’s Win-Results --></label>
+    <name>O4_We_know_the_BI_s_Win_Results__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4</masterLabel>
+        <translation><!-- 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5</masterLabel>
+        <translation><!-- 5 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

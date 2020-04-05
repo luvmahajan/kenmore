@@ -1,0 +1,9 @@
+<apex:page Controller="OpportunityButtonGroupController" lightningStylesheets="true" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="bottom" >
+                <apex:commandButton value="Send MSA for Signature" action="{!gotoMSASign}" style="float:left" rendered="{!stage=='Proposal'}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

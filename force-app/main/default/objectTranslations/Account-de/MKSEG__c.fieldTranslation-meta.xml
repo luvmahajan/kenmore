@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- MKSEG --></label>
+    <name>MKSEG__c</name>
+    <picklistValues>
+        <masterLabel>Employee Purchase Program</masterLabel>
+        <translation><!-- Employee Purchase Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government</masterLabel>
+        <translation><!-- Government --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Inspection Services</masterLabel>
+        <translation><!-- Home Inspection Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Warranty</masterLabel>
+        <translation><!-- Home Warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hud</masterLabel>
+        <translation><!-- Hud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance</masterLabel>
+        <translation><!-- Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Replacement</masterLabel>
+        <translation><!-- Insurance Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufactured Housing</masterLabel>
+        <translation><!-- Manufactured Housing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-Family</masterLabel>
+        <translation><!-- Multi-Family --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM&#39;s</masterLabel>
+        <translation><!-- OEM&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One Time Buy</masterLabel>
+        <translation><!-- One Time Buy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property Management</masterLabel>
+        <translation><!-- Property Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Realty</masterLabel>
+        <translation><!-- Realty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remodeling</masterLabel>
+        <translation><!-- Remodeling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rent-to-Own</masterLabel>
+        <translation><!-- Rent-to-Own --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail</masterLabel>
+        <translation><!-- Retail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retailers</masterLabel>
+        <translation><!-- Retailers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ship</masterLabel>
+        <translation><!-- Ship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Family</masterLabel>
+        <translation><!-- Single Family --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPA</masterLabel>
+        <translation><!-- TPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weatherization</masterLabel>
+        <translation><!-- Weatherization --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

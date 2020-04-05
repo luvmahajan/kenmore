@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Is there a time-sensitive need that affects customer&apos;s business is driving the project and the vendor choice? --></help>
+    <label><!-- BI in trouble mode/ready to take action --></label>
+    <name>BI_in_trouble_mode_ready_to_take_action__c</name>
+</CustomFieldTranslation>

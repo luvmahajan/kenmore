@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Services__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Services</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In-Home</fullName>
+                <default>false</default>
+                <label>In-Home</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>Install</fullName>
+                <default>false</default>
+                <label>Install</label>
+            </value>
+            <value>
+                <fullName>CarryIn</fullName>
+                <default>false</default>
+                <label>CarryIn</label>
+            </value>
+            <value>
+                <fullName>Repair-Replace</fullName>
+                <default>false</default>
+                <label>Repair-Replace</label>
+            </value>
+            <value>
+                <fullName>PM Check</fullName>
+                <default>false</default>
+                <label>PM Check</label>
+            </value>
+            <value>
+                <fullName>Store Stock</fullName>
+                <default>false</default>
+                <label>Store Stock</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

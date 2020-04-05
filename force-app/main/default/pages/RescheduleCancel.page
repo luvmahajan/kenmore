@@ -1,0 +1,143 @@
+<apex:page Controller="RescheduleCancelController" lightningStylesheets="true" action="{!calculateDeliveryDates}" >
+    <apex:form >
+        
+        <style type = "text/css">
+            .colCenter {text-align:center;}     
+            .colRight {text-align:right;}     
+            .colLeft {text-align:left;} 
+            .row {
+            display: flex; 
+            width: 100%
+            }
+            
+            .row::after {
+            display: block;
+            clear: both;
+            content: "";
+            }
+            
+            .col-1 {width: 8.33%};
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            * {
+            box-sizing: border-box;
+            }
+            
+            [class*="col-"]{
+            float: left;
+            font-size: 0.8rem;
+            padding: 0.1rem 2px;
+            }
+        </style>
+        
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Back to Adjustment" action="{!gotoAdjustment}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+            <apex:pageMessages id="showmsg"></apex:pageMessages> 
+        <apex:pageBlock id="rschid" title="Reschedule Form" rendered="{!adjAction=='reschedule'}">
+                <div class="row">
+                    <div class="col-3" align="right"><b>Reason:</b><b style="color:red">*</b></div>
+                    <div class="col-9" align="left">
+                        <apex:selectList value="{!selRschReason}" size="1" style="float:left">
+                            <apex:selectoptions value="{!RescheduleCancelReason}"/>
+                        </apex:selectList>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-3" align="right"><b>Requested Pickup Date:</b></div>
+                    <div class="col-9" align="left">{!delDate}</div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-3" align="right"><b>Available Pickup Date:</b></div>
+                    <div class="col-9" align="left">{!delDate}</div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-3" align="right"><b>Available Dates:</b><b style="color:red">*</b></div>
+                    <div class="col-9" align="left">
+                        <apex:selectList value="{!selPickupDate}" size="1" style="float:left">
+                            <apex:selectoptions value="{!PickUpDateDropDown}"/>
+                        </apex:selectList>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-3" align="right" />
+                    <div class="col-9" align="left">
+                         <apex:actionStatus id="rescheduleadj">
+                             <apex:facet name="stop">
+                                 <apex:commandButton value="Reschedule" status="rescheduleadj" action="{!actionReschedule}" style="color:white;background:#0070d2;" reRender="showmsg"/>
+                             </apex:facet>
+                             <apex:facet name="start">
+                                 <apex:commandButton value="Rescheduling..." disabled="true" status="rescheduleadj" />
+                             </apex:facet>
+                         </apex:actionStatus>
+                    </div>
+                </div>
+                <br/>
+        </apex:pageBlock>
+        <apex:outputPanel id="c1id">
+        <apex:outputPanel id="c2id" rendered="{!AND(adjAction=='cancel', NOT(renConfirmCancel))}">
+        <apex:pageBlock id="cnlid" title="Cancel Form" >
+                <div class="row">
+                    <div class="col-3" align="right"><b>Reason:</b><b style="color:red">*</b></div>
+                    <div class="col-9" align="left">
+                        <apex:selectList value="{!selCnlReason}" size="1" style="float:left" >
+                            <apex:selectoptions value="{!RescheduleCancelReason}"/>
+                        </apex:selectList>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-3" align="right" />
+                    <div class="col-9" align="left">
+                        <apex:commandButton id="btncnl" value="Cancel" action="{!actionCancel}"  style="color:white;background:red;" reRender="c1id, c2id, cc1id, cc2id, showmsg" />
+                    </div>
+                </div>
+                <br/>
+        </apex:pageBlock>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        <apex:outputPanel id="cc1id">
+        <apex:outputPanel id="cc2id" rendered="{!renConfirmCancel}">
+        <apex:pageBlock id="cnlcfmid" title="Cancel Form" >
+                <div class="row">
+                    <div class="col-3" align="right" ><b>Are you Sure:</b></div>
+                    <div class="col-9" align="left" />
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-3" align="right">
+                         <apex:actionStatus id="canceladj">
+                             <apex:facet name="stop">
+                                 <apex:commandButton value="Confirm" status="canceladj" action="{!actionConfirmCancel}" style="color:white;background:#0070d2;" reRender="c1id, c2id, cc1id, cc2id, showmsg"/>
+                             </apex:facet>
+                             <apex:facet name="start">
+                                 <apex:commandButton value="Cancelling..." disabled="true" status="canceladj" />
+                             </apex:facet>
+                         </apex:actionStatus>
+                    </div>
+                    <div class="col-9" align="left">
+                        <apex:commandButton id="btnno" value="No" action="{!actionNoCancel}"  style="color:white;background:#0070d2;" reRender="c1id, c2id, cc1id, cc2id, showmsg" />
+                    </div>
+                </div>
+                <br/>
+        </apex:pageBlock>
+            </apex:outputPanel>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

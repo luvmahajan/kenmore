@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funnel_Score__c</fullName>
+    <description>Read Only field that will populate the Scorecard Total based on values selected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Read Only field that will populate the Scorecard Total based on values selected.</inlineHelpText>
+    <label>Funnel Score</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

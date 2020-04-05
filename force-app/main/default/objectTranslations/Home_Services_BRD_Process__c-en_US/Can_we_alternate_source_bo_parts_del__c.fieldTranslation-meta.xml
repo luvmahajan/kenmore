@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Can we search for and purchase parts outside of the client to meet the commitment to the client and can we charge the client for those parts at the purchase cost? --></help>
+    <label><!-- Can we alternate source b/o parts --></label>
+    <name>Can_we_alternate_source_bo_parts_del__c</name>
+</CustomFieldTranslation>

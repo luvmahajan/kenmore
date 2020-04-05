@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Valore associato al ruolo del destinatario DocuSign. Valore utilizzato per l&#39;associazione ai tag di ancoraggio predefiniti nei documenti.</help>
+    <label><!-- RoleValue --></label>
+    <name>dsfs__RoleValue__c</name>
+</CustomFieldTranslation>

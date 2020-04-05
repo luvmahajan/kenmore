@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Call Volume Next Fiscal reads in from the value entered on the Opportunity record. --></help>
+    <label><!-- zDEL_Total Yearly Volume --></label>
+    <name>Total_Yearly_Volume__c</name>
+</CustomFieldTranslation>

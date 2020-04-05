@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Reviewed what happens if we send trucks out to the site after the customer states they were ready for the delivery; however our teams arrive and find out the customer wasn’t really ready. --></help>
+    <label><!-- Reviewed Not Ready Clause --></label>
+    <name>Reviewed_Not_Ready_Clause__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Territory Manager OLD --></label>
+    <name>Territory_Manager_OLD__c</name>
+    <picklistValues>
+        <masterLabel>Ben Mueller</masterLabel>
+        <translation><!-- Ben Mueller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brian Hale</masterLabel>
+        <translation><!-- Brian Hale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gecova (Jay) Doyal</masterLabel>
+        <translation><!-- Gecova (Jay) Doyal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kevin Piotrowski</masterLabel>
+        <translation><!-- Kevin Piotrowski --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kevin Wilch</masterLabel>
+        <translation><!-- Kevin Wilch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lindy Ely</masterLabel>
+        <translation><!-- Lindy Ely --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nick Bodmer</masterLabel>
+        <translation><!-- Nick Bodmer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peggy D&#39;Alessandro</masterLabel>
+        <translation><!-- Peggy D&apos;Alessandro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rod Pasion</masterLabel>
+        <translation><!-- Rod Pasion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scott Ferguson</masterLabel>
+        <translation><!-- Scott Ferguson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thyra Landis</masterLabel>
+        <translation><!-- Thyra Landis --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

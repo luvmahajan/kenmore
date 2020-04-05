@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualification_Debrief__c</fullName>
+    <description>Enter debrief information for qualified leads</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter debrief information for qualified leads</inlineHelpText>
+    <label>Qualification Debrief</label>
+    <length>5000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SHC_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>SHC Segment</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Business__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Best Western</fullName>
+                <default>false</default>
+                <label>Best Western</label>
+            </value>
+            <value>
+                <fullName>Builder Radio</fullName>
+                <default>false</default>
+                <label>Builder Radio</label>
+            </value>
+            <value>
+                <fullName>Building, Remodeling, Moving (BRM)</fullName>
+                <default>false</default>
+                <label>Building, Remodeling, Moving (BRM)</label>
+            </value>
+            <value>
+                <fullName>Commercial Marketplace</fullName>
+                <default>false</default>
+                <label>Commercial Marketplace</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Employee Purchase Plan</fullName>
+                <default>false</default>
+                <label>Employee Purchase Plan</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Home Inspection Services</fullName>
+                <default>false</default>
+                <label>Home Inspection Services</label>
+            </value>
+            <value>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+                <label>Hospitality</label>
+            </value>
+            <value>
+                <fullName>HUD</fullName>
+                <default>false</default>
+                <label>HUD</label>
+            </value>
+            <value>
+                <fullName>Insurance Replacement</fullName>
+                <default>false</default>
+                <label>Insurance Replacement</label>
+            </value>
+            <value>
+                <fullName>Manufactured Housing</fullName>
+                <default>false</default>
+                <label>Manufactured Housing</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Military</fullName>
+                <default>false</default>
+                <label>Military</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Multi-Family</fullName>
+                <default>false</default>
+                <label>Multi-Family</label>
+            </value>
+            <value>
+                <fullName>One Time Buy</fullName>
+                <default>false</default>
+                <label>One Time Buy</label>
+            </value>
+            <value>
+                <fullName>Property Management</fullName>
+                <default>false</default>
+                <label>Property Management</label>
+            </value>
+            <value>
+                <fullName>Realty</fullName>
+                <default>false</default>
+                <label>Realty</label>
+            </value>
+            <value>
+                <fullName>Remodeling</fullName>
+                <default>false</default>
+                <label>Remodeling</label>
+            </value>
+            <value>
+                <fullName>Rent-to-own</fullName>
+                <default>false</default>
+                <label>Rent-to-own</label>
+            </value>
+            <value>
+                <fullName>SHIP (Sears Home Improvement)</fullName>
+                <default>false</default>
+                <label>SHIP (Sears Home Improvement)</label>
+            </value>
+            <value>
+                <fullName>Single Family</fullName>
+                <default>false</default>
+                <label>Single Family</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Weatherization</fullName>
+                <default>false</default>
+                <label>Weatherization</label>
+            </value>
+            <value>
+                <fullName>Alliance</fullName>
+                <default>false</default>
+                <label>Alliance</label>
+            </value>
+            <value>
+                <fullName>Apartment Complexes</fullName>
+                <default>false</default>
+                <label>Apartment Complexes</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Home Warranty</fullName>
+                <default>false</default>
+                <label>Home Warranty</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Original Equipment Manufacturers (OEM’s)</fullName>
+                <default>false</default>
+                <label>Original Equipment Manufacturers (OEM’s)</label>
+            </value>
+            <value>
+                <fullName>Retailers</fullName>
+                <default>false</default>
+                <label>Retailers</label>
+            </value>
+            <value>
+                <fullName>Third Party Administrators (TPA’s)</fullName>
+                <default>false</default>
+                <label>Third Party Administrators (TPA’s)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Insurance Replacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>Property Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>Alliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>Apartment Complexes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>Home Warranty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>Original Equipment Manufacturers (OEM’s)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>Retailers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>Third Party Administrators (TPA’s)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Best Western</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Builder Radio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Building, Remodeling, Moving (BRM)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Commercial Marketplace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Employee Purchase Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Government</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Home Inspection Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Hospitality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>HUD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Manufactured Housing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Military</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Miscellaneous</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Multi-Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>One Time Buy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Realty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Remodeling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Rent-to-own</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>SHIP (Sears Home Improvement)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Single Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Transportation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Weatherization</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

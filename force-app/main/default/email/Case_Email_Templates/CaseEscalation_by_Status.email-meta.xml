@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Case Escalation by status</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Case Escalation by Status</name>
+    <style>freeForm</style>
+    <subject>{!Case.Status} {!Case.RecordType} Case Escalation Alert</subject>
+    <textOnly>Hello {!Case.OwnerFirstName},
+
+A {!Case.RecordType} case # {!Case.CaseNumber} current status is {!Case.Status} and has not had any activity in a few days. This case has now escalated and assigned to you for review.
+
+Please navigate to the case record linked below to review the details.
+
+Case Record Link:  {!Case.Link}
+
+Thank You!
+Case Escalations Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

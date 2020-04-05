@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>DocuSign InPerson 서명 페이지를 Salesforce 머리글 및/또는 사이드바 안에 포함시키지 않고 새 창에서 표시되도록 설정합니다.</help>
+    <label><!-- Display InPerson Signing In Own Window --></label>
+    <name>dsfs__DisplayInPersonSigningInOwnWindow__c</name>
+</CustomFieldTranslation>

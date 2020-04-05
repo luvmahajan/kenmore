@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recall_Rework_Section_is_Required</fullName>
+    <active>true</active>
+    <description>If BRD Type is Recall or Rework, the whole Recall Rework section is required – If the BRD is of any other type this section is not required</description>
+    <errorConditionFormula>AND(
+  OR(
+    ISPICKVAL( BRD_Type__c , &quot;Recall&quot;),
+    ISPICKVAL( BRD_Type__c , &quot;Rework&quot;)
+  ),
+  OR(
+    ISBLANK( Product_Impacted__c ),
+    ISBLANK( Total_units_effected__c ),
+    ISPICKVAL( CPSC_Involved__c , &quot;&quot;),
+    ISBLANK( Projected_CPSC_announced_Date__c ),
+    ISBLANK( Target_Rework_Start_Date__c ),
+    ISPICKVAL( Product_entitlement_required__c , &quot;&quot;),
+    ISPICKVAL( Who_entitles_customer_that_they_qualify__c , &quot;&quot;),
+    ISBLANK( Which_retailers_sold_this_product__c ),
+    ISBLANK( When_will_we_have_a_service_Flash__c ),
+    ISPICKVAL( Who_creates_the_order__c , &quot;&quot;),
+    ISPICKVAL( Who_notifies_customer_of_Recall_Rework__c , &quot;&quot;),
+    ISBLANK( Total_units_effected__c ),
+    ISPICKVAL( Will_client_pay_for_inspection__c , &quot;&quot;),
+    ISBLANK( Additional_Recall_Rework_Requirements__c )
+  )
+)</errorConditionFormula>
+    <errorDisplayField>BRD_Type__c</errorDisplayField>
+    <errorMessage>If BRD Type = &#39;Recall&#39; or &#39;Rework&#39;, the entire Recall/Rework section is required</errorMessage>
+</ValidationRule>

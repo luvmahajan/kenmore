@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>O7_Right_team_is_aligned_with_BI_s__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>SC team is strategically aligned to appropriate BI/Peers &amp; where they are in the Buying Process; Implementation Team (MDO, Billing, Credit, etc.) is aligned to the UBI (s).</inlineHelpText>
+    <label>O7 Right team is aligned with BI’s</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

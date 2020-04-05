@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Authorization_Limit_is_Required</fullName>
+    <active>true</active>
+    <description>Authorization $$ limit if yes is required when Authorization $$ limit is &quot;Yes&quot;</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL( Authorization_dollar_limit__c, &quot;Yes&quot;),
+  ISBLANK( Authorization_limit_if_yes__c )
+)</errorConditionFormula>
+    <errorDisplayField>Authorization_limit_if_yes__c</errorDisplayField>
+    <errorMessage>Authorization $$ limit if yes is required when Authorization $$ limit = Yes</errorMessage>
+</ValidationRule>

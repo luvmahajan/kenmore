@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this box in order to request that a catalogue be sent to your customer contact.  This will not be sent immediately. --></help>
+    <label><!-- Send Catalogue --></label>
+    <name>Send_Catalogue__c</name>
+</CustomFieldTranslation>

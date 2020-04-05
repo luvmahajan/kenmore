@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_Del_Date_when_CSI</fullName>
+    <active>false</active>
+    <description>Requested Delivery Date required when Type = CSI Team</description>
+    <errorConditionFormula>AND ( 
+ISPICKVAL( Type , &quot;CSI Team&quot;), 
+ISNULL( Estimated_Delivery_Date__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Estimated_Delivery_Date__c</errorDisplayField>
+    <errorMessage>Field required when Type = CSI Team</errorMessage>
+</ValidationRule>

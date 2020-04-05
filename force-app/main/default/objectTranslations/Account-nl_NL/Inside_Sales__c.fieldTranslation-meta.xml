@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Look up the Inside Sales name. Only enter in this field if different from the Account Owner and they are Inside Sales. --></help>
+    <label><!-- Inside Sales --></label>
+    <name>Inside_Sales__c</name>
+    <relationshipLabel><!-- Accounts (Inside Sales) --></relationshipLabel>
+</CustomFieldTranslation>

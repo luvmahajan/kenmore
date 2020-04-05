@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If this box is checked, Salesforce sharing rules will be ignored when attempting to find duplicate records for this scenario.  If you&apos;re not currently using security for Accounts, Contacts or Leads, this option will have no effect. --></help>
+    <label><!-- Bypass Security --></label>
+    <name>CRMfusionDBR101__Bypass_Security__c</name>
+</CustomFieldTranslation>

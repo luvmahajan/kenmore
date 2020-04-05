@@ -1,0 +1,9 @@
+{!Opportunity.OwnerFullName} is pursuing an opportunity to sell {!Opportunity.Products_Services__c} to Sears Commercial's {!Opportunity.Account} account.
+
+This opportunity is in the {!Opportunity.StageName} stage and is expected to close {!Opportunity.CloseDate}.
+
+You may contact {!Opportunity.OwnerFullName} at {!Opportunity.OwnerPhone} or {!Opportunity.OwnerEmail}.  {!User.FirstName} is based in {!User.City}, {!User.State} and part of {!User.Manager}'s district.
+
+You may find more information about this opportunity by clicking this link: {!Opportunity.Link}
+
+You may find more information about this and other open Commercial TV opportunities by clicking this link: https://na1.salesforce.com/00O30000004pUIC

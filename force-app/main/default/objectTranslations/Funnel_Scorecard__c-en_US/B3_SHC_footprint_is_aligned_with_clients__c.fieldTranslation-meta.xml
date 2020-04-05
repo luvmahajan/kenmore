@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Commercial:  We have the ability to deliver SHC products and services where the client conducts their business.  
+A&amp;E:  We have the ability to deliver SHC products, services and capabilities where the client conducts their business. --></help>
+    <label><!-- B3 SHC footprint is aligned with clients --></label>
+    <name>B3_SHC_footprint_is_aligned_with_clients__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6</masterLabel>
+        <translation><!-- 6 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

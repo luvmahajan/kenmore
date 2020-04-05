@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Account_is_40_Characters</fullName>
+    <active>false</active>
+    <description>Parent Account Name can not be greater than 40 characters.</description>
+    <errorConditionFormula>AND (IF(ISCHANGED(Automation_Control__c),
+   IF( CONTAINS(Automation_Control_Type__c, &quot;Validation&quot;),FALSE,TRUE),TRUE),
+ISBLANK(Parent.Name),
+LEN(  Parent.Name  ) &gt; 40
+)</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>The Parent Account Name can not be greater than 40 characters</errorMessage>
+</ValidationRule>

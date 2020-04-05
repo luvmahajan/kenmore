@@ -1,0 +1,14 @@
+<apex:page showHeader="false" Controller="UserBackPageController" sidebar="false" renderAs="pdf"  applyBodyTag="false">
+    <apex:form style="text-align:center" >
+        
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <apex:image id="theImage" value="{!'/servlet/servlet.FileDownload?file=0153A0000040BI6'}" />
+        <br/><br/><br/><br/><br/><br/>
+        
+        <apex:outputPanel style="font-size: 200%;" rendered="{!objUser.Name!=null}"><b>{!objUser.Name}</b><br/></apex:outputPanel>
+        <apex:outputPanel style="font-size: 125%;" rendered="{!objUser.Title!=null}">{!objUser.Title}<br/></apex:outputPanel>
+        <apex:outputPanel style="font-size: 125%;" rendered="{!objUser.Phone!=null}">{!objUser.Phone}<br/></apex:outputPanel>
+        <apex:outputPanel style="font-size: 125%;" rendered="{!objUser.Email!=null}">{!objUser.Email}</apex:outputPanel>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Thank You for purchasing Commercial Fitness products</name>
+    <style>freeForm</style>
+    <subject>Sears Commercial Fitness</subject>
+    <textOnly>Dear {!Contact.FirstName} {!Contact.LastName},
+ 
+Thank you for the opportunity to meet and discuss how Sears Commercial can benefit your company.  We look forward to becoming your commercial fitness destination.  Sears Commercial has been servicing businesses for over 60 years.  While other fitness distributors are closing their doors, we continue to expand our fitness offerings.  Sears Commercial features some of the top brands in the industry including FreeMotion and Nautilus Commercial.  Our incredible buying power and national scope allow us to provide very competitive pricing and outstanding service.  I look forward to the opportunity to present our fitness offerings to you. 
+ 
+Please do not hesitate to contact me with any questions you may have.
+ 
+Sincerely, 
+ </textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

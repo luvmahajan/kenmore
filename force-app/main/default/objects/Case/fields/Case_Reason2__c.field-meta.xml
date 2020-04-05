@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Reason2__c</fullName>
+    <description>Custom case reason field used as a dependent field for Type field dependency</description>
+    <externalId>false</externalId>
+    <label>Case Reason!</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Escalated</fullName>
+                <default>false</default>
+                <label>Escalated</label>
+            </value>
+            <value>
+                <fullName>Task Completed</fullName>
+                <default>false</default>
+                <label>Task Completed</label>
+            </value>
+            <value>
+                <fullName>Coaching</fullName>
+                <default>false</default>
+                <label>Coaching</label>
+            </value>
+            <value>
+                <fullName>System Issue Resolved</fullName>
+                <default>false</default>
+                <label>System Issue Resolved</label>
+            </value>
+            <value>
+                <fullName>System Issue Escalated</fullName>
+                <default>false</default>
+                <label>System Issue Escalated</label>
+            </value>
+            <value>
+                <fullName>Other Team Escalated</fullName>
+                <default>false</default>
+                <label>Other Team Escalated</label>
+            </value>
+            <value>
+                <fullName>New Feature Request</fullName>
+                <default>false</default>
+                <label>New Feature Request</label>
+            </value>
+            <value>
+                <fullName>Recorded</fullName>
+                <default>false</default>
+                <label>Recorded</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Duplicate Request</fullName>
+                <default>false</default>
+                <label>Duplicate Request</label>
+            </value>
+            <value>
+                <fullName>Information not readily available</fullName>
+                <default>false</default>
+                <label>Information not readily available</label>
+            </value>
+            <value>
+                <fullName>Don&#39;t know who to contact for information</fullName>
+                <default>false</default>
+                <label>Don&#39;t know who to contact for information</label>
+            </value>
+            <value>
+                <fullName>Lack of design skills</fullName>
+                <default>false</default>
+                <label>Lack of design skills</label>
+            </value>
+            <value>
+                <fullName>Lack of writing skills</fullName>
+                <default>false</default>
+                <label>Lack of writing skills</label>
+            </value>
+            <value>
+                <fullName>Don&#39;t know where to get asset</fullName>
+                <default>false</default>
+                <label>Don&#39;t know where to get asset</label>
+            </value>
+            <value>
+                <fullName>Asset not available</fullName>
+                <default>false</default>
+                <label>Asset not available</label>
+            </value>
+            <value>
+                <fullName>Need information</fullName>
+                <default>false</default>
+                <label>Need information</label>
+            </value>
+            <value>
+                <fullName>Don&#39;t know how to register</fullName>
+                <default>false</default>
+                <label>Don&#39;t know how to register</label>
+            </value>
+            <value>
+                <fullName>Don&#39;t know/forgot password</fullName>
+                <default>false</default>
+                <label>Don&#39;t know/forgot password</label>
+            </value>
+            <value>
+                <fullName>Don&#39;t have assets readily available</fullName>
+                <default>false</default>
+                <label>Don&#39;t have assets readily available</label>
+            </value>
+            <value>
+                <fullName>User error</fullName>
+                <default>false</default>
+                <label>User error</label>
+            </value>
+            <value>
+                <fullName>User never set up</fullName>
+                <default>false</default>
+                <label>User never set up</label>
+            </value>
+            <value>
+                <fullName>New product</fullName>
+                <default>false</default>
+                <label>New product</label>
+            </value>
+            <value>
+                <fullName>Division/category never loaded into Online Catalog</fullName>
+                <default>false</default>
+                <label>Division/category never loaded into Online Catalog</label>
+            </value>
+            <value>
+                <fullName>User does not want to manually add them</fullName>
+                <default>false</default>
+                <label>User does not want to manually add them</label>
+            </value>
+            <value>
+                <fullName>System issue/change</fullName>
+                <default>false</default>
+                <label>System issue/change</label>
+            </value>
+            <value>
+                <fullName>Bad data in SPIN</fullName>
+                <default>false</default>
+                <label>Bad data in SPIN</label>
+            </value>
+            <value>
+                <fullName>Bad data in MDM</fullName>
+                <default>false</default>
+                <label>Bad data in MDM</label>
+            </value>
+            <value>
+                <fullName>Double product images - no feature product links</fullName>
+                <default>false</default>
+                <label>Double product images - no feature product links</label>
+            </value>
+            <value>
+                <fullName>Catalog image sorting broken</fullName>
+                <default>false</default>
+                <label>Catalog image sorting broken</label>
+            </value>
+            <value>
+                <fullName>Sort by working incorrectly</fullName>
+                <default>false</default>
+                <label>Sort by working incorrectly</label>
+            </value>
+            <value>
+                <fullName>Forgot password</fullName>
+                <default>false</default>
+                <label>Forgot password</label>
+            </value>
+            <value>
+                <fullName>Need sub-up or replacement</fullName>
+                <default>false</default>
+                <label>Need sub-up or replacement</label>
+            </value>
+            <value>
+                <fullName>Need Kenmore comparable</fullName>
+                <default>false</default>
+                <label>Need Kenmore comparable</label>
+            </value>
+            <value>
+                <fullName>Availability provided</fullName>
+                <default>false</default>
+                <label>Availability provided</label>
+            </value>
+            <value>
+                <fullName>Clarified the instructions or process</fullName>
+                <default>false</default>
+                <label>Clarified the instructions or process</label>
+            </value>
+            <value>
+                <fullName>Freight lane opened/date corrected</fullName>
+                <default>false</default>
+                <label>Freight lane opened/date corrected</label>
+            </value>
+            <value>
+                <fullName>DCC back ordered - provided date</fullName>
+                <default>false</default>
+                <label>DCC back ordered - provided date</label>
+            </value>
+            <value>
+                <fullName>RRC back ordered - provided date to RRC</fullName>
+                <default>false</default>
+                <label>RRC back ordered - provided date to RRC</label>
+            </value>
+            <value>
+                <fullName>Easy order - expedited</fullName>
+                <default>false</default>
+                <label>Easy order - expedited</label>
+            </value>
+            <value>
+                <fullName>Date corrected</fullName>
+                <default>false</default>
+                <label>Date corrected</label>
+            </value>
+            <value>
+                <fullName>Discontinued item - provided status</fullName>
+                <default>false</default>
+                <label>Discontinued item - provided status</label>
+            </value>
+            <value>
+                <fullName>Routing/open/date corrected</fullName>
+                <default>false</default>
+                <label>Routing/open/date corrected</label>
+            </value>
+            <value>
+                <fullName>Routing/full/not corrected</fullName>
+                <default>false</default>
+                <label>Routing/full/not corrected</label>
+            </value>
+            <value>
+                <fullName>MDO/opened/date corrected</fullName>
+                <default>false</default>
+                <label>MDO/opened/date corrected</label>
+            </value>
+            <value>
+                <fullName>Date cannot be changed</fullName>
+                <default>false</default>
+                <label>Date cannot be changed</label>
+            </value>
+            <value>
+                <fullName>Order status provided</fullName>
+                <default>false</default>
+                <label>Order status provided</label>
+            </value>
+            <value>
+                <fullName>Zip code status provided</fullName>
+                <default>false</default>
+                <label>Zip code status provided</label>
+            </value>
+            <value>
+                <fullName>System issue/sent to IT</fullName>
+                <default>false</default>
+                <label>System issue/sent to IT</label>
+            </value>
+            <value>
+                <fullName>System issue/sent to DOS support</fullName>
+                <default>false</default>
+                <label>System issue/sent to DOS support</label>
+            </value>
+            <value>
+                <fullName>System issue/sent to hybrid support</fullName>
+                <default>false</default>
+                <label>System issue/sent to hybrid support</label>
+            </value>
+            <value>
+                <fullName>Requested updated forecast</fullName>
+                <default>false</default>
+                <label>Requested updated forecast</label>
+            </value>
+            <value>
+                <fullName>Provided product specification details</fullName>
+                <default>false</default>
+                <label>Provided product specification details</label>
+            </value>
+            <value>
+                <fullName>New product declined</fullName>
+                <default>false</default>
+                <label>New product declined</label>
+            </value>
+            <value>
+                <fullName>Forwarded to phase II</fullName>
+                <default>false</default>
+                <label>Forwarded to phase II</label>
+            </value>
+            <value>
+                <fullName>Added requirements to the road map</fullName>
+                <default>false</default>
+                <label>Added requirements to the road map</label>
+            </value>
+            <value>
+                <fullName>Configured a solution</fullName>
+                <default>false</default>
+                <label>Configured a solution</label>
+            </value>
+            <value>
+                <fullName>Referenced an existing Solution</fullName>
+                <default>false</default>
+                <label>Referenced an existing Solution</label>
+            </value>
+            <value>
+                <fullName>Setup corrected</fullName>
+                <default>false</default>
+                <label>Setup corrected</label>
+            </value>
+            <value>
+                <fullName>Uploaded your data</fullName>
+                <default>false</default>
+                <label>Uploaded your data</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>SAP System Product Issues</controllingFieldValue>
+            <controllingFieldValue>Marketing Portal</controllingFieldValue>
+            <controllingFieldValue>Change Requests</controllingFieldValue>
+            <controllingFieldValue>Account Creation</controllingFieldValue>
+            <controllingFieldValue>Password Reset</controllingFieldValue>
+            <controllingFieldValue>Missing Products</controllingFieldValue>
+            <controllingFieldValue>Missing Descriptions</controllingFieldValue>
+            <controllingFieldValue>New User</controllingFieldValue>
+            <controllingFieldValue>Incorrect Information Displaying</controllingFieldValue>
+            <controllingFieldValue>New Feature Request</controllingFieldValue>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <controllingFieldValue>SAP Issue</controllingFieldValue>
+            <controllingFieldValue>New Product Request</controllingFieldValue>
+            <controllingFieldValue>RFP Information Request</controllingFieldValue>
+            <controllingFieldValue>RFP Service Request</controllingFieldValue>
+            <controllingFieldValue>Asset Request</controllingFieldValue>
+            <controllingFieldValue>General SAP Question</controllingFieldValue>
+            <controllingFieldValue>Product Information</controllingFieldValue>
+            <controllingFieldValue>Online Catalog Password Reset</controllingFieldValue>
+            <controllingFieldValue>System Issue</controllingFieldValue>
+            <controllingFieldValue>Basic SF Question</controllingFieldValue>
+            <controllingFieldValue>Reports/Dashboards</controllingFieldValue>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP System Product Issues</controllingFieldValue>
+            <controllingFieldValue>New Product Request</controllingFieldValue>
+            <controllingFieldValue>Product Information</controllingFieldValue>
+            <valueName>Need sub-up or replacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP System Product Issues</controllingFieldValue>
+            <controllingFieldValue>New Product Request</controllingFieldValue>
+            <controllingFieldValue>Product Information</controllingFieldValue>
+            <valueName>Need Kenmore comparable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing Portal</controllingFieldValue>
+            <controllingFieldValue>Asset Request</controllingFieldValue>
+            <valueName>Don&#39;t know where to get asset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing Portal</controllingFieldValue>
+            <valueName>Don&#39;t know how to register</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing Portal</controllingFieldValue>
+            <valueName>Don&#39;t know/forgot password</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing Portal</controllingFieldValue>
+            <valueName>Don&#39;t have assets readily available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Password Reset</controllingFieldValue>
+            <valueName>Escalated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Password Reset</controllingFieldValue>
+            <controllingFieldValue>SAP Issue</controllingFieldValue>
+            <controllingFieldValue>General SAP Question</controllingFieldValue>
+            <valueName>Task Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Missing Products</controllingFieldValue>
+            <valueName>New product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Missing Products</controllingFieldValue>
+            <valueName>Division/category never loaded into Online Catalog</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Missing Descriptions</controllingFieldValue>
+            <valueName>User does not want to manually add them</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Missing Descriptions</controllingFieldValue>
+            <valueName>System issue/change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incorrect Information Displaying</controllingFieldValue>
+            <valueName>Bad data in SPIN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incorrect Information Displaying</controllingFieldValue>
+            <valueName>Bad data in MDM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incorrect Information Displaying</controllingFieldValue>
+            <valueName>Double product images - no feature product links</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Feature Request</controllingFieldValue>
+            <valueName>Recorded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Feature Request</controllingFieldValue>
+            <valueName>Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Feature Request</controllingFieldValue>
+            <valueName>Duplicate Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Availability provided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Clarified the instructions or process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Freight lane opened/date corrected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>DCC back ordered - provided date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>RRC back ordered - provided date to RRC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Easy order - expedited</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Date corrected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Discontinued item - provided status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Routing/open/date corrected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Routing/full/not corrected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>MDO/opened/date corrected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Date cannot be changed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Order status provided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Zip code status provided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>System issue/sent to IT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>System issue/sent to DOS support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>System issue/sent to hybrid support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Requested updated forecast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Provided product specification details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>New product declined</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Forwarded to phase II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Added requirements to the road map</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Configured a solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Referenced an existing Solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Setup corrected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inventory Replenishment</controllingFieldValue>
+            <valueName>Uploaded your data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP Issue</controllingFieldValue>
+            <controllingFieldValue>General SAP Question</controllingFieldValue>
+            <valueName>Coaching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP Issue</controllingFieldValue>
+            <controllingFieldValue>General SAP Question</controllingFieldValue>
+            <valueName>System Issue Resolved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP Issue</controllingFieldValue>
+            <controllingFieldValue>General SAP Question</controllingFieldValue>
+            <valueName>System Issue Escalated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP Issue</controllingFieldValue>
+            <controllingFieldValue>General SAP Question</controllingFieldValue>
+            <valueName>Other Team Escalated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFP Information Request</controllingFieldValue>
+            <valueName>Information not readily available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFP Information Request</controllingFieldValue>
+            <valueName>Don&#39;t know who to contact for information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFP Service Request</controllingFieldValue>
+            <valueName>Lack of design skills</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFP Service Request</controllingFieldValue>
+            <valueName>Lack of writing skills</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Request</controllingFieldValue>
+            <valueName>Asset not available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General SAP Question</controllingFieldValue>
+            <valueName>New Feature Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Online Catalog Password Reset</controllingFieldValue>
+            <valueName>User error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Online Catalog Password Reset</controllingFieldValue>
+            <valueName>User never set up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Online Catalog Password Reset</controllingFieldValue>
+            <valueName>Forgot password</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Issue</controllingFieldValue>
+            <valueName>Catalog image sorting broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System Issue</controllingFieldValue>
+            <valueName>Sort by working incorrectly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <valueName>Need information</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

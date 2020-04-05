@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Hospitality_Telesales_AM_Queue_owner_change_V_2</fullName>
+        <description>Hospitality Telesales-AM Queue owner change V.2</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Lead_Email_Templates/User_Lead_Assignment_Notification_V2</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_of_Idle_Lead</fullName>
+        <description>Notification of Idle Lead</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>gshaffe@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Lead_Email_Templates/Notification_of_Idle_Lead</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Queue_of_New_Lead_Assignment</fullName>
+        <description>Notify Queue of New Lead Assignment v2</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Lead_Email_Templates/Queue_Lead_Assignment_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Customer_Status_Field</fullName>
+        <field>Reasons_For_Not_Working_With_SC__c</field>
+        <literalValue>Working with a competition</literalValue>
+        <name>Customer Status Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Do_not_map_Disqualified_Leads</fullName>
+        <description>Do not map a lead will change to true if the lead status = disqualified.</description>
+        <field>FN__Do_Not_Map__c</field>
+        <literalValue>1</literalValue>
+        <name>Do not map Disqualified Leads</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_to_Sales_Qualified</fullName>
+        <description>Lead Status updates to Sales Qualified if the qualification criteria are complete.</description>
+        <field>Status</field>
+        <literalValue>Sales Qualified Lead</literalValue>
+        <name>Field Update to Sales Qualified</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Has_Notes</fullName>
+        <field>Has_Notes__c</field>
+        <formula>&quot;No Notes&quot;</formula>
+        <name>Has_Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IST_Original_Owner</fullName>
+        <description>Shows the IST Team member that originally took ownership of the lead.</description>
+        <field>IST_Original_Owner__c</field>
+        <formula>Owner:User.FirstName &amp; &quot; &quot; &amp; Owner:User.LastName</formula>
+        <name>IST Original Owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IST_Owner_Change</fullName>
+        <description>Populates queue name when a lead is originally assigned to Inside Sales</description>
+        <field>IST_Owned__c</field>
+        <formula>Owner:Queue.QueueName</formula>
+        <name>IST Owner Change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Indust_Update_Agriculture_Fores</fullName>
+        <field>Industry</field>
+        <literalValue>Agriculture, Forestry, Fishing &amp; Hunting</literalValue>
+        <name>Lead Indust Update - Agriculture, Fores</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industr_Update_Management_of_Comp</fullName>
+        <field>Industry</field>
+        <literalValue>Management of Companies and Enterprises</literalValue>
+        <name>Lead Industr Update - Management of Comp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Accomodation_and</fullName>
+        <field>Industry</field>
+        <literalValue>Accommodation and Food Services</literalValue>
+        <name>Lead Industry Update - Accomodation and</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Administrative</fullName>
+        <field>Industry</field>
+        <literalValue>Administrative &amp; Support &amp; Waste Mngment</literalValue>
+        <name>Lead Industry Update - Administrative</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Arts_Entertain</fullName>
+        <field>Industry</field>
+        <literalValue>Arts, Entertainment, and Recreation</literalValue>
+        <name>Lead Industry Update - Arts, Entertain</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Construction</fullName>
+        <field>Industry</field>
+        <literalValue>Construction</literalValue>
+        <name>Lead Industry Update - Construction</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Educational_Ser</fullName>
+        <field>Industry</field>
+        <literalValue>Educational Services</literalValue>
+        <name>Lead Industry Update - Educational Ser</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Finance_Insuran</fullName>
+        <field>Industry</field>
+        <literalValue>Finance and Insurance</literalValue>
+        <name>Lead Industry Update - Finance &amp; Insuran</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Health_Care_So</fullName>
+        <field>Industry</field>
+        <literalValue>Health Care and Social Assistance</literalValue>
+        <name>Lead Industry Update - Health Care &amp; So</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Information</fullName>
+        <field>Industry</field>
+        <literalValue>Information</literalValue>
+        <name>Lead Industry Update - Information</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Manufacturing</fullName>
+        <field>Industry</field>
+        <literalValue>Manufacturing</literalValue>
+        <name>Lead Industry Update - Manufacturing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Mining</fullName>
+        <field>Industry</field>
+        <literalValue>Mining</literalValue>
+        <name>Lead Industry Update - Mining</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Other_Services</fullName>
+        <field>Industry</field>
+        <literalValue>Other Services (except Public Admin)</literalValue>
+        <name>Lead Industry Update - Other Services</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Professional_Sc</fullName>
+        <field>Industry</field>
+        <literalValue>Professional, Scientific, and Technical</literalValue>
+        <name>Lead Industry Update - Professional, Sc</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Public_Admin</fullName>
+        <field>Industry</field>
+        <literalValue>Public Administration</literalValue>
+        <name>Lead Industry Update - Public Admin</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Real_Estate_Re</fullName>
+        <field>Industry</field>
+        <literalValue>Real Estate and Rental and Leasing</literalValue>
+        <name>Lead Industry Update - Real Estate &amp; Re</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Retail_Trade</fullName>
+        <field>Industry</field>
+        <literalValue>Retail Trade</literalValue>
+        <name>Lead Industry Update - Retail Trade</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Transportation</fullName>
+        <field>Industry</field>
+        <literalValue>Transportation and Warehousing</literalValue>
+        <name>Lead Industry Update - Transportation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Utilities</fullName>
+        <field>Industry</field>
+        <literalValue>Utilities</literalValue>
+        <name>Lead Industry Update - Utilities</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Industry_Update_Wholesale_Trade</fullName>
+        <field>Industry</field>
+        <literalValue>Wholesale Trade</literalValue>
+        <name>Lead Industry Update - Wholesale Trade</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Accomodation_and_Fo</fullName>
+        <field>Sector__c</field>
+        <literalValue>Accommodation and Food Services</literalValue>
+        <name>Lead Sector Update - Accomodation and Fo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Administrative_and</fullName>
+        <field>Sector__c</field>
+        <literalValue>Administrative and Support and Waste Management and Remediation Services</literalValue>
+        <name>Lead Sector Update - Administrative and</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Agriculture_Forest</fullName>
+        <field>Sector__c</field>
+        <literalValue>Agriculture, Forestry, Fishing and Hunting</literalValue>
+        <name>Lead Sector Update - Agriculture, Forest</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Arts_Entertainment</fullName>
+        <field>Sector__c</field>
+        <literalValue>Arts, Entertainment, and Recreation</literalValue>
+        <name>Lead Sector Update - Arts, Entertainment</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Construction</fullName>
+        <field>Sector__c</field>
+        <literalValue>Construction</literalValue>
+        <name>Lead Sector Update - Construction</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Educational_Service</fullName>
+        <field>Sector__c</field>
+        <literalValue>Educational Services</literalValue>
+        <name>Lead Sector Update - Educational Service</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Finance_and_Insuran</fullName>
+        <field>Sector__c</field>
+        <literalValue>Finance and Insurance</literalValue>
+        <name>Lead Sector Update - Finance and Insuran</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Health_Care_and_Soc</fullName>
+        <field>Sector__c</field>
+        <literalValue>Health Care and Social Assistance</literalValue>
+        <name>Lead Sector Update - Health Care and Soc</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Information</fullName>
+        <field>Sector__c</field>
+        <literalValue>Information</literalValue>
+        <name>Lead Sector Update - Information</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Management_of_Compa</fullName>
+        <field>Sector__c</field>
+        <literalValue>Management of Companies and Enterprises</literalValue>
+        <name>Lead Sector Update - Management of Compa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Manufacturing</fullName>
+        <field>Sector__c</field>
+        <literalValue>Manufacturing</literalValue>
+        <name>Lead Sector Update - Manufacturing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Mining</fullName>
+        <field>Sector__c</field>
+        <literalValue>Mining</literalValue>
+        <name>Lead Sector Update - Mining</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Other_Services_exc</fullName>
+        <field>Sector__c</field>
+        <literalValue>Other Services (except Public Administration)</literalValue>
+        <name>Lead Sector Update - Other Services (exc</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Professional_Scien</fullName>
+        <field>Sector__c</field>
+        <literalValue>Professional, Scientific, and Technical Services</literalValue>
+        <name>Lead Sector Update - Professional, Scien</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Public_Administrati</fullName>
+        <field>Sector__c</field>
+        <literalValue>Public Administration</literalValue>
+        <name>Lead Sector Update - Public Administrati</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Real_Estate_and_Ren</fullName>
+        <field>Sector__c</field>
+        <literalValue>Real Estate and Rental and Leasing</literalValue>
+        <name>Lead Sector Update - Real Estate and Ren</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Retail_Trade</fullName>
+        <field>Sector__c</field>
+        <literalValue>Retail Trade</literalValue>
+        <name>Lead Sector Update - Retail Trade</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Transportation_and</fullName>
+        <field>Sector__c</field>
+        <literalValue>Transportation and Warehousing</literalValue>
+        <name>Lead Sector Update - Transportation and</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Utilities</fullName>
+        <field>Sector__c</field>
+        <literalValue>Utilities</literalValue>
+        <name>Lead Sector Update - Utilities</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sector_Update_Wholesale_Trade</fullName>
+        <field>Sector__c</field>
+        <literalValue>Wholesale Trade</literalValue>
+        <name>Lead Sector Update - Wholesale Trade</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Source_to_Account_Source</fullName>
+        <description>Used for mapping lead source to account source</description>
+        <field>Lead_Source_for_Account__c</field>
+        <formula>TEXT(LeadSource)</formula>
+        <name>Lead Source to Account Source</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Status_Update</fullName>
+        <description>update lead status to Qualified</description>
+        <field>Status</field>
+        <literalValue>Qualified</literalValue>
+        <name>Lead Status Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Manager_Email_Update</fullName>
+        <field>Manager_Email__c</field>
+        <formula>Owner:User.Manager.Email</formula>
+        <name>Manager Email Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_US_as_Country</fullName>
+        <field>Country</field>
+        <formula>&quot;US&quot;</formula>
+        <name>Populate US as Country</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_eNewsletter_False</fullName>
+        <field>Send_eNewsletter__c</field>
+        <literalValue>0</literalValue>
+        <name>Send eNewsletter = False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Telesales_Owned</fullName>
+        <description>Populates queue name when a lead is originally assigned to the Telesales Team</description>
+        <field>Telesales_Owned__c</field>
+        <formula>Owner:Queue.QueueName</formula>
+        <name>Telesales Owned</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Telesales_Score_45_Owner_Inside_Sale</fullName>
+        <description>If the Campaign = Inactive Customers Reactivation Campaign May 2013
+and the Fusion Score is &gt;45 the lead reassignes to Inside Sales</description>
+        <field>OwnerId</field>
+        <lookupValue>Inside_Sales_Team</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Telesales Score &gt; 45 - Owner Inside Sale</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>US_Prepopulate_as_Country</fullName>
+        <description>US to Prepopulate</description>
+        <field>Country</field>
+        <name>US Prepopulate as Country</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>US_to_Prepopulate_in_Country_Field</fullName>
+        <description>US Prepopulated in the Country Field</description>
+        <field>Country</field>
+        <formula>&quot;US&quot;</formula>
+        <name>US to Prepopulate in Country Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lead_Conversion_Date_Time</fullName>
+        <field>Lead_Conversion_Date_Time__c</field>
+        <formula>NOW()</formula>
+        <name>Update Lead Conversion Date Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Lead - Add Notes - Update</fullName>
+        <actions>
+            <name>Has_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Add notes to list view workaround</description>
+        <formula>AND( IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE), ISCHANGED(Notes__c),  NOT(ISBLANK(Notes__c)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Converted - Update Lead Conversion Date Time</fullName>
+        <actions>
+            <name>Update_Lead_Conversion_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE), IsConverted = true, PRIORVALUE(IsConverted) = false )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Country Prepopulates to US - Update</fullName>
+        <actions>
+            <name>US_to_Prepopulate_in_Country_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>US will prepopulate in the Country Field</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  OR( (Country = &quot;&quot;), (Country = &quot;USA&quot;)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Do not map Disqualified Leads - Update</fullName>
+        <actions>
+            <name>Do_not_map_Disqualified_Leads</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Do not map = True if lead has been Disqualified.</description>
+        <formula>AND( IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE), ISCHANGED(Status),  ISPICKVAL(Status, &quot;Disqualified&quot;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - IST Original Owner - Update</fullName>
+        <actions>
+            <name>IST_Original_Owner</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>WFR:  Hidden field that shows the IST Team member that the lead was reassigned to from the queue.</description>
+        <formula>AND(ISCHANGED(OwnerId),PRIORVALUE(OwnerId)=&quot;00G300000030Ezs&quot;, LEFT( Owner:User.UserRoleId,15)=&quot;00E30000001bqfe&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - IST Owner Change - Update</fullName>
+        <actions>
+            <name>IST_Owner_Change</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>(OwnerId)=&quot;00G300000030Ezs&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Map Lead Source to Account Source - Update</fullName>
+        <actions>
+            <name>Lead_Source_to_Account_Source</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Maps Lead Source to Account Source during lead conversion</description>
+        <formula>AND( IF(ISCHANGED(Automation_Control__c),  IF( CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;),FALSE,TRUE),TRUE),      OR(          ISNEW(),          ISCHANGED(LeadSource)),      NOT(ISBLANK(TEXT(LeadSource))))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Notify AM when Queued for Hospitality Telesales V%2E2 - Email</fullName>
+        <actions>
+            <name>Hospitality_Telesales_AM_Queue_owner_change_V_2</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Hospitality Telesales - AM&#39;s</value>
+        </criteriaItems>
+        <description>Special Email notification when a lead is assigned to the Hospitality Telesales - AM&#39;s queue</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Populate Manager Email - Update</fullName>
+        <actions>
+            <name>Manager_Email_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Populates the Users Manager Email address in order to send notification to Managers.</description>
+        <formula>AND( IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE), ISCHANGED(OwnerId),  NOT(ISBLANK(OwnerId)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Set Status to Sales Qualified - Field Update</fullName>
+        <actions>
+            <name>Field_Update_to_Sales_Qualified</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Lead Status auto-updates to Sales Qualified if the qualification questions are completed.</description>
+        <formula>AND(IF(ISCHANGED(Automation_Control__c), 
+IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE), 
+(ISPICKVAL(Do_we_understand_the_customer_s_buying_p__c, &quot;Yes&quot;)), 
+(ISPICKVAL(Speaking_with_someone_with_influence__c, &quot;Yes&quot;)), 
+(ISPICKVAL(Clear_interest_in_the_next_step__c, &quot;Yes&quot;)), 
+(NOT(ISPICKVAL(Are_there_clear_red_flags__c, &quot;&quot;))), 
+(NOT(ISBLANK(Qualification_Debrief__c))), 
+(NOT(ISPICKVAL(Status, &quot;Disqualified&quot;))), 
+(NOT(ISPICKVAL(Status, &quot;Existing&quot;))), 
+(NOT(ISPICKVAL(Status, &quot;Recycled&quot;))), 
+(NOT(ISBLANK(Street))), 
+(NOT(ISBLANK(City))), 
+(NOT(ISBLANK(State))), 
+(NOT(ISBLANK(PostalCode))), 
+(NOT(ISBLANK(Country))), 
+(NOT(ISBLANK(Estimated_Opportunity_Amount__c))), 
+(NOT(ISPICKVAL(Industry, &quot;&quot;)))
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Telesales Owned - Update</fullName>
+        <actions>
+            <name>Telesales_Owned</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Populates the queue Telesales if originally owned by them.</description>
+        <formula>(OwnerId)=&quot;00G30000002zsCy&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Call_FLS_associate_to_offer_thanks_for_sending_a_lead</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Delegated</status>
+        <subject>Call FLS associate to offer thanks for sending a lead</subject>
+    </tasks>
+</Workflow>

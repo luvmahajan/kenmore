@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Disqualified --></label>
+    <name>Reason_Disqualified__c</name>
+    <picklistValues>
+        <masterLabel>Bad contact information (i.e. phone and email are non-functional)</masterLabel>
+        <translation><!-- Bad contact information (i.e. phone and email are non-functional) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer has explicitly requested that we stop contacting them</masterLabel>
+        <translation><!-- Customer has explicitly requested that we stop contacting them --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer is an unauthorized re-seller</masterLabel>
+        <translation><!-- Customer is an unauthorized re-seller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead has no needs and therefore would never be a customer (i.e. has absolutely no need for appliances or anything else we offer)</masterLabel>
+        <translation><!-- Lead has no needs and therefore would never be a customer (i.e. has absolutely no need for appliances or anything else we offer) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not a valid business partner</masterLabel>
+        <translation><!-- Not a valid business partner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

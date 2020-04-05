@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quotes_to_be_approved</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>Purchase_Number__c</columns>
+    <columns>SBQQ__Account__c</columns>
+    <columns>SBQQ__Status__c</columns>
+    <columns>SBQQ__Opportunity2__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>SBQQ__SalesRep__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SBQQ__Status__c</field>
+        <operation>equals</operation>
+        <value>Approval</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>SBQQ__Quote__c.Commercial_Flow_Business</value>
+    </filters>
+    <label>Quotes to be approved</label>
+    <sharedTo>
+        <group>Margin_Approvers</group>
+    </sharedTo>
+</ListView>

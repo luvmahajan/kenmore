@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Combination of Rebuild Number and Object Type to create a unique key for the row to prevent corruption from multiple jobs being started simultaneously. Format: &lt;Rebuild Number&gt;_&lt;Object Name&gt;. --></help>
+    <label><!-- Batch Set Row Key --></label>
+    <name>CRMfusionDBR101__Batch_Set_Row_Key__c</name>
+</CustomFieldTranslation>

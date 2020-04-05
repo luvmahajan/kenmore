@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment type --></label>
+    <name>Payment_type__c</name>
+    <picklistValues>
+        <masterLabel>Client Paid Out of Warranty</masterLabel>
+        <translation><!-- Client Paid Out of Warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Client Service Contract</masterLabel>
+        <translation><!-- Client Service Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concession</masterLabel>
+        <translation><!-- Concession --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Paid Out of Warranty</masterLabel>
+        <translation><!-- Customer Paid Out of Warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM In Warranty</masterLabel>
+        <translation><!-- OEM In Warranty --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The date the PMO Distributes to Support Teams --></help>
+    <label><!-- BRD Support Distributed Date --></label>
+    <name>BRD_Support_Distributed_Date__c</name>
+</CustomFieldTranslation>

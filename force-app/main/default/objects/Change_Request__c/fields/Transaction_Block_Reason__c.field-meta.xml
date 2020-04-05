@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_Block_Reason__c</fullName>
+    <description>01	Not in SF
+02	No activity &gt;2yrs
+03	Credit issues
+04	Duplicate Account
+05	Out of Business
+06	Expired Contract
+07	Ineligible Reseller
+08	See Account Notes</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Account_Name__r.Transaction_Block_Reason__c)</formula>
+    <inlineHelpText>01	Not in SF
+02	No activity &gt;2yrs
+03	Credit issues
+04	Duplicate Account
+05	Out of Business
+06	Expired Contract
+07	Ineligible Reseller
+08	See Account Notes</inlineHelpText>
+    <label>Transaction Block Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

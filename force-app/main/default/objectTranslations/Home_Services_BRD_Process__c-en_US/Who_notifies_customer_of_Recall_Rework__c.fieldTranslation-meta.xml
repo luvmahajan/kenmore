@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Who notifies customer of Recall/Rework --></label>
+    <name>Who_notifies_customer_of_Recall_Rework__c</name>
+    <picklistValues>
+        <masterLabel>Client</masterLabel>
+        <translation><!-- Client --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sears</masterLabel>
+        <translation><!-- Sears --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

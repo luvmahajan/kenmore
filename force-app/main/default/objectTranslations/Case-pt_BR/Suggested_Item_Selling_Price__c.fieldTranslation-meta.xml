@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Amount should be equal to either the amount of revenue expected to be generated in the coming 12 months or the total amount of the project, whichever is less. --></help>
+    <label><!-- Suggested Item Selling Price --></label>
+    <name>Suggested_Item_Selling_Price__c</name>
+</CustomFieldTranslation>

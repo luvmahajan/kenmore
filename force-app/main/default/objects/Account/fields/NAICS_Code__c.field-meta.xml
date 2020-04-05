@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NAICS_Code__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Industry,
+ &quot;Administrative and Support and Waste Management and Remediation Services&quot;, &quot;56&quot;,
+ &quot;Agriculture, Forestry, Fishing &amp; Hunting&quot;, &quot;11&quot;,
+ &quot;Arts, Entertainment, and Recreation&quot;, &quot;71&quot;,
+ &quot;Builders&quot;, &quot;23&quot;,  
+ &quot;Education&quot;, &quot;61&quot;, 
+ &quot;Healthcare &amp; Social Assistance&quot;, &quot;62&quot;,
+ &quot;Information&quot;, &quot;51&quot;,
+ &quot;Insurance Companies&quot;, &quot;52&quot;,
+ &quot;Lodging&quot;, &quot;72&quot;,
+ &quot;Management of Companies and Enterprises&quot;, &quot;55&quot;,
+ &quot;Manufacturing&quot;, &quot;337110&quot;,
+ &quot;Military&quot;, &quot;928810&quot;,
+ &quot;Mining, Quarrying, and Oil and Gas&quot;, &quot;21&quot;,
+ &quot;Other Services (except Public Administration)&quot;, &quot;81&quot;,
+ &quot;Professional, Scientific, and Technical Services&quot;, &quot;54&quot;,
+ &quot;Property Management&quot;, &quot;53&quot;,
+ &quot;Retail Trade&quot;, &quot;44-45&quot;,
+ &quot;Transportation and Warehousing&quot;, &quot;48-49&quot;,
+ &quot;Utilities&quot;, &quot;22&quot;,
+ &quot;Wholesale Trade&quot;, &quot;42&quot;,
+ &quot;Government&quot;, &quot;92&quot;,
+ &quot;23&quot;
+)</formula>
+    <label>NAICS Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SelectAppropriateSubjectTask</fullName>
+    <active>false</active>
+    <description>Users must select &quot;To-Do&quot; as subject line for tasks created.</description>
+    <errorConditionFormula>AND(CreatedBy.Username !=&quot;integration.user@searshc.com&quot;, Subject!=&quot;To-Do&quot;)</errorConditionFormula>
+    <errorMessage>Please select To-Do as your subject.</errorMessage>
+</ValidationRule>

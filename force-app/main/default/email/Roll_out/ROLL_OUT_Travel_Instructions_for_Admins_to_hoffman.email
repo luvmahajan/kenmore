@@ -1,0 +1,41 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<FONT face=Arial,Sans-Serif>Dear {!Contact.FirstName},</FONT>]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<P><FONT face=Arial,Sans-Serif>Your&nbsp;classroom training session for Salesforce.com is scheduled to begin at 2pm on Monday, July 26th.&nbsp; On Tuesday, July 27th, we will conclude classroom training at 12noon with box lunches provided.</FONT></P>
+<P><FONT face=Arial,Sans-Serif></FONT>&nbsp;</P>
+<P><FONT face=Arial,Sans-Serif>Your hotel is being reserved in Hoffman Estates as part of a group reservation.&nbsp; You will receive confirmation of your hotel stay in the coming week.</FONT></P>
+<P><FONT face=Arial,Sans-Serif></FONT>&nbsp;</P>
+<P><FONT face=Arial,Sans-Serif>Please consider the following points when making travel reservations:</FONT></P>
+<OL>
+<LI><FONT face=Arial,Sans-Serif>Airfare needs to be booked at the most economical rate possible, and</FONT> 
+<LI><FONT face=Arial,Sans-Serif>Rental cars should not be reserved or rented.&nbsp; Transportation to/from O'hare airport will be coordinated via shared taxis and transportation between the hotel and SHC headquarters will be provided by the hotel.</FONT></LI></OL>
+<P><FONT face=Arial,Sans-Serif>Please book your airfare by Monday, July 12th.&nbsp; Instructions to book your travel are provided below:</FONT></P>
+<P><FONT face=Arial,Sans-Serif></FONT>&nbsp;</P>
+<P><SPAN style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt"><FONT color=#000000><FONT face=Arial,Sans-Serif><FONT size=3><STRONG>STEP 1:</STRONG>&nbsp; Click Below to access the Travel Portal<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></FONT></FONT></FONT></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Arial; COLOR: navy"><A href="https://sso.searshc.com/auth.php?p=ccr"><FONT color=#3333ff face=Arial,Sans-Serif>https://sso.searshc.com/auth.php?p=ccr</FONT></A><FONT color=#000000><FONT face=Arial,Sans-Serif><SPAN style="mso-spacerun: yes"><FONT color=#3333ff>&nbsp;</FONT>&nbsp; </SPAN>(use your enterprise ID and password)<o:p></o:p></FONT></FONT></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt"><FONT color=#000000 face=Arial,Sans-Serif></FONT></SPAN>&nbsp;</P>
+<P><SPAN style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt"><FONT color=#000000><FONT face=Arial,Sans-Serif><FONT size=3><STRONG>STEP 2:</STRONG>&nbsp; Click on the “Travel” Link in the Top Tool Bar *(very important!)</FONT></FONT></FONT></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt"><FONT color=#000000 face=Arial,Sans-Serif><o:p></o:p></FONT></SPAN>&nbsp;</P>
+<P><SPAN style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt"><FONT color=#000000><FONT face=Arial,Sans-Serif><FONT size=3><STRONG>STEP 3:</STRONG>&nbsp; Click on "Meetings" Link in the Top Tool Bar </FONT></FONT></FONT></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt"><FONT color=#000000 face=Arial,Sans-Serif><o:p></o:p></FONT></SPAN>&nbsp;</P>
+<P><SPAN style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt"><FONT color=#000000><FONT face=Arial,Sans-Serif><FONT size=3><STRONG>STEP 4:</STRONG>&nbsp; Select the Meeting that you have been invited for <U>(Salesforce.com for Sales Management)</U> to begin the registration and travel booking process.<o:p></o:p></FONT></FONT></FONT></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt"><FONT color=#000000 face=Arial,Sans-Serif></FONT></SPAN>&nbsp;</P>
+<P><SPAN style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt"><FONT color=#000000><FONT face=Arial,Sans-Serif><FONT size=3><STRONG>STEP 5:</STRONG>&nbsp; The Meeting Registration will now begin, please follow the steps as you will be prompted to book travel if needed.</FONT></FONT></FONT></SPAN></P>
+<P><SPAN style="FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10pt"><FONT color=#000000 face=Arial,Sans-Serif><o:p></o:p></FONT></SPAN>&nbsp;</P>
+<P><SPAN><FONT color=#000000 face=Arial,Sans-Serif>*It's very important that you click on the Travel and Meetings Link in the Top Tool Bar AND to select this particular meeting.&nbsp; If you book through the regular front page of the travel web site it will not pre-fill in the pertinent meeting OR billing information for this particular meeting.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>There is no way to reverse a charge if you do not follow these instructions.</FONT></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial"><FONT color=#000000><FONT face=Arial,Sans-Serif></FONT></FONT></SPAN>&nbsp;</P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial">Please accept my apology for the late delivery of these travel instructions.&nbsp; Your prompt action is appreciated.</SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial"></SPAN>&nbsp;</P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial"><FONT color=#000000><FONT face=Arial,Sans-Serif>Best,</FONT></FONT></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial">{!User.FirstName}</SPAN></P>
+<P>&nbsp;</P>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[<P align=center><SPAN style="FONT-FAMILY: Arial; COLOR: blue; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><A href="https://login.salesforce.com/"><FONT color=#606420 size=3 face=Arial,Sans-Serif>salesforce.com</FONT></A></SPAN><SPAN style="FONT-FAMILY: Arial; COLOR: #666666; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><BR></SPAN><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><FONT size=3 face=Arial,Sans-Serif>Sears Commercial has partnered with Salesforce.com to bring the world’s leading sales enablement technology to its Account Managers.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Click on the link above to login to Salesforce.com and begin seeing the positive impact in sales revenues which has been achieved by Salesforce.com customers across its base of over 77,500 companies and over 2,000,000 sales users.</FONT></SPAN></P>]]></td>
+</tr>
+</table>

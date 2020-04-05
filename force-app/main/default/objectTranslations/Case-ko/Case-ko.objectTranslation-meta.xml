@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>CSI Team</layout>
+        <sections>
+            <label><!-- CSI Team --></label>
+            <section>CSI Team</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Request --></label>
+            <section>Product Request</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label><!-- CSI Team --></label>
+            <section>CSI Team</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Expeditor --></label>
+            <section>Expeditor</section>
+        </sections>
+        <sections>
+            <label><!-- Inventory Replenishment Information --></label>
+            <section>Inventory Replenishment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing --></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label><!-- Product Manager Information --></label>
+            <section>Product Manager Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Chargeback</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Dispute/ Chargeback Details --></label>
+            <section>Dispute/ Chargeback Details</section>
+        </sections>
+        <sections>
+            <label><!-- Email Body --></label>
+            <section>Email Body</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Close Case Layout</layout>
+        <layoutType>CaseClose</layoutType>
+        <sections>
+            <label><!-- CSI Team --></label>
+            <section>CSI Team</section>
+        </sections>
+        <sections>
+            <label><!-- Temporarily Under Testing --></label>
+            <section>Temporarily Under Testing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed Intake Case</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Related Records --></label>
+            <section>Related Records</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Collections</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Email Body --></label>
+            <section>Email Body</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Credit</layout>
+        <sections>
+            <label><!-- Additional Credit Info --></label>
+            <section>Additional Credit Info</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Blue Tarp --></label>
+            <section>Blue Tarp</section>
+        </sections>
+        <sections>
+            <label><!-- CITI --></label>
+            <section>CITI</section>
+        </sections>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Check List --></label>
+            <section>Check List</section>
+        </sections>
+        <sections>
+            <label><!-- Dispute/ Chargeback Details --></label>
+            <section>Dispute/ Chargeback Details</section>
+        </sections>
+        <sections>
+            <label><!-- Email Body --></label>
+            <section>Email Body</section>
+        </sections>
+        <sections>
+            <label><!-- Recourse --></label>
+            <section>Recourse</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Success Special Requests</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Delivery Exception</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Inventory Replenishment Information --></label>
+            <section>Inventory Replenishment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Key Dates --></label>
+            <section>Key Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Related Records --></label>
+            <section>Related Records</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Expeditors</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>File Administration</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inside Sales</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inventory Replenishment</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Inventory Replenishment Information --></label>
+            <section>Inventory Replenishment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Invoice</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Email Body --></label>
+            <section>Email Body</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Marketing</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Product Request</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- New Product Request --></label>
+            <section>New Product Request</section>
+        </sections>
+        <sections>
+            <label><!-- Product Manager --></label>
+            <section>Product Manager</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Online Catalog</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Intake</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Inventory Replenishment Information --></label>
+            <section>Inventory Replenishment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Related Records --></label>
+            <section>Related Records</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>POD</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Info Needed --></label>
+            <section>Info Needed</section>
+        </sections>
+        <sections>
+            <label><!-- MDO info --></label>
+            <section>MDO info</section>
+        </sections>
+        <sections>
+            <label><!-- Order Summary --></label>
+            <section>Order Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Post/Pre Delivery</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Inventory Replenishment Information --></label>
+            <section>Inventory Replenishment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Key Dates --></label>
+            <section>Key Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Related Records --></label>
+            <section>Related Records</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pricing</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Manager --></label>
+            <section>Pricing Manager</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Product Manager Support</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Manager --></label>
+            <section>Product Manager</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SAP Support</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Salesforce.com Support</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Related Records --></label>
+            <section>Related Records</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sears Commercial Reporting</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sears Commercial Wiki</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Web Support</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Please attach a screenshot after saving the case when possible --></label>
+            <section>Please attach a screenshot after saving the case when possible</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Case Email --></label>
+        <name>Case_Email</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Close Case --></label>
+        <name>Close_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 2. Create Quote --></label>
+        <name>Create_Flow_Quote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Work record --></label>
+        <name>Create_Work_record</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- POD Customer Credit --></label>
+        <name>POD_Customer_Credit</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- POD MDO Request --></label>
+        <name>POD_MDO_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Backcharge Email --></label>
+        <name>POD_Not_Found</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- POD SOF Response --></label>
+        <name>POD_SOF_Response</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Compose Email --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Own Case --></label>
+        <name>Take_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 1. Opportunity --></label>
+        <name>X1_Opportunity</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Chargeback Record Type --></description>
+        <label><!-- Chargeback --></label>
+        <name>Chargeback</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed Intake Case --></label>
+        <name>Closed_Intake_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Credit Case Types --></description>
+        <label><!-- Credit Processing --></label>
+        <name>Credit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Credit Account Management --></label>
+        <name>Credit_Account_Management</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Customer Success Specialist Requests --></description>
+        <label><!-- Customer Success Specialist Requests --></label>
+        <name>Customer_Success_Specialist_Requests</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Delivery Exception Case --></description>
+        <label><!-- Delivery Exception --></label>
+        <name>Delivery_Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inside Sales --></label>
+        <name>Inside_Sales</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Inventory Replenishment --></description>
+        <label><!-- Inventory Replenishment --></label>
+        <name>Inventory_Replenishment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Invoicing --></label>
+        <name>Invoicing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Asset Request, General Inquiry, Marketing Portal, RFP Information Request, RFP Service Request, Other --></description>
+        <label><!-- Marketing --></label>
+        <name>Marketing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Accounts Payable and Vendor Forms, Account Status Admin, Account Status - Temporary, General Administration, New Account Completion, Online Onboarding, Pricing Attributes, Reporting Attributes, Tax Exemption Administration, Territory Updates, Other --></description>
+        <label><!-- Master Data (File Administration) --></label>
+        <name>Master_Data_File_Administration</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Incorrect Information Displaying, Missing Descriptions, Missing Products, New User, Online Catalog Password Reset, System Issue, Other --></description>
+        <label><!-- Online Catalog --></label>
+        <name>Online_Catalog</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For processing all new order requests --></description>
+        <label><!-- Order Intake --></label>
+        <name>Order_Intake</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- POD --></label>
+        <name>POD</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For all inquiries after product delivery i.e. Product Damage/Site Damage incidents, Billing Inquiries, etc. --></description>
+        <label><!-- Post-Delivery OM --></label>
+        <name>Post_Delivery_OM</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For all inquiries prior to product delivery i.e Cancellations, Quantity Changes, Date Changes etc. --></description>
+        <label><!-- Pre-Delivery OM --></label>
+        <name>Pre_Delivery_OM</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- KAP, Commercial List Price, Competitive Pricing Info --></description>
+        <label><!-- Pricing --></label>
+        <name>Pricing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- New Product Request, Product Information, SAP System Product Issues, Spec Sheet Support, Report Quality Issue --></description>
+        <label><!-- Product Manager Support --></label>
+        <name>Product_Manager_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Projects --></label>
+        <name>Projects</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Systems Admin, General Systems Questions, New Feature Requests, Password Reset, Systems Issues --></description>
+        <label><!-- Business Systems Support --></label>
+        <name>SAP_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Account Creation, Basic SF Question, Change Requests, Enhancement, New Feature Request, Reports/Dashboards, Request Bulk Update, Other --></description>
+        <label><!-- Salesforce.com Support --></label>
+        <name>Salesforce_com_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Sears Commercial Reporting --></description>
+        <label><!-- Sears Commercial Reporting --></label>
+        <name>Sears_Commercial_Reporting</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Customer Experience and Operations, Global Information, Products, Sales Team, Site Administration and Technical Issues, Support Services, Other --></description>
+        <label><!-- Sears Commercial Wiki --></label>
+        <name>Sears_Commercial_Wiki</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Report a technical issue, Publish or remove a product, Update product copy, Request Product Manuals, Other --></description>
+        <label><!-- Web Support --></label>
+        <name>Web_Support</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Field Required when Type = New Product Request --></errorMessage>
+        <name>Account_Required_for_New_Product_Request</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Type = Product Manager Support an Account Must be related to the Case. --></errorMessage>
+        <name>Account_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account is Required when Type = &quot;Inventory Replenishment&quot; --></errorMessage>
+        <name>Account_is_Required_for_Inventory_Rep</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Inventory Replenishment --></errorMessage>
+        <name>Delivery_Date_Req_when_Inventory_Repleni</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Product Information --></errorMessage>
+        <name>Desc_Num_Required_when_Product_Informati</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = SAP System Product Issues --></errorMessage>
+        <name>Descr_Required_when_SAP_System_Prodcut_I</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = New Product Request --></errorMessage>
+        <name>Estimated_D_Num_Required_when_New_Produc</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field Required when Type = New Product Request --></errorMessage>
+        <name>Feature_Required_for_New_Product_Request</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the case type is Report Quality Issue, then Item #, Contact, and Quantity are required. --></errorMessage>
+        <name>Field_req_for_Report_Quality_Issue_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the case type is Spec Sheet Support, then Item # is required. --></errorMessage>
+        <name>Field_req_for_Spec_Sheet_Support_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the case type is New Product Request, then Product is required. --></errorMessage>
+        <name>Fields_Req_For_Case_Type_New_Product_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the case type is Product Information, then Item #, Reason, and Zip code are required. --></errorMessage>
+        <name>Fields_Req_For_Case_Type_Product_Info</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field Required when Type = New Product Request
+Item #, Quantity Requested, Requested delivery date, Suggested Item Selling, Competitor --></errorMessage>
+        <name>Fields_Required_for_New_Product_Request</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the case type is SAP Support, then Item # is required. --></errorMessage>
+        <name>Fields_req_for_SAP_Support_Case_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Inventory Replenishment --></errorMessage>
+        <name>Item_Num_Required_when_Inventory_Repleni</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Product Information --></errorMessage>
+        <name>Item_Num_Required_when_Product_Informati</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = SAP System Product Issues --></errorMessage>
+        <name>Item_Num_Required_when_SAP_System</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = CSI Team --></errorMessage>
+        <name>Item_Number_Req_when_CSI_Team</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- MDO Status and Closed Reason are required for Closing this Case Type --></errorMessage>
+        <name>POD_Closed_Requirements</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field Required when Type = New Product Request --></errorMessage>
+        <name>Price_Required_for_New_Product_Request</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field Required when Type = New Product Request --></errorMessage>
+        <name>Prod_Avail_Type_Req_New_Product_Request</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Product Manager Support --></errorMessage>
+        <name>Product_Required_when_Product_Manager_Su</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field Required when Type = New Product Request --></errorMessage>
+        <name>Qty_Required_for_New_Product_Request</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = CSI Team --></errorMessage>
+        <name>Quantity_Req_when_CSI_Team</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Inventory Replenishment --></errorMessage>
+        <name>Quantity_Req_when_Inventory_Replenishmen</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- How the site was viewed AND the platform are required for the case type &quot;Report a Technical Issue&quot; --></errorMessage>
+        <name>Report_a_technical_issue</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = CSI Team --></errorMessage>
+        <name>Req_Del_Date_when_CSI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Item # is required for the case type &quot;Request Product Manuals&quot; --></errorMessage>
+        <name>Request_Product_Manuals_Item_Require</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- File Format is required for High Resolution Logo Request cases --></errorMessage>
+        <name>Require_File_Format_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Flyer or Brochure Name field is required for Collateral Customization cases --></errorMessage>
+        <name>Require_Flyer_or_Brochure_Name_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- New Feature Benefits field is required for new feature requests. --></errorMessage>
+        <name>Require_New_Feature_Benefits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Order Number and Printer fields are required for Status of Existing Order from Printer cases --></errorMessage>
+        <name>Require_Order_Number_and_Printer_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PID(s) or SAP Number(s) is required --></errorMessage>
+        <name>Require_PIDs_or_SAP_Numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- User ID is required for Password Reset Cases --></errorMessage>
+        <name>Require_User_ID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = CSI Team --></errorMessage>
+        <name>Ship_Order_Req_when_CSI_Team</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field Required when Type = New Product Request --></errorMessage>
+        <name>Type_of_Oppty_Requir_New_Product_Request</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only users assigned to Commercial Support can escalate to the CSI Team --></errorMessage>
+        <name>User_cannot_edit_escalate_to_CSI_Team</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Commercial Support users can escalate to Inventory Replenishment --></errorMessage>
+        <name>Users_cannnot_edit_Escalate_to_Inv_Repl</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Commercial Support users can escalate to product managers --></errorMessage>
+        <name>Users_cannnot_edit_Escalate_to_Prod_Mng</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = CSI Team --></errorMessage>
+        <name>Zip_Code_Req_when_CSI_Team</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Inventory Replenishment --></errorMessage>
+        <name>Zip_Code_Required_when_Inventory_Repleni</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Delete --></label>
+        <name>Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Take_Ownership --></label>
+        <name>takeownership__Take_Ownership</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Take_Ownership_Multi --></label>
+        <name>takeownership__Take_Ownership_Multi</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Closed_Case</name>
+        <subject><!-- Closed Case --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Please make the final Attempt to make contact with customer. The case will automatically be closed in 2 days --></description>
+        <name>Final_Call_Attempt</name>
+        <subject><!-- Final Call Attempt --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Finial Follow up on POD - Status to update to &quot;Back Charge MDO&quot; --></description>
+        <name>Finial_Follow_up</name>
+        <subject><!-- Finial Follow up --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- POD Follow Up --></description>
+        <name>POD_Follow_Up_Task</name>
+        <subject><!-- POD Follow Up Task --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Call MDO - Pending response from innoval --></description>
+        <name>POD_Requested_Call</name>
+        <subject><!-- POD Requested Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Post_Service_Call</name>
+        <subject><!-- Post Service Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Post-delivery call --></description>
+        <name>Post_delivery_call</name>
+        <subject><!-- Post-delivery call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Task reminder to call the customer re: pending delivery --></description>
+        <name>Pre_Delivery_Call</name>
+        <subject><!-- Pre Delivery Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Pre_Delivery_Call1</name>
+        <subject><!-- Pre Delivery Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Pre_Service_Call</name>
+        <subject><!-- Pre-Service Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Service_Reminder_Call</name>
+        <subject><!-- Service Reminder Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Please make the 1st Attempt to make contact with customer --></description>
+        <name>X1st_Call_Attempt</name>
+        <subject><!-- 1st Call Attempt --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- 24 hour order check --></description>
+        <name>X24_Hour_Delivery_Check</name>
+        <subject><!-- 24 Hour Delivery Check --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Please make the 2nd Attempt to make contact with customer --></description>
+        <name>X2nd_Call_Attempt</name>
+        <subject><!-- 2nd Call Attempt --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

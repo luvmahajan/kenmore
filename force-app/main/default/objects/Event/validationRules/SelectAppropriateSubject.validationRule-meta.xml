@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SelectAppropriateSubject</fullName>
+    <active>true</active>
+    <description>A user needs to select either Phone Call Meeting or an In-Person Meeting</description>
+    <errorConditionFormula>AND(Subject != &#39;Phone Call Meeting&#39;, Subject != &#39;In-Person Meeting&#39;)</errorConditionFormula>
+    <errorDisplayField>Subject</errorDisplayField>
+    <errorMessage>Please select either Phone Call Meeting or In-Person Meeting</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Click on this link to open the SAP Account in a new tab.  Enter your user ID and password. --></help>
+    <label><!-- Link to SAP Account --></label>
+    <name>Link_to_SAP_Account__c</name>
+</CustomFieldTranslation>

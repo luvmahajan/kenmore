@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPSC_Date_Required</fullName>
+    <active>true</active>
+    <description>Projected CPSC Announced Date required if the CPSC Involved is Yes</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( CPSC_Involved__c , &quot;Yes&quot;) , 
+ISBLANK( Projected_CPSC_announced_Date__c ) 
+)</errorConditionFormula>
+    <errorMessage>Projected CPSC Announced Date is required</errorMessage>
+</ValidationRule>

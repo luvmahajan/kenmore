@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Do you need a PO, dispatch number, service number? Does the tech have to call for a particular reason? --></help>
+    <label><!-- Special service approval requests --></label>
+    <name>Special_service_approval_requests__c</name>
+</CustomFieldTranslation>

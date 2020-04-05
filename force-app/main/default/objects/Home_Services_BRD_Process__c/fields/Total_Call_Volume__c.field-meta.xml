@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Call_Volume__c</fullName>
+    <externalId>false</externalId>
+    <formula>Call_Volume_Current_Fiscal__c +  Call_Volume_Next_Fiscal__c</formula>
+    <label>Total Call Volume</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

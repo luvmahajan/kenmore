@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates whether or not this field should be included in the task created from the merge containing data from the original record. --></help>
+    <label><!-- Include in Task --></label>
+    <name>CRMfusionDBR101__Include_in_Task__c</name>
+</CustomFieldTranslation>

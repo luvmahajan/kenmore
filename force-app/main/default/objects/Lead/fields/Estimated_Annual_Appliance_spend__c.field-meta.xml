@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Annual_Appliance_spend__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>$1,500, $2,000. or $2500 per unit x # of units</inlineHelpText>
+    <label>Estimated Annual Appliance spend?</label>
+    <precision>14</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

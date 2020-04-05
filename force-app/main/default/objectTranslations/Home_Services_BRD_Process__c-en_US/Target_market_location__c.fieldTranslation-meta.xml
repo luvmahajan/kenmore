@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please provide a list of specific zip codes. --></help>
+    <label><!-- Target market location? --></label>
+    <name>Target_market_location__c</name>
+</CustomFieldTranslation>

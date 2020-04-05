@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cases_to_be_Reassigned</fullName>
+    <booleanFilter>(1 or 2 or 3 )AND 4</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CASES.ESCALATION_STATE</columns>
+    <columns>CASES.STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>FOREY,LINDA MEDINA-HARDY,COOKIE CARRERA,ELIZABETH GORDON,JOHN GRAHAM,TORY</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>LAMKIN,DEBORAH SCRUGGS,CALITHA HALL,BOBBIE SPRUILL,DEAUNDREA WILLIAMS</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>JEAN,WONOSKI DANIELS,MARIE</value>
+    </filters>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Cases to be Reassigned</label>
+    <language>en_US</language>
+</ListView>

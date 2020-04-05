@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Group_2_Translated__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Customer_Group_2__c,
+&quot;001&quot;, &quot;AppSel&quot;,
+&quot;002&quot;, &quot;InsPort&quot;,
+&quot;003&quot;, &quot;InsSF&quot;,
+&quot;004&quot;, &quot;InsNV&quot;,
+&quot;005&quot;, &quot;HW&quot;,
+&quot;&quot;)</formula>
+    <inlineHelpText>001	AppSel
+002	InsPort
+003	InsSF
+004	InsNV
+005	HW</inlineHelpText>
+    <label>Customer Group 2 Translated</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

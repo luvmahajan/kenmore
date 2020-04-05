@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>Marketing Support Roll-out Update</name>
+    <style>freeForm</style>
+    <subject>Marketing Support Roll-out Update</subject>
+    <textOnly>Dear {!Contact.FirstName},
+  
+As we continue to learn together, it is important that we assess the skills which each trainee has developed.  If you have not done so already, please take 15 minutes to complete this Application Assessment regarding the materials covered in your Training Roadmap up to, and including your classroom training session.
+
+Instructions on how to complete your Application Assessment (Test) and guidance on the next steps in your training roadmap are listed below.  In order to download the appropriate document, or complete the appropriate assessment, please click on the link or copy/paste it into your browser.
+ 
+http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx 
+(select course 3073)
+
+
+
+Looking ahead at the Training Roadmap, please be aware that we are ready for the next steps which include the following:  
+ 
+o       Application Assessment to be complete after classroom training
+ 
+o       Commercial Marketing E-Learning:  Additional courses to provide you with more skill in your marketing role.   (See Job Aid #2 link below) 
+ 
+https://na1.salesforce.com/sfc/#version?selectedDocumentId=06930000000I6QN
+  
+o       Lead Best Practice Webmeeting:  The marketing team will work together to develop a webmeeting for District Managers to share effective ways to drive value using Campaigns, Leads and Content.  Meeting to occur the week of 9/06.  
+
+ 
+Thank you for being part of this exciting time as Sears Commercial partners with Salesforce.com to bring the world&#39;s leading sales enablement technology to our business and to ensure the best Customer Relationship Management (CRM).   
+ 
+Best,
+{!User.FirstName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

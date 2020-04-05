@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B9_Client_engages_in_open_communication__c</fullName>
+    <description>The client engages in open and honest communication</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The client is willing to share strengths / red flags and will facilitate our losing fast or winning fast</inlineHelpText>
+    <label>B9 Client engages in open communication</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Business__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A&amp;E</controllingFieldValue>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <valueName>3</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

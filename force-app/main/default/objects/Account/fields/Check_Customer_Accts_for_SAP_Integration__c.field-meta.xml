@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Customer_Accts_for_SAP_Integration__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( BEGINS( SAP_Account_ID__c ,  &quot;00&quot; ) , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Check Customer Accts for SAP Integration</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

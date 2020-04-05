@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Complete Electric Section? --></help>
+    <label><!-- Section Indicator --></label>
+    <name>Complete_Electric_Section__c</name>
+</CustomFieldTranslation>

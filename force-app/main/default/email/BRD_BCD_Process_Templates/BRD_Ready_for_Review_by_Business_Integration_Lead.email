@@ -1,0 +1,8 @@
+Dear User,
+
+A BRD for {!Opportunity.Name} opportunity related to the {!Account.Name} account is available for your review and distribution. For any clarifications, please feel free to reach out to the account lead by using the activity creation functionality.
+
+To view the details of this BRD, please click on the link below:
+{!Home_Services_BRD_Process__c.Link}
+
+Thank you.

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Credit_Response__c</fullName>
+    <description>Data in this field will populated based on the Creditors response of Approved or Declined in the Customer Service record</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Data in this field will populated based on the Creditors response of Approved or Declined from the Customer Service record</inlineHelpText>
+    <label>Final Credit Response</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved by Citi</fullName>
+                <default>false</default>
+                <label>Approved by Citi</label>
+            </value>
+            <value>
+                <fullName>Approved by Blue Tarp</fullName>
+                <default>false</default>
+                <label>Approved by Blue Tarp</label>
+            </value>
+            <value>
+                <fullName>Approved by Recourse</fullName>
+                <default>false</default>
+                <label>Approved by Recourse</label>
+            </value>
+            <value>
+                <fullName>Approved by Blue Tarp Service Acount</fullName>
+                <default>false</default>
+                <label>Approved by Blue Tarp Service Acount</label>
+            </value>
+            <value>
+                <fullName>Approved Exception Service Account BT</fullName>
+                <default>false</default>
+                <label>Approved Exception Service Account BT</label>
+            </value>
+            <value>
+                <fullName>Credit Declined</fullName>
+                <default>false</default>
+                <label>Credit Declined</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

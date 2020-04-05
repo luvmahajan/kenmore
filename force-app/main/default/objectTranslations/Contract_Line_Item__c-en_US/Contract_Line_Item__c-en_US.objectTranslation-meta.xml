@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contract Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contract Line Items</value>
+    </caseValues>
+    <layouts>
+        <layout>Contract Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Release Quantity cannot be greater than the Target Quantity. --></errorMessage>
+        <name>Release_Qty_Greater_Than_Target_Qty</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Funnel Scorecard</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Funnel Scorecard</value>
+    </caseValues>
+    <layouts>
+        <layout>Commercial Funnel Scorecard</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Scorecard Criteria --></label>
+            <section>Scorecard Criteria</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Funnel Scorecard Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Scorecard Criteria --></label>
+            <section>Scorecard Criteria</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Home Service Funnel Scorecard</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Scorecard Criteria --></label>
+            <section>Scorecard Criteria</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Commercial --></label>
+        <name>Commercial</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Home Services --></label>
+        <name>Home_Services</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

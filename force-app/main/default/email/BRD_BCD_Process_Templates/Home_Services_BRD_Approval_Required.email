@@ -1,0 +1,12 @@
+Hello,
+
+This is a notification that a BRD has been submitted to you for approval.  Please review the record and provide your approval recommendation.  Click on the link below for further information.
+
+BRD Link: {!Home_Services_BRD_Process__c.Link}
+Opportunity: {!Opportunity.Name} ({!Opportunity.Link})
+Account: {!Home_Services_BRD_Process__c.Account__c}
+
+This BRD will be reviewed in the next BRD/Contract meeting.
+ 
+
+Thank you.

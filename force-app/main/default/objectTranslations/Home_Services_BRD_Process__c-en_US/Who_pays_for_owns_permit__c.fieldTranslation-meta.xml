@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Who is responsible for obtaining and paying for the permit? --></help>
+    <label><!-- Who pays for/owns permit --></label>
+    <name>Who_pays_for_owns_permit__c</name>
+</CustomFieldTranslation>

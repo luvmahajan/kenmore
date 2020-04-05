@@ -1,0 +1,11 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<P style="TEXT-ALIGN: left" class=MsoNormal><SPAN style="FONT-SIZE: 13px" class=Apple-style-span>Hello {!Lead.Name},</SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><?xml:namespace prefix = o /><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">Thank you for taking the time today to discuss the value of Sears Commercial.&nbsp; Our goal is to enhance your business by providing high quality products, programs, and services.&nbsp;</SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">In order to determine how we might best align in order to help meet your business objectives, your local Sears Commercial Account Manager will contact you within the next 2-3 business days to follow-up on the items discussed today.&nbsp; If you require immediate assistance,&nbsp;please contact our National Support Center at 1-<SPAN style="FONT-FAMILY: 'Arial','sans-serif'; COLOR: navy; FONT-SIZE: 10pt"><FONT color=#000000>800-359-2000</FONT></SPAN>.&nbsp;&nbsp;</SPAN></P><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN> 
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">Thanks again for speaking with us today, and we look forward to working with you very soon.</SPAN></P>]]></td>
+</tr>
+</table>

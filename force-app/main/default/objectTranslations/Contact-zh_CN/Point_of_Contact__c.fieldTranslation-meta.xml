@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Main point of contact for marketing, sales, and reporting purposes --></help>
+    <label><!-- Point of Contact --></label>
+    <name>Point_of_Contact__c</name>
+</CustomFieldTranslation>

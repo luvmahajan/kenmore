@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What is your average spend per unit --></label>
+    <name>What_is_your_average_spend_per_unit__c</name>
+    <picklistValues>
+        <masterLabel>$1001-$2500</masterLabel>
+        <translation><!-- $1001-$2500 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>$2501-$5000</masterLabel>
+        <translation><!-- $2501-$5000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>$500-$1000</masterLabel>
+        <translation><!-- $500-$1000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>$5001+</masterLabel>
+        <translation><!-- $5001+ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

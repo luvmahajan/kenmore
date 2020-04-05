@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Pricing Exhibit (Note:  $250.00 is the minimum) --></help>
+    <label><!-- Authorization Limit --></label>
+    <name>Authorization_Limit__c</name>
+</CustomFieldTranslation>

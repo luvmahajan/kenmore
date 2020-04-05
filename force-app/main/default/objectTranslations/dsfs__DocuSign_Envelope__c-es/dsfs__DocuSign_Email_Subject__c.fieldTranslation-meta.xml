@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Modifique el texto del asunto del mensaje de correo electrónico predeterminado y aparecerá en la línea de asunto de la notificación de firma para los destinatarios de DocuSign.</help>
+    <label><!-- DocuSign Email Subject --></label>
+    <name>dsfs__DocuSign_Email_Subject__c</name>
+</CustomFieldTranslation>

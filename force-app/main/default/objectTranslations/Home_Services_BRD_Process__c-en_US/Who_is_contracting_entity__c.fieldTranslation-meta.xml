@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Who will be providing Service? --></help>
+    <label><!-- Who is contracting entity --></label>
+    <name>Who_is_contracting_entity__c</name>
+    <picklistValues>
+        <masterLabel>A&amp;E Delivery</masterLabel>
+        <translation><!-- A&amp;E Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A&amp;E Factory Service, LLC</masterLabel>
+        <translation><!-- A&amp;E Factory Service, LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A&amp;E Lawn &amp; Garden</masterLabel>
+        <translation><!-- A&amp;E Lawn &amp; Garden --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sears Home Improvement Products (SHIP)</masterLabel>
+        <translation><!-- Sears Home Improvement Products (SHIP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sears, Roebuck &amp; Company (SHC)</masterLabel>
+        <translation><!-- Sears, Roebuck &amp; Company (SHC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown or TBD</masterLabel>
+        <translation><!-- Unknown or TBD --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

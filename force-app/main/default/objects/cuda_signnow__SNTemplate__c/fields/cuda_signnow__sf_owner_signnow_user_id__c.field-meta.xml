@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cuda_signnow__sf_owner_signnow_user_id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The SignNow unique user id corresponding with the Salesforce record owner.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SignNow user id</inlineHelpText>
+    <label>sf_owner_signnow_user_id</label>
+    <length>40</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

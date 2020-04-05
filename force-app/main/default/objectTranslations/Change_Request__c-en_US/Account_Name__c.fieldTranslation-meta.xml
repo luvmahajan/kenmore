@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Account Name --></label>
+    <lookupFilter>
+        <errorMessage><!-- SAP Value does not exist to create a new request. --></errorMessage>
+    </lookupFilter>
+    <name>Account_Name__c</name>
+    <relationshipLabel><!-- Change Basic Account Information --></relationshipLabel>
+</CustomFieldTranslation>

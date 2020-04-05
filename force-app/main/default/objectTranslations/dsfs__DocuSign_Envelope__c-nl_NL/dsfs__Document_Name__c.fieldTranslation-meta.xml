@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Dit is een lijst met pdf-doc. op het Salesforce-tab Documenten van uw organisatie. Voeg als u doc. met DocuSign wilt verzenden aan elke map op het tab Documenten van Salesforce een pdf toe. Klik als u andere indelingen wilt verzenden op Meer informatie.</help>
+    <label><!-- Document Name --></label>
+    <name>dsfs__Document_Name__c</name>
+</CustomFieldTranslation>

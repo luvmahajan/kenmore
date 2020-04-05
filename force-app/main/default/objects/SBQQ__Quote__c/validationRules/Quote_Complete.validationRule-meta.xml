@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Complete</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISCHANGED( SBQQ__Status__c ) ,  TEXT(PRIORVALUE( SBQQ__Status__c ))==&quot;Complete&quot;  )</errorConditionFormula>
+    <errorMessage>The status of quote once completed, cannot be changed</errorMessage>
+</ValidationRule>

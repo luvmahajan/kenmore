@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer Success Specialist Requests</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>CMR%2FDMR</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Delivery Confirmed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Delivery Date Changed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Delivery Issue%2FFailure</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Installation Issue%2FFailure</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Order Confirmation Sent</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Order Status Completed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Order Submitted</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Reopened</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Return%2FExchange Executed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Service Scheduled</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

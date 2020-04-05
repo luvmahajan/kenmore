@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard_Lead</fullName>
+    <active>true</active>
+    <businessProcess>Master Lead Process</businessProcess>
+    <label>Standard Lead</label>
+    <picklistValues>
+        <picklist>Account_Status__c</picklist>
+        <values>
+            <fullName>Existing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Are_there_clear_red_flags__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Brand_Of_Competitor_Currently_Working_Wi__c</picklist>
+        <values>
+            <fullName>Amana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bosch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do not have a regularly used brand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrolux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frigidaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JennAir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenmore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen Aid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maytag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samsung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whirlpool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wilmar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Brand_Of_Distributor_Working_With__c</picklist>
+        <values>
+            <fullName>Do not have a regularly used distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ferguson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HH Gregg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Depot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local merchant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lowes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business__c</picklist>
+        <values>
+            <fullName>A%26E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Home Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Center_Support__c</picklist>
+        <values>
+            <fullName>Direct from customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct from your company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm transfer %28your company and customer on the line%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Clear_interest_in_the_next_step__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_Us_Form__c</picklist>
+        <values>
+            <fullName>I am ready to place an order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I want to learn more</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Status__c</picklist>
+        <values>
+            <fullName>Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yellow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Do_we_understand_the_customer_s_buying_p__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Estimated_Calls_Per_Week__c</picklist>
+        <values>
+            <fullName>101 - 200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26 - 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than 25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FN__Mapping_Status__c</picklist>
+        <values>
+            <fullName>Located</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Located Yet</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Problem with Address</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GPO__c</picklist>
+        <values>
+            <fullName>APN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amerinet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HealthTrust</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intermountain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MedAssets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Resource Group</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Has_the_contact_information_been_verifie__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Administrative and Support and Waste Management and Remediation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture%2C Forestry%2C Fishing %26 Hunting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts%2C Entertainment%2C and Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Builders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare %26 Social Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Companies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management of Companies and Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining%2C Quarrying%2C and Oil and Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Services %28except Public Administration%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional%2C Scientific%2C and Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation and Warehousing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale Trade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry_Segmentation__c</picklist>
+        <values>
+            <fullName>Administrative and Support and Waste Management and Remediation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture%2C Forestry%2C Fishing and Hunting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts%2C Entertainment%2C and Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Builders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare %26 Social Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Companies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management of Companies and Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining%2C Quarrying%2C and Oil and Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Services %28except Public Administration%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional%2C Scientific%2C and Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation and Warehousing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale Trade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Construct%2FConnect insight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LeadGenius - CMD List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LeadGenius - LeadForensics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metrodata Study</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Ads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Type__c</picklist>
+        <values>
+            <fullName>Commercial - Flow Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial - Project</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Planned_units_in_the_next_12_months__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1-10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10-50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100-300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50-100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No info available</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Products_Services__c</picklist>
+        <values>
+            <fullName>Air Conditioners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business to Business Paid Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carry-in Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Fitness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Mattresses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial TVs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cook-top</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dishwasher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dryer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fitness Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floor Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haul-Away</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Home Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lawn %26 Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mattresses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Warranty Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA %26 Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preventative Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Refurbishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Range</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalls%2FReworks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refrigerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replacements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %28Warranty%2FInstallations etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Refrigerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TVs %26 Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tool Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Heaters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window AC %2812%2C000 BTU %26 Above%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window AC %28Under 12%2C000 BTU%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Products__c</picklist>
+        <values>
+            <fullName>Air Conditioners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business to Business Paid Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carry-in Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Fitness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Mattresses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial TVs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cook-top</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dishwasher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dryer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fitness Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floor Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haul-Away</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Home Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lawn %26 Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Major Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mattresses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Warranty Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA %26 Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preventative Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Refurbishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Range</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalls%2FReworks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refrigerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replacements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Refrigerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TVs %26 Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tool Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Heaters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window AC %2812%2C000 BTU %26 Above%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window AC %28Under 12%2C000 BTU%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Programs__c</picklist>
+        <values>
+            <fullName>Appliance Select Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Marketplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disaster Recover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPP %28Employee Purchase Plan%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Touch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My Gofer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Realty Home Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remodeling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCO %28Total Cost of Ownership%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weatherization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_Disqualified__c</picklist>
+        <values>
+            <fullName>Bad contact information %28i%2Ee%2E phone and email are non-functional%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer has explicitly requested that we stop contacting them</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer is an unauthorized re-seller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead has no needs and therefore would never be a customer %28i%2Ee%2E has absolutely no need for appliances or anything else we offer%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not a valid business partner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reasons_For_Not_Working_With_SC__c</picklist>
+        <values>
+            <fullName>Customer is no longer in the business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer requesting no additional contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very few%2Fno projects in the past year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working with a competition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reasons_For_Switching_To_The_Competition__c</picklist>
+        <values>
+            <fullName>Account Manager no longer available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing%2FCredit issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No response from customer support center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non availability of right product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Repair_Locations__c</picklist>
+        <values>
+            <fullName>Apartment%2FCondo Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouses</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reseller__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Role__c</picklist>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery%2FOperations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Procurement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SHC_Segment__c</picklist>
+        <values>
+            <fullName>Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apartment Complexes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Best Western</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Builder Radio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building%2C Remodeling%2C Moving %28BRM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Marketplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Purchase Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Inspection Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufactured Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Time Buy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original Equipment Manufacturers %28OEM%E2%80%99s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Realty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remodeling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rent-to-own</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SHIP %28Sears Home Improvement%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Administrators %28TPA%E2%80%99s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weatherization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SHC_Segment_del__c</picklist>
+        <values>
+            <fullName>Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apartment Complexes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Best Western</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Builder Radio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building%2C Remodeling%2C Moving %28BRM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Marketplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Purchase Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Inspection Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufactured Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Time Buy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original Equipment Manufacturers %28OEM%E2%80%99s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Realty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remodeling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rent-to-own</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SHIP %28Sears Home Improvement%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Administrators %28TPA%E2%80%99s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weatherization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sector__c</picklist>
+        <values>
+            <fullName>Accommodation and Food Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administrative and Support and Waste Management and Remediation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture%2C Forestry%2C Fishing and Hunting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts%2C Entertainment%2C and Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educational Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance and Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Care and Social Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management of Companies and Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Services %28except Public Administration%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional%2C Scientific%2C and Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate and Rental and Leasing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation and Warehousing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale Trade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Area__c</picklist>
+        <values>
+            <fullName>Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid-Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northeast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northwest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southeast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwest</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Payment_Method__c</picklist>
+        <values>
+            <fullName>Credit Card%2FCommercial One Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Monthly Invoices</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Services__c</picklist>
+        <values>
+            <fullName>Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haul-Away</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Speaking_with_someone_with_influence__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tax_Exempt__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_brand_of_appliances_are_you_using__c</picklist>
+        <values>
+            <fullName>Amana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bosch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do not have a regularly used brand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrolux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frigidaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JennAir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenmore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen Aid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maytag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None of the above</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samsung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whirlpool</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_is_convenient_time_to_reach_you__c</picklist>
+        <values>
+            <fullName>12 PM to 4 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 PM to 8 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8 AM to 12 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>During Business Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Information Available</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_is_your_average_spend_per_unit__c</picklist>
+        <values>
+            <fullName>%241001-%242500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%242501-%245000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24500-%241000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%245001%2B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Where_did_the_customer_contact_you__c</picklist>
+        <values>
+            <fullName>Augusta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Line Stores</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Where_do_you_buy_the_products__c</picklist>
+        <values>
+            <fullName>Appliance Specialty Distributors%2FStores %28e%2Eg%2E Abt%2C HH Gregg%2C Ferguson etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct from manufacturer %28e%2Eg%2E GE%2C Whirlpool etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local big box retailer %28e%2Eg%2E Home Depot%2C Lowes etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local merchant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If the Match on Insert Action is set to &quot;Redirect to VisualForce Page&quot; then a custom VisualForce page must be selected. --></help>
+    <label><!-- VisualForce Redirection Page --></label>
+    <name>CRMfusionDBR101__VisualForce_Handler__c</name>
+</CustomFieldTranslation>

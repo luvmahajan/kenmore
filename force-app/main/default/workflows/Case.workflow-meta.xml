@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>A_Case_has_been_Closed</fullName>
+        <description>A Case has been Closed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Email_Templates/Case_Closed</template>
+    </alerts>
+    <alerts>
+        <fullName>Auto_reply_for_Business_Cards</fullName>
+        <description>Auto-reply for Business Cards</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Email_Templates/Auto_reply_for_Business_Cards</template>
+    </alerts>
+    <alerts>
+        <fullName>Auto_reply_for_Non_IBS_Trade_Shows</fullName>
+        <description>Auto-reply for Non-IBS Trade Show Requests</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Email_Templates/Auto_reply_for_Non_IBS_Trade_Show_Requests</template>
+    </alerts>
+    <alerts>
+        <fullName>Auto_reply_for_the_Marketing_Portal</fullName>
+        <description>Auto-reply for the Marketing Portal</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Email_Templates/Auto_reply_for_the_Marketing_Portal</template>
+    </alerts>
+    <alerts>
+        <fullName>CSS_Assignment_Auto_Email_Alert</fullName>
+        <description>CSS Assignment Auto Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>csist@searshc.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Email_Templates/CSS_Auto_Email_to_Contact</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Assignment_Alert</fullName>
+        <description>Case Assignment Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Email_Templates/New_Case_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Closed_Escalated_to_Product_Managers</fullName>
+        <description>Case Closed and Escalated to Product Manager Team</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Email_Templates/Case_Closed_Escalated_to_Product_Managers</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Comment_General_Notification_for_Users_Flow</fullName>
+        <description>Case Comment - General Notification for Users (Flow)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Email_Templates/Case_Comments_General_Notification_for_Users</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Comments_Case_Reopened_by_User_Case_Object</fullName>
+        <description>Case Comments - Case Reopened by User (Case Object)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Email_Templates/Case_Comments_Case_Reopened_by_User</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Escalated_to_Inventory_Replenishment</fullName>
+        <description>Case Escalated to Inventory Replenishment</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Email_Templates/Case_Escalated_to_Inventory_Replenishment</template>
+    </alerts>
+    <alerts>
+        <fullName>Delivery_Case_Email_Alert</fullName>
+        <ccEmails>CSCSERV@searshc.com</ccEmails>
+        <description>Delivery Case Email Alert</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Email_Templates/New_Case_Creation</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Salesforce_com_Support_case_created</fullName>
+        <description>New Salesforce.com Support case created</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cheryl.morrison@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Salesforce_com_Support_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>Online_Catalog_Password_Reset</fullName>
+        <description>Online Catalog Password Reset</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Email_Templates/Online_Catalog_Password_Reset</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Assigned_to_Pre_Delivery_Team</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Pre_Delivery_OM</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Assigned to Pre-Delivery Team</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Calculate_Response_Time</fullName>
+        <description>Calculates the time between case creation and first status update</description>
+        <field>Response_Time__c</field>
+        <formula>First_Status_Update__c - CreatedDate</formula>
+        <name>Calculate Response Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Closed</fullName>
+        <description>Case closed due to lack of customer response</description>
+        <field>Status</field>
+        <literalValue>Closed (No Customer Response)</literalValue>
+        <name>Case Closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Owner_Changes_when_Escalate_to_CSI</fullName>
+        <field>OwnerId</field>
+        <lookupValue>CSITeam</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Case Owner Changes when Escalate to CSI</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Owner_changes_when_Escalate_to_Inve</fullName>
+        <description>Case Owner Changes when Escalated to Inventory Replenishment</description>
+        <field>OwnerId</field>
+        <lookupValue>InventoryReplenishment</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Case Owner changes when Escalate to Inve</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Owner_changes_when_Escalate_to_Prod</fullName>
+        <description>Case Owner Changes when Escalated to Product Manager Support</description>
+        <field>OwnerId</field>
+        <lookupValue>ProductManagers</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Case Owner changes when Escalate to Prod</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Status_to_Open</fullName>
+        <field>Status</field>
+        <literalValue>Open</literalValue>
+        <name>Case Status to Open</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Type_changes_when_Escalated_to_Inve</fullName>
+        <description>Case Type Changes to Inventory Replenishment when escalated</description>
+        <field>Type</field>
+        <literalValue>Inventory Replenishment</literalValue>
+        <name>Case Type changes when Escalated to Inve</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Type_changes_when_Escalated_to_Prod</fullName>
+        <description>Case Type Changes to Product Manager support when escalated</description>
+        <field>Type</field>
+        <literalValue>Product Manager Support</literalValue>
+        <name>Case Type changes when Escalated to Prod</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_type_changes_when_Escalate_to_CSI</fullName>
+        <field>Type</field>
+        <literalValue>CSI Team</literalValue>
+        <name>Case type changes when Escalate to CSI</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Chargeback_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Chargeback</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Chargeback Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Closed_Case_Order_Created</fullName>
+        <field>Status</field>
+        <literalValue>Order_Created</literalValue>
+        <name>Closed Case Order Created</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Collection_Status</fullName>
+        <field>Status</field>
+        <literalValue>Collections</literalValue>
+        <name>Collection Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Time_Stamp_Status_Update</fullName>
+        <description>Calculates the first status change, or initial response time</description>
+        <field>First_Status_Update__c</field>
+        <formula>NOW()</formula>
+        <name>Date Time Stamp Status Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Order_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Order_Intake</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Order Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Order_Status</fullName>
+        <field>Status</field>
+        <literalValue>Order_Created</literalValue>
+        <name>Order Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Post_Delivery_OM_Case_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Post_Delivery_OM</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Post-Delivery OM Case Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Record_Type_to_Pre_Delivery</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Pre_Delivery_OM</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Record Type to Pre Delivery</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SFDC_Close_Case_Reason</fullName>
+        <field>Reason</field>
+        <name>SFDC Close Case Reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Escalation</fullName>
+        <field>Status</field>
+        <literalValue>Escalated</literalValue>
+        <name>Status Escalation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_to_Back_Charge</fullName>
+        <field>Status</field>
+        <literalValue>Back Charge MDO</literalValue>
+        <name>Status to Back Charge MDO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_to_POD_Requested</fullName>
+        <field>Status</field>
+        <literalValue>POD Requested</literalValue>
+        <name>Status to POD Requested</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Type_to_Product_Mgr_Support</fullName>
+        <field>Type</field>
+        <literalValue>Product Manager Support</literalValue>
+        <name>Update Case Type to Product Mgr Support</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Case - CSS Assignment Customer Auto Email - External Email</fullName>
+        <actions>
+            <name>CSS_Assignment_Auto_Email_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Send an email to the Contact when an order is passed from the field to the CSS</description>
+        <formula>AND( NOT(ISBLANK(ContactId)), NOT(ISBLANK(Contact.Email)), ISCHANGED(OwnerId), NOT(BEGINS(PRIORVALUE(OwnerId), &quot;005&quot;)), CONTAINS(RecordType.DeveloperName, &quot;Customer_Success&quot;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case - Closed and Escalated to Product Managers - Email</fullName>
+        <actions>
+            <name>Case_Closed_Escalated_to_Product_Managers</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Type</field>
+            <operation>equals</operation>
+            <value>CSI Team,Inventory Replenishment,Product Manager Support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalate_to_Product_Manager__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Case was closed by orginal team and escalated to Product Managers for further responce.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case - Escalation to Inventory Replishment - Email %2F Update</fullName>
+        <actions>
+            <name>Case_Escalated_to_Inventory_Replenishment</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Case_Owner_changes_when_Escalate_to_Inve</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Type_changes_when_Escalated_to_Inve</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Escalate_to_Inventory_Replenishment__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>When Escation to Inventory Replenishment = True the Type changes</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Closed for internal Support Cases</fullName>
+        <actions>
+            <name>A_Case_has_been_Closed</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Business Systems Support,Salesforce.com Support,Sears Commercial Wiki,Web Support</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Closed Order Intake Case</fullName>
+        <actions>
+            <name>Order_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>AND( 
+NOT(ISBLANK( Order__c )), 
+RecordTypeId =&quot;0123A000001SVC5&quot;)</description>
+        <formula>AND( 
+NOT(ISBLANK( Order__c )), 
+RecordTypeId =&quot;0123A000001SVC5&quot;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Collections</fullName>
+        <actions>
+            <name>Chargeback_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Collection_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Case.Chargeback_Status__c</field>
+            <operation>equals</operation>
+            <value>In-house Collections</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Collections</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Escalated Case</fullName>
+        <actions>
+            <name>Status_Escalation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.IsEscalated</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Salesforce%2Ecom Support Case</fullName>
+        <actions>
+            <name>New_Salesforce_com_Support_case_created</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Salesforce.com Support</value>
+        </criteriaItems>
+        <description>emails cheryl.morrison@kenmoredirect.com when new Salesforce.com Support is created</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Order Created Status</fullName>
+        <actions>
+            <name>Closed_Case</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Order_Created</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Order Intake</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Order Intake Case Record Type</fullName>
+        <actions>
+            <name>Order_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>ORDER</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>POD Requested Date</fullName>
+        <actions>
+            <name>Status_to_POD_Requested</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>POD_Requested_Call</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.POD_Requested_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>POD Requested Follow Up</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.POD_Requested_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>POD Requested</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>POD_Follow_Up_Task</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Case.POD_Requested_Date__c</offsetFromField>
+            <timeLength>20</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Status_to_Back_Charge</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.POD_Requested_Date__c</offsetFromField>
+            <timeLength>24</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Finial_Follow_up</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Case.POD_Requested_Date__c</offsetFromField>
+            <timeLength>22</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Pending Customer Process</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Pending Customer Response</value>
+        </criteriaItems>
+        <description>Assigns task to case owner and then closes the case w/ no response.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Case_Closed</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>8</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Final_Call_Attempt</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>6</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X2nd_Call_Attempt</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>4</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X1st_Call_Attempt</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Post%2FPre Delivery Task</fullName>
+        <actions>
+            <name>Post_delivery_call</name>
+            <type>Task</type>
+        </actions>
+        <actions>
+            <name>Pre_Delivery_Call1</name>
+            <type>Task</type>
+        </actions>
+        <actions>
+            <name>X24_Hour_Delivery_Check</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <description>Creates task for deliveries</description>
+        <formula>OR(
+RecordType.Name = &quot;Order Intake&quot;,
+RecordType.Name = &quot;Post-Delivery OM&quot;,
+RecordType.Name = &quot;Pre-Delivery OM&quot;)
+&amp;&amp;
+ISCHANGED(Estimated_Delivery_Date__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Post-Delivery OM Case Record Type</fullName>
+        <actions>
+            <name>Post_Delivery_OM_Case_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Post-Delivery OM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>POD</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pre-Delivery OM Case Record Type</fullName>
+        <actions>
+            <name>Record_Type_to_Pre_Delivery</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Pre-Delivery OM</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Task</fullName>
+        <actions>
+            <name>Post_Service_Call</name>
+            <type>Task</type>
+        </actions>
+        <actions>
+            <name>Pre_Service_Call</name>
+            <type>Task</type>
+        </actions>
+        <actions>
+            <name>Service_Reminder_Call</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Service_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Creates series of task when service date is populated on the delivery case</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Closed_Case</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Completed</status>
+        <subject>Closed Case</subject>
+    </tasks>
+    <tasks>
+        <fullName>Final_Call_Attempt</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Please make the final Attempt to make contact with customer. The case will automatically be closed in 2 days</description>
+        <dueDateOffset>6</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Final Call Attempt</subject>
+    </tasks>
+    <tasks>
+        <fullName>Finial_Follow_up</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Finial Follow up on POD - Status to update to &quot;Back Charge MDO&quot;</description>
+        <dueDateOffset>23</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.POD_Requested_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Finial Follow up</subject>
+    </tasks>
+    <tasks>
+        <fullName>POD_Follow_Up_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>POD Follow Up</description>
+        <dueDateOffset>21</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.POD_Requested_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>POD Follow Up Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>POD_Requested_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Call MDO - Pending response from innoval</description>
+        <dueDateOffset>14</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.POD_Requested_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>POD Requested Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>Post_Service_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Service_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Post Service Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>Post_delivery_call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Post-delivery call</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Estimated_Delivery_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Post-delivery call</subject>
+    </tasks>
+    <tasks>
+        <fullName>Pre_Delivery_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Task reminder to call the customer re: pending delivery</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Pre Delivery Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>Pre_Delivery_Call1</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>-3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Estimated_Delivery_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Pre Delivery Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>Pre_Service_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>-3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Service_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Pre-Service Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>Service_Reminder_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>-1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Service_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Service Reminder Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>X1st_Call_Attempt</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Please make the 1st Attempt to make contact with customer</description>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>1st Call Attempt</subject>
+    </tasks>
+    <tasks>
+        <fullName>X24_Hour_Delivery_Check</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>24 hour order check</description>
+        <dueDateOffset>-1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Estimated_Delivery_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>24 Hour Delivery Check</subject>
+    </tasks>
+    <tasks>
+        <fullName>X2nd_Call_Attempt</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Please make the 2nd Attempt to make contact with customer</description>
+        <dueDateOffset>4</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>2nd Call Attempt</subject>
+    </tasks>
+</Workflow>

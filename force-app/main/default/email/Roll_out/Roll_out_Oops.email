@@ -1,0 +1,39 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<P>Hi {!Contact.FirstName},</P>
+<P>&nbsp;</P>
+<P>We are completing the load of your Account and Opportunity information to Saleforce.com and may have accidentally assigned you a task...or twelve!&nbsp; If we did, please accept my sincere apology and please disregard any task notifications&nbsp;received from Salesforce.com today.</P>
+<P>&nbsp;</P>
+<P>For reference, an example of one of these&nbsp;accidentally sent&nbsp;task notification emails is below.</P>
+<P>&nbsp;</P>
+<P>Kind Regards,</P>
+<P>{!User.FirstName}</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P class=MsoNormal><FONT size=2 face=Tahoma><SPAN style="FONT-FAMILY: Tahoma; FONT-SIZE: 10pt">-----Original Message-----<BR><B><SPAN style="FONT-WEIGHT: bold">From:</SPAN></B> no-reply@salesforce.com [mailto:no-reply@salesforce.com] <B><SPAN style="FONT-WEIGHT: bold">On Behalf Of </SPAN></B>Tom Seibert<BR><B><SPAN style="FONT-WEIGHT: bold">Sent:</SPAN></B> </SPAN></FONT><FONT size=2 face=Tahoma><SPAN style="FONT-FAMILY: Tahoma; FONT-SIZE: 10pt">Monday, July 12, 2010</SPAN></FONT><FONT size=2 face=Tahoma><SPAN style="FONT-FAMILY: Tahoma; FONT-SIZE: 10pt"> </SPAN></FONT><FONT size=2 face=Tahoma><SPAN style="FONT-FAMILY: Tahoma; FONT-SIZE: 10pt">1:51 PM</SPAN></FONT><FONT size=2 face=Tahoma><SPAN style="FONT-FAMILY: Tahoma; FONT-SIZE: 10pt"><BR><B><SPAN style="FONT-WEIGHT: bold">To:</SPAN></B> {!Contact.LastName}, {!Contact.FirstName}<BR><B><SPAN style="FONT-WEIGHT: bold">Subject:</SPAN></B> Schedule Initial Appointment</SPAN></FONT></P>
+<P class=MsoNormal><FONT size=3 face="Times New Roman"><SPAN style="FONT-SIZE: 12pt">&nbsp;</SPAN></FONT></P>
+<P>
+<TABLE style="WIDTH: 100%; BACKGROUND: white" class=MsoNormalTable border=0 cellSpacing=0 cellPadding=0 width="100%" bgColor=white>
+<TBODY>
+<TR>
+<TD style="PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; WIDTH: 100%; PADDING-RIGHT: 0in; PADDING-TOP: 0in" width="100%">
+<TABLE style="WIDTH: 100%" class=MsoNormalTable border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="PADDING-BOTTOM: 7.5pt; PADDING-LEFT: 7.5pt; PADDING-RIGHT: 7.5pt; BACKGROUND: white; PADDING-TOP: 7.5pt" bgColor=white>
+<TABLE class=MsoNormalTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD style="PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in">
+<P class=MsoNormal><FONT size=3 face="Times New Roman"><SPAN style="FONT-SIZE: 12pt">New Task</SPAN></FONT></P></TD></TR></TBODY></TABLE>
+<P class=MsoNormal></P></TD></TR></TBODY></TABLE>
+<P class=MsoNormal></P></TD></TR>
+<TR style="HEIGHT: 3.75pt" height=5>
+<TD style="PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; HEIGHT: 3.75pt; PADDING-TOP: 0in" height=5>
+<P class=MsoNormal><FONT size=1 face="Times New Roman"><SPAN style="FONT-SIZE: 4pt">&nbsp;</SPAN></FONT></P></TD></TR>
+<TR>
+<TD style="PADDING-BOTTOM: 0in; PADDING-LEFT: 7.5pt; PADDING-RIGHT: 7.5pt; PADDING-TOP: 0in">
+<P class=main><FONT size=3 face="Times New Roman"><SPAN style="FONT-SIZE: 12pt">To: {!Contact.Name}<BR><BR>Tom Seibert has assigned you the following new task:<BR><BR>Subject: Schedule Initial Appointment<BR></SPAN></FONT>Opportunity:&nbsp;XYZ Property Mgmt<BR>Due Date: 7/13/2010<BR>Priority: Normal<BR><BR>For more details, click the following link:<BR><BR><A href="https://na1.salesforce.com/00T30000015rKgpn4">https://na1.salesforce.com/00T30000015rKgpn4</A> </P></TD></TR></TBODY></TABLE></P>]]></td>
+</tr>
+</table>

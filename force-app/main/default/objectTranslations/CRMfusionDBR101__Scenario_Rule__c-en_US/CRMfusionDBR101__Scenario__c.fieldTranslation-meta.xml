@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Pre-populates with the scenario the rule is being created for, do not change this value. --></help>
+    <label><!-- Scenario --></label>
+    <name>CRMfusionDBR101__Scenario__c</name>
+    <relationshipLabel><!-- DupeBlocker Scenario Rules --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Closed Reason --></label>
+    <name>Closed_Reason__c</name>
+    <picklistValues>
+        <masterLabel>CME Credit Issued</masterLabel>
+        <translation><!-- CME Credit Issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proof of Delivery Sent</masterLabel>
+        <translation><!-- Proof of Delivery Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request Withdrawn</masterLabel>
+        <translation><!-- Request Withdrawn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signature on File</masterLabel>
+        <translation><!-- Signature on File --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Prompts Account Manager and BIT to review and resubmit BRD when rejected</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Home Services BRD Rejected</name>
+    <style>none</style>
+    <subject>BRD Rejected; Review and Resubmit</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

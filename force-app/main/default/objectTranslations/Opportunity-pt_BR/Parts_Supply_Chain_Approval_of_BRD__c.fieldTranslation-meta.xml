@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Parts &amp; Supply Chain Approval of BRD --></label>
+    <name>Parts_Supply_Chain_Approval_of_BRD__c</name>
+</CustomFieldTranslation>

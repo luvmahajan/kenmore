@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zWho_will_recieve_customer_complaints__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>For customer complaints regarding service, who will receive the complaint and handle it?</inlineHelpText>
+    <label>zFTC_Who will recieve customer complaint</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

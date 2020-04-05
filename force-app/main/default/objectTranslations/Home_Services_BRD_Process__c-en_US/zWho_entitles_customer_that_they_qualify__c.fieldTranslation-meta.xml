@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Who confirms that the customer that they qualify for the recall, us or the client? --></help>
+    <label><!-- zFTC_Who entitles customer that they qua --></label>
+    <name>zWho_entitles_customer_that_they_qualify__c</name>
+</CustomFieldTranslation>

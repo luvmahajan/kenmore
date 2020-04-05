@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>Post-Class Follow-up Support</name>
+    <style>freeForm</style>
+    <subject>Follow-up to Effective Support using Salesforce.com</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+ 
+
+Thank you for attending Effective
+Marketing Management with Salesforce.com. 
+The purpose of this email is to provide you with the documents reviewed
+during training, instructions on how to complete your Application Assessment
+(Test) and guidance on the next steps in your training roadmap.  
+
+ 
+
+Several links are provided below.  In order to download the appropriate
+document, or complete the appropriate evaluation, please click on the link or
+copy/paste it into your browser.
+
+ 
+
+The presentation reviewed during your classroom training
+session included overviews on the use of many Salesforce.com features as well
+as step-action instructions to help you being using these features.  You may download the training presentation
+here:
+
+https://na1.salesforce.com/sfc/p/30000000lp1baVX0eKD85vRbMPwjujqRuwTVmWA=
+
+ 
+
+We have also created shortened “cheat-sheet” for all
+Salesforce.com users, which you may access here:
+
+https://na1.salesforce.com/sfc/p/30000000lp1bb47Hvo6UjffIA0ErUUwMauIfd10=
+
+ 
+
+As we continue to learn together, it is important that we
+assess the skills which each trainee has developed.  Please take 15-30 minutes to complete this
+Application Assessment regarding the materials covered in your Training Roadmap
+up to, and including your classroom training session:
+
+http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx
+(select course 3073)
+
+ 
+
+Looking ahead, please be aware of and ready for the
+following items on the Marketing and Product Manager Training Roadmap:
+
+□        
+Complete your Case training classroom sessions
+(Product Managers only)
+
+□        
+Complete your e-Learning as outlined in your
+Training Roadmap
+
+□        
+Attend your classroom training debrief which
+will be scheduled shortly
+
+ 
+
+Thank you for having the courage to change your habits and
+your ongoing efforts to implement this powerful tool.  The impact we are making to Sears Commercial
+will be profound.
+
+ 
+
+Best,
+
+{!User.FirstName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

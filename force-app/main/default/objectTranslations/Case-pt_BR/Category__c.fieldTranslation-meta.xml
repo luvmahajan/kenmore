@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the category that best describes the type of assistance being requesting --></help>
+    <label><!-- Category --></label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>AM Wrong Product Ordered</masterLabel>
+        <translation><!-- AM Wrong Product Ordered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASAP Issue</masterLabel>
+        <translation><!-- ASAP Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Address</masterLabel>
+        <translation><!-- Address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Add’l Forms</masterLabel>
+        <translation><!-- Add’l Forms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Add’l info needed</masterLabel>
+        <translation><!-- Add’l info needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Backorder</masterLabel>
+        <translation><!-- Backorder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bill Dispute</masterLabel>
+        <translation><!-- Bill Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CME Credit</masterLabel>
+        <translation><!-- CME Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancel Order</masterLabel>
+        <translation><!-- Cancel Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Checking Installer</masterLabel>
+        <translation><!-- Checking Installer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citi</masterLabel>
+        <translation><!-- Citi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claim</masterLabel>
+        <translation><!-- Claim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Common Carrier</masterLabel>
+        <translation><!-- Common Carrier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit (Adjustments)</masterLabel>
+        <translation><!-- Credit (Adjustments) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cust Wrong Product</masterLabel>
+        <translation><!-- Cust Wrong Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Satisfaction</masterLabel>
+        <translation><!-- Customer Satisfaction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DDC Short Ship</masterLabel>
+        <translation><!-- DDC Short Ship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damage &lt; 72 hrs</masterLabel>
+        <translation><!-- Damage &lt; 72 hrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damage &gt; 72 hrs</masterLabel>
+        <translation><!-- Damage &gt; 72 hrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damage Property</masterLabel>
+        <translation><!-- Damage Property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date Change</masterLabel>
+        <translation><!-- Date Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery Overcharge</masterLabel>
+        <translation><!-- Delivery Overcharge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-Com System Complaint</masterLabel>
+        <translation><!-- E-Com System Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-com Issue</masterLabel>
+        <translation><!-- E-com Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exch / Cust Sat</masterLabel>
+        <translation><!-- Exch / Cust Sat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expedite Date</masterLabel>
+        <translation><!-- Expedite Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freight Lane</masterLabel>
+        <translation><!-- Freight Lane --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install Issues</masterLabel>
+        <translation><!-- Install Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install No Show</masterLabel>
+        <translation><!-- Install No Show --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoicing</masterLabel>
+        <translation><!-- Invoicing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Item Set-up</masterLabel>
+        <translation><!-- Item Set-up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mult Repairs / Same Unit</masterLabel>
+        <translation><!-- Mult Repairs / Same Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSC Wrong Product</masterLabel>
+        <translation><!-- NSC Wrong Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Haul Away</masterLabel>
+        <translation><!-- No Haul Away --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Install</masterLabel>
+        <translation><!-- No Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA’s</masterLabel>
+        <translation><!-- PA’s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POD Request</masterLabel>
+        <translation><!-- POD Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parts</masterLabel>
+        <translation><!-- Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parts Order</masterLabel>
+        <translation><!-- Parts Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Print Ord/Inv</masterLabel>
+        <translation><!-- Print Ord/Inv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process Order</masterLabel>
+        <translation><!-- Process Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Overcharge</masterLabel>
+        <translation><!-- Product Overcharge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provide Quote</masterLabel>
+        <translation><!-- Provide Quote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quotes</masterLabel>
+        <translation><!-- Quotes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral</masterLabel>
+        <translation><!-- Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rekey Order</masterLabel>
+        <translation><!-- Rekey Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reports</masterLabel>
+        <translation><!-- Reports --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research Acct</masterLabel>
+        <translation><!-- Research Acct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research Billing</masterLabel>
+        <translation><!-- Research Billing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research Credit</masterLabel>
+        <translation><!-- Research Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research Order</masterLabel>
+        <translation><!-- Research Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research Product</masterLabel>
+        <translation><!-- Research Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research Return</masterLabel>
+        <translation><!-- Research Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return/Cust Sat</masterLabel>
+        <translation><!-- Return/Cust Sat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP</masterLabel>
+        <translation><!-- SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP Issue</masterLabel>
+        <translation><!-- SAP Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Orders</masterLabel>
+        <translation><!-- Sales Orders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schedule Date</masterLabel>
+        <translation><!-- Schedule Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schedule Service</masterLabel>
+        <translation><!-- Schedule Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Related</masterLabel>
+        <translation><!-- Service Related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Status Update</masterLabel>
+        <translation><!-- Status Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Store Pick-up</masterLabel>
+        <translation><!-- Store Pick-up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax</masterLabel>
+        <translation><!-- Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax Issue</masterLabel>
+        <translation><!-- Tax Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Cust ID</masterLabel>
+        <translation><!-- Wrong Cust ID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Item</masterLabel>
+        <translation><!-- Wrong Item --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong MOP</masterLabel>
+        <translation><!-- Wrong MOP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

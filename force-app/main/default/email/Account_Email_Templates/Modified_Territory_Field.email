@@ -1,0 +1,7 @@
+Hello,
+
+{!Account.OwnerFullName} has modified the Territory Field on the Salesforce.com Account for {!Account.Name}.  Please click on the link below to review the Account History Related list and update the appropriate fields to reflect the correct Territory ID.  
+
+{!Account.Link}
+
+Thank you.

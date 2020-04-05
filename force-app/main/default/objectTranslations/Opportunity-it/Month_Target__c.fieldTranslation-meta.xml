@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check the box to indicate this opportunity should be on your Target List for the Month. --></help>
+    <label><!-- Monthly Target --></label>
+    <name>Month_Target__c</name>
+</CustomFieldTranslation>

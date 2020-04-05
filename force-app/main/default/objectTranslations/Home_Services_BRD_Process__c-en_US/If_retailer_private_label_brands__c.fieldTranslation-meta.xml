@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Does the retailer have private label brands? If yes retailer needs to provide manuals, schematics and parts lists --></help>
+    <label><!-- If retailer, private label brands --></label>
+    <name>If_retailer_private_label_brands__c</name>
+</CustomFieldTranslation>

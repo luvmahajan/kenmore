@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p style="margin-left:.25in;">Hello,</p>
+
+<p style="margin-left:.25in;">Kenmore Direct has completed the request for proof of delivery/ bill of lading of invoice {!Case.Invoice__c} associated to sales order#{!Case.Sales_Order__c} /purchase order# {!Case.cust_po__c}&nbsp; Due to there being no signature present or not legible, Kenmore Direct will be issuing a credit in the amount of the dispute/billing in question.&nbsp;</p>
+
+<p style="margin-left:.25in;">Please allow 7-10 business days to process this credit and allow it to post to the original method of payment; check refunds may take up to 20 days to receive.&nbsp; For status of credit/check refund, please email: <a href="mailto:kdcreditmgmt@kenmorediect.com">kdcreditmgmt@kenmorediect.com</a> for additional assistance. &nbsp;</p>
+
+<p style="margin-left:.25in;">Thank you for your business -&nbsp;</p>
+
+<p style="margin-left:.25in;">Kenmore Direct Post Delivery team</p>
+</body>
+</html>

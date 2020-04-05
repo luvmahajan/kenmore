@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email notification to the creator of a delivery request once feedback has been provided by delivery managers.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Delivery Estimate Feedback Notification to Creator</name>
+    <style>none</style>
+    <subject>Delivery Estimate Feedback Updated: Please Review</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

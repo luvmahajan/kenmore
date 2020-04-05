@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Forecast_name_special_characters</fullName>
+    <active>true</active>
+    <description>Reserved characters cannot be used ; , : ~ ! @ # $ % &amp; * [ ]{ } / \ |</description>
+    <errorConditionFormula>NOT(
+REGEX( Name ,&quot;^[^;,:~!@#$%&amp;*{}/|\\[\\]]*$&quot;)
+&amp;&amp; NOT(CONTAINS(Name , &quot;\\&quot;)) 
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Special characters ; , : ~ ! @ # $ % &amp; * [ ]{ } / \ | are not allowed</errorMessage>
+</ValidationRule>

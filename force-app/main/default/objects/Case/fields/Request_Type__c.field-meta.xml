@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Commercial One</fullName>
+                <default>false</default>
+                <label>Commercial One</label>
+            </value>
+            <value>
+                <fullName>Commercial Pro</fullName>
+                <default>false</default>
+                <label>Commercial Pro</label>
+            </value>
+            <value>
+                <fullName>Supplemental Contract</fullName>
+                <default>false</default>
+                <label>Supplemental Contract</label>
+            </value>
+            <value>
+                <fullName>Create New Account</fullName>
+                <default>false</default>
+                <label>Create New Account</label>
+            </value>
+            <value>
+                <fullName>Credit Line Increase</fullName>
+                <default>false</default>
+                <label>Credit Line Increase</label>
+            </value>
+            <value>
+                <fullName>Service Account</fullName>
+                <default>false</default>
+                <label>Service Account</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

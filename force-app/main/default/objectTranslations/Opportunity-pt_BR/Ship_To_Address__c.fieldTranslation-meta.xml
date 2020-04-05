@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the ship to address related to this Opportunity --></help>
+    <label><!-- Ship To Address: --></label>
+    <name>Ship_To_Address__c</name>
+</CustomFieldTranslation>

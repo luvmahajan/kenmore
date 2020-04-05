@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Funnel_Scorecard_Commercial_Test</fullName>
+        <description>Enters the Funnel Scorecard Total for Commercial</description>
+        <field>Funnel_Scorecard_Test__c</field>
+        <formula>Funnel_Scorecard_Total_Commercial__c +  Funnel_Scorecard_Total_Home_Services__c</formula>
+        <name>Funnel Scorecard Commercial Test</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prior_Score</fullName>
+        <description>Prior Score is calculated evertime the record is edited.</description>
+        <field>Prior_Score__c</field>
+        <formula>PRIORVALUE(   Funnel_Scorecard_Test__c   )</formula>
+        <name>Prior Score</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Funnel Scorecard - Populate Total - Update</fullName>
+        <actions>
+            <name>Funnel_Scorecard_Commercial_Test</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Funnel_Scorecard__c.Funnel_Scorecard_Total_Commercial__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Funnel_Scorecard__c.Funnel_Scorecard_Total_Home_Services__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Populates the Funnel Scorecard total</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Funnel Scorecard - Prior Score - Update</fullName>
+        <actions>
+            <name>Prior_Score</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Update the field with the prior value of the Funnel Scorecard Total</description>
+        <formula>AND(  OR(  ISCHANGED( B1_Willing_to_invest_in_viable_solutions__c ),  ISCHANGED( B2_Client_values_long_term_relationship__c ),  ISCHANGED( B3_SHC_footprint_is_aligned_with_clients__c ),  ISCHANGED( B4_Client_gives_credit_for_brand_loyalty__c ),  ISCHANGED( B5_Financial_Strength_is_creditworthy__c ),  ISCHANGED( B6_Can_see_SHC_value_prop_in_diff_light__c ),  ISCHANGED( B7_L_term_profitable_rev_for_investment__c ),  ISCHANGED( B8_Client_buys_the_way_we_want_them_to__c ),  ISCHANGED( B9_Client_engages_in_open_communication__c ),  ISCHANGED( B10_Client_innovative_open_to_change__c ),  ISCHANGED( O1_The_EBI_supports_our_solution__c ),  ISCHANGED( O2_Coach_identified_and_is_influential__c ),  ISCHANGED( O3_SHC_Uniquely_qualified_solution__c ),  ISCHANGED( O4_We_know_the_BI_s_Win_Results__c ),  ISCHANGED( O5_EBI_to_allocate_resources_for_the_SSO__c ),  ISCHANGED( O6_Validated_solution_image_close_date__c ),  ISCHANGED( O7_Competition_anti_sponsor_identified__c ),  ISCHANGED( O8_BI_s_are_in_growth_or_trouble_mode__c ),  ISCHANGED( O9_Sales_stages_synch_with_buying_stages__c ),  ISCHANGED( O10_BI_s_are_rated_3_or_for_the_SSO__c ),  ISCHANGED( B1_Service_relationship_trumps_price__c),  ISCHANGED( B2_Values_all_4_Pillars__c),  ISCHANGED( B3_Is_in_Trouble_mode__c),  ISCHANGED( B4_High_pride_focus_on_their_Brand__c),  ISCHANGED( B5_Operates_in_our_core_market_segments__c),  ISCHANGED( B6_Complex_operational_logistic_needs__c),  ISCHANGED( B7_Multiple_product_category_needs__c),  ISCHANGED( B8_Fiscally_stable_low_credit_risk__c),  ISCHANGED( B9_100K_purchases_A_C_Client_Profile__c),  ISCHANGED( B10_Open_honest_communication_style__c),  ISCHANGED( O1_Well_thought_out_B_G_Sheets_drive_SSO__c),  ISCHANGED( O2_EBI_Supports_our_solution__c),  ISCHANGED( O3_Identified_Coach__c),  ISCHANGED( O4_Is_in_Trouble_Growth_mode__c),  ISCHANGED( O5_Met_3_BI_s_know_their_Win_Results__c),  ISCHANGED( O6_No_RFP_in_play_or_we_wrote_it__c),  ISCHANGED( O7_Right_team_is_aligned_with_BI_s__c),  ISCHANGED( O8_Identified_Anti_sponsor_Competition__c),  ISCHANGED( O9_Taught_BI_something_new_valuable__c),  ISCHANGED( O10_We_are_not_matching_comps__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

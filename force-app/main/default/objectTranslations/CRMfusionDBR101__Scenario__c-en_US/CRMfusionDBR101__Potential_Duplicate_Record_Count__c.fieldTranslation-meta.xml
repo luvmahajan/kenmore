@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The current count of all potential duplicates for this scenario. --></help>
+    <label><!-- Potential Duplicate Record Count --></label>
+    <name>CRMfusionDBR101__Potential_Duplicate_Record_Count__c</name>
+</CustomFieldTranslation>

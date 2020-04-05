@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>CPQ Opportunity Contract Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Information --></label>
+            <section>Shipping Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CPQ Opportunity Flow Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Information --></label>
+            <section>Salesforce CPQ Information</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Information --></label>
+            <section>Shipping Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Commercial</layout>
+        <sections>
+            <label><!-- Additional Information 2 --></label>
+            <section>Additional Information 2</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Address --></label>
+            <section>Shipping Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Home Services</layout>
+        <sections>
+            <label><!-- Additional Information 2 --></label>
+            <section>Additional Information 2</section>
+        </sections>
+        <sections>
+            <label><!-- BRD Items --></label>
+            <section>BRD Items</section>
+        </sections>
+        <sections>
+            <label><!-- Business Items --></label>
+            <section>Business Items</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Opportunity Items --></label>
+            <section>Renewal Opportunity Items</section>
+        </sections>
+        <sections>
+            <label><!-- Service Details --></label>
+            <section>Service Details</section>
+        </sections>
+        <sections>
+            <label><!-- Strategic Selling --></label>
+            <section>Strategic Selling</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inside Sales Team</layout>
+        <sections>
+            <label><!-- Additional Information 2 --></label>
+            <section>Additional Information 2</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Address --></label>
+            <section>Shipping Address</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Quote --></label>
+        <name>Contract_Quote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Quote --></label>
+        <name>Create_Quote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Opportunity --></label>
+        <name>Update_Qual_Stage_steps</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update_Working_Req_steps --></label>
+        <name>Update_Working_Req_steps</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Commercial --></label>
+        <name>Commercial</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Any business that doesn&apos;t meet the criteria of Commercial Project Business. --></description>
+        <label><!-- Commercial - Flow Business --></label>
+        <name>Commercial_Flow_Business</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- The start date, number of units, AND price have all been defined. --></description>
+        <label><!-- Commercial - Project --></label>
+        <name>Commercial_Project</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Home Services --></label>
+        <name>Home_Services</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- City, state, and zip code are required for project opportunities if the Stage is Proposal Sent and all subsequent Stages. --></errorMessage>
+        <name>Address_Fields_Required_at_Proposal_Sent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Renewal --></errorMessage>
+        <name>Claim_Filed_Per_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Renewal --></errorMessage>
+        <name>Claim_Rejection_Reasons_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Start Date must be after Close Date --></errorMessage>
+        <name>Close_Date_Prior_to_Shipping_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Contract Required field is required if the Opportunity Stage is Finalizing and all subsequent Stages. --></errorMessage>
+        <name>Contract_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Renewal --></errorMessage>
+        <name>Current_Labor_Rate_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Renewal --></errorMessage>
+        <name>New_Contract_Terms_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one Funnel Score Card can be created per Opportunity.   Edit existing Score Card --></errorMessage>
+        <name>One_Funnel_Score_Card_Per_Oppty_Record</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The stage of opportunity once closed, cannot be changed --></errorMessage>
+        <name>Opportunity_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Renewal --></errorMessage>
+        <name>Parts_Compensation_Terms_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field is automatically calculated based on the Funnel Scorecard Total.  Only the administrator can change the Place in the Funnel. --></errorMessage>
+        <name>Place_in_the_Funnel_can_not_be_edited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product Field required when Stage = Develop Proposal --></errorMessage>
+        <name>Product_Services_Required_when_Dev_Prop</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Renewal --></errorMessage>
+        <name>Products_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure the Project Administrator and Operations Manager fields are completed if  the Opportunity Stage is Closed Won. --></errorMessage>
+        <name>Project_Admin_and_Ops_Manager_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Stage = Closed Lost, then Lost Reason Description is required. --></errorMessage>
+        <name>Reason_Lost_Description_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the product assortment did not meet the customer&apos;s needs, please complete the following fields: Product Assortment Reason Lost, Requested Brand, Requested Division. --></errorMessage>
+        <name>Reason_Lost_Product_Feedback_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Stage = Closed Lost, then Lost Reason is required. --></errorMessage>
+        <name>Reason_why_opp_is_lost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Renewal --></errorMessage>
+        <name>Recall_Payments_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Start and End Date are required if the Opportunity Stage is Proposal Sent. --></errorMessage>
+        <name>Require_Shipping_Start_and_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field is automatically calculated based on the Opportunity Stage and cannot be edited. Only the administrator can change the Sales Process. --></errorMessage>
+        <name>Sales_Process_cannot_be_edited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Renewal --></errorMessage>
+        <name>Service_Scheduling_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Stage is set to Determine Solution or greater then Ship Date is a required field for all Commercial Opportunities. --></errorMessage>
+        <name>Ship_Date_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ship To Address:  is Required for deals $100K or greater --></errorMessage>
+        <name>Ship_To_Address_Required_on_Large_Deals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Require Shipping Start Date if Opportunity Record type is Commercial Project and Stage is Finalizing, Awaiting Credit or Closed Won. --></errorMessage>
+        <name>Shipping_Start_Date_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- State/Provide must be 2 characters in capital letters (i.e. AL, GA, FL, etc.) --></errorMessage>
+        <name>Shipping_State_must_be_two_characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field required when Type = Renewal --></errorMessage>
+        <name>Unpaid_Call_Types_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Convert_to_Flow_Opportunity --></label>
+        <name>Convert_to_Flow_Opportunity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convert_to_Project_Opportunity --></label>
+        <name>Convert_to_Project_Opportunity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Enterprise_Item_Search_Tool --></label>
+        <name>Enterprise_Item_Search_Tool</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Full_Line_Transitions --></label>
+        <name>Full_Line_Transitions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MH_Relationship_Maps --></label>
+        <name>MH_Relationship_Maps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Marketing_Portal --></label>
+        <name>Marketing_Portal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Online_Product_Catalogue --></label>
+        <name>Online_Product_Catalogue</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Product_Database --></label>
+        <name>Product_Database</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Strategic_Selling --></label>
+        <name>Strategic_Selling</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Zippy --></label>
+        <name>Zippy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Verify_with_DNB --></label>
+        <name>dsfs__Verify_with_DNB</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Determine_Method_of_Payment_and_review_SC1_Application_requirements_with_custome</name>
+        <subject><!-- Determine Method of Payment and review Commercial One Application requirements with customer (where appropriate) --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Get Legal approval for Opportunity --></description>
+        <name>Get_Legal_Approval</name>
+        <subject><!-- Get Legal Approval --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Opportunity_Closed</name>
+        <subject><!-- Opportunity Closed --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Opportunity_Created</name>
+        <subject><!-- Opportunity Created --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Schedule_Initial_Appointment</name>
+        <subject><!-- Schedule Initial Appointment --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Submit_Forecast_Worksheet</name>
+        <subject><!-- Submit Forecast Worksheet --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Transition_to_Order_Management</name>
+        <subject><!-- Transition to Order Management --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

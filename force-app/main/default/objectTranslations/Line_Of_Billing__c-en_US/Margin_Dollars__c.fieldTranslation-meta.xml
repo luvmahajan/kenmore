@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Margin = Revenue/Sales - Total Cost --></help>
+    <label><!-- Margin Dollars --></label>
+    <name>Margin_Dollars__c</name>
+</CustomFieldTranslation>

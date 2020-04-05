@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Printer company for existing marketing orders --></help>
+    <label><!-- Printer --></label>
+    <name>Printer__c</name>
+    <picklistValues>
+        <masterLabel>Blooming Color</masterLabel>
+        <translation><!-- Blooming Color --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sears Headquarters</masterLabel>
+        <translation><!-- Sears Headquarters --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

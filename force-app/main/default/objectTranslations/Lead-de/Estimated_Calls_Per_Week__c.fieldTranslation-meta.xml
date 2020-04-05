@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Estimated Calls Per Week --></label>
+    <name>Estimated_Calls_Per_Week__c</name>
+    <picklistValues>
+        <masterLabel>101 - 200</masterLabel>
+        <translation><!-- 101 - 200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>200+</masterLabel>
+        <translation><!-- 200+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>26 - 100</masterLabel>
+        <translation><!-- 26 - 100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Less than 25</masterLabel>
+        <translation><!-- Less than 25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

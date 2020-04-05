@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Filed_Per_Required</fullName>
+    <active>false</active>
+    <description>When Type = Renewal, Claim Filed Per is a required field</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(  Type  , &quot;Renewal&quot;), 
+ISPICKVAL(  Claims__c  , &quot;&quot; ))</errorConditionFormula>
+    <errorDisplayField>Claims__c</errorDisplayField>
+    <errorMessage>Field required when Type = Renewal</errorMessage>
+</ValidationRule>

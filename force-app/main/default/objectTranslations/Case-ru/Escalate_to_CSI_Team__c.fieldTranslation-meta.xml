@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Commercial Support use only --></help>
+    <label><!-- Escalate to CSI Team --></label>
+    <name>Escalate_to_CSI_Team__c</name>
+</CustomFieldTranslation>

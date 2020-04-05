@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If checked, the customer will receive either Sears Commercial Pricing or sears.com sale price – which ever of the two is lower.  The customer will receive the best price of the two. --></help>
+    <label><!-- Is this customer eligible for best price --></label>
+    <name>Is_this_customer_eligible_for_best_price__c</name>
+</CustomFieldTranslation>

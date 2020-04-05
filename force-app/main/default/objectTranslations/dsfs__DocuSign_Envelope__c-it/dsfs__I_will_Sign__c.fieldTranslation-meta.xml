@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Seleziona la casella se desideri apparire come ulteriore destinatario o firmatario per questo documento. Se non selezioni la casella, ti verrà comunicato che il contatto ha apposto la propria firma DocuSign ma non potrai firmare a tua volta.</help>
+    <label><!-- I will also Sign --></label>
+    <name>dsfs__I_will_Sign__c</name>
+</CustomFieldTranslation>

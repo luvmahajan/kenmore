@@ -1,0 +1,6 @@
+Dear {!Account.OwnerFullName},
+
+Your account for {!Account.Name} has been created in SAP. 
+
+SAP ID: {!Account.SAP_Account_ID__c}
+Link to Account in SFDC: {!Account.Link}

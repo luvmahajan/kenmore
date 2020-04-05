@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Projects</fullName>
+    <columns>Estimated_1st_Delivery_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Project_Name__c</columns>
+    <columns>Project_Owner__c</columns>
+    <columns>Account__c</columns>
+    <columns>Contract__c</columns>
+    <columns>Project_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>Project_Status__c</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <label>New Unassigned Projects</label>
+    <queue>Project_Managers</queue>
+</ListView>

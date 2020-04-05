@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Approval_Comment_Required</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Approver_Status_field_update</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Approval is sent to District Manager - First Approver</description>
+        <label>Approval by District Manager</label>
+        <name>Approval_by_District_Manager</name>
+        <rejectionActions>
+            <action>
+                <name>Approval_Comment_Required</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Field_Update_DM_Reject</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>update_the_approver_name_on_reject</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Approval_Comment_Required</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Approver_Status_field_update</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Change_Request_Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>The current account owners district manager needs to approve requested changes.</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Change_Request__c.Change_Request_Approver__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Approval by Account Owner District Manager</label>
+        <name>Approval_by_Account_Owner_District_Manager</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Approval_Comment_Required</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Field_Update_DM_Reject</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>update_the_approver_name_on_reject</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Approval_Comment_Required</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>File_Admin_Approval_Status_is_Updated</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>update_the_file_admin_name</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>aglenn99@searshc.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>diane.allen@kenmoredirect.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>marquitta.carr@kenmoredirect.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>The approval request is sent to File Administrator - Second Apporver</description>
+        <label>Approval by File Administrator</label>
+        <name>Approval_by_File_Administrator</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Approval_Comment_Required</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>File_Admin_Approval_Status_is_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>update_the_file_admin_name_on_reject</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <description>On click of Submit for Approval, District Manager will get the approval request. On approval by the District Manager, the Approval request is sent to the current Account Owners DM and then upon approval it is sent to File Admin. On Approval by the File Admin, the Approver Status will be changed to Approved.</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND( 
+CreatedBy.Id != Account_Owner__c , 
+CreatedBy.District_Territory_ID__c != Account_Name__r.Owner.District_Territory_ID__c ,
+OR(
+CreatedBy.Profile.Name = &#39;Standard Commercial AM User&#39;, 
+CreatedBy.Profile.Name = &#39;Standard Inside Sales User&#39;
+)
+)</formula>
+    </entryCriteria>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Field_Update_of_Request_Status_field</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>OLDCR Sales User Not Own Not In District</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

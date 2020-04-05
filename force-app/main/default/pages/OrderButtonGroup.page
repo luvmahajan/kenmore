@@ -1,0 +1,28 @@
+<apex:page Controller="OrderButtonGroupController" lightningStylesheets="true" >
+    <apex:form >
+        
+        <apex:pageBlock >
+            <apex:pageMessages id="showmsg"></apex:pageMessages>
+            <apex:outputPanel id="ordertypeid222" rendered="{!renAdj}">
+            <apex:outputPanel id="ordertypeid" rendered="{!OR(ordertype=='', ordertype=='Order') }">
+                <b>Select Adjustment Type: </b>
+                    <apex:selectList value="{!selectedordertype}" size="1">
+                        <apex:selectoptions value="{!OrderTypeDrop}"/>
+                    </apex:selectList>
+            </apex:outputPanel>
+            &nbsp;&nbsp;&nbsp;
+                <apex:commandButton id="btnadj12" value="Create Adjustment" action="{!gotoMSASign22}" reRender="ordertypeid222, ordertypeid, btnadj, showmsg"  rendered="{!OR(ordertype=='', ordertype=='Order')}"/>
+                <apex:commandButton id="btnadj22" value="Edit Lines" action="{!gotoAdjustmentPage22}" reRender="ordertypeid222, ordertypeid, btnadj, showmsg"  rendered="{!AND(ordertype!='', ordertype!='Order', !isPending, parentOrder!=null, parentOrder!='', status!='Submitted' )}"/>
+                <apex:commandButton id="btnadj44" value="Edit Lines" action="{!gotoAdjustmentPage44}" reRender="ordertypeid222, ordertypeid, btnadj, showmsg"  rendered="{!AND(ordertype!='', ordertype!='Order', !isPending, AND(OR(parentOrder==null, parentOrder==''), status!='Submitted') )}"/>
+                <apex:commandButton id="btnadj33" value="Submit Order" action="{!gotoAdjustmentPage33}"  style="color:white;background:#0070d2;" reRender="ordertypeid222, ordertypeid, btnadj, showmsg"  rendered="{!AND(ordertype!='', ordertype!='Order', !isPending, status!='Submitted' )}"/>
+                <apex:commandButton id="btnrsch" value="Reschedule Adjustment" action="{!gotoAdjustmentReschedule}"  style="color:white;background:#0070d2;" reRender="ordertypeid222, ordertypeid, btnadj, showmsg"  rendered="{!AND(OR(ordertype=='Return', ordertype=='Exchange'), status=='Submitted' )}"/>
+                <apex:commandButton id="btncnl" value="Cancel Adjustment" action="{!gotoAdjustmentCancel}"  style="color:white;background:#0070d2;" reRender="ordertypeid222, ordertypeid, btnadj, showmsg"  rendered="{!AND(ordertype!='', ordertype!='Order', status=='Submitted' )}"/>
+                <apex:outputPanel style="color:red; float:left" id="btnadj3" rendered="{!AND(ordertype!='', ordertype!='Order', isPending )}" >
+                    <br/>
+                    Order has been sent for Approval !!!
+                    <br/><br/>
+                </apex:outputPanel>
+            </apex:outputPanel>
+            </apex:pageBlock>
+    </apex:form>
+</apex:page>

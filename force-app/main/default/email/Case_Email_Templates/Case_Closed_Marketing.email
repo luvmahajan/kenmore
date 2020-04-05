@@ -1,0 +1,14 @@
+Hello {!Case.CreatedBy},
+
+The {!Case.RecordType} Case you submitted on {!Case.CreatedDate} regarding "{!Case.Type}" has been {!Case.Status}.  Your support partner has provided the following Case Closed Reason:  {!Case.Reason}.  Please find additional information below:
+
+Comments:  {!Case.Comments__c}
+
+Solution Reference:  {!Case.Solution_Subject_and_Description}
+
+This is related to the following: 
+Account: {!Case.Account} 
+Opportunity: {!Case.Opportunity__c} 
+
+Thank you,
+{!Case.OwnerFullName}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for not working with us currently --></label>
+    <name>Can_you_give_us_a_reason_for_not_work__c</name>
+    <picklistValues>
+        <masterLabel>Credit Terms</masterLabel>
+        <translation><!-- Credit Terms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Service</masterLabel>
+        <translation><!-- Customer Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery Failure</masterLabel>
+        <translation><!-- Delivery Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Economy</masterLabel>
+        <translation><!-- Economy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installation Issues</masterLabel>
+        <translation><!-- Installation Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost AM</masterLabel>
+        <translation><!-- Lost AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No access to local rep</masterLabel>
+        <translation><!-- No access to local rep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing</masterLabel>
+        <translation><!-- Pricing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

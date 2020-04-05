@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fields_req_for_SAP_Support_Case_Type</fullName>
+    <active>true</active>
+    <description>Fields required for SAP Support Case Type</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(Type, &quot;SAP System Product Issues&quot;),
+OR( 
+ISBLANK(Item__c)
+)
+)</errorConditionFormula>
+    <errorMessage>If the case type is SAP Support, then Item # is required.</errorMessage>
+</ValidationRule>

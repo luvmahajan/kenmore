@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Salesforce.com Phase I Roll-out - Leadership Message</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>ROLL-OUT: Leadership Message</name>
+    <style>freeForm</style>
+    <subject>An Important Message Regarding Salesforce.com</subject>
+    <textOnly>Dear {!User.FirstName},
+
+Please click the link below and select Leadership Message to view an important video regarding Salesforce.com from Greg Fern, Vice President and General Manager of Sears Commercial. 
+
+http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx
+
+Best, 
+Dave</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

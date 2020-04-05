@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Can we search for and purchase parts outside of the client to meet the commitment to the client and can we charge the client for those parts at the purchase cost? --></help>
+    <label><!-- When necessary can use Non-OEM Parts --></label>
+    <name>When_necessary_can_use_Non_OEM_Parts__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes only when Client is on National b/o</masterLabel>
+        <translation><!-- Yes only when Client is on National b/o --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

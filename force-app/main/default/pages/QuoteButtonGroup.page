@@ -1,0 +1,78 @@
+<!--
+<apex:page standardController="SBQQ__Quote__c" extensions="QuoteButtonGroupController" lightningStylesheets="true" >
+-->
+
+<apex:page Controller="QuoteButtonGroupController" lightningStylesheets="true" >
+
+    <apex:form >
+        <!--
+        <apex:pageBlock >
+            <br/>
+            Status: {!status}
+            <br/>
+            Record Type: {!recordtype}
+            <br/>
+<apex:outputLink value="{!URLFOR($Action.Contract.New)}" >Create New Contract</apex:outputLink>
+            <br/>
+        </apex:pageBlock>  
+-->
+        <apex:pageBlock rendered="{!renLock}">
+            <!--
+            <apex:outputPanel style="color:green" rendered="{!AND(isAccountTaxExempted,status=='Quote Header Review')}">
+                This Account is Tax Exempted !!!<br/>
+            </apex:outputPanel>
+            -->
+            <apex:pageBlockButtons location="bottom" ><!--
+                <apex:commandButton value="Attach Tax Exempt Document" action="{!gotoQuoteAttachment}" style="float:left" rendered="{!AND(NOT(isAccountTaxExempted),status=='Quote Header Review')}" />
+                <apex:commandButton value="Submit for Approval for Tax Exempt" action="{!gotoApprovalProcess}" style="float:left" rendered="{!AND(NOT(isAccountTaxExempted),status=='Quote Header Review')}" />
+                -->
+                <apex:commandButton value="Quote Line Editor" action="{!gotoQuoteLineEditor}" style="float:left" rendered="{!OR(status=='Add/Edit Products', status=='Approval')}" /><!--
+                <apex:commandButton value="Quote Line Editor" action="{!gotoQuoteLineEditor}" style="float:right" rendered="{!AND(status!='Quote Header Review', status!='Add/Edit Products')}" />-->
+                <apex:outputLink value="{!URLFOR($Action.Delivery_Estimate__c.New)}" style="float:left" rendered="{!status=='Delivery Estimate'}" styleClass="btn" >Delivery Estimate</apex:outputLink>
+                <apex:commandButton value="Send for eSignature" action="{!gotoGenerateDocument}" style="float:left" rendered="{!OR(status=='Document Preparation')}" />
+                <apex:commandButton value="Create Order" action="{!gotoQuoteOrder}" style="float:left" rendered="{!AND(renOrder, status=='Order')}" />
+                <apex:commandButton value="Update Geo Code" action="{!gotoGeocode}" style="float:right" rendered="{!OR(status=='Add/Edit Products')}" />
+                <apex:outputPanel rendered="{!AND(NOT(renOrder), status=='Order')}" >
+                    <!--
+                <apex:outputPanel style="color:red; float:left" rendered="{!renSignMessage}" >
+                    &nbsp;&nbsp;&nbsp;Please have a signed copy of the quote to create an order !!!
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!renSignMessage}" >
+                    <br/>
+                </apex:outputPanel>
+                    -->
+                <apex:outputPanel style="color:red; float:left" rendered="{!renPOMessage}" >
+                    &nbsp;&nbsp;&nbsp;Please enter the Purchase Order Number to create an order !!!
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!renPOMessage}" >
+                    <br/>
+                </apex:outputPanel>
+                <apex:outputPanel style="color:red; float:left" rendered="{!renAddressValidation}" >
+                    &nbsp;&nbsp;&nbsp;Please Validate the Address and save the quote to create an order !!!
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!renAddressValidation}" >
+                    <br/>
+                </apex:outputPanel>
+                <apex:outputPanel style="color:red; float:left" rendered="{!renPrimaryMessage}" >
+                    &nbsp;&nbsp;&nbsp;Please make the Quote Primary to create an order !!!
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!renPrimaryMessage}" >
+                    <br/>
+                </apex:outputPanel>
+                </apex:outputPanel>
+                <!--
+                <apex:commandButton value="Create Contract" action="{!gotoQuoteOrder}" style="float:left" rendered="{!OR(status=='Contract')}" />
+                -->
+                <apex:outputLink value="{!URLFOR($Action.Contract.New)}" style="float:left" rendered="{!status=='Contract'}" styleClass="btn" >Create Contract</apex:outputLink>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!NOT(renLock)}">
+            <apex:outputPanel style="color:red">
+                <apex:commandButton value="Quote Line Editor" action="{!gotoQuoteLineEditor}" style="float:right" rendered="{!status!='Quote Header Review'}" />
+                The Quote is locked because it is sent for Approval.<br/>
+                This record can be edited, once a decision is made on the quote.<br/>
+            </apex:outputPanel>
+        </apex:pageBlock>
+      </apex:form>  
+    
+</apex:page>

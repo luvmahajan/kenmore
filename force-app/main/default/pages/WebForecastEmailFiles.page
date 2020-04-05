@@ -1,0 +1,5 @@
+<apex:page showHeader="false" sideBar="false" standardController="Web_Forecast__c"
+           extensions="WebForecastEmailConfirmation"
+           action="{!EmailandAttach}"
+>
+</apex:page>

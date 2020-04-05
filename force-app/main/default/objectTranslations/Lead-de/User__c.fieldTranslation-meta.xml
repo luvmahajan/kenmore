@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If you are submitting a lead to be assigned to someone else, please enter your name as the User lead source. --></help>
+    <label><!-- User --></label>
+    <name>User__c</name>
+    <relationshipLabel><!-- Leads (User) --></relationshipLabel>
+</CustomFieldTranslation>

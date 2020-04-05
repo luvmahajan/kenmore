@@ -1,0 +1,7 @@
+Hello,
+
+This is a notification that a BRD has been rejected.  Please click on the link below to view the details of this Opportunity.
+
+{!Opportunity.Link}
+
+Thank you.

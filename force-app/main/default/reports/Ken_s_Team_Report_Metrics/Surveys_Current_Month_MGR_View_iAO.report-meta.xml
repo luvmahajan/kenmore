@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>GetFeedback_Aut__Response__c$GetFeedback_Aut__CompletionDate__c</field>
+    </columns>
+    <columns>
+        <field>GetFeedback_Aut__Response__c$GetFeedback_Aut__Contact__c</field>
+    </columns>
+    <columns>
+        <field>GetFeedback_Aut__Response__c$GetFeedback_Aut__Contact__c.Account.Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>GetFeedback_Aut__Response__c$Score__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>GetFeedback_Aut__Response__c$GetFeedback_Aut__Contact__c.Account.CSS__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value/>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>GetFeedback_Aut__Response__c$GetFeedback_Aut__Contact__c.Account.CSS__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Surveys: Current Month MGR View</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Survey_Responses__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>GetFeedback_Aut__Response__c$GetFeedback_Aut__CompletionDate__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

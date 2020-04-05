@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reporting_Group__c</fullName>
+    <externalId>false</externalId>
+    <label>Reporting Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Beneplace</fullName>
+                <default>false</default>
+                <label>Beneplace</label>
+            </value>
+            <value>
+                <fullName>Best Western</fullName>
+                <default>false</default>
+                <label>Best Western</label>
+            </value>
+            <value>
+                <fullName>Builder Radio</fullName>
+                <default>false</default>
+                <label>Builder Radio</label>
+            </value>
+            <value>
+                <fullName>Builders Club</fullName>
+                <default>false</default>
+                <label>Builders Club</label>
+            </value>
+            <value>
+                <fullName>Choice Hotels</fullName>
+                <default>false</default>
+                <label>Choice Hotels</label>
+            </value>
+            <value>
+                <fullName>Comm Pro - Non Recourse</fullName>
+                <default>false</default>
+                <label>Comm Pro - Non Recourse</label>
+            </value>
+            <value>
+                <fullName>CommPro - Service Only</fullName>
+                <default>false</default>
+                <label>CommPro - Service Only</label>
+            </value>
+            <value>
+                <fullName>Contract Accts</fullName>
+                <default>false</default>
+                <label>Contract Accts</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Customer</fullName>
+                <default>false</default>
+                <label>Ecommerce Customer</label>
+            </value>
+            <value>
+                <fullName>Employee Purchase Plan</fullName>
+                <default>false</default>
+                <label>Employee Purchase Plan</label>
+            </value>
+            <value>
+                <fullName>Equity Customers</fullName>
+                <default>false</default>
+                <label>Equity Customers</label>
+            </value>
+            <value>
+                <fullName>Equity New Const</fullName>
+                <default>false</default>
+                <label>Equity New Const</label>
+            </value>
+            <value>
+                <fullName>Equity Rehab</fullName>
+                <default>false</default>
+                <label>Equity Rehab</label>
+            </value>
+            <value>
+                <fullName>GSA</fullName>
+                <default>false</default>
+                <label>GSA</label>
+            </value>
+            <value>
+                <fullName>Home Warranty</fullName>
+                <default>false</default>
+                <label>Home Warranty</label>
+            </value>
+            <value>
+                <fullName>Plumbing Distributor</fullName>
+                <default>false</default>
+                <label>Plumbing Distributor</label>
+            </value>
+            <value>
+                <fullName>Recourse Comm One</fullName>
+                <default>false</default>
+                <label>Recourse Comm One</label>
+            </value>
+            <value>
+                <fullName>Recourse Comm Pro</fullName>
+                <default>false</default>
+                <label>Recourse Comm Pro</label>
+            </value>
+            <value>
+                <fullName>Sears Commercial market Place</fullName>
+                <default>false</default>
+                <label>Sears Commercial market Place</label>
+            </value>
+            <value>
+                <fullName>SHUSTER</fullName>
+                <default>false</default>
+                <label>SHUSTER</label>
+            </value>
+            <value>
+                <fullName>Southern Living</fullName>
+                <default>false</default>
+                <label>Southern Living</label>
+            </value>
+            <value>
+                <fullName>SPOC Priorty Customer</fullName>
+                <default>false</default>
+                <label>SPOC Priorty Customer</label>
+            </value>
+            <value>
+                <fullName>Weatherization Program</fullName>
+                <default>false</default>
+                <label>Weatherization Program</label>
+            </value>
+            <value>
+                <fullName>YARDI</fullName>
+                <default>false</default>
+                <label>YARDI</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

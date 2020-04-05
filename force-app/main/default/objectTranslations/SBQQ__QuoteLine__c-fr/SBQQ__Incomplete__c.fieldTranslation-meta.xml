@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indicateur défini en interne par une logique d&#39;application lorsqu&#39;une ligne est enregistrée dans une base de données incomplète. Cela peut se produire lors de l&#39;évaluation de règles de prix. Testez ce champ dans des règles d&#39;évaluation afin d&#39;éviter leur déclenchement prématuré. Ne pas ajouter à une présentation de page ni mettre à jour.</help>
+    <label><!-- Incomplete --></label>
+    <name>SBQQ__Incomplete__c</name>
+</CustomFieldTranslation>

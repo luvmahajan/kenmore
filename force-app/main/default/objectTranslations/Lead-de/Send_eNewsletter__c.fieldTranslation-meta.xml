@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this box if your customer contact should be added to the Sears Commercial eNewsletter distribution list.  Uncheck this box if your customer contact requests to be removed from the Sears Commercial eNewsletter distribution list. --></help>
+    <label><!-- Send eNewsletter --></label>
+    <name>Send_eNewsletter__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Reason! --></label>
+    <name>Case_Reason2__c</name>
+    <picklistValues>
+        <masterLabel>Added requirements to the road map</masterLabel>
+        <translation><!-- Added requirements to the road map --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asset not available</masterLabel>
+        <translation><!-- Asset not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Availability provided</masterLabel>
+        <translation><!-- Availability provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bad data in MDM</masterLabel>
+        <translation><!-- Bad data in MDM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bad data in SPIN</masterLabel>
+        <translation><!-- Bad data in SPIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Catalog image sorting broken</masterLabel>
+        <translation><!-- Catalog image sorting broken --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clarified the instructions or process</masterLabel>
+        <translation><!-- Clarified the instructions or process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coaching</masterLabel>
+        <translation><!-- Coaching --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Configured a solution</masterLabel>
+        <translation><!-- Configured a solution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DCC back ordered - provided date</masterLabel>
+        <translation><!-- DCC back ordered - provided date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date cannot be changed</masterLabel>
+        <translation><!-- Date cannot be changed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date corrected</masterLabel>
+        <translation><!-- Date corrected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discontinued item - provided status</masterLabel>
+        <translation><!-- Discontinued item - provided status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Division/category never loaded into Online Catalog</masterLabel>
+        <translation><!-- Division/category never loaded into Online Catalog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Don&#39;t have assets readily available</masterLabel>
+        <translation><!-- Don&apos;t have assets readily available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Don&#39;t know how to register</masterLabel>
+        <translation><!-- Don&apos;t know how to register --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Don&#39;t know where to get asset</masterLabel>
+        <translation><!-- Don&apos;t know where to get asset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Don&#39;t know who to contact for information</masterLabel>
+        <translation><!-- Don&apos;t know who to contact for information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Don&#39;t know/forgot password</masterLabel>
+        <translation><!-- Don&apos;t know/forgot password --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Double product images - no feature product links</masterLabel>
+        <translation><!-- Double product images - no feature product links --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate Request</masterLabel>
+        <translation><!-- Duplicate Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Easy order - expedited</masterLabel>
+        <translation><!-- Easy order - expedited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalated</masterLabel>
+        <translation><!-- Escalated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forgot password</masterLabel>
+        <translation><!-- Forgot password --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forwarded to phase II</masterLabel>
+        <translation><!-- Forwarded to phase II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freight lane opened/date corrected</masterLabel>
+        <translation><!-- Freight lane opened/date corrected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information not readily available</masterLabel>
+        <translation><!-- Information not readily available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of design skills</masterLabel>
+        <translation><!-- Lack of design skills --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of writing skills</masterLabel>
+        <translation><!-- Lack of writing skills --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDO/opened/date corrected</masterLabel>
+        <translation><!-- MDO/opened/date corrected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Need Kenmore comparable</masterLabel>
+        <translation><!-- Need Kenmore comparable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Need information</masterLabel>
+        <translation><!-- Need information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Need sub-up or replacement</masterLabel>
+        <translation><!-- Need sub-up or replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Feature Request</masterLabel>
+        <translation><!-- New Feature Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New product</masterLabel>
+        <translation><!-- New product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New product declined</masterLabel>
+        <translation><!-- New product declined --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order status provided</masterLabel>
+        <translation><!-- Order status provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Team Escalated</masterLabel>
+        <translation><!-- Other Team Escalated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provided product specification details</masterLabel>
+        <translation><!-- Provided product specification details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RRC back ordered - provided date to RRC</masterLabel>
+        <translation><!-- RRC back ordered - provided date to RRC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recorded</masterLabel>
+        <translation><!-- Recorded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referenced an existing Solution</masterLabel>
+        <translation><!-- Referenced an existing Solution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested updated forecast</masterLabel>
+        <translation><!-- Requested updated forecast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Routing/full/not corrected</masterLabel>
+        <translation><!-- Routing/full/not corrected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Routing/open/date corrected</masterLabel>
+        <translation><!-- Routing/open/date corrected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Setup corrected</masterLabel>
+        <translation><!-- Setup corrected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sort by working incorrectly</masterLabel>
+        <translation><!-- Sort by working incorrectly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Issue Escalated</masterLabel>
+        <translation><!-- System Issue Escalated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Issue Resolved</masterLabel>
+        <translation><!-- System Issue Resolved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System issue/change</masterLabel>
+        <translation><!-- System issue/change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System issue/sent to DOS support</masterLabel>
+        <translation><!-- System issue/sent to DOS support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System issue/sent to IT</masterLabel>
+        <translation><!-- System issue/sent to IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System issue/sent to hybrid support</masterLabel>
+        <translation><!-- System issue/sent to hybrid support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Task Completed</masterLabel>
+        <translation><!-- Task Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uploaded your data</masterLabel>
+        <translation><!-- Uploaded your data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User does not want to manually add them</masterLabel>
+        <translation><!-- User does not want to manually add them --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User error</masterLabel>
+        <translation><!-- User error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User never set up</masterLabel>
+        <translation><!-- User never set up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zip code status provided</masterLabel>
+        <translation><!-- Zip code status provided --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

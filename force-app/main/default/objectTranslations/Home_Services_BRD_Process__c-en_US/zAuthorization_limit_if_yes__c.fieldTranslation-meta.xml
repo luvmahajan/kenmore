@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When authorization is required, explain when and at what dollar values. --></help>
+    <label><!-- zFTC_Authorization $$ limit if yes --></label>
+    <name>zAuthorization_limit_if_yes__c</name>
+</CustomFieldTranslation>

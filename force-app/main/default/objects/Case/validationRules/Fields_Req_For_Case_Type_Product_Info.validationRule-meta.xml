@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fields_Req_For_Case_Type_Product_Info</fullName>
+    <active>true</active>
+    <description>If the case type is Product Information, then require the following fields</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Type,&quot;Product Information&quot;),
+OR(
+ISBLANK(Item__c),
+ISPICKVAL(Reason__c,&quot;&quot;),
+ISBLANK(Zip_code__c)
+)
+)</errorConditionFormula>
+    <errorMessage>If the case type is Product Information, then Item #, Reason, and Zip code are required.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The client recognizes and communicates the need for change to meet their business expectations --></help>
+    <label><!-- B10 Client innovative &amp; open to change --></label>
+    <name>B10_Client_innovative_open_to_change__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2</masterLabel>
+        <translation><!-- 2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

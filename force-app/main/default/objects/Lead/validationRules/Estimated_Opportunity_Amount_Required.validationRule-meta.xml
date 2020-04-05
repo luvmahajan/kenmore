@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Opportunity_Amount_Required</fullName>
+    <active>true</active>
+    <description>Estimated Opportunity Amount is required for Sales Qualified Leads.</description>
+    <errorConditionFormula>AND(ISPICKVAL(Status, &quot;Sales Qualified Lead&quot;), 
+IF(ISCHANGED(Automation_Control__c), 
+IF(CONTAINS(Automation_Control_Type__c, &quot;Validation&quot;),FALSE,TRUE),TRUE), 
+ISBLANK(Estimated_Opportunity_Amount__c)
+)</errorConditionFormula>
+    <errorMessage>Estimated Opportunity Amount is required for Sales Qualified Leads</errorMessage>
+</ValidationRule>

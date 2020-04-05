@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>When_necessary_can_use_Non_OEM_Parts__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Can we search for and purchase parts outside of the client to meet the commitment to the client and can we charge the client for those parts at the purchase cost?</inlineHelpText>
+    <label>When necessary can use Non-OEM Parts</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>Yes only when Client is on National b/o</fullName>
+                <default>false</default>
+                <label>Yes only when Client is on National b/o</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

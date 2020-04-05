@@ -1,0 +1,180 @@
+<messaging:emailTemplate recipientType="User"
+    relatedToType="Delivery_Estimate__c"
+    subject="Delivery Estimate Request for 
+   {!relatedTo.Account_Name__c}|  {!relatedTo.Shipping_Street__c} | {!relatedTo.Shipping_City__c} {!relatedTo.Shipping_State__c}, {!relatedTo.Shipping_Zip__c}">
+<messaging:htmlEmailBody >
+<html>
+    <body>
+    <STYLE type="text/css">
+        TH {font-size: 14px; font-face: arial;background: #CCCCCC; border-width: 1;  text-align: center } 
+        TD  {font-size: 14px; font-face: verdana } 
+        TABLE {border: solid #CCCCCC; border-width: 1}
+        TR {border: solid #CCCCCC; border-width: 1}
+     </STYLE>
+     <font face="arial" size="2">
+<p>Hello, </p>
+<p>A new delivery estimate has been requested. Please review the information below for additional details.</p>
+<span>
+<apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">{!relatedTo.Name}</apex:outputlink>
+</span>
+<p> 
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<p><strong><span style="font-family: arial; font-size: small;">Delivery Estimate Details:</span></strong></p>
+</body>
+</html>
+ </p>
+<table border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" style="border-collapse:collapse;" width="0">
+    <tbody>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>Requested By:&nbsp;</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.CreatedBy.Name}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>Requested Date:</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p><apex:outputText value="{0, date, MM-dd-yyyy}">
+<apex:Param value="{!TODAY() }" />
+</apex:OutputText></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>Account:</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.Account_Name__c}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>Building Count</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.Building_Count__c}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>How many units per building</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.Units_Per_Building__c}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>How many floors per building</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.Floors_Per_Building__c}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>How many units per floor</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.Units_Per_Floor__c}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>How many units per week</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.Units_per_week__c}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>Working Elevator&nbsp;</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.Working_Elevator__c}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>Site accessible by 53&#39; trailer for 2 hr</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.Trailer_53_Ft_Accessible__c}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>Is the lot secured?</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.Secured_Lot__c}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>Go through or up a parking lot</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.go_across_parking_lot__c}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>Is there a club house or model home?</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.club_house__c}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:287px;">
+            <p><strong>Comments</strong></p>
+            </td>
+            <td style="width:353px;">
+            <p>{!relatedTo.Comments__c}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p> 
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<p><strong><span style="font-family: arial; font-size: small;">Delivery Estimate Products:</span></strong></p>
+</body>
+</html> </p>
+<table border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" style="border-collapse:collapse;" width="0">
+    <tr > 
+        <th>Product</th><th>Product Description</th><th>Category</th><th>Quantity</th><th>Installation Type</th><th>Cubic Feet</th>
+    </tr>
+    <apex:repeat var="cx" value="{!relatedTo.Delivery_Estimate_Details__r}">
+        <tr>
+           
+            <td> {!cx.Product__r.Name} </td>
+            <td> {!cx.Product_Description__c} </td>
+            <td> {!cx.Category__c } </td>
+            <td> {!cx.Quantity__c} </td>
+            <td>  {!cx.Installation_Type__c}  </td>
+            <td>  {!cx.Cubic_Feet__c}  </td>
+         </tr>
+    </apex:repeat>                 
+</table>
+
+
+<p />
+            </font>
+        </body>
+    </html>
+</messaging:htmlEmailBody> 
+</messaging:emailTemplate>

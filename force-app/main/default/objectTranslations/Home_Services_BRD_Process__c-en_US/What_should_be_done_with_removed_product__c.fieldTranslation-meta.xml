@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If Haul Away = &quot;Yes&quot;, what should be done with the removed product --></help>
+    <label><!-- What should be done with removed product --></label>
+    <name>What_should_be_done_with_removed_product__c</name>
+</CustomFieldTranslation>

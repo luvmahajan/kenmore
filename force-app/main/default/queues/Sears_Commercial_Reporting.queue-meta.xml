@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>csreports@searshc.com</email>
+    <name>Sears Commercial Reporting</name>
+    <queueMembers>
+        <users>
+            <user>ravirashmi.parikh@kenmoredirect.com</user>
+            <user>ryan.ly@kenmoredirect.com</user>
+            <user>waqas.khan@kenmoredirect.com</user>
+            <user>weston.smith@searshc.com</user>
+            <user>yo.bailey@kenmoredirect.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

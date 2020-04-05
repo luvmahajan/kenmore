@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B5_Operates_in_our_core_market_segments__c</fullName>
+    <description>SF/MF/EDU/HOSP/PM)  Yes/No</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SF/MF/EDU/HOSP/PM)  Yes/No</inlineHelpText>
+    <label>B5 Operates in our core market segments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

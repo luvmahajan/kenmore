@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reasons_For_Switching_To_The_Competition__c</fullName>
+    <description>Reasons For Switching To The Competition</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select as many as applicable</inlineHelpText>
+    <label>Reasons For Switching To The Competition</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Reasons_For_Not_Working_With_SC__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No response from customer support center</fullName>
+                <default>false</default>
+                <label>No response from customer support center</label>
+            </value>
+            <value>
+                <fullName>Non availability of right product</fullName>
+                <default>false</default>
+                <label>Non availability of right product</label>
+            </value>
+            <value>
+                <fullName>Account Manager no longer available</fullName>
+                <default>false</default>
+                <label>Account Manager no longer available</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Delivery issues</fullName>
+                <default>false</default>
+                <label>Delivery issues</label>
+            </value>
+            <value>
+                <fullName>Installation issues</fullName>
+                <default>false</default>
+                <label>Installation issues</label>
+            </value>
+            <value>
+                <fullName>Billing/Credit issue</fullName>
+                <default>false</default>
+                <label>Billing/Credit issue</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Working with a competition</controllingFieldValue>
+            <valueName>No response from customer support center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working with a competition</controllingFieldValue>
+            <valueName>Non availability of right product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working with a competition</controllingFieldValue>
+            <valueName>Account Manager no longer available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working with a competition</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working with a competition</controllingFieldValue>
+            <valueName>Delivery issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working with a competition</controllingFieldValue>
+            <valueName>Installation issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working with a competition</controllingFieldValue>
+            <valueName>Billing/Credit issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working with a competition</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Potential_Annual_Sales_Volume__c</fullName>
+    <description>Score Accounts by potential annual sales volume</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A - &gt; $500,000
+B - $250,000 - $499,999
+C - $100,000 - $249,999 
+D - $50,000 - $99,999
+E - $20,000 - $49,999
+F - &lt; $20,000</inlineHelpText>
+    <label>Potential Annual Sales Volume</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>D</fullName>
+                <default>false</default>
+                <label>D</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

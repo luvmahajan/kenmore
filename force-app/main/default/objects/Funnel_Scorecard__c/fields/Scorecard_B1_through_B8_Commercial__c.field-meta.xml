@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scorecard_B1_through_B8_Commercial__c</fullName>
+    <description>Commercial Sales Values Only</description>
+    <externalId>false</externalId>
+    <formula>VALUE(TEXT( B1_Service_relationship_trumps_price__c  ))+ 
+VALUE(TEXT( B2_Values_all_4_Pillars__c  ))+ 
+VALUE(TEXT( B3_Is_in_Trouble_mode__c  ))+ 
+VALUE(TEXT( B4_High_pride_focus_on_their_Brand__c  ))+ 
+VALUE(TEXT( B5_Operates_in_our_core_market_segments__c  ))+ 
+VALUE(TEXT( B6_Complex_operational_logistic_needs__c  ))+ 
+VALUE(TEXT( B7_Multiple_product_category_needs__c  ))+ 
+VALUE(TEXT( B8_Fiscally_stable_low_credit_risk__c  ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Scorecard B1 through B8 Commercial</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

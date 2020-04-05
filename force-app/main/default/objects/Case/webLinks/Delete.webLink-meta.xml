@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delete</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Delete</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/21.0/connection.js&quot;)}
+ 
+//Add ObjectType, on which object you want to add the list view button .
+var records = {!GETRECORDIDS($ObjectType.Case)
+};
+ 
+if (records[0] == null) {
+    alert(&quot;Please select at least one record to delete.&quot;)
+} else {
+ 
+    var opt = confirm(&quot;Are you sure you want to delete selected records ?&quot;);
+    if (opt == true) {
+        var errors = [];
+        var result = sforce.connection.deleteIds(records);
+        if (result &amp;&amp; result.length) {
+            var nFailed = 0;
+            var nSucceeded = 0;
+            for (var i = 0; i &lt; result.length; i++) {
+                var res = result[i];
+                if (res &amp;&amp; res.success == &#39;true&#39;) {
+                    nSucceeded++;
+                } else {
+                    var es = res.getArray(&quot;errors&quot;);
+                    if (es.length &gt; 0) {
+                        errors.push(es[0].message);
+                    }
+                    nFailed++;
+                }
+            }
+            if (nFailed &gt; 0) {
+                alert(&quot;Failed: &quot; + nFailed + &quot; and Succeeded: &quot; + nSucceeded + &quot; n Due to: &quot; + errors.join(&quot;n&quot;));
+            } else {
+                alert(&quot;Number of deleted records: &quot; + nSucceeded);
+            }
+        }
+        window.location.reload();
+    }
+}</url>
+</WebLink>

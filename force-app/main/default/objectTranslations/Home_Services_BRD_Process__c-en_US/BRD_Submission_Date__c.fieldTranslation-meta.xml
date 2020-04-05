@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter today&apos;s date to send to Business Integration --></help>
+    <label><!-- BRD Submission Date --></label>
+    <name>BRD_Submission_Date__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- - Makes decisions quickly and We have access to the EBI
+- Describe their business, the state of their business, their competition --></help>
+    <label><!-- B10 Open/honest communication style --></label>
+    <name>B10_Open_honest_communication_style__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2</masterLabel>
+        <translation><!-- 2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

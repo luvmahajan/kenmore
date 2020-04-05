@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Blue Sheet is consistent with Scores; Possible Actions reflect internal &amp; client facing actions to increase points/remove Red Flags; Green Sheet has a solid VBR, Getting/Giving Information strategy &amp; both are reviewed by DM or RM. --></help>
+    <label><!-- O1 Well thought-out B/G Sheets drive SSO --></label>
+    <name>O1_Well_thought_out_B_G_Sheets_drive_SSO__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8</masterLabel>
+        <translation><!-- 8 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

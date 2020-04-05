@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The contact on the Business Integration team who will project manage this BRD. --></help>
+    <label><!-- BIT --></label>
+    <lookupFilter>
+        <errorMessage><!-- You must select a BIT --></errorMessage>
+    </lookupFilter>
+    <name>BIT__c</name>
+    <relationshipLabel><!-- BRD (BIT) --></relationshipLabel>
+</CustomFieldTranslation>

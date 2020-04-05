@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bill per trip or per repair --></label>
+    <name>Bill_per_trip_or_per_repair__c</name>
+    <picklistValues>
+        <masterLabel>Per Repair</masterLabel>
+        <translation><!-- Per Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Per Trip</masterLabel>
+        <translation><!-- Per Trip --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

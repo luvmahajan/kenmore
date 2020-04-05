@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_User_ID</fullName>
+    <active>true</active>
+    <description>Require User ID for SAP Support Cases if Password Reset is selected.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Type , &#39;Password Reset&#39; ),
+RecordType.Name = &#39;SAP Support&#39;,
+ISBLANK( User_ID__c )
+
+)</errorConditionFormula>
+    <errorMessage>User ID is required for Password Reset Cases</errorMessage>
+</ValidationRule>

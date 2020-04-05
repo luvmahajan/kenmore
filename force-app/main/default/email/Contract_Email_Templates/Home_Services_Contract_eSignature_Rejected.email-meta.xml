@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Prompts Account Manager and National Contract Manager to review and resend Contract when eSignature has been declined</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Home Services Contract eSignature Rejected</name>
+    <style>none</style>
+    <subject>Contract eSignature Declined; Please Review &amp; Resend</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

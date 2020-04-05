@@ -1,0 +1,7 @@
+Hello {!Case.CreatedBy},
+
+Your {!Case.Type} Case has been received by our support team.  Your support partner will address this Case as {!Case.Priority} priority and take every measure practical to reach resolution.  Our first priority is to attain a complete understanding the business issue/opportunity presented.  In working to gain this understand, you may receive an email or phone call about this Case.
+
+You will be notified via e-mail when your case has been closed.  
+
+Thank you.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Price_Change_Indicator__c</fullName>
+    <externalId>false</externalId>
+    <label>Key Price Change Indicator</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Multi-Year Term</fullName>
+                <default>false</default>
+                <label>Multi-Year Term</label>
+            </value>
+            <value>
+                <fullName>Volume Incentive</fullName>
+                <default>false</default>
+                <label>Volume Incentive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

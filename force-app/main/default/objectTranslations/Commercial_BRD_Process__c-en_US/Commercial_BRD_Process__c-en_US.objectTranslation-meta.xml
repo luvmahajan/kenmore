@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Commercial BRD Process</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Commercial BRD Processes</value>
+    </caseValues>
+    <layouts>
+        <layout>Commercial BRD Process Layout</layout>
+        <sections>
+            <label><!-- Anticipated Volume --></label>
+            <section>Anticipated Volume</section>
+        </sections>
+        <sections>
+            <label><!-- Business Area / Departmental Stakeholders --></label>
+            <section>Business Area / Departmental Stakeholders</section>
+        </sections>
+        <sections>
+            <label><!-- Credit / Invoicing Requirements --></label>
+            <section>Credit / Invoicing Requirements</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Contact / Order Handling Requirements --></label>
+            <section>Customer Contact / Order Handling Requirements</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Overview --></label>
+            <section>Customer Overview</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery Requirements --></label>
+            <section>Delivery Requirements</section>
+        </sections>
+        <sections>
+            <label><!-- Other --></label>
+            <section>Other</section>
+        </sections>
+        <sections>
+            <label><!-- Return Requirements --></label>
+            <section>Return Requirements</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

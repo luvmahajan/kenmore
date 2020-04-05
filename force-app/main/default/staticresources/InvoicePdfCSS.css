@@ -1,0 +1,156 @@
+@page {
+   margin-bottom: 10mm;
+   margin-left: 0mm;
+   margin-right: 0mm;
+   @bottom-center{
+       content: element(footer) !important;
+   }
+}
+
+.footer{
+    position: running(footer) !important;
+    display: block;
+    padding-left: 100mm;
+    font-family: Arial Unicode MS;
+    font-size: 13px;
+ }
+
+.page-number:before{
+    content: counter(page);
+}
+.page-count:before{
+    content: counter(pages);
+}
+
+
+/** Set paddings for ISO standard letter */
+.content {
+    font-size: 13px;
+    font-family: Arial Unicode MS;
+    position: static;
+}
+
+.logo {
+    position: static;
+    padding-left: 10mm;
+}
+
+.invoicelabel{
+    font-size: 30px;
+    font-weight: bold;
+    position: static;
+    padding-top: 5mm;
+    padding-right: 50mm;
+    float: right;
+    font-family: Arial;
+}
+
+.h1panel {
+    text-align: left;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+.headertablepos{
+    position: fixed;
+    padding-top: 20mm;
+    padding-left: 10mm;
+    padding-right: 10mm;
+}
+.h1panel th{
+    background-color: #C0C0C0;
+    height: 25px;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.h1panel td{
+    vertical-align:top;
+}
+
+/*=============================================== */
+.itemheadpos{
+    position: relative;
+    padding-top: 60mm;
+    padding-left: 10mm;
+    padding-right: 10mm;
+}
+
+.itemtableoutercontainer{
+    padding-left: 11mm;
+    padding-right: 11mm;
+    position: relative;
+
+}
+
+.itemtable{
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.itemtable th{
+border-bottom: 0.25px solid #ccc;
+}
+.itemtable tr{
+border-bottom: 0.25px solid #ccc;
+}
+.itemtable td{
+border-bottom: 0.25px solid #ccc;
+}
+
+.row-seq{
+    width: 5%;
+    border-collapse: collapse;
+}
+.row-mat{
+    width: 15%;
+    border-collapse: collapse;
+}
+.row-des{
+    width: 50%;
+    border-collapse: collapse;
+}
+.row-quan{
+    width: 10%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.row-untpr{
+    width: 10%;
+    text-align: right;
+    border-collapse: collapse;
+}
+.row-amt{
+    width: 10%;
+    text-align: right;
+    border-collapse: collapse;
+}
+
+
+/*=============================================== */
+.totalpanel {
+     table-layout: fixed;
+     padding-left: 150mm;
+     padding-right: 10mm;
+ }
+
+.remit {
+    padding-left: 10mm;
+}
+/*=============================================== */
+
+.text-align_right {
+    text-align: right;
+}
+
+.text-align_left {
+    text-align: left;
+}
+
+.text-align_center {
+    text-align: center;
+}
+
+.text-format_bold {
+    font-weight: bold;
+    font-family: Arial;
+}

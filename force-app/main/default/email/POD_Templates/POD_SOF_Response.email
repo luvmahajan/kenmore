@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p style="margin-left:.25in;">Hello,</p>
+
+<p style="margin-left:.25in;">In regards to a recent request for a proof of delivery/bill of lading for {!Case.order_no__c}.&nbsp; This account has been identified as an account with an approved delivery exception that allows deliveries to be completed without someone being present and signing the POD or BOL.&nbsp; Below is the detail of the exception:</p>
+
+<p style="margin-left:.25in;">WRITTEN APPROVAL TO LEAVE MERCHANDISE WITHOUT A SIGNATURE</p>
+
+<p style="margin-left:.25in;">THIS WILL SERVE AS APPROVAL TO LEAVE MERCHANDISE WITHOUT A SIGNATURE AT THE TIME OF DELIVERY IN THE EVENT THERE IS NOT AN AUTHORIZED PERSON PRESENT.&nbsp; MERCHANDISE IS TO BE LEFT IN A GARAGE OR ENCLOSED AREA AND NOT LEFT IN AN OPEN, UNSECURED AREA.&nbsp; WHEN DELIVERY IS MADE PER THIS REQUEST, THE DELIVERY AGENT AND SEARS CONTRACT SALES IS RELIEVED OF ANY AND ALL RESPONSIBILITIES REGARDING MERCHANDISE INVOLVED.&nbsp; IN THE EVENT THAT THE DELIVERING AGENT DOES NOT HAVE ACCESS TO A SECURED AREA, THE MERCHANDISE WILL NOT BE LEFT, BUT RETURNED AND RESCHEDULED FOR DELIVERY AT A LATER TIME WITH A SECOND DELIVERY CHARGE APPLIED.</p>
+
+<p style="margin-left:.25in;">Thank you for your business -&nbsp;</p>
+
+<p style="margin-left:.25in;">Kenmore Direct Post Delivery team</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Delivery_Estimate_Email_Notification</fullName>
+        <ccEmails>pcunni4@searshc.com;</ccEmails>
+        <ccEmails>Matthew.Tarlton@innovelsolutions.com;</ccEmails>
+        <description>Delivery Estimate Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cheryl.morrison@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>derek.daniel@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>timothy.waller@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Delivery_Estimate_w_Details</template>
+    </alerts>
+</Workflow>

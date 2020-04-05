@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Resolved By --></label>
+    <name>Resolved_By__c</name>
+    <picklistValues>
+        <masterLabel>Carol A</masterLabel>
+        <translation><!-- Carol A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceildeth Xmair</masterLabel>
+        <translation><!-- Ceildeth Xmair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chad Moody</masterLabel>
+        <translation><!-- Chad Moody --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Christie D</masterLabel>
+        <translation><!-- Christie D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gina R</masterLabel>
+        <translation><!-- Gina R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kenyetta L</masterLabel>
+        <translation><!-- Kenyetta L --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Michelle Wiggins</masterLabel>
+        <translation><!-- Michelle Wiggins --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monica G</masterLabel>
+        <translation><!-- Monica G --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rae Ann Ladd</masterLabel>
+        <translation><!-- Rae Ann Ladd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sabina O</masterLabel>
+        <translation><!-- Sabina O --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shantonette McKenizie</masterLabel>
+        <translation><!-- Shantonette McKenizie --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sheila S</masterLabel>
+        <translation><!-- Sheila S --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

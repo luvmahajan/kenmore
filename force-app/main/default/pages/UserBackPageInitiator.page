@@ -1,0 +1,11 @@
+<apex:page showHeader="false" Controller="UserBackPageInitiatorController" sidebar="false" lightningStylesheets="true"  >
+    <apex:form style="text-align:center" >
+        <br/><br/>
+        <apex:pageBlock title="UserBackPageInitiator">
+            <apex:commandButton value="Sample" action="{!gotoBackpage}" style="color:white;background:#0070d2;" />
+            <br/><br/>
+            <apex:commandButton value="Create User's Sheets" action="{!createDocument}" style="color:white;background:#0070d2;" />
+        </apex:pageBlock>
+        <br/><br/><br/><br/><br/>    
+    </apex:form>
+</apex:page>

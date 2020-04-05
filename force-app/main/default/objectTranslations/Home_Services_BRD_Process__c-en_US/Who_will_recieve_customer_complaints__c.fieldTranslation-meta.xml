@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For customer complaints regarding service, who will receive the complaint and handle it? --></help>
+    <label><!-- Who will recieve customer complaints --></label>
+    <name>Who_will_recieve_customer_complaints__c</name>
+    <picklistValues>
+        <masterLabel>Client</masterLabel>
+        <translation><!-- Client --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSO</masterLabel>
+        <translation><!-- MSO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

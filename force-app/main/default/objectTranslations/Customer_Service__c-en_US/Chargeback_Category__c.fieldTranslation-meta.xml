@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Chargeback Category --></label>
+    <name>Chargeback_Category__c</name>
+    <picklistValues>
+        <masterLabel>3rd Party</masterLabel>
+        <translation><!-- 3rd Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT Chargeback</masterLabel>
+        <translation><!-- BT Chargeback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT Reject</masterLabel>
+        <translation><!-- BT Reject --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute Chargeback</masterLabel>
+        <translation><!-- Dispute Chargeback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premier Chargeback</masterLabel>
+        <translation><!-- Premier Chargeback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recourse-CONT</masterLabel>
+        <translation><!-- Recourse-CONT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recourse-GEN</masterLabel>
+        <translation><!-- Recourse-GEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recourse-MIL</masterLabel>
+        <translation><!-- Recourse-MIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retainage</masterLabel>
+        <translation><!-- Retainage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small Balance</masterLabel>
+        <translation><!-- Small Balance --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

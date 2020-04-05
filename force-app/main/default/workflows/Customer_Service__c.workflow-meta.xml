@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Follow_up_on_Application_Sent</fullName>
+        <ccEmails>sccredsol@searshc.com</ccEmails>
+        <description>Follow-up on Application Sent</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Follow_up_on_Application_Sent</template>
+    </alerts>
+    <alerts>
+        <fullName>Notfying_Chargeback_in_In_House_Collections</fullName>
+        <description>Notfying Chargeback in In-House Collections</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>gjohn26@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sheila.styles@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Account_Chargeback_in_Settlement</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_of_Account_Status_Change</fullName>
+        <description>Notification of Account Status Change</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Credit_Application_Status</template>
+    </alerts>
+    <alerts>
+        <fullName>Notifying_Chargeback_in_OCA</fullName>
+        <description>Notifying Chargeback in OCA</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>gjohn26@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sheila.styles@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Account_Chargeback_in_OCA</template>
+    </alerts>
+    <alerts>
+        <fullName>Notifying_Chargeback_in_Settlement</fullName>
+        <description>Notifying Chargeback in Settlement</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>gjohn26@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sheila.styles@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Account_Chargeback_in_Settlement</template>
+    </alerts>
+    <alerts>
+        <fullName>Notifying_Chargeback_is_Recovered</fullName>
+        <description>Notifying Chargeback is Recovered</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>gjohn26@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sheila.styles@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Account_Opened_Chargeback_Recovered</template>
+    </alerts>
+    <alerts>
+        <fullName>Sent_to_Blue_Tarp_72_hours</fullName>
+        <ccEmails>SCCREDSOL@searshc.com</ccEmails>
+        <description>Sent to Blue Tarp&gt; 72 hours</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Sent_to_Blue_Tarp_72_hours</template>
+    </alerts>
+    <alerts>
+        <fullName>Sent_to_Blue_Tarp_is_past_24_hours</fullName>
+        <ccEmails>SCCREDSOL@searshc.com</ccEmails>
+        <description>Sent to Blue Tarp is past 24 hours</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Sent_to_Blue_Tarp_24_hours</template>
+    </alerts>
+    <alerts>
+        <fullName>Sent_to_Citi_72_hours</fullName>
+        <ccEmails>SCCREDSOL@searshc.com</ccEmails>
+        <description>Sent to Citi &gt; 72 hours</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Sent_to_Citi_72_hours</template>
+    </alerts>
+    <alerts>
+        <fullName>Sent_to_Citi_is_past_24_hours</fullName>
+        <ccEmails>SCCREDSOL@searshc.com</ccEmails>
+        <description>Sent to Citi is past 24 hours</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Sent_to_Citi_24_hours</template>
+    </alerts>
+    <alerts>
+        <fullName>Sent_to_Recourse_72_hours</fullName>
+        <ccEmails>SCCREDSOL@searshc.com</ccEmails>
+        <description>Sent to Recourse &gt; 72 hours</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Sent_to_Recourse_72_hours</template>
+    </alerts>
+    <alerts>
+        <fullName>Sent_to_Recourse_is_past_24_hours</fullName>
+        <ccEmails>SCCREDSOL@searshc.com</ccEmails>
+        <description>Sent to Recourse is past 24 hours</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Sent_to_Recourse_24_hours</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Account_record_BTSA_field_update</fullName>
+        <description>Updates the Account Record:  If the Request Type = Service Account and Blue Tarp Response = Approved then the Final Credit Response should be “Approved Blue Tarp Service Account”</description>
+        <field>Final_Credit_Response__c</field>
+        <literalValue>Approved by Blue Tarp Service Acount</literalValue>
+        <name>Account record BTSA field update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Account_Name__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_by_Blue_Tarp</fullName>
+        <description>Update the Final Credit Response on Customer Service Record</description>
+        <field>Final_Credit_Response__c</field>
+        <literalValue>Approved by Blue Tarp</literalValue>
+        <name>Approved by Blue Tarp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_by_Blue_Tarp_Service_Account</fullName>
+        <description>If the Request Type = Service Account and Blue Tarp Response = Approved then the Final Credit Response should be “Approved Blue Tarp Service Account”</description>
+        <field>Final_Credit_Response__c</field>
+        <literalValue>Approved Blue Tarp Service Account</literalValue>
+        <name>Approved by Blue Tarp Service Account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_by_Blue_Tarp_on_Account_Record</fullName>
+        <description>Update the Final Credit Response to Approved by Blue Tarp on the Account record</description>
+        <field>Final_Credit_Response__c</field>
+        <literalValue>Approved by Blue Tarp</literalValue>
+        <name>Approved by Blue Tarp on Account Record</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Account_Name__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_by_Citi_on_Account_Record</fullName>
+        <description>Populate the Final Credit Status of Approved by Citi on the Account record</description>
+        <field>Final_Credit_Response__c</field>
+        <literalValue>Approved by Citi</literalValue>
+        <name>Approved by Citi on Account Record</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Account_Name__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_by_Recourse</fullName>
+        <description>If RecourseResponse = Approved, then final credit response = Approved by Recourse</description>
+        <field>Final_Credit_Response__c</field>
+        <literalValue>Approved by Recourse</literalValue>
+        <name>Approved by Recourse</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_by_Recourse_on_Account_Record</fullName>
+        <description>If Recourse Response = Approved, then final credit response = Approved by Recourse on Account record</description>
+        <field>Final_Credit_Response__c</field>
+        <literalValue>Approved by Recourse</literalValue>
+        <name>Approved by Recourse on Account Record</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Account_Name__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Commercial_Credit_Status</fullName>
+        <description>Commercial Credit Status updates on the Account record</description>
+        <field>Commercial_Credit_Status__c</field>
+        <formula>TEXT(   Commercial_Credit_Status__c   )</formula>
+        <name>Commercial Credit Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Account_Name__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Credit_Comments_populate_on_Account</fullName>
+        <description>Credit Comments populate on Account record based on information in Customer Service record</description>
+        <field>Credit_Comments__c</field>
+        <formula>Credit_Comments__c</formula>
+        <name>Credit Comments populate on Account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Account_Name__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Final_Credit_Response_Approved_Exception</fullName>
+        <description>Approved Exception Service Account BT</description>
+        <field>Final_Credit_Response__c</field>
+        <literalValue>Approved Exception Service Account BT</literalValue>
+        <name>Final Credit Response=Approved Exception</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Account_Name__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Final_Credit_Response_Approved_by_Citi</fullName>
+        <description>Final Credit Responce = Approved by Citi</description>
+        <field>Final_Credit_Response__c</field>
+        <literalValue>Approved by Citi</literalValue>
+        <name>Final Credit Response Approved by Citi</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Final_Credit_Response_Declined</fullName>
+        <description>Final Credit Responce = Credit Decline on CS record</description>
+        <field>Final_Credit_Response__c</field>
+        <literalValue>Credit Declined</literalValue>
+        <name>Final Credit Response = Declined</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Final_Credit_Response_Declined_on_Accoun</fullName>
+        <description>Final Credit Responce = Credit Declined on Account record</description>
+        <field>Final_Credit_Response__c</field>
+        <literalValue>Credit Declined</literalValue>
+        <name>Final Credit Response Declined on Accoun</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Account_Name__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Final_Line_of_Credit</fullName>
+        <description>Updates on the Account based off value on Customer Service Record.</description>
+        <field>Final_Line_of_Credit__c</field>
+        <formula>Final_Line_of_Credit__c</formula>
+        <name>Final Line of Credit</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Account_Name__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Customer Service - Application Sent - Email</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Application_Sent__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Follow-up based on the date the application was sent to the customer.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Follow_up_on_Application_Sent</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Customer_Service__c.Application_Sent__c</offsetFromField>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Approved Exception Service Account BT - Update</fullName>
+        <actions>
+            <name>Final_Credit_Response_Approved_Exception</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Final_Credit_Response__c</field>
+            <operation>equals</operation>
+            <value>Approved Exception Service Account BT</value>
+        </criteriaItems>
+        <description>Populates on the Account based on value selected in the Final Credit Response</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Approved by Blue Tarp - Update</fullName>
+        <actions>
+            <name>Approved_by_Blue_Tarp</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Approved_by_Blue_Tarp_on_Account_Record</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Blue_Tarp_Response__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Amount_Approved_by_Blue_Tarp__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>If Blue Tarps Response = Approved, then final credit response = Approved by Blue Tarp</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Approved by Citi - Update</fullName>
+        <actions>
+            <name>Approved_by_Citi_on_Account_Record</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Final_Credit_Response_Approved_by_Citi</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Citi_s_Response__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Amount_Approved_by_Citi__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>If Citi&#39;s Response = Approved, and Amount Approved by Citi = True, then final credit response = Approved by Citi</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Approved by Recourse - Update</fullName>
+        <actions>
+            <name>Approved_by_Recourse</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Approved_by_Recourse_on_Account_Record</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Recourse_Response__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Amount_Approved_by_Recourse__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>If Recourse Response = Approved, then final credit response = Approved by Recourse</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Commercial Credit Status - Email %2F Update</fullName>
+        <actions>
+            <name>Notification_of_Account_Status_Change</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Commercial_Credit_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Status will populate on the Account Record and send an email notification to the record owner.</description>
+        <formula>AND( 
+OR 
+(ISNEW(), 
+ISCHANGED(Commercial_Credit_Status__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Credit Comments populate on Account - Update</fullName>
+        <actions>
+            <name>Credit_Comments_populate_on_Account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Credit Comments populate on the Account record based on value in Customer Service record</description>
+        <formula>AND( 
+OR 
+(ISNEW(), 
+ISCHANGED( Credit_Comments__c )))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Final Credit Response%3DDeclined - Update</fullName>
+        <actions>
+            <name>Final_Credit_Response_Declined</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Final_Credit_Response_Declined_on_Accoun</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Citi_s_Response__c</field>
+            <operation>equals</operation>
+            <value>Declined</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Blue_Tarp_Response__c</field>
+            <operation>equals</operation>
+            <value>Declined</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Recourse_Response__c</field>
+            <operation>equals</operation>
+            <value>Declined</value>
+        </criteriaItems>
+        <description>If all parties Decline, Final Credit Response = Decline on CS record</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Final Line of Credit - Update</fullName>
+        <actions>
+            <name>Final_Line_of_Credit</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Updates the Account record with the Final Line of Credit amount from the Customer Service record.</description>
+        <formula>AND( 
+OR 
+(ISNEW(), 
+ISCHANGED(  Final_Line_of_Credit__c  )))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - New Task For Pending Chargeback - Create</fullName>
+        <actions>
+            <name>Chargeback_Issued_Please_contact_customer</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Chargeback_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </criteriaItems>
+        <description>When Chargeback Status = Pending a New Task is created</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Notify when Chargeback In-House Collections - Email</fullName>
+        <actions>
+            <name>Notfying_Chargeback_in_In_House_Collections</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Chargeback_Status__c</field>
+            <operation>equals</operation>
+            <value>In-house Collections</value>
+        </criteriaItems>
+        <description>Notify when chargeback status = In-house Collections and send an email to Gina Riley and Sheila Styles</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Notify when Chargeback in OCA - Email</fullName>
+        <actions>
+            <name>Notifying_Chargeback_in_OCA</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Chargeback_Status__c</field>
+            <operation>equals</operation>
+            <value>Referred to 3rd Party Collections</value>
+        </criteriaItems>
+        <description>When Chargeback Status = Sears Accepted Settlement, send email to Gina Riley and Shelia Styles</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Notify when Chargeback in Settlement - Email</fullName>
+        <actions>
+            <name>Notifying_Chargeback_in_Settlement</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Chargeback_Status__c</field>
+            <operation>equals</operation>
+            <value>Sears Accepted Settlement </value>
+        </criteriaItems>
+        <description>When Chargeback Status = Sears Accepted Settlement, send email to Gina Riley and Shelia Styles</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Notify when Chargeback is Recovered - Email</fullName>
+        <actions>
+            <name>Notifying_Chargeback_is_Recovered</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Chargeback_Status__c</field>
+            <operation>equals</operation>
+            <value>Recovered</value>
+        </criteriaItems>
+        <description>When Chargeback Status = Recovered, send email to Gina Riley and Sheila Styles</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Sent to Blue Tarp %3E 24 hours - Email</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Response_Received_from_Blue_Tarp__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Pending_Sale_Amount__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Create an email alert  to Credit Team when Sent to Blue Tarp is past 24 hours with no response</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Sent_to_Blue_Tarp_is_past_24_hours</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Customer_Service__c.Sent_to_Blue_Tarp__c</offsetFromField>
+            <timeLength>24</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Sent to Blue Tarp %3E 72 hours - Email</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Response_Received_from_Blue_Tarp__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Pending_Sale_Amount__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Send an email alert to Credit Team when Sent to Blue Tarp is past 72 hours with no response</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Sent_to_Blue_Tarp_72_hours</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Customer_Service__c.Sent_to_Blue_Tarp__c</offsetFromField>
+            <timeLength>72</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Sent to Citi %3E 24 hours - Email</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Response_Recieved_from_Citi__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Pending_Sale_Amount__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Create an email alert to Credit Team when Sent to Citi is past 24 hours with no response</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Sent_to_Citi_is_past_24_hours</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Customer_Service__c.Sent_to_Citi__c</offsetFromField>
+            <timeLength>24</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Sent to Citi %3E 72 hours - Email</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Response_Recieved_from_Citi__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Pending_Sale_Amount__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Create an email alert to Credit Team when Sent to Citi is past 72 hours with no response</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Sent_to_Citi_72_hours</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Customer_Service__c.Sent_to_Citi__c</offsetFromField>
+            <timeLength>72</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Sent to Recourse%3E 24 hours - Email</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Response_Received_from_Recourse__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Pending_Sale_Amount__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Create an email alert  to Credit Team when Sent to Recourse is past 24 hours with no response</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Sent_to_Recourse_is_past_24_hours</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Customer_Service__c.Sent_to_Recourse__c</offsetFromField>
+            <timeLength>24</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Sent to Recourse%3E 72 hours - Email</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Response_Received_from_Recourse__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Pending_Sale_Amount__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Send an email alert to Credit Team when Sent to Recourseis past 72 hours with no response</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Sent_to_Recourse_72_hours</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Customer_Service__c.Sent_to_Recourse__c</offsetFromField>
+            <timeLength>72</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Customer Service - Service Account approved by Blue Tarp - Update</fullName>
+        <actions>
+            <name>Account_record_BTSA_field_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Approved_by_Blue_Tarp_Service_Account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Customer_Service__c.Blue_Tarp_Response__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Amount_Approved_by_Blue_Tarp__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Service__c.Request_Type__c</field>
+            <operation>equals</operation>
+            <value>Service Account</value>
+        </criteriaItems>
+        <description>If the Request Type = Service Account and Blue Tarp Response = Approved then the Final Credit Response should be “Approved Blue Tarp Service Account”</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Chargeback_Issued_Please_contact_customer</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Attached to this account are invoices that have been charged back to SHC. Please contact the customer to determine the reason for non-payment. Following the discussion, post your notes to this field, delete these instructions and mark this task Completed.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Chargeback Issued - Please contact customer</subject>
+    </tasks>
+</Workflow>

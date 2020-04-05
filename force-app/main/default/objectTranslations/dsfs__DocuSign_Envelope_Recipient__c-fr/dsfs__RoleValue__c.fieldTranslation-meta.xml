@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Valeur associée au rôle du destinataire DocuSign. Cette valeur sert à diriger vers les balises d&#39;ancrage par défaut au sein des documents.</help>
+    <label><!-- RoleValue --></label>
+    <name>dsfs__RoleValue__c</name>
+</CustomFieldTranslation>

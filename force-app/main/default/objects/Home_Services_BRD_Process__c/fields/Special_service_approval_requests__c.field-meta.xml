@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_service_approval_requests__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Do you need a PO, dispatch number, service number? Does the tech have to call for a particular reason?</inlineHelpText>
+    <label>Special service approval requests</label>
+    <length>500</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The client is willing to have a strategic discussion to solve problems and pursue long term growth, and displays flexibility and commitment towards a shared solution. --></help>
+    <label><!-- B2 Client values long term relationship --></label>
+    <name>B2_Client_values_long_term_relationship__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5</masterLabel>
+        <translation><!-- 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6</masterLabel>
+        <translation><!-- 6 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

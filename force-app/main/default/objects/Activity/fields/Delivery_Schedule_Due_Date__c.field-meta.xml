@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Schedule_Due_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Subject = &quot;Site Confirmation Call&quot;,  Delivery_Schedule__r.Site_Confirmation_Due_By__c ,
+IF( Subject = &quot;Internal Call Due&quot;,   Delivery_Schedule__r.Internal_Call_Due__c  ,
+IF( Subject = &quot;External Call Due&quot;,   Delivery_Schedule__r.External_Call_Due__c  ,
+IF( Subject = &quot;72 Hour Pre Call&quot;,   Delivery_Schedule__r.X72_Hour_Pre_Call_Due__c  ,
+IF( Subject = &quot;48 Hour Pre-Call&quot;,   Delivery_Schedule__r.X48_Hour_Pre_Call_Due__c  ,
+IF( Subject = &quot;Large Order Notification&quot;,   Delivery_Schedule__r.Large_Order_NotificationDue__c  ,
+today()))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Delivery Schedule Due Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

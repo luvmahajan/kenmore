@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Only 1 NPL can be select in conjunction with a CPL --></help>
+    <label><!-- Pricing utilized for order placement --></label>
+    <name>Pricing_utilized_for_order_placement__c</name>
+    <picklistValues>
+        <masterLabel>CPL</masterLabel>
+        <translation><!-- CPL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPL 10</masterLabel>
+        <translation><!-- NPL 10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPL 20</masterLabel>
+        <translation><!-- NPL 20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPL 30</masterLabel>
+        <translation><!-- NPL 30 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

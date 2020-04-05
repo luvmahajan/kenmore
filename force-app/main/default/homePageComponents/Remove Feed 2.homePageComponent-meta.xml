@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;pre&gt;
+&lt;code&gt;function hidechatter()
+{
+     var e = document.getElementById(&amp;quot;showFeedLink&amp;quot;);
+     if(e.style.display == &amp;quot;none&amp;quot;) 
+           chatter.getFeed().toggle(&amp;#39;{&amp;quot;subjectId&amp;quot;:&amp;quot;a4MV00000032ixk&amp;quot;,&amp;quot;feedType&amp;quot;:&amp;quot;NEWS&amp;quot;}&amp;#39;, false);
+}
+window.setTimeout(&amp;quot;hidechatter()&amp;quot;, 2000);  
+} &lt;/code&gt;&lt;/pre&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

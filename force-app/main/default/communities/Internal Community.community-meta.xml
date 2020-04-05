@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Community xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>Collaboration on how to improve the configuration of Salesforce.com to meet the needs of our business.</description>
+    <expertsGroup>SystemAdministrators</expertsGroup>
+</Community>

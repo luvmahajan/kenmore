@@ -1,0 +1,10 @@
+Hi {!Case.CreatedBy},
+
+Marketing is currently only supporting IBS.  For regional trade shows, contact your District Manager.
+
+If you have additional inquiries regarding your case, please add a comment to your Salesforce case. 
+
+Case Number: {!Case.CaseNumber}
+Case Link: {!Case.Link}
+
+We will address your need as soon as possible.

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Referral Fee or Rebate --></label>
+    <name>Referral_Fee_or_Rebate__c</name>
+    <picklistValues>
+        <masterLabel>Rebate</masterLabel>
+        <translation><!-- Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral Fee</masterLabel>
+        <translation><!-- Referral Fee --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BRD_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>BRD Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Client_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Opportunity</fullName>
+                <default>false</default>
+                <label>New Opportunity</label>
+            </value>
+            <value>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+                <label>Renewal</label>
+            </value>
+            <value>
+                <fullName>Recall</fullName>
+                <default>false</default>
+                <label>Recall</label>
+            </value>
+            <value>
+                <fullName>Rework</fullName>
+                <default>false</default>
+                <label>Rework</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>OEM</controllingFieldValue>
+            <controllingFieldValue>Retailer</controllingFieldValue>
+            <controllingFieldValue>3rd Party</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>SHC</controllingFieldValue>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>New Opportunity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OEM</controllingFieldValue>
+            <controllingFieldValue>Retailer</controllingFieldValue>
+            <controllingFieldValue>3rd Party</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>SHC</controllingFieldValue>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Renewal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OEM</controllingFieldValue>
+            <controllingFieldValue>Retailer</controllingFieldValue>
+            <controllingFieldValue>3rd Party</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>SHC</controllingFieldValue>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Recall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OEM</controllingFieldValue>
+            <controllingFieldValue>Retailer</controllingFieldValue>
+            <controllingFieldValue>3rd Party</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>SHC</controllingFieldValue>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Rework</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

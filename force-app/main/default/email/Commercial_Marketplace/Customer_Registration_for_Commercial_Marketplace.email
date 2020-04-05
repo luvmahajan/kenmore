@@ -1,0 +1,32 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">Thank you for your interest in Sears Commercial Marketplace and Realty Home Advantage. This document contains some important information for you regarding these 2 programs.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">Account Manager Name:&nbsp;&nbsp; {!Account.OwnerFullName}</SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">Account Manager Phone:&nbsp;&nbsp; {!Account.OwnerPhone}</SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">Account Manager Email:&nbsp;&nbsp;&nbsp; {!Account.OwnerEmail}</SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"></SPAN><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">(A) Your Sears Commercial Customer Number:&nbsp;&nbsp; {!Account.SCOPES_ID__c}</SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">(B) To Register for Realty Home Advantage:<o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">Visit <A href="http://www.realtyhomeadvantage.scmarketingtools.com/">www.realtyhomeadvantage.scmarketingtools.com</A><o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">Click on the register today button<o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">Fill out the required information on the form. For confirmation code use SCM1011 and for Sears Commercial Account Number, use the number in item (A) above.<o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">You will then be sent a confirmation email. In this email is an activation link. Click this link to finish your account set up. You will then be able to login using your email address and password you established at the time of registration.<o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">(C) To establish your Sears Commercial Marketplace account:<o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">Contact your local account manager.<o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">They will set up the account and provide you with a current invitation code (and expiration date) for you to share with your customers.<o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">Current Invitation Code:&nbsp;&nbsp; {!Account.Commercial_Marketplace_Invitation_Code__c}</SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">Expiration Date:&nbsp;&nbsp; {!Account.Invitation_Code_Expiration_Date__c}</SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">You will need to obtain a new code on a monthly basis. Once expired, a new code can be obtained via your account manager or calling 800-735-6000.<o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">Use the Invitation Code and Expiration Date to send out an email to your customers using the Email Generator in Realty Home Advantage.<o:p></o:p></SPAN></P>
+<P>&nbsp;</P>]]></td>
+</tr>
+</table>

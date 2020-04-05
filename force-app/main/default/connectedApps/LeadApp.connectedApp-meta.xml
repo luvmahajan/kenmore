@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>alice.reji@searshc.com</contactEmail>
+    <description>Lead App</description>
+    <infoUrl>https://login.salesforce.com/logos/Salesforce/Sites/icon.png</infoUrl>
+    <label>LeadApp</label>
+    <logoUrl>https://login.salesforce.com/logos/Salesforce/Work/logo.png</logoUrl>
+    <mobileAppConfig>
+        <applicationBinaryFile/>
+        <applicationInstallUrl>alice.reji@searshc.com</applicationInstallUrl>
+        <devicePlatform>android</devicePlatform>
+        <deviceType>phone</deviceType>
+        <privateApp>true</privateApp>
+        <version>1</version>
+    </mobileAppConfig>
+    <mobileStartUrl>http://apps.searshc.com/managementlead/test.aspx</mobileStartUrl>
+    <oauthConfig>
+        <callbackUrl>https://na1.salesforce.com/services/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG99OxTyEMCQ3ikjRkfVwXObA.x.2W.sL7hPq2guAIj0FGrcDWd0FjDRXz_oI70lCjDlKLJo9Zgm9mqO9ZH</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+    </oauthConfig>
+    <startUrl>http://apps.searshc.com/managementlead/test.aspx</startUrl>
+</ConnectedApp>

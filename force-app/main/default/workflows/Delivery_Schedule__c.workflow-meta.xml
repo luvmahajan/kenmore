@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>External_Call</fullName>
+        <field>External_Call_Due__c</field>
+        <formula>IF(MOD(   External_Call_Formula_Date__c - DATE(1900, 1, 6), 7) = 1, External_Call_Formula_Date__c -2,
+IF(MOD( External_Call_Formula_Date__c - DATE(1900, 1, 6), 7) = 0, External_Call_Formula_Date__c -1, External_Call_Formula_Date__c 
+)
+)</formula>
+        <name>External Call</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Internal_Call</fullName>
+        <field>Internal_Call_Due__c</field>
+        <formula>IF(MOD(  Internal_Call_Formula_Date__c - DATE(1900, 1, 6), 7) = 1, Internal_Call_Formula_Date__c -2,
+IF(MOD( Internal_Call_Formula_Date__c - DATE(1900, 1, 6), 7) = 0, Internal_Call_Formula_Date__c -1, Internal_Call_Formula_Date__c 
+)
+)</formula>
+        <name>Internal Call</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Large_Order_Notification</fullName>
+        <description>0	Saturday	
+1	Sunday	
+2	Monday	
+3	Tuesday	
+4	Wednesday	
+5	Thursday	
+6	Friday</description>
+        <field>Large_Order_NotificationDue__c</field>
+        <formula>IF(MOD(  Large_Order_Notification_Formula_Date__c - DATE(1900, 1, 6), 7) = 1, Large_Order_Notification_Formula_Date__c -2,
+IF(MOD( Large_Order_Notification_Formula_Date__c - DATE(1900, 1, 6), 7) = 0, Large_Order_Notification_Formula_Date__c -1, Large_Order_Notification_Formula_Date__c 
+)
+)</formula>
+        <name>Large Order Notification</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Site_Confirmation_Due_Date</fullName>
+        <description>0 Saturday
+1 Sunday
+2 Monday
+3 Tuesday
+4 Wednesday
+5 Thursday
+6 Friday</description>
+        <field>Site_Confirmation_Due_By__c</field>
+        <formula>IF(MOD( Site_Confirmation_Formula_Date__c  - DATE(1900, 1, 6), 7) = 1, Site_Confirmation_Formula_Date__c  -2,
+IF(MOD( Site_Confirmation_Formula_Date__c  - DATE(1900, 1, 6), 7) = 0, Site_Confirmation_Formula_Date__c  -1, Site_Confirmation_Formula_Date__c
+)
+)</formula>
+        <name>Site Confirmation Due Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_to_Confirmed</fullName>
+        <field>Delivery_Status__c</field>
+        <literalValue>Confirmed</literalValue>
+        <name>Status to Confirmed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_to_Unconfirmed</fullName>
+        <field>Delivery_Status__c</field>
+        <literalValue>Unconfirmed</literalValue>
+        <name>Status to Unconfirmed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X48_Hour_Pre_Call</fullName>
+        <field>X48_Hour_Pre_Call_Due__c</field>
+        <formula>IF(MOD(    X48_Hour_Pre_Call_Formula_Date__c - DATE(1900, 1, 6), 7) = 1, X48_Hour_Pre_Call_Formula_Date__c -2,
+IF(MOD( X48_Hour_Pre_Call_Formula_Date__c - DATE(1900, 1, 6), 7) = 0, X48_Hour_Pre_Call_Formula_Date__c -1, X48_Hour_Pre_Call_Formula_Date__c 
+)
+)</formula>
+        <name>48 Hour Pre Call</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X72_HR_Pre_Call</fullName>
+        <field>X72_Hour_Pre_Call_Due__c</field>
+        <formula>IF(MOD(  X72_Hour_Pre_Call_Formula_Date__c - DATE(1900, 1, 6), 7) = 1, X72_Hour_Pre_Call_Formula_Date__c -2,
+IF(MOD( X72_Hour_Pre_Call_Formula_Date__c - DATE(1900, 1, 6), 7) = 0, X72_Hour_Pre_Call_Formula_Date__c -1, X72_Hour_Pre_Call_Formula_Date__c 
+)
+)</formula>
+        <name>72 HR Pre Call</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Delivery Date Task</fullName>
+        <actions>
+            <name>External_Call</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Internal_Call</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Large_Order_Notification</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Site_Confirmation_Due_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>X48_Hour_Pre_Call</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>X72_HR_Pre_Call</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>IF(MOD( Delivery_Date__c - DATE(1900, 1, 6), 7) &gt; 2, Delivery_Date__c + 21,
+IF(MOD( Delivery_Date__c - DATE(1900, 1, 6), 7) &gt; 0, Delivery_Date__c + 19, Delivery_Date__c+ 20
+)
+)</description>
+        <formula>ISCHANGED(Delivery_Date__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status to Confirmed</fullName>
+        <actions>
+            <name>Status_to_Confirmed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( Still_on_Schedule__c = True, 
+Permanent_power_and_running__c= True, 
+Working_elevator_for_units_pass_the_3rd__c = True, 
+Clear_paths_to_the_entry_of_the_building__c = True, 
+Reviewed_Not_Ready_Clause__c = True)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>External_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Delivery_Schedule__c.External_Call_Due__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>External Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>Large_Order_Notification</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Delivery_Schedule__c.Large_Order_NotificationDue__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Large Order Notification</subject>
+    </tasks>
+    <tasks>
+        <fullName>Site_Confirmation_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Delivery_Schedule__c.Site_Confirmation_Due_By__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Site Confirmation Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>X48_Hour_Pre_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Delivery_Schedule__c.X48_Hour_Pre_Call_Due__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>48 Hour Pre Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>X72_Hour_Pre_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Delivery_Schedule__c.X72_Hour_Pre_Call_Due__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>72 Hour Pre Call</subject>
+    </tasks>
+</Workflow>

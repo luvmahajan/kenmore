@@ -1,0 +1,7 @@
+Hello {!Opportunity.OwnerFirstName},
+
+Your "{!Opportunity.Name}" Opportunity that is related to your {!Opportunity.Account} Account is scheduled to close on {!Opportunity.CloseDate}.  The Stage is set at {!Opportunity.StageName} and we will be shipping the following products:  {!Opportunity.Products_Services__c}
+
+Please click on the link below to review and update your opportunity accordingly.  
+
+{!Opportunity.Link}

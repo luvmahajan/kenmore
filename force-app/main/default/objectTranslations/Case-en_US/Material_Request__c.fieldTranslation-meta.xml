@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Material Request --></label>
+    <name>Material_Request__c</name>
+    <picklistValues>
+        <masterLabel>Customer Presentation</masterLabel>
+        <translation><!-- Customer Presentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Catalog</masterLabel>
+        <translation><!-- Digital Catalog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flyer</masterLabel>
+        <translation><!-- Flyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Package</masterLabel>
+        <translation><!-- Product Package --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

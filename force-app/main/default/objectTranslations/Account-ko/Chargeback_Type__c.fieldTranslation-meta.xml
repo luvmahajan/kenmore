@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For the Credit Specialist to identify the type of Chargeback --></help>
+    <label><!-- Chargeback Type --></label>
+    <name>Chargeback_Type__c</name>
+    <picklistValues>
+        <masterLabel>3rd Party</masterLabel>
+        <translation><!-- 3rd Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bad Debt</masterLabel>
+        <translation><!-- Bad Debt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bankruptcy</masterLabel>
+        <translation><!-- Bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute</masterLabel>
+        <translation><!-- Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recourse-Cont</masterLabel>
+        <translation><!-- Recourse-Cont --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recourse-Gen</masterLabel>
+        <translation><!-- Recourse-Gen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recourse-Gov</masterLabel>
+        <translation><!-- Recourse-Gov --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small Bal</masterLabel>
+        <translation><!-- Small Bal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

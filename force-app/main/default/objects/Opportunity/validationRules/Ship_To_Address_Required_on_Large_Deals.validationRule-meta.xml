@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_To_Address_Required_on_Large_Deals</fullName>
+    <active>false</active>
+    <description>Ship to address is required for deals $100K or &gt; for Commercial.  Ship To is included in the Win Wire Email.</description>
+    <errorConditionFormula>AND 
+(ISPICKVAL( Business__c , &quot;Commercial&quot;), 
+(ISPICKVAL( StageName, &quot;Deal Closure/Won&quot;)), 
+AND ( Amount &gt;= 100000), 
+( Ship_To_Address__c  = null))</errorConditionFormula>
+    <errorDisplayField>Ship_To_Address__c</errorDisplayField>
+    <errorMessage>Ship To Address:  is Required for deals $100K or greater</errorMessage>
+</ValidationRule>

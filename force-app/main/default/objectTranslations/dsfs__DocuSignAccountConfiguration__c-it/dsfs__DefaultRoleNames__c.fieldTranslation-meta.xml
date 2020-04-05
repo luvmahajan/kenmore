@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Nomi di ruolo del destinatario corrispondenti ai relativi valori di ruolo al momento dell&#39;invio con DocuSign.</help>
+    <label><!-- DefaultRoleNames --></label>
+    <name>dsfs__DefaultRoleNames__c</name>
+</CustomFieldTranslation>

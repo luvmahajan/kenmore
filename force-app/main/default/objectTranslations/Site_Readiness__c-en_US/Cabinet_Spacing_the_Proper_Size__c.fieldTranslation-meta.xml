@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Cabinet space must be wide enough, deep enough, and long enough to accommodate appliances (if the delivery team is installing appliances). --></help>
+    <label><!-- Cabinet Spacing the Proper Size? --></label>
+    <name>Cabinet_Spacing_the_Proper_Size__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

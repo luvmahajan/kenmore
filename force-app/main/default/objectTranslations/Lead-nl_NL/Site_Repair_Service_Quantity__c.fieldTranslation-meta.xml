@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Displays the total number of products to be serviced on site --></help>
+    <label><!-- Site Repair Service Quantity --></label>
+    <name>Site_Repair_Service_Quantity__c</name>
+</CustomFieldTranslation>

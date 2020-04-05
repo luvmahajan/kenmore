@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason --></label>
+    <name>Reason__c</name>
+    <picklistValues>
+        <masterLabel>Account is on incorrect tier</masterLabel>
+        <translation><!-- Account is on incorrect tier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Add/Remove account to existing KAP</masterLabel>
+        <translation><!-- Add/Remove account to existing KAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Add/Remove items to existing KAP</masterLabel>
+        <translation><!-- Add/Remove items to existing KAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cannot place order</masterLabel>
+        <translation><!-- Cannot place order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial list price is high/Low</masterLabel>
+        <translation><!-- Commercial list price is high/Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor pricing feedback</masterLabel>
+        <translation><!-- Competitor pricing feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create new KAP</masterLabel>
+        <translation><!-- Create new KAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Request</masterLabel>
+        <translation><!-- Customer Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Request product information</masterLabel>
+        <translation><!-- Customer Request product information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error Placing Order</masterLabel>
+        <translation><!-- Error Placing Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error when placing order</masterLabel>
+        <translation><!-- Error when placing order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Item missing information</masterLabel>
+        <translation><!-- Item missing information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Commercial List Price</masterLabel>
+        <translation><!-- Missing Commercial List Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing required parts for installation</masterLabel>
+        <translation><!-- Missing required parts for installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (please explain)</masterLabel>
+        <translation><!-- Other (please explain) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing error in SAP</masterLabel>
+        <translation><!-- Pricing error in SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Not in SAP</masterLabel>
+        <translation><!-- Product Not in SAP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

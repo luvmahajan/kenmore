@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Group__c</fullName>
+    <description>05	Builders
+01	Educational Services
+02	Govt &amp; Military
+03	Health Care &amp; Social
+07	Others
+04	Property Mgmt
+06   Utilities</description>
+    <externalId>false</externalId>
+    <inlineHelpText>05	Builders
+01	Educational Services
+02	Govt &amp; Military
+03	Health Care &amp; Social
+07	Others
+04	Property Mgmt
+06   Utilities</inlineHelpText>
+    <label>Customer Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>01</fullName>
+                <default>false</default>
+                <label>01</label>
+            </value>
+            <value>
+                <fullName>05</fullName>
+                <default>false</default>
+                <label>05</label>
+            </value>
+            <value>
+                <fullName>02</fullName>
+                <default>false</default>
+                <label>02</label>
+            </value>
+            <value>
+                <fullName>03</fullName>
+                <default>false</default>
+                <label>03</label>
+            </value>
+            <value>
+                <fullName>07</fullName>
+                <default>false</default>
+                <label>07</label>
+            </value>
+            <value>
+                <fullName>04</fullName>
+                <default>false</default>
+                <label>04</label>
+            </value>
+            <value>
+                <fullName>06</fullName>
+                <default>false</default>
+                <label>06</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

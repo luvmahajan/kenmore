@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Esta opción es compatible con sobres grandes de DocuSign, puesto que envía sobres sin datos de documento y permite que DocuSign recupere estos datos según sea necesario. Activar únicamente si el envío de sobres supera los límites de llamada de Salesforce.</help>
+    <label><!-- Fetch Documents --></label>
+    <name>dsfs__FetchDocuments__c</name>
+</CustomFieldTranslation>

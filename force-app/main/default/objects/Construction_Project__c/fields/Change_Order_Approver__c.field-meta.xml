@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Order_Approver__c</fullName>
+    <externalId>false</externalId>
+    <label>Change Order Approver</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Managing Director</fullName>
+                <default>false</default>
+                <label>Managing Director</label>
+            </value>
+            <value>
+                <fullName>Regional Sales Mgr.</fullName>
+                <default>false</default>
+                <label>Regional Sales Mgr.</label>
+            </value>
+            <value>
+                <fullName>Project Mgr.</fullName>
+                <default>false</default>
+                <label>Project Mgr.</label>
+            </value>
+            <value>
+                <fullName>Post-Delivery Mgr.</fullName>
+                <default>false</default>
+                <label>Post-Delivery Mgr.</label>
+            </value>
+            <value>
+                <fullName>Finance Ops Mgr.</fullName>
+                <default>false</default>
+                <label>Finance Ops Mgr.</label>
+            </value>
+            <value>
+                <fullName>Order Mgmt Mgr.</fullName>
+                <default>false</default>
+                <label>Order Mgmt Mgr.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

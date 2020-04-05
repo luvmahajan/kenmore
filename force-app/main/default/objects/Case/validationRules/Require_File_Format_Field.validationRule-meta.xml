@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_File_Format_Field</fullName>
+    <active>true</active>
+    <description>If the Marketing case subtype is High Resolution Logo Request, then the File Format field is required</description>
+    <errorConditionFormula>AND (
+    ISPICKVAL(Subtype__c, &quot;High Resolution Logo Request&quot;),
+    ISBLANK(File_Format__c)
+)</errorConditionFormula>
+    <errorMessage>File Format is required for High Resolution Logo Request cases</errorMessage>
+</ValidationRule>

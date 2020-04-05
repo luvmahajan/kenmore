@@ -1,0 +1,2 @@
+<apex:page standardController="Account" extensions="CreateSCOAccountRequestController" lightningStylesheets="true" action="{!redirectButton}">
+</apex:page>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAS_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.LAST_NAME</columns>
+    <columns>LEAD.FIRST_NAME</columns>
+    <columns>LEAD.TITLE</columns>
+    <columns>LEAD.MOBILE_PHONE</columns>
+    <columns>LEAD.STREET</columns>
+    <columns>LEAD.CITY</columns>
+    <columns>LEAD.ZIP</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notContain</operation>
+        <value>disqualified,Existing,Disqualified</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>notContain</operation>
+        <value>retail</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>notContain</operation>
+        <value>Q4 2016 Greystar Property Manager Campaign</value>
+    </filters>
+    <label>CAS CMD Leads</label>
+    <queue>Inside_Sales_Team</queue>
+    <sharedTo>
+        <role>Inside_Sales_Customer_Acquisition_Specialist</role>
+    </sharedTo>
+</ListView>

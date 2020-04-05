@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- - (i.e. will care more about Kenmore) 
+- How Client describes their brand value – How it match our Brand pride
+- Evidence their Client demographic values their Brand --></help>
+    <label><!-- B4 High pride/focus on their Brand --></label>
+    <name>B4_High_pride_focus_on_their_Brand__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5</masterLabel>
+        <translation><!-- 5 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

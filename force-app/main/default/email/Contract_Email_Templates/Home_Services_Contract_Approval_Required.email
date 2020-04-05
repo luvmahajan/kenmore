@@ -1,0 +1,14 @@
+*** NEW CONTRACT APPROVAL NOTIFICATION *** 
+
+Hello,
+
+The following contract needs your approval:
+
+Contract Link: {!Contract.Link}
+Opportunity: {!Contract.Opportunity__c}
+Account: {!Contract.Account} 
+
+This contract will be reviewed in the next BRD/Contract meeting.
+
+
+Thank you.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification to Contract Admins to review Contract</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Contract to be reviewed by Contract Admins</name>
+    <style>none</style>
+    <subject>A Contract is Ready for Review</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

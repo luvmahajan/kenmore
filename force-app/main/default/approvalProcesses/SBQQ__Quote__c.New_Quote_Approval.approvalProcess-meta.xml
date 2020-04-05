@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Sales_Rep_Manager__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Assigned to DM</label>
+        <name>Assigned_to_DM</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Sales_Rep_Manager_2__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Assigned to RM</label>
+        <name>Assigned_to_RM</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>All New Quotes are reviewed against this approval process</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 OR (2 AND 3)</booleanFilter>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.RecordType</field>
+            <operation>equals</operation>
+            <value>Commercial - Contract</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.RecordType</field>
+            <operation>equals</operation>
+            <value>Commercial - Flow Business</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.Total_Margin_Percent__c</field>
+            <operation>lessOrEqual</operation>
+            <value>13</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Document_Prep_Stage</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Quote_Result_Alert</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Quote_Result_Alert</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>New Quote Approval</label>
+    <recallActions>
+        <action>
+            <name>Quote_Result_Alert</name>
+            <type>Alert</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

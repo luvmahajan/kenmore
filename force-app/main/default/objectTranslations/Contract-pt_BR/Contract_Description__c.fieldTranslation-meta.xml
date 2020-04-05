@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contract Description --></label>
+    <name>Contract_Description__c</name>
+    <picklistValues>
+        <masterLabel>Fixed Quantity</masterLabel>
+        <translation><!-- Fixed Quantity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government</masterLabel>
+        <translation><!-- Government --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military</masterLabel>
+        <translation><!-- Military --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weatherization</masterLabel>
+        <translation><!-- Weatherization --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

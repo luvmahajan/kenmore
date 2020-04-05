@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 01	Calculation Missing
+02	Compl Confirm Missng
+03	Prices Incomplete
+04	Check Terms of Paymt
+05	Check Terms of Div
+08	Check Credit Memo
+09	Check Debit Memo
+30	Price Chg. Approval --></help>
+    <label><!-- Billing Block Reason --></label>
+    <name>Billing_Block_Reason__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- BP	Eligible for Bst Prc --></help>
+    <label><!-- Customer Group 4 --></label>
+    <name>Customer_Group_4__c</name>
+    <picklistValues>
+        <masterLabel>BP</masterLabel>
+        <translation><!-- BP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

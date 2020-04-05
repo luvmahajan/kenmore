@@ -1,0 +1,8 @@
+*** CASE ESCALATION NOTIFICATION ***  
+
+The following case has been escalated:  
+Product: {!Product2.Id} {!Product2.Description}
+Case:  {!Case.CaseNumber}:  {!Case.Subject} 
+Owner:  {!Case.OwnerFullName}  
+
+Click on the link to access the case:  {!Case.Link}

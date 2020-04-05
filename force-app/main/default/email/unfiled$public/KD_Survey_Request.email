@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div>Hello&nbsp;{!Contact.FirstName},&nbsp;</div><div><br><div><span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: &quot;Open Sans&quot;, sans-serif; font-size: 12pt;">Thank you for allowing us to service you.&nbsp;</span></div><div><span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: &quot;Open Sans&quot;, sans-serif; font-size: 12pt;"><br></span></div><div><span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: &quot;Open Sans&quot;, sans-serif; font-size: 12pt;">Please take approximately 10 seconds to tell us about your experience&nbsp;</span><span style="font-size: 12pt;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfFV_9puOD3XGShb4apvr78hGmsXWUMVzCsATuMaGimVLnOoA/viewform?usp=pp_url&amp;entry.591088743={!Contact.Id}">Here</a>.&nbsp;</span></div></div>]]></td>
+</tr>
+</table>

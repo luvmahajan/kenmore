@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weekly_Updates_255__c</fullName>
+    <description>Please add your updates for the weekly funnel call here.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please add your updates for the weekly funnel call here.</inlineHelpText>
+    <label>Weekly Updates</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

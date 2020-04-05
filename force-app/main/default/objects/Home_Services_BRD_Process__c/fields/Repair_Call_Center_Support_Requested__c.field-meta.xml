@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Repair_Call_Center_Support_Requested__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Std–SPI Client
+Std Plus 1–Client Inbound Create
+Std Plus 2–Consumer Inbound Create
+Premium–Triage, Inbound Create
+Email Dispatch–Client Inbound Email, Outbound Create
+Store Stock Only–Offline create
+Note: All inquiries are inbound phone</inlineHelpText>
+    <label>Repair Call Center Support Requested</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard</fullName>
+                <default>false</default>
+                <label>Standard</label>
+            </value>
+            <value>
+                <fullName>Standard Plus 1</fullName>
+                <default>false</default>
+                <label>Standard Plus 1</label>
+            </value>
+            <value>
+                <fullName>Standard Plus 2</fullName>
+                <default>false</default>
+                <label>Standard Plus 2</label>
+            </value>
+            <value>
+                <fullName>Premium</fullName>
+                <default>false</default>
+                <label>Premium</label>
+            </value>
+            <value>
+                <fullName>Email Dispatch</fullName>
+                <default>false</default>
+                <label>Email Dispatch</label>
+            </value>
+            <value>
+                <fullName>Store Stock Only</fullName>
+                <default>false</default>
+                <label>Store Stock Only</label>
+            </value>
+            <value>
+                <fullName>Rework – Custom</fullName>
+                <default>false</default>
+                <label>Rework – Custom</label>
+            </value>
+            <value>
+                <fullName>Repair – Custom</fullName>
+                <default>false</default>
+                <label>Repair – Custom</label>
+            </value>
+            <value>
+                <fullName>Del/Inst  – Custom</fullName>
+                <default>false</default>
+                <label>Del/Inst  – Custom</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>9</visibleLines>
+</CustomField>

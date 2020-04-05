@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- - Transparent with Funding
+- Proof they’ve done business w/us, received a LOC or using/used a 3rd party LOC --></help>
+    <label><!-- B8 Fiscally stable/low credit risk --></label>
+    <name>B8_Fiscally_stable_low_credit_risk__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2</masterLabel>
+        <translation><!-- 2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- BRD Stage Details --></label>
+    <name>BRD_Stage_Details__c</name>
+    <picklistValues>
+        <masterLabel>BRD Approval - Additional question for AM</masterLabel>
+        <translation><!-- BRD Approval - Additional question for AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRD Distributed</masterLabel>
+        <translation><!-- BRD Distributed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRD Rejected</masterLabel>
+        <translation><!-- BRD Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRD Submitted</masterLabel>
+        <translation><!-- BRD Submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled / Closed Lost</masterLabel>
+        <translation><!-- Cancelled / Closed Lost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Approved</masterLabel>
+        <translation><!-- Contract Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Get Contract</masterLabel>
+        <translation><!-- Get Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Launch Audit</masterLabel>
+        <translation><!-- Post Launch Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre Dist - Additional Question for AM</masterLabel>
+        <translation><!-- Pre Dist - Additional Question for AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Setup</masterLabel>
+        <translation><!-- Setup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solution Development</masterLabel>
+        <translation><!-- Solution Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Testing</masterLabel>
+        <translation><!-- Testing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferred to CM</masterLabel>
+        <translation><!-- Transferred to CM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Launch</masterLabel>
+        <translation><!-- Waiting for Launch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting on Delinquent Approval</masterLabel>
+        <translation><!-- Waiting on Delinquent Approval --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

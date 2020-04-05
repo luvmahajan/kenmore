@@ -1,0 +1,55 @@
+<apex:page standardController="Account" extensions="UploadAttachmentCustomController">
+	<apex:sectionHeader title="{!Account.Name}" subtitle="Attach File"/>
+	<font color="#ff0000" size="3"><apex:outputPanel id="hiddenblock"><br/> <apex:pagemessages /><br/> </apex:outputPanel></font>
+	<apex:form id="form_Upload">
+		<apex:pageBlock >
+			<apex:pageBlockSection columns="1">
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Name" />
+					<apex:outputText value="{!contractName}" />
+				</apex:pageBlockSectionItem>
+
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="File" for="file_File"/>
+					<apex:inputFile id="file_File" value="{!fileBody}" filename="{!fileName}" />
+				</apex:pageBlockSectionItem>
+
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Contract Type" for="type"/>
+					<apex:selectList value="{!selectedType}" size="1" id="type" disabled="{!readOnlyFlag}">
+						<apex:selectOptions value="{!typeOptions}" />
+					</apex:selectList>
+				</apex:pageBlockSectionItem>
+
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Document Type" for="component"/>
+					<apex:selectList value="{!selectedDocumentType}" size="1" id="component" disabled="{!readOnlyFlag}">
+						<apex:selectOptions value="{!documentTypeOptions}" />
+					</apex:selectList>
+				</apex:pageBlockSectionItem>
+
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Start Date" id="startDate"/>
+					<apex:inputField value="{!contract.Start_Date__c}"/>
+				</apex:pageBlockSectionItem>
+
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="End Date" id="endDate"/>
+					<apex:inputField value="{!contract.End_Date__c}"/>
+				</apex:pageBlockSectionItem>
+
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Total Amount" id="totalAmount"/>
+					<apex:inputField value="{!contract.Total_Amount__c}"/>
+				</apex:pageBlockSectionItem>
+
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="" for="uploadBtn"/> 
+					<apex:commandButton id="uploadBtn" value="Upload" action="{!processUpload}" />
+				</apex:pageBlockSectionItem>    
+
+			</apex:pageBlockSection>
+
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

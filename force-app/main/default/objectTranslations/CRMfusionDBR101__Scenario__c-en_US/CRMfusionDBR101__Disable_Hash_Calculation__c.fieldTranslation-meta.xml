@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Checking this box will disable automatic hash key size calculation. Please contact support before disabling automatic hash key size calculation. --></help>
+    <label><!-- Disable Hash Calculation --></label>
+    <name>CRMfusionDBR101__Disable_Hash_Calculation__c</name>
+</CustomFieldTranslation>

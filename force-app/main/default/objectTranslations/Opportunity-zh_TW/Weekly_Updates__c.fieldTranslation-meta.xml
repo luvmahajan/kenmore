@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please use this field to provide any opportunity specific details or updates that will be communicated on the weekly sales funnel call. --></help>
+    <label><!-- Weekly Updates --></label>
+    <name>Weekly_Updates__c</name>
+</CustomFieldTranslation>

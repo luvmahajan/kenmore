@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Terms_of_Payment__c</fullName>
+    <description>0002	14 days 2%, 30 net
+0001	Pay immediately w/o deduction</description>
+    <externalId>false</externalId>
+    <inlineHelpText>0002	14 days 2%, 30 net
+0001	Pay immediately w/o deduction</inlineHelpText>
+    <label>Terms of Payment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0001</fullName>
+                <default>true</default>
+                <label>0001</label>
+            </value>
+            <value>
+                <fullName>0002</fullName>
+                <default>false</default>
+                <label>0002</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

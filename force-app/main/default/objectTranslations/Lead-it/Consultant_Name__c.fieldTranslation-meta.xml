@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If the lead comes in from an Appliance Select Consultant then there name will show here. --></help>
+    <label><!-- Consultant Name --></label>
+    <name>Consultant_Name__c</name>
+</CustomFieldTranslation>

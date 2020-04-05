@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Тип подписанта DocuSign</help>
+    <label><!-- DocuSign Signer Type --></label>
+    <name>dsfs__DocuSign_Signer_Type__c</name>
+    <picklistValues>
+        <masterLabel>Address recipients</masterLabel>
+        <translation>Адреса получателей</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carbon Copy</masterLabel>
+        <translation>Копия</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Certified Delivery</masterLabel>
+        <translation>Заказная доставка</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manage envelope</masterLabel>
+        <translation>Управление конвертом</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sign in person</masterLabel>
+        <translation>Подписать при личном присутствии</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signer</masterLabel>
+        <translation>Подписант</translation>
+    </picklistValues>
+</CustomFieldTranslation>

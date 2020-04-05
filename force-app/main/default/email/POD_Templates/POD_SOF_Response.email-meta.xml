@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>POD SOF Response</name>
+    <style>none</style>
+    <subject>Kenmore Direct POD Request Notification/ Sales order #{!Case.Sales_Order__c}, Inv # {!Case.Invoice__c}  Customer PO {!Case.cust_po__c}</subject>
+    <textOnly>Hello,
+
+In regards to a recent request for a proof of delivery/bill of lading for {!Case.order_no__c}.  This account has been identified as an account with an approved delivery exception that allows deliveries to be completed without someone being present and signing the POD or BOL.  Below is the detail of the exception:
+
+WRITTEN APPROVAL TO LEAVE MERCHANDISE WITHOUT A SIGNATURE
+
+THIS WILL SERVE AS APPROVAL TO LEAVE MERCHANDISE WITHOUT A SIGNATURE AT THE TIME OF DELIVERY IN THE EVENT THERE IS NOT AN AUTHORIZED PERSON PRESENT.  MERCHANDISE IS TO BE LEFT IN A GARAGE OR ENCLOSED AREA AND NOT LEFT IN AN OPEN, UNSECURED AREA.  WHEN DELIVERY IS MADE PER THIS REQUEST, THE DELIVERY AGENT AND SEARS CONTRACT SALES IS RELIEVED OF ANY AND ALL RESPONSIBILITIES REGARDING MERCHANDISE INVOLVED.  IN THE EVENT THAT THE DELIVERING AGENT DOES NOT HAVE ACCESS TO A SECURED AREA, THE MERCHANDISE WILL NOT BE LEFT, BUT RETURNED AND RESCHEDULED FOR DELIVERY AT A LATER TIME WITH A SECOND DELIVERY CHARGE APPLIED.
+
+Thank you for your business -
+
+Kenmore Direct Post Delivery team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

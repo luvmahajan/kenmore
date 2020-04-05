@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chargeback_Status__c</fullName>
+    <description>Credit Specialist to update the Status of the Chargeback</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Credit Specialist to update the Status of the Chargeback</inlineHelpText>
+    <label>Chargeback Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Collected/Paid</fullName>
+                <default>false</default>
+                <label>Collected/Paid</label>
+            </value>
+            <value>
+                <fullName>Augusta Working</fullName>
+                <default>false</default>
+                <label>Augusta Working</label>
+            </value>
+            <value>
+                <fullName>Referred to 3rd Party Collections</fullName>
+                <default>false</default>
+                <label>Referred to 3rd Party Collections</label>
+            </value>
+            <value>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+                <label>Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Uncollectible</fullName>
+                <default>false</default>
+                <label>Uncollectible</label>
+            </value>
+            <value>
+                <fullName>Settlement</fullName>
+                <default>false</default>
+                <label>Settlement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

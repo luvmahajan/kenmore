@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>この文書の受信者／署名者として追加されることを希望する場合は、チェックボックスをオンにしてください。  チェックボックスをオフのままにした場合は、連絡先が DocuSign を完了した後で通知を受け取りますが、自分自身で署名することはできません。</help>
+    <label><!-- I will also Sign --></label>
+    <name>dsfs__I_will_Sign__c</name>
+</CustomFieldTranslation>

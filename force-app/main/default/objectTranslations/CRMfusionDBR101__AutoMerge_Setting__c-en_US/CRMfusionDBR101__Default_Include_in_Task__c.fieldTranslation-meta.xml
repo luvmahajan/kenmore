@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates whether or not all fields should be included in the task created from the merge containing data from the original record by default.  This value can be over-ridden by individual field settings below. --></help>
+    <label><!-- Default Include in Task Value --></label>
+    <name>CRMfusionDBR101__Default_Include_in_Task__c</name>
+</CustomFieldTranslation>

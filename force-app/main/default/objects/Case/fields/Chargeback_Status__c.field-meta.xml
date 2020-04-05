@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chargeback_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Chargeback Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Augusta Working</fullName>
+                <default>false</default>
+                <label>Augusta Working</label>
+            </value>
+            <value>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+                <label>Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Collected/Paid</fullName>
+                <default>false</default>
+                <label>Collected/Paid</label>
+            </value>
+            <value>
+                <fullName>In-house Collections</fullName>
+                <default>false</default>
+                <label>In-house Collections</label>
+            </value>
+            <value>
+                <fullName>Payment Plan</fullName>
+                <default>false</default>
+                <label>Payment Plan</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Pending Additional Information from Sears Member</fullName>
+                <default>false</default>
+                <label>Pending Additional Information from Sears Member</label>
+            </value>
+            <value>
+                <fullName>Pending Member Response</fullName>
+                <default>false</default>
+                <label>Pending Member Response</label>
+            </value>
+            <value>
+                <fullName>Pending Resolution with Member</fullName>
+                <default>false</default>
+                <label>Pending Resolution with Member</label>
+            </value>
+            <value>
+                <fullName>Recovered</fullName>
+                <default>false</default>
+                <label>Recovered</label>
+            </value>
+            <value>
+                <fullName>Referred to 3rd Party Collections</fullName>
+                <default>false</default>
+                <label>Referred to 3rd Party Collections</label>
+            </value>
+            <value>
+                <fullName>Sears Accepted Settlement</fullName>
+                <default>false</default>
+                <label>Sears Accepted Settlement</label>
+            </value>
+            <value>
+                <fullName>Settlement</fullName>
+                <default>false</default>
+                <label>Settlement</label>
+            </value>
+            <value>
+                <fullName>Uncollectible</fullName>
+                <default>false</default>
+                <label>Uncollectible</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

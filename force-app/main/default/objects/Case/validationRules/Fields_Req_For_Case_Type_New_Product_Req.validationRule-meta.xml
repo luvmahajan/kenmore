@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fields_Req_For_Case_Type_New_Product_Req</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Type,&quot;New Product Request&quot;), 
+OR(
+ISPICKVAL(Product__c,&quot;&quot;)
+)
+)</errorConditionFormula>
+    <errorMessage>If the case type is New Product Request, then Product is required.</errorMessage>
+</ValidationRule>

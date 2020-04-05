@@ -1,0 +1,12 @@
+Hello {!Account.OwnerFirstName},
+
+This is a notification that the File Administration Team has created a SAP Account ID and added it to {!Account.Name} Account record in Salesforce.com.  SAP ID is below as well as address to help you quickly identify this account: 
+
+SAP Account ID:  {!Account.SAP_Account_ID__c}
+Address: {!Account.BillingAddress}
+
+Please click on the link below to view the full details of this record:
+
+{!Account.Link}
+
+Thank you.

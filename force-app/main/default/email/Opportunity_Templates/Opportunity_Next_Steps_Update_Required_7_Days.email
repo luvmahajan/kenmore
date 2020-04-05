@@ -1,0 +1,7 @@
+Hello,
+
+The "{!Opportunity.Name}" Opportunity that is related to the {!Opportunity.Account} Account has not been modified in the last 7 days. Please makes sure Next Steps are updated and the opportunity information is accurate.
+
+Please click on the link below to review and update the opportunity accordingly.
+
+{!Opportunity.Link}

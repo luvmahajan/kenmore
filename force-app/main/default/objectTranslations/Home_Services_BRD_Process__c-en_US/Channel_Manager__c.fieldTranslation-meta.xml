@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The contact on the Channel Mananger team who will project manage this Client. --></help>
+    <label><!-- Channel Manager --></label>
+    <name>Channel_Manager__c</name>
+    <relationshipLabel><!-- BRD (Channel Manager) --></relationshipLabel>
+</CustomFieldTranslation>

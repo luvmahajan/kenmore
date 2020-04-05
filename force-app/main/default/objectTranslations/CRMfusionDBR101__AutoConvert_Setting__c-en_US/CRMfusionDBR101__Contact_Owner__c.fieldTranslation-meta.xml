@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Owner of the contact that is created during an automatic lead conversion if the conversion is triggered by a Lead to Account scenario. --></help>
+    <label><!-- Created Contact Owner --></label>
+    <name>CRMfusionDBR101__Contact_Owner__c</name>
+    <picklistValues>
+        <masterLabel>Account Owner</masterLabel>
+        <translation><!-- Account Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Current User</masterLabel>
+        <translation><!-- Current User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Owner</masterLabel>
+        <translation><!-- Lead Owner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

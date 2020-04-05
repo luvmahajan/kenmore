@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revenue_by_Week__c</fullName>
+    <description>Opportunity amount divided by shipping period divided by week</description>
+    <externalId>false</externalId>
+    <formula>Amount / (( Shipping_End_Date__c - Shipping_Start_Date__c ) / 7)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Revenue by Week</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

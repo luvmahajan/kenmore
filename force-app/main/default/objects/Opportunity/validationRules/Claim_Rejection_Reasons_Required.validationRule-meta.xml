@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Rejection_Reasons_Required</fullName>
+    <active>false</active>
+    <description>When Type = Renewal, Claim Rejection Reasons is a required field</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(  StageName  , &quot;Renewal&quot;),  LEN(  Claim_Rejection_Reasons__c  ) = 0)</errorConditionFormula>
+    <errorDisplayField>Claim_Rejection_Reasons__c</errorDisplayField>
+    <errorMessage>Field required when Type = Renewal</errorMessage>
+</ValidationRule>

@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;b&gt;The goal is to get to where customer has agreed to give you the opportunity to compete for the business.&lt;br /&gt;
+&amp;nbsp;Find out:&lt;/b&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Critical pain points&lt;/li&gt;
+	&lt;li&gt;Who the competition is.&lt;/li&gt;
+	&lt;li&gt;Review any plans or schedule the prospect may have&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+&lt;b&gt;By talking and pitching to the customer, you need to:&lt;/b&gt;&lt;br /&gt;
+o&amp;nbsp;&amp;nbsp; &amp;nbsp;Is their property run by a property management firm?&lt;br /&gt;
+o&amp;nbsp;&amp;nbsp; &amp;nbsp;Are there plans for renovation? When and how many?&lt;br /&gt;
+o&amp;nbsp;&amp;nbsp; &amp;nbsp;Who is their current supplier and how do they place their orders?&lt;br /&gt;
+o&amp;nbsp;&amp;nbsp; &amp;nbsp;What are the brands, colors and models of the current appliances?&lt;br /&gt;
+o&amp;nbsp;&amp;nbsp; &amp;nbsp;What is their annual budget and what have they spent over the previous 2 years?&lt;br /&gt;
+o&amp;nbsp;&amp;nbsp; &amp;nbsp;Who else is bidding?&lt;br /&gt;
+o&amp;nbsp;&amp;nbsp; &amp;nbsp;What is the target construction completion date?</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+        </componentInstances>
+        <name>facet-813be7e1-a27a-4919-a08b-338b97f3f7f9</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>facet-813be7e1-a27a-4919-a08b-338b97f3f7f9</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>GUIDANCE STEPS - QUALIFYING STAGE</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <name>facet-64398199-c420-4a4c-91fb-f30b9fa0e79d</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;ul&gt;
+	&lt;li&gt;Conduct a Needs Assessment&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://wiki.intra.sears.com/confluence/x/cjBzEQ&quot;&gt;Determine product fit using the Apple Cart:&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Identify EBI and key influencers&lt;/li&gt;
+&lt;/ul&gt;</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Qualified</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>createQuickActionName</name>
+                <value>NewOpportunity</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>lookupFieldName</name>
+                <value>Id</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>titleFieldName</name>
+                <value>Update below fields</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>updateQuickActionName</name>
+                <value>Opportunity.Update_Qual_Stage_steps</value>
+            </componentInstanceProperties>
+            <componentName>console:relatedRecord</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Qualified</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <name>facet-0a44dbf1-6a22-4834-b4fe-297dfcd7b78e</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>facet-0a44dbf1-6a22-4834-b4fe-297dfcd7b78e</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>REQUIRED STEPS - Qualifying Stage</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <name>facet-992f1b55-f39a-4483-afcc-5f035b0ca64e</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div&gt;At this stage, pulling together what you need to develop a proposal. &amp;nbsp;Understand what their&lt;b&gt; pain points &lt;/b&gt;are and &lt;b&gt;who&amp;nbsp; the key players are&lt;/b&gt;. &amp;nbsp;Depending on their pain points, make sure you involve the &lt;b&gt;right SC team&lt;/b&gt; in the process of creating your proposal. For example, if delivery is a hot button for them, you may want to involve the Ops team in your discussions. &lt;b&gt;The desired outcome is a proposal tailored in a way that speaks to that customer.&amp;nbsp;&lt;br /&gt;
+&lt;br /&gt;
+Be sure to:&lt;/b&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Formulate solution and pitch based on information you have received at this point.&lt;/li&gt;
+	&lt;li&gt;Introduce and explain credit process to prospect.&lt;/li&gt;
+&lt;/ul&gt;</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+        </componentInstances>
+        <name>facet-5a5919b4-851c-44f4-9aa6-3884d303188a</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>facet-5a5919b4-851c-44f4-9aa6-3884d303188a</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>GUIDANCE - Working Stage</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <name>facet-c777d058-4865-4fac-b784-c3631d89e6bb</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;b&gt;Required &lt;/b&gt;to advance to the next stage:
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;https://wiki.intra.sears.com/confluence/x/mYFMEQ&quot;&gt;Acquire comparable products for bid using Plan to Sell.&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Complete the D&amp;amp;I Estimating Quote form using MDO/SDO.&lt;/li&gt;
+	&lt;li&gt;Complete and submit pricing tool.&lt;/li&gt;
+&lt;/ul&gt;</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>createQuickActionName</name>
+                <value>NewOpportunity</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>lookupFieldName</name>
+                <value>Id</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>titleFieldName</name>
+                <value>Update Below fields</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>updateQuickActionName</name>
+                <value>Opportunity.Update_Working_Req_steps</value>
+            </componentInstanceProperties>
+            <componentName>console:relatedRecord</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Working</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <name>facet-38312d20-a0f8-47a4-8c30-b64d7bfa094c</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>facet-38312d20-a0f8-47a4-8c30-b64d7bfa094c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>REQUIRED STEPS - Working Sales Process</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <name>facet-86710eca-d16e-4ce8-8677-ed33819886dc</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>collapsed</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>numVisibleActions</name>
+                <value>10</value>
+            </componentInstanceProperties>
+            <componentName>force:highlightsPanel</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>hideUpdateButton</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>variant</name>
+                <value>linear</value>
+            </componentInstanceProperties>
+            <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>accordionSections</name>
+                <value>facet-64398199-c420-4a4c-91fb-f30b9fa0e79d</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultSectionName</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordion</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Qualified</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>accordionSections</name>
+                <value>facet-992f1b55-f39a-4483-afcc-5f035b0ca64e</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultSectionName</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordion</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Qualified</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>accordionSections</name>
+                <value>facet-c777d058-4865-4fac-b784-c3631d89e6bb</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultSectionName</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordion</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Working</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>accordionSections</name>
+                <value>facet-86710eca-d16e-4ce8-8677-ed33819886dc</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultSectionName</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordion</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Working</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <mode>Replace</mode>
+        <name>header</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div&gt;&lt;b&gt;BE ON ALERT&lt;/b&gt; for and quickly respond to inquiries.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Proposal and Pitch Creation: Best Practices and Tactics&lt;/b&gt;&lt;br /&gt;
+&amp;bull;&amp;nbsp;&amp;nbsp; &amp;nbsp;Propose three options (you have a higher percentage of them selecting one).&lt;br /&gt;
+&amp;bull;&amp;nbsp;&amp;nbsp; &amp;nbsp;Vary the options based on product and services, upgrades, price and other relevant variables.&lt;br /&gt;
+&amp;bull;&amp;nbsp;&amp;nbsp; &amp;nbsp;Offer site visits, product info, and references.&lt;br /&gt;
+&amp;bull;&amp;nbsp;&amp;nbsp; &amp;nbsp;Always remind the Buying Influence of what they want to fix, accomplish and/or avoid and how your option(s) minimize those costs or improve positive outcomes.&lt;br /&gt;
+&amp;bull;&amp;nbsp;&amp;nbsp; &amp;nbsp;Stay focused on value &amp;ndash; not price.&lt;br /&gt;
+&amp;bull;&amp;nbsp;&amp;nbsp; &amp;nbsp;Involve all Buying Influencers.&lt;br /&gt;
+&amp;bull;&amp;nbsp;&amp;nbsp; &amp;nbsp;Discuss Credit, Contracts, after-sale service.&lt;br /&gt;
+&amp;bull;&amp;nbsp;&amp;nbsp; &amp;nbsp;Walk into objections &amp;ndash; see them as clues that the Buying Influences need more info; are they skeptical, have misunderstanding, or see a drawback.&lt;br /&gt;
+&amp;bull;&amp;nbsp;&amp;nbsp; &amp;nbsp;Link the benefits to the financial win, needs and remedy of pain points.&lt;br /&gt;
+&amp;bull;&amp;nbsp;&amp;nbsp; &amp;nbsp;Discuss on-site visits.&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+        </componentInstances>
+        <name>facet-f16ff7bf-fc11-4a5b-bf05-0f8931e0ddb6</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>facet-f16ff7bf-fc11-4a5b-bf05-0f8931e0ddb6</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>GUIDANCE - Proposal Sent Stage</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <name>facet-7f33fbb1-cd00-43b2-a54d-389f1f8187ef</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;b&gt;Required &lt;/b&gt;to advance to the next stage:
+
+&lt;ul&gt;
+	&lt;li&gt;Schedule a meeting with the prospect and present the proposal.&lt;/li&gt;
+&lt;/ul&gt;
+Use the related list below titled &amp;quot;Quotes&amp;quot; to build and send the customer the quote.&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp;</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+        </componentInstances>
+        <name>facet-0e83c45b-0d67-4423-88c9-223c81ed7b1b</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>facet-0e83c45b-0d67-4423-88c9-223c81ed7b1b</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>REQUIRED STEPS - Proposal Sent Stage</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <name>facet-2a2b31a3-daaf-4fa2-bac0-5359b2a9895d</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div&gt;Moving an Opportunity to the &amp;ldquo;Finalizing&amp;rdquo; stage begins with a &lt;b&gt;verbal commitment from the prospect.&amp;nbsp;&lt;/b&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:10.0pt;&quot;&gt;During this stage it is important to know that some prospects may need to secure buy-in from someone above them. While you should always know who the EBI is and try to be in direct contact with them, it isn&amp;rsquo;t always an option. It is important that you have &lt;b&gt;given your contact enough information on pricing, ROI (return on investment), and the bottom line so that they can justify their expenditure.&lt;br /&gt;
+&lt;br /&gt;
+Be sure to:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Communicate with the Contract Desk and prospect to prepare for hand-off.&lt;/li&gt;
+	&lt;li&gt;&lt;span style=&quot;font-size:10.0pt;&quot;&gt;Conduct regular check-ins with the prospect to address and needs or concerns.&lt;/span&gt;&lt;br /&gt;
+	&amp;nbsp;&lt;/li&gt;
+&lt;/ul&gt;</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+        </componentInstances>
+        <name>facet-2b09f419-5204-4585-8ca6-b6ace4ce0e8b</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>facet-2b09f419-5204-4585-8ca6-b6ace4ce0e8b</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>GUIDANCE - Finalizing Stage</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <name>facet-d6ac6f5e-a0a0-4d47-9b54-caefcfbf461e</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;b&gt;Required &lt;/b&gt;to advance to the next stage:
+
+&lt;ul&gt;
+	&lt;li&gt;Prepare and send quote or master purchase agreement with terms and conditions.&lt;br /&gt;
+	&amp;nbsp;&lt;/li&gt;
+	&lt;li&gt;Send credit application to the client:
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;https://wiki.intra.sears.com/confluence/x/eo1MEQ&quot;&gt;Citibank&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;https://wiki.intra.sears.com/confluence/x/h41MEQ&quot;&gt;Blue Tarp&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;Create initial forecast (update every six months)&lt;/li&gt;
+&lt;/ul&gt;</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+        </componentInstances>
+        <name>Facet-m84xoi0fdd</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-m84xoi0fdd</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>REQUIRED STEPS - Finalizing Stage</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <name>Facet-rgor6w0gjd</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div&gt;&lt;span style=&quot;font-size:10.0pt;&quot;&gt;Once this stage is reached the customer has submitted the credit application, you have a signed commitment from the customer, and the contract package is completed and submitted (if required). Product forecasts are required seven weeks in advance of first shipments.&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Be sure to:&lt;/b&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Work with manager to work through any issues that arise.&lt;/li&gt;
+&lt;/ul&gt;</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+        </componentInstances>
+        <name>Facet-v7k2r7kqhw</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-v7k2r7kqhw</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>GUIDANCE - Awaiting Credit Stage</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <name>Facet-7hm65lx6jvu</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>Move the opportunity to this stage once everything is done and orders can start being entered.&amp;nbsp;
+&lt;div&gt;&lt;br /&gt;
+&lt;b&gt;Be sure to:&lt;/b&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Execute product forecast&lt;/li&gt;
+	&lt;li&gt;Ask for referrals after delivery is completed.&lt;/li&gt;
+	&lt;li&gt;Stop by the site to check on customer satisfaction.&lt;/li&gt;
+	&lt;li&gt;Send formal thank you.&lt;/li&gt;
+&lt;/ul&gt;</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Closed Won</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <name>facet-443684c5-2645-4dd2-b634-f24b2acd80a7</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>facet-443684c5-2645-4dd2-b634-f24b2acd80a7</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>GUIDANCE - Closed Won Stage</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <name>facet-49adc97f-2113-4b21-946c-331d4b3deba9</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>accordionSections</name>
+                <value>facet-7f33fbb1-cd00-43b2-a54d-389f1f8187ef</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultSectionName</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordion</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Proposal Sent</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>accordionSections</name>
+                <value>facet-2a2b31a3-daaf-4fa2-bac0-5359b2a9895d</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultSectionName</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordion</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Proposal Sent</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>accordionSections</name>
+                <value>facet-d6ac6f5e-a0a0-4d47-9b54-caefcfbf461e</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultSectionName</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordion</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Finalizing</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>accordionSections</name>
+                <value>Facet-rgor6w0gjd</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultSectionName</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordion</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Finalizing</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>accordionSections</name>
+                <value>Facet-7hm65lx6jvu</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultSectionName</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordion</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Awaiting Credit</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>accordionSections</name>
+                <value>facet-49adc97f-2113-4b21-946c-331d4b3deba9</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultSectionName</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordion</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Closed Won</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>height</name>
+                <value>150</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>Actions to Take</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>pageName</name>
+                <value>OpportunityButtonGroup</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showLabel</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:visualforcePage</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.StageName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Proposal</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <mode>Replace</mode>
+        <name>subheader</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentName>force:detailPanel</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>relatedListComponentOverride</name>
+                <value>NONE</value>
+            </componentInstanceProperties>
+            <componentName>force:relatedListContainer</componentName>
+        </componentInstances>
+        <name>Facet-98e74ceb-b4b7-4a96-8feb-993a3d1aa15a</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>parentFieldApiName</name>
+                <value>Opportunity.Id</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListApiName</name>
+                <value>SBQQ__Quotes2__r</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListComponentOverride</name>
+                <value>NONE</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>rowsToDisplay</name>
+                <value>10</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showActionBar</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentName>force:relatedListSingleContainer</componentName>
+        </componentInstances>
+        <name>Facet-6aab7528-5801-4f16-bbdd-d41b8fd3931f</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>parentFieldApiName</name>
+                <value>Opportunity.Id</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListApiName</name>
+                <value>Delivery_Estimates__r</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListComponentOverride</name>
+                <value>NONE</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>rowsToDisplay</name>
+                <value>10</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showActionBar</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentName>force:relatedListSingleContainer</componentName>
+        </componentInstances>
+        <name>Facet-947d1a6e-0490-4345-a108-4789e4e7d458</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>parentFieldApiName</name>
+                <value>Opportunity.Id</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListApiName</name>
+                <value>OpenActivities</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListComponentOverride</name>
+                <value>NONE</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>rowsToDisplay</name>
+                <value>10</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showActionBar</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentName>force:relatedListSingleContainer</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>parentFieldApiName</name>
+                <value>Opportunity.Id</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListApiName</name>
+                <value>ActivityHistories</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListComponentOverride</name>
+                <value>NONE</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>rowsToDisplay</name>
+                <value>10</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showActionBar</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentName>force:relatedListSingleContainer</componentName>
+        </componentInstances>
+        <name>Facet-ad350cfa-f76f-4c93-b48a-67d945099aa9</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>active</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-98e74ceb-b4b7-4a96-8feb-993a3d1aa15a</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Opportunity Details</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>active</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-6aab7528-5801-4f16-bbdd-d41b8fd3931f</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Quotes</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-947d1a6e-0490-4345-a108-4789e4e7d458</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>D&amp;I</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-ad350cfa-f76f-4c93-b48a-67d945099aa9</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Standard.Tab.activity</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <name>Facet-d612ffa5-36ec-46b9-8fc6-b408b3b31245</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>tabs</name>
+                <value>Facet-d612ffa5-36ec-46b9-8fc6-b408b3b31245</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tabset</componentName>
+        </componentInstances>
+        <mode>Replace</mode>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentName>runtime_sales_activities:activityPanel</componentName>
+        </componentInstances>
+        <mode>Replace</mode>
+        <name>activityTabContent</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>active</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>activityTabContent</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Standard.Tab.activity</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <mode>Replace</mode>
+        <name>tabs</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>tabs</name>
+                <value>tabs</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tabset</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>context</name>
+                <value>RECORD</value>
+            </componentInstanceProperties>
+            <componentName>forceChatter:exposedFeed</componentName>
+        </componentInstances>
+        <mode>Replace</mode>
+        <name>sidebar</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Opportunity Record Page - New Sales Process Flow-Project</masterLabel>
+    <parentFlexiPage>sfa__Opportunity_rec_L</parentFlexiPage>
+    <sobjectType>Opportunity</sobjectType>
+    <template>
+        <name>flexipage:recordHomeWithSubheaderTemplateDesktop</name>
+    </template>
+    <type>RecordPage</type>
+</FlexiPage>

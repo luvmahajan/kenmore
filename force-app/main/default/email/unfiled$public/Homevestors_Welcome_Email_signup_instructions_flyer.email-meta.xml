@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Homevestors contacts are being sent this email and promotional brochure for a database &quot;add&quot; project 10-1-2019</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Homevestors: Welcome Email, signup instructions, &amp; flyer</name>
+    <style>none</style>
+    <subject>RE: Homevestors &amp; Kenmore Direct: *Welcome Instructions*</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

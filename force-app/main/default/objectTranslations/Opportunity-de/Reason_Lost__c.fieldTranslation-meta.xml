@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the reason the customer decided not to purchase from Sears Commercial. If this opportunity was created due to an administration error, please specify why (i.e. duplicate opportunity, opportunity created in error, etc.). --></help>
+    <label><!-- Reason Lost --></label>
+    <name>Reason_Lost__c</name>
+    <picklistValues>
+        <masterLabel>Administration error</masterLabel>
+        <translation><!-- Administration error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract terms did not meet customer needs</masterLabel>
+        <translation><!-- Contract terms did not meet customer needs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit solution did not meet customer needs</masterLabel>
+        <translation><!-- Credit solution did not meet customer needs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer lost bid or project was cancelled</masterLabel>
+        <translation><!-- Customer lost bid or project was cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price offered did not meet customer perception of value</masterLabel>
+        <translation><!-- Price offered did not meet customer perception of value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product assortment did not meet customer needs</masterLabel>
+        <translation><!-- Product assortment did not meet customer needs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service failure (e.g. delivery, billing, order management) caused customer to purchase elsewhere</masterLabel>
+        <translation><!-- Service failure (e.g. delivery, billing, order management) caused customer to purchase elsewhere --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

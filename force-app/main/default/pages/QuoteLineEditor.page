@@ -1,0 +1,550 @@
+<!--<apex:page standardController="SBQQ__Quote__c" extensions="QuoteLineEditorController" lightningStylesheets="true">-->
+<apex:page controller="QuoteLineEditorController" lightningStylesheets="true" docType="html-5.0">
+    
+    <apex:form >
+        <style type = "text/css">
+            .colCenter {text-align:center;}     
+            .colRight {text-align:right;}     
+            .colLeft {text-align:left;} 
+            .floatCenter {float:center;} 
+            .floatLeft {float:left;} 
+            .floatRight {float:right;} 
+        .custPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 3%;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            width: 500px;
+            margin-left: -250px;
+            top:100px;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+        </style>
+        
+        <apex:outputPanel id="tstpopup">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                <apex:outputText value="Margin is "/>
+                    <apex:outputText value="{0, number, 0.00}">
+                        <apex:param value="{!margin_percent}" />
+                    </apex:outputText>
+                <br/><br/>
+                Please Provide Discount Reason.
+                <br/>
+                    <apex:inputTextarea value="{!discount_reason}" style="width:75%"/>
+                <br/><br/>
+                <apex:commandButton value="Save" action="{!actionSave}" style="color:white;background:#0070d2;" rerender="tstpopup,tstpopup3"/>
+                <apex:commandButton value="Cancel" action="{!closeCancelPopup}" rerender="tstpopup" />
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        <apex:outputPanel id="tstpopup2">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp2}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp2}">
+                <apex:outputText value="Margin is "/>
+                    <apex:outputText value="{0, number, 0.00}">
+                        <apex:param value="{!margin_percent}" />
+                    </apex:outputText>
+                <br/><br/>
+                Please Provide Discount Reason.
+                <br/> 
+                    <apex:inputTextarea value="{!discount_reason}" style="width:75%"/>
+                <br/><br/>
+                <apex:commandButton value="Save" action="{!actionQuickSave}" style="color:white;background:#0070d2;" rerender="tstpopup2,tstpopup3"/>
+                <apex:commandButton value="Cancel" action="{!closeCancelPopup}" rerender="tstpopup2" />
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        <apex:outputPanel id="tstpopup3">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayDonePopUp}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayDonePopUp}">
+                Quote is Saved.!!!
+                <br/><br/>
+            <apex:outputPanel rendered="{!IF(discount_reason!=null,true,false)}">
+                The Quote is sent for approval
+                <br/>
+                You will recieve an email when a decision is made on the quote
+                <br/><br/>
+                </apex:outputPanel>
+                <apex:commandButton value="Done" action="{!closeDonePopup}" style="color:white;background:#0070d2;" rerender="tstpopup3"/>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        <apex:outputPanel id="tstdescpopup">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayDescPopup}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayDescPopup}">
+                <br/>
+                <b>{!displayName}</b>
+                <br/><br/>
+                <apex:outputLabel escape="false" value="{!displayDescription}" />
+                <br/><br/>
+                <apex:commandButton value="Done" action="{!closeDescPopup}" rerender="tstdescpopup" />
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        <apex:outputPanel id="tstpopuptrips">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayTrips}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayTrips}">
+                Please enter number of trips.{!qty_trips}
+                <br/><br/>
+                <apex:input type="number" value="{!qty_trips}" style="width:50%;height:2rem" />
+                <br/><br/><br/>
+                <apex:commandButton value="Done" action="{!closeTripsPopup}" style="color:white;background:#0070d2;" rerender="tstpopuptrips"/>
+                <apex:commandButton value="Cancel" action="{!cancelTripsPopup}" rerender="tstpopuptrips"/>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        <apex:outputPanel id="popupsubstitute">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displaySubstitute}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displaySubstitute}">
+                Please enter reason for substitution.
+                <br/><br/>
+                    <apex:selectList value="{!selSubstituteReason}" size="1">
+                        <apex:selectoptions value="{!DropSubstituteReason}"/>
+                    </apex:selectList>
+                <br/><br/><br/>
+                <apex:commandButton value="Done" action="{!actionSubstitute}" style="color:white;background:#0070d2;" rerender="popupsubstitute"/>
+                <apex:commandButton value="Cancel" action="{!cancelSubstitutePopup}" rerender="popupsubstitute"/>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        <apex:pageBlock >
+      		<apex:pageMessages id="showmsg"></apex:pageMessages>
+            <apex:pageBlockButtons location="top" rendered="{!renLock}">
+                <apex:commandButton value="Add Products" action="{!gotoProducts}"/>
+                <!--
+                <apex:commandButton value="Calculate Pallet" action="{!calculatePallet}"/>
+                <apex:commandButton value="Calculate Delivery" action="{!calculateDelivery2}"/>-->
+                <apex:commandButton value="Calculate" action="{!actionCalculate}" reRender="showmsg" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <apex:commandButton value="Quick Save" action="{!showPopup}"  rerender="showmsg,tstpopup2,tstpopup3">
+                    <apex:param name="bp" value="Quick Save" />
+                </apex:commandButton>
+                <apex:commandButton value="Save" action="{!showPopup}" style="color:white;background:#0070d2;" rerender="showmsg,tstpopup,tstpopup3">
+                    <apex:param name="bp" value="Save" />
+                </apex:commandButton>
+                <apex:commandButton value="Cancel" action="{!actionCancel}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockButtons location="top" rendered="{!NOT(renLock)}">
+                <apex:commandButton value="Cancel" action="{!actionCancel2}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Quote Information">
+            <!--
+            <table width="100%" border="0" id="filter">
+                <tr>
+                    <td align="right"  width="15%"><apex:outputLabel >Target Customer Amount:</apex:outputLabel></td>                    
+                    <td align="left"  width="5%" >
+                            <apex:inputText value="{!target_amount}"/>
+                    </td>
+                    <td align="right" width="10%">
+                        <apex:commandButton value="Re-Calculate" action="{!actionCalculate}" style="margin:15px" rendered="{!renLock}"/>
+                    </td>
+                    <td align="left" width="10%">
+                        <apex:commandButton value="Remove Discount" action="{!actionClearDiscount}" style="margin:15px" rendered="{!renLock}"/>
+                    </td>
+                    <td align="right"  width="60%" ></td>                                    
+                </tr>
+            </table> -->
+            <br/><br/>
+            
+            <apex:pageBlockTable value="{!lstParentProduct}" var="lst" rendered="{!renTable}">
+                <apex:column value="{!mapLineEditor[mapParentProduct[lst].Id].seq_no}" headerValue="{!mapHeader['seq_no']}" rendered="{!AND(lst!='Shipping',lst!='Tax')}"/>
+                <apex:column value="{!mapLineEditor[lst].seq_no}" headerValue="{!mapHeader['seq_no']}" rendered="{!OR(lst=='Shipping',lst=='Tax')}"/>
+                <apex:column headerValue="ACTIONS"  style="text-align:center;width:30px;" headerClass="colCenter"> 
+                    <apex:outputPanel rendered="{!AND(lst!='Shipping',lst!='Tax', renLock, quoteRecordType != 'Amendment_Quote' )}" >
+                    <apex:commandLink value="EDIT" action="{!actionEdit}"  rendered="{!mapParentProduct[lst].isProductParent__c}" >
+                        <apex:param name="sid" value="{!mapParentProduct[lst].ProductParentUnique__c}" />
+                        <apex:param name="pid" value="{!mapParentProduct[lst].Product__c}" />
+                    </apex:commandLink>
+                    <br/>
+                    <!--
+                    <apex:commandLink value="SUBSTITUTE" action="{!actionSubstitute}"  rendered="{!mapParentProduct[lst].isProductParent__c}">
+                        <apex:param name="sid" value="{!mapParentProduct[lst].ProductParentUnique__c}" />
+                    </apex:commandLink>
+                    <br/>
+					-->
+                    <apex:commandLink value="SUBSTITUTE" action="{!actionSubstitute1}"  rendered="{!mapParentProduct[lst].isProductParent__c}" rerender="popupsubstitute">
+                        <apex:param name="sid" value="{!mapParentProduct[lst].ProductParentUnique__c}" />
+                    </apex:commandLink>
+                    <br/><!--
+                    <apex:commandLink value="DUPLICATE" action="{!actionClone}"  rendered="{!mapParentProduct[lst].isProductParent__c}">
+                        <apex:param name="sid" value="{!mapParentProduct[lst].ProductParentUnique__c}" />
+                    </apex:commandLink>
+                    <br/>-->
+                    <apex:commandLink value="DELETE" action="{!actionDelete}"  rendered="{!mapParentProduct[lst].isProductParent__c}">
+                        <apex:param name="sid" value="{!mapParentProduct[lst].ProductParentUnique__c}" />
+                    </apex:commandLink>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!OR(AND(lst!='Shipping',lst!='Tax', NOT(renLock)), quoteRecordType == 'Amendment_Quote' )}" style="color:red" >
+                        <apex:outputText value="EDIT" rendered="{!mapParentProduct[lst].isProductParent__c}"/>
+                        <br/>
+                        <apex:outputText value="SUBSTITUTE" rendered="{!mapParentProduct[lst].isProductParent__c}"/>
+                        <br/><!--
+                        <apex:outputText value="DUPLICATE" rendered="{!mapParentProduct[lst].isProductParent__c}"/>
+                        <br/>-->
+                        <apex:outputText value="DELETE" rendered="{!mapParentProduct[lst].isProductParent__c}"/>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!renLock}">
+                    <apex:outputPanel rendered="{!AND(lst=='Shipping',quoteRecordType=='Commercial_Flow_Business')}" >
+                        <apex:commandLink value="CALCULATE DELIVERY" action="{!calculateDelivery2}"  reRender="showmsg" rendered="{!AND(!isShippingMDO, delivery_charge>0)}"/>
+                        <apex:commandLink value="CALCULATE DELIVERY" action="{!calculateDelivery2}"  reRender="showmsg" style="color:red" rendered="{!AND(!isShippingMDO, delivery_charge==0)}"/>
+                        
+                        <apex:commandLink value="RE-ENTER NO. OF TRIPS" action="{!showTripsPopup}"  reRender="showmsg, tstpopuptrips" rendered="{!AND(isShippingMDO, delivery_charge>0)}"/>
+                        <apex:commandLink value="ENTER NO. OF TRIPS" action="{!showTripsPopup}"  reRender="showmsg, tstpopuptrips" style="color:red" rendered="{!AND(isShippingMDO, delivery_charge==0)}"/>
+                        
+                    </apex:outputPanel>
+                  <!--  <apex:outputPanel rendered="{!AND(lst=='Shipping',quoteRecordType=='Commercial_Project',isDeliveryEstimate, OR(delivery_charge==0,delivery_charge==null))}" style="color:red">-->
+                    <apex:outputPanel rendered="{!AND(lst=='Shipping',quoteRecordType=='Commercial_Project',isDeliveryEstimate)}" style="color:red">
+                        <apex:outputText value="WAITING FOR DELIVERY ESTIMATE" />
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!AND(lst=='Shipping',quoteRecordType=='Commercial_Project',!isDeliveryEstimate,OR(delivery_charge==0,delivery_charge==null))}">
+                        <apex:commandLink value="CREATE DELIVERY ESTIMATE" action="{!calculateDelivery3}"  reRender="showmsg" style="color:red"/>
+                    </apex:outputPanel><!--
+                    <apex:outputPanel rendered="{!AND(lst=='Shipping',quoteRecordType=='Commercial_Project',!isDeliveryEstimate, delivery_charge!=null, delivery_charge!=0)}" >
+                        <apex:commandLink value="RECALCULATE DELIVERY" action="{!calculateDelivery3}"  reRender="{!AND(delivery_charge!=null, delivery_charge>0)}"  />
+                    </apex:outputPanel>-->
+                    <apex:outputPanel rendered="{!AND(lst=='Shipping',quoteRecordType=='Commercial_Project',!isDeliveryEstimate, delivery_charge!=null, delivery_charge!=0)}" >
+                        <apex:commandLink value="VIEW DELIVERY ESTIMATE" action="{!calculateDelivery4}"  reRender="{!AND(delivery_charge!=null, delivery_charge>0)}"  />
+                    </apex:outputPanel>
+                    </apex:outputPanel>
+                </apex:column> 
+                <apex:column value="{!mapParentProduct[lst].Product__r.ProductCode}"  headerValue="{!mapHeader['product_code']}"/>
+                <!--
+                <apex:column value="{!mapParentProduct[lst].Product__r.Name}"/>
+-->
+                <apex:column headerValue="{!mapHeader['product_name']}"> 
+                    <apex:outputPanel rendered="{!AND(lst!='Shipping',lst!='Tax')}" >{!mapParentProduct[lst].Product__r.Name}</apex:outputPanel>
+                    <apex:outputPanel rendered="{!lst=='Shipping'}" style="font-weight:bold;font-size:125%;"><br/>Delivery Info</apex:outputPanel>
+                    <apex:outputPanel rendered="{!lst=='Tax'}" style="font-weight:bold;font-size:125%;"><br/>Tax Info</apex:outputPanel>
+                    <br/>
+                    <apex:commandLink value="Description" action="{!showDescPopup}" rerender="tstdescpopup" rendered="{!AND(lst!='Shipping',lst!='Tax')}">
+                        <apex:param name="pid" value="{!mapParentProduct[lst].Product__c}" />
+                        <apex:param name="value" value="Description" />
+                    </apex:commandLink>
+                    <br/>
+                    <apex:commandLink value="Configuration" action="{!showDescPopup}" rerender="tstdescpopup" rendered="{!mapParentProduct[lst].isProductParent__c}">
+                        <apex:param name="isparent" value="{!mapParentProduct[lst].isProductParent__c}" />
+                        <apex:param name="pid" value="{!mapParentProduct[lst].Configuration_Option__c}" />
+                        <apex:param name="value" value="Configuration" />
+                    </apex:commandLink><!--
+                    <apex:outputPanel rendered="{!mapParentProduct[lst].Configuration_Option__c!=null}">
+                    <br/><!-- style="color:#4bca81;"--
+                    <apex:outputPanel >{!mapConfiguration[mapParentProduct[lst].Configuration_Option__c]}</apex:outputPanel>
+                    </apex:outputPanel>-->
+                </apex:column>
+                <apex:column headerValue="{!mapHeader['quantity']}" style="width:4%;">
+                    <apex:inputField value="{!mapParentProduct[lst].Quantity__c}" rendered="{!mapParentProduct[lst].isProductParent__c}" style="width:100%"/>
+                    <apex:outputField value="{!mapParentProduct[lst].Quantity__c}" rendered="{!NOT(mapParentProduct[lst].isProductParent__c)}" style="width:100%"/>
+                    <!--
+                    <apex:inputField value="{!mapParentProduct[lst].Quantity__c}" rendered="{!mapParentProduct[lst].Quantity_Editable__c}" style="width:100%"/>
+                    <apex:outputField value="{!mapParentProduct[lst].Quantity__c}" rendered="{!NOT(mapParentProduct[lst].Quantity_Editable__c)}" style="width:100%"/>
+                    -->
+                </apex:column>
+                <apex:column value="{!mapParentProduct[lst].List_Unit_Price__c}" style="text-align:right;" headerClass="colRight"/>
+                <!--
+                <apex:column headerValue="{!mapHeader['add_discount']}" style="width:10%;text-align:center;" headerClass="colCenter" >
+                    <apex:inputField value="{!mapParentProduct[lst].Additional_Disc__c}" rendered="{!AND(NOT(mapParentProduct[lst].Non_Discountable__c),lst!='Shipping',lst!='Tax')}" style="width:75%"/>
+                    <apex:outputField value="{!mapParentProduct[lst].Additional_Disc__c}" rendered="{!AND(mapParentProduct[lst].Non_Discountable__c,lst!='Shipping',lst!='Tax')}" style="width:75%"/>
+                	<apex:inputText value="{!delivery_discount}" rendered="{!lst=='Shipping'}" style="width:75%"/>
+                    <apex:selectList value="{!mapParentProduct[lst].Discount_Operator__c}" size="1" rendered="{!AND(NOT(mapParentProduct[lst].Non_Discountable__c),lst!='Shipping',lst!='Tax')}" style="width:20%">
+                            <apex:selectoptions value="{!DiscountOperator}" />
+                        </apex:selectList>
+                    <apex:selectList value="{!mapParentProduct[lst].Discount_Operator__c}" size="1" rendered="{!lst=='Shipping'}" style="width:20%">
+                            <apex:selectoptions value="{!DiscountOperator2}" />
+                        </apex:selectList>
+                </apex:column>
+                <apex:column style="text-align:right;" headerClass="colRight" headerValue="Set Price">
+                    <apex:outputText value="{0, number, $0.00}" rendered="{!AND(lst!='Shipping', lst!='Tax')}">
+                        <apex:param value="{!mapParentProduct[lst].Set_Unit_Price__c}" />
+                    </apex:outputText>
+                    <apex:outputText value="{0, number, $0.00}" rendered="{!lst=='Shipping'}">
+                        <apex:param value="{!delivery_charge - delivery_discount}" />
+                    </apex:outputText>
+                </apex:column>
+                -->
+                <apex:column style="text-align:right;width:5%;" headerValue="Set Price">
+                    <apex:inputField value="{!mapParentProduct[lst].Set_Unit_Price__c}" rendered="{!AND(lst!='Shipping', lst!='Tax')}"/>
+                    
+                    <apex:inputText value="{!setdelivery}" rendered="{!AND(lst=='Shipping', delivery_charge>0)}" />
+                    
+                </apex:column>
+                <apex:column value="{!mapParentProduct[lst].Available__c}" headerValue="{!mapHeader['available']}" headerClass="colRight" styleClass="colRight"  rendered="{!AND(lst!='Shipping', lst!='Tax')}"/>
+                <apex:column value="{!null}" headerValue="{!mapHeader['available']}" headerClass="colRight" styleClass="colRight"  rendered="{!OR(lst=='Shipping', lst=='Tax')}"/>
+				<!--
+                <apex:column value="{!mapParentProduct[lst].Available_Quantity__c}" style="text-align:right;" headerClass="colRight" headerValue="{!mapHeader['available_quantity']}" />-->
+                <apex:column value="{!mapParentProduct[lst].Earliest_Available_Date__c}" style="text-align:center;" headerClass="colCenter" headerValue="{!mapHeader['available_date']}" /><!--
+                <apex:column value="{!mapParentProduct[lst].PA_API_Message__c}"/>
+                <apex:column value="{!mapParentProduct[lst].Shipping_Charge__c}" style="text-align:right;" headerClass="colRight"/>-->
+                <apex:column value="{!mapParentProduct[lst].Disposable_Fee__c}" style="text-align:right;" headerClass="colRight" headerValue="{!mapHeader['special_tax']}"/><!--
+                <apex:column value="{!mapParentProduct[lst].Tax_Rate__c}" />
+                <apex:column headerValue="Tax Rate" >
+                    <apex:outputField value="{!mapParentProduct[lst].Tax_Rate__c}" />
+                </apex:column>
+                <apex:column headerValue="Tax Rate 2" >
+                    <apex:outputText value="{0,number,##.00}%" >
+                    	<apex:param value="{!mapParentProduct[lst].Tax_Rate__c}" />
+                    </apex:outputText>
+                </apex:column>-->
+                <!--
+                <apex:column value="{!mapParentProduct[lst].Tax_Amount__c}"/>
+                <apex:column headerValue="{!mapHeader['description']}" style="width:10%" >
+                    <apex:outputLabel escape="false" value="{!mapParentProduct[lst].Product__r.Description}" />
+                </apex:column>
+				-->
+                <!--
+                <apex:column headerValue="{!mapHeader['tax_rate']}" style="text-align:right;" headerClass="colRight">
+                    <apex:outputText value="{0, number, 0.00%}">
+                        <apex:param value="{!mapParentProduct[lst].Tax_Rate__c}" />
+                    </apex:outputText>
+                </apex:column>
+                <apex:column value="{!mapParentProduct[lst].Tax__c}"  style="text-align:right;" headerClass="colRight"/>
+                <apex:column value="{!mapParentProduct[lst].Total_Tax_Amount__c}" style="text-align:right;" headerClass="colRight" headerValue="{!mapHeader['total_tax']}"/>
+                -->
+                <apex:column style="text-align:right;" headerClass="colRight" headerValue="{!mapHeader['tax_rate']}">
+                    <apex:outputText value="{0, number, 0.00%}" rendered="{!AND(lst!='Shipping', lst!='Tax')}">
+                        <apex:param value="{!mapParentProduct[lst].Tax_Rate__c}" />
+                    </apex:outputText>
+                    <apex:outputText value="{0, number, 0.00%}" rendered="{!lst=='Shipping'}">
+                        <apex:param value="{!deliveryTaxRate}" />
+                    </apex:outputText>
+                </apex:column>
+                <apex:column style="text-align:right;" headerClass="colRight" headerValue="Tax">
+                    <apex:outputText value="{0, number, $0.00}" rendered="{!AND(lst!='Shipping', lst!='Tax')}">
+                        <apex:param value="{!mapParentProduct[lst].Tax__c}" />
+                    </apex:outputText>
+                    <apex:outputText value="{0, number, $0.00}" rendered="{!lst=='Shipping'}">
+                        <apex:param value="{!((delivery_charge - delivery_discount)*deliveryTaxRate)}" />
+                    </apex:outputText>
+                </apex:column>
+                <apex:column style="text-align:right;" headerClass="colRight" headerValue="{!mapHeader['total_tax']}">
+                    <apex:outputText value="{0, number, $0.00}" rendered="{!AND(lst!='Shipping', lst!='Tax')}">
+                        <apex:param value="{!mapParentProduct[lst].Total_Tax_Amount__c}" />
+                    </apex:outputText>
+                    <apex:outputText value="{0, number, $0.00}" rendered="{!lst=='Shipping'}">
+                        <apex:param value="{!((delivery_charge - delivery_discount)*deliveryTaxRate)}" />
+                    </apex:outputText>
+                </apex:column>
+                <apex:column style="text-align:right;" headerClass="colRight" headerValue="{!mapHeader['net_unit_price']}">
+                    <apex:outputText value="{0, number, $0.00}" rendered="{!AND(lst!='Shipping', lst!='Tax')}">
+                        <apex:param value="{!mapParentProduct[lst].Net_Unit_Price__c}" />
+                    </apex:outputText>
+                    <apex:outputText value="{0, number, $0.00}" rendered="{!lst=='Shipping'}">
+                        <apex:param value="{!delivery_charge - delivery_discount}" />
+                    </apex:outputText>
+                </apex:column>
+                <apex:column style="text-align:right;" headerClass="colRight" headerValue="{!mapHeader['net_total']}" >
+                    <apex:outputText value="{0, number, $0.00}" rendered="{!AND(lst!='Shipping', lst!='Tax')}">
+                        <apex:param value="{!mapParentProduct[lst].Net_Total__c}" />
+                    </apex:outputText>
+                    <apex:outputText value="{0, number, $0.00}" rendered="{!lst=='Shipping'}" style="font-weight:bold;font-size:125%;">
+                        <apex:param value="{!delivery_charge - delivery_discount}" />
+                    </apex:outputText>
+                    <apex:outputText value="{0, number, $0.00}" rendered="{!lst=='Tax'}" style="font-weight:bold;font-size:125%;">
+                        <apex:param value="{!tax_total}" />
+                    </apex:outputText>
+                </apex:column>
+                <!--
+                <apex:column style="text-align:right;" headerClass="colRight" headerValue="Margin" >
+                    <apex:outputText value="{0, number, 0.00%}" rendered="{!AND(lst!='Shipping', lst!='Tax', mapParentProduct[lst].List_Unit_Cost__c!=0, mapParentProduct[lst].List_Unit_Cost__c!=null, mapParentProduct[lst].Set_Unit_Price__c!=0, mapParentProduct[lst].Set_Unit_Price__c!=null, OR(mapParentProduct[lst].Feature__c=='', mapParentProduct[lst].Feature__c=='Parts') )}">
+                        <apex:param value="{!((mapParentProduct[lst].Set_Unit_Price__c - mapParentProduct[lst].List_Unit_Cost__c)/mapParentProduct[lst].Set_Unit_Price__c)}" />
+                    </apex:outputText>
+                    <apex:outputText value="{0, number, 0.00%}" rendered="{!AND(lst!='Shipping', lst!='Tax', OR(mapParentProduct[lst].List_Unit_Cost__c==0, mapParentProduct[lst].Set_Unit_Price__c==0, mapParentProduct[lst].List_Unit_Cost__c==null, mapParentProduct[lst].Set_Unit_Price__c==null), OR(mapParentProduct[lst].Feature__c=='', mapParentProduct[lst].Feature__c=='Parts') )}">
+                        <apex:param value="{!0}" />
+                    </apex:outputText>
+                </apex:column>
+                -->
+                <apex:column style="text-align:right;" headerClass="colRight" headerValue="Margin" >
+                    
+                    <apex:outputPanel rendered="{!AND(lst!='Shipping', lst!='Tax', mapParentProduct[lst].Price_Source__c!='KAP', mapParentProduct[lst].List_Unit_Cost__c!=0, mapParentProduct[lst].List_Unit_Cost__c!=null, mapParentProduct[lst].Set_Unit_Price__c!=0, mapParentProduct[lst].Set_Unit_Price__c!=null, OR(mapParentProduct[lst].Feature__c==null, mapParentProduct[lst].Feature__c=='', mapParentProduct[lst].Feature__c=='Parts') )}" >
+                        <apex:outputPanel rendered="{!((mapParentProduct[lst].Set_Unit_Price__c - mapParentProduct[lst].List_Unit_Cost__c)/mapParentProduct[lst].Set_Unit_Price__c) > 0.23995 }">
+                            <apex:outputText value="{0, number, 0.00%}" style="color:green" >
+                                <apex:param value="{!((mapParentProduct[lst].Set_Unit_Price__c - mapParentProduct[lst].List_Unit_Cost__c)/mapParentProduct[lst].Set_Unit_Price__c)}" />
+                            </apex:outputText>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!((mapParentProduct[lst].Set_Unit_Price__c - mapParentProduct[lst].List_Unit_Cost__c)/mapParentProduct[lst].Set_Unit_Price__c) <= 0.23995 }" >
+                            <apex:outputText value="{0, number, 0.00%}" style="color:red" >
+                                <apex:param value="{!((mapParentProduct[lst].Set_Unit_Price__c - mapParentProduct[lst].List_Unit_Cost__c)/mapParentProduct[lst].Set_Unit_Price__c)}" />
+                            </apex:outputText>
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!AND(lst!='Shipping', lst!='Tax', mapParentProduct[lst].Price_Source__c='KAP', mapParentProduct[lst].List_Unit_Cost__c!=0, mapParentProduct[lst].List_Unit_Cost__c!=null, mapParentProduct[lst].Set_Unit_Price__c!=0, mapParentProduct[lst].Set_Unit_Price__c!=null, OR(mapParentProduct[lst].Feature__c==null, mapParentProduct[lst].Feature__c=='', mapParentProduct[lst].Feature__c=='Parts') )}" >
+                        <apex:outputPanel rendered="{!(mapParentProduct[lst].Set_Unit_Price__c>=mapParentProduct[lst].List_Unit_Price__c) }">
+                            <apex:outputText value="{0, number, 0.00%}" style="color:green" >
+                                <apex:param value="{!((mapParentProduct[lst].Set_Unit_Price__c - mapParentProduct[lst].List_Unit_Cost__c)/mapParentProduct[lst].Set_Unit_Price__c)}" />
+                            </apex:outputText>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!(mapParentProduct[lst].Set_Unit_Price__c<mapParentProduct[lst].List_Unit_Price__c) }">
+                            <apex:outputText value="{0, number, 0.00%}" style="color:red" >
+                                <apex:param value="{!((mapParentProduct[lst].Set_Unit_Price__c - mapParentProduct[lst].List_Unit_Cost__c)/mapParentProduct[lst].Set_Unit_Price__c)}" />
+                            </apex:outputText>
+                            <br/>
+                            <apex:outputText style="color:red" value="(KAP)" />
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+                    <apex:outputText value="{0, number, 0.00%}" rendered="{!AND(lst!='Shipping', lst!='Tax', OR(mapParentProduct[lst].List_Unit_Cost__c==0, mapParentProduct[lst].Set_Unit_Price__c==0, mapParentProduct[lst].List_Unit_Cost__c==null, mapParentProduct[lst].Set_Unit_Price__c==null), OR(mapParentProduct[lst].Feature__c==null, mapParentProduct[lst].Feature__c=='', mapParentProduct[lst].Feature__c=='Parts') )}">
+                        <apex:param value="{!0}" />
+                    </apex:outputText>
+                    
+                </apex:column>
+                <!--
+                <apex:column value="{!mapParentProduct[lst].Net_Unit_Price__c}" style="text-align:right;" headerClass="colRight"/>
+                <apex:column value="{!mapParentProduct[lst].Net_Total__c}" style="text-align:right;" headerClass="colRight"/>
+-->
+            </apex:pageBlockTable>
+            
+            <!--
+            <apex:pageBlockTable value="{!lstParentProduct}" var="lst" rendered="{!renTable}">
+                <apex:column value="{!mapParentProduct[lst].Product__r.ProductCode}" />                
+                <apex:column headerValue="{!mapHeader['quantity']}" style="width:4%">
+                    <apex:inputField value="{!mapParentProduct[lst].Quantity__c}" rendered="{!mapParentProduct[lst].Quantity_Editable__c}" style="width:100%"/>
+                    <apex:outputField value="{!mapParentProduct[lst].Quantity__c}" rendered="{!NOT(mapParentProduct[lst].Quantity_Editable__c)}" style="width:100%"/>
+                </apex:column>
+            </apex:pageBlockTable>
+            -->
+            <!--
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+              Sub Total:   {!sub_total}
+            </apex:outputPanel>
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+              Tax:   {!tax_total}
+            </apex:outputPanel>
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+              Delivery:   0.0
+            </apex:outputPanel>
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+              Grand Total:   {!grand_total}
+            </apex:outputPanel>
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+              Grand Total (Non-Disc):   {!grand_total_non_disc}
+            </apex:outputPanel>
+            <br/><br/>-->
+            <apex:outputPanel rendered="{!renTable}" >
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:150%;" >
+                <apex:outputText value="Grand Total:"/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:outputText value="{0, number, $0.00}" >
+                        <apex:param value="{!grand_total}" />
+                    </apex:outputText>
+            </apex:outputPanel>
+                <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:150%;">
+                <apex:outputText value="Order Margin:"/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:outputText value="{0, number, 0.00%}">
+                        <apex:param value="{!order_margin_percent/100}" />
+                    </apex:outputText>
+                </apex:outputPanel>
+                <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:150%;">
+                <apex:outputText value="Margin:"/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:outputText value="{0, number, 0.00%}" rendered="{!margin_percent>(disc_mrgn+1)}" style="color:green">
+                        <apex:param value="{!margin_percent/100}" />
+                    </apex:outputText>
+                    <apex:outputText value="{0, number, 0.00%}" rendered="{!AND(margin_percent>=disc_mrgn, margin_percent<=(disc_mrgn+1))}" style="color:#e6e600">
+                        <apex:param value="{!margin_percent/100}" />
+                    </apex:outputText>
+                    <apex:outputText value="{0, number, 0.00%}" rendered="{!AND(margin_percent<disc_mrgn, isMarginEmpty)}" style="color:red">
+                        <apex:param value="{!margin_percent/100}" />
+                    </apex:outputText>
+                    <apex:outputText value="{0, number, 0.00%}" rendered="{!AND(margin_percent<disc_mrgn, !isMarginEmpty)}" style="color:green">
+                        <apex:param value="{!margin_percent/100}" />
+                    </apex:outputText>
+                </apex:outputPanel>
+                <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:150%;">
+                <apex:outputText value="Margin Threshold:"/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:outputText value="{0, number, 0.00%}">
+                        <apex:param value="{!disc_mrgn/100}" />
+                    </apex:outputText>
+                </apex:outputPanel>
+                
+            </apex:outputPanel>
+            
+            <apex:outputPanel rendered="{!NOT(renTable)}">
+                This quote has no line items. Click on Add Products button to select products.
+            </apex:outputPanel>
+            
+        </apex:pageBlock> 
+                <!--
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+                <apex:outputText value="Sub Total: "/>
+                    <apex:outputText value="{0, number, 0.00}">
+                        <apex:param value="{!sub_total}" />
+                    </apex:outputText>
+            </apex:outputPanel>
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+                <apex:outputText value="Tax: "/>
+                    <apex:outputText value="{0, number, 0.00}">
+                        <apex:param value="{!tax_total}" />
+                    </apex:outputText>
+            </apex:outputPanel>
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+                <apex:outputText value="Delivery Method: "/>
+                <apex:outputText value="{!delivery_method}"/>
+            </apex:outputPanel>
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+                <apex:outputText value="Delivery Message: "/>
+                <apex:outputText value="{!delivery_message}"/>
+            </apex:outputPanel>
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+                <apex:outputText value="Delivery Charge: "/>
+                    <apex:outputText value="{0, number, 0.00}">
+                        <apex:param value="{!delivery_charge}" />
+                    </apex:outputText>
+            </apex:outputPanel>
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+                <apex:outputText value="Delivery Discount: "/>
+                <apex:inputText value="{!delivery_discount}"/>
+            </apex:outputPanel>
+                
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="float:right;font-weight:bold;font-size:125%;" >
+                <apex:outputText value="Grand Total (Non-Disc): "/>
+                    <apex:outputText value="{0, number, .00}">
+                        <apex:param value="{!grand_total_non_disc}" />
+                    </apex:outputText>
+            </apex:outputPanel>
+				-->
+        <!--
+            <apex:outputPanel rendered="{!renTable}" style="font-weight:bold;font-size:125%;" >
+                <apex:outputText value="Delivery Method: "/>
+                <apex:outputText value="{!delivery_method}"/>
+            </apex:outputPanel>
+            <br/><br/>
+            <apex:outputPanel rendered="{!renTable}" style="font-weight:bold;font-size:125%;" >
+                <apex:outputText value="Delivery Message: "/>
+                <apex:outputText value="{!delivery_message}"/>
+            </apex:outputPanel>
+        -->
+    </apex:form>
+</apex:page>

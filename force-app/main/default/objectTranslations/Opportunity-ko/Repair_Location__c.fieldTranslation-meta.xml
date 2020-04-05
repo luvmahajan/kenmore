@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Type of location where services will be rendered --></help>
+    <label><!-- Repair Location --></label>
+    <name>Repair_Location__c</name>
+    <picklistValues>
+        <masterLabel>Apartment/Condo Units</masterLabel>
+        <translation><!-- Apartment/Condo Units --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Location</masterLabel>
+        <translation><!-- Commercial Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Homes</masterLabel>
+        <translation><!-- Custom Homes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military Base</masterLabel>
+        <translation><!-- Military Base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stores</masterLabel>
+        <translation><!-- Stores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehouses</masterLabel>
+        <translation><!-- Warehouses --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

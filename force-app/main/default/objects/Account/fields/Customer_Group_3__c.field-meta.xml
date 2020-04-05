@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Group_3__c</fullName>
+    <description>E1	Delivery Rate E1
+E2	Delivery Rate E2
+E3	Delivery Rate E3
+E4	Delivery Rate E4
+E5	Delivery Rate E5
+PM	Property Management
+ST	Standard
+STD	Standard</description>
+    <externalId>false</externalId>
+    <inlineHelpText>E1	Delivery Rate E1
+E2	Delivery Rate E2
+E3	Delivery Rate E3
+E4	Delivery Rate E4
+E5	Delivery Rate E5
+PM	Property Management
+ST	Standard
+STD	Standard</inlineHelpText>
+    <label>Customer Group 3</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>E1</fullName>
+                <default>false</default>
+                <label>E1</label>
+            </value>
+            <value>
+                <fullName>E2</fullName>
+                <default>false</default>
+                <label>E2</label>
+            </value>
+            <value>
+                <fullName>E3</fullName>
+                <default>false</default>
+                <label>E3</label>
+            </value>
+            <value>
+                <fullName>E4</fullName>
+                <default>false</default>
+                <label>E4</label>
+            </value>
+            <value>
+                <fullName>E5</fullName>
+                <default>false</default>
+                <label>E5</label>
+            </value>
+            <value>
+                <fullName>PM</fullName>
+                <default>false</default>
+                <label>PM</label>
+            </value>
+            <value>
+                <fullName>ST</fullName>
+                <default>true</default>
+                <label>ST</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

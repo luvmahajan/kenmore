@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Terms_of_Payment_is_empty</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(IF(ISCHANGED(Automation_Control__c),
+   IF( CONTAINS(Automation_Control_Type__c, &quot;Validation&quot;),FALSE,TRUE),TRUE),
+ISPICKVAL(Type, &quot;Customer&quot;),
+SAP_Account_Request__c,
+ISPICKVAL(Terms_of_Payment__c, &quot;&quot;))</errorConditionFormula>
+    <errorDisplayField>Terms_of_Payment__c</errorDisplayField>
+    <errorMessage>Terms of Payment is required.</errorMessage>
+</ValidationRule>

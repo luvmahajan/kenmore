@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Legal Council --></label>
+    <name>Legal_Council__c</name>
+    <picklistValues>
+        <masterLabel>Brian Bichkoff</masterLabel>
+        <translation><!-- Brian Bichkoff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Donna Carollo</masterLabel>
+        <translation><!-- Donna Carollo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mike Mitchell</masterLabel>
+        <translation><!-- Mike Mitchell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ted Koerth</masterLabel>
+        <translation><!-- Ted Koerth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tom Shanahan</masterLabel>
+        <translation><!-- Tom Shanahan --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

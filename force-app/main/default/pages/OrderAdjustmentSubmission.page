@@ -1,0 +1,387 @@
+<apex:page controller="OrderAdjustmentSubmissionController" lightningStylesheets="true" action="{!redirectQLE}" docType="html-5.0">
+    <apex:form >
+        <style type = "text/css">
+            .colCenter {text-align:center;}     
+            .colRight {text-align:right;}     
+            .colLeft {text-align:left;} 
+            .row {
+            display: flex; 
+            width: 100%
+            }
+            
+            .row::after {
+            display: block;
+            clear: both;
+            content: "";
+            }
+            
+            .col-1 {width: 8.33%};
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            * {
+            box-sizing: border-box;
+            }
+            
+            [class*="col-"]{
+            float: left;
+            font-size: 0.9rem;
+            padding: 0.1rem 2px;
+            }
+        </style>
+        
+        <apex:outputPanel id="noerror1" >
+            <apex:outputPanel id="noerror2" rendered="{!NOT(ren504Error)}">
+                    <apex:pageMessages id="showmsg2"></apex:pageMessages>
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton value="Edit Adjustment" action="{!actionGoToEdit}" style="color:white;background:#0070d2;" />
+                <apex:commandButton value="Cancel" action="{!actionGoToOrderHeader}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+            <apex:pageBlock title="Order Details" >
+                <br/>
+                <div class="row">
+                    <div class="col-6">
+                        <apex:outputText >
+                            <b>Reason Code:</b>: {!selectedReasonCode}
+                        </apex:outputText> 
+                    </div>
+                    <div class="col-6">
+                        <apex:outputText >
+                            <b>Purchase Order Number:</b>: {!lstOrderOverviewQry[0].Purchase_Number__c}
+                        </apex:outputText> 
+                    </div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                    <div class="col-6"><b>Pick-up Contact:</b></div>
+                    <div class="col-6"><b></b></div>
+                </div>
+                <div class="row">
+                    <div class="col-6">{!lstOrderOverviewQry[0].Shipping_Contact_First_Name__c} {!lstOrderOverviewQry[0].Shipping_Contact_Last_Name__c}</div>
+                    <div class="col-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6">{!lstOrderOverviewQry[0].Shipping_Contact_Phone__c}</div>
+                </div>
+                <div class="row">
+                    <div class="col-6">{!lstOrderOverviewQry[0].Shipping_Contact_Email__c}</div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                    <div class="col-6"><b>Pick-up Address:</b></div>
+                    <div class="col-6"><b>Billing Address:</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-6">{!lstOrderOverviewQry[0].ShippingStreet}</div>
+                    <div class="col-6">{!lstOrderOverviewQry[0].BillingStreet}</div>
+                </div>
+                <div class="row">
+                    <div class="col-6">{!lstOrderOverviewQry[0].ShippingCity}</div>
+                    <div class="col-6">{!lstOrderOverviewQry[0].BillingCity}</div>
+                </div>
+                <div class="row">
+                    <div class="col-6">{!lstOrderOverviewQry[0].ShippingState}</div>
+                    <div class="col-6">{!lstOrderOverviewQry[0].BillingState}</div>
+                </div>
+                <div class="row">
+                    <div class="col-6">{!lstOrderOverviewQry[0].ShippingPostalCode}</div>
+                    <div class="col-6">{!lstOrderOverviewQry[0].BillingPostalCode}</div>
+                </div>
+            </apex:pageBlock>
+            
+                 <apex:pageBlock title="Order Items Overview" >
+                     
+                     <apex:pageBlockTable value="{!lstOrderOverviewItemQry}" var="os" rendered="{!IF(lstOrderOverviewItemQry.size>0,true,false)}"  >
+                    <apex:column headerValue="Product Name">
+                        <apex:outputPanel rendered="{!NOT(os.Parent_Part_Number__c==null)}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputPanel rendered="{!os.Parent_Part_Number__c==null}">&or;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputText value="{!os.Product2.Name}"></apex:outputText> <br/>
+                        <apex:outputPanel rendered="{!NOT(os.Parent_Part_Number__c==null)}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputPanel rendered="{!os.Parent_Part_Number__c==null}">&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputText value="{!os.Product2.ProductCode}"></apex:outputText> 
+                    </apex:column>
+                    <apex:column headerClass="colLeft" styleClass="colLeft" headerValue="Reason"  rendered="{!AND(selectedAdjustment!='Credit Memo', selectedAdjustment!='Debit Memo')}" >
+                        <apex:outputText value="{!mapItemReason[os.Number__c]}"></apex:outputText> <br/>
+                    </apex:column>
+                    <apex:column headerValue="Quantity"  headerClass="colRight" styleClass="colRight" >
+                        <apex:outputText value="{0, number, 0}" >
+                            <apex:param value="{!os.Quantity}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Price"  headerClass="colRight" styleClass="colRight">
+                        <apex:outputText value="{0, number, $0.00}" >
+                            <apex:param value="{!os.Net_Unit_Price__c}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Total"  headerClass="colRight" styleClass="colRight">
+                        <apex:outputText value="{0, number, $0.00}" >
+                            <apex:param value="{!os.Net_Total_Price__c}" />
+                        </apex:outputText>
+                    </apex:column>
+                    </apex:pageBlockTable>
+                    <br/>
+                     
+            <apex:outputPanel rendered="{!lstOrderOverviewItemQry.size>0}" >
+                <br/><br/>
+                <apex:outputPanel id="ordersummaryid" rendered="true">
+                    
+                    <div class="row">
+                        <div class="col-10">
+                        </div>
+                        <div class="col-1">
+                            <b>Sub Total:</b>
+                        </div>
+                        <div class="col-1">
+                            <apex:outputPanel style="float:right;text-align:right">
+                                <apex:outputText value="{0, number, $0.00}" >
+                                    <apex:param value="{!lstOrderOverviewQry[0].TotalAmount}" />
+                                </apex:outputText>
+                            </apex:outputPanel>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-10">
+                        </div>
+                        <div class="col-1">
+                            <b>Delivery:</b>
+                        </div>
+                        <div class="col-1">
+                            <apex:outputPanel style="float:right;text-align:right">
+                                <apex:outputText value="{0, number, $0.00}" >
+                                    <apex:param value="{!lstOrderOverviewQry[0].Delivery_Charge__c}" />
+                                </apex:outputText>
+                            </apex:outputPanel>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-10">
+                        </div>
+                        <div class="col-1">
+                            <b>Premium Delivery:</b>
+                        </div>
+                        <div class="col-1">
+                            <apex:outputPanel style="float:right;text-align:right">
+                                <apex:outputText value="{0, number, $0.00}" >
+                                    <apex:param value="{!lstOrderOverviewQry[0].Premium_Delivery_Charge__c}" />
+                                </apex:outputText>
+                            </apex:outputPanel>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-10">
+                        </div>
+                        <div class="col-1">
+                            <b>Haulaway Price:</b>
+                        </div>
+                        <div class="col-1">
+                            <apex:outputPanel style="float:right;text-align:right">
+                                <apex:outputText value="{0, number, $0.00}" >
+                                    <apex:param value="{!lstOrderOverviewQry[0].Haulaway_Charge__c}" />
+                                </apex:outputText>
+                            </apex:outputPanel>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-10">
+                        </div>
+                        <div class="col-1">
+                            <b>Sales/Use Tax:</b>
+                        </div>
+                        <div class="col-1">
+                            <apex:outputPanel style="float:right;text-align:right">
+                                <apex:outputText value="{0, number, $0.00}" >
+                                    <apex:param value="{!lstOrderOverviewQry[0].SBQQ__TaxAmount__c + lstOrderOverviewQry[0].Other_Taxes__c }" />
+                                </apex:outputText>
+                            </apex:outputPanel>
+                        </div>
+                    </div>
+                    
+                    <br/>
+                    
+                    <div class="row">
+                        <div class="col-10">
+                        </div>
+                        <div class="col-1">
+                            <b>Total</b>:
+                        </div>
+                        <div class="col-1">
+                            <apex:outputPanel style="float:right;text-align:right">
+                                <apex:outputText value="{0, number, $0.00}" >
+                                    <apex:param value="{!lstOrderOverviewQry[0].Gross_Amount__c + lstOrderOverviewQry[0].Other_Taxes__c }" />
+                                </apex:outputText>
+                            </apex:outputPanel>
+                        </div>
+                    </div>
+                    
+                </apex:outputPanel>
+                
+                
+            </apex:outputPanel>
+                     
+                     
+            <apex:outputPanel rendered="{!IF(lstOrderOverviewItemQry.size>0,false,true)}">
+                The order has no line items. 
+            </apex:outputPanel>
+                 </apex:pageBlock>                 
+
+                    <apex:pageMessages id="showmsg"></apex:pageMessages>
+        
+        <apex:outputPanel id="suborder1" >
+            <apex:outputPanel id="suborder2" >
+                <apex:pageBlock title="Submit Order" rendered="{!IF(lstOrderOverviewItemQry.size>0,true,false)}" id="suborder">
+                    
+                    <apex:outputPanel id="approvalId" rendered="{!NOT(isApproved)}" style="color:red">
+                        Please get Approval before creating an order.<br/><br/>
+                        <apex:commandButton value="Get Approval" action="{!submitApprovalRequest}" style="color:white;background:#0070d2;" reRender="approvalId, suborder, suborder1, suborder2" />
+                    </apex:outputPanel>
+                    
+                    <apex:outputPanel id="approvedId" rendered="{!isApproved}" ><!--
+                    <apex:outputPanel id="checkDatesId" rendered="{!AND(NOT(renDelivery), NOT(isMemo))}" >-->
+                    <apex:outputPanel id="checkDatesId" rendered="{!AND(NOT(renDelivery), NOT(isMemo), OR(selectedAdjustment!='Exchange', AND(selectedAdjustment=='Exchange', shippingDate!=null, shippingDate!=''  )) )}" >
+                <apex:actionStatus id="calenderStatus">
+                <apex:facet name="stop">
+                    <apex:commandButton value="Check Pick-up Dates" status="calenderStatus" action="{!calculateDeliveryDates}" style="color:white;background:#0070d2;"  rerender="showmsg, suborder, suborder1, suborder2, approvedId, checkDatesId, deldateid, delnoteid, checkdeldateid, orderbuttons, createorder"/>
+                </apex:facet>
+                <apex:facet name="start">
+                    <apex:commandButton value="Retrieving Dates..." disabled="true" status="calenderStatus" />
+                </apex:facet>
+            </apex:actionStatus>
+                    </apex:outputPanel>
+                    
+                    <apex:outputPanel id="deldateid" rendered="{!AND(renDelivery, NOT(isMemo))}">
+                        <div class="row">
+                            <div class="col-12" >
+                                <b>Pick-up Date:</b><b style="color:red">*</b>
+                                &nbsp;&nbsp;
+                                <apex:selectList value="{!delDate}" size="1">
+                                    <apex:selectoptions value="{!DeliveryDate}"/>
+                                </apex:selectList>
+                            </div>
+                        </div>
+                        <br/><br/>
+                    </apex:outputPanel><!--
+                    <apex:outputPanel id="delnoteid" rendered="{!AND(renDelivery, NOT(isMemo))}">
+                        <div class="row">
+                            <div class="col-12" >
+                                <b>Pick-up Instruction:</b> <i>(Please limit to 140 characters)</i>
+                                &nbsp;&nbsp;
+                                <apex:inputTextarea value="{!delNote}"/>
+                            </div>
+                        </div>
+                        <br/><br/>
+                    </apex:outputPanel>-->
+                        <br/><br/><br/>
+                        
+                    <apex:outputPanel id="paymentid" rendered="{!OR(renDelivery, isMemo)}">
+                    <apex:outputPanel id="paymentselid1" >
+                <apex:outputPanel id="paymentselid2" >
+                        <br/>
+                    
+            <div class="row">
+                <div class="col-2" align="right"><b>Authorized Purchaser:</b><b style="color:red">*</b></div>
+                <div class="col-3">
+                        <apex:inputText value="{!selectedAuthPurchaser}" />
+                </div>
+                <div class="col-7"/>
+            </div>
+                    <br/>
+                        </apex:outputPanel>
+                <apex:outputPanel id="paymentselid3" rendered="{!selectedAdjustment!='Exchange'}">
+            <div class="row">
+                <div class="col-2" align="right"><b>Payment Type:</b><b style="color:red">*</b></div>
+                <div class="col-3">
+                    <apex:selectList value="{!payType}" size="1" >
+                        <apex:selectoptions value="{!PaymentMethod}"/>
+                        <apex:actionSupport event="onchange" rerender="paymentid, ccselid1, showmsg" action="{!actionPayment}" />
+                    </apex:selectList>
+                </div>
+                <div class="col-7"/>
+            </div>
+                </apex:outputPanel>
+                </apex:outputPanel>
+                        <br/>
+                    <apex:outputPanel id="ccselid1" >
+                <apex:outputPanel id="ccselid2" rendered="{!lstCreditCards.size>0}" >
+            <div class="row">
+                <div class="col-2" align="right"><b>Credit Card:</b><b style="color:red">*</b></div>
+                <div class="col-3">
+                    <apex:selectList value="{!selectedCreditCard}" size="1" >
+                        <apex:selectoptions value="{!CreditCardPaymentMethod}"/>
+                        <apex:actionSupport event="onchange" rerender="paymentid, ccselid1" action="{!actionCreditCardPayment}" />
+                    </apex:selectList>
+                </div>
+                <div class="col-7"/>
+            </div>
+                        <br/>
+                </apex:outputPanel>
+                </apex:outputPanel>
+                    </apex:outputPanel>
+                        <br/><br/>
+                        
+            <apex:outputPanel id="orderbuttons" >
+                <apex:actionStatus id="orderStatus">
+                <apex:facet name="stop">
+                    <apex:commandButton value="Submit Order" status="orderStatus" action="{!actionSendOrderAPI}" id="createorder" style="color:white;background:#0070d2;"  rerender="approvedId, showmsg, err5041, err5042, noerror1, noerror2" rendered="{!OR(renDelivery, isMemo)}"/>
+                </apex:facet>
+                <apex:facet name="start">
+                    <apex:commandButton value="Submitting Order..." disabled="true" status="orderStatus" />
+                </apex:facet>
+            </apex:actionStatus>
+                
+                    </apex:outputPanel>
+                        
+                        
+                        
+                    </apex:outputPanel>
+                </apex:pageBlock>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+                
+                
+        <apex:outputPanel id="err5041">
+            <apex:outputPanel id="err5042" rendered="{!ren504Error}">
+                <apex:pageBlock >
+                    <apex:outputPanel id="err5043" style="color:red" >
+                        <br/>
+                        <b>
+                            The adjustment is yet not created in the backend system, and hence the B2B Order Id field is empty.
+                            <br/>
+                            Please check back in 5 minutes, if the B2B Order Id has been populated. 
+                            <br/>
+                            If not, please contact Salesforce SFDC Support team.  
+                            <br/><br/><br/>
+                            <apex:commandButton value="Go Back to Adjustment" action="{!actionGoToOrderHeader}" style="color:white;background:#0070d2;" />
+                            <br/><br/>
+                        </b>
+                        <br/>
+                    </apex:outputPanel>
+                    
+                </apex:pageBlock>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        
+        
+    </apex:form>
+    
+</apex:page>

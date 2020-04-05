@@ -1,0 +1,19 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT face="Times New Roman">Dear<SPAN style="mso-spacerun: yes">&nbsp;{!Contact.FirstName} {!Contact.LastName}</SPAN>,</FONT></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></P><FONT face="Times New Roman">
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><o:p>&nbsp;</o:p></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal>Thank you for your recent purchase of fitness products from Sears Commercial.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Please do not hesitate to contact us in the future if you need any assistance.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>For any product service needs, please contact Sears Commercial Fitness at 800-669-4392 and ask for the Commercial Fitness Desk.</P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><o:p>&nbsp;</o:p></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal>Sincerely, </P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal>{!Contact.OwnerFullName}</P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal>{!Contact.OwnerTitle}</P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal>{!Contact.OwnerPhone}</P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal>{!Contact.OwnerEmail}</P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal>&nbsp;</P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal>&nbsp;</P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal></FONT></P>
+<P>&nbsp;</P>]]></td>
+</tr>
+</table>

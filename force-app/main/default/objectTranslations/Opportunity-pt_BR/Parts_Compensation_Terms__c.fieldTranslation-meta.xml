@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the existing parts compensation language in the contract --></help>
+    <label><!-- Parts Compensation Terms --></label>
+    <name>Parts_Compensation_Terms__c</name>
+</CustomFieldTranslation>

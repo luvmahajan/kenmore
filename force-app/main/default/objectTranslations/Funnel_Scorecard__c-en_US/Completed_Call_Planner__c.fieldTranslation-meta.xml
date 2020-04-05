@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Have you completed a pre-call plan that includes the questions you want to ask and the selling message you want to convey? --></help>
+    <label><!-- Completed Call Planner --></label>
+    <name>Completed_Call_Planner__c</name>
+</CustomFieldTranslation>

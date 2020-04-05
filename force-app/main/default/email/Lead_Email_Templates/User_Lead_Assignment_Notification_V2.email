@@ -1,0 +1,47 @@
+A new lead has been assigned to you in Salesforce.<br><br>
+
+<table>
+  <tr>
+    <td width="20%">
+      Name: 
+    </td>
+    <td width="50%">
+      {!Lead.Name}
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">
+      Company:  
+    </td>
+    <td width="50%">
+    {!Lead.Company}
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      City, State:  
+    </td>
+    <td width="20%">
+    {!Lead.City},   {!Lead.State}
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">
+      Phone:   
+    </td>
+    <td width="50%">
+     {!Lead.Phone}
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">
+      Notes:  
+    </td>
+    <td width="50%">
+     {!Lead.Notes__c}
+    </td>
+  </tr>
+</table>
+<br>
+
+Please <a href="{!Lead.Link}">Click Here</a> to log in to Salesforce to review this lead.

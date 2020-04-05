@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Subtype --></label>
+    <name>Subtype__c</name>
+    <picklistValues>
+        <masterLabel>Advertisement</masterLabel>
+        <translation><!-- Advertisement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boilerplate Information</masterLabel>
+        <translation><!-- Boilerplate Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Cards</masterLabel>
+        <translation><!-- Business Cards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collateral Customization</masterLabel>
+        <translation><!-- Collateral Customization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Copyrighting</masterLabel>
+        <translation><!-- Copyrighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Landing Page</masterLabel>
+        <translation><!-- Customer Landing Page --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design</masterLabel>
+        <translation><!-- Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Catalog</masterLabel>
+        <translation><!-- Digital Catalog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email/ Keywords</masterLabel>
+        <translation><!-- Email/ Keywords --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exhibit</masterLabel>
+        <translation><!-- Exhibit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flyer/ Brochure</masterLabel>
+        <translation><!-- Flyer/ Brochure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Resolution Logo Request</masterLabel>
+        <translation><!-- High Resolution Logo Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inquiry</masterLabel>
+        <translation><!-- Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interface</masterLabel>
+        <translation><!-- Interface --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KAP/Tier</masterLabel>
+        <translation><!-- KAP/Tier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mainframe</masterLabel>
+        <translation><!-- Mainframe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MarcomCentral</masterLabel>
+        <translation><!-- MarcomCentral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Assets</masterLabel>
+        <translation><!-- Marketing Assets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Membership Dues</masterLabel>
+        <translation><!-- Membership Dues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsite</masterLabel>
+        <translation><!-- Microsite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New User Access</masterLabel>
+        <translation><!-- New User Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New/Custom Marketing Materials</masterLabel>
+        <translation><!-- New/Custom Marketing Materials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-boilerplate Information</masterLabel>
+        <translation><!-- Non-boilerplate Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pardot</masterLabel>
+        <translation><!-- Pardot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Password Reset</masterLabel>
+        <translation><!-- Password Reset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Cards</masterLabel>
+        <translation><!-- Post Cards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presentation Support</masterLabel>
+        <translation><!-- Presentation Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Images</masterLabel>
+        <translation><!-- Product Images --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product configuration</masterLabel>
+        <translation><!-- Product configuration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product information</masterLabel>
+        <translation><!-- Product information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Program Advertisement</masterLabel>
+        <translation><!-- Program Advertisement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qualified Leads</masterLabel>
+        <translation><!-- Qualified Leads --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RFPs</masterLabel>
+        <translation><!-- RFPs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replacement number</masterLabel>
+        <translation><!-- Replacement number --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP</masterLabel>
+        <translation><!-- SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce.com</masterLabel>
+        <translation><!-- Salesforce.com --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Show Special</masterLabel>
+        <translation><!-- Show Special --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spec sheet support</masterLabel>
+        <translation><!-- Spec sheet support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sponssorship</masterLabel>
+        <translation><!-- Sponssorship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Status of Existing Order from Printer</masterLabel>
+        <translation><!-- Status of Existing Order from Printer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suggestions</masterLabel>
+        <translation><!-- Suggestions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System</masterLabel>
+        <translation><!-- System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecom</masterLabel>
+        <translation><!-- Telecom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade Show</masterLabel>
+        <translation><!-- Trade Show --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade Show Assets - Brochures</masterLabel>
+        <translation><!-- Trade Show Assets - Brochures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade Show Assets - Table Skirts</masterLabel>
+        <translation><!-- Trade Show Assets - Table Skirts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User Add/Change/Delete</masterLabel>
+        <translation><!-- User Add/Change/Delete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workstation Set Up</masterLabel>
+        <translation><!-- Workstation Set Up --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

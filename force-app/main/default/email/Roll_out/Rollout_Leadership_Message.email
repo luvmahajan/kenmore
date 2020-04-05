@@ -1,0 +1,14 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<SPAN lang=EN>
+<P><FONT size=5 face=Arial,Sans-Serif>Dear {!User.FirstName},</FONT></P>
+<P><FONT size=5 face=Arial,Sans-Serif></FONT>&nbsp;</P>
+<P><FONT size=5 face=Arial,Sans-Serif>Please click the link below and select Leadership Message to view an important video regarding Salesforce.com from Greg Fern, Vice President and General Manager of Sears Commercial. </FONT></P>
+<P><FONT size=5 face=Arial,Sans-Serif></FONT>&nbsp;</P>
+<P></SPAN><A href="http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx"><U><FONT color=#0000ff><FONT color=#0000ff><SPAN lang=EN><FONT size=5 face=Arial,Sans-Serif>http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx</FONT></U></FONT></FONT></SPAN></A></P><FONT size=2><SPAN lang=EN>
+<P><FONT size=5 face=Arial,Sans-Serif></FONT>&nbsp;</P>
+<P><FONT size=5 face=Arial,Sans-Serif>Best, </FONT></P>
+<P><FONT size=5 face=Arial,Sans-Serif>Dave</FONT></P></FONT></SPAN>]]></td>
+</tr>
+</table>

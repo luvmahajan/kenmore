@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Other__c</fullName>
+    <description>Allows case owners to enter &quot;other&quot; case reasons</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter an explanation if the Reason is &quot;Other&quot;</inlineHelpText>
+    <label>Reason - Other</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

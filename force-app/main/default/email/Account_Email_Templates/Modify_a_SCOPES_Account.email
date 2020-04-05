@@ -1,0 +1,7 @@
+Hello,
+
+{!Account.OwnerFullName} has modified the Salesforce.com Account for {!Account.Name}.  Please click on the link below to review the Account History Related list and update the appropriate fields in SCOPES.  
+
+{!Account.Link}
+
+Thank you.

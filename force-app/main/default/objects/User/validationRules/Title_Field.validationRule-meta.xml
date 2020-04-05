@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Title_Field</fullName>
+    <active>true</active>
+    <description>Only the Administrator can change a title on a the User Record</description>
+    <errorConditionFormula>AND( ISCHANGED( Title ) , $UserRole.Name &lt;&gt; &quot;Sears Administrator&quot;)</errorConditionFormula>
+    <errorDisplayField>Title</errorDisplayField>
+    <errorMessage>Please contact your System Administrator to change your Title.</errorMessage>
+</ValidationRule>

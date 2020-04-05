@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Flyer_or_Brochure_Name_Field</fullName>
+    <active>true</active>
+    <description>If Subtype is Collateral Customization for Marketing cases, then Flyer or Brochure Name is required</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Subtype__c , &#39;Collateral Customization&#39; ),
+RecordType.Name = &#39;Marketing&#39;,
+ISBLANK( Flyer_or_Brochure_Name__c )
+
+)</errorConditionFormula>
+    <errorMessage>Flyer or Brochure Name field is required for Collateral Customization cases</errorMessage>
+</ValidationRule>

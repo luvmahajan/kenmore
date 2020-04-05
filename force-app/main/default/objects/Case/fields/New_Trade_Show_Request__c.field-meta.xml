@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Trade_Show_Request__c</fullName>
+    <externalId>false</externalId>
+    <label>New Trade Show Request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Booth Display (Booth size &lt; 10x10)</fullName>
+                <default>false</default>
+                <label>Booth Display (Booth size &lt; 10x10)</label>
+            </value>
+            <value>
+                <fullName>Booth Display (Booth size &gt; 10x10)</fullName>
+                <default>false</default>
+                <label>Booth Display (Booth size &gt; 10x10)</label>
+            </value>
+            <value>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+                <label>Sponsorship</label>
+            </value>
+            <value>
+                <fullName>Program Ad</fullName>
+                <default>false</default>
+                <label>Program Ad</label>
+            </value>
+            <value>
+                <fullName>Show Deal</fullName>
+                <default>false</default>
+                <label>Show Deal</label>
+            </value>
+            <value>
+                <fullName>Collateral</fullName>
+                <default>false</default>
+                <label>Collateral</label>
+            </value>
+            <value>
+                <fullName>Raffle</fullName>
+                <default>false</default>
+                <label>Raffle</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

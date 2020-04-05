@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If this option is checked, the scenario will use a separate set of filters for matching new records (Source Filters) to existing records (Target Filters).  If this isn&apos;t checked, the standard filters are applied to both new and existing records. --></help>
+    <label><!-- Enable Dual Filters --></label>
+    <name>CRMfusionDBR101__Enable_Dual_Filters__c</name>
+</CustomFieldTranslation>

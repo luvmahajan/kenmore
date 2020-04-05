@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Order_Number_and_Printer_Fields</fullName>
+    <active>true</active>
+    <description>If the Marketing case is Status of Existing Order from Printer, then Order Number and Printer Fields are required.</description>
+    <errorConditionFormula>AND ( 
+ISPICKVAL( Subtype__c, &quot;Status of Existing Order from Printer&quot; ), 
+ISBLANK( Order_Number__c ), 
+ISBLANK( TEXT(Printer__c ) )
+)</errorConditionFormula>
+    <errorMessage>Order Number and Printer fields are required for Status of Existing Order from Printer cases</errorMessage>
+</ValidationRule>

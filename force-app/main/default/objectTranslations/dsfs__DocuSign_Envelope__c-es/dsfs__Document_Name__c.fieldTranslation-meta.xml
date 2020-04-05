@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Esta es una lista de documentos en formato PDF que aparece en la pestaña de documentación de Saleforce en su organización. Para realizar un envío con DocuSign, debe agregar un PDF a cualquiera de las carpetas de su pestaña de documentación en Salesforce.</help>
+    <label><!-- Document Name --></label>
+    <name>dsfs__Document_Name__c</name>
+</CustomFieldTranslation>

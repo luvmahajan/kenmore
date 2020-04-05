@@ -1,0 +1,12 @@
+Hello,
+
+Please contact {!Lead.Name} at {!Lead.Company} to discuss the following:
+
+{!Lead.Products_Services__c}
+{!Lead.Programs__c}
+
+ 
+
+{!Lead.Name} can be reached at {!Lead.Phone}.  More information about your Lead can be found in the Leads section of Salesforce.com or by clicking this link:
+
+{!Lead.Link}

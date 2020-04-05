@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Price_Group__c</fullName>
+    <externalId>false</externalId>
+    <label>New Customer Price Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>05	Builders</fullName>
+                <default>false</default>
+                <label>05	Builders</label>
+            </value>
+            <value>
+                <fullName>01	Educational Services</fullName>
+                <default>false</default>
+                <label>01	Educational Services</label>
+            </value>
+            <value>
+                <fullName>02	Govt &amp; Military</fullName>
+                <default>false</default>
+                <label>02	Govt &amp; Military</label>
+            </value>
+            <value>
+                <fullName>03	Health Care &amp; Social</fullName>
+                <default>false</default>
+                <label>03	Health Care &amp; Social</label>
+            </value>
+            <value>
+                <fullName>07	Others</fullName>
+                <default>false</default>
+                <label>07	Others</label>
+            </value>
+            <value>
+                <fullName>04	Property Mgmt</fullName>
+                <default>false</default>
+                <label>04	Property Mgmt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

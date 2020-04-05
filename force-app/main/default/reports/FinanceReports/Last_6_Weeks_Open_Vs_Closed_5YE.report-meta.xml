@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_90805993</developerName>
+        <masterLabel>Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Open</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Escalated</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pending Internal Response</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pending Innovel Response</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pending Customer Response</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Order Submitted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Obtain Credit Authorization</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Order Confirmation Sent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CMR/DMR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Delivery Scheduled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Collections</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Back Charge MDO</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pending Service Response</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reviewed, Pending Outside Assistance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reviewed, Pending Case Owner Action</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reviewed, Pending Case Creator Action</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reviewed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>On Hold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Submitted</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Resolved</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed (No Customer Response)</sourceValue>
+            </sourceValues>
+            <value>Closed</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Credit,Case.Chargeback,Case.Credit_Account_Management,Case.Invoicing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_N_WEEKS:6</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>CREATED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_90805993</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Last 6 Weeks Open Vs Closed</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

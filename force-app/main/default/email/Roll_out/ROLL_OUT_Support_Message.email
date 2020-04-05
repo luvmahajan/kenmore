@@ -1,0 +1,25 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<FONT size=5 face=Arial,Sans-Serif>Dear {!Receiving_User.FirstName},</FONT>]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<P><FONT size=5 face=Arial,Sans-Serif>Our business is undergoing an amazing transformation and it is exciting to have you as a part of it.&nbsp; Companies like ours have seen exceptional results with Salesforce.com and we will too, by working together to learn and implement this tool.</FONT></P>
+<P>&nbsp;</P>
+<P><SPAN lang=EN>&nbsp;</P>
+<P><FONT size=5 face=Arial,Sans-Serif>Your training Roadmap will start with 3 e-Learning courses and continue with a classroom training session held on Friday, July 30th.&nbsp; You will soon receive a Login Confirmation email from <A href="mailto:support@salesforce.com">support@salesforce.com</A> with you username and password.&nbsp; Once you do, please complete the following actions in preparation for your classroom training:</FONT></P>
+<UL>
+<LI><FONT size=5>Login to Salesforce.com</FONT></LI>
+<LI><FONT size=5>Use the attached Job Aid to find the Help &amp; Training section of Salesforce.com.</FONT></LI>
+<LI><FONT size=5>Select your role as Support Representative and complete the following e-Learning Courses (1) Salesforce.com Fundamentals, (2) Salesforce.com for Sales Representatives and (3) Support Reprentative Fundamentals.</FONT></LI></UL>
+<P><FONT size=5>In our classroom session, you will learn more about how Salesforce.com will support our Contract Administration process and the SCOPES Maintenance function.&nbsp; I look forward to speaking with you then!</FONT></SPAN></P><FONT size=2><SPAN lang=EN>
+<P><FONT size=5 face=Arial,Sans-Serif>&nbsp;</FONT></P>
+<P><FONT size=5 face=Arial,Sans-Serif>Regards, </FONT></P>
+<P><FONT size=5 face=Arial,Sans-Serif>{!User.FirstName}</FONT></P></FONT></SPAN>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[<P align=center><SPAN style="FONT-FAMILY: Arial; COLOR: blue; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><A href="https://login.salesforce.com"><FONT color=#606420 size=3 face=Arial,Sans-Serif>salesforce.com</FONT></A></SPAN><SPAN style="FONT-FAMILY: Arial; COLOR: #666666; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><BR></SPAN><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><FONT size=3 face=Arial,Sans-Serif>Sears Commercial has partnered with Salesforce.com to bring the world’s leading sales enablement technology to its Account Managers.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Click on the link above to login to Salesforce.com and begin seeing the positive impact in sales revenues which has been achieved by Salesforce.com customers across its base of over 65,000 companies and over 2,000,000 sales users.</FONT></SPAN></P>]]></td>
+</tr>
+</table>

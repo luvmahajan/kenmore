@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indica el número de días de antelación con el que desea enviar un mensaje para avisar a los destinatarios de que se acerca una fecha límite. Este mensaje se envía únicamente a aquellos destinatarios que todavía no hayan completado la transacción.</help>
+    <label><!-- Warn of expiration in N day(s) prior --></label>
+    <name>dsfs__Day_Prior_to_Warn_of_expiration__c</name>
+</CustomFieldTranslation>

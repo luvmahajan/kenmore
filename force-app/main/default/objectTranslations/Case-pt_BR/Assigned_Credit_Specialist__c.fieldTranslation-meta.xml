@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Assigned Credit Specialist --></label>
+    <name>Assigned_Credit_Specialist__c</name>
+    <relationshipLabel><!-- Cases --></relationshipLabel>
+</CustomFieldTranslation>

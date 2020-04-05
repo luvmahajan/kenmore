@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used on the Account to Display last activity occured in the past 30 days</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>Green Ball</name>
+    <public>true</public>
+</Document>

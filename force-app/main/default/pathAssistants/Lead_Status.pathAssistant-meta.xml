@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Lead Status</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Reason_Disqualified__c</fieldNames>
+        <fieldNames>Reason_Disqualified_Description__c</fieldNames>
+        <picklistValueName>Disqualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Estimated_Opportunity_Amount__c</fieldNames>
+        <fieldNames>Opportunity_Type__c</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Ensure that the following fields are completed:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Estimated Opportunity Amount &lt;/li&gt;&lt;li&gt;Opportunity Type&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Marketing Qualified Lead</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Do_we_understand_the_customer_s_buying_p__c</fieldNames>
+        <fieldNames>Speaking_with_someone_with_influence__c</fieldNames>
+        <fieldNames>Clear_interest_in_the_next_step__c</fieldNames>
+        <fieldNames>Are_there_clear_red_flags__c</fieldNames>
+        <fieldNames>Qualification_Debrief__c</fieldNames>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Users are required to complete the Qualification Criteria questions.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Sales Accepted Lead</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Standard_Lead</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Working elevator for units pass the 3rd --></label>
+    <name>Working_elevator_for_units_pass_the_3rd__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sears Commercial Price --></label>
+    <name>Sears_Commercial_Price__c</name>
+</CustomFieldTranslation>

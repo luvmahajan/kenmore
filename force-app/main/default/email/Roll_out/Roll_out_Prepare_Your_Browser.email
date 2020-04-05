@@ -1,0 +1,27 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[Dear {!Contact.FirstName},]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<P>In anticipation of the launch of Salesforce.com, please take a few moments to prepare and optimize your web browser.&nbsp; A job aid has been developed to help you with this request.&nbsp; </P>
+<P>&nbsp;</P>
+<P>The preparation of your browser should take approximately 15 minutes of active engagement.&nbsp; If your computer does not have the latest required software updates, this job aid will&nbsp;instruct you install those, before upgrading and/or configuring your browser - these may take time to run, so consider installing required updates&nbsp; as the final task in your work day or work week.</P>
+<P>&nbsp;</P>
+<P>You can download the job aid by clicking on the link below, or pasting it into your browser window:</P>
+<P><A onclick="return ContentDistribution.preview();" href="https://na1.salesforce.com/sfc/p/30000000lp1bh3mTGhdyBksBrwhFg0XLgOh8inQ="><FONT color=#000000>https://na1.salesforce.com/sfc/p/30000000lp1bh3mTGhdyBksBrwhFg0XLgOh8inQ=</FONT></A></P>
+<P>&nbsp;</P>
+<P>I look forward to speaking to you at our Kick-off call on Tuesday!</P>
+<P>&nbsp;</P>
+<P>Kind Regards,</P>
+<P>{!User.FirstName}</P>
+<P>&nbsp;</P>
+<P>{!User.Title}</P>
+<P>{!User.CompanyName}</P>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[<P align=center><SPAN style="FONT-FAMILY: Arial; COLOR: blue; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><A href="https://login.salesforce.com/"><FONT color=#606420 size=3 face=Arial,Sans-Serif>salesforce.com</FONT></A></SPAN><SPAN style="FONT-FAMILY: Arial; COLOR: #666666; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><BR></SPAN><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><FONT size=3 face=Arial,Sans-Serif>Sears Commercial has partnered with Salesforce.com to bring the world’s leading sales enablement technology to its Account Managers.<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;</SPAN>Soon our Account Managers will&nbsp;begin seeing the positive impact in sales revenues which have been achieved by Salesforce.com customers across its base of over 77,500 companies and over 2,000,000 sales users.</FONT></SPAN></P>]]></td>
+</tr>
+</table>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Recall or Rework --></label>
+    <name>Recall_or_Rework__c</name>
+    <picklistValues>
+        <masterLabel>Recall</masterLabel>
+        <translation><!-- Recall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rework</masterLabel>
+        <translation><!-- Rework --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

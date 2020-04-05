@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <escalationRule>
+        <fullName>Order Management Escalations</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <businessHours>Order Intake Business Hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Order Intake</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>ORDER</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Open</value>
+            </criteriaItems>
+            <escalationAction>
+                <assignedTo>sheila.styles@kenmoredirect.com</assignedTo>
+                <assignedToTemplate>Case_Email_Templates/Case_Escalation_Reassignment</assignedToTemplate>
+                <assignedToType>User</assignedToType>
+                <minutesToEscalation>2880</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationAction>
+                <assignedTo>shalotta.griner@kenmoredirect.com</assignedTo>
+                <assignedToTemplate>Case_Email_Templates/Case_Escalation_Reassignment</assignedToTemplate>
+                <assignedToType>User</assignedToType>
+                <minutesToEscalation>1440</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHours>Order Intake Business Hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Order Intake</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Open,In Progress,Order Pending</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>ORDER</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Manager__c</field>
+                <operation>notEqual</operation>
+                <value>Ken Crowne</value>
+            </criteriaItems>
+            <escalationAction>
+                <assignedTo>shalotta.griner@kenmoredirect.com</assignedTo>
+                <assignedToTemplate>Case_Email_Templates/CaseEscalation_by_Status</assignedToTemplate>
+                <assignedToType>User</assignedToType>
+                <minutesToEscalation>1440</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationAction>
+                <assignedTo>sheila.styles@kenmoredirect.com</assignedTo>
+                <assignedToTemplate>Case_Email_Templates/CaseEscalation_by_Status</assignedToTemplate>
+                <assignedToType>User</assignedToType>
+                <minutesToEscalation>2880</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHours>Order Intake Business Hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Order Intake</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Open,In Progress,Order Pending</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Manager__c</field>
+                <operation>equals</operation>
+                <value>Ken Crowne</value>
+            </criteriaItems>
+            <escalationAction>
+                <minutesToEscalation>1440</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+                <notifyTo>ken.crowne@kenmoredirect.com</notifyTo>
+                <notifyToTemplate>Case_Email_Templates/New_Case_Escalation</notifyToTemplate>
+            </escalationAction>
+            <escalationAction>
+                <assignedTo>ken.crowne@kenmoredirect.com</assignedTo>
+                <assignedToTemplate>Case_Email_Templates/CaseEscalation_by_Status</assignedToTemplate>
+                <assignedToType>User</assignedToType>
+                <minutesToEscalation>2880</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHours>Order Intake Business Hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Post-Delivery OM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>Post-Delivery OM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Open</value>
+            </criteriaItems>
+            <escalationAction>
+                <assignedTo>marquitta.carr@kenmoredirect.com</assignedTo>
+                <assignedToTemplate>Case_Email_Templates/CaseEscalation_by_Status</assignedToTemplate>
+                <assignedToType>User</assignedToType>
+                <minutesToEscalation>1440</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHours>Order Intake Business Hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Pre-Delivery OM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>Pre-Delivery OM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Open</value>
+            </criteriaItems>
+            <escalationAction>
+                <assignedTo>shalotta.griner@kenmoredirect.com</assignedTo>
+                <assignedToTemplate>Case_Email_Templates/CaseEscalation_by_Status</assignedToTemplate>
+                <assignedToType>User</assignedToType>
+                <minutesToEscalation>1440</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationAction>
+                <assignedTo>sheila.styles@kenmoredirect.com</assignedTo>
+                <assignedToTemplate>Case_Email_Templates/CaseEscalation_by_Status</assignedToTemplate>
+                <assignedToType>User</assignedToType>
+                <minutesToEscalation>2880</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHours>Order Intake Business Hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Credit Processing,Chargeback,Credit Account Management,Invoicing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Open</value>
+            </criteriaItems>
+            <escalationAction>
+                <minutesToEscalation>7200</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+                <notifyTo>michelle.wiggins@kenmoredirect.com</notifyTo>
+                <notifyToTemplate>Case_Email_Templates/New_Case_Escalation</notifyToTemplate>
+            </escalationAction>
+            <escalationAction>
+                <assignedTo>michelle.wiggins@kenmoredirect.com</assignedTo>
+                <assignedToTemplate>Case_Email_Templates/CaseEscalation_by_Status</assignedToTemplate>
+                <assignedToType>User</assignedToType>
+                <minutesToEscalation>10080</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+        </ruleEntry>
+    </escalationRule>
+</EscalationRules>

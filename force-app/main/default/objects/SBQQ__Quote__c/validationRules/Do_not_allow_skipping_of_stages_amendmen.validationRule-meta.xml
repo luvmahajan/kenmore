@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_not_allow_skipping_of_stages_amendmen</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+RecordType.DeveloperName == &#39;Amendment_Quote&#39;, 
+ISCHANGED( SBQQ__Status__c ) ,
+
+CASE(SBQQ__Status__c,
+&#39;Quote Header Review&#39;, 1,
+&#39;Amendment&#39;, 2,
+&#39;Add/Edit Products&#39;, 3,
+&#39;Document Preparation&#39;, 4,
+&#39;Submitted For Approval&#39;, 5,
+&#39;Complete&#39;, 6,
+0) 
+&gt; 
+CASE(PRIORVALUE(SBQQ__Status__c),
+&#39;Quote Header Review&#39;, 1,
+&#39;Amendment&#39;, 2,
+&#39;Add/Edit Products&#39;, 3,
+&#39;Document Preparation&#39;, 4,
+&#39;Submitted For Approval&#39;, 5,
+&#39;Complete&#39;, 6,
+0) + 1
+
+
+
+)</errorConditionFormula>
+    <errorMessage>You cannot skip a stage.</errorMessage>
+</ValidationRule>

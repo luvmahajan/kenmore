@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Two 1-½” holes must be predrilled for the electrical cord. The placement must be exact for a flush-mount installation (see specification sheets). --></help>
+    <label><!-- Hole for Electric Predrilled? --></label>
+    <name>Hole_for_Electric_Predrilled__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chargeback_Type__c</fullName>
+    <description>Credit Team to identify the type of Chargeback</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For the Credit Specialist to identify the type of Chargeback</inlineHelpText>
+    <label>Chargeback Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+                <label>Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Bad Debt</fullName>
+                <default>false</default>
+                <label>Bad Debt</label>
+            </value>
+            <value>
+                <fullName>3rd Party</fullName>
+                <default>false</default>
+                <label>3rd Party</label>
+            </value>
+            <value>
+                <fullName>Dispute</fullName>
+                <default>false</default>
+                <label>Dispute</label>
+            </value>
+            <value>
+                <fullName>Recourse-Gen</fullName>
+                <default>false</default>
+                <label>Recourse-Gen</label>
+            </value>
+            <value>
+                <fullName>Recourse-Gov</fullName>
+                <default>false</default>
+                <label>Recourse-Gov</label>
+            </value>
+            <value>
+                <fullName>Recourse-Cont</fullName>
+                <default>false</default>
+                <label>Recourse-Cont</label>
+            </value>
+            <value>
+                <fullName>Small Bal</fullName>
+                <default>false</default>
+                <label>Small Bal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

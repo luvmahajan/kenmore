@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Method_of_Payment__c</fullName>
+    <description>Method of Payment is required when stage = Deal Closure/Won</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Method of Payment is required when stage = Deal Closure/Won</inlineHelpText>
+    <label>Method of Payment</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Commercial One</fullName>
+                <default>false</default>
+                <label>Commercial One</label>
+            </value>
+            <value>
+                <fullName>3rd Party Credit Card</fullName>
+                <default>false</default>
+                <label>3rd Party Credit Card</label>
+            </value>
+            <value>
+                <fullName>Check</fullName>
+                <default>false</default>
+                <label>Check</label>
+            </value>
+            <value>
+                <fullName>State &amp; Local Underwriting Recourse Policy (SLURP)</fullName>
+                <default>false</default>
+                <label>State &amp; Local Underwriting Recourse Policy (SLURP)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

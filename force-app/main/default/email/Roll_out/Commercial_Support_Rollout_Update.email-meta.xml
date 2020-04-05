@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>Commercial Support Rollout Update</name>
+    <style>freeForm</style>
+    <subject>Commercial Support Rollout Update</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+  
+
+As we continue to learn together, it is important that we assess the skills which each trainee has developed.  If you have not done so already, please take 15 minutes to complete this Application Assessment regarding the materials covered in your Training Roadmap up to, and including your classroom training session.
+
+ 
+
+Instructions on how to complete your Application Assessment (Test) and guidance on the next steps in your training roadmap are listed below.  In order to download the appropriate document, or complete the appropriate assessment, please click on the link or copy/paste it into your browser.
+
+ 
+
+http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx 
+
+(select course 3072)
+
+
+
+
+
+Looking ahead at the Training Roadmap, please be aware that we are ready for the next steps which include the following:  
+
+ 
+
+o       Application Assessment to be complete after classroom training
+
+ 
+
+o       Reporting Fundamentals E-learning course to be completed week of 8/16.   (See Job Aid #2 link below) 
+
+ 
+
+https://na1.salesforce.com/sfc/#version?selectedDocumentId=06930000000I6QN  
+
+  
+
+o       Lead Best Practice Webmeeting:  The support team will work together to develop a Best Practices webmeeting to help the District Managers understand how best to interact with support functions on SFDC.  Meeting to occur the week of 8/30.  
+
+ 
+
+Thank you for being part of this exciting time as Sears Commercial partners with Salesforce.com to bring the world&#39;s leading sales enablement technology to our business and to ensure the best Customer Relationship Management (CRM).   
+
+ 
+
+Best,
+
+{!User.FirstName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

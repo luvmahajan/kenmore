@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When Checked, the Account Owner (RAM) will not be assigned based on Zip Code --></help>
+    <label><!-- Manually Assign RAM --></label>
+    <name>Manually_Assign_RAM__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Services_Required_when_Dev_Prop</fullName>
+    <active>false</active>
+    <description>When Stage = Develop Proposal, Product / Services is a required field</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(  StageName,  &quot;Develop Proposal&quot;), 
+ISBLANK(   Products__c    ))</errorConditionFormula>
+    <errorDisplayField>Products__c</errorDisplayField>
+    <errorMessage>Product Field required when Stage = Develop Proposal</errorMessage>
+</ValidationRule>

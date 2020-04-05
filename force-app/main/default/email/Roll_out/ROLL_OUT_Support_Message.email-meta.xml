@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>ROLL-OUT: Support Message</name>
+    <style>formalLetter</style>
+    <subject>An Important Message Regarding Salesforce.com</subject>
+    <textOnly>Dear {!Receiving_User.FirstName},
+Our business is undergoing an amazing transformation and it is exciting to have you as a part of it.  Companies like ours have seen exceptional results with Salesforce.com and we will too, by working together to learn and implement this tool.
+ 
+ 
+Your training Roadmap will start with 3 e-Learning courses and continue with a classroom training session held on Friday, July 30th.  You will soon receive a Login Confirmation email from support@salesforce.com with you username and password.  Once you do, please complete the following actions in preparation for your classroom training:
+
+Login to Salesforce.com
+Use the attached Job Aid to find the Help &amp; Training section of Salesforce.com.
+Select your role as Support Representative and complete the following e-Learning Courses (1) Salesforce.com Fundamentals, (2) Salesforce.com for Sales Representatives and (3) Support Reprentative Fundamentals.
+In our classroom session, you will learn more about how Salesforce.com will support our Contract Administration process and the SCOPES Maintenance function.  I look forward to speaking with you then!
+ 
+Regards, 
+{!User.FirstName}
+salesforce.com
+Sears Commercial has partnered with Salesforce.com to bring the world’s leading sales enablement technology to its Account Managers.  Click on the link above to login to Salesforce.com and begin seeing the positive impact in sales revenues which has been achieved by Salesforce.com customers across its base of over 65,000 companies and over 2,000,000 sales users.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select as many as applicable --></help>
+    <label><!-- Reasons For Switching To The Competition --></label>
+    <name>Reasons_For_Switching_To_The_Competition__c</name>
+    <picklistValues>
+        <masterLabel>Account Manager no longer available</masterLabel>
+        <translation><!-- Account Manager no longer available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Billing/Credit issue</masterLabel>
+        <translation><!-- Billing/Credit issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery issues</masterLabel>
+        <translation><!-- Delivery issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installation issues</masterLabel>
+        <translation><!-- Installation issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No response from customer support center</masterLabel>
+        <translation><!-- No response from customer support center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non availability of right product</masterLabel>
+        <translation><!-- Non availability of right product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price</masterLabel>
+        <translation><!-- Price --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

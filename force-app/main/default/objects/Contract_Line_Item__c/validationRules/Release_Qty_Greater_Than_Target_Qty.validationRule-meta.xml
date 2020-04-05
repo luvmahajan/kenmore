@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Release_Qty_Greater_Than_Target_Qty</fullName>
+    <active>true</active>
+    <description>The Release Quantity cannot be greater than the Target Quantity.</description>
+    <errorConditionFormula>Items_Processed__c &gt; Total_Quantity__c</errorConditionFormula>
+    <errorDisplayField>Items_Processed__c</errorDisplayField>
+    <errorMessage>The Release Quantity cannot be greater than the Target Quantity.</errorMessage>
+</ValidationRule>

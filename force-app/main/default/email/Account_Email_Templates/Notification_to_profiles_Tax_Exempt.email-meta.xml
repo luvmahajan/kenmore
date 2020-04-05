@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is to notify the respective profiles with the update.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Notification to profiles - Tax Exempt</name>
+    <style>freeForm</style>
+    <subject>Notify for Tax Exempt</subject>
+    <textOnly>Please investigate this {!Account.Name} as it has been flagged as a tax exempt. 
+The Account Owner is: {!Account.OwnerFullName}. 
+Please contact them upon the initial findings.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

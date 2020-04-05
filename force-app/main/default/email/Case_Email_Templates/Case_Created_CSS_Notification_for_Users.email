@@ -1,0 +1,13 @@
+Hi {!Case.CreatedBy},
+
+{!Case.RecordType} Case {!Case.CaseNumber} for {!Account.Name} was created on {!Case.CreatedDate}.
+
+The support team will review your inquiry and work to resolve your case as soon as possible.
+
+In the meantime, please review our growing knowledge base of how-to documentation at https://searscommercial.atlassian.net/wiki/x/DIBI.  
+
+If you are able to resolve your case using the solutions documented, please login to Salesforce and close your case.
+
+Case Link: {!Case.Link}
+
+Thank you.

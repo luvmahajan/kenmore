@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderPending</fullName>
+    <active>true</active>
+    <description>Order is Pending, record is locked</description>
+    <errorConditionFormula>AND($Profile.Name &lt;&gt; &quot;System Administrator&quot;, $Profile.Name &lt;&gt; &quot;Integration&quot;, TEXT(Status) = &#39;Pending&#39;)</errorConditionFormula>
+    <errorMessage>Order is Pending, record is locked</errorMessage>
+</ValidationRule>

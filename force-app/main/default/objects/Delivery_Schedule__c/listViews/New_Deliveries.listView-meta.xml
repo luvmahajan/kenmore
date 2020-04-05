@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Deliveries</fullName>
+    <columns>Delivery_Status__c</columns>
+    <columns>NAME</columns>
+    <columns>Construction_Project__c</columns>
+    <columns>Delivery_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Delivery_Status__c</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <label>New Deliveries</label>
+    <language>en_US</language>
+</ListView>

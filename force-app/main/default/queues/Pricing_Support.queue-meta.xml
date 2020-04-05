@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>scpricing@searshc.com</email>
+    <name>Pricing Support</name>
+    <queueMembers>
+        <users>
+            <user>frank.chen@kenmoredirect.com</user>
+            <user>ryan.ly@kenmoredirect.com</user>
+            <user>sejin.siegel@searshc.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

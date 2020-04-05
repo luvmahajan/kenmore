@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- A&amp;E or Sears --></label>
+    <name>A_E_or_Sears__c</name>
+    <picklistValues>
+        <masterLabel>A&amp;E</masterLabel>
+        <translation><!-- A&amp;E --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Both</masterLabel>
+        <translation><!-- Both --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Brand/ Non-Branded</masterLabel>
+        <translation><!-- Custom Brand/ Non-Branded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sears</masterLabel>
+        <translation><!-- Sears --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

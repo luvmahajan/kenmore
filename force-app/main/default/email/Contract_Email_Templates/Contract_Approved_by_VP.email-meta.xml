@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>A Contract has been approved by VP</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Contract Approved by VP</name>
+    <style>none</style>
+    <subject>Contract Approved by VP</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

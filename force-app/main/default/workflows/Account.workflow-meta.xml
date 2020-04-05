@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Account_Closed_due_to_Chargebacks_notify_AM_DM</fullName>
+        <description>Account Closed due to Chargebacks, notify AM &amp; DM</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Account_Closed_Chargeback_Reasons</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Closed_due_to_Status_Change_notify_AM</fullName>
+        <description>Account Closed due to Status Change, notify AM</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Account_Closed_Status_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>Add_details_in_SAP_for_Healthcare_Accounts</fullName>
+        <ccEmails>csfadm@searshc.com</ccEmails>
+        <description>Add details in SAP for Healthcare Accounts</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/SAP_Healthcare_Detail_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_the_user_who_requested_for_SAP_Account_creation</fullName>
+        <description>Email to the user who requested for SAP Account creation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/SAP_Account_Creation_is_Completed</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_for_credit_team</fullName>
+        <description>Notification for credit team</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Credit_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Credit_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_for_the_file_admin_Team</fullName>
+        <description>Notification for the file admin Team</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Reseller_Tax_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Tax_Exempt_Account</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_to_Account_Owner_that_their_New_SAP_Account_was_Created</fullName>
+        <description>Notification to Account Owner that their New SAP Account was Created</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>ian.percy@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Notification_for_New_SAP_Account_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_AM_of_new_SAP_Account_ID</fullName>
+        <description>Notify AM of new SAP Account ID</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Notify_AM_of_new_SAP_Account_ID</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Credit_Team_of_LOC_Request</fullName>
+        <ccEmails>sccredsol@searshc.com</ccEmails>
+        <description>Notify Credit Team of LOC Request</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/New_LOC_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_SCOPES_Maintenance_of_New_Account</fullName>
+        <ccEmails>CSFADM@Searshc.com</ccEmails>
+        <description>Notify SCOPES Maintenance of New Account</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Creation_of_new_SAP_Account</template>
+    </alerts>
+    <alerts>
+        <fullName>To_send_an_email_notification_to_the_Credit_group</fullName>
+        <ccEmails>CSCRDT@searshc.com</ccEmails>
+        <description>To send an email notification to the Credit group</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Credit_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Credit_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>about_failure_of_account_creation_in_SAP</fullName>
+        <description>about failure of account creation in SAP</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>integration.user@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>omsrikrishna.muvva@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/SAP_User_Notification_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>notification_for_credit_team_for_the_credit_check</fullName>
+        <description>notification for credit team for the credit check</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Credit_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Credit_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>notification_for_file_admin_for_tax</fullName>
+        <description>notification for file admin for tax</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Reseller_Tax_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Tax_Exempt_Account</template>
+    </alerts>
+    <alerts>
+        <fullName>notification_for_file_admin_team2</fullName>
+        <description>notification for file admin team2</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Reseller_Tax_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Reseller_Account</template>
+    </alerts>
+    <alerts>
+        <fullName>notification_for_the_File_admin_team1</fullName>
+        <description>notification for the File admin team1</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Reseller_Tax_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Tax_Exempt_and_Reseller_Account</template>
+    </alerts>
+    <alerts>
+        <fullName>notification_to_file_admin_for_reseller</fullName>
+        <description>notification to file admin for reseller</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Reseller_Tax_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/Reseller_Account</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Account_Sector_Update_Other_Services</fullName>
+        <field>Sector__c</field>
+        <literalValue>Other Services (except Public Administration)</literalValue>
+        <name>Account Sector Update - Other Services (</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Construction_Prospect_Record_Type</fullName>
+        <description>When Sector not equal to Healthcare and the Type = Propect, the record type and pagelayout switch to Commercial Prospect</description>
+        <field>RecordTypeId</field>
+        <lookupValue>Commercial_Prospect</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Commercial Prospect Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NAM</fullName>
+        <field>NAM__c</field>
+        <lookupValue>jscott.wertman@kenmoredirect.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>NAM</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NAM_RR_2_Assignment</fullName>
+        <field>NAM__c</field>
+        <lookupValue>jscott.wertman@kenmoredirect.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>NAM RR 2 Assignment</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rating_Updates_to_High_for_A_B_Accounts</fullName>
+        <description>Rating update to High if the Potential Annual Sales Volume equals A or B</description>
+        <field>Rating</field>
+        <literalValue>High</literalValue>
+        <name>Rating Updates to High for A&amp;B Accounts</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rating_Updates_to_Low_for_E_F_Account</fullName>
+        <description>Rating updates to Low if the Potential Annual Sales Volume equals E or F</description>
+        <field>Rating</field>
+        <literalValue>Low</literalValue>
+        <name>Rating Updates to Low for E&amp;F Account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rating_Updates_to_Medium_for_C_D_Account</fullName>
+        <description>Rating updates to Medium if the Potential Annual Sales Volume equals C or D</description>
+        <field>Rating</field>
+        <literalValue>Medium</literalValue>
+        <name>Rating Updates to Medium for C&amp;D Account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Record_Type_Commercial_Customer</fullName>
+        <description>When Sector not equal to Healthcare and Type = Customer the record type and pagelayout switch to Commercial Customer.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>commercial_customer</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Record Type Commercial Customer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Record_Type_Update</fullName>
+        <description>This record type will appear the record type is not Prospect.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>commercial_customer</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Record Type Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Record_Type_Update_For_Prospect_Type</fullName>
+        <description>This record type will appear the record type is Prospect.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>Commercial_Prospect</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Record Type Update For Prospect Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Remove_Validation_from_Parent</fullName>
+        <field>Validation__c</field>
+        <literalValue>0</literalValue>
+        <name>Remove Validation from Parent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SFDC_ID_c_ID_Update</fullName>
+        <description>To update the SFDC_ID field</description>
+        <field>SFDC_ID__c</field>
+        <formula>CASESAFEID(Id)</formula>
+        <name>SFDC_ID__c ID Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Create_SCO_Account_Flag</fullName>
+        <field>Create_SCO_Account__c</field>
+        <literalValue>1</literalValue>
+        <name>Set Create SCO Account Flag</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Update</fullName>
+        <field>Account_Status__c</field>
+        <literalValue>Existing</literalValue>
+        <name>Status Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sync_with_SCOPES</fullName>
+        <description>Updates the field to Pending Status when an Account modification has been made.</description>
+        <field>Sync_with_SCOPES__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Sync with SCOPES</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sync_with_SCOPES_New_Account_Request</fullName>
+        <description>Change the Field Status to Pending when Type is Changed to Customer for New Account Requests.</description>
+        <field>Sync_with_SCOPES__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Sync with SCOPES - New Account Request</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Account_Owner</fullName>
+        <description>Update Account Owner to ECommerce User</description>
+        <field>OwnerId</field>
+        <lookupValue>david.dotts2@kcdbrands.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Update Account Owner</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Account_Type_to_Customer</fullName>
+        <field>Type</field>
+        <literalValue>Customer</literalValue>
+        <name>Update Account Type to Customer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Date_Time</fullName>
+        <field>SAP_Account_Request_DateTime_C__c</field>
+        <formula>NOW()</formula>
+        <name>Update Date Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NAICS_Code_Text_Field</fullName>
+        <description>NAICS CODE TEXT Field</description>
+        <field>SAP_NAICS_Code__c</field>
+        <formula>NAICS_Code__c</formula>
+        <name>Update NAICS Code Text Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_SAP_sync</fullName>
+        <description>SAP Sync = upto date</description>
+        <field>Sync_with_SAP__c</field>
+        <literalValue>Up to Date</literalValue>
+        <name>Update SAP sync</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>clear_time</fullName>
+        <field>SAP_Account_Request_DateTime_C__c</field>
+        <name>clear time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_SAP_checkbox</fullName>
+        <description>SAP = false</description>
+        <field>SAP_Account_Request__c</field>
+        <literalValue>0</literalValue>
+        <name>update SAP checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_record_type_change</fullName>
+        <description>commercial customer type</description>
+        <field>RecordTypeId</field>
+        <lookupValue>commercial_customer</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>update record type change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Account - Account Closed %3D Chargeback notification - Email</fullName>
+        <actions>
+            <name>Account_Closed_due_to_Chargebacks_notify_AM_DM</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Account_Closed__c</field>
+            <operation>equals</operation>
+            <value>Chargeback</value>
+        </criteriaItems>
+        <description>When the Account Closed = Chargeback an email notification is send to notify the Account Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Account Closed %3D Status Change notification - Email</fullName>
+        <actions>
+            <name>Account_Closed_due_to_Status_Change_notify_AM</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Account_Closed__c</field>
+            <operation>equals</operation>
+            <value>Account Status Change</value>
+        </criteriaItems>
+        <description>When the Account Closed = Status Change an email notification is send to notify the Account Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Check For Tax and Reseller - Email</fullName>
+        <actions>
+            <name>notification_for_the_File_admin_team1</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Reseller__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Tax_Exempt__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <description>Email alert to be sent, if both the options are true</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Check for Credit and Tax - Email</fullName>
+        <actions>
+            <name>Notification_for_the_file_admin_Team</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>To_send_an_email_notification_to_the_Credit_group</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Credit_Needed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Tax_Exempt__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <description>Credit check=true, email alert to credit group.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Check for Reseller and Credit - Email</fullName>
+        <actions>
+            <name>Notification_for_credit_team</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>notification_for_file_admin_team2</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Credit_Needed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Reseller__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <description>email alert</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Commercial Customer Record Type Check - Update</fullName>
+        <actions>
+            <name>Record_Type_Commercial_Customer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When Sector is not equal to Healthcare and the Type = Customer the record type and pagelayout will switch to Commercial Customer.</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISCHANGED(SAP_Account_ID__c), NOT(ISBLANK(SAP_Account_ID__c)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Commercial Prospect Record Type Check - Update</fullName>
+        <actions>
+            <name>Construction_Prospect_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When Sector = Construction the record type and page layout switch to Commercial Prospect</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISCHANGED(SAP_Account_ID__c), ISBLANK(SAP_Account_ID__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Create SAP Account - Email</fullName>
+        <actions>
+            <name>Email_to_the_user_who_requested_for_SAP_Account_creation</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>commercial customer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.SAP_Account_ID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>When SAP Account ID is null and On click of Request to SAP Account Request, the email is sent to the current user.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Credit Check Notification - Email</fullName>
+        <actions>
+            <name>notification_for_credit_team_for_the_credit_check</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Credit_Needed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Reseller__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Tax_Exempt__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </criteriaItems>
+        <description>Notify users when Credit Check flags true</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Healthcare Customer Record Type Check - Update</fullName>
+        <active>false</active>
+        <description>When Sector = Healthcare and the Type = Customer the record type and pagelayout will switch to Healthcare Customer</description>
+        <formula>AND ( 	CONTAINS(Business_Sector__r.Name, &#39;Health&#39;), 	NOT(ISBLANK(SAP_Account_ID__c)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Healthcare Details need to be added to SAP Account - Email</fullName>
+        <actions>
+            <name>Add_details_in_SAP_for_Healthcare_Accounts</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>If a Healthcare Account is created, additional details need to be added to the SAP Account.</description>
+        <formula>CONTAINS(Business_Sector__r.Name, &#39;Health&#39;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Healthcare Prospect Record Type Check - Update</fullName>
+        <active>false</active>
+        <description>When Sector = Healthcare the record type and pagelayout switch to Healthcare.</description>
+        <formula>AND ( 	CONTAINS(Business_Sector__r.Name, &#39;Health&#39;), 	ISBLANK(SAP_Account_ID__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Notification to start LOC Request - Email</fullName>
+        <actions>
+            <name>Notify_Credit_Team_of_LOC_Request</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Notifies Commercial Credit team to start the Commercial Credit Request process.</description>
+        <formula>AND( ISPICKVAL(Line_of_Credit_Requested__c , &quot;Yes&quot;), ISCHANGED(Line_of_Credit_Requested__c)) &amp;&amp; OR( ISCHANGED( SCOPES_ID__c ), NOT( ISBLANK(SCOPES_ID__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Notification when SAP Account ID Populated - Email</fullName>
+        <actions>
+            <name>Notify_AM_of_new_SAP_Account_ID</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Notify Account Owner when File Admin populates the SAP Account ID on the Account record</description>
+        <formula>ISCHANGED(  SAP_Account_ID__c  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Notify SCOPES Maintenance of New Account - Email</fullName>
+        <actions>
+            <name>Notify_SCOPES_Maintenance_of_New_Account</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Sync_with_SCOPES_New_Account_Request</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Business__c</field>
+            <operation>equals</operation>
+            <value>Commercial</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Customer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.SCOPES_ID__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Notify SCOPES Maintenance of New Account</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Populate Date%2FTime for SAP - Update %2F Email</fullName>
+        <actions>
+            <name>Update_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>Account.SAP_Account_Request__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.SAP_Account_ID__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.SAP_Account_ID__c</field>
+            <operation>equals</operation>
+            <value>Processing</value>
+        </criteriaItems>
+        <description>This is to populateSystem Date Time for SAP_Account_Request_DateTime__C when SAP account create checkbox is true.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>about_failure_of_account_creation_in_SAP</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.SAP_Account_Request_DateTime_C__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Account - Rating Updates to High for A%26B Accounts - Update</fullName>
+        <actions>
+            <name>Rating_Updates_to_High_for_A_B_Accounts</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Rating is updated based on Potential Annual Sales Volume equals A or B</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISPICKVAL(Potential_Annual_Sales_Volume__c, &quot;A&quot;), ISPICKVAL(Potential_Annual_Sales_Volume__c, &quot;B&quot;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Rating Updates to Low for E%26F Accounts - Update</fullName>
+        <actions>
+            <name>Rating_Updates_to_Low_for_E_F_Account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Potential_Annual_Sales_Volume__c</field>
+            <operation>equals</operation>
+            <value>E,F</value>
+        </criteriaItems>
+        <description>Rating is updated based on Potential Annual Sales Volume equals E or F</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Rating Updates to Medium for C%26D Accounts - Update</fullName>
+        <actions>
+            <name>Rating_Updates_to_Medium_for_C_D_Account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Potential_Annual_Sales_Volume__c</field>
+            <operation>equals</operation>
+            <value>C,D</value>
+        </criteriaItems>
+        <description>Rating is updated based on Potential Annual Sales Volume equals C or D</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Record Type Change if Not Prospect - Update</fullName>
+        <actions>
+            <name>Record_Type_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Customer</value>
+        </criteriaItems>
+        <description>When the Account Type is not Prospect, the Record Type should be Commercial Customer</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Record Type Change if Prospect - Update</fullName>
+        <actions>
+            <name>Record_Type_Update_For_Prospect_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Prospect</value>
+        </criteriaItems>
+        <description>When the Account Type is Prospect, the Record Type should be Account Approval record.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Reseller Notification - Email</fullName>
+        <actions>
+            <name>notification_to_file_admin_for_reseller</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Credit_Needed__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Reseller__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Tax_Exempt__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </criteriaItems>
+        <description>If Reseller flags true, send notification to file admin</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - SAP Account ID Created - Email%2FUpdate</fullName>
+        <actions>
+            <name>Notification_to_Account_Owner_that_their_New_SAP_Account_was_Created</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Set_Create_SCO_Account_Flag</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Notify account owner when SAP ID has been populated on the account record.</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISCHANGED(SAP_Account_ID__c), BEGINS(SAP_Account_ID__c, &quot;00&quot;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - SFDC_ID%5F%5Fc ID Update - Update</fullName>
+        <actions>
+            <name>SFDC_ID_c_ID_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update SFDC_ID__c</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE), true )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - SearsCommercial%2Ecom - Update Account Owner</fullName>
+        <actions>
+            <name>Update_Account_Owner</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Lead_Source__c</field>
+            <operation>equals</operation>
+            <value>SearsCommercial.com</value>
+        </criteriaItems>
+        <description>If the Lead Source is SearsCommercial.com, update the Account Owner to Ecommerce User</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Sync with Scopes - Update</fullName>
+        <actions>
+            <name>Sync_with_SCOPES</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Sync with SCOPES value changes to Pending when account information has been modified</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF( CONTAINS(Automation_Control_Type__c, &quot;Validation&quot;),FALSE,TRUE),TRUE),  ISPICKVAL(Business__c  , &quot;Commercial&quot;),     $UserRole.Name &lt;&gt; &quot;Commercial Support&quot;,  NOT(ISBLANK( SCOPES_ID__c)),  OR((ISCHANGED(Name)),   (ISCHANGED( BillingStreet)),   (ISCHANGED(BillingCity )),   (ISCHANGED(BillingState)),   (ISCHANGED(BillingPostalCode)),   (ISCHANGED( BillingCountry)),   (ISCHANGED(Phone)),   (ISCHANGED(Industry_Segmentation__c)),   (ISCHANGED(Non_Tax__c)),   (ISCHANGED(Outside_City_Limits__c)),   (ISCHANGED(Tax_Exempt_Expiration__c )),   (ISCHANGED(Pricing_Assignment__c)),   (ISCHANGED(OwnerId )),   (ISCHANGED(Split_Bill__c)),  (ISCHANGED(Special_Notes_or_Delivery_Information__c )) ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Tax Exempt Expiration - Create</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Non_Tax__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Tax_Exempt_Expiration__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Create a new task for the account owner when the accounts tax exemption has expired.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Tax_Exempt_Expiration_Alert</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>-14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Account - Tax Exempt Notification - Email</fullName>
+        <actions>
+            <name>notification_for_file_admin_for_tax</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Credit_Needed__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Reseller__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Tax_Exempt__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <description>Notify file admin when Tax Exempt  flags true</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Update SAP data - Update</fullName>
+        <actions>
+            <name>Update_SAP_sync</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>clear_time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>update_SAP_checkbox</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>update_record_type_change</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update SAP check box to false and SAP sync to upto date.</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISCHANGED(SAP_Account_ID__c), NOT(ISBLANK(SAP_Account_ID__c)), SAP_Account_ID__c != &quot;Processing&quot; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Validatio</fullName>
+        <actions>
+            <name>Remove_Validation_from_Parent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Removes Validation when there is no parent</description>
+        <formula>AND(
+ISBLANK(ParentId ),
+Validation__c = True)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Validation W%2FRR 1</fullName>
+        <actions>
+            <name>NAM</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Remove_Validation_from_Parent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(
+OR(
+ISBLANK(ParentId ),
+ Validation__c = True),
+ISBLANK(ParentId ),
+ Validation__c = True,
+ISBLANK( NAM__c ),
+ Round_Robin_ID__c =1)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Chargeback_Issued_Customer_Assistance_Required</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Attached to this account are invoices that have been charged back to SHC. Please contact the customer to determine the reason for non-payment. Following the discussion, post your notes to this field, delete these instructions and mark this task Completed.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Chargeback Issued - Please contact customer</subject>
+    </tasks>
+    <tasks>
+        <fullName>Tax_Exempt_Expiration_Alert</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Tax_Exempt_Expiration__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Review Tax Exempt Status for Account</subject>
+    </tasks>
+</Workflow>

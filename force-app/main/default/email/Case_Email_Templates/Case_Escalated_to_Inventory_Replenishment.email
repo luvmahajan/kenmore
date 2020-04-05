@@ -1,0 +1,9 @@
+Hi {!Case.OwnerFirstName}, 
+
+{!Case.LastModifiedBy} has escalated a Case to you for assistance.  
+
+This case is {!Case.Priority} Priority. Please click on the link below and login to Salesforce.com to see additional details and resolve this Case. 
+
+{!Case.Link} 
+
+Thank you.

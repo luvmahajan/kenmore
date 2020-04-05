@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Model xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Territory model for Commercial Sales</description>
+    <name>Commercial Territory Model</name>
+</Territory2Model>

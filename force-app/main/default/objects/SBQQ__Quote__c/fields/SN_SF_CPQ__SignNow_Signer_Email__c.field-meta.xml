@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SN_SF_CPQ__SignNow_Signer_Email__c</fullName>
+    <deprecated>false</deprecated>
+    <description>(         Self Signer In Person       )  For in person signing this email will be used as the referenced signer of the document.
+
+(Normal Invite Edit Email Option )  For normal signature invite this email will be assigned to the first role of the document.</description>
+    <externalId>false</externalId>
+    <label>SignNow Signer Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

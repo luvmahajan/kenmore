@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_to_Conversion__c</fullName>
+    <externalId>false</externalId>
+    <formula>Lead__r.Lead_Conversion_Date_Time__c - Lead_Status_Modified_Date__c</formula>
+    <label>Time to Conversion</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

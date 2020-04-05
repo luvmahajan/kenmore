@@ -1,0 +1,2153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sears_Commercial_Reporting</fullName>
+    <active>true</active>
+    <businessProcess>Sears Commercial Reporting</businessProcess>
+    <compactLayoutAssignment>Case_Header</compactLayoutAssignment>
+    <description>Sears Commercial Reporting</description>
+    <label>Sears Commercial Reporting</label>
+    <picklistValues>
+        <picklist>Augusta_Requesting_Consent_Form__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Blue_Tarp_Application_Type__c</picklist>
+        <values>
+            <fullName>Comm Pro - Ext Terms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consent Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Blue_Tarp_Response__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blue Tarp Recourse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paperwork Incomplete</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Brand__c</picklist>
+        <values>
+            <fullName>Afresh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blakeslee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bosch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dacor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daewood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electricord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrolux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fisher %26 Paykel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frigidaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frigidaire Gallary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE Artistry Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE Café</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE Profile Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gladiator Garage Works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haier Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heartland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hello Kitty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holiday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HotPoint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Idylis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenmore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenmore Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenmore Pro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KitchenAide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LG Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liebherr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marvel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marvel Comics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maxx Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maxx Ice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maytag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Brand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nostalgia Electrics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samsung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart Choice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Summit Brands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tappn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unbranded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watts industries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whirlpool</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Browser__c</picklist>
+        <values>
+            <fullName>Chrome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firefox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet Explorer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safari</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BusinessSegment__c</picklist>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MF New and Property Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SF Builder</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CRT__c</picklist>
+        <values>
+            <fullName>CB1-Visa Chargeback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CB2-MasterCard Chargeback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CB3-AMEX Chargeback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CB4-Discover Chargeback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBA-Blue Tarp Chargeback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBB-Citibank Chargeback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBC-Blue Tarp Auth Rejects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBD-Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBE-RMS Collection Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBF-Account%2FExtended%2F Finance Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D1-Builder charged in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D10-Partial discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D11-Payment Sent to Merchant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D12-Payment Sent to Sears</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D13-Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D14-Pricing Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D15-Pricing Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D16-Proof of Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D17-Return material Authorization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D18-Shipping %26 Freight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D19-Signature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D2-Damaged Mdse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D20-Small Balance Charge Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D21-Tax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D22-Unauthorized Buyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D23-Unauthorized Mdse Sold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D24-Under Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D25-Transcation Amt Differs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D26-Poor Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D27-Unidentified Sale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D3-Did not receive Mdse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D4-Duplicate Sales%2FBilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5-Incorrect Purchase Order%23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D6-Invoice Detail Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D7-Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D8-Merchandise Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D9-No%2FIncorrect Purchase Order</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CSI_Issue_Type__c</picklist>
+        <values>
+            <fullName>Freight Lane Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Reason2__c</picklist>
+        <values>
+            <fullName>Added requirements to the road map</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asset not available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Availability provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad data in MDM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad data in SPIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog image sorting broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clarified the instructions or process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configured a solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCC back ordered - provided date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date cannot be changed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discontinued item - provided status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Division%2Fcategory never loaded into Online Catalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t have assets readily available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t know how to register</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t know where to get asset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t know who to contact for information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t know%2Fforgot password</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double product images - no feature product links</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Easy order - expedited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forgot password</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forwarded to phase II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freight lane opened%2Fdate corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information not readily available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of design skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of writing skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDO%2Fopened%2Fdate corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Kenmore comparable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need sub-up or replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New product declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order status provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Team Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provided product specification details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RRC back ordered - provided date to RRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recorded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referenced an existing Solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested updated forecast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routing%2Ffull%2Fnot corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routing%2Fopen%2Fdate corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setup corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sort by working incorrectly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Issue Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Issue Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System issue%2Fchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System issue%2Fsent to DOS support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System issue%2Fsent to IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System issue%2Fsent to hybrid support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Task Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uploaded your data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User does not want to manually add them</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User never set up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zip code status provided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>AM Wrong Product Ordered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASAP Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add%E2%80%99l Forms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add%E2%80%99l info needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backorder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bill Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CME Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancel Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Checking Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Common Carrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit %28Adjustments%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cust Wrong Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Satisfaction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DDC Short Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damage %3C 72 hrs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damage %3E 72 hrs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damage Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Overcharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Com System Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-com Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exch %2F Cust Sat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expedite Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freight Lane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install No Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoicing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item Set-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mult Repairs %2F Same Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NSC Wrong Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Haul Away</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA%E2%80%99s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POD Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Print Ord%2FInv</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Overcharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provide Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quotes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rekey Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Acct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return%2FCust Sat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Status Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Pick-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Cust ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong MOP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Chargeback_Status__c</picklist>
+        <values>
+            <fullName>Augusta Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collected%2FPaid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-house Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Additional Information from Sears Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Member Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Resolution with Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recovered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to 3rd Party Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sears Accepted Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncollectible</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Chargeback_Type__c</picklist>
+        <values>
+            <fullName>21-Damage Mdse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22-Duplicate Sale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23-Invoice Detail Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24-Incorrect PO%23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25-Signature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26-Did Not Receive Mdse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27-POD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28-Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>29-Poor Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31-RMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32-Shipping %26 Freight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36-Unauthorized Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>403-Recourse Concession</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>41-Credit Issued in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50-Unauthorized Buyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51-Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>52-Bldr Charged in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54-Sales Amount Exceeds Authorization Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>56-Small Balance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>58-Partial Shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>87-Sales Tax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90-No Matching Auth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recourse-Cont</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Citi_s_Response__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paperwork Incomplete</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Closed_Reason__c</picklist>
+        <values>
+            <fullName>CME Credit Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Delivery Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Withdrawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signature on File</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commercial_Credit_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exception Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to Blue Tarp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to Citi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to Recourse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expected_Cost__c</picklist>
+        <values>
+            <fullName>%241%2C000 - %245%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%245%2C000 - %2410%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24500 - %241%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Over %2410%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under %24500</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>File_Format__c</picklist>
+        <values>
+            <fullName>ETS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JPEG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TIFF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Final_Credit_Response__c</picklist>
+        <values>
+            <fullName>Approved Blue Tarp Service Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved Exception Service Account BT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved by Blue Tarp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved by Citi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved by Recourse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Declined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lender__c</picklist>
+        <values>
+            <fullName>3rd Party Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Receivable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Pro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MDO_Status__c</picklist>
+        <values>
+            <fullName>Back Charge Illegible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Charge Not Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Found Manually</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Found in Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No POD Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material_Request__c</picklist>
+        <values>
+            <fullName>Customer Presentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Catalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Package</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_Trade_Show_Request__c</picklist>
+        <values>
+            <fullName>Booth Display %28Booth size %3C 10x10%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booth Display %28Booth size %3E 10x10%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collateral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Ad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raffle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Show Deal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsorship</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Salesforce%2Ecom User</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>System Administrator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Platform__c</picklist>
+        <values>
+            <fullName>Desktop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tablet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Printer__c</picklist>
+        <values>
+            <fullName>Blooming Color</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sears Headquarters</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Availability_Type__c</picklist>
+        <values>
+            <fullName>Currently available from Kmart %28Kmart Item %23%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently available from Sears %28Sears Item %23%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently available from TGI %28TGI Item %23%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other vendor%2Fmanufacturer%2Fretailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sears Marketplace Item %28displayed on sears%2Ecom%2C offered from a different company%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Category__c</picklist>
+        <values>
+            <fullName>AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooking %2F Dishwashers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laundry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwaves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refrigerators %2F Freezers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Heater</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>Air Conditioners%2F Water Heaters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooking%2F Dishwashers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laundry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwaves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refrigerators%2F Freezers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Added requirements to the roadmap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Availability provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clarified the instructions or process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configured a solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DDC Back ordered - provided date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date Corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date can not be changed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directed to product database</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discontinued item %E2%80%93 Provided status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Easy Order %E2%80%93 Expedited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forecast loaded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forwarded to Phase II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freight lane opened%2FDate corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDO %2F Opened %2F Date Corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Product Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Product Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order status provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provided product specification details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RRC Backordered %E2%80%93 Provided date to RRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recorded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referenced an existing Solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested updated forecast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routing %2F Full %2F Not Corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routing %2F Open %2F Date Corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setup corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Issue Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Issue Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Issue%2FSent to DOS Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Issue%2FSent to Hybrid Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Issue%2FSent to IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Task Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transit Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uploaded your data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zip Code status provided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason__c</picklist>
+        <values>
+            <fullName>Account is on incorrect tier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot place order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial list price is high%2FLow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error Placing Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Not in SAP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recourse_Response__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Type__c</picklist>
+        <values>
+            <fullName>Commercial One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Pro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create New Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Line Increase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplemental Contract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Root_Cause__c</picklist>
+        <values>
+            <fullName>48 hour block on due</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backorder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCN process issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Common carrier delivery issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DDC truck full to MDO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOS system issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOS system shows product available but no freight lane capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Day added to item travel time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freight lane capacity Hybrid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freight lane capacity MDO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybrid delivery date issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybrid order process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item not at MDO from the DDC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item set up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late due in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDO received item late</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDO%2FSDO delivery to customer issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Move up date from vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No DOS connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No available stock%2Fno due in%E2%80%99s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not enough stock avail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not enough stock on order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OMC checking availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OMC checking status of order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OMC order entry process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA orders needing same day expedite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCAMP system issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCOPES system issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDO locations del date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales team checking availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales team checking status of order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales team order entry process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zip code delivery frequency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zip code set up incorrectly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_Update_Confirmation__c</picklist>
+        <values>
+            <fullName>APPSEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Del %2F Inst Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Resolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard OM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subtype__c</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boilerplate Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collateral Customization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copyrighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Landing Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Catalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email%2F Keywords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhibit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flyer%2F Brochure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Resolution Logo Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mainframe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MarcomCentral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Assets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Membership Dues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New User Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New%2FCustom Marketing Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-boilerplate Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pardot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Password Reset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presentation Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Images</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualified Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFPs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Show Special</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponssorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Status of Existing Order from Printer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suggestions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show Assets - Brochures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show Assets - Table Skirts</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Data requests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manage report subscriptions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual report automation request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modifications and enhancements to existing reports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New report request</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pricing requests</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Inquiry__c</picklist>
+        <values>
+            <fullName>Current Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Prospective Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Opportunity__c</picklist>
+        <values>
+            <fullName>Annual Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spot Buy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Request__c</picklist>
+        <values>
+            <fullName>Delivery failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Place an order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

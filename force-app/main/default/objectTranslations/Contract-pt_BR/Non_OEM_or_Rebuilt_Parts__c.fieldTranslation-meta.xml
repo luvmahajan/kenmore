@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Servicer Responsibilities Section --></help>
+    <label><!-- Non-OEM or Rebuilt Parts --></label>
+    <name>Non_OEM_or_Rebuilt_Parts__c</name>
+</CustomFieldTranslation>

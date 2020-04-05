@@ -1,0 +1,28 @@
+<apex:page standardController="Account" extensions="AccountCommercialContractController">
+<apex:pageMessages />
+
+<apex:form >
+	<apex:pageBlock >
+		<apex:pageBlockButtons location="top">
+	        <apex:commandButton onclick="window.open('{!DestURL}', '_parent', false);" value="Add Contract"/>
+	    </apex:pageBlockButtons>
+
+	    <apex:pageBlockTable styleClass="ui celled table segment" value="{!ContractList}" var="c" rendered="{!NOT(ISNULL(ContractList))}">      
+	        <apex:column headerValue="Name">
+	        	<apex:outputLink target="_parent" value="/{!c.contract.Id}" >{!c.contract.Name}</apex:outputLink>
+	        </apex:column>
+	        <apex:column value="{!c.contract.Contract_Type__c}"/>
+	        <apex:column value="{!c.contract.Document_Type__c}"/>
+	        <apex:column headerValue="Parent Contract">
+				<apex:outputText rendered="{!c.Parent}">&#10003;</apex:outputText>
+	        </apex:column>
+	        <apex:column value="{!c.contract.Start_Date__c}"/>
+	        <apex:column value="{!c.contract.End_Date__c}" />
+	        <apex:column value="{!c.contract.Total_Amount__c}" />       
+	        <apex:column headerValue="Attachment">
+	        	<apex:outputLink target="_blank" value="/servlet/servlet.FileDownload?file={!c.contract.Attachment__c}" >{!c.attachment.Name}</apex:outputLink>
+	        </apex:column>
+	    </apex:pageBlockTable>
+	</apex:pageBlock>
+</apex:form>
+</apex:page>

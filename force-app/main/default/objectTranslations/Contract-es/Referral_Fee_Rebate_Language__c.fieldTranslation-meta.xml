@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- NCM to enter the final approved contract language related to Rebates or Referral Fees. --></help>
+    <label><!-- Referral Fee/Rebate Language --></label>
+    <name>Referral_Fee_Rebate_Language__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BRD__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>BRD</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The Contract must be related to the same Opportunity as the related BRD.</errorMessage>
+        <filterItems>
+            <field>Home_Services_BRD_Process__c.Opportunity__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Opportunity__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Home_Services_BRD_Process__c</referenceTo>
+    <relationshipLabel>Contracts</relationshipLabel>
+    <relationshipName>Contracts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

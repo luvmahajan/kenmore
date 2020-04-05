@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email template is used for sending as a replying after the Account is created in SAP.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SAP Account Creation is Completed</name>
+    <style>none</style>
+    <subject>SAP Account is created.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

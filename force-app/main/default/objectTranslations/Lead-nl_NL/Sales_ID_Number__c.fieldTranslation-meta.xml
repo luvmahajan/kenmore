@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Identification number the retail associate enters into the cash register prior to a sale --></help>
+    <label><!-- Sales ID Number --></label>
+    <name>Sales_ID_Number__c</name>
+</CustomFieldTranslation>

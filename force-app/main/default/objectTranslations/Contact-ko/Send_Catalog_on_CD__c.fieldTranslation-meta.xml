@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Commercial users, check this box in order to have an electronic copy of the 2010 Sears Commercial Catalog sent to your customers.  Initial shipment will occur by or before October and shipments will be sent weekly thereafter. --></help>
+    <label><!-- Send Catalog (on CD) --></label>
+    <name>Send_Catalog_on_CD__c</name>
+</CustomFieldTranslation>

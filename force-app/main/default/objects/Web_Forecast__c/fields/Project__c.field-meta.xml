@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used only By Project Administrators</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used only By Project Administrators</inlineHelpText>
+    <label>Project/Contract</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

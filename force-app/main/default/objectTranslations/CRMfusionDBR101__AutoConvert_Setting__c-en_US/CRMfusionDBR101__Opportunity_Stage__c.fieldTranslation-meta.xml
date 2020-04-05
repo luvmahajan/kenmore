@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Opportunity stage to use when creating an opportunity during an automatic lead conversion. --></help>
+    <label><!-- Opportunity Stage --></label>
+    <name>CRMfusionDBR101__Opportunity_Stage__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Calculates the total of Won Opportunities --></help>
+    <label><!-- Won Opportunities --></label>
+    <name>Won_Opportunities_2__c</name>
+</CustomFieldTranslation>

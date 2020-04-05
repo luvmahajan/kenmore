@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>대형 DocuSign 봉투의 경우 문서 데이터 없이 봉투를 DocuSign으로 보내 DocuSign이 필요 시 데이터를 가져올 수 있도록 합니다. 이 옵션은 Salesforce 호출 제한을 초과하는 봉투를 보내는 경우에만 설정하십시오.</help>
+    <label><!-- Fetch Documents --></label>
+    <name>dsfs__FetchDocuments__c</name>
+</CustomFieldTranslation>

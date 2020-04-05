@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>LeadData</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>LeadData</label>
+    <tabs>standard-Lead</tabs>
+    <tabs>Marketing_Portal</tabs>
+    <tabs>CompletedSurvey__c</tabs>
+    <tabs>Quote_Adjustment__c</tabs>
+</CustomApplication>

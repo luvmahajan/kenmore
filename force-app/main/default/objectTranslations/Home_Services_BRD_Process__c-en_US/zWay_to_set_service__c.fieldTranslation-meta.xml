@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If other is chosen, explain in Other CCN needs/requirements --></help>
+    <label><!-- zFTC_Primary_way to set service --></label>
+    <name>zWay_to_set_service__c</name>
+    <picklistValues>
+        <masterLabel>Client System</masterLabel>
+        <translation><!-- Client System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online</masterLabel>
+        <translation><!-- Online --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone</masterLabel>
+        <translation><!-- Phone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPI</masterLabel>
+        <translation><!-- SPI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPI2</masterLabel>
+        <translation><!-- SPI2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Bench</masterLabel>
+        <translation><!-- Service Bench --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

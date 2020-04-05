@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account is on incorrect tier</fullName>
+                <default>false</default>
+                <label>Account is on incorrect tier</label>
+            </value>
+            <value>
+                <fullName>Cannot place order</fullName>
+                <default>false</default>
+                <label>Cannot place order</label>
+            </value>
+            <value>
+                <fullName>Commercial list price is high/Low</fullName>
+                <default>false</default>
+                <label>Commercial list price is high/Low</label>
+            </value>
+            <value>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+                <label>Customer Request</label>
+            </value>
+            <value>
+                <fullName>Error Placing Order</fullName>
+                <default>false</default>
+                <label>Error Placing Order</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Product Not in SAP</fullName>
+                <default>false</default>
+                <label>Product Not in SAP</label>
+            </value>
+            <value>
+                <fullName>Create new KAP</fullName>
+                <default>false</default>
+                <label>Create new KAP</label>
+            </value>
+            <value>
+                <fullName>Add/Remove account to existing KAP</fullName>
+                <default>false</default>
+                <label>Add/Remove account to existing KAP</label>
+            </value>
+            <value>
+                <fullName>Add/Remove items to existing KAP</fullName>
+                <default>false</default>
+                <label>Add/Remove items to existing KAP</label>
+            </value>
+            <value>
+                <fullName>Missing Commercial List Price</fullName>
+                <default>false</default>
+                <label>Missing Commercial List Price</label>
+            </value>
+            <value>
+                <fullName>Pricing error in SAP</fullName>
+                <default>false</default>
+                <label>Pricing error in SAP</label>
+            </value>
+            <value>
+                <fullName>Competitor pricing feedback</fullName>
+                <default>false</default>
+                <label>Competitor pricing feedback</label>
+            </value>
+            <value>
+                <fullName>Other (please explain)</fullName>
+                <default>false</default>
+                <label>Other (please explain)</label>
+            </value>
+            <value>
+                <fullName>Customer Request product information</fullName>
+                <default>false</default>
+                <label>Customer Request product information</label>
+            </value>
+            <value>
+                <fullName>Error when placing order</fullName>
+                <default>false</default>
+                <label>Error when placing order</label>
+            </value>
+            <value>
+                <fullName>Item missing information</fullName>
+                <default>false</default>
+                <label>Item missing information</label>
+            </value>
+            <value>
+                <fullName>Missing required parts for installation</fullName>
+                <default>false</default>
+                <label>Missing required parts for installation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How has the BI demonstrated that they are willing to pay more for great service or a strong relationship? --></help>
+    <label><!-- Service/relationship trumps lowest price --></label>
+    <name>Service_relationship_trumps_lowest_price__c</name>
+</CustomFieldTranslation>

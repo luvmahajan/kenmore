@@ -1,0 +1,14 @@
+Hello,
+
+This is a notification that the following Contract was rejected by {!ApprovalRequest.Process_Approver} during the approval process based on the following:
+
+Comments:  {!ApprovalRequest.Comments}
+
+Contract Link: {!Contract.Link} 
+Opportunity: {!Contract.Opportunity__c} 
+Account: {!Contract.Account} 
+
+Please review the comments and feedback by visiting the Contract record and making the appropriate changes.  After revision, please upload the new version using Chatter and resubmit the Contract for approval.
+
+
+Thank you.

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Chargeback Type --></label>
+    <name>Chargeback_Type__c</name>
+    <picklistValues>
+        <masterLabel>21-Damage Mdse</masterLabel>
+        <translation><!-- 21-Damage Mdse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>22-Duplicate Sale</masterLabel>
+        <translation><!-- 22-Duplicate Sale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>23-Invoice Detail Needed</masterLabel>
+        <translation><!-- 23-Invoice Detail Needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>24-Incorrect PO#</masterLabel>
+        <translation><!-- 24-Incorrect PO# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>25-Signature Request</masterLabel>
+        <translation><!-- 25-Signature Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>26-Did Not Receive Mdse</masterLabel>
+        <translation><!-- 26-Did Not Receive Mdse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>27-POD</masterLabel>
+        <translation><!-- 27-POD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>28-Pricing</masterLabel>
+        <translation><!-- 28-Pricing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>29-Poor Service</masterLabel>
+        <translation><!-- 29-Poor Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>31-RMA</masterLabel>
+        <translation><!-- 31-RMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>32-Shipping &amp; Freight</masterLabel>
+        <translation><!-- 32-Shipping &amp; Freight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>36-Unauthorized Sales</masterLabel>
+        <translation><!-- 36-Unauthorized Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>403-Recourse Concession</masterLabel>
+        <translation><!-- 403-Recourse Concession --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>41-Credit Issued in Error</masterLabel>
+        <translation><!-- 41-Credit Issued in Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>50-Unauthorized Buyer</masterLabel>
+        <translation><!-- 50-Unauthorized Buyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>51-Cancellation</masterLabel>
+        <translation><!-- 51-Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>52-Bldr Charged in Error</masterLabel>
+        <translation><!-- 52-Bldr Charged in Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>54-Sales Amount Exceeds Authorization Amount</masterLabel>
+        <translation><!-- 54-Sales Amount Exceeds Authorization Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>56-Small Balance</masterLabel>
+        <translation><!-- 56-Small Balance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>58-Partial Shipment</masterLabel>
+        <translation><!-- 58-Partial Shipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>87-Sales Tax</masterLabel>
+        <translation><!-- 87-Sales Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>90-No Matching Auth</masterLabel>
+        <translation><!-- 90-No Matching Auth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D28-Require Auth</masterLabel>
+        <translation><!-- D28-Require Auth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D29-Customer Disputes Merchandise</masterLabel>
+        <translation><!-- D29-Customer Disputes Merchandise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D30-Declined Authorization</masterLabel>
+        <translation><!-- D30-Declined Authorization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute to Chargeback - BT</masterLabel>
+        <translation><!-- Dispute to Chargeback - BT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute to Chargeback - Citi</masterLabel>
+        <translation><!-- Dispute to Chargeback - Citi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misc/Non Lender Related Charge back</masterLabel>
+        <translation><!-- Misc/Non Lender Related Charge back --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recourse-Cont</masterLabel>
+        <translation><!-- Recourse-Cont --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Chargeback</masterLabel>
+        <translation><!-- Third Party Chargeback --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

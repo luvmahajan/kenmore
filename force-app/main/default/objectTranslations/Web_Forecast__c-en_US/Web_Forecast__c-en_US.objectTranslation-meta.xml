@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Web Forecast</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Web Forecasts</value>
+    </caseValues>
+    <layouts>
+        <layout>System Admin Web forecast layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Status --></label>
+            <section>Email Status</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Web Forecast Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Status --></label>
+            <section>Email Status</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Limit to 35 characters --></errorMessage>
+        <name>Forecast_name_max_length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Special characters ; , : ~ ! @ # $ % &amp; * [ ]{ } / \ | are not allowed --></errorMessage>
+        <name>Forecast_name_special_characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Items are already added, Zipcode cannot be changed. Press Cancel to continue. --></errorMessage>
+        <name>Ship_To_Zipcode_Non_Editable</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Send_Email_with_Files --></label>
+        <name>Send_Email_with_Files</name>
+    </webLinks>
+</CustomObjectTranslation>

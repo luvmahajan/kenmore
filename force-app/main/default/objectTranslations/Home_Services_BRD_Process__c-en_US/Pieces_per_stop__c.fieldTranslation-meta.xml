@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pieces per stop --></label>
+    <name>Pieces_per_stop__c</name>
+    <picklistValues>
+        <masterLabel>1</masterLabel>
+        <translation><!-- 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2</masterLabel>
+        <translation><!-- 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3-5</masterLabel>
+        <translation><!-- 3-5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5-10</masterLabel>
+        <translation><!-- 5-10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>More than 10</masterLabel>
+        <translation><!-- More than 10 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Closed_Status_Chang_Date_Require</fullName>
+    <active>false</active>
+    <description>When Account Closed = Account Status Change then Account Close Date is Required</description>
+    <errorConditionFormula>AND(IF(ISCHANGED(Automation_Control__c),
+   IF( CONTAINS(Automation_Control_Type__c, &quot;Validation&quot;),FALSE,TRUE),TRUE),
+ISPICKVAL(  Account_Closed__c , &quot;Account Status Change&quot;), ISBLANK(  Account_Closed_Date__c  ))</errorConditionFormula>
+    <errorDisplayField>Account_Closed_Date__c</errorDisplayField>
+    <errorMessage>When Account Closed = Account Status Change then Account Close Date is Required</errorMessage>
+</ValidationRule>

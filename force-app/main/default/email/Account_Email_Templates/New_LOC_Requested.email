@@ -1,0 +1,5 @@
+Credit Team,
+
+A new Line of Credit has been requested for the Account {!Account.Name}. Please click on the link below to access the account and begin the Customer Service process.
+
+{!Account.Link}

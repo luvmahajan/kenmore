@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template is used to send people who create Cases new comments when they are added to cases.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case Update - SFDC Support</name>
+    <style>none</style>
+    <subject>Updated {!Case.Type} Case {!Case.CaseNumber} - {!Case.Priority} Priority</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <description>Expeditor - Select the category that best describes the type of assistance being requesting</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the category that best describes the type of assistance being requesting</inlineHelpText>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Checking Installer</fullName>
+                <default>false</default>
+                <label>Checking Installer</label>
+            </value>
+            <value>
+                <fullName>Install No Show</fullName>
+                <default>false</default>
+                <label>Install No Show</label>
+            </value>
+            <value>
+                <fullName>Customer Satisfaction</fullName>
+                <default>false</default>
+                <label>Customer Satisfaction</label>
+            </value>
+            <value>
+                <fullName>Delivery Overcharge</fullName>
+                <default>false</default>
+                <label>Delivery Overcharge</label>
+            </value>
+            <value>
+                <fullName>Product Overcharge</fullName>
+                <default>false</default>
+                <label>Product Overcharge</label>
+            </value>
+            <value>
+                <fullName>Tax</fullName>
+                <default>false</default>
+                <label>Tax</label>
+            </value>
+            <value>
+                <fullName>Wrong Cust ID</fullName>
+                <default>false</default>
+                <label>Wrong Cust ID</label>
+            </value>
+            <value>
+                <fullName>Wrong MOP</fullName>
+                <default>false</default>
+                <label>Wrong MOP</label>
+            </value>
+            <value>
+                <fullName>Credit (Adjustments)</fullName>
+                <default>false</default>
+                <label>Credit (Adjustments)</label>
+            </value>
+            <value>
+                <fullName>Quotes</fullName>
+                <default>false</default>
+                <label>Quotes</label>
+            </value>
+            <value>
+                <fullName>Sales Orders</fullName>
+                <default>false</default>
+                <label>Sales Orders</label>
+            </value>
+            <value>
+                <fullName>Add’l info needed</fullName>
+                <default>false</default>
+                <label>Add’l info needed</label>
+            </value>
+            <value>
+                <fullName>Citi</fullName>
+                <default>false</default>
+                <label>Citi</label>
+            </value>
+            <value>
+                <fullName>Invoicing</fullName>
+                <default>false</default>
+                <label>Invoicing</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Add’l Forms</fullName>
+                <default>false</default>
+                <label>Add’l Forms</label>
+            </value>
+            <value>
+                <fullName>CME Credit</fullName>
+                <default>false</default>
+                <label>CME Credit</label>
+            </value>
+            <value>
+                <fullName>Common Carrier</fullName>
+                <default>false</default>
+                <label>Common Carrier</label>
+            </value>
+            <value>
+                <fullName>Damage Property</fullName>
+                <default>false</default>
+                <label>Damage Property</label>
+            </value>
+            <value>
+                <fullName>Date Change</fullName>
+                <default>false</default>
+                <label>Date Change</label>
+            </value>
+            <value>
+                <fullName>DDC Short Ship</fullName>
+                <default>false</default>
+                <label>DDC Short Ship</label>
+            </value>
+            <value>
+                <fullName>Freight Lane</fullName>
+                <default>false</default>
+                <label>Freight Lane</label>
+            </value>
+            <value>
+                <fullName>Install Issues</fullName>
+                <default>false</default>
+                <label>Install Issues</label>
+            </value>
+            <value>
+                <fullName>No Haul Away</fullName>
+                <default>false</default>
+                <label>No Haul Away</label>
+            </value>
+            <value>
+                <fullName>No Install</fullName>
+                <default>false</default>
+                <label>No Install</label>
+            </value>
+            <value>
+                <fullName>POD Request</fullName>
+                <default>false</default>
+                <label>POD Request</label>
+            </value>
+            <value>
+                <fullName>Store Pick-up</fullName>
+                <default>false</default>
+                <label>Store Pick-up</label>
+            </value>
+            <value>
+                <fullName>Cancel Order</fullName>
+                <default>false</default>
+                <label>Cancel Order</label>
+            </value>
+            <value>
+                <fullName>Parts Order</fullName>
+                <default>false</default>
+                <label>Parts Order</label>
+            </value>
+            <value>
+                <fullName>Print Ord/Inv</fullName>
+                <default>false</default>
+                <label>Print Ord/Inv</label>
+            </value>
+            <value>
+                <fullName>Process Order</fullName>
+                <default>false</default>
+                <label>Process Order</label>
+            </value>
+            <value>
+                <fullName>Provide Quote</fullName>
+                <default>false</default>
+                <label>Provide Quote</label>
+            </value>
+            <value>
+                <fullName>Rekey Order</fullName>
+                <default>false</default>
+                <label>Rekey Order</label>
+            </value>
+            <value>
+                <fullName>Reports</fullName>
+                <default>false</default>
+                <label>Reports</label>
+            </value>
+            <value>
+                <fullName>Research Acct</fullName>
+                <default>false</default>
+                <label>Research Acct</label>
+            </value>
+            <value>
+                <fullName>Research Billing</fullName>
+                <default>false</default>
+                <label>Research Billing</label>
+            </value>
+            <value>
+                <fullName>Research Credit</fullName>
+                <default>false</default>
+                <label>Research Credit</label>
+            </value>
+            <value>
+                <fullName>Research Order</fullName>
+                <default>false</default>
+                <label>Research Order</label>
+            </value>
+            <value>
+                <fullName>Research Product</fullName>
+                <default>false</default>
+                <label>Research Product</label>
+            </value>
+            <value>
+                <fullName>Research Return</fullName>
+                <default>false</default>
+                <label>Research Return</label>
+            </value>
+            <value>
+                <fullName>Schedule Service</fullName>
+                <default>false</default>
+                <label>Schedule Service</label>
+            </value>
+            <value>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+                <label>Backorder</label>
+            </value>
+            <value>
+                <fullName>Item Set-up</fullName>
+                <default>false</default>
+                <label>Item Set-up</label>
+            </value>
+            <value>
+                <fullName>PA’s</fullName>
+                <default>false</default>
+                <label>PA’s</label>
+            </value>
+            <value>
+                <fullName>AM Wrong Product Ordered</fullName>
+                <default>false</default>
+                <label>AM Wrong Product Ordered</label>
+            </value>
+            <value>
+                <fullName>Claim</fullName>
+                <default>false</default>
+                <label>Claim</label>
+            </value>
+            <value>
+                <fullName>Cust Wrong Product</fullName>
+                <default>false</default>
+                <label>Cust Wrong Product</label>
+            </value>
+            <value>
+                <fullName>Damage &lt; 72 hrs</fullName>
+                <default>false</default>
+                <label>Damage &lt; 72 hrs</label>
+            </value>
+            <value>
+                <fullName>Damage &gt; 72 hrs</fullName>
+                <default>false</default>
+                <label>Damage &gt; 72 hrs</label>
+            </value>
+            <value>
+                <fullName>Exch / Cust Sat</fullName>
+                <default>false</default>
+                <label>Exch / Cust Sat</label>
+            </value>
+            <value>
+                <fullName>NSC Wrong Product</fullName>
+                <default>false</default>
+                <label>NSC Wrong Product</label>
+            </value>
+            <value>
+                <fullName>Return/Cust Sat</fullName>
+                <default>false</default>
+                <label>Return/Cust Sat</label>
+            </value>
+            <value>
+                <fullName>Service Related</fullName>
+                <default>false</default>
+                <label>Service Related</label>
+            </value>
+            <value>
+                <fullName>Wrong Item</fullName>
+                <default>false</default>
+                <label>Wrong Item</label>
+            </value>
+            <value>
+                <fullName>Address</fullName>
+                <default>false</default>
+                <label>Address</label>
+            </value>
+            <value>
+                <fullName>Bill Dispute</fullName>
+                <default>false</default>
+                <label>Bill Dispute</label>
+            </value>
+            <value>
+                <fullName>Expedite Date</fullName>
+                <default>false</default>
+                <label>Expedite Date</label>
+            </value>
+            <value>
+                <fullName>Mult Repairs / Same Unit</fullName>
+                <default>false</default>
+                <label>Mult Repairs / Same Unit</label>
+            </value>
+            <value>
+                <fullName>Parts</fullName>
+                <default>false</default>
+                <label>Parts</label>
+            </value>
+            <value>
+                <fullName>Schedule Date</fullName>
+                <default>false</default>
+                <label>Schedule Date</label>
+            </value>
+            <value>
+                <fullName>Status Update</fullName>
+                <default>false</default>
+                <label>Status Update</label>
+            </value>
+            <value>
+                <fullName>ASAP Issue</fullName>
+                <default>false</default>
+                <label>ASAP Issue</label>
+            </value>
+            <value>
+                <fullName>E-com Issue</fullName>
+                <default>false</default>
+                <label>E-com Issue</label>
+            </value>
+            <value>
+                <fullName>E-Com System Complaint</fullName>
+                <default>false</default>
+                <label>E-Com System Complaint</label>
+            </value>
+            <value>
+                <fullName>SAP</fullName>
+                <default>false</default>
+                <label>SAP</label>
+            </value>
+            <value>
+                <fullName>SAP Issue</fullName>
+                <default>false</default>
+                <label>SAP Issue</label>
+            </value>
+            <value>
+                <fullName>Tax Issue</fullName>
+                <default>false</default>
+                <label>Tax Issue</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

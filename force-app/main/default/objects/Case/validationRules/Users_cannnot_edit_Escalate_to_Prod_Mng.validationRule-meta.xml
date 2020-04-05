@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Users_cannnot_edit_Escalate_to_Prod_Mng</fullName>
+    <active>false</active>
+    <description>Users assigned to the Commercial Support Role cannot edit the Escalate to Product Manager checkbox</description>
+    <errorConditionFormula>AND( 
+$UserRole.Name &lt;&gt; &quot;Commercial Support&quot;, $User.ProfileId &lt;&gt; &quot;00e30000001FeAR&quot;, Escalate_to_Product_Manager__c = True)</errorConditionFormula>
+    <errorDisplayField>Escalate_to_Product_Manager__c</errorDisplayField>
+    <errorMessage>Only Commercial Support users can escalate to product managers</errorMessage>
+</ValidationRule>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Programs__c</fullName>
+    <externalId>false</externalId>
+    <label>Programs</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Business__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appliance Select Plus</fullName>
+                <default>false</default>
+                <label>Appliance Select Plus</label>
+            </value>
+            <value>
+                <fullName>Commercial Marketplace</fullName>
+                <default>false</default>
+                <label>Commercial Marketplace</label>
+            </value>
+            <value>
+                <fullName>Disaster Recover</fullName>
+                <default>false</default>
+                <label>Disaster Recover</label>
+            </value>
+            <value>
+                <fullName>EPP (Employee Purchase Plan)</fullName>
+                <default>false</default>
+                <label>EPP (Employee Purchase Plan)</label>
+            </value>
+            <value>
+                <fullName>Final Touch</fullName>
+                <default>false</default>
+                <label>Final Touch</label>
+            </value>
+            <value>
+                <fullName>My Gofer</fullName>
+                <default>false</default>
+                <label>My Gofer</label>
+            </value>
+            <value>
+                <fullName>Realty Home Advantage</fullName>
+                <default>false</default>
+                <label>Realty Home Advantage</label>
+            </value>
+            <value>
+                <fullName>Remodeling</fullName>
+                <default>false</default>
+                <label>Remodeling</label>
+            </value>
+            <value>
+                <fullName>TCO (Total Cost of Ownership)</fullName>
+                <default>false</default>
+                <label>TCO (Total Cost of Ownership)</label>
+            </value>
+            <value>
+                <fullName>Weatherization</fullName>
+                <default>false</default>
+                <label>Weatherization</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Appliance Select Plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Commercial Marketplace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Disaster Recover</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>EPP (Employee Purchase Plan)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Final Touch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>My Gofer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Realty Home Advantage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Remodeling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>TCO (Total Cost of Ownership)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Weatherization</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

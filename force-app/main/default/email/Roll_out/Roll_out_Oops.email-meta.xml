@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>Roll-out:  Oops</name>
+    <style>freeForm</style>
+    <subject>Oops - please disregard any new Task Notifications you may have received today from Salesforce.com</subject>
+    <textOnly>Hi {!Contact.FirstName},
+ 
+We are completing the load of your Account and Opportunity information to Saleforce.com and may have accidentally assigned you a task...or twelve!  If we did, please accept my sincere apology and please disregard any task notifications received from Salesforce.com today.
+ 
+For reference, an example of one of these accidentally sent task notification emails is below.
+ 
+Kind Regards,
+{!User.FirstName}
+ 
+ 
+-----Original Message-----
+From: no-reply@salesforce.com [mailto:no-reply@salesforce.com] On Behalf Of Tom Seibert
+Sent: Monday, July 12, 2010 1:51 PM
+To: {!Contact.LastName}, {!Contact.FirstName}
+Subject: Schedule Initial Appointment
+ 
+
+New Task
+
+To: {!Contact.Name}
+
+Tom Seibert has assigned you the following new task:
+
+Subject: Schedule Initial Appointment
+Opportunity: XYZ Property Mgmt
+Due Date: 7/13/2010
+Priority: Normal
+
+For more details, click the following link:
+
+https://na1.salesforce.com/00T30000015rKgpn4</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_length_shouldnt_be_greater_than_2</fullName>
+    <active>true</active>
+    <description>State length shouldn&#39;t be greater than 2</description>
+    <errorConditionFormula>LEN(SBQQ__State__c) &gt; 2</errorConditionFormula>
+    <errorDisplayField>SBQQ__State__c</errorDisplayField>
+    <errorMessage>State length shouldn&#39;t be greater than 2</errorMessage>
+</ValidationRule>

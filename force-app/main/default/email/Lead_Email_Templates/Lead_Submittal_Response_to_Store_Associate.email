@@ -1,0 +1,18 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<P style="TEXT-ALIGN: left" class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><SPAN class=apple-style-span><FONT color=black size=2 face="Times New Roman"><SPAN style="COLOR: black; FONT-SIZE: 10pt">Hello {!Lead.Store_Associate_Name__c},</SPAN></FONT></SPAN></P>
+<P class=MsoNormal><FONT color=black size=2 face="Times New Roman"><SPAN style="COLOR: black; FONT-SIZE: 10pt"><U1:P></U1:P></SPAN></FONT>&nbsp;</P>
+<P class=MsoNormal><FONT color=black size=2 face="Times New Roman"><SPAN style="COLOR: black; FONT-SIZE: 10pt"><U1:P>This email notification is confirmation that your referral for {!Lead.Company} has been forwarded to a Sears Commercial Account Manager.&nbsp; The Account Manager will be contacting {!Lead.Name} shortly in order to discuss their {!Lead.Products_Services__c} needs. We look forward to assisting the customer and ensuring they stay with Sears for the products and services they need!</SPAN></FONT></P>
+<P class=MsoNormal><FONT color=black size=2 face="Times New Roman"><SPAN style="COLOR: black; FONT-SIZE: 10pt"></SPAN></FONT>&nbsp;</P>
+<P class=MsoNormal><FONT color=black size=2 face="Times New Roman"><SPAN style="COLOR: black; FONT-SIZE: 10pt">Best Regards, </SPAN></FONT></P>
+<P class=MsoNormal><FONT color=black size=2 face="Times New Roman"><SPAN style="COLOR: black; FONT-SIZE: 10pt">Sears Commercial Team</SPAN></FONT></P>
+<P class=MsoNormal></U1:P></SPAN><SPAN style="FONT-SIZE: 10pt"></SPAN>&nbsp;</P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">&nbsp;</SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"></SPAN><SPAN style="FONT-SIZE: 10pt"></SPAN>&nbsp;</P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"></SPAN>&nbsp;</P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">&nbsp;</SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><?xml:namespace prefix = o /><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"></SPAN>&nbsp;</P>]]></td>
+</tr>
+</table>

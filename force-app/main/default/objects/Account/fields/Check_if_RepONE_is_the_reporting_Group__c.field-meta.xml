@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_if_RepONE_is_the_reporting_Group__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag this account as RepOne in the Reporting Group?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This should be a Yes or No box with the question: &quot;Flag this account as RepOne in the Reporting Group?&quot;</inlineHelpText>
+    <label>Check if RepONE is the reporting Group</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

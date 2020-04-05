@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry_Segmentation_Del__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry Segmentation Del</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sector__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Construction - Single Family General Contractors (including assembly of pre-manufactured homes onsite by GC)</fullName>
+                <default>false</default>
+                <label>Construction - Single Family General Contractors (including assembly of pre-manufactured homes onsite by GC)</label>
+            </value>
+            <value>
+                <fullName>Construction - Multi-Family General Contractors</fullName>
+                <default>false</default>
+                <label>Construction - Multi-Family General Contractors</label>
+            </value>
+            <value>
+                <fullName>Construction - Residential Remodeler</fullName>
+                <default>false</default>
+                <label>Construction - Residential Remodeler</label>
+            </value>
+            <value>
+                <fullName>Construction - Developer Multi Family (land is owned by the same company constructing)</fullName>
+                <default>false</default>
+                <label>Construction - Developer Multi Family (land is owned by the same company constructing)</label>
+            </value>
+            <value>
+                <fullName>Construction - Developer Single Family (land is owned by the same company constructing)</fullName>
+                <default>false</default>
+                <label>Construction - Developer Single Family (land is owned by the same company constructing)</label>
+            </value>
+            <value>
+                <fullName>Education - Colleges, Universities</fullName>
+                <default>false</default>
+                <label>Education - Colleges, Universities</label>
+            </value>
+            <value>
+                <fullName>Education - Junior Colleges</fullName>
+                <default>false</default>
+                <label>Education - Junior Colleges</label>
+            </value>
+            <value>
+                <fullName>Education - Elementary and Secondary School</fullName>
+                <default>false</default>
+                <label>Education - Elementary and Secondary School</label>
+            </value>
+            <value>
+                <fullName>Education - Other</fullName>
+                <default>false</default>
+                <label>Education - Other</label>
+            </value>
+            <value>
+                <fullName>Employee Purchase Plan</fullName>
+                <default>false</default>
+                <label>Employee Purchase Plan</label>
+            </value>
+            <value>
+                <fullName>Entertainment - Amusement, Gambling (except Casino Hotels), and Recreation Industries</fullName>
+                <default>false</default>
+                <label>Entertainment - Amusement, Gambling (except Casino Hotels), and Recreation Industries</label>
+            </value>
+            <value>
+                <fullName>Entertainment - Museums, Historical Sites, and Similar Institutions</fullName>
+                <default>false</default>
+                <label>Entertainment - Museums, Historical Sites, and Similar Institutions</label>
+            </value>
+            <value>
+                <fullName>Entertainment - Performing Arts, Spectator Sports, and Related Industries</fullName>
+                <default>false</default>
+                <label>Entertainment - Performing Arts, Spectator Sports, and Related Industries</label>
+            </value>
+            <value>
+                <fullName>Healthcare - Hospitals</fullName>
+                <default>false</default>
+                <label>Healthcare - Hospitals</label>
+            </value>
+            <value>
+                <fullName>Healthcare - Nursing and Residential Care Facilities</fullName>
+                <default>false</default>
+                <label>Healthcare - Nursing and Residential Care Facilities</label>
+            </value>
+            <value>
+                <fullName>Healthcare - Outpatient Clinics</fullName>
+                <default>false</default>
+                <label>Healthcare - Outpatient Clinics</label>
+            </value>
+            <value>
+                <fullName>Healthcare - Private Social Services</fullName>
+                <default>false</default>
+                <label>Healthcare - Private Social Services</label>
+            </value>
+            <value>
+                <fullName>Healthcare - Other</fullName>
+                <default>false</default>
+                <label>Healthcare - Other</label>
+            </value>
+            <value>
+                <fullName>Home Warranty</fullName>
+                <default>false</default>
+                <label>Home Warranty</label>
+            </value>
+            <value>
+                <fullName>Hospitality - Casino Hotels</fullName>
+                <default>false</default>
+                <label>Hospitality - Casino Hotels</label>
+            </value>
+            <value>
+                <fullName>Hospitality - Drinking Places (Alcoholic Beverages)</fullName>
+                <default>false</default>
+                <label>Hospitality - Drinking Places (Alcoholic Beverages)</label>
+            </value>
+            <value>
+                <fullName>Hospitality - Hotels and Motels (except Casino Hotels)</fullName>
+                <default>false</default>
+                <label>Hospitality - Hotels and Motels (except Casino Hotels)</label>
+            </value>
+            <value>
+                <fullName>Hospitality - Restaurants and Other Eating Places</fullName>
+                <default>false</default>
+                <label>Hospitality - Restaurants and Other Eating Places</label>
+            </value>
+            <value>
+                <fullName>Hospitality - Other</fullName>
+                <default>false</default>
+                <label>Hospitality - Other</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Insurance Replacement</fullName>
+                <default>false</default>
+                <label>Insurance Replacement</label>
+            </value>
+            <value>
+                <fullName>Manufacturer</fullName>
+                <default>false</default>
+                <label>Manufacturer</label>
+            </value>
+            <value>
+                <fullName>One Time Buy</fullName>
+                <default>false</default>
+                <label>One Time Buy</label>
+            </value>
+            <value>
+                <fullName>Original Equipment Manufacturers (OEM&#39;s)</fullName>
+                <default>false</default>
+                <label>Original Equipment Manufacturers (OEM&#39;s)</label>
+            </value>
+            <value>
+                <fullName>Public Administration - Military</fullName>
+                <default>false</default>
+                <label>Public Administration - Military</label>
+            </value>
+            <value>
+                <fullName>Public Administration - Other</fullName>
+                <default>false</default>
+                <label>Public Administration - Other</label>
+            </value>
+            <value>
+                <fullName>RERL - Residential Property Management</fullName>
+                <default>false</default>
+                <label>RERL - Residential Property Management</label>
+            </value>
+            <value>
+                <fullName>RERL - Residential Rental Property Owner/Lessor</fullName>
+                <default>false</default>
+                <label>RERL - Residential Rental Property Owner/Lessor</label>
+            </value>
+            <value>
+                <fullName>RERL - Home Inspection Services</fullName>
+                <default>false</default>
+                <label>RERL - Home Inspection Services</label>
+            </value>
+            <value>
+                <fullName>RERL - Real Estate Agents and Brokers</fullName>
+                <default>false</default>
+                <label>RERL - Real Estate Agents and Brokers</label>
+            </value>
+            <value>
+                <fullName>RERL - Rent-to-Own</fullName>
+                <default>false</default>
+                <label>RERL - Rent-to-Own</label>
+            </value>
+            <value>
+                <fullName>Retailers</fullName>
+                <default>false</default>
+                <label>Retailers</label>
+            </value>
+            <value>
+                <fullName>Retail Trade</fullName>
+                <default>false</default>
+                <label>Retail Trade</label>
+            </value>
+            <value>
+                <fullName>SHIP (Sears Home Improvement)</fullName>
+                <default>false</default>
+                <label>SHIP (Sears Home Improvement)</label>
+            </value>
+            <value>
+                <fullName>Third Party Administrators (TPA&#39;s)</fullName>
+                <default>false</default>
+                <label>Third Party Administrators (TPA&#39;s)</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Utilities - Electric</fullName>
+                <default>false</default>
+                <label>Utilities - Electric</label>
+            </value>
+            <value>
+                <fullName>Utilities - Natural Gas</fullName>
+                <default>false</default>
+                <label>Utilities - Natural Gas</label>
+            </value>
+            <value>
+                <fullName>Utilities - Sewage Treatment</fullName>
+                <default>false</default>
+                <label>Utilities - Sewage Treatment</label>
+            </value>
+            <value>
+                <fullName>Utilities - Water Supply and Irrigation</fullName>
+                <default>false</default>
+                <label>Utilities - Water Supply and Irrigation</label>
+            </value>
+            <value>
+                <fullName>Utilities - Other</fullName>
+                <default>false</default>
+                <label>Utilities - Other</label>
+            </value>
+            <value>
+                <fullName>Weatherization</fullName>
+                <default>false</default>
+                <label>Weatherization</label>
+            </value>
+            <value>
+                <fullName>Wholesale Trade</fullName>
+                <default>false</default>
+                <label>Wholesale Trade</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Retail Trade</controllingFieldValue>
+            <valueName>Retail Trade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and Warehousing</controllingFieldValue>
+            <valueName>Transportation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional, Scientific, and Technical Services</controllingFieldValue>
+            <controllingFieldValue>Real Estate and Rental and Leasing</controllingFieldValue>
+            <valueName>RERL - Home Inspection Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arts, Entertainment, and Recreation</controllingFieldValue>
+            <valueName>Entertainment - Amusement, Gambling (except Casino Hotels), and Recreation Industries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arts, Entertainment, and Recreation</controllingFieldValue>
+            <valueName>Entertainment - Museums, Historical Sites, and Similar Institutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arts, Entertainment, and Recreation</controllingFieldValue>
+            <valueName>Entertainment - Performing Arts, Spectator Sports, and Related Industries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction</controllingFieldValue>
+            <valueName>Construction - Single Family General Contractors (including assembly of pre-manufactured homes onsite by GC)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction</controllingFieldValue>
+            <valueName>Construction - Multi-Family General Contractors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction</controllingFieldValue>
+            <valueName>Construction - Residential Remodeler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction</controllingFieldValue>
+            <valueName>Construction - Developer Multi Family (land is owned by the same company constructing)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction</controllingFieldValue>
+            <valueName>Construction - Developer Single Family (land is owned by the same company constructing)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate and Rental and Leasing</controllingFieldValue>
+            <valueName>RERL - Residential Property Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate and Rental and Leasing</controllingFieldValue>
+            <valueName>RERL - Residential Rental Property Owner/Lessor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate and Rental and Leasing</controllingFieldValue>
+            <valueName>RERL - Real Estate Agents and Brokers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate and Rental and Leasing</controllingFieldValue>
+            <valueName>RERL - Rent-to-Own</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Administration</controllingFieldValue>
+            <valueName>Public Administration - Military</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Administration</controllingFieldValue>
+            <valueName>Public Administration - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Utilities - Electric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Utilities - Natural Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Utilities - Sewage Treatment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utilities</controllingFieldValue>
+            <valueName>Utilities - Water Supply and Irrigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Educational Services</controllingFieldValue>
+            <valueName>Education - Colleges, Universities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Educational Services</controllingFieldValue>
+            <valueName>Education - Junior Colleges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Educational Services</controllingFieldValue>
+            <valueName>Education - Elementary and Secondary School</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Care and Social Assistance</controllingFieldValue>
+            <valueName>Healthcare - Hospitals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Care and Social Assistance</controllingFieldValue>
+            <valueName>Healthcare - Nursing and Residential Care Facilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Care and Social Assistance</controllingFieldValue>
+            <valueName>Healthcare - Outpatient Clinics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Care and Social Assistance</controllingFieldValue>
+            <valueName>Healthcare - Private Social Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accommodation and Food Services</controllingFieldValue>
+            <valueName>Hospitality - Casino Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accommodation and Food Services</controllingFieldValue>
+            <valueName>Hospitality - Drinking Places (Alcoholic Beverages)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accommodation and Food Services</controllingFieldValue>
+            <valueName>Hospitality - Hotels and Motels (except Casino Hotels)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accommodation and Food Services</controllingFieldValue>
+            <valueName>Hospitality - Restaurants and Other Eating Places</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accommodation and Food Services</controllingFieldValue>
+            <valueName>Hospitality - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance and Insurance</controllingFieldValue>
+            <valueName>Insurance Replacement</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

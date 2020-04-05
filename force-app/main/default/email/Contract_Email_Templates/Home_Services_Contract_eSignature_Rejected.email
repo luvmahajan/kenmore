@@ -1,0 +1,12 @@
+Hello,
+
+This is a notification that the following Contract was declined after being sent for eSignature:
+
+Contract Link: {!Contract.Link} 
+Opportunity: {!Contract.Opportunity__c} 
+Account: {!Contract.Account} 
+
+Please review the comments and resend the Contract for eSignature. Please remember to update the correct DocuSign envelope in the 'DocuSign Envelope - Customer eSignature' field.
+
+
+Thank you.

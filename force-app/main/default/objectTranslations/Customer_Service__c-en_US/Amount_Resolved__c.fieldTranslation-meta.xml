@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Credit Specialist to indicate the amount resolved from the chargeback --></help>
+    <label><!-- Amount Resolved --></label>
+    <name>Amount_Resolved__c</name>
+</CustomFieldTranslation>

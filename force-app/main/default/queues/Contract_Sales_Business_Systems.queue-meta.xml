@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>csbsys@searshc.com</email>
+    <name>Contract Sales Business Systems</name>
+    <queueMembers>
+        <users>
+            <user>william.pope@kenmoredirect.com</user>
+            <user>charita.dantiganc@searshc.com</user>
+            <user>ryan.ly@kenmoredirect.com</user>
+            <user>terry.morgan@kenmoredirect.com</user>
+            <user>tiffany.holmes@kenmoredirect.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

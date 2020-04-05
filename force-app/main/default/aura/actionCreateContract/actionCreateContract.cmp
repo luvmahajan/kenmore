@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader,lightning:isUrlAddressable" >
+    <lightning:quickActionAPI aura:id="quickActionAPI"/>
+<div class="slds-box">
+    <div style="font-size:16px;font-weight: bold;">
+        Actions to Take
+    </div>
+    <br/>
+<div class="slds-box">
+        <lightning:button label="Create Contract" onclick="{!c.callCreateContractAction}"/>        
+    </div>
+    <br/><br/>
+    </div>
+
+</aura:component>

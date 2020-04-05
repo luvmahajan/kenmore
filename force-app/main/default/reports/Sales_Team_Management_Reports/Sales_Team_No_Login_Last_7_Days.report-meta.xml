@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount/PARENTGROUPVAL(RowCount, GRAND_SUMMARY)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>BucketField_52956506</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% of Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_52956506</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>User.District_Name__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Capitol District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carolina District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Empire District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Florida District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Northeast District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Southeast District</sourceValue>
+            </sourceValues>
+            <value>East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Great Lakes District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gulf Coast District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Heartland District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Midwest District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>North Texas District</sourceValue>
+            </sourceValues>
+            <value>Central</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Northern California District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pacific Northwest District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Development West Region</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Southwest District</sourceValue>
+            </sourceValues>
+            <value>West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Single Price District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National Accounts District</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Military ADC District</sourceValue>
+            </sourceValues>
+            <value>National</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Inside Sales District</sourceValue>
+            </sourceValues>
+            <value>Inside Sales</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>FULL_NAME</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>User.Territory_ID__c</field>
+    </columns>
+    <columns>
+        <field>User.Region_Name__c</field>
+    </columns>
+    <columns>
+        <field>PROFILE</field>
+    </columns>
+    <columns>
+        <field>ROLE</field>
+    </columns>
+    <columns>
+        <field>User.District_Name__c</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <field>LAST_LOGIN</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+        <criteriaItems>
+            <column>ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>east,west,central,national,inside</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_LOGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>LAST_N_DAYS:7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Suelynn Cole</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_52956506</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Sales Team No Login Last 7 Days</name>
+    <params>
+        <name>active</name>
+        <value>active</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

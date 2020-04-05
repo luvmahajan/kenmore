@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Existing_Operational_Metrics__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Paste Client Profitability Dashboard Link, if not on dashboard please provide.</inlineHelpText>
+    <label>Existing Operational Metrics</label>
+    <length>500</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

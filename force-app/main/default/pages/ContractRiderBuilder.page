@@ -1,0 +1,114 @@
+<apex:page standardController="Contract" extensions="ContractRiderBuilderController" lightningStylesheets="true">
+    <apex:form >
+        <style type = "text/css">
+        .custPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 1%;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            width: 500px;
+            margin-left: -250px;
+            top:100px;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+        </style>
+        
+        <apex:pageBlock >
+        <apex:outputPanel id="tstpopup">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                <apex:outputText value="Title"/>
+                <br/>
+                <apex:inputText value="{!addedTitle}" style="width:75%"/>
+                <br/><br/>
+                <apex:outputText value="Description"/>
+                <br/>
+                    <apex:inputTextarea value="{!addedDescription}" style="width:75%" />
+                
+                <br/><br/>
+                <apex:commandButton value="Add" action="{!addSelectedCondition}" style="color:white;background:#0070d2;" rerender="tstpopup,outcontractrider"/>
+                <apex:commandButton value="Cancel" action="{!CancelPopup}" rerender="tstpopup" />
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        <apex:outputPanel id="tstpopup2">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp2}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp2}">
+            <apex:pageBlockTable value="{!lstSelDefaultRider}" var="rd">
+                
+                    <apex:column style="width:3%">
+                        <apex:inputCheckbox value="{!rd.sel_check}"/>
+                    </apex:column>
+                <apex:column value="{!rd.rider_title}" style="text-align:left;width:5%;" headerValue="Title"/>
+                <apex:column style="text-align:left;width:47%;" headerValue="Description">
+                    <apex:outputText value="{!rd.rider_desc}" escape="false"></apex:outputText>
+                </apex:column>
+            </apex:pageBlockTable>
+                <br/><br/>
+                <apex:commandButton value="Add Selected" action="{!addSelectedCondition2}" style="color:white;background:#0070d2;" rerender="tstpopup2,outcontractrider"/>
+                <apex:commandButton value="Select All" action="{!selectAllDefault}" style="color:white;background:#4bca81;" rerender="tstpopup2,outcontractrider"/>
+                <apex:commandButton value="Cancel" action="{!CancelPopup2}" rerender="tstpopup2" />
+            </apex:outputPanel>
+        </apex:outputPanel> 
+        </apex:pageBlock>
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton value="Add Rider Defaults" action="{!addDefaults}" rerender="tstpopup2"/>
+                <apex:commandButton value="Add Rider Condition" action="{!addCondition}" rerender="tstpopup"/>
+                <apex:commandButton value="Quick Save" action="{!actionQuickSave}"  /><!--
+                <apex:commandButton value="Save" action="{!actionSave}"  style="color:white;background:#0070d2;"/>-->
+                <apex:commandButton value="Save & Generate Document" action="{!actionSaveGenerate}"  style="color:white;background:#0070d2;"/><!--
+                <apex:commandlink action="{!GoToDocument}" target="_blank">
+                    <apex:commandButton value="Preview Document"/>
+                </apex:commandLink> -->
+                <apex:commandButton value="Cancel" action="{!actionCancel}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+
+        <apex:outputPanel id="outcontractrider" >
+        <apex:outputPanel rendered="{!renTable}">
+        <apex:pageBlock title="Sears Contract Rider" mode="inlineEdit">
+               <apex:repeat value="{!lstSelectedContractRider}" var="rd" >
+                    <apex:commandLink value="Up" action="{!actionUp}" reRender="outcontractrider">
+                        <apex:param name="ord" value="{!rd.Sort_Order__c}" />
+                    </apex:commandLink>
+                   &nbsp;
+                    <apex:commandLink value="Down" action="{!actionDown}" reRender="outcontractrider">
+                        <apex:param name="ord" value="{!rd.Sort_Order__c}" />
+                    </apex:commandLink>
+                   &nbsp;
+                    <apex:commandLink value="Delete" action="{!actionDelete}" reRender="outcontractrider">
+                        <apex:param name="ord" value="{!rd.Sort_Order__c}" />
+                    </apex:commandLink>
+                   <br/>
+                   <apex:outputField value="{!rd.Title__c}" style="text-align:left;font-weight: bold" rendered="{!IF(OR(rd.Title__c=='Introduction',rd.Title__c==''), false, true)}" />
+                   <apex:outputField value="{!rd.Description__c}"  style="text-align:left;"  rendered="{!IF(rd.Description__c=='', false, true)}" />
+                   <apex:outputText rendered="{!IF(AND(rd.Title__c=='',rd.Description__c==''), false, true)}">
+                   <br/>
+                   </apex:outputText>
+                </apex:repeat> 
+        </apex:pageBlock>
+            
+        </apex:outputPanel>
+            <apex:outputPanel rendered="{!NOT(renTable)}">
+                Copy the default riders or add custom conditions.
+            </apex:outputPanel>
+            </apex:outputPanel>
+        
+    </apex:form>
+</apex:page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Resolved__c</fullName>
+    <description>Credit Specialist to update the amount we were able to resolve</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Credit Specialist to update the amount we were able to resolve</inlineHelpText>
+    <label>Amount Resolved</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

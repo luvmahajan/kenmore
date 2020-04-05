@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Where_did_the_customer_contact_you__c</fullName>
+    <description>This field is used to identify external lead sources for commercial business.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select Augusta if a customer is calling into Augusta Center.  Select Full Line Stores, if the form is being filled at a retail store.</inlineHelpText>
+    <label>Where did the customer contact you?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Augusta</fullName>
+                <default>false</default>
+                <label>Augusta</label>
+            </value>
+            <value>
+                <fullName>Full Line Stores</fullName>
+                <default>false</default>
+                <label>Full Line Stores</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

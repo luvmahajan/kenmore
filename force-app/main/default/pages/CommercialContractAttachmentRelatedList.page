@@ -1,0 +1,26 @@
+<apex:page standardController="Commercial_Contract__c" extensions="AccountCommercialContractRLController">
+   <apex:pageMessages />
+
+<apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockButtons location="top" rendered="{!renderButtons}">
+            <apex:commandButton onclick="window.open('{!DestURL}', '_parent', false);" value="Upload New Document"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable styleClass="ui celled table segment" value="{!AttachmentList}" var="a" rendered="{!NOT(ISNULL(AttachmentList))}">    
+             <apex:column headerValue="Action" rendered="{!renderButtons}">   
+                <apex:commandLink action="{!deleteContract}" value="Delete" style="color:#015ba7">
+                <apex:param name="recordid" value="{!a.id}"/>
+                </apex:commandLink>
+            </apex:column>  
+            <apex:column headerValue="Type">
+                <apex:outputText value="Attachment" />
+            </apex:column>
+            <apex:column headerValue="File Name">
+                <apex:outputLink target="_blank" value="/servlet/servlet.FileDownload?file={!a.Id}" >{!a.Name}</apex:outputLink>
+            </apex:column>     
+            <apex:column value="{!a.CreatedDate}"/>
+            <apex:column value="{!a.CreatedById}"/>         
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

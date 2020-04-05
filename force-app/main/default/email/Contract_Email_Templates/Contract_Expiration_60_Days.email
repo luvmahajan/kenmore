@@ -1,0 +1,10 @@
+This is a notice that the contract on your account will expire in 60 days.  Please review the details and take the appropriate actions:
+
+Account: {!Commercial_Contract__c.Account__c}
+Contract Name: {!Commercial_Contract__c.Name}
+Contract Type: {!Commercial_Contract__c.Contract_Type__c}
+Document Type: {!Commercial_Contract__c.Document_Type__c}
+Start Date: {!Commercial_Contract__c.Start_Date__c}
+End Date: {!Commercial_Contract__c.End_Date__c}
+
+Link to the record: {!Commercial_Contract__c.Link}

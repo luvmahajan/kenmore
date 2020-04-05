@@ -1,0 +1,160 @@
+<apex:page standardController="Contract" extensions="ContractRiderBuilderController" lightningStylesheets="true" renderAs="pdf"  applyBodyTag="false">
+    <html>
+        <head>
+            <style type="text/css">
+                
+            </style>
+        </head>
+        <body>
+            <apex:outputPanel rendered="{!renTable}">
+                <apex:pageBlock title="Sears Contract Rider" >
+                    <apex:repeat value="{!lstSelectedContractRider}" var="rd" >
+                        <apex:outputText value="{!rd.Title__c}" style="text-align:left;font-weight: bold" rendered="{!IF(OR(rd.Title__c=='Introduction',rd.Title__c==''), false, true)}" />
+                        <apex:outputField value="{!rd.Description__c}"  style="text-align:left;"  rendered="{!IF(rd.Description__c=='', false, true)}"/>
+                        <apex:outputText rendered="{!IF(AND(rd.Title__c=='',rd.Description__c==''), false, true)}">
+                            <br/>
+                        </apex:outputText>
+                    </apex:repeat> 
+                    
+                    <table style="width:100%">
+                        <tr/><tr/><tr/><tr/><tr/>
+                        <tr/><tr/><tr/><tr/><tr/>
+                        <tr>
+                            <td style="width=5%;text-align=left">
+                            </td>
+                            <td style="width=15%;text-align=left">
+                                <apex:outputText value="SEARS, ROEBUCK AND CO., D/B/A SEARS COMMERCIAL"></apex:outputText>
+                            </td>
+                            <td style="width=80%;text-align=left">
+                                <apex:outputText value="BUYER"></apex:outputText>
+                            </td>
+                        </tr>
+                        <!--
+                        <tr>
+                            <td style="width=5%;text-align=left">
+                            </td>
+                            <td style="width=15%;text-align=left">
+                                <apex:outputText value="COMMERCIAL"></apex:outputText>
+                            </td>
+                            <td style="width=80%;text-align=left">
+                            </td>
+                        </tr>
+                        -->
+                        <tr/><tr/><tr/><tr/><tr/>
+                        <tr/><tr/><tr/><tr/><tr/>
+                        <tr>
+                            <td style="width=5%;text-align=left">
+                            </td>
+                            <td style="width=15%;text-align=left;font-size:20px;">
+                                <apex:outputText >
+                                By: <u>{t:s;r:y;o:"Signer1";}</u>
+                                </apex:outputText>
+                            </td>
+                            <td style="width=80%;text-align=left;font-size:20px;">
+                                <apex:outputText >
+                                By: <u>{t:s;r:y;o:"Signer2";}</u>
+                                </apex:outputText>
+                            </td>
+                        </tr>
+                        <tr/><tr/><tr/><tr/><tr/>
+                        <tr>
+                            <td style="width=5%;text-align=left">
+                            </td>
+                            <td style="width=15%;text-align=left;">
+                                <apex:outputText >
+                                Name: <u>{{t:t;r:n;o:"Signer1";l:"Name";}}</u>
+                                </apex:outputText>
+                            </td>
+                            <td style="width=80%;text-align=left;">
+                                <apex:outputText >
+                                Name: <u>{{t:t;r:n;o:"Signer2";l:"Name";}}</u>
+                                </apex:outputText>
+                            </td>
+                        </tr>
+                        <tr/><tr/><tr/><tr/><tr/>
+                        <tr>
+                            <td style="width=5%;text-align=left">
+                            </td>
+                            <td style="width=15%;text-align=left;">
+                                <apex:outputText >
+                                Title: <u>{{t:t;r:n;o:"Signer1";l:"Title";}}</u>
+                                </apex:outputText>
+                            </td>
+                            <td style="width=80%;text-align=left;">
+                                <apex:outputText >
+                                Title: <u>{{t:t;r:n;o:"Signer2";l:"Title";}}</u>
+                                </apex:outputText>
+                            </td>
+                        </tr>
+                        <tr/><tr/><tr/><tr/><tr/>
+                        <tr>
+                            <td style="width=5%;text-align=left">
+                            </td>
+                            <td style="width=15%;text-align=left;">
+                                <apex:outputText >
+                                Date: <u>{{t:t;r:n;o:"Signer1";l:"Date";}}</u>
+                                </apex:outputText>
+                            </td>
+                            <td style="width=80%;text-align=left;">
+                                <apex:outputText >
+                                Date: <u>{{t:t;r:n;o:"Signer2";l:"Date";</u>
+                                </apex:outputText>
+                            </td>
+                        </tr><!--
+                        <tr/><tr/><tr/><tr/><tr/>
+                        <tr>
+                            <td style="width=5%;text-align=left">
+                            </td>
+                            <td style="width=15%;text-align=left;">
+                                <apex:outputText >
+                                Date: <u>{{t:t;r:n;o:"Signer1";l:"Date";w:20;v:"13435fa6c2a17f83177fcbb5c4a9376ce85befeb";}}</u>
+                                </apex:outputText>
+                            </td>
+                            <td style="width=80%;text-align=left;">
+                                <apex:outputText >
+                                Date: <u>{{t:t;r:n;o:"Signer2";l:"Date";w:20;v:"13435fa6c2a17f83177fcbb5c4a9376ce85befeb";}}</u>
+                                </apex:outputText>
+                            </td>
+                        </tr>
+                        <!--
+                        <tr>
+                            <td style="width=5%;text-align=left">
+                            </td>
+                            <td style="width=15%;text-align=left">
+                                <apex:outputText value="Name: ____________________________"></apex:outputText>
+                            </td>
+                            <td style="width=80%;text-align=left">
+                                <apex:outputText value="Name: ____________________________"></apex:outputText>
+                            </td>
+                        </tr>
+                        <tr/><tr/><tr/><tr/><tr/>
+                        <tr>
+                            <td style="width=5%;text-align=left">
+                            </td>
+                            <td style="width=15%;text-align=left">
+                                <apex:outputText value="Title: _____________________________"></apex:outputText>
+                            </td>
+                            <td style="width=80%;text-align=left">
+                                <apex:outputText value="Title: _____________________________"></apex:outputText>
+                            </td>
+                        </tr>
+                        <tr/><tr/><tr/><tr/><tr/>
+                        <tr>
+                            <td style="width=5%;text-align=left">
+                            </td>
+                            <td style="width=15%;text-align=left">
+                                <apex:outputText value="Date: _____________________________"></apex:outputText>
+                            </td>
+                            <td style="width=80%;text-align=left">
+                                <apex:outputText value="Date: _____________________________"></apex:outputText>
+                            </td>
+                        </tr>
+						-->
+                    </table>
+                    
+                </apex:pageBlock>
+            </apex:outputPanel>
+        </body>
+    </html>
+    
+</apex:page>

@@ -1,0 +1,9 @@
+Hi {!NullValue(Contact.FirstName, "Sir or Madam")},
+
+I wanted to reach out and introduce myself and see if you had any appliance needs.  Looking forward to hearing from you soon!
+
+{!User.FirstName} {!User.LastName}
+{!User.Title}
+{!User.Email}
+931-221-2488
+Sears Commercial

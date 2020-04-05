@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Drug Enforcement Agency ID/ Number --></help>
+    <label><!-- DEA Number --></label>
+    <name>DEA_Number__c</name>
+</CustomFieldTranslation>

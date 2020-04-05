@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Turn account over to Channel Ops --></label>
+    <name>Turn_account_over_to_Channel_Ops__c</name>
+</CustomFieldTranslation>

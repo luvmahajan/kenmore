@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Not to be used on any record just hidden --></help>
+    <label><!-- Account Owner Name (paradot) --></label>
+    <name>Account_Owner_Name_paradot__c</name>
+</CustomFieldTranslation>

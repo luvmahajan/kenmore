@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Client description of their customers’ dissatisfaction: poor/missed deliveries/timelines/budget, etc. --></help>
+    <label><!-- B3 Is in Trouble mode --></label>
+    <name>B3_Is_in_Trouble_mode__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7</masterLabel>
+        <translation><!-- 7 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indica quanti giorni prima della scadenza si desidera inviare un messaggio e-mail per segnalare ai destinatari l&#39;avvicinarsi della scadenza per il completamento. Tale avviso viene inviato solo ai destinatari che non hanno ancora completato la transazione.</help>
+    <label><!-- Warn of expiration in N day(s) prior --></label>
+    <name>dsfs__Day_Prior_to_Warn_of_expiration__c</name>
+</CustomFieldTranslation>

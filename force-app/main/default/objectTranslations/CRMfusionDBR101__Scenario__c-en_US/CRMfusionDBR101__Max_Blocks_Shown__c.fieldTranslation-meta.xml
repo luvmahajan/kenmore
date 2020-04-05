@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If this is a blocking scenario, limit the number of blocking duplicates shown for this scenario.  This number cannot be higher than 20. --></help>
+    <label><!-- Max Blocks Shown --></label>
+    <name>CRMfusionDBR101__Max_Blocks_Shown__c</name>
+</CustomFieldTranslation>

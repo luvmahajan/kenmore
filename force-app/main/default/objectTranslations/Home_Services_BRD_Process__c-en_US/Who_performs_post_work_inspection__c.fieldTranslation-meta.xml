@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Who performs post work inspection --></label>
+    <name>Who_performs_post_work_inspection__c</name>
+</CustomFieldTranslation>

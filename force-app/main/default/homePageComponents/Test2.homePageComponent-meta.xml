@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;b&gt;&amp;lt;iframe src=&amp;quot;/apex/&lt;b&gt;Dashboard&lt;/b&gt;&amp;quot; frameborder=&amp;quot;0&amp;quot; height=&amp;quot;1000px&amp;quot; width=&amp;quot;100%&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/b&gt;&lt;br&gt; </body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

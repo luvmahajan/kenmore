@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Chargeback_Cases_not_Assigned</fullName>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CASES.ESCALATION_STATE</columns>
+    <columns>CASES.STATUS</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Credit,Case.Chargeback</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Resolved,Closed (No Customer Response)</value>
+    </filters>
+    <label>Credit/Chargeback Cases not Assigned</label>
+    <language>en_US</language>
+    <queue>Credit_Team</queue>
+    <sharedTo>
+        <group>Team_Eric</group>
+        <roleAndSubordinates>Credit_Team</roleAndSubordinates>
+        <roleAndSubordinates>Sears_Administrator</roleAndSubordinates>
+    </sharedTo>
+</ListView>

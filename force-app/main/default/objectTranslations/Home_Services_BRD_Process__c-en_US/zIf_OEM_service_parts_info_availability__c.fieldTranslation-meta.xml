@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If OEM, do you have service manuals, schematics, and parts list and if not when will we receive them? --></help>
+    <label><!-- zFTC_If OEM, service/parts info avail --></label>
+    <name>zIf_OEM_service_parts_info_availability__c</name>
+</CustomFieldTranslation>

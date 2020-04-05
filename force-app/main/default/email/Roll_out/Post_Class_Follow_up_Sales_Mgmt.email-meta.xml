@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>Post-Class Follow-up Sales Mgmt</name>
+    <style>freeForm</style>
+    <subject>Follow-up to Effective Sales Management Using Salesforce.com</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for attending Effective
+Sales Management Using Salesforce.com. 
+The purpose of this email is to provide you with the documents reviewed
+during training, instructions on how to complete your Application Assessment (Test) and guidance on the next steps in your training roadmap.  
+
+ 
+
+Several links are provided below.  In order to download the appropriate
+document, or complete the appropriate assessment, please click on the link or copy/paste it into your browser.
+
+ 
+
+Links to the presentations reviewed during your classroom training
+session can be found below:
+
+□        
+Reinforcing the Fundamentals (Tuesday morning)
+
+https://na1.salesforce.com/sfc/p/30000000lp1bxpBXYhsLZ47LSXOrKN2tbgVIRws=
+
+□        
+Salesforce Mobile and Salesforce.com Roadmap
+(Tuesday afternoon)
+
+https://na1.salesforce.com/sfc/p/30000000lp1bvBjKka7pr.X8Aje7Vk4bjRJyDKA=
+
+□        
+Managing Performance &amp; Managing Change
+(Wednesday morning)
+
+https://na1.salesforce.com/sfc/p/30000000lp1btpPyyhIkyDMmNdKxUpd8lSGLvQY=
+
+ 
+
+The feedback you provided during this session was used to
+finalize the presentation materials for Effective
+Selling with Salesforce.com, our Account Manager classroom training
+session.  As such, we have created the
+following “cheat-sheet” for you and your Account Managers:
+
+https://na1.salesforce.com/sfc/p/30000000lp1bb47Hvo6UjffIA0ErUUwMauIfd10=
+
+ 
+
+As we continue to learn together, it is important that we
+assess the skills which each trainee has developed.  Please take 15 minutes to complete this
+Application Assessment regarding the materials covered in your Training Roadmap
+up to, and including your classroom training session:
+
+http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx
+(select course 3071)
+
+ 
+
+Looking ahead, please be aware of and ready for the
+following:
+
+□        
+Sales Management Training Roadmap
+
+o       Classroom
+training debrief to be scheduled for the week of 8/16
+
+□        
+Account Manager Training Roadmap
+
+o       Data
+Accuracy Review to be complete by 8/6
+
+o       Application
+Assessment to be complete within 1 week of classroom training
+
+o       Classroom
+district debriefs to occur within 2 weeks of classroom training (DM led)
+
+o       Regional
+district debriefs to occur within 3 weeks of classroom training (Implementation
+team led)
+
+ 
+
+Thank you for having the courage to change your habits and
+the leadership to help your teams as they change.  
+
+ 
+
+Best,
+
+{!User.FirstName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

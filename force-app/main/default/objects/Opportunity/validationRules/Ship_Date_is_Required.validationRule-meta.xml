@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_Date_is_Required</fullName>
+    <active>false</active>
+    <description>If Business = Commercial and the Stage is &gt; Determine Solution than Ship Date is a required field.</description>
+    <errorConditionFormula>AND( 
+$UserRole.Name &lt;&gt; &quot;Orlando District&quot;, $UserRole.Name &lt;&gt; &quot;Baltimore District&quot;,$UserRole.Name &lt;&gt; &quot;Chicago District&quot;, $UserRole.Name &lt;&gt; &quot;Columbus District&quot;, $UserRole.Name &lt;&gt; &quot;Dallas District&quot;, $UserRole.Name &lt;&gt; &quot;Denver District&quot;, $UserRole.Name &lt;&gt; &quot;Houston District&quot;, $UserRole.Name &lt;&gt; &quot;Los Angeles District&quot;, $UserRole.Name &lt;&gt; &quot;New Orleans District&quot;, $UserRole.Name &lt;&gt; &quot;North West District&quot;, $UserRole.Name &lt;&gt; &quot;Philadelphia District&quot;, $UserRole.Name &lt;&gt; &quot;Puerto Rico District&quot;, $UserRole.Name &lt;&gt; &quot;Raleigh District&quot;, $UserRole.Name &lt;&gt; &quot;Commercial Sales&quot;, $UserRole.Name &lt;&gt; &quot;Home Service Management&quot;,
+ISPICKVAL(Business__c  , &quot;Commercial&quot;), 
+AND( 
+OR( 
+ISPICKVAL( StageName, &quot;Determine Solution&quot;), 
+ISPICKVAL( StageName, &quot;Develop/Review Pricing Model&quot;), 
+ISPICKVAL( StageName, &quot;Finance Review&quot;), 
+ISPICKVAL( StageName, &quot;Develop Proposal&quot;), 
+ISPICKVAL( StageName, &quot;Proposal Presentation&quot;), 
+ISPICKVAL( StageName, &quot;Solution Discussion and Negotiation&quot;), 
+ISPICKVAL( StageName, &quot;Contract Preparation and Negotiation&quot;), 
+ISPICKVAL( StageName, &quot;Legal Approval&quot;), 
+ISPICKVAL( StageName, &quot;Financial Approval&quot;),  
+ISPICKVAL( StageName, &quot;Deal Closure/Won&quot;)), 
+ISNULL( Shipping_Start_Date__c )))</errorConditionFormula>
+    <errorDisplayField>Shipping_Start_Date__c</errorDisplayField>
+    <errorMessage>If the Stage is set to Determine Solution or greater then Ship Date is a required field for all Commercial Opportunities.</errorMessage>
+</ValidationRule>

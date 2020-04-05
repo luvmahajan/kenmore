@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Telesales</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>pi__score__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>Campaign_Source__c</columns>
+    <columns>LEAD.STREET</columns>
+    <columns>LEAD.ZIP</columns>
+    <columns>LEAD.CITY</columns>
+    <columns>LEAD.MOBILE_PHONE</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>Sears_Employee__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Disqualified,Existing</value>
+    </filters>
+    <label>Telesales- CMD</label>
+    <queue>Inside_Sales_Team</queue>
+    <sharedTo>
+        <group>Inside_Sales</group>
+        <role>Inside_Sales_Customer_Acquisition_Specialist</role>
+    </sharedTo>
+</ListView>

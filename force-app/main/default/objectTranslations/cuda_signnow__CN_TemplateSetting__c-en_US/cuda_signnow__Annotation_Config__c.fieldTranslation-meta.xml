@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- &quot;annotation_config&quot;:{
+      &quot;line_height&quot;: 30,
+      &quot;size&quot;: 25
+ } --></help>
+    <label><!-- Annotation Config --></label>
+    <name>cuda_signnow__Annotation_Config__c</name>
+</CustomFieldTranslation>

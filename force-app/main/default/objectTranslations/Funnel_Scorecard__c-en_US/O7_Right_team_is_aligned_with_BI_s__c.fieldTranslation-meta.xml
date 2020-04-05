@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- SC team is strategically aligned to appropriate BI/Peers &amp; where they are in the Buying Process; Implementation Team (MDO, Billing, Credit, etc.) is aligned to the UBI (s). --></help>
+    <label><!-- O7 Right team is aligned with BI’s --></label>
+    <name>O7_Right_team_is_aligned_with_BI_s__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4</masterLabel>
+        <translation><!-- 4 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

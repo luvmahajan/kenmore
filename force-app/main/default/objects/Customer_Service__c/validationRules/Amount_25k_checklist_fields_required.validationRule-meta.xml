@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_25k_checklist_fields_required</fullName>
+    <active>true</active>
+    <description>When the LOC Requested is $25K or greater then all Checklist fields are required</description>
+    <errorConditionFormula>AND(
+(Financials__c=FALSE),
+(Personal_Guarantee__c=FALSE),
+(Bank_Trade_References__c=FALSE),
+(Credit_Line_Requested__c  &gt;= 25000))</errorConditionFormula>
+    <errorMessage>If the Credit Line Requested is &gt; or = to $25K then all items in the check list are required fields.</errorMessage>
+</ValidationRule>

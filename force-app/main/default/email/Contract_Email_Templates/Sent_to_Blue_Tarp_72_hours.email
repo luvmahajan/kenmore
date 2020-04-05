@@ -1,0 +1,5 @@
+Dear {!Customer_Service__c.Credit_Solutions_Specialist__c},
+
+Your Credit Request # {!Customer_Service__c.Name} for {!Customer_Service__c.Account_Name__c} Account was sent to Blue Tarp on {!Customer_Service__c.Sent_to_Blue_Tarp__c}.  The record has not been updated with a responce in over 72 hours.  Please follow-up accordingly and click on the link below to update Salesforce as appropriate.  
+
+{!Customer_Service__c.Link}

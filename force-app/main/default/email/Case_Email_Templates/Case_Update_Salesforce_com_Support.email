@@ -1,0 +1,12 @@
+Hi {!Case.CreatedBy},
+
+New comments have been added to Case {!Case.CaseNumber}.  
+Subject:  {!Case.Subject}
+Description:  {!Case.Description}
+
+Here are the details:
+{!Case.Last_Case_Comment}
+
+{!Case.Link}
+
+Thank you.

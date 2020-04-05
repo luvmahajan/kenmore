@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Open Opportunity Count</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Open Opportunities Count</value>
+    </caseValues>
+    <layouts>
+        <layout>Open Opportunity Count Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Home Services, A&amp;E --></label>
+            <section>Home Services, A&amp;E</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Information --></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Solution(s) Under Consideration --></label>
+            <section>Solution(s) Under Consideration</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

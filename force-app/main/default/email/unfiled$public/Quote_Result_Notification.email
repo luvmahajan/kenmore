@@ -1,0 +1,3 @@
+The Quote {!SBQQ__Quote__c.Name} has been updated. Please click the link below to review the details of the quote approval status: 
+
+{!SBQQ__Quote__c.Link}

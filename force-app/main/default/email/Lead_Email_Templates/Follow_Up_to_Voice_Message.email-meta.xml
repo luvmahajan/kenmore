@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow-up to a voice message</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Follow-Up to Voice Message</name>
+    <style>freeForm</style>
+    <subject>Sears Commercial Follow-Up</subject>
+    <textOnly>{!Today}
+
+Hello {!Lead.Name},
+ 
+I just wanted to follow-up a voice message that I left for you a few days ago. I was hoping to discuss the many ways that Sears Commercial and {!Lead.Company} can work together to establish a successful partnership. I believe that our Commercial division of Sears can provide you with a variety of programs and services that fit the needs of {!Lead.Company}, such as:
+ 
+{!Lead.Products_Services__c}
+{!Lead.Programs__c}
+ 
+Please feel free to schedule an appointment or respond to me via email or phone if you are interested, or if you have any questions. It would be my pleasure to discuss this further with you.
+ 
+Thank you,
+
+	{!User.FirstName} {!User.LastName}
+	{!User.Title}
+	{!User.CompanyName}
+	{!User.Email}
+	{!User.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,215 @@
+<apex:page standardController="Account" extensions="AccountDetailPage2Controller">
+    <apex:form >
+        <apex:pageBlock title="Account Edit" mode="Edit">
+            <apex:pageMessages />
+            <apex:pageBlockButtons rendered="{!render}">
+                <apex:commandButton action="{!Save1}" value="Save"/>
+                <apex:commandButton action="{!Cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            
+            <!--=================================================COMPANY INFORMATION SECTION=================================================-->
+            <apex:pageBlockSection title="Company Information" columns="2" rendered="{!render}">
+                
+                    
+                    <apex:inputField value="{!account_object.Name}" label="Account Name" required="true"/>
+                
+                    <apex:inputField value="{!account_object.Phone}" label="Phone" required="true"/>
+                    <apex:inputField value="{!account_object.Nickname__c}" label="Nickname" required="false"/>
+                    <apex:inputField value="{!account_object.Fax}" label="Fax" required="false"/>
+                    <apex:inputField value="{!account_object.Parent.Name}" label="Parent Account" required="false"/>
+                    <apex:inputField value="{!account_object.Website}" label="Website" required="false"/>
+                    <apex:outputText value="{!account_object.Owner.Name}" label="Account Owner"/>
+                    
+                <apex:pageBlockSectionItem helpText="A sentence or two about the customers this company serves and how it conducts business. This can be found in the About Us section of most websites." LabelTitle="Account Name">
+                    <apex:outputText >Description</apex:outputtext>
+                    <apex:inputField value="{!account_object.Description}" label="Description" required="false"/>
+                </apex:pageBlockSectionItem>
+                
+                    <apex:inputField value="{!account_object.SAP_Account_ID__c}" label="SAP Account ID" required="false"/>
+                    <apex:inputField value="{!account_object.Site}" label="Account Site" required="false"/>
+                    <apex:inputField value="{!account_object.Territory_ID__c}" label="Territory ID" required="false"/>
+                    <apex:inputField value="{!account_object.AccountSource}" label="Account Source" required="false"/>
+                    
+                    <apex:inputField value="{!account_object.BillingStreet}" label="Billing Street" required="true"/>
+                    <!--<apex:inputField value="{!account_object.Business_Sector__c}" label="Business Sector" required="true"/> -->
+                    <apex:inputField value="{!account_object.BillingCity}" label="Billing City" required="true"/>
+                    <apex:inputField value="{!account_object.Industry_Segmentation__c}" label="Industry" required="true"/>
+                    <apex:inputField value="{!account_object.BillingState}" label="Billing State/Province" required="true"/>
+                    <!-- <apex:inputField value="{!account_object.Type}" label="Type" required="false"/> -->
+                    <apex:inputField value="{!account_object.BillingPostalCode}" label="Billing Zip/Postal Code" required="true"/>
+                    <apex:inputField value="{!account_object.Business__c}" label="Buisness" required="true"/>
+                    <apex:inputField value="{!account_object.BillingCountry}" label="Billing Country" required="false"/>
+                    <apex:inputCheckbox value="{!account_object.Is_Project__c}" label="Is Project" required="false"/>
+                    
+                   <!-- <apex:inputField value="{!account_object.SAP_NAICS_Code__c}" label="SAP NAICS Code" required="false"/>
+                    <apex:inputField value="{!account_object.Type}" label="Type" required="false"/>
+                    <apex:inputField value="{!account_object.Credit_Needed__c}" label="Credit Needed?" required="false"/>
+                    <apex:inputField value="{!account_object.Reseller__c}" label="Reseller?" required="false"/>
+                    <apex:inputField value="{!account_object.Tax_Exempt__c}" label="Tax Exempt" required="false"/>-->
+                
+            </apex:pageBlockSection>
+            
+            <!---
+            ======================================================SAP MAPPED FIELDS=====================================================  
+            <apex:pageBlockSection title="SAP Mapped fields" columns="2">
+                <apex:pageBlockSectionItem helpText="AMERINET, CSF, MEDASSETS, NOVATION, OPSTECH, PREMIER, REPONE, ROI, SHIPR, Healthtrust, Intermountain, Polygon, The Resource Group">
+                    <apex:outputText >Operational Group</apex:outputtext>
+                    <apex:inputField value="{!account_object.Operational_Group__c}" label="Operational Group"/>
+                </apex:pageBlockSectionItem>
+
+                    <apex:inputField value="{!account_object.Price_List_Type__c}" label="Price List Type"/>
+                    
+                 <apex:pageBlockSectionItem helpText="05 Builders, 01 Educational Services, 02 Govt & Military, 03 Health Care & Social, 07 Others, 04 Property Mgmt">
+                    <apex:outputText >Customer Group</apex:outputtext>
+                    <apex:inputField value="{!account_object.Customer_Group__c}" label="Customer Group" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem helpText="0004 Diners Club Card, ACH Automated Clrg House, AMEX American Express, AR Account Receivable, CASH Cash, CHCK Physical Check, COM1 Commercial One, CPRO Commercial Pro, DISC Discover Card, ECHK E-check, GC Sears Gift Card, INTL Sears Internal">
+                    <apex:outputText >Credit Type </apex:outputtext>
+                    <apex:inputField value="{!account_object.Credit_Type__c}" label="Credit Type"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem helpText="01 Split Billing">
+                    <apex:outputText >Customer Group 1 </apex:outputtext>
+                    <apex:inputField value="{!account_object.Customer_Group_1__c}" label="Customer Group 1"/>
+                </apex:pageBlockSectionItem>
+                
+                    <apex:inputField value="{!account_object.Language__c}" label="Language"/>
+                    
+                 <apex:pageBlockSectionItem helpText="01 AppSel, 02 InsPort, 03 InsSF, 04 InsNV, 05 HW">
+                    <apex:outputText >Customer Group 2 </apex:outputtext>
+                    <apex:inputField value="{!account_object.Customer_Group_2__c}" label="Customer Group 2"/>
+               </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem helpText="0002-14 days 2%, 30 net, 0001-Pay immediately w/o deduction">
+                    <apex:outputText >Terms of Payment </apex:outputtext>
+                    <apex:inputField value="{!account_object.Terms_of_Payment__c}" label="Terms of Payment" required="true"/>
+                </apex:pageBlockSectionItem>
+                    
+                <apex:pageBlockSectionItem helpText="E1 Delivery Rate E1, E2  Delivery Rate E2, E3  Delivery Rate E3, E4  Delivery Rate E4, E5  Delivery Rate E5, PM  Property Management, ST  Standard, STD Standard">
+                    <apex:outputText >Customer Group 3 </apex:outputtext>
+                    <apex:inputField value="{!account_object.Customer_Group_3__c}" label="Customer Group 3"/>
+                </apex:pageBlockSectionItem>
+               
+                    <apex:inputField value="{!account_object.SAP_Account_Request_DateTime_C__c}" label="SAP Account Request DateTime"/>
+                    
+                <apex:pageBlockSectionItem helpText="BP Eligible for Bst Prc">
+                    <apex:outputText >Customer Group 4 </apex:outputtext>
+                    <apex:inputField value="{!account_object.Customer_Group_4__c}" label="Customer Group 4"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem helpText="2-digit to 8-digit code representing the market segment of the company with which you are doing business">
+                    <apex:outputText >SAP NAICS Code </apex:outputtext>
+                    <apex:inputField value="{!account_object.SAP_NAICS_Code__c}" label="SAP NAICS Code"/>
+                </apex:pageBlockSectionItem>
+                    
+                <apex:pageBlockSectionItem helpText="1  Standard">
+                    <apex:outputText >Customer Pricing Procedure </apex:outputtext>
+                    <apex:inputField value="{!account_object.Customer_Pricing_Procedure__c}" label="Customer Pricing Procedure" required="true"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            ==================================================SAP UPDATE ADDITIONAL FIELDS===============================================
+            <apex:pageBlockSection title="SAP Update Additional Fields" columns="2">
+                <apex:inputField value="{!account_object.Name_3__c}" label="Name 3"/>
+                <apex:inputField value="{!account_object.Incoterms_1__c}" label="Incoterms 1"/>
+                <apex:inputField value="{!account_object.Name_4__c}" label="Name 4"/>
+                <apex:inputField value="{!account_object.Incoterms_2__c}" label="Incoterms 2"/>
+                <apex:inputTextarea value="{!account_object.SAP_Notes__c}" label="SAP Notes"/>
+                <apex:inputField value="{!account_object.Role__c}" label="Role"/>
+                <apex:inputField value="{!account_object.Reporting_Group__c}" label="Reporting Group"/>
+                <apex:inputField value="{!account_object.Account_Assignment_Group__c}" label="Account Assignment Group"/>
+                <apex:inputField value="{!account_object.WCEM_Customer_Categorization__c}" label="WCEM Customer Categorization"/>
+                <apex:inputCheckbox value="{!account_object.Relevant_for_Rebate__c}" label="Relevant for Rebate"/>
+                <apex:inputField value="{!account_object.Billing_Block_Reason__c}" label="Billing Block Reason"/>
+                <apex:inputField value="{!account_object.External_BP_Number__c}" label="External BP Number"/>
+                <apex:inputField value="{!account_object.Delivery_Block_Reason__c}" label="Delievry Block Reason"/>
+                <apex:inputField value="{!account_object.Central_Block__c}" label="Central Block"/>
+                <apex:inputField value="{!account_object.Archived__c}" label="Archived"/>
+                <apex:inputField value="{!account_object.Transaction_Block_Reason__c}" label="Transaction Block Reason"/>
+                <apex:inputField value="{!account_object.SFDC_ID__c}" label="SFDC ID"/>
+                <apex:inputField value="{!account_object.Commercial_Credit_Status__c}" label="Commercial Credit Status"/>
+            </apex:pageBlockSection>
+            
+            =======================================================HEALTHCARE DETAILS===================================================
+            <apex:pageBlockSection title="HealthCare Details" columns="2">
+                <apex:inputField value="{!account_object.GPO__c}" label="GPO"/>
+                <apex:inputField value="{!account_object.DEA_Number__c}" label="DEA Number"/>
+                <apex:inputField value="{!account_object.HIN__c}" label="HIN"/>
+                <apex:inputField value="{!account_object.Corporate_Group__c}" label="Corporate Group"/>
+                <apex:inputField value="{!account_object.IDN_Group__c}" label="IDN Group"/>
+                <apex:inputField value="{!account_object.Affiliate_Group__c}" label="Affliate Group"/>
+                <apex:inputField value="{!account_object.GLN__c}" label="GLN"/>
+                <apex:inputCheckbox value="{!account_object.Check_if_RepONE_is_the_reporting_Group__c}" label="Check if RepONE is the reporting Group"/>
+            </apex:pageBlockSection>
+            
+            ========================================================ACCOUNT INFORMATION==================================================
+            <apex:pageBlockSection title="Account Information" columns="2">
+                <apex:inputField value="{!account_object.Account_Full_Legal_Name__c}" label="Account Full Legal Name"/>
+                <apex:inputField value="{!account_object.Line_of_Credit_Requested__c}" label="Line of Credit Requested"/>
+                <apex:inputField value="{!account_object.Territory_Manager_OLD__c}" label="Territory Manager OLD"/>
+                <apex:inputCheckbox value="{!account_object.Target_Customer__c}" label="Target Customer"/>
+                <apex:inputField value="{!account_object.Sales_Representative_OLD__c}" label="Sales Representative OLD"/>
+                <apex:inputField value="{!account_object.Inside_Sales_OLD__c}" label="Inside Sales OLD"/>
+                <apex:inputField value="{!account_object.NumberOfEmployees}" label="Employees"/>
+                <apex:inputField value="{!account_object.Territory__c}" label="Territory"/>
+                <apex:inputField value="{!account_object.AnnualRevenue}" label="Currency"/>
+                <apex:inputField value="{!account_object.Territory_Manager__c}" label="Territory Manager"/>
+                <apex:inputField value="{!account_object.Notes__c}" label="Notes"/>
+                <apex:inputField value="{!account_object.Sales_Representative__c}" label="Sales Representative"/>
+                <apex:inputField value="{!account_object.Has_Parent__c}" label="Has Parent"/>
+                <apex:inputField value="{!account_object.Inside_Sales__c}" label="Inside Sales"/>
+            </apex:pageBlockSection>
+            
+            ========================================================ADDITIONAL INFORMATION===============================================
+            <apex:pageBlockSection title="Additional Information" columns="2">
+                <apex:inputField value="{!account_object.Planned_units_in_the_next_12_months__c}" label="Planned units in the next 12 months"/>
+                <apex:inputField value="{!account_object.Where_do_you_buy_the_products__c}" label="Where do you buy the products"/>
+                <apex:inputField value="{!account_object.What_is_your_average_spend_per_unit__c}" label="What is your average spend per unit"/>
+                <apex:inputField value="{!account_object.Current_Provider__c}" label="Current Provider"/>
+                <apex:inputField value="{!account_object.What_brand_of_appliances_are_you_using__c}" label="What brand of appliances are you using"/>
+            </apex:pageBlockSection>
+            
+            ===============================DETAIL INFORMATION ON CUSTOMER INACTIVITY IN THE PAST YEAR====================================
+            <apex:pageBlockSection title="Detail Information On Customer Inactivity In the Past Year" columns="2">
+                <apex:inputField value="{!account_object.Customer_Status__c}" label="Customer Status"/>
+                <apex:inputTextarea value="{!account_object.Brand_Of_Competitor_Working_With__c}" label="Brand Of Competitor Working With"/>
+                <apex:inputField value="{!account_object.Reasons_For_Not_Working_With_SC__c}" label="Reason For Not Working With SC"/>
+                <apex:inputTextarea value="{!account_object.Brand_Of_Distributor_Working_With__c}" label="Brand Of Distributor Working With"/>
+                <apex:inputTextarea value="{!account_object.Reasons_For_Switching_To_The_Competition__c}" label="Reasons For Switching To The Competition"/>
+                <apex:inputTextarea value="{!account_object.Segment_Description__c}" label="Segment Description"/>
+            </apex:pageBlockSection>
+            
+            =====================================================COMMERCIAL INFORMATION==================================================
+            <apex:pageBlockSection title="Commercial Information" columns="2">
+                <apex:inputField value="{!account_object.SCOPES_ID__c}" label="SCOPES ID"/>
+                <apex:inputField value="{!account_object.Pricing_Assignment__c}" label="Pricing Assignment"/>
+                <apex:inputTextarea value="{!account_object.Special_Notes_or_Delivery_Information__c}" label="Special Notes or Delivery Information"/>
+            </apex:pageBlockSection>
+            
+            =================================================COMMERCIAL CREDIT INFORMATION===============================================
+            <apex:pageBlockSection title="Commercial Credit Information" columns="2">
+                <apex:inputField value="{!account_object.Final_Credit_Response__c}" label="Final Credit Response"/>
+                <apex:inputText value="{!account_object.Credit_Comments__c}" label="Credit Comments"/>
+                <apex:inputField value="{!account_object.Final_Line_of_Credit__c}" label="Final Line of Credit"/>
+                <apex:inputCheckbox value="{!account_object.Initial_Requests_Completed__c}" label="Initial Requests Completed"/>
+                <apex:inputField value="{!account_object.YTD_Sales__c}" label="YTD Sales"/>
+                <apex:inputField value="{!account_object.F2013_Sales__c}" label="F2013 Sales"/>
+                <apex:inputField value="{!account_object.F2012_Sales__c}" label="F2012 Sales"/>
+                <apex:inputField value="{!account_object.F2011_Sales__c}" label="F2011 Sales"/>
+            </apex:pageBlockSection>
+            
+            ========================================================SYSTEM INFORMATION===================================================
+            <apex:pageBlockSection title="System Information" columns="1">
+            
+                <apex:pageBlockSectionItem helpText="File Administration to utilize when an Account Request has been updated in SAP and/or Citi for the requested account changes. (i.e. Billing Address, Phone Number, SAP Account Created, etc.)">
+                    <apex:outputText >Sync wit SAP </apex:outputtext>
+                    <apex:inputField value="{!account_object.Sync_with_SAP__c}" label="Sync wit SAP"/>
+                </apex:pageBlockSectionItem>
+                
+                    <apex:inputCheckbox value="{!account_object.SAP_Account_Request__c}" label="SAP Account Request"/>
+            </apex:pageBlockSection>
+            -->
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

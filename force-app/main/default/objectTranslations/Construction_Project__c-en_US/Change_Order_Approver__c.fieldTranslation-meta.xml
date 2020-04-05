@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Change Order Approver --></label>
+    <name>Change_Order_Approver__c</name>
+    <picklistValues>
+        <masterLabel>Finance Ops Mgr.</masterLabel>
+        <translation><!-- Finance Ops Mgr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Managing Director</masterLabel>
+        <translation><!-- Managing Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Mgmt Mgr.</masterLabel>
+        <translation><!-- Order Mgmt Mgr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post-Delivery Mgr.</masterLabel>
+        <translation><!-- Post-Delivery Mgr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Mgr.</masterLabel>
+        <translation><!-- Project Mgr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regional Sales Mgr.</masterLabel>
+        <translation><!-- Regional Sales Mgr. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

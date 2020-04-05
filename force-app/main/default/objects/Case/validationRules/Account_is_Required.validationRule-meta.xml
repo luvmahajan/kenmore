@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_is_Required</fullName>
+    <active>false</active>
+    <description>Account is Required when Type = Product Manager Support</description>
+    <errorConditionFormula>AND ( 
+ISPICKVAL( Type , &quot;Product Manager Support&quot;),   ISBLANK( Account.Name ))</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>When Type = Product Manager Support an Account Must be related to the Case.</errorMessage>
+</ValidationRule>

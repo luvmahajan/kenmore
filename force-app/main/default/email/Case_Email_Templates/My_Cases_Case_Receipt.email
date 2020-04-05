@@ -1,0 +1,15 @@
+Hi {!Case.OwnerFirstName}, 
+
+You have created a case under the “My Cases” request type.  This case is worked by you and only you.  Some Account Managers find Cases as a productive way to organize issues and all related tasks.
+
+If you did not intend to create a case that you would work, but rather you would like support related to Salesforce.com, Inventory Replenishment, or Product Management, the solution is quick and easy, just follow these steps:
+
+(1) Edit your case by clicking this link and selecting "Edit" - {!Case.Link}
+
+(2) Select the proper support function by changing the Type field to Salesforce.com Support, Inventory Replenishment or Product Manager Support.
+
+(3) Important:  Scroll to the bottom of the case detail page to ensure that "Assign using active assignment rules" is checked in the Optional section at the bottom.
+
+(4) Click "Save".
+
+You will immediately receive an email Case receipt confirming that your case has routed to the appropriate support team.

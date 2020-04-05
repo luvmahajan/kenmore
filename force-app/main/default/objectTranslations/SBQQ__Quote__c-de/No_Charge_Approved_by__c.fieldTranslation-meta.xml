@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- No Charge Approved by --></label>
+    <name>No_Charge_Approved_by__c</name>
+    <picklistValues>
+        <masterLabel>Admin – Admin Error</masterLabel>
+        <translation><!-- Admin – Admin Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer – Scope of Work Change</masterLabel>
+        <translation><!-- Customer – Scope of Work Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product – Product Availability</masterLabel>
+        <translation><!-- Product – Product Availability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales – Charge Below Margin</masterLabel>
+        <translation><!-- Sales – Charge Below Margin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales – Selling Error</masterLabel>
+        <translation><!-- Sales – Selling Error --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

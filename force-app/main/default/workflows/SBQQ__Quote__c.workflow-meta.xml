@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Quote_Result_Alert</fullName>
+        <description>Quote Result Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Quote_Result_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Quote_Tax_Alert</fullName>
+        <description>Quote Tax Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SBQQ__SalesRep__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Quote_Tax_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Action2</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Moved Status to Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Add_Product_Status</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>Add/Edit Products</literalValue>
+        <name>Add Product Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Amendment_Approved_True</fullName>
+        <field>Amendment_Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>Amendment Approved True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Amendment_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Amendment_Quote</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Amendment Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Amendment_Status</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>Amendment</literalValue>
+        <name>Amendment Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ApprovalStage</fullName>
+        <field>Approval_Stage__c</field>
+        <name>ApprovalStage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ApprovalStage_1</fullName>
+        <field>Approval_Stage__c</field>
+        <formula>1</formula>
+        <name>ApprovalStage_1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ApprovalStage_2</fullName>
+        <field>Approval_Stage__c</field>
+        <formula>2</formula>
+        <name>ApprovalStage_2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ApprovalStage_3</fullName>
+        <field>Approval_Stage__c</field>
+        <formula>3</formula>
+        <name>ApprovalStage_3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Update</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Move Status to Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cancelled</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Cancelled</literalValue>
+        <name>Cancelled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ClearDeadline</fullName>
+        <field>Approval_Deadline__c</field>
+        <name>ClearDeadline</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Completed_Status</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>Complete</literalValue>
+        <name>Completed Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Document_Prep_Stage</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>Document Preparation</literalValue>
+        <name>Document Prep Stage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MoveToNotReady</fullName>
+        <field>isApprovalReady__c</field>
+        <literalValue>0</literalValue>
+        <name>MoveToNotReady</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_Quote_True</fullName>
+        <field>SBQQ__Primary__c</field>
+        <literalValue>1</literalValue>
+        <name>Primary Quote True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tax_Approved</fullName>
+        <field>Approval_Status_Tax__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Tax Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tax_Cancelled</fullName>
+        <field>Approval_Status_Tax__c</field>
+        <literalValue>Cancelled</literalValue>
+        <name>Tax Cancelled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tax_Pending</fullName>
+        <field>Approval_Status_Tax__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Tax Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tax_Rejected</fullName>
+        <field>Approval_Status_Tax__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Tax Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>action3</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Move Status to Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Amendment Quote Record Type</fullName>
+        <actions>
+            <name>Amendment_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.Amendment_Quote__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Quote Defaults</fullName>
+        <actions>
+            <name>Add_Product_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Primary_Quote_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SBQQ__Primary__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SBQQ__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Quote Header Review,Amendment</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Commercial: The EBI must have a +3 rating or better and recommends our solution to other BI&apos;s
+A&amp;E: The EBI must have a +3 rating or better and recommends our solution to other BI&apos;s, and will drive / facilitate to closure. --></help>
+    <label><!-- O1 The EBI supports our solution --></label>
+    <name>O1_The_EBI_supports_our_solution__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8</masterLabel>
+        <translation><!-- 8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9</masterLabel>
+        <translation><!-- 9 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

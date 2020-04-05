@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POD_Closed_Requirements</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordTypeId = &quot;0123A000001SWst&quot;,
+ ISPICKVAL(Status, &quot;Resolved&quot;), 
+ISBLANK(TEXT(Closed_Reason__c)),
+ISBLANK(TEXT(MDO_Status__c)))</errorConditionFormula>
+    <errorMessage>MDO Status and Closed Reason are required for Closing this Case Type</errorMessage>
+</ValidationRule>

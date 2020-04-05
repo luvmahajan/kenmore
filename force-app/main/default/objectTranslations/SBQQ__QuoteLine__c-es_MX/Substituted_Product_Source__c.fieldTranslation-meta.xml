@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Substituted Product Source --></label>
+    <name>Substituted_Product_Source__c</name>
+    <picklistValues>
+        <masterLabel>KAP</masterLabel>
+        <translation><!-- KAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>List</masterLabel>
+        <translation><!-- List --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

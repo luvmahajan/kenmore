@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Who_is_the_primary_technical_contact__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Name and Phone Number</inlineHelpText>
+    <label>Who is the primary technical contact</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

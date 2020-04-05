@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_State_must_equal_two_characters_US</fullName>
+    <active>true</active>
+    <description>State/Provide is only 2 characters (i.e. AL, GA, FL, etc.)</description>
+    <errorConditionFormula>AND ( 
+IF(ISCHANGED(Automation_Control__c),
+   IF( CONTAINS(Automation_Control_Type__c, &quot;Validation&quot;),FALSE,TRUE),TRUE),
+NOT( 
+CONTAINS(&quot;AL:AK:AZ:AR:CA:CO:CT:DE:DC:FL:GA:HI:ID:&quot; &amp; 
+&quot;IL:IN:IA:KS:KY:LA:ME:MD:MA:MI:MN:MS:MO:MT:NE:NV:NH:&quot; &amp; 
+&quot;NJ:NM:NY:NC:ND:OH:OK:OR:PA:RI:SC:SD:TN:TX:UT:VT:VA:&quot; &amp; 
+&quot;WA:WV:WI:WY:BC:AB:HK:VI:ON:AS:MP:PR:&quot;, State ) 
+))</errorConditionFormula>
+    <errorDisplayField>State</errorDisplayField>
+    <errorMessage>State/Provide must be 2 characters in capital letters (i.e. AL, GA, FL, etc.)</errorMessage>
+</ValidationRule>

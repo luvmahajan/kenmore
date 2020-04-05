@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>45.0</apiVersion>
+    <available>true</available>
+    <description>Delivery Estimate Request w/ Product Line Items</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Delivery Estimate w/Details</name>
+    <style>none</style>
+    <subject>Delivery Estimate Request</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

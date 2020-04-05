@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- New Payment Term --></label>
+    <name>New_Payment_Term__c</name>
+    <picklistValues>
+        <masterLabel>0001	Pay immediately w/o deduction</masterLabel>
+        <translation><!-- 0001	Pay immediately w/o deduction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0002	14 days 2%, 30 net</masterLabel>
+        <translation><!-- 0002	14 days 2%, 30 net --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

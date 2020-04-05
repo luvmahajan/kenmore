@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Commercial</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Disqualified Information --></label>
+            <section>Disqualified Information</section>
+        </sections>
+        <sections>
+            <label><!-- Pardot Information --></label>
+            <section>Pardot Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification Criteria --></label>
+            <section>Qualification Criteria</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Home Services</layout>
+        <sections>
+            <label><!-- A&amp;E and Home Services --></label>
+            <section>A&amp;E and Home Services</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Disqualification Criteria --></label>
+            <section>Disqualification Criteria</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification Criteria --></label>
+            <section>Qualification Criteria</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inside Sales Lead Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Disqualified Information --></label>
+            <section>Disqualified Information</section>
+        </sections>
+        <sections>
+            <label><!-- Healthcare Details --></label>
+            <section>Healthcare Details</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Pardot Information --></label>
+            <section>Pardot Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification Criteria --></label>
+            <section>Qualification Criteria</section>
+        </sections>
+        <sections>
+            <label><!-- Retail Lead Information --></label>
+            <section>Retail Lead Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Disqualified Information --></label>
+            <section>Disqualified Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification Criteria --></label>
+            <section>Qualification Criteria</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Marketing Lead Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Disqualified Information --></label>
+            <section>Disqualified Information</section>
+        </sections>
+        <sections>
+            <label><!-- Healthcare Details --></label>
+            <section>Healthcare Details</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Pardot Information --></label>
+            <section>Pardot Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification Criteria --></label>
+            <section>Qualification Criteria</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SearsCommercial.com</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Pardot Information --></label>
+            <section>Pardot Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification Criteria --></label>
+            <section>Qualification Criteria</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>System Admin Lead Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Disqualified Information --></label>
+            <section>Disqualified Information</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Pardot Information --></label>
+            <section>Pardot Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification Criteria --></label>
+            <section>Qualification Criteria</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Telesales Lead Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Disqualification Criteria --></label>
+            <section>Disqualification Criteria</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification Criteria --></label>
+            <section>Qualification Criteria</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- SearsCommercial.com --></label>
+        <name>SearsCommercial_com</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Lead --></label>
+        <name>Standard_Lead</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Address is required if the Lead Status is Sales Qualified --></errorMessage>
+        <name>Address_Required_for_Qualified_Leads</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Country must be &quot;US&quot; --></errorMessage>
+        <name>Country_must_be_US</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Estimated Opportunity Amount is required for Sales Qualified Leads --></errorMessage>
+        <name>Estimated_Opportunity_Amount_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- State/Provide must be 2 characters in capital letters (i.e. AL, GA, FL, etc.) --></errorMessage>
+        <name>Lead_State_must_equal_two_characters_US</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lead Status must be Sales Qualified for conversion. --></errorMessage>
+        <name>Lead_Status_for_Conversion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Type is required for Sales Qualified Leads --></errorMessage>
+        <name>Opportunity_Type_Required_for_SQL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Complete Qualification Criteria fields for Sales Qualified Leads --></errorMessage>
+        <name>Qualification_Criteria</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Lead Status = Disqualified, then Reason Disqualified is required. --></errorMessage>
+        <name>Reason_why_Lead_is_Disqualified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter the lead&apos;s email or phone number --></errorMessage>
+        <name>Require_Email_or_Phone</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convert --></label>
+        <name>Convert</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map_Leads --></label>
+        <name>FN__Map_Leads</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LinkedIn --></label>
+        <name>LinkedIn</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Manta_Search --></label>
+        <name>Manta_Search</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Marketing_Portal --></label>
+        <name>Marketing_Portal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Offer --></label>
+        <name>Offer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Yahoo_Finance --></label>
+        <name>Yahoo_Finance</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Email --></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Prospect_Insight --></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Call_FLS_associate_to_offer_thanks_for_sending_a_lead</name>
+        <subject><!-- Call FLS associate to offer thanks for sending a lead --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

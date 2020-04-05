@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_PIDs_or_SAP_Numbers</fullName>
+    <active>true</active>
+    <description>If case Type is Missing Products, Missing Descriptions, or Incorrect Information Displaying, then PID(s) or SAP Number(s) is required</description>
+    <errorConditionFormula>AND(
+OR(
+ ISPICKVAL( Type , &quot;Missing Products&quot;), 
+ ISPICKVAL( Type , &quot;Missing Descriptions&quot;),
+ ISPICKVAL( Type , &quot;Incorrect Information Displaying&quot;)
+),
+
+ ISBLANK( PID_s_or_SAP_Number_s__c )
+)</errorConditionFormula>
+    <errorMessage>PID(s) or SAP Number(s) is required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Credit Specialist to update the Status of the Chargeback --></help>
+    <label><!-- Chargeback Status --></label>
+    <name>Chargeback_Status__c</name>
+    <picklistValues>
+        <masterLabel>Augusta Working</masterLabel>
+        <translation><!-- Augusta Working --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bankruptcy</masterLabel>
+        <translation><!-- Bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collected/Paid</masterLabel>
+        <translation><!-- Collected/Paid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to 3rd Party Collections</masterLabel>
+        <translation><!-- Referred to 3rd Party Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement</masterLabel>
+        <translation><!-- Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uncollectible</masterLabel>
+        <translation><!-- Uncollectible --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

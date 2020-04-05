@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_D_Num_Required_when_New_Produc</fullName>
+    <active>false</active>
+    <description>Estimated Delivery Date required when New Product Request is picked for the type</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(   Type  , &quot;New Product Request&quot;), 
+ISNULL( Estimated_Delivery_Date__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Estimated_Delivery_Date__c</errorDisplayField>
+    <errorMessage>Field required when Type = New Product Request</errorMessage>
+</ValidationRule>

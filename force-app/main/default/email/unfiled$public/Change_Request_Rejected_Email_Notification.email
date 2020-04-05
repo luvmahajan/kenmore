@@ -1,0 +1,9 @@
+Hi {!Change_Request__c.CreatedBy},
+
+Your change request has been Rejected.  Please review the details:
+
+Change Request Name: {!Change_Request__c.Name}
+
+Account Name: {!Change_Request__c.Account_Name__c}
+
+Link: {!Change_Request__c.Link}

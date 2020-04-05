@@ -1,0 +1,7 @@
+*** NEW CONTRACT APPROVAL NOTIFICATION *** 
+
+The following contract has been assigned to your manager and requires their approval. 
+Company: {!Contract.Account} 
+Contract Name: {!Contract.Name} 
+
+Click on the link to access the contract directly: {!Contract.Link}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_to_Customer</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send to Customer</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/apex/dsfs__DocuSign_JavaScript&quot;)}
+ 
+//********* Option Declarations (Do not modify )*********//
+var RC = &#39;&#39;;var RSL=&#39;&#39;;var RSRO=&#39;&#39;;var RROS=&#39;&#39;;var CCRM=&#39;&#39;;var CCTM=&#39;&#39;;var CCNM=&#39;&#39;;var CRCL=&#39;&#39;;var CRL=&#39;&#39;;var OCO=&#39;&#39;;var DST=&#39;&#39;;var LA=&#39;&#39;;var CEM=&#39;&#39;;var CES=&#39;&#39;;var STB=&#39;&#39;;var SSB=&#39;&#39;;var SES=&#39;&#39;;var SEM=&#39;&#39;;var SRS=&#39;&#39;;var SCS =&#39;&#39;;var RES=&#39;&#39;;
+//*************************************************//
+
+CCRM = &#39;NCM~NCM;Customer~Customer;Sales~Sales&#39;;
+CCTM = &#39;NCM~Signer;Customer~Signer;Sales~Signer&#39;;
+CRL = &#39;Email~Melanie.Leyendecker@searshc.com;FirstName~Melanie;LastName~Leyendecker;Role~NCM;RoutingOrder~1,Email~{!Contract.Customer_Signed_By_Email__c};FirstName~{!Contract.Customer_Signed_By_First_Name__c};LastName~{!Contract.Customer_Signed_By_Last_Name__c};Role~Customer;RoutingOrder~2,Email~{!Contract.Sears_Signed_By_Email__c};FirstName~{!Contract.Sears_Signed_By_First_Name__c};LastName~{!Contract.Sears_Signed_By_Last_Name__c};Role~Sales;RoutingOrder~3,LoadDefaultContacts~1&#39;;
+LA = &#39;1&#39;;
+SSB = &#39;0&#39;;
+CEM = &#39;The Home Services team has requested your signature on this contract.  Please visit the document link and review the document.  Your response is requested within the next 5 days.  Thank you for your business.&#39;;
+CES = &#39;Home Services Contract (Signature Requested via DocuSign)&#39;;
+RES = &#39;1,5,7,1,30,2&#39;;
+ 
+ 
+//********* Page Callout (Do not modify) *********//
+window.location.href = &quot;/apex/dsfs__DocuSign_CreateEnvelope?DSEID=0&amp;SourceID={!Contract.Id}&amp;RC=&quot;+RC+&quot;&amp;RSL=&quot;+RSL+&quot;&amp;RSRO=&quot;+RSRO+&quot;&amp;RROS=&quot;+RROS+&quot;&amp;CCRM=&quot;+CCRM+&quot;&amp;CCTM=&quot;+CCTM+&quot;&amp;CRCL=&quot;+CRCL+&quot;&amp;CRL=&quot;+CRL+&quot;&amp;OCO=&quot;+OCO+&quot;&amp;DST=&quot;+DST+&quot;&amp;CCNM=&quot;+CCNM+&quot;&amp;LA=&quot;+LA+&quot;&amp;CEM=&quot;+CEM+&quot;&amp;CES=&quot;+CES+&quot;&amp;SRS=&quot;+SRS+&quot;&amp;STB=&quot;+STB+&quot;&amp;SSB=&quot;+SSB+&quot;&amp;SES=&quot;+SES+&quot;&amp;SEM=&quot;+SEM+&quot;&amp;SRS=&quot;+SRS+&quot;&amp;SCS=&quot;+SCS+&quot;&amp;RES=&quot;+RES;
+//*******************************************//</url>
+</WebLink>

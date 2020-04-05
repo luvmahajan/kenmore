@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Configurar el etiquetador de DocuSign para que aparezca en una ventana independiente en lugar de incorporado en el encabezamiento o la barra lateral.</help>
+    <label><!-- Display Tagger In Own Window --></label>
+    <name>dsfs__DisplayTaggerInOwnWindow__c</name>
+</CustomFieldTranslation>

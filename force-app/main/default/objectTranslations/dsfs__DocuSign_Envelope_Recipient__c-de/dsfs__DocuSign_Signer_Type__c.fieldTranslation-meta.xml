@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>DocuSign-Signaturgebertyp</help>
+    <label><!-- DocuSign Signer Type --></label>
+    <name>dsfs__DocuSign_Signer_Type__c</name>
+    <picklistValues>
+        <masterLabel>Address recipients</masterLabel>
+        <translation>Adresse des Empfängers eingeben</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carbon Copy</masterLabel>
+        <translation>Kopie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Certified Delivery</masterLabel>
+        <translation>Zertifizierter Versand</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manage envelope</masterLabel>
+        <translation>Umschlag verwalten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sign in person</masterLabel>
+        <translation>Persönlich signieren</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signer</masterLabel>
+        <translation>Signaturgeber</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Describe_licenses_is_required</fullName>
+    <active>true</active>
+    <description>If Install/Services on behalf of retailer = &quot;Yes&quot;, Describe licenses retailer has is required</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL( Install_services_on_behalf_of_retailer__c , &quot;Yes&quot;),
+  ISBLANK( Describe_licenses_retailer_has__c )
+)</errorConditionFormula>
+    <errorDisplayField>Describe_licenses_retailer_has__c</errorDisplayField>
+    <errorMessage>Describe licenses retailer has is required when Install/Services on behalf of retailer is &quot;Yes&quot;</errorMessage>
+</ValidationRule>

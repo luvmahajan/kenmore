@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Damit legen Sie fest, dass die DocuSign-Seite für die persönliche Signierung in einem neuen Fenster geöffnet und nicht in die Salesforce-Kopfzeile und/oder die Randleiste eingebettet wird.</help>
+    <label><!-- Display InPerson Signing In Own Window --></label>
+    <name>dsfs__DisplayInPersonSigningInOwnWindow__c</name>
+</CustomFieldTranslation>

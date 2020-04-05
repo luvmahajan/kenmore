@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Center_Support__c</fullName>
+    <externalId>false</externalId>
+    <label>Call Center Support</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct from your company</fullName>
+                <default>false</default>
+                <label>Direct from your company</label>
+            </value>
+            <value>
+                <fullName>Warm transfer (your company and customer on the line)</fullName>
+                <default>false</default>
+                <label>Warm transfer (your company and customer on the line)</label>
+            </value>
+            <value>
+                <fullName>Direct from customer</fullName>
+                <default>false</default>
+                <label>Direct from customer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

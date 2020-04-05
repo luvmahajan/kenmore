@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_and_Required_Docs_Submitted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If Sears Commercial 1 as Method of Payment is selected, then Application and Required Docs submitted is required</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If Sears Commercial 1 as Method of Payment is selected, then Application and Required Docs submitted is required</inlineHelpText>
+    <label>Application and Required Docs Submitted</label>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

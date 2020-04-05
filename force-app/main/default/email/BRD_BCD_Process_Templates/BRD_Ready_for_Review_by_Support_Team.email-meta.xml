@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Message for support teams for new opportunity</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BRD Ready for Review by Support Team</name>
+    <style>none</style>
+    <subject>BRD Ready for Review</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

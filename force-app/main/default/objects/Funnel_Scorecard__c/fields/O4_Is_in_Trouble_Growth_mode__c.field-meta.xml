@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>O4_Is_in_Trouble_Growth_mode__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>T=Probability of taking action is high (urgency) to reverse/prevent crisis; eager to find a solution removing the cause of the problem.G=They’re ready to say yes (to someone) &amp; believe more or better results can be achieved (dont confuse w/Company growth)</inlineHelpText>
+    <label>O4 Is in Trouble/Growth mode</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>6</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

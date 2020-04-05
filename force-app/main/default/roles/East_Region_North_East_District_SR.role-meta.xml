@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>East Region, North East - SR</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>East Region, North East District - SR</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Sears_Commercial_Leadership</parentRole>
+</Role>

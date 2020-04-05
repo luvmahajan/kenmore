@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify CSS case owners that a new case has been created.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CSS Case Created - General Notification for Owners</name>
+    <style>none</style>
+    <subject>{!Case.RecordType} Case {!Case.CaseNumber} Created for {!Case.Account}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

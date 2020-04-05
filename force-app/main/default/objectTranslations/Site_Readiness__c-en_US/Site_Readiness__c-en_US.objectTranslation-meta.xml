@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Site Readiness</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Site Readiness Reports</value>
+    </caseValues>
+    <layouts>
+        <layout>Site Readiness Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dishwasher – Additional Preparation --></label>
+            <section>Dishwasher – Additional Preparation</section>
+        </sections>
+        <sections>
+            <label><!-- Electric Appliance Preparation --></label>
+            <section>Electric Appliance Preparation</section>
+        </sections>
+        <sections>
+            <label><!-- Electric Range – Additional Preparation --></label>
+            <section>Electric Range – Additional Preparation</section>
+        </sections>
+        <sections>
+            <label><!-- Gas Appliance Preparation --></label>
+            <section>Gas Appliance Preparation</section>
+        </sections>
+        <sections>
+            <label><!-- General Appliance Preparation --></label>
+            <section>General Appliance Preparation</section>
+        </sections>
+        <sections>
+            <label><!-- Laundry – Additional Preparation --></label>
+            <section>Laundry – Additional Preparation</section>
+        </sections>
+        <sections>
+            <label><!-- Range Hoods or MHC – Additional Preparation --></label>
+            <section>Range Hoods or MHC – Additional Preparation</section>
+        </sections>
+        <sections>
+            <label><!-- Refrigeration – Additional Preparation --></label>
+            <section>Refrigeration – Additional Preparation</section>
+        </sections>
+        <sections>
+            <label><!-- Site Preparation --></label>
+            <section>Site Preparation</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>New_Task</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must enter the date/time the Site readiness has been scheduled for. --></errorMessage>
+        <name>Scheduled_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

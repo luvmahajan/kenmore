@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Type__c</fullName>
+    <description>0004	Diners Club Card
+ACH	Automated Clrg House
+AMEX	American Express
+AR	Account Receivable
+CASH	Cash
+CHCK	Physical Check
+COM1	Commercial One
+CPRO	Commercial Pro
+DISC	Discover Card
+ECHK	E-check
+GC	Sears Gift Card
+INTL	Sears Internal
+MC	Master Card
+SCHG	Sears Charge Card
+SMC	Sears Master Card
+VISA	Visa Card
+WIRE	Wire</description>
+    <externalId>false</externalId>
+    <inlineHelpText>0004	Diners Club Card
+ACH	Automated Clrg House
+AMEX	American Express
+AR	Account Receivable
+CASH	Cash
+CHCK	Physical Check
+COM1	Commercial One
+CPRO	Commercial Pro
+DISC	Discover Card
+ECHK	E-check
+GC	Sears Gift Card
+INTL	Sears Internal</inlineHelpText>
+    <label>Credit Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0004</fullName>
+                <default>false</default>
+                <label>0004</label>
+            </value>
+            <value>
+                <fullName>ACH</fullName>
+                <default>false</default>
+                <label>ACH</label>
+            </value>
+            <value>
+                <fullName>AMEX</fullName>
+                <default>false</default>
+                <label>AMEX</label>
+            </value>
+            <value>
+                <fullName>AR</fullName>
+                <default>false</default>
+                <label>AR</label>
+            </value>
+            <value>
+                <fullName>CASH</fullName>
+                <default>false</default>
+                <label>CASH</label>
+            </value>
+            <value>
+                <fullName>CHCK</fullName>
+                <default>false</default>
+                <label>CHCK</label>
+            </value>
+            <value>
+                <fullName>COM1</fullName>
+                <default>false</default>
+                <label>COM1</label>
+            </value>
+            <value>
+                <fullName>CPRO</fullName>
+                <default>false</default>
+                <label>CPRO</label>
+            </value>
+            <value>
+                <fullName>DISC</fullName>
+                <default>false</default>
+                <label>DISC</label>
+            </value>
+            <value>
+                <fullName>ECHK</fullName>
+                <default>false</default>
+                <label>ECHK</label>
+            </value>
+            <value>
+                <fullName>GC</fullName>
+                <default>false</default>
+                <label>GC</label>
+            </value>
+            <value>
+                <fullName>INTL</fullName>
+                <default>false</default>
+                <label>INTL</label>
+            </value>
+            <value>
+                <fullName>MC</fullName>
+                <default>false</default>
+                <label>MC</label>
+            </value>
+            <value>
+                <fullName>SCHG</fullName>
+                <default>false</default>
+                <label>SCHG</label>
+            </value>
+            <value>
+                <fullName>SMC</fullName>
+                <default>false</default>
+                <label>SMC</label>
+            </value>
+            <value>
+                <fullName>VISA</fullName>
+                <default>false</default>
+                <label>VISA</label>
+            </value>
+            <value>
+                <fullName>WIRE</fullName>
+                <default>false</default>
+                <label>WIRE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

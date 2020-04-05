@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_CPQ</fullName>
+    <active>true</active>
+    <label>Contract CPQ</label>
+    <picklistValues>
+        <picklist>Approval_Status_Salesforce__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending NCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Auto_Renewal_Clause__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business__c</picklist>
+        <values>
+            <fullName>A%26E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Citi_or_Recourse__c</picklist>
+        <values>
+            <fullName>Citi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recourse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Administration_Status__c</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved But Incomplete %28AI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined %28D%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Future %28F%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete %28IC%29 %282%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete %28ID%29 %281%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open %28O%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Director Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Legal Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending NCM Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Operational Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Description__c</picklist>
+        <values>
+            <fullName>Fixed Quantity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weatherization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Type__c</picklist>
+        <values>
+            <fullName>Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rework</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contractors__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Credit_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fuel_Surcharge__c</picklist>
+        <values>
+            <fullName>Invoiced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Claim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Key_Price_Change_Indicator__c</picklist>
+        <values>
+            <fullName>Multi-Year Term</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volume Incentive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Late_Payment__c</picklist>
+        <values>
+            <fullName>1%2E0%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E5%25</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>2%2E0%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Legal_Council__c</picklist>
+        <values>
+            <fullName>Brian Bichkoff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donna Carollo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mike Mitchell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ted Koerth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tom Shanahan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Local_Parts_Pricing__c</picklist>
+        <values>
+            <fullName>Cost %2B 10%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost %2B 15%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost %2B 18%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost %2B 20%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost %2B 25%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost %2B 30%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost %2B 35%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost %2B 40%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Non_OEM_Parts__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Parts_Language__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Percent__c</picklist>
+        <values>
+            <fullName>Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Price_Change__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Process_Change__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Products_Services__c</picklist>
+        <values>
+            <fullName>Air Conditioners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business to Business Paid Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carry-in Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Fitness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Mattresses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial TVs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cook-top</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dishwasher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dryer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fitness Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floor Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haul-Away</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Home Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lawn %26 Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Major Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mattresses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Warranty Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA %26 Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preventative Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Refurbishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Range</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalls%2FReworks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refrigerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replacements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Refrigerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TVs %26 Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tool Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Heaters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window AC %2812%2C000 BTU %26 Above%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window AC %28Under 12%2C000 BTU%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referral_Fee__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Retail_Parts_Pricing__c</picklist>
+        <values>
+            <fullName>Retail - 10%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - 15%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - 20%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - 25%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - 30%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - 35%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - 40%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__AmendmentRenewalBehavior__c</picklist>
+        <values>
+            <fullName>Earliest End Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latest End Date</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__MDQRenewalBehavior__c</picklist>
+        <values>
+            <fullName>De-segmented</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SLAs__c</picklist>
+        <values>
+            <fullName>Value 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value 5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Signed_Rider__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Special_Labor_Rate__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Build Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forecast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Approval Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Credit Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send to Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send to Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Sale__c</picklist>
+        <values>
+            <fullName>All Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appliance Select</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketplace</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Warranty__c</picklist>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

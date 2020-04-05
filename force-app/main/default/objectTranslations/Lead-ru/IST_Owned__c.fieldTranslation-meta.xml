@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Read Only field that updates if the Lead was originally owned by the IST queue --></help>
+    <label><!-- IST Owned --></label>
+    <name>IST_Owned__c</name>
+</CustomFieldTranslation>

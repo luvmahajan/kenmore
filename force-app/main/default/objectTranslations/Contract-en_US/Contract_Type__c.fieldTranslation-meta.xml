@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Most Sears Commercial Contracts will be &quot;Product&quot; contracts, but some will be contractual agreements for &quot;Rebates&quot;.  Most Home Services / A&amp;E contracts will be &quot;Service&quot; contracts. --></help>
+    <label><!-- Contract Type --></label>
+    <name>Contract_Type__c</name>
+    <picklistValues>
+        <masterLabel>Products</masterLabel>
+        <translation><!-- Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rebates</masterLabel>
+        <translation><!-- Rebates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recall</masterLabel>
+        <translation><!-- Recall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rework</masterLabel>
+        <translation><!-- Rework --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation><!-- Service --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

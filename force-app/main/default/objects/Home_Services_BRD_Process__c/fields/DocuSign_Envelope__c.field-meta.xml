@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSign_Envelope__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup for DocuSign envelope so that the approval status (via DocuSign) can be tracked on the BRD record.  Can be populated (eg: most recent approved envelope) via trigger in the future.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Connect the relevant and most current DocuSign envelope</inlineHelpText>
+    <label>DocuSign Envelope</label>
+    <referenceTo>dsfs__DocuSign_Status__c</referenceTo>
+    <relationshipLabel>BRD</relationshipLabel>
+    <relationshipName>Home_Services_BRD_Processes_del</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

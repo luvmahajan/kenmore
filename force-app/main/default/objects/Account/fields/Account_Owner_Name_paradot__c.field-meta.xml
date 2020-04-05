@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Owner_Name_paradot__c</fullName>
+    <description>This field is for a paradot mapping since standard fields that can not be mapped</description>
+    <externalId>false</externalId>
+    <formula>Owner.FirstName  +  Owner.LastName</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Not to be used on any record just hidden</inlineHelpText>
+    <label>Account Owner Name (paradot)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

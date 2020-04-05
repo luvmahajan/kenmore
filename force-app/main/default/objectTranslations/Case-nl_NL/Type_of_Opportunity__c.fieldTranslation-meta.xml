@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Determine if this is a one time purchase or ongoing opportunity --></help>
+    <label><!-- Type of Opportunity --></label>
+    <name>Type_of_Opportunity__c</name>
+    <picklistValues>
+        <masterLabel>Annual Opportunity</masterLabel>
+        <translation><!-- Annual Opportunity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spot Buy</masterLabel>
+        <translation><!-- Spot Buy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- 72 Hour Pre Call Formula Date --></label>
+    <name>X72_Hour_Pre_Call_Formula_Date__c</name>
+</CustomFieldTranslation>

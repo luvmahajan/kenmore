@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Request --></label>
+    <name>Type_of_Request__c</name>
+    <picklistValues>
+        <masterLabel>120 Day Past Due Notice</masterLabel>
+        <translation><!-- 120 Day Past Due Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>150 Day Past Due Notice</masterLabel>
+        <translation><!-- 150 Day Past Due Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>180 Day Past Due Notice</masterLabel>
+        <translation><!-- 180 Day Past Due Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1st Request - Initial</masterLabel>
+        <translation><!-- 1st Request - Initial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2nd Follow Up</masterLabel>
+        <translation><!-- 2nd Follow Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30 Day Past Due Notice</masterLabel>
+        <translation><!-- 30 Day Past Due Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd Follow up</masterLabel>
+        <translation><!-- 3rd Follow up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd Party Chargeback</masterLabel>
+        <translation><!-- 3rd Party Chargeback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd Party Lender</masterLabel>
+        <translation><!-- 3rd Party Lender --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd Party Manufacture/ Non KD Purchase</masterLabel>
+        <translation><!-- 3rd Party Manufacture/ Non KD Purchase --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>60 Day Past Due Notice</masterLabel>
+        <translation><!-- 60 Day Past Due Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>90 Day Past Due Notice</masterLabel>
+        <translation><!-- 90 Day Past Due Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ACH/Check Rec’d Notifications</masterLabel>
+        <translation><!-- ACH/Check Rec’d Notifications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AR</masterLabel>
+        <translation><!-- AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Assignment</masterLabel>
+        <translation><!-- Account Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Current</masterLabel>
+        <translation><!-- Account Current --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Hold Notice</masterLabel>
+        <translation><!-- Account Hold Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Reconciliation Request</masterLabel>
+        <translation><!-- Account Reconciliation Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Updates</masterLabel>
+        <translation><!-- Account Updates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Accounting Services</masterLabel>
+        <translation><!-- Accounting Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application Inquiry</masterLabel>
+        <translation><!-- Application Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOL Request / Not in Descartes</masterLabel>
+        <translation><!-- BOL Request / Not in Descartes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CASH/AR Order</masterLabel>
+        <translation><!-- CASH/AR Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CME Request</masterLabel>
+        <translation><!-- CME Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COI</masterLabel>
+        <translation><!-- COI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSAT</masterLabel>
+        <translation><!-- CSAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSG Installation</masterLabel>
+        <translation><!-- CSG Installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claim</masterLabel>
+        <translation><!-- Claim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collections</masterLabel>
+        <translation><!-- Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comm One - Citi</masterLabel>
+        <translation><!-- Comm One - Citi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comm Pro – BT</masterLabel>
+        <translation><!-- Comm Pro – BT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Common Carrier Damaged</masterLabel>
+        <translation><!-- Common Carrier Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance Renewals</masterLabel>
+        <translation><!-- Compliance Renewals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact Customer</masterLabel>
+        <translation><!-- Contact Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact Customer/Compliance Agent</masterLabel>
+        <translation><!-- Contact Customer/Compliance Agent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract</masterLabel>
+        <translation><!-- Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Appl/Package</masterLabel>
+        <translation><!-- Contract Appl/Package --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Credit Package</masterLabel>
+        <translation><!-- Contract Credit Package --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Recon</masterLabel>
+        <translation><!-- Contract Recon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit</masterLabel>
+        <translation><!-- Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Account Referral/Order Holds</masterLabel>
+        <translation><!-- Credit Account Referral/Order Holds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Account Review Request</masterLabel>
+        <translation><!-- Credit Account Review Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Acct Setup Inquiry</masterLabel>
+        <translation><!-- Credit Acct Setup Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Acct Setup Lender Update/Notifications</masterLabel>
+        <translation><!-- Credit Acct Setup Lender Update/Notifications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Acct Setup Submission</masterLabel>
+        <translation><!-- Credit Acct Setup Submission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Hold/Decline</masterLabel>
+        <translation><!-- Credit Hold/Decline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Line Increase Request</masterLabel>
+        <translation><!-- Credit Line Increase Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit/Billing/Dispute Related</masterLabel>
+        <translation><!-- Credit/Billing/Dispute Related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Contact Request</masterLabel>
+        <translation><!-- Customer Contact Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Request</masterLabel>
+        <translation><!-- Customer Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery Notifications</masterLabel>
+        <translation><!-- Delivery Notifications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery failure</masterLabel>
+        <translation><!-- Delivery failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery question</masterLabel>
+        <translation><!-- Delivery question --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute</masterLabel>
+        <translation><!-- Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute to CB – Comm One</masterLabel>
+        <translation><!-- Dispute to CB – Comm One --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute to CB – Comm Pro</masterLabel>
+        <translation><!-- Dispute to CB – Comm Pro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute to Chargeback - BT</masterLabel>
+        <translation><!-- Dispute to Chargeback - BT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute to Chargeback - Citi</masterLabel>
+        <translation><!-- Dispute to Chargeback - Citi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EE1: Service Related</masterLabel>
+        <translation><!-- EE1: Service Related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EE2: Damaged within 48 hrs</masterLabel>
+        <translation><!-- EE2: Damaged within 48 hrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EE3: Damaged outside 48 hrs</masterLabel>
+        <translation><!-- EE3: Damaged outside 48 hrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EE4: Free of Charge Sample</masterLabel>
+        <translation><!-- EE4: Free of Charge Sample --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EE5: Customer Satisfaction</masterLabel>
+        <translation><!-- EE5: Customer Satisfaction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EE6: Wrong Product Ordered by Customer</masterLabel>
+        <translation><!-- EE6: Wrong Product Ordered by Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EE7: Wrong Product Ordered by Kenmore</masterLabel>
+        <translation><!-- EE7: Wrong Product Ordered by Kenmore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EE8: Kenmore Ordering Error</masterLabel>
+        <translation><!-- EE8: Kenmore Ordering Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Earlier Delivery</masterLabel>
+        <translation><!-- Earlier Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange</masterLabel>
+        <translation><!-- Exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Existing Comm One Child Accounts Requests</masterLabel>
+        <translation><!-- Existing Comm One Child Accounts Requests --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Existing Credit Line Increase</masterLabel>
+        <translation><!-- Existing Credit Line Increase --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow Up Needed</masterLabel>
+        <translation><!-- Follow Up Needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full</masterLabel>
+        <translation><!-- Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Administration</masterLabel>
+        <translation><!-- General Administration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Warranty</masterLabel>
+        <translation><!-- In Warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Increase Quantity</masterLabel>
+        <translation><!-- Increase Quantity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inquires</masterLabel>
+        <translation><!-- Inquires --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intake</masterLabel>
+        <translation><!-- Intake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoices Only</masterLabel>
+        <translation><!-- Invoices Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Later Delivery</masterLabel>
+        <translation><!-- Later Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lien Waiver Submission</masterLabel>
+        <translation><!-- Lien Waiver Submission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDO Damaged</masterLabel>
+        <translation><!-- MDO Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDO Response</masterLabel>
+        <translation><!-- MDO Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Master Purchasing Agreement/SLA</masterLabel>
+        <translation><!-- Master Purchasing Agreement/SLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misc / Non-Lender Related</masterLabel>
+        <translation><!-- Misc / Non-Lender Related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Vendor Setup/Forms</masterLabel>
+        <translation><!-- New Vendor Setup/Forms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Vendor Setup/Portal</masterLabel>
+        <translation><!-- New Vendor Setup/Portal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New/Update Acct Request</masterLabel>
+        <translation><!-- New/Update Acct Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nexcus</masterLabel>
+        <translation><!-- Nexcus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non Credit Order Release Requests</masterLabel>
+        <translation><!-- Non Credit Order Release Requests --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non – Lender Related</masterLabel>
+        <translation><!-- Non – Lender Related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Contract Acct</masterLabel>
+        <translation><!-- Non-Contract Acct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notification of Chargeback</masterLabel>
+        <translation><!-- Notification of Chargeback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notifications</masterLabel>
+        <translation><!-- Notifications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notivius</masterLabel>
+        <translation><!-- Notivius --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opstech</masterLabel>
+        <translation><!-- Opstech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of Warranty/CA or CC Call</masterLabel>
+        <translation><!-- Out of Warranty/CA or CC Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial</masterLabel>
+        <translation><!-- Partial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parts Department</masterLabel>
+        <translation><!-- Parts Department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pay Applications</masterLabel>
+        <translation><!-- Pay Applications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Application Submission</masterLabel>
+        <translation><!-- Payment Application Submission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Place an order</masterLabel>
+        <translation><!-- Place an order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing/Tier Updates</masterLabel>
+        <translation><!-- Pricing/Tier Updates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Damaged</masterLabel>
+        <translation><!-- Product Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Liability</masterLabel>
+        <translation><!-- Product Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property Management / MPA Setup</masterLabel>
+        <translation><!-- Property Management / MPA Setup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Request</masterLabel>
+        <translation><!-- Quote Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R1: Service Related</masterLabel>
+        <translation><!-- R1: Service Related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R2: Damaged within 48 hrs</masterLabel>
+        <translation><!-- R2: Damaged within 48 hrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R3: Damaged outside 48 hrs</masterLabel>
+        <translation><!-- R3: Damaged outside 48 hrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R4: Free of Charge Sample</masterLabel>
+        <translation><!-- R4: Free of Charge Sample --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R5: Customer Satisfaction</masterLabel>
+        <translation><!-- R5: Customer Satisfaction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R6: Wrong Product Ordered by Customer</masterLabel>
+        <translation><!-- R6: Wrong Product Ordered by Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R7: Wrong Product Ordered by Kenmore</masterLabel>
+        <translation><!-- R7: Wrong Product Ordered by Kenmore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R8: Kenmore Ordering Error</masterLabel>
+        <translation><!-- R8: Kenmore Ordering Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recourse Concession</masterLabel>
+        <translation><!-- Recourse Concession --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recovery</masterLabel>
+        <translation><!-- Recovery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reduce Quantity</masterLabel>
+        <translation><!-- Reduce Quantity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request Invoice</masterLabel>
+        <translation><!-- Request Invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request for credit/billing</masterLabel>
+        <translation><!-- Request for credit/billing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request to order</masterLabel>
+        <translation><!-- Request to order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retainage</masterLabel>
+        <translation><!-- Retainage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return</masterLabel>
+        <translation><!-- Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return of Parts</masterLabel>
+        <translation><!-- Return of Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SFDC Account Assignment Request</masterLabel>
+        <translation><!-- SFDC Account Assignment Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SFDC Account Geo Update</masterLabel>
+        <translation><!-- SFDC Account Geo Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation><!-- Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Recall</masterLabel>
+        <translation><!-- Service Recall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Related</masterLabel>
+        <translation><!-- Service Related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipped Not Invoiced Reviews</masterLabel>
+        <translation><!-- Shipped Not Invoiced Reviews --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Damaged</masterLabel>
+        <translation><!-- Site Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Comm Pro</masterLabel>
+        <translation><!-- Standard Comm Pro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Status of adjustment</masterLabel>
+        <translation><!-- Status of adjustment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Status of parts order</masterLabel>
+        <translation><!-- Status of parts order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submission</masterLabel>
+        <translation><!-- Submission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax Exception Admin</masterLabel>
+        <translation><!-- Tax Exception Admin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax Exemption Administration</masterLabel>
+        <translation><!-- Tax Exemption Administration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Textura</masterLabel>
+        <translation><!-- Textura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UE1: Service Related</masterLabel>
+        <translation><!-- UE1: Service Related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UE2: Damaged within 48 hrs</masterLabel>
+        <translation><!-- UE2: Damaged within 48 hrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UE3: Damaged outside 48 hrs</masterLabel>
+        <translation><!-- UE3: Damaged outside 48 hrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UE4: Free of Charge Sample</masterLabel>
+        <translation><!-- UE4: Free of Charge Sample --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UE5: Customer Satisfaction</masterLabel>
+        <translation><!-- UE5: Customer Satisfaction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UE6: Wrong Product Ordered by Customer</masterLabel>
+        <translation><!-- UE6: Wrong Product Ordered by Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UE7: Wrong Product Ordered by Kenmore</masterLabel>
+        <translation><!-- UE7: Wrong Product Ordered by Kenmore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UE8: Kenmore Ordering Error</masterLabel>
+        <translation><!-- UE8: Kenmore Ordering Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vendor Setup (Portal)</masterLabel>
+        <translation><!-- Vendor Setup (Portal) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>W-9</masterLabel>
+        <translation><!-- W-9 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yardi/Café’</masterLabel>
+        <translation><!-- Yardi/Café’ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

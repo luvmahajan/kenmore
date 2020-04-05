@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOPES_ID__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <externalId>true</externalId>
+    <inlineHelpText>This field will be primarily used by Marketing.  When marketing to companies with Innactive SCOPES IDs, campaign activity will be entered as a Lead.  By contrast, campaign activity for active accounts will show on the Account record Related List.</inlineHelpText>
+    <label>SCOPES ID</label>
+    <length>11</length>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+This email is to confirm that login credentials have been sent to your customer for access to searscommercial.com.
+
+Login: {!Contact.Email}
+User Type: {!Contact.User_Account_Type__c}
+Account: {!Account.Name}
+SAP ID: {!Account.SAP_Account_ID__c}

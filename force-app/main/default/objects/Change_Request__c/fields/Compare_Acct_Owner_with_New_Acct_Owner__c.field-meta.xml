@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compare_Acct_Owner_with_New_Acct_Owner__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  Account_Name__r.Owner.Id  =  New_Account_Owner__r.Id , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Compare Acct Owner with New Acct Owner</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

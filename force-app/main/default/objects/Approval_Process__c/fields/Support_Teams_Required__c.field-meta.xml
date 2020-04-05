@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Support_Teams_Required__c</fullName>
+    <externalId>false</externalId>
+    <label>Support Teams Required</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Field Ops</fullName>
+                <default>false</default>
+                <label>Field Ops</label>
+            </value>
+            <value>
+                <fullName>CCN</fullName>
+                <default>false</default>
+                <label>CCN</label>
+            </value>
+            <value>
+                <fullName>NCC</fullName>
+                <default>false</default>
+                <label>NCC</label>
+            </value>
+            <value>
+                <fullName>Parts</fullName>
+                <default>false</default>
+                <label>Parts</label>
+            </value>
+            <value>
+                <fullName>STAC/ENG</fullName>
+                <default>false</default>
+                <label>STAC/ENG</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

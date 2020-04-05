@@ -1,0 +1,10 @@
+<apex:page controller="RouteQuoteController" lightningStylesheets="true"  action="{!redirectQLE}">
+    Product Integration 2
+        <apex:outputPanel >
+            <img src="/img/loading32.gif" width="25" height="25" />
+            <apex:outputLabel value="Loading..."/>
+        </apex:outputPanel>            
+    
+    
+    
+</apex:page>

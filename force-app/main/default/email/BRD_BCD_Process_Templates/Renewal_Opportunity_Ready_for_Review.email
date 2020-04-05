@@ -1,0 +1,8 @@
+Dear User,
+
+{!Opportunity.Name} renewal opportunity related to the {!Account.Name} account is available for your review. For any clarifications, please feel free to reach out to the account lead by using the activity creation functionality.
+
+To view the details of this Opportunity, please click on the link below:
+{!Opportunity.Link}
+
+Thank you.

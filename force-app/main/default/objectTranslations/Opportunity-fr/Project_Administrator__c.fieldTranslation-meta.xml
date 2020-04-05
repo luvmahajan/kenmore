@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select your assigned Project Administrator --></help>
+    <label><!-- Project Administrator --></label>
+    <name>Project_Administrator__c</name>
+    <relationshipLabel><!-- Opportunities (Project Administrator) --></relationshipLabel>
+</CustomFieldTranslation>

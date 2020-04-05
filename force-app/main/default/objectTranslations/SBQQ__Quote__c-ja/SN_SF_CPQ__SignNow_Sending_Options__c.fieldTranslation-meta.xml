@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SignNow Sending Options --></label>
+    <name>SN_SF_CPQ__SignNow_Sending_Options__c</name>
+    <picklistValues>
+        <masterLabel>Allow Self Signer and Auto Sending</masterLabel>
+        <translation><!-- Allow Self Signer and Auto Sending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edit Email Invite before Sending</masterLabel>
+        <translation><!-- Edit Email Invite before Sending --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

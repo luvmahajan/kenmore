@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Scopes ID # must not have any Dashes entered
+CU numbers must be complete (0&apos;s must be included in the account number) --></help>
+    <label><!-- SCOPES ID --></label>
+    <name>SCOPES_ID__c</name>
+</CustomFieldTranslation>

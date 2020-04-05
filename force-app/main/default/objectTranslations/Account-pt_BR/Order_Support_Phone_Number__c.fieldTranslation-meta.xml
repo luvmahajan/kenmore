@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If this customer is assigned a specific phone number for order support, please list it here (i.e. project desk, government desk, weatherization, etc.). This number will be presented when the customer logs in to Sears Commercial Online. --></help>
+    <label><!-- Order Support Phone Number --></label>
+    <name>Order_Support_Phone_Number__c</name>
+</CustomFieldTranslation>

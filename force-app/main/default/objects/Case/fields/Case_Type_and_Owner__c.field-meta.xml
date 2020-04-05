@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Type_and_Owner__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( RecordTypeId, 
+&quot;01230000000ARQL&quot;, &quot;Online Catalog - John Chesemore&quot;,
+&quot;01230000000ARQM&quot;, &quot;SAP Support - Bill Pope&quot;,
+&quot;01230000000ARQQ&quot;, &quot;Marketing - John Chesemore&quot;,
+&quot;01230000001GdgA&quot;, &quot;Inventory Replenishment - Kim Akers&quot;,
+&quot;01230000001GdgD&quot;, &quot;Product Mgr Support - Sara Kimball&quot;,
+&quot;01230000001GdgE&quot;, &quot;Salesforce.com Support - Jeevana Irala&quot;,
+&quot;0123A000001aP0a&quot;, &quot;Reporting - Weston Smith&quot;,
+&quot;0123A000001aP0b&quot;, &quot;Web Support - Benet Garcia&quot;,
+&quot;0123A000001DSp2&quot;, &quot;Wiki - Bill Pope&quot;,
+&quot;0123A000001O8qf&quot;, &quot;Master Data (File Administration) - Eric Hansen&quot;,
+&quot;0123A000001GiX7&quot;, &quot;Pricing - Ryan Ly&quot;,
+&quot;0123A000001SLqc&quot;, &quot;Customer Success Specialist Requests - Sheila Styles&quot;
+,&quot;&quot;)</formula>
+    <label>Case Type and Owner</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DElivery_Schedule</fullName>
+    <fields>Delivery_Date__c</fields>
+    <fields>Construction_Project__c</fields>
+    <fields>OwnerId</fields>
+    <fields>Open_Task__c</fields>
+    <fields>Site_Contact__c</fields>
+    <fields>Site_Contact_Email__c</fields>
+    <fields>Site_Contact_Phone__c</fields>
+    <label>DElivery Schedule</label>
+</CompactLayout>

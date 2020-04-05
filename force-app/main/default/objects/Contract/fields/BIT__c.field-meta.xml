@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BIT__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>The contact on the Business Integration team who will project manage this Contract.</inlineHelpText>
+    <label>BIT</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <filterItems>
+            <field>User.UserRole.Name</field>
+            <operation>contains</operation>
+            <value>Business Integration</value>
+        </filterItems>
+        <filterItems>
+            <field>User.UserRoleId</field>
+            <operation>equals</operation>
+            <value>00E300000012Qh2, 00E30000001ccjm</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>equals</operation>
+            <value>Home Services Administrator</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Profile.Id</field>
+            <operation>equals</operation>
+            <value>00e30000001tUpU</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>BIT_Contracts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

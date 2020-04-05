@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Assortment_Reason_Lost__c</fullName>
+    <description>Reason the product assortment did not meet the customer&#39;s needs.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the reason the product assortment did not meet the customer’s needs.</inlineHelpText>
+    <label>Product Assortment Reason Lost</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason_Lost__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Brand not offered</fullName>
+                <default>false</default>
+                <label>Brand not offered</label>
+            </value>
+            <value>
+                <fullName>Size not offered</fullName>
+                <default>false</default>
+                <label>Size not offered</label>
+            </value>
+            <value>
+                <fullName>Color not offered</fullName>
+                <default>false</default>
+                <label>Color not offered</label>
+            </value>
+            <value>
+                <fullName>Inventory not available</fullName>
+                <default>false</default>
+                <label>Inventory not available</label>
+            </value>
+            <value>
+                <fullName>ADA not offered</fullName>
+                <default>false</default>
+                <label>ADA not offered</label>
+            </value>
+            <value>
+                <fullName>Engergy Star not offered</fullName>
+                <default>false</default>
+                <label>Engergy Star not offered</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Luxury</fullName>
+                <default>false</default>
+                <label>Luxury</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Brand not offered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Size not offered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Inventory not available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>ADA not offered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Engergy Star not offered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Luxury</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+Hi {!Case.OwnerFullName},
+
+{!Case.CreatedBy} has reopened case {!Case.CaseNumber} by adding the comment below.  Please review the details:
+
+Case Number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+
+Comments: {!Case.Last_Case_Comment}
+
+Case Link: {!Case.Link}
+
+Thank you.

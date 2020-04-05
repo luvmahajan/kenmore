@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Edit_Line_Of_Billing_Name</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Name) 
+&amp;&amp;
+NOT (ISNEW())</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Line of Billing Name cannot be editied</errorMessage>
+</ValidationRule>

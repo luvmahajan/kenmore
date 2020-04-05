@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What did you teach the BI that was new and how did it add value to demonstrate you can be a trusted adviser? --></help>
+    <label><!-- Taught BI something new &amp; valuable --></label>
+    <name>Taught_BI_something_new_valuable__c</name>
+</CustomFieldTranslation>

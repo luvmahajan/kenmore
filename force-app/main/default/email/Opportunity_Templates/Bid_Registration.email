@@ -1,0 +1,10 @@
+Hi {!Receiving_User.FirstName},
+
+Please review the Bid Registration Report for any potential conflicts with the following opportunity:
+
+{!Opportunity.Name}
+{!Opportunity.CloseDate}
+
+Additional information is provided on the Bid Registration report.  If you believe this bid may conflict with another bid already registered, please contact {!Opportunity.OwnerFullName} immediately.
+
+Thank you for your assistance.  Click here for the Bid Registration Report - https://na1.salesforce.com/00O30000004pRtA

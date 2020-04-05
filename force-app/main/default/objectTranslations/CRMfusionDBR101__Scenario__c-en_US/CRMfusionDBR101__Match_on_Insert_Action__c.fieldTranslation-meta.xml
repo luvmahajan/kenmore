@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the action DupeBlocker takes when an inserted record matches an existing record based on this scenario.  See the documentation for a full description of each action. --></help>
+    <label><!-- Match on Insert Action --></label>
+    <name>CRMfusionDBR101__Match_on_Insert_Action__c</name>
+    <picklistValues>
+        <masterLabel>Auto-Convert Lead</masterLabel>
+        <translation><!-- Auto-Convert Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto-Merge</masterLabel>
+        <translation><!-- Auto-Merge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Apex Code</masterLabel>
+        <translation><!-- Custom Apex Code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Insert</masterLabel>
+        <translation><!-- Do Not Insert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Nothing</masterLabel>
+        <translation><!-- Do Nothing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redirect To Existing</masterLabel>
+        <translation><!-- Redirect To Existing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redirect to VisualForce Page</masterLabel>
+        <translation><!-- Redirect to VisualForce Page --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Report Duplicate</masterLabel>
+        <translation><!-- Report Duplicate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

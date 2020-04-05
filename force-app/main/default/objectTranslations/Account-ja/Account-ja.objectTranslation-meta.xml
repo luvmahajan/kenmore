@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Administrator</layout>
+        <sections>
+            <label><!-- Account Team --></label>
+            <section>Account Team</section>
+        </sections>
+        <sections>
+            <label><!-- Commercial Contract --></label>
+            <section>Commercial Contract</section>
+        </sections>
+        <sections>
+            <label><!-- Company Contact Information --></label>
+            <section>Company Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Tax Info --></label>
+            <section>Tax Info</section>
+        </sections>
+        <sections>
+            <label><!-- Team --></label>
+            <section>Team</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Commercial Customer</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Commercial Contract --></label>
+            <section>Commercial Contract</section>
+        </sections>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Service</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Info --></label>
+            <section>Contact Info</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Details --></label>
+            <section>Financial Details</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- SAP Information --></label>
+            <section>SAP Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Order Intake --></label>
+        <name>Create_Order_Intake</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Task --></label>
+        <name>Create_Task</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log Inbound Call --></label>
+        <name>IBC</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log Outbound Call --></label>
+        <name>Log_Outbound_Call</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>Log_a_Call</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Schedule Meeting --></label>
+        <name>Schedule_Meeting</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Account Team --></label>
+        <name>Update_Account_Team</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- View Only Account Team --></label>
+        <name>View_Only_Account_Team</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- test --></label>
+        <name>test</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- This is to lock all the fields and make it read only when the record is approved --></description>
+        <label><!-- Commercial Prospect --></label>
+        <name>Commercial_Prospect</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Home Services --></label>
+        <name>Home_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This record type will appear the record type is not Prospect. --></description>
+        <label><!-- Commercial Customer --></label>
+        <name>commercial_customer</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- When Account Closed = Chargeback then Account Close Date is Required --></errorMessage>
+        <name>Account_Closed_Chargeback_Date_Require</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Account Closed = Account Status Change then Account Close Date is Required --></errorMessage>
+        <name>Account_Closed_Status_Chang_Date_Require</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name cannot be edited if a Customer. Please contact your System Admin for changes to the Account Name. --></errorMessage>
+        <name>Account_Name_Read_Only_Customer_Accts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name cannot be greater than 40 characters.  Use abbreviations if needed (i.e.: Incorporated – Inc., Corporation - Corp., Limited Company – Ltd, Limited Liability Corp. - LLC.) --></errorMessage>
+        <name>Account_Name_is_40_Characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Owner ID cannot be changed manually. Please update the Territory ID, or submit a Change Request. --></errorMessage>
+        <name>Account_Owner_Locked_on_Customer_Records</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Account Status is &quot;Former&quot; you must make a selection in the Reason Lost field --></errorMessage>
+        <name>Account_Reason_Lost_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Account Team Member is Controlled at the Parent Level --></errorMessage>
+        <name>Account_Team_Assignment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name is empty --></errorMessage>
+        <name>Account_name_is_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing City is empty --></errorMessage>
+        <name>Billing_City_is_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Sate is empty --></errorMessage>
+        <name>Billing_State_is_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Country must be &quot;US&quot; --></errorMessage>
+        <name>Country_must_be_US</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Pricing Procedure is empty --></errorMessage>
+        <name>Customer_Pricing_Procedure_is_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a reason for low/no activity from this customer in the last year. --></errorMessage>
+        <name>Customer_Status_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tax Exempt or Reseller or Credit Check field are null. --></errorMessage>
+        <name>Fields_necessary_for_Account_Create_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Zip Code Must be Populated --></errorMessage>
+        <name>No_Billing_Address_Info</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Parent Account Name can not be greater than 40 characters --></errorMessage>
+        <name>Parent_Account_is_40_Characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone is empty --></errorMessage>
+        <name>Phone_is_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Potential Annual Sales Volume is required. --></errorMessage>
+        <name>Potential_Annual_Sales_Volume_is_Empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A child account cannot have default delivery charges --></errorMessage>
+        <name>Prevent_Delivery_Charges_for_Child</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Parent record can not be a Child of another record. --></errorMessage>
+        <name>Prevent_Grandparent_Accounts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a reason for low/no activity from this customer in the last year --></errorMessage>
+        <name>Reasons_For_Not_Working_With_SC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a billing street, city, state, postal code, and country --></errorMessage>
+        <name>Require_Account_Billing_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Terms of Payment is required. --></errorMessage>
+        <name>Terms_of_Payment_is_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid 5 digit Zip Code. (Extended Zip Codes are not Valid) --></errorMessage>
+        <name>Zip_Code_Format</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clone --></label>
+        <name>Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Commercial_Account --></label>
+        <name>Create_Commercial_Account</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_SCO_Account --></label>
+        <name>Create_SCO_Account</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map_Accounts --></label>
+        <name>FN__Map_Accounts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LinkedIn --></label>
+        <name>LinkedIn</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Manta_Search --></label>
+        <name>Manta_Search</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SAP_Account_Create_Request --></label>
+        <name>SAP_Account_Create_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Assets --></label>
+        <name>SBQQ__Renew_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Yahoo_Finance --></label>
+        <name>Yahoo_Finance</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Account_CudaSign --></label>
+        <name>cuda_signnow__Account_CudaSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Verify_with_DNB --></label>
+        <name>dsfs__Verify_with_DNB</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_To_Prospect_Insight --></label>
+        <name>pi__Send_To_Prospect_Insight</name>
+    </webLinks>
+    <workflowTasks>
+        <description><!-- Attached to this account are invoices that have been charged back to SHC. Please contact the customer to determine the reason for non-payment. Following the discussion, post your notes to this field, delete these instructions and mark this task Completed. --></description>
+        <name>Chargeback_Issued_Customer_Assistance_Required</name>
+        <subject><!-- Chargeback Issued - Please contact customer --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Tax_Exempt_Expiration_Alert</name>
+        <subject><!-- Review Tax Exempt Status for Account --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

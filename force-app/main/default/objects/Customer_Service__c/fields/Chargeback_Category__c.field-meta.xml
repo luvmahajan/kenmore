@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chargeback_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Chargeback Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3rd Party</fullName>
+                <default>false</default>
+                <label>3rd Party</label>
+            </value>
+            <value>
+                <fullName>BT Chargeback</fullName>
+                <default>false</default>
+                <label>BT Chargeback</label>
+            </value>
+            <value>
+                <fullName>BT Reject</fullName>
+                <default>false</default>
+                <label>BT Reject</label>
+            </value>
+            <value>
+                <fullName>Dispute Chargeback</fullName>
+                <default>false</default>
+                <label>Dispute Chargeback</label>
+            </value>
+            <value>
+                <fullName>Premier Chargeback</fullName>
+                <default>false</default>
+                <label>Premier Chargeback</label>
+            </value>
+            <value>
+                <fullName>Recourse-CONT</fullName>
+                <default>false</default>
+                <label>Recourse-CONT</label>
+            </value>
+            <value>
+                <fullName>Recourse-GEN</fullName>
+                <default>false</default>
+                <label>Recourse-GEN</label>
+            </value>
+            <value>
+                <fullName>Recourse-MIL</fullName>
+                <default>false</default>
+                <label>Recourse-MIL</label>
+            </value>
+            <value>
+                <fullName>Retainage</fullName>
+                <default>false</default>
+                <label>Retainage</label>
+            </value>
+            <value>
+                <fullName>Small Balance</fullName>
+                <default>false</default>
+                <label>Small Balance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Damit werden große DocuSign-Umschläge ohne Dokumentendaten an DocuSign gesendet. DocuSign kann die Dokumentendaten bei Bedarf abrufen. Aktivieren Sie diese Option nur, wenn die Umschläge die Callout-Grenzen von Salesforce überschreiten.</help>
+    <label><!-- Fetch Documents --></label>
+    <name>dsfs__FetchDocuments__c</name>
+</CustomFieldTranslation>

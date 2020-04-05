@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Create Flow Type Quote</description>
+    <fieldOverrides>
+        <field>Intake_Case__c</field>
+        <formula>Case.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Sales_Rep_Manager__c</field>
+        <formula>Case.Opportunity__r.OwnerId</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__Account__c</field>
+        <formula>Case.Account.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__Opportunity2__c</field>
+        <formula>Case.Opportunity__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__Primary__c</field>
+        <formula>True</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__SalesRep__c</field>
+        <formula>Case.Opportunity__r.OwnerId</formula>
+    </fieldOverrides>
+    <label>2. Create Quote</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Purchase_Number__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>SBQQ__Account__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>SBQQ__Opportunity2__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>SBQQ__PrimaryContact__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>SBQQ__SalesRep__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <successMessage>Your Quote was Successfully Created</successMessage>
+    <targetObject>SBQQ__Quote__c</targetObject>
+    <targetParentField>Intake_Case__c</targetParentField>
+    <targetRecordType>SBQQ__Quote__c.Commercial_Flow_Business</targetRecordType>
+    <type>Create</type>
+</QuickAction>

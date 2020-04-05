@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>支持大型 DocuSign 信封，其方式为：将信封发送到 DocuSign（不含文档数据）并允许 DocuSign 根据需要获取文档数据。 仅在发送信封超过 Salesforce 标注限制时开启。</help>
+    <label><!-- Fetch Documents --></label>
+    <name>dsfs__FetchDocuments__c</name>
+</CustomFieldTranslation>

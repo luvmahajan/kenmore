@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Activity_Type_2_on_Emails</fullName>
+        <description>Email populates in the Activity Type 2 Field</description>
+        <field>Activity_Type_2__c</field>
+        <formula>TEXT( Type )</formula>
+        <name>Activity Type 2 on Emails</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Closed_Opportunity</fullName>
+        <field>Type</field>
+        <literalValue>Opportunity Closed</literalValue>
+        <name>Closed Opportunity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Task_Completed_Date</fullName>
+        <description>update task Completed Date when task status is COMPLETED</description>
+        <field>Completed_Date__c</field>
+        <formula>today()</formula>
+        <name>Task Completed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Task_Type</fullName>
+        <field>Type</field>
+        <literalValue>Opportunity Created</literalValue>
+        <name>Task Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Type_field</fullName>
+        <field>Activity_Type_2__c</field>
+        <formula>TEXT( Type )</formula>
+        <name>Type field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Opportunity Closed</fullName>
+        <actions>
+            <name>Closed_Opportunity</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Subject= &quot;Opportunity Closed&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity Created</fullName>
+        <actions>
+            <name>Task_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.Subject</field>
+            <operation>equals</operation>
+            <value>Opportunity Created</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Task - Type of Task Rule - Update</fullName>
+        <actions>
+            <name>Type_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  NOT(ISPICKVAL(Type, &quot;&quot;)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Task Completed Date</fullName>
+        <actions>
+            <name>Task_Completed_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.Status</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Task.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Construction PM</value>
+        </criteriaItems>
+        <description>populates completed date when task status is updated to Completed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

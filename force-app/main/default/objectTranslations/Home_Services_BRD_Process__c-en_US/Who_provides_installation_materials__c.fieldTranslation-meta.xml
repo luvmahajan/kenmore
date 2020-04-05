@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Examples: Pigtail waterline, dryer vent, etc. --></help>
+    <label><!-- Who provides installation materials --></label>
+    <name>Who_provides_installation_materials__c</name>
+    <picklistValues>
+        <masterLabel>Client</masterLabel>
+        <translation><!-- Client --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sears Installer</masterLabel>
+        <translation><!-- Sears Installer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

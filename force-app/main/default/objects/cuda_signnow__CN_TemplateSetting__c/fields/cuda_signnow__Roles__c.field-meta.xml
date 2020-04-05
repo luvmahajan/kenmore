@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cuda_signnow__Roles__c</fullName>
+    <deprecated>false</deprecated>
+    <description>allow you to customize the roles for the invite.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>[{&quot;order&quot;:&quot;1&quot;, &quot;name&quot;:&quot;Signer&quot;, &quot;email&quot;:&quot;{Contact.Email}&quot;, &quot;allow_forwarding&quot;:&quot;yes&quot;}]</inlineHelpText>
+    <label>Roles</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>20</visibleLines>
+</CustomField>

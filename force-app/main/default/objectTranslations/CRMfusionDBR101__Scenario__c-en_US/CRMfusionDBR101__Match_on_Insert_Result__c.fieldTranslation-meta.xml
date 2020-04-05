@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Do Not Insert - Prevents creation of duplicates if a match is found.
+Redirect to Existing - Automatically redirects to the existing matched object.
+Report Duplicate - Create a duplicate warning and allow object creation.
+Do Nothing - Take no action. --></help>
+    <label><!-- Match on Insert Result --></label>
+    <name>CRMfusionDBR101__Match_on_Insert_Result__c</name>
+    <picklistValues>
+        <masterLabel>Auto-Convert Lead</masterLabel>
+        <translation><!-- Auto-Convert Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto-Merge</masterLabel>
+        <translation><!-- Auto-Merge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Insert</masterLabel>
+        <translation><!-- Do Not Insert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Nothing</masterLabel>
+        <translation><!-- Do Nothing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redirect To Existing</masterLabel>
+        <translation><!-- Redirect To Existing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Report Duplicate</masterLabel>
+        <translation><!-- Report Duplicate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Chargeback_Amount_Resolved__c</fullName>
+    <description>Shows the Total Chargeback Amount that was resolved for the Account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Shows the Total Chargeback Amount that was resolved for the Account</inlineHelpText>
+    <label>Total Chargeback Amount Resolved</label>
+    <summarizedField>Customer_Service__c.Amount_Resolved__c</summarizedField>
+    <summaryForeignKey>Customer_Service__c.Account_Name__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

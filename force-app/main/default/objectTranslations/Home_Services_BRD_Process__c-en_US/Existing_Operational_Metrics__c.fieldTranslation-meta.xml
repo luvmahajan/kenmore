@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Paste Client Profitability Dashboard Link, if not on dashboard please provide. --></help>
+    <label><!-- Existing Operational Metrics --></label>
+    <name>Existing_Operational_Metrics__c</name>
+</CustomFieldTranslation>

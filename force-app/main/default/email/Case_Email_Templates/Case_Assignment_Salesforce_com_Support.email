@@ -1,0 +1,13 @@
+Hi {!Case.OwnerFirstName},
+
+{!Case.CreatedBy} has requested your support with Salesforce.com Support.  Here are the details:
+
+Subject:  {!Case.Subject}
+
+Description:  {!Case.Description}
+
+This case is {!Case.Priority} Priority.  Please click on the link below and login to Salesforce.com to resolve this Case.
+
+{!Case.Link}
+
+Thank you.

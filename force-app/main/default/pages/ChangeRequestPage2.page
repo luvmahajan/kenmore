@@ -1,0 +1,116 @@
+<apex:page controller="ChangeRequestPage2Controller" showHeader="true">
+<script type="text/javascript" src="/soap/ajax/22.0/connection.js"></script>
+<script src="/soap/ajax/22.0/apex.js" type="text/javascript"></script>
+    <apex:form id="form">
+        <apex:actionFunction action="{!Approval_Process_Call}" name="Request_For_Approval_Process" />
+        <apex:actionFunction action="{!submit_for_approval}" name="submit_for_approval" oncomplete="Approval_Process_Call();"/>
+        
+        <apex:sectionHeader title="Change Request" subtitle="New Change Request"/>
+            <apex:pageblock title="Change Request Details" mode="edit">
+                <apex:pageBlockButtons >
+                    <apex:commandButton value="Save" action="{!Save}" oncomplete="alertForApprovalProcess({!tierVisible});"/>
+                    <apex:commandButton value="Cancel" action="{!Cancel}" immediate="true" />
+
+                </apex:pageBlockButtons>
+                
+                <apex:pageblockSection title="Account Information" columns="2">
+                    <apex:outputText value="{!name1}" label="Account Name "/>
+                    <!--<apex:outputText value="{!change_request_obj.Account_Name__c}" title="Account Name "/>-->
+                    <!--<apex:inputField value="{!change_request_obj.Name}" required="true"/>-->
+                    <apex:outputText value="{!sapId}" label="Account SAP ID"/>
+                    <apex:outputText value="{!sfdcId}" label="Account SFDC ID"/>
+                  </apex:pageblockSection> 
+                  
+                      <apex:actionRegion >
+                      <apex:pageblockSection title="Existing and New Request Information" columns="2" rendered="{!accountVisible}">
+                      <apex:outputText value="{!account_manager}" label="Account Owner"/>
+                      <apex:inputField value="{!change_request_obj.New_Account_Owner__c}" label="New Account Owner">
+                      <apex:actionSupport event="onchange" action="{!newTerriID}" rerender="accinfo"/>
+                      </apex:inputField>
+                      <apex:outputText value="{!territoryId}" label="Old Territory ID"/>
+                      
+                      <!--<apex:outputText value="{!newTerriID}" label="New Territory ID" id="accinfo"/>-->
+                      </apex:pageblocksection>
+                      </apex:actionRegion>
+                   
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!accountVisible}">
+                    <apex:outputText value="{!name1 }" label="Account Name"/>
+                    <apex:inputField value="{!change_request_obj.New_Account_Name__c}"/>
+                    <apex:outputText value="{!sTree}" label="Street"/>
+                    <apex:inputField value="{!change_request_obj.New_Street__c}"/>
+                    <apex:outputText value="{!cIty}" label="City"/>
+                    <apex:inputField value="{!change_request_obj.New_City__c}"/>
+                    <apex:outputText value="{!reGion}" label="Region"/>
+                    <apex:inputField value="{!change_request_obj.New_Region__c}"/>
+                    <apex:outputText value="{!postalCode}" label="Postal Code"/>
+                    <apex:inputField value="{!change_request_obj.New_Postal_Code__c}"/>
+                    <apex:outputText value="{!telePhone}" label="Telephone"/>
+                    <apex:inputField value="{!change_request_obj.New_Telephone__c}"/>
+                    <apex:outputText value="{!eMail}" label="Email"/>
+                    <apex:inputField value="{!change_request_obj.New_Email__c}"/>
+                    <!---<apex:outputText value="{!PotentialAnnualSalesVolume }" label="Potential Annual Sales Volume"/>       
+                    <apex:pageBlockSectionItem HelpText="{!$ObjectType.Change_Request__c.fields.New_Potential_Annual_Sales_Volume__c.inlineHelpText}">
+                    {!$ObjectType.Change_Request__c.fields.New_Potential_Annual_Sales_Volume__c.label}
+                    <apex:inputField value="{!change_request_obj.New_Potential_Annual_Sales_Volume__c}" />
+                    </apex:pageBlockSectionItem>          
+                    -->
+                    </apex:pageblockSection>
+                    <apex:actionRegion >
+                    <apex:pageBlockSection columns="2" rendered="{!accountVisible}">
+                    <apex:outputText value="{!Industry}" label="Industry"/>
+                    <apex:inputField value="{!change_request_obj.New_Industry__c}" label="New Industry" required="{!requireField}">
+                    <apex:actionSupport event="onchange" action="{!newNaicCode}" rerender="accinfo"/>
+                    </apex:inputField>
+                    <apex:outputText value="{!NAICS_Code}" label="NAICS Code"/>
+                    <apex:outputtext value="{!change_request_obj.New_NAICS_Code__c}" label="New NAICS Code" id="accinfo" />
+                    </apex:pageBlockSection>
+                    </apex:actionRegion>
+
+                    <apex:pageBlockSection title="Pricing Tier Exception" columns="2" rendered="{!tierVisible}">
+                    <apex:outputText value="{!pricingTier}" label="Current Pricing Tier"/>
+                    <apex:inputField value="{!change_request_obj.New_Pricing_Tier__c}" required="{!tierVisible}"/>
+                    <apex:outputText value="{0, Number, Currency}" label="Parent & Child YTD Sales">
+                        <apex:param value="{!pricingYTDSales}"/>
+                    </apex:outputText>
+                    <apex:pageBlockSectionItem />
+                    <apex:outputText value="{0, Number, Currency}" label="Parent & Child QTD Sales">
+                        <apex:param value="{!pricingQTDSales}"/>
+                    </apex:outputText>
+                    <apex:pageBlockSectionItem />
+                    <apex:outputText value="{0, Number, Currency}" label="Open Opportunity Amount">
+                        <apex:param value="{!change_request_obj.Open_Opportunity_Amount__c}"/>
+                    </apex:outputText>
+                    </apex:pageblockSection>
+
+                  <apex:pageblockSection title="CR Owner Details" columns="2">
+                   <apex:outputText value="{!owner_first_name}" label="Owner First Name"/>
+                    <apex:outputText value="{!owner_last_name}" label="Owner Last Name"/>
+                    <apex:outputText value="{!owner_email}" label="Owner Email"/>
+                    <apex:outputText label="Request Status"/>
+                 <apex:inputField value="{!change_request_obj.Reason_for_Update__c}" required="true"/>
+                </apex:pageblockSection>
+               <apex:pageblockSection title="Approver Details" columns="2">
+                    <apex:outputText value="{!change_request_obj.Approver_Name__c}" />
+                    <apex:outputText value="{!change_request_obj.File_Net_Admin_Name__c}"/>
+                    <apex:outputText value="{!change_request_obj.Approver_Status__c}"/>
+                    <apex:outputText value="{!change_request_obj.File_Admin_Status__c}"/>
+                    <apex:outputText value="{!change_request_obj.Approver_Comments__c}"/>
+                    <apex:outputText value="{!change_request_obj.File_Admin_Comments__c}"/>
+                    <apex:outputText value="{!change_request_obj.Rejection_Comments__c}"/>
+                </apex:pageblockSection>
+        </apex:pageblock>
+</apex:form>
+
+<!--1. On click of Save, the this JS is called after execting the Save() in the controller.
+    2. If the user clicks on Ok in the dialog box, request for Approval Process is sent.
+    3. Else the page is redirected to List View Page.                                        --> 
+<script type="text/javascript">
+function alertForApprovalProcess(param){
+    alert("Your Change Request has been submitted. Once approved it will be sent to the file administration team for approval and update in SAP. Updates will automatically populate to the account within 24 hours.");
+    
+    Request_For_Approval_Process();
+    submit_for_approval();
+}
+</script>
+</apex:page>

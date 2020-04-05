@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Qualified_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Marketing Qualified Lead</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>notEqual</operation>
+        <value>SearsCommercial.com</value>
+    </filters>
+    <label>CAS Marketing Qualified Leads</label>
+    <queue>Inside_Sales_Team</queue>
+    <sharedTo>
+        <role>Sears_Commercial_Executive</role>
+        <role>Sears_Commercial_Leadership</role>
+        <roleAndSubordinates>Inside_Sales_Manager</roleAndSubordinates>
+    </sharedTo>
+</ListView>

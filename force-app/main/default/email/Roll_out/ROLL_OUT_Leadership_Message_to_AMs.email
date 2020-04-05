@@ -1,0 +1,23 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<SPAN style="FONT-FAMILY: 'Garamond','serif'">Dear {!Receiving_User.FirstName},</SPAN>]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<P class=MsoNormal><SPAN style="FONT-FAMILY: 'Garamond','serif'">The development of world-class processes and systems will enable our business for growth.&nbsp; During your Salesforce.com training, you will learn to rely on this system to help you secure more new business, close more opportunities and increase sales to existing accounts. </SPAN><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 'Garamond','serif'">&nbsp;</SPAN><o:p></o:p></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 'Garamond','serif'">I am not the<SPAN style="COLOR: blue"> </SPAN>star of the following video, but having personally used Salesforce.com for several years, I believe in its message.&nbsp; Please click on the link below, or paste it into your browser window, and select Leadership Message in order to learn more about our plans for enabling your success with Salesforce.com.</SPAN><o:p></o:p></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 'Garamond','serif'">&nbsp;</SPAN><o:p></o:p></P>
+<P class=MsoNormal><U><SPAN style="FONT-FAMILY: 'Garamond','serif'"><A href="http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx"><FONT color=#800080>http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx</FONT></A></SPAN></U><o:p></o:p></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 'Garamond','serif'">&nbsp;</SPAN><o:p></o:p></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 'Garamond','serif'">Best Regards,</SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 'Garamond','serif'"></SPAN><SPAN style="FONT-FAMILY: 'Garamond','serif'">{!User.Name}</SPAN><o:p></o:p></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 'Garamond','serif'">{!User.Title}</SPAN></P>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[<SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><FONT size=3 face=Arial,Sans-Serif>
+<P align=center><SPAN style="FONT-FAMILY: Arial; COLOR: blue; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><A href="https://login.salesforce.com/"><FONT color=#606420 size=3 face=Arial,Sans-Serif>salesforce.com</FONT></A></SPAN><SPAN style="FONT-FAMILY: Arial; COLOR: #666666; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><BR></SPAN><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><FONT size=3 face=Arial,Sans-Serif>Sears Commercial has partnered with Salesforce.com to bring the world’s leading sales enablement technology to its Account Managers.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Click on the link above to login to Salesforce.com and begin seeing the positive impact in sales revenues which has been achieved by Salesforce.com customers across its base of over 77,500 companies and over 2,000,000 sales users.</FONT></SPAN></P></FONT></SPAN>]]></td>
+</tr>
+</table>

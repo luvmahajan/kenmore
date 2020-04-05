@@ -1,0 +1,419 @@
+<apex:page controller="OrderSelectionController" lightningStylesheets="true">
+    <apex:form >
+        
+        <style type = "text/css">
+            .colCenter {text-align:center;}     
+            .colRight {text-align:right;}     
+            .colLeft {text-align:left;} 
+            .row {
+            display: flex;
+            width: 100%
+            }
+            
+            .row::after {
+            display: block;
+            clear: both;
+            content: "";
+            }
+            
+            .col-1 {width: 8.33%};
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            * {
+            box-sizing: border-box;
+            }
+            
+            [class*="col-"]{
+            float: left;
+            font-size: 1rem;
+            padding: 1rem 2px;
+            }
+        .custPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 3%;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            width: 500px;
+            margin-left: -250px;
+            top:100px;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+        </style>
+        
+        
+        <!--
+
+        <apex:pageBlock title="Payment and Delivery Info">
+      		<apex:pageMessages id="showmsg"></apex:pageMessages>
+        <apex:outputPanel id="tstpopup">        
+            <div class="row">
+                <div class="col-2" align="right">Payment Type:</div>
+                <div class="col-3">
+                <apex:outputPanel rendered="{!payType==null}">
+                    <apex:selectList value="{!paymentType}" size="1">
+                        <apex:selectoptions value="{!PaymentMethod}"/>
+                    </apex:selectList>
+                </apex:outputPanel>
+                    <apex:outputPanel rendered="{!payType!=null}">
+                    {!payType}
+                    </apex:outputPanel>
+                </div>
+                <div class="col-7"/>
+            </div>
+            
+            <div class="row">
+                <div class="col-12" />
+            </div>
+            <apex:outputPanel id="checkdeldateid" rendered="{!NOT(renDelivery)}">
+                <apex:commandButton value="Check Delivery Dates" action="{!calculateDeliveryDates}" style="color:white;background:#0070d2;" reRender="sss,showmsg,tstpopup, deldateid, checkdeldateid" />
+                <br/><br/><br/><br/>
+            </apex:outputPanel>
+            <apex:outputPanel id="sss" rendered="{!renLoading}">sss</apex:outputPanel>
+            <apex:outputPanel id="deldateid" rendered="{!renDelivery}">
+            <div class="row">
+                <div class="col-2" align="right">Delivery Date:</div>
+                <div class="col-3">
+                    <apex:selectList value="{!delDate}" size="1">
+                        <apex:selectoptions value="{!DeliveryDate}"/>
+                    </apex:selectList>
+                </div>
+                <div class="col-7"/>
+            </div>
+            <div class="row">
+                <div class="col-12" />
+            </div>
+            </apex:outputPanel>
+        </apex:outputPanel>
+            
+                <apex:commandButton value="Send" action="{!actionSend}" style="color:white;background:#0070d2;" reRender="showmsg" rendered="{!NOT(renSubstitute)}"/>
+                <apex:commandButton value="Substitute Product" action="{!actionSubstitute}"/>
+                <apex:commandButton value="Cancel" action="{!actionCancel}" />
+            <div class="row">
+                <div class="col-12" />
+            </div>
+            </apex:pageBlock>        
+        
+
+
+-->
+        
+        
+        
+        <!--
+        <apex:outputPanel id="tstpopup">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                <br/><br/>
+                <apex:outputText value="Payment Type: "/>
+                <br/><br/>
+                    <apex:selectList value="{!paymentType}" size="1" style="width:20%">
+                            <apex:selectoptions value="{!PaymentMethod}" />
+                        </apex:selectList>
+                <br/><br/><br/><br/>
+                <apex:outputText value="Delivery Date: "/>
+                <br/><br/>
+                    <apex:selectList value="{!delDate}" size="1" style="width:20%">
+                            <apex:selectoptions value="{!DeliveryDate}" />
+                        </apex:selectList>
+                <br/><br/><br/><br/>
+                <apex:commandButton value="Send" action="{!actionSend}" style="color:white;background:#0070d2;" rerender="tstpopup"/>
+                <apex:commandButton value="Cancel" action="{!closePopup}" rerender="tstpopup" />
+            </apex:outputPanel>
+        </apex:outputPanel>
+        -->
+        <!--
+        <apex:outputPanel id="tstpopup">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                <apex:outputText value="Margin is "/>
+                    <apex:outputText value="{0, number, 0.00}">
+                        <apex:param value="{!margin_percent}" />
+                    </apex:outputText>
+                <br/><br/>
+                Please Provide Discount Reason.
+                <br/>
+                    <apex:inputTextarea value="{!discount_reason}" style="width:75%"/>
+                <br/><br/>
+                <apex:commandButton value="Send" action="{!actionSend}" style="color:white;background:#0070d2;" rerender="tstpopup"/>
+                <apex:commandButton value="Cancel" action="{!closePopup}" rerender="tstpopup" />
+            </apex:outputPanel>
+        </apex:outputPanel>
+        -->
+        
+        <apex:pageBlock >
+      		<apex:pageMessages id="showmsg"></apex:pageMessages>
+            <apex:outputPanel id="ordertypeid">
+            <div class="row">
+                <div class="col-2" align="right">Order Type:</div>
+                <div class="col-3">
+                    <apex:selectList value="{!selectedordertype}" size="1">
+                        <apex:selectoptions value="{!OrderType2}"/>
+                    </apex:selectList>
+                    </div>
+                <div class="col-7" />
+                </div>
+            </apex:outputPanel>
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton value="Cancel" action="{!actionCancel}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Contract Items Overview" rendered="{!IF(lstContractLineItem.size>0,true,false)}" >
+            <apex:pageBlockTable value="{!lstContractLineItem}" var="cli"  >
+                <apex:column value="{!cli.isProductParent__c}" headerValue="Parent?" />
+                <apex:column headerValue="PRODUCT">
+                    <apex:outputPanel rendered="{!NOT(cli.isProductParent__c)}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                    <apex:outputPanel rendered="{!cli.isProductParent__c}">&or;&nbsp;&nbsp;</apex:outputPanel> 
+                    <apex:outputText value="{!cli.Product__r.Name}"></apex:outputText> 
+                </apex:column>
+                <apex:column value="{!cli.Total_Quantity__c}" headerClass="colRight" styleClass="colRight" headerValue="TARGET QTY"/>
+                <apex:column value="{!cli.Items_Processed__c}" headerClass="colRight" styleClass="colRight" headerValue="RELEASE QTY"/>
+                <apex:column value="{!cli.Items_Remaining__c}" headerClass="colRight" styleClass="colRight"/>
+                <apex:column value="{!cli.Total_Amount__c}" headerClass="colRight" styleClass="colRight" headerValue="EXP. TOTAL VALUE"/>
+                <apex:column value="{!cli.Amount_Processed__c}" headerClass="colRight" styleClass="colRight"/>
+                <apex:column value="{!cli.Amount_Remaining__c}" headerClass="colRight" styleClass="colRight" headerValue="AMT REMAINING"/>
+                <apex:column value="{!cli.Status__c}" headerClass="colCenter" styleClass="colCenter"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        <br/><br/><br/><br/>
+        <apex:pageBlock title="Contract Items Selection" rendered="{!renSelection}" >
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton value="Add Selection" action="{!actionAddSelection}" reRender="showmsg,selectedCI,tstpopup"/>
+                <!--
+                <apex:commandButton value="Merge" action="{!actionMerge}"/>
+                -->
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!mapOrderSelection}" var="clim" >
+                <apex:column headerValue="Product Name">
+                    <apex:outputPanel rendered="{!NOT(mapOrderSelection[clim].isProductParent)}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                    <apex:outputPanel rendered="{!mapOrderSelection[clim].isProductParent}">&or;&nbsp;&nbsp;</apex:outputPanel> 
+                    <apex:outputText value="{!mapOrderSelection[clim].product_name}"></apex:outputText> 
+                </apex:column>
+                <apex:column value="{!mapOrderSelection[clim].product_code}" headerValue="Product Code" />
+                <apex:column headerValue="Quantity">
+                    <apex:inputText value="{!mapOrderSelection[clim].Quantity}"  rendered="{!mapOrderSelection[clim].feature}"/>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        <br/><br/><br/><br/>
+        <apex:outputPanel id="selectedCI">
+        <apex:pageBlock title="Selected Order Items" rendered="{!IF(lstOrderSelection.size>0,true,false)}" ><!--
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton value="Create Order" action="{!actionCreateOrder}"  rendered="{!NOT(renSubstitute)}" reRender="showmsg,selectedCI,tstpopup" style="color:white;background:#0070d2;"/>
+                <apex:commandButton value="Substitute Product" action="{!actionSubstitute}" rendered="{!renSubstitute}"/>
+            </apex:pageBlockButtons>-->
+            <apex:pageBlockTable value="{!lstOrderSelection}" var="os"  >
+                <!--
+                <apex:column value="{!os.product_name}" headerValue="Product Name" />
+                -->
+                <apex:column headerValue="Product Name">
+                    <apex:outputPanel rendered="{!NOT(os.isProductParent)}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                    <apex:outputPanel rendered="{!os.isProductParent}">&or;&nbsp;&nbsp;</apex:outputPanel> 
+                    <apex:outputText value="{!os.product_name}"></apex:outputText> 
+                </apex:column>
+                <apex:column value="{!os.product_code}" headerValue="Product Code" />
+                <!--
+                <apex:column value="{!os.feature}" headerValue="Feature" />
+                <apex:column headerValue="Quantity"  headerClass="colRight" styleClass="colRight">
+                    <apex:outputText value="{!os.Quantity}" style="color:#4bca81" rendered="{!AND(os.Available,os.Available_Quantity>=os.Quantity)}"></apex:outputText>
+                    <apex:outputText value="{!os.Quantity}" style="color:#c23934" rendered="{!NOT(AND(os.Available,os.Available_Quantity>=os.Quantity))}"></apex:outputText>
+                </apex:column>
+				-->
+                <apex:column headerValue="Quantity"  headerClass="colRight" styleClass="colRight" >
+                    <apex:outputText value="{!os.Quantity}" ></apex:outputText>
+                    <!--
+                    <apex:outputText value="{!os.Quantity}" style="color:#4bca81" rendered="{!OR(AND(os.Available,os.Available_Quantity>=os.Quantity),AND(os.feature!=null,os.feature!='',os.feature!='Parts'))}"></apex:outputText>
+                    <apex:outputText value="{!os.Quantity}" style="color:#c23934" rendered="{!AND(NOT(AND(os.Available,os.Available_Quantity>=os.Quantity)),OR(os.feature==null,os.feature=='',os.feature=='Parts'))}"></apex:outputText>
+                    -->
+                </apex:column>
+                <apex:column headerValue="Amount"  headerClass="colRight" styleClass="colRight">
+                    <apex:outputText value="{0, number, $0.00}" >
+                        <apex:param value="{!os.price}" />
+                    </apex:outputText>
+                </apex:column>
+                <!--
+                <apex:column value="{!os.Available_Quantity}" headerValue="Available Quantity" headerClass="colRight" styleClass="colRight"/>
+                <apex:column value="{!os.Available}" headerValue="Available" headerClass="colRight" styleClass="colRight"/>
+                -->
+                <apex:column headerValue="Available?" headerClass="colRight" styleClass="colRight">
+                    <apex:inputCheckbox value="{!os.Available}" disabled="true" />
+                </apex:column>
+                <apex:column headerValue="Earliest Available Date"  headerClass="colCenter" styleClass="colCenter" >
+                    <apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!os.Earliest_Available_Date}" /> </apex:outputText>
+                
+                </apex:column>
+                <apex:column headerClass="colLeft" styleClass="colLeft" headerValue="Configuration">
+                    <apex:selectList value="{!mapSelectedConfiguration[os.seq_no]}" size="1" rendered="{!os.feature==null}">
+                    <!--    <apex:selectoptions value="{!mapSel[os.product_code]}"/>-->
+                        <apex:selectoptions value="{!mapSel1[os.seq_no]}"/>
+                    </apex:selectList>
+                </apex:column>
+                
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+            <!--
+        <apex:outputPanel id="tstpopup"><!--
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">--
+            <apex:outputPanel rendered="{!AND(IF(lstOrderSelection.size>0,true,false),displayPopUp)}" >
+      		<apex:pageMessages id="showmsg1"></apex:pageMessages>
+            <div class="row">
+                <div class="col-12" ><u><b>Enter following values to create order:</b></u></div>
+                </div>
+            <div class="row">
+                <div class="col-3" >Payment Type:</div>
+                <div class="col-9">
+                    <apex:selectList value="{!paymentType}" size="1" >
+                            <apex:selectoptions value="{!PaymentMethod}" />
+                        </apex:selectList>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">Delivery Date:</div>
+                <div class="col-9">
+                    <apex:selectList value="{!delDate}" size="1">
+                            <apex:selectoptions value="{!DeliveryDate}" />
+                        </apex:selectList>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" />
+            </div>
+            <div class="row">
+                <div class="col-12" />
+            </div>
+                <apex:commandButton value="Send" action="{!actionSend}" rendered="{!displayPopUp}" style="color:white;background:#0070d2;" rerender="tstpopup,showmsg1"/>
+                <apex:commandButton value="Cancel" action="{!closePopup}" rerender="tstpopup" />
+            <div class="row">
+                <div class="col-12" />
+            </div>
+            </apex:outputPanel>
+        </apex:outputPanel>
+            -->
+        <apex:pageBlock title="Payment and Delivery Info" rendered="{!IF(lstOrderSelection.size>0,true,false)}" >
+            <apex:outputPanel id="tstpopup22" rendered="{!renSubstitute}" style="color:red">
+            	Since, all the products are not available, please substitute the unavailable products to create order.
+                <br/><br/>
+            </apex:outputPanel>
+        <apex:outputPanel id="tstpopup2" rendered="{!NOT(renSubstitute)}" ><!--
+            <div class="row">
+                <div class="col-12" ><u><b>Enter following values to create order:</b></u></div>
+                </div>   -->  
+            
+            <div class="row">
+                <div class="col-2" align="right">Payment Type:</div>
+                <div class="col-3">
+                <apex:outputPanel rendered="{!payType==null}">
+                    <apex:selectList value="{!paymentType}" size="1">
+                        <apex:selectoptions value="{!PaymentMethod}"/>
+                    </apex:selectList>
+                </apex:outputPanel>
+                    <apex:outputPanel rendered="{!payType!=null}">
+                    {!payType}
+                    </apex:outputPanel>
+                </div>
+                <div class="col-7"/>
+            </div>
+            
+            
+            <div class="row">
+                <div class="col-12" />
+            </div><!--
+            <apex:outputPanel id="checkdeldateid" rendered="{!NOT(renDelivery)}">-->
+            <apex:outputPanel id="checkdeldateid" rendered="{!AND(NOT(renDelivery), NOT(renSubstitute))}">
+                <!--
+                <apex:commandButton value="Check Delivery Dates" action="{!calculateDeliveryDates}" style="color:white;background:#0070d2;" reRender="sss,showmsg,showmsg2,tstpopup,tstpopup2,tstpopup22, deldateid, checkdeldateid, createorder, substituteorder" />
+                -->
+                <apex:actionStatus id="calenderStatus">
+                <apex:facet name="stop">
+                    <apex:commandButton value="Check Delivery Dates" status="calenderStatus" action="{!calculateDeliveryDates}" style="color:white;background:#0070d2;"  rerender="saveParentBlock,sss,showmsg,showmsg2,tstpopup,tstpopup2,tstpopup22, deldateid, checkdeldateid, createorder, substituteorder"/>
+                </apex:facet>
+                <apex:facet name="start">
+                    <apex:commandButton value="Retrieving Dates..." disabled="true" status="calenderStatus" />
+                </apex:facet>
+            </apex:actionStatus>
+                <br/><br/><br/><br/>
+            </apex:outputPanel><!--
+            <apex:outputPanel id="deldateid" rendered="{!renDelivery}">-->
+            <apex:outputPanel id="deldateid" rendered="{!AND(renDelivery, NOT(renSubstitute))}">
+            <div class="row">
+                <div class="col-2" align="right">Delivery Date:</div>
+                <div class="col-3">
+                    <apex:selectList value="{!delDate}" size="1">
+                        <apex:selectoptions value="{!DeliveryDate}"/>
+                    </apex:selectList>
+                </div>
+                <div class="col-7"/>
+            </div>
+            <div class="row">
+                <div class="col-12" />
+            </div>
+            </apex:outputPanel>
+            <apex:outputPanel id="delnoteid" rendered="{!AND(renDelivery, NOT(renSubstitute))}">
+            <div class="row">
+                <div class="col-2" align="right">Delivery Instruction:</div>
+                <div class="col-3">
+                    <apex:inputTextarea value="{!delNote}"/>
+                </div>
+                <div class="col-7"/>
+            </div>
+            <div class="row">
+                <div class="col-12" />
+            </div>
+            </apex:outputPanel>
+        </apex:outputPanel>
+            
+            <!--
+                <apex:commandButton value="Create Order" action="{!actionSend}" id="createorder" rendered="{!AND(NOT(renSubstitute))}" reRender="showmsg,showmsg2,selectedCI,tstpopup,tstpopup2,tstpopup22" style="color:white;background:#0070d2;"/>
+                
+			-->
+            
+                <apex:actionStatus id="orderStatus">
+                <apex:facet name="stop">
+                    <apex:commandButton value="Create Order" status="orderStatus" action="{!actionSend}" id="createorder" rendered="{!AND(NOT(renSubstitute))}" style="color:white;background:#0070d2;"  rerender="saveParentBlock,showmsg,showmsg2,selectedCI,tstpopup,tstpopup2,tstpopup22" />
+                </apex:facet>
+                <apex:facet name="start">
+                    <apex:commandButton value="Creating Order..." disabled="true" status="orderStatus" />
+                </apex:facet>
+            </apex:actionStatus>
+            
+            <apex:commandButton value="Substitute Product" action="{!actionSubstitute}" id="substituteorder" rendered="{!renSubstitute}"/><!--
+                <apex:commandButton value="Send" action="{!actionSend}" style="color:white;background:#0070d2;" reRender="showmsg2" rendered="{!NOT(renSubstitute)}"/>
+                <apex:commandButton value="Substitute Product" action="{!actionSubstitute}"/>
+                <apex:commandButton value="Cancel" action="{!actionCancel}" />-->
+            <div class="row">
+                <div class="col-12" />
+            </div>
+            </apex:pageBlock>        
+            
+            
+            </apex:outputPanel>
+        
+        
+        
+    </apex:form>
+</apex:page>

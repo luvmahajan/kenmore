@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Order Intake</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Quote created with products&lt;/p&gt;</info>
+        <picklistValueName>Order_Created</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Quote Created for review&lt;/p&gt;</info>
+        <picklistValueName>Quote_Created</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Order_Intake</recordTypeName>
+</PathAssistant>

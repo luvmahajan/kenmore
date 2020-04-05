@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Does your call planner include a thorough answer to every objection? --></help>
+    <label><!-- BI objections id with clear resolutions --></label>
+    <name>BI_objections_id_with_clear_resolution_s__c</name>
+</CustomFieldTranslation>

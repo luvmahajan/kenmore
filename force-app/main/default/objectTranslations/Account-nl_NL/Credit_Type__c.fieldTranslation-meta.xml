@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 0004	Diners Club Card
+ACH	Automated Clrg House
+AMEX	American Express
+AR	Account Receivable
+CASH	Cash
+CHCK	Physical Check
+COM1	Commercial One
+CPRO	Commercial Pro
+DISC	Discover Card
+ECHK	E-check
+GC	Sears Gift Card
+INTL	Sears Internal --></help>
+    <label><!-- Credit Type --></label>
+    <name>Credit_Type__c</name>
+    <picklistValues>
+        <masterLabel>0004</masterLabel>
+        <translation><!-- 0004 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ACH</masterLabel>
+        <translation><!-- ACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AMEX</masterLabel>
+        <translation><!-- AMEX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AR</masterLabel>
+        <translation><!-- AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CASH</masterLabel>
+        <translation><!-- CASH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHCK</masterLabel>
+        <translation><!-- CHCK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COM1</masterLabel>
+        <translation><!-- COM1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPRO</masterLabel>
+        <translation><!-- CPRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISC</masterLabel>
+        <translation><!-- DISC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ECHK</masterLabel>
+        <translation><!-- ECHK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GC</masterLabel>
+        <translation><!-- GC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INTL</masterLabel>
+        <translation><!-- INTL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MC</masterLabel>
+        <translation><!-- MC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCHG</masterLabel>
+        <translation><!-- SCHG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMC</masterLabel>
+        <translation><!-- SMC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VISA</masterLabel>
+        <translation><!-- VISA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WIRE</masterLabel>
+        <translation><!-- WIRE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

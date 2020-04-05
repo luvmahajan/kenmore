@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- National 11 digit employee number as printed on pay check --></help>
+    <label><!-- Store Associate Employee Number --></label>
+    <name>National_11_Digit_Employee_Number__c</name>
+</CustomFieldTranslation>

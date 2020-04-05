@@ -1,0 +1,7 @@
+Hello,
+
+This is a notification that finance has approved Opportunity {!Opportunity.Name} for this business account: {!Opportunity.Account}.  Please click on the link below to view the details of this record.
+
+{!Opportunity.Link}
+
+Thank you.

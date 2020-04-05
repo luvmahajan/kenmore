@@ -1,0 +1,11 @@
+Hi {!Change_Request__c.CreatedBy},
+
+Your change request has been approved and updated in SAP.  Please review the details:
+
+Change Request Name: {!Change_Request__c.Name}
+
+Account Name: {!Change_Request__c.Account_Name__c}
+
+Link: {!Change_Request__c.Link}
+
+Note: Updates will automatically populate to the Salesforce account within 24 hours.

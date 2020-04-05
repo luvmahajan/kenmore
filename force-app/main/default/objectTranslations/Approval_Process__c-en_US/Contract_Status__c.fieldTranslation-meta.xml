@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 1. On Plan - &quot;Program is on plan to hit the scheduled launch date&quot; 
+2. Behind Plan - &quot;Program will miss the scheduled launch date&quot; 
+3. At Risk - &quot;Program is currently on plan but there are a lot of variables that could throw the program behind plan&quot; --></help>
+    <label><!-- Contract Status --></label>
+    <name>Contract_Status__c</name>
+    <picklistValues>
+        <masterLabel>At Risk</masterLabel>
+        <translation><!-- At Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Behind Plan</masterLabel>
+        <translation><!-- Behind Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Plan</masterLabel>
+        <translation><!-- On Plan --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_Business_Integration_when_Send_to_Business_Integration_is_True</fullName>
+        <description>Email Business Integration when Send to Business Integration is True</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>david.dotts2@kcdbrands.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/BRD_Ready_for_Review_by_Business_Integration_Lead</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_ServicesBRD_Approved</fullName>
+        <description>Home Services BRD Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>BIT__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Home_Services_BRD_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_BRD_Approved</fullName>
+        <description>Home Services BRD Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>refugio.atilano@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>BIT__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Home_Services_BRD_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_BRD_Assigned</fullName>
+        <description>Home Services BRD Assigned</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>BIT__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Home_Services_BRD_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_BRD_Pending_DocuSign</fullName>
+        <description>Home Services BRD Pending DocuSign</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>refugio.atilano@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>BIT__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Home_Services_BRD_Pending_DocuSign</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_BRD_Rejected_Final</fullName>
+        <description>Home Services BRD Rejected (Final)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>BIT__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Home_Services_BRD_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Services_BRD_Rejected_Internal</fullName>
+        <description>Home Services BRD Rejected (Internal)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>refugio.atilano@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>BIT__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Home_Services_BRD_Rejected</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_Assigned_Date_SFDC_to_NOW</fullName>
+        <field>Approval_Assigned_Date_Salesforce__c</field>
+        <formula>NOW()</formula>
+        <name>Approval Assigned Date (SFDC) to NOW</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Date_Salesforce_to_NOW</fullName>
+        <field>Approval_Date_Salesforce__c</field>
+        <formula>NOW()</formula>
+        <name>Approval Date (Salesforce) to NOW</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Date_to_NOW</fullName>
+        <field>Approval_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Approval Date to NOW</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Approved</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Status - Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_In_Approval_Process</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>In Approval Process</literalValue>
+        <name>Approval Status - In Approval Process</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Not_Approved</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Not Approved</literalValue>
+        <name>Approval Status - Not Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Pending_DocuSign</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Pending DocuSign Approval</literalValue>
+        <name>Approval Status - Pending DocuSign</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Pending_Salesforce</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Pending Salesforce Approval</literalValue>
+        <name>Approval Status - Pending Salesforce</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_Approved</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Status (Salesforce) - Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_BI</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Pending Business Integration</literalValue>
+        <name>Approval Status (Salesforce) - BI</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_BIT</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Pending BIT</literalValue>
+        <name>Approval Status (Salesforce) - BIT</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_BRD_Review_2</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Pending BRD Review</literalValue>
+        <name>Approval Status (Salesforce) -BRD Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_Internal</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Pending Internal</literalValue>
+        <name>Approval Status (Salesforce) - Internal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_Internal_2</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Pending Internal</literalValue>
+        <name>Approval Status (Salesforce) - Internal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_Recalled</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Recalled</literalValue>
+        <name>Approval Status (Salesforce) - Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Salesforce_Rejected</fullName>
+        <field>Approval_Status_Salesforce__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Approval Status (Salesforce) - Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>BIT_Assigned_Date_to_NOW</fullName>
+        <field>BIT_Assigned_Date__c</field>
+        <formula>NOW()</formula>
+        <name>BIT Assigned Date to NOW</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>BRD_Submission_Date_to_TODAY</fullName>
+        <field>BRD_Submission_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>BRD Submission Date to TODAY</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Record_Type_Home_Services_Approved</fullName>
+        <description>Changes Approved Home Services BRD Records to the Home Services (Approved) Record Type</description>
+        <field>RecordTypeId</field>
+        <lookupValue>Home_Services_Approved</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Record Type - Home Services (Approved)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Submission_Date_to_TODAY</fullName>
+        <field>BRD_Submission_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Submission Date to TODAY</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>BRD - Approved Status - Email %2F Update</fullName>
+        <actions>
+            <name>Home_Services_BRD_Approved</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Approval_Date_to_NOW</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Approval_Status_Approved</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Record_Type_Home_Services_Approved</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update the record to Approved when the rule criteria is met</description>
+        <formula>AND(   OR(     Approval_Status_DocuSign__c = &quot;Completed&quot;,     AND(       Approval_Status_DocuSign__c = &quot;&quot;,       Pre_Approved__c = TRUE     )   ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Approved&quot; ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD - BIT Assigned - Email %2F Update</fullName>
+        <actions>
+            <name>Home_Services_BRD_Assigned</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>BIT_Assigned_Date_to_NOW</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Send notification when BIT__C is assigned or changed</description>
+        <formula>AND(
+  NOT(
+    ISBLANK( BIT__c)
+  ),
+ISCHANGED( BIT__c)
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD - In Process Status - Update</fullName>
+        <actions>
+            <name>Approval_Status_In_Approval_Process</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update the record to In Process when the rule criteria is met</description>
+        <formula>AND(   OR(     Approval_Status_DocuSign__c = &quot;Sent&quot; ,     Approval_Status_DocuSign__c = &quot;Viewed&quot;,     Approval_Status_DocuSign__c = &quot;&quot;   ),   OR(     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Pending Business Integration&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Pending BIT&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Pending Internal&quot; )   ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD - Not Approved Status - Update</fullName>
+        <actions>
+            <name>Approval_Status_Not_Approved</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update the record to Not Approved when the rule criteria is met</description>
+        <formula>OR(   Approval_Status_DocuSign__c = &quot;Voided&quot; ,   Approval_Status_DocuSign__c = &quot;Declined&quot; ,   AND(     Approval_Status_DocuSign__c = &quot;&quot;,     Pre_Approved__c = FALSE   ),   ISPICKVAL( Approval_Status_Salesforce__c , &quot;Recalled&quot; ),   ISPICKVAL( Approval_Status_Salesforce__c , &quot;Rejected&quot; ),   ISPICKVAL( Approval_Status_Salesforce__c , &quot;&quot; ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD - Pending DocuSign Status - Email %2F Update</fullName>
+        <actions>
+            <name>Home_Services_BRD_Pending_DocuSign</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Approval_Status_Pending_DocuSign</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update record to Pending DocuSign when rule criteria is met</description>
+        <formula>AND(    OR(      Approval_Status_DocuSign__c = &quot;Sent&quot; ,      Approval_Status_DocuSign__c = &quot;Viewed&quot; ,     Approval_Status_DocuSign__c = &quot;Voided&quot; ,     Approval_Status_DocuSign__c = &quot;Declined&quot; ,     AND(       Approval_Status_DocuSign__c = &quot;&quot;,       Pre_Approved__c = FALSE     )   ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Approved&quot; ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD - Pending Salesforce Status - Update</fullName>
+        <actions>
+            <name>Approval_Status_Pending_Salesforce</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(   OR(     Approval_Status_DocuSign__c = &quot;Completed&quot; ,     AND(       Approval_Status_DocuSign__c = &quot;&quot;,       Pre_Approved__c = TRUE     )   ),   OR(     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Pending Business Integration&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Pending BIT&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Pending Internal&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Recalled&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;Rejected&quot; ),     ISPICKVAL( Approval_Status_Salesforce__c , &quot;&quot; )   ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD - Send to Business Integration Check - Email</fullName>
+        <actions>
+            <name>Email_Business_Integration_when_Send_to_Business_Integration_is_True</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Home_Services_BRD_Process__c.BRD_Submission_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>New HS BRD Process - Email Business Integration when Send to Business Integration is True</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

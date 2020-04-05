@@ -1,0 +1,29 @@
+<apex:page standardController="SBQQ__Quote__c" extensions="QuoteCreditController" lightningStylesheets="true" action="{!redirectQLE}">
+    <apex:form >
+            <apex:pageBlock title="Payment Method">
+                <br/>
+                <apex:pageBlockTable value="{!lstPaymentType}" var="pay">
+                    <!--
+                    <apex:column style="width:2%">
+                        <input type="radio" name="selectRadio" value="{!pay}">
+                        	<apex:actionSupport event="onclick" action="{!actionSelected}" reRender="randid">
+                        		<apex:param name="pay" value="{!pay}"/>
+                        </apex:actionSupport>
+                    	</input>
+                	</apex:column>
+					-->
+                    <apex:column value="{!pay}" headerValue="Payment Type" style="width:8%" />
+                <apex:column headerValue="Action" style="width:90%" >
+                    <apex:outputText value="{!mapPaymentType[pay]}" escape="false"></apex:outputText>
+                </apex:column>
+                </apex:pageBlockTable>
+                <br/><br/>
+                <!--
+                <apex:commandButton value="Next" action="{!actionSend}" style="color:white;background:#0070d2;" />
+                <apex:commandButton value="Cancel" action="{!actionCancel}" />
+                -->
+                <apex:commandButton value="Go to Quote" action="{!actionCancel}" />
+             </apex:pageBlock>
+        
+     </apex:form>
+</apex:page>

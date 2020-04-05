@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Exception</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Exception_ID__c</columns>
+    <columns>CDC__c</columns>
+    <columns>warehouse_no__c</columns>
+    <columns>salescheck__c</columns>
+    <columns>Estimated_Delivery_Date__c</columns>
+    <columns>pendcode__c</columns>
+    <columns>order_no__c</columns>
+    <columns>cust_po__c</columns>
+    <columns>Delivery_City__c</columns>
+    <columns>state__c</columns>
+    <columns>postal__c</columns>
+    <columns>phone__c</columns>
+    <columns>Reason__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Delivery_Exception</value>
+    </filters>
+    <label>Delivery Exception</label>
+    <language>en_US</language>
+</ListView>

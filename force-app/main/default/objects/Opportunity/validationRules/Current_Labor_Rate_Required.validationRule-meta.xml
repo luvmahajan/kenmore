@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Labor_Rate_Required</fullName>
+    <active>false</active>
+    <description>When Type = Renewal, Current Labor Rate is a required field</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(  StageName  , &quot;Renewal&quot;),  LEN( Current__c ) = 0)</errorConditionFormula>
+    <errorDisplayField>Current__c</errorDisplayField>
+    <errorMessage>Field required when Type = Renewal</errorMessage>
+</ValidationRule>

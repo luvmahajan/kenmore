@@ -1,0 +1,9 @@
+This email is to inform you that login credentials have been Declined for your customers access to searscommercial.com Please log into Sales Force, and click on the link below to review the message/reason for this decision from the eCommerce team.
+
+Contact Name:  {!Contact.FirstName} {!Contact.LastName}
+Login: {!Contact.Email}
+User Account Setup Status:  {!Contact.User_Account_Setup_Status__c}
+Account: {!Account.Name}
+SAP ID: {!Account.SAP_Account_ID__c}
+
+{!Contact.Link}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Div --></label>
+    <name>Div__c</name>
+    <picklistValues>
+        <masterLabel>620</masterLabel>
+        <translation><!-- 620 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>622</masterLabel>
+        <translation><!-- 622 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>626</masterLabel>
+        <translation><!-- 626 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>646</masterLabel>
+        <translation><!-- 646 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

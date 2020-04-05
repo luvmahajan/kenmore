@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Industry Segmentation Del --></label>
+    <name>Industry_Segmentation_Del__c</name>
+    <picklistValues>
+        <masterLabel>Construction - Developer Multi Family (land is owned by the same company constructing)</masterLabel>
+        <translation><!-- Construction - Developer Multi Family (land is owned by the same company constructing) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction - Developer Single Family (land is owned by the same company constructing)</masterLabel>
+        <translation><!-- Construction - Developer Single Family (land is owned by the same company constructing) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction - Multi-Family General Contractors</masterLabel>
+        <translation><!-- Construction - Multi-Family General Contractors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction - Residential Remodeler</masterLabel>
+        <translation><!-- Construction - Residential Remodeler --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction - Single Family General Contractors (including assembly of pre-manufactured homes onsite by GC)</masterLabel>
+        <translation><!-- Construction - Single Family General Contractors (including assembly of pre-manufactured homes onsite by GC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education - Colleges, Universities</masterLabel>
+        <translation><!-- Education - Colleges, Universities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education - Elementary and Secondary School</masterLabel>
+        <translation><!-- Education - Elementary and Secondary School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education - Junior Colleges</masterLabel>
+        <translation><!-- Education - Junior Colleges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education - Other</masterLabel>
+        <translation><!-- Education - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee Purchase Plan</masterLabel>
+        <translation><!-- Employee Purchase Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entertainment - Amusement, Gambling (except Casino Hotels), and Recreation Industries</masterLabel>
+        <translation><!-- Entertainment - Amusement, Gambling (except Casino Hotels), and Recreation Industries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entertainment - Museums, Historical Sites, and Similar Institutions</masterLabel>
+        <translation><!-- Entertainment - Museums, Historical Sites, and Similar Institutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entertainment - Performing Arts, Spectator Sports, and Related Industries</masterLabel>
+        <translation><!-- Entertainment - Performing Arts, Spectator Sports, and Related Industries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare - Hospitals</masterLabel>
+        <translation><!-- Healthcare - Hospitals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare - Nursing and Residential Care Facilities</masterLabel>
+        <translation><!-- Healthcare - Nursing and Residential Care Facilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare - Other</masterLabel>
+        <translation><!-- Healthcare - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare - Outpatient Clinics</masterLabel>
+        <translation><!-- Healthcare - Outpatient Clinics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare - Private Social Services</masterLabel>
+        <translation><!-- Healthcare - Private Social Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Warranty</masterLabel>
+        <translation><!-- Home Warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitality - Casino Hotels</masterLabel>
+        <translation><!-- Hospitality - Casino Hotels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitality - Drinking Places (Alcoholic Beverages)</masterLabel>
+        <translation><!-- Hospitality - Drinking Places (Alcoholic Beverages) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitality - Hotels and Motels (except Casino Hotels)</masterLabel>
+        <translation><!-- Hospitality - Hotels and Motels (except Casino Hotels) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitality - Other</masterLabel>
+        <translation><!-- Hospitality - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitality - Restaurants and Other Eating Places</masterLabel>
+        <translation><!-- Hospitality - Restaurants and Other Eating Places --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance</masterLabel>
+        <translation><!-- Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Replacement</masterLabel>
+        <translation><!-- Insurance Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturer</masterLabel>
+        <translation><!-- Manufacturer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One Time Buy</masterLabel>
+        <translation><!-- One Time Buy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Original Equipment Manufacturers (OEM&#39;s)</masterLabel>
+        <translation><!-- Original Equipment Manufacturers (OEM&apos;s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Administration - Military</masterLabel>
+        <translation><!-- Public Administration - Military --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Administration - Other</masterLabel>
+        <translation><!-- Public Administration - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RERL - Home Inspection Services</masterLabel>
+        <translation><!-- RERL - Home Inspection Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RERL - Real Estate Agents and Brokers</masterLabel>
+        <translation><!-- RERL - Real Estate Agents and Brokers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RERL - Rent-to-Own</masterLabel>
+        <translation><!-- RERL - Rent-to-Own --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RERL - Residential Property Management</masterLabel>
+        <translation><!-- RERL - Residential Property Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RERL - Residential Rental Property Owner/Lessor</masterLabel>
+        <translation><!-- RERL - Residential Rental Property Owner/Lessor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail Trade</masterLabel>
+        <translation><!-- Retail Trade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retailers</masterLabel>
+        <translation><!-- Retailers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHIP (Sears Home Improvement)</masterLabel>
+        <translation><!-- SHIP (Sears Home Improvement) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Administrators (TPA&#39;s)</masterLabel>
+        <translation><!-- Third Party Administrators (TPA&apos;s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transportation</masterLabel>
+        <translation><!-- Transportation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities - Electric</masterLabel>
+        <translation><!-- Utilities - Electric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities - Natural Gas</masterLabel>
+        <translation><!-- Utilities - Natural Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities - Other</masterLabel>
+        <translation><!-- Utilities - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities - Sewage Treatment</masterLabel>
+        <translation><!-- Utilities - Sewage Treatment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities - Water Supply and Irrigation</masterLabel>
+        <translation><!-- Utilities - Water Supply and Irrigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weatherization</masterLabel>
+        <translation><!-- Weatherization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wholesale Trade</masterLabel>
+        <translation><!-- Wholesale Trade --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

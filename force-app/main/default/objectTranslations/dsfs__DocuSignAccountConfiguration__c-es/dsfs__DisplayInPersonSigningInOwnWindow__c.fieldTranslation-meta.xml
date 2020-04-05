@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Configure la página de firma InPerson de DocuSign para que se muestre en otra ventana en lugar de incorporada en el encabezamiento o la barra lateral de Salesforce.</help>
+    <label><!-- Display InPerson Signing In Own Window --></label>
+    <name>dsfs__DisplayInPersonSigningInOwnWindow__c</name>
+</CustomFieldTranslation>

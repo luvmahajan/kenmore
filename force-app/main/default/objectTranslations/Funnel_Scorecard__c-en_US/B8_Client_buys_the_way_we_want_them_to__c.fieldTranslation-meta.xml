@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Commercial:  The client does not currently purchase directly from a manufacturer.
+A&amp;E:  The client’s method of doing business aligns with our core processes for delivery/fulfilling services. --></help>
+    <label><!-- B8 Client buys the way we want them to --></label>
+    <name>B8_Client_buys_the_way_we_want_them_to__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4</masterLabel>
+        <translation><!-- 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8</masterLabel>
+        <translation><!-- 8 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

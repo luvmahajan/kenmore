@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Call_Due_Task__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>External Call Due Task</label>
+    <referenceTo>agf__ADM_Task__c</referenceTo>
+    <relationshipLabel>Delivery Schedules (External Call Due Task)</relationshipLabel>
+    <relationshipName>Delivery_Schedules3</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

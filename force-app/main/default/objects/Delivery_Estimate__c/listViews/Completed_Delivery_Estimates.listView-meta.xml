@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completed_Delivery_Estimates</fullName>
+    <columns>NAME</columns>
+    <columns>Account_Name__c</columns>
+    <columns>Opportunity_Name__c</columns>
+    <columns>Quote__c</columns>
+    <columns>Is_Project__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>of_Estimate_Details__c</columns>
+    <columns>Delivery_Estimate_Amount__c</columns>
+    <columns>Operations_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>of_Estimate_Details__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>of_Feedback_Received__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>3. Completed Delivery Estimates</label>
+</ListView>

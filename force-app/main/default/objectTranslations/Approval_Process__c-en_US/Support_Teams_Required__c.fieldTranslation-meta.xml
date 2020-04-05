@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Support Teams Required --></label>
+    <name>Support_Teams_Required__c</name>
+    <picklistValues>
+        <masterLabel>CCN</masterLabel>
+        <translation><!-- CCN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field Ops</masterLabel>
+        <translation><!-- Field Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT</masterLabel>
+        <translation><!-- IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCC</masterLabel>
+        <translation><!-- NCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parts</masterLabel>
+        <translation><!-- Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STAC/ENG</masterLabel>
+        <translation><!-- STAC/ENG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Training</masterLabel>
+        <translation><!-- Training --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

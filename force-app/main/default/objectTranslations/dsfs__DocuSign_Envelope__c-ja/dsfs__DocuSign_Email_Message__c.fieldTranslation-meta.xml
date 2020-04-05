@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>電子メールメッセージのテキスト（最大 2,000 文字まで）を編集し、DocuSign 受信者向けの署名用通知に表示します。</help>
+    <label><!-- DocuSign Email Message --></label>
+    <name>dsfs__DocuSign_Email_Message__c</name>
+</CustomFieldTranslation>

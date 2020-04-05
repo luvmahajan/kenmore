@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Act_set_status_support_only</fullName>
+    <active>false</active>
+    <description>User Account Setup Status can only be modified by Commercial Support</description>
+    <errorConditionFormula>AND( $UserRole.Name &lt;&gt; &quot;Commercial Support&quot;, $User.ProfileId &lt;&gt; &quot;00e30000001taVt&quot;,$User.ProfileId &lt;&gt; &quot;00e30000001taFp&quot;,$UserRole.Name &lt;&gt; &quot;System Administrator&quot;,   ISCHANGED( User_Account_Setup_Status__c ))</errorConditionFormula>
+    <errorDisplayField>User_Account_Setup_Status__c</errorDisplayField>
+    <errorMessage>Only Commercial Support Users can change the User Account Setup Status to Active once the customer has been setup on the Online site.</errorMessage>
+</ValidationRule>

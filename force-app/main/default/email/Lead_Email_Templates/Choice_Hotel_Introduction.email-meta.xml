@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Choice Hotel Introduction</name>
+    <style>freeForm</style>
+    <subject>Sears Commercial</subject>
+    <textOnly>Good afternoon {!Lead.Name},
+
+
+I would like to briefly introduce myself and some of the products and solutions Sears Commercial can offer Choice Hotels. My name is {!Lead.OwnerFullName} and I am a local Account Manager for your area. I am very excited that Sears Commercial is now a nationally qualified vendor for Choice Hotels (www.Choicebuys.com). Choice Hotels chose to partner with Sears Commercial because Sears is a trusted brand that can offer your hotel a variety of products and services including PTAC’s and Commercial Fitness solutions at exclusive pricing. It is my goal to become a valued advisor for your hotel’s needs and to build a valuable relationship with you and your property.
+
+
+I would like to stop by soon to view your property and to discuss any property improvements you have planned for this year.
+
+
+Thank you for your time and let me know what day of the week and time works best for me to stop by.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

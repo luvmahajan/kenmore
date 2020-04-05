@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Calls_Per_Week__c</fullName>
+    <externalId>false</externalId>
+    <label>Estimated Calls Per Week</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Less than 25</fullName>
+                <default>false</default>
+                <label>Less than 25</label>
+            </value>
+            <value>
+                <fullName>26 – 100</fullName>
+                <default>false</default>
+                <label>26 – 100</label>
+            </value>
+            <value>
+                <fullName>101 – 200</fullName>
+                <default>false</default>
+                <label>101 – 200</label>
+            </value>
+            <value>
+                <fullName>200+</fullName>
+                <default>false</default>
+                <label>200+</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

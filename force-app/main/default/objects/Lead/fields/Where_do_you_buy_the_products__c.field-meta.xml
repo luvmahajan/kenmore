@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Where_do_you_buy_the_products__c</fullName>
+    <externalId>false</externalId>
+    <label>Where do you buy the products</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct from manufacturer (e.g. GE, Whirlpool etc.)</fullName>
+                <default>false</default>
+                <label>Direct from manufacturer (e.g. GE, Whirlpool etc.)</label>
+            </value>
+            <value>
+                <fullName>Local big box retailer (e.g. Home Depot, Lowes etc.)</fullName>
+                <default>false</default>
+                <label>Local big box retailer (e.g. Home Depot, Lowes etc.)</label>
+            </value>
+            <value>
+                <fullName>Appliance Specialty Distributors/Stores (e.g. Abt, HH Gregg, Ferguson etc.)</fullName>
+                <default>false</default>
+                <label>Appliance Specialty Distributors/Stores (e.g. Abt, HH Gregg, Ferguson etc.)</label>
+            </value>
+            <value>
+                <fullName>Local merchant</fullName>
+                <default>false</default>
+                <label>Local merchant</label>
+            </value>
+            <value>
+                <fullName>Online</fullName>
+                <default>false</default>
+                <label>Online</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

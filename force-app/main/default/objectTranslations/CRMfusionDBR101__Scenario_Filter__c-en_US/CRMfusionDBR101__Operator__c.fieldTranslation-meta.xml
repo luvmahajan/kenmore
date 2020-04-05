@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the type of comparison you&apos;d like for this filter.  See the documentation for full descriptions. --></help>
+    <label><!-- Operator --></label>
+    <name>CRMfusionDBR101__Operator__c</name>
+    <picklistValues>
+        <masterLabel>!=</masterLabel>
+        <translation><!-- != --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt;</masterLabel>
+        <translation><!-- &lt; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&lt;=</masterLabel>
+        <translation><!-- &lt;= --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>=</masterLabel>
+        <translation><!-- = --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;</masterLabel>
+        <translation><!-- &gt; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;=</masterLabel>
+        <translation><!-- &gt;= --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>contains</masterLabel>
+        <translation><!-- contains --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>does not contain</masterLabel>
+        <translation><!-- does not contain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>does not end with</masterLabel>
+        <translation><!-- does not end with --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>does not start with</masterLabel>
+        <translation><!-- does not start with --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ends with</masterLabel>
+        <translation><!-- ends with --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>equals null</masterLabel>
+        <translation><!-- equals null --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>is not null</masterLabel>
+        <translation><!-- is not null --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>starts with</masterLabel>
+        <translation><!-- starts with --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

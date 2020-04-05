@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Service</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Service</value>
+    </caseValues>
+    <layouts>
+        <layout>Chargeback Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Chargeback Details --></label>
+            <section>Chargeback Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Solution Layout</layout>
+        <sections>
+            <label><!-- Additional Credit Information --></label>
+            <section>Additional Credit Information</section>
+        </sections>
+        <sections>
+            <label><!-- Blue Tarp --></label>
+            <section>Blue Tarp</section>
+        </sections>
+        <sections>
+            <label><!-- Checklist --></label>
+            <section>Checklist</section>
+        </sections>
+        <sections>
+            <label><!-- Citi --></label>
+            <section>Citi</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Service Details --></label>
+            <section>Customer Service Details</section>
+        </sections>
+        <sections>
+            <label><!-- Recourse --></label>
+            <section>Recourse</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Chargeback Process --></description>
+        <label><!-- Chargeback Process --></label>
+        <name>Chargeback_Process</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Credit Process --></description>
+        <label><!-- Credit Process --></label>
+        <name>Credit_Process</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If the Credit Line Requested is &gt; or = to $25K then all items in the check list are required fields. --></errorMessage>
+        <name>Amount_25k_checklist_fields_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Final Approval Amount is required when the status is Completed and credit has been approved. --></errorMessage>
+        <name>Amount_Approved_is_Required</name>
+    </validationRules>
+    <workflowTasks>
+        <description><!-- Attached to this account are invoices that have been charged back to SHC. Please contact the customer to determine the reason for non-payment. Following the discussion, post your notes to this field, delete these instructions and mark this task Completed. --></description>
+        <name>Chargeback_Issued_Please_contact_customer</name>
+        <subject><!-- Chargeback Issued - Please contact customer --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

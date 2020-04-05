@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Union__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Union labor for off load and complete installs</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Union labor for off load and complete installs</inlineHelpText>
+    <label>Is Union</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Who_will_recieve_customer_complaints__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>For customer complaints regarding service, who will receive the complaint and handle it?</inlineHelpText>
+    <label>Who will recieve customer complaints</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client</fullName>
+                <default>false</default>
+                <label>Client</label>
+            </value>
+            <value>
+                <fullName>MSO</fullName>
+                <default>false</default>
+                <label>MSO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

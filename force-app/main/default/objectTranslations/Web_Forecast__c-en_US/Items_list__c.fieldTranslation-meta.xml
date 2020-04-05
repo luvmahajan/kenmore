@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please verify the forecast you entered before submitting the final file --></help>
+    <label><!-- Items list --></label>
+    <name>Items_list__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the Account or Contact field that is matched against the Lead field in this rule for Lead to Account or Lead to Contact scenarios. --></help>
+    <label><!-- Related Field --></label>
+    <name>CRMfusionDBR101__Related_Field_Display_Value__c</name>
+</CustomFieldTranslation>

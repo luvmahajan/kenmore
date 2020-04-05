@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Sent to Recourse&gt; 72 hours</name>
+    <style>none</style>
+    <subject>Your Credit Request was sent to Recourse over 72 hours ago</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

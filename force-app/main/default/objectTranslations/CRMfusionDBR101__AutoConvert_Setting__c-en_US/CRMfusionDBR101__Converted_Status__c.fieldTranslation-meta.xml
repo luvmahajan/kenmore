@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The status to assign to the lead during the automatic conversion.  The status must be a converted status. --></help>
+    <label><!-- Converted Status --></label>
+    <name>CRMfusionDBR101__Converted_Status__c</name>
+</CustomFieldTranslation>

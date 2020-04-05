@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Can the site accommodate 53&apos; truck for 2 hours? --></help>
+    <label><!-- Site accessible by 53&apos; trailer for 2 hr --></label>
+    <name>Trailer_53_Ft_Accessible__c</name>
+</CustomFieldTranslation>

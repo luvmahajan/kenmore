@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Use on the Opportunity Record to indicate Stage Progress 
+Red =  Identification, Conduct Due Diligence, Review Customer Requirements, Determine Solution, Closed Lost</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>Red Light</name>
+    <public>true</public>
+</Document>

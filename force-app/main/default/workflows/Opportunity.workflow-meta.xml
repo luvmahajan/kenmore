@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>BCD_Rejected</fullName>
+        <description>BCD Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/BCD_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>BRD_Available_for_Finance_Review</fullName>
+        <description>BRD Available for Finance Review</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration.user@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/BRD_Available_for_Finance_Review</template>
+    </alerts>
+    <alerts>
+        <fullName>BRD_Available_for_Pricing_and_Approval</fullName>
+        <description>BRD Available for Pricing and Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration.user@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/BRD_Available_for_Pricing_and_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>BRD_Ready_for_Review_by_Support_Teams</fullName>
+        <description>BRD Ready for Review by Support Teams</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration.user@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/BRD_Ready_for_Review_by_Support_Team</template>
+    </alerts>
+    <alerts>
+        <fullName>BRD_Rejected</fullName>
+        <description>BRD Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/BRD_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Blue_Sheet_Reviewed_by_Manager</fullName>
+        <description>Blue Sheet Reviewed by Manager</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Opportunity_Templates/Blue_Sheet_Reviewed_by_Manager</template>
+    </alerts>
+    <alerts>
+        <fullName>Commercial_Fitness_Win_Wire</fullName>
+        <description>Commercial Fitness Win Wire</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CommercialSalesManagement</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>cpiets1@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>nhayes@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Opportunity_Templates/Commercial_Fitness_Win_Wire</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_Admins_need_to_review_Contract</fullName>
+        <ccEmails>cscont@searshc.com</ccEmails>
+        <description>Contract Admins need to review Contract</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Contract_to_be_reviewed_by_Contract_Admins</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_Approved_by_DM</fullName>
+        <description>Contract Approved by DM</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Contract_Approved_by_DM</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_Approved_by_Director_of_Nat_l_Gov_l_Sales</fullName>
+        <description>Contract Approved by Director of Nat&#39;l &amp; Gov&#39;l Sales</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Contract_Approved_by_National_Governmental_Sales</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_Approved_by_Legal</fullName>
+        <description>Contract Approved by Legal</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Contract_Approved_by_Legal</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_Approved_by_RM</fullName>
+        <description>Contract Approved by RM</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Contract_Approved_by_RM</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_Rejected</fullName>
+        <description>Contract Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Contract_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_has_Final_Approval</fullName>
+        <description>Contract has Final Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Contract_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_notification_when_Stage_equals_Contract_Preparation_and_Negotiation</fullName>
+        <ccEmails>csconadm@searshc.com</ccEmails>
+        <description>Contract notification when Stage equals Contract Preparation and Negotiation</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Contract_to_be_reviewed_by_Contract_Admins</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Business_Integration_when_Send_to_Business_Integration_is_True</fullName>
+        <description>Email Business Integration when Send to Business Integration is True</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration.user@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/BRD_Ready_for_Review_by_Business_Integration_Lead</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Notification_for_Opportunities_Won_Lost</fullName>
+        <description>Email Notification for Opportunities Won/Lost</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>gshaffe@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>joseph.shao@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Opportunity_Templates/Opportunity_Won_Lost</template>
+    </alerts>
+    <alerts>
+        <fullName>Finance_has_approved_BRD</fullName>
+        <description>Finance has approved BRD</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Finance_has_approved_a_BRD</template>
+    </alerts>
+    <alerts>
+        <fullName>Finance_has_approved_review_the_opportunity</fullName>
+        <description>Finance has approved - review the opportunity</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/BRD_Ready_for_Review_by_Business_Integration_Lead</template>
+    </alerts>
+    <alerts>
+        <fullName>Finance_has_rejected_an_Opportunity</fullName>
+        <description>Finance has rejected an Opportunity</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Finance_has_rejected_a_BRD</template>
+    </alerts>
+    <alerts>
+        <fullName>Finance_has_reviewed_and_approved_Opportunity</fullName>
+        <description>Finance has reviewed and approved Opportunity</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration.user@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Finance_has_approved_a_BRD</template>
+    </alerts>
+    <alerts>
+        <fullName>Fitness_opportunity_Lost</fullName>
+        <description>Fitness opportunity Lost</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>cpiets1@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Opportunity_Templates/Fitness_Opportunity_Lost</template>
+    </alerts>
+    <alerts>
+        <fullName>Forward_to_Business_Process_Lead</fullName>
+        <description>Forward to Business Process Lead</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration.user@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/BRD_Ready_for_Review_by_Business_Integration_Lead</template>
+    </alerts>
+    <alerts>
+        <fullName>Loss_Wire</fullName>
+        <ccEmails>Joseph.Macro@searshc.com</ccEmails>
+        <ccEmails>kris.eyunni@slslogistics.com</ccEmails>
+        <ccEmails>Paul.Cunningham@searshc.com</ccEmails>
+        <ccEmails>MKULOVI@searshc.com</ccEmails>
+        <description>Loss Wire</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Sears_Commercial_Leadership</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>West_Region</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>derek.daniel@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>timothy.waller@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Opportunity_Templates/Big_Deal_Alert_Loss</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Commercial_TV_Opportunity</fullName>
+        <description>New Commercial TV Opportunity</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>dzakrz1@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ghunt4@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Opportunity_Templates/Commercial_TV_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_when_Contract_Attached_has_been_checked</fullName>
+        <ccEmails>csconadm@searshc.com</ccEmails>
+        <description>Notification when Contract Attached has been checked</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Contract_to_be_reviewed_by_Contract_Admins_when_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Contract_Admin_Team_of_Submitted_Contract</fullName>
+        <ccEmails>cscont@searshc.com</ccEmails>
+        <description>Notify Contract Admin Team of Submitted Contract</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Contract_Email_Templates/Contract_to_be_reviewed_by_Contract_Admins_when_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_VK_of_HS_A_E_Renewal_Opportunity</fullName>
+        <description>Notify VK of HS &amp; A&amp;E Renewal Opportunity</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration.user@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Renewal_Opportunity_Ready_for_Review</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Closed_Lost_Product_Feedback_Email</fullName>
+        <description>Opportunity - Closed Lost Product Feedback - Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>matthew.maring@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sara.kimball@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Opportunity_Templates/Opportunity_Won_Lost</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Closing_in_15_Days</fullName>
+        <description>Opportunity Closing in 15 Days</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Opportunity_Templates/Opportunity_set_to_close_in_15_days</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Stage_Change_PM_BIT</fullName>
+        <description>Opportunity Stage Change (PM/BIT)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Sears_Employee__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Opportunity_Templates/Notification_of_Opportunity_Status</template>
+    </alerts>
+    <alerts>
+        <fullName>Renewal_Oppt_Available_for_Pricing_Lead</fullName>
+        <description>Renewal Oppt Available for Pricing Lead</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration.user@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Renewal_Opportunity_available_for_Pricing_Lead</template>
+    </alerts>
+    <alerts>
+        <fullName>Submit_BRD_for_Approval</fullName>
+        <description>Submit BRD for Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Submit_BRD_for_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Win_Wire</fullName>
+        <ccEmails>Joseph.Macro@searshc.com</ccEmails>
+        <ccEmails>kris.eyunni@slslogistics.com</ccEmails>
+        <ccEmails>Paul.Cunningham@searshc.com</ccEmails>
+        <ccEmails>MKULOVI@searshc.com</ccEmails>
+        <description>Win Wire</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>SearsCommercialLeadershipTeam</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>West_Region</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>derek.daniel@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>marquitta.carr@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sheila.styles@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>timothy.waller@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Opportunity_Templates/Big_Deal_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Win_Wire_AE</fullName>
+        <description>Win Wire_AE</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>amanda.christopher@nationalclaimcenters.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>babercr@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>btruong@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>chris.granger@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>daryl.matthews@aefactoryservice.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>refugio.atilano@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sramse1@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Opportunity_Templates/Big_Deal_Alert_AE</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Business_Commercial</fullName>
+        <field>Business__c</field>
+        <literalValue>Commercial</literalValue>
+        <name>Business - Commercial</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Business_Home_Services</fullName>
+        <field>Business__c</field>
+        <literalValue>Home Services</literalValue>
+        <name>Business - Home Services</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Funnel_Score_Populates</fullName>
+        <description>Funnel Scorecard Total populates for History Tracking.</description>
+        <field>Funnel_Score__c</field>
+        <formula>VALUE(TEXT( Funnel_Scorecard_Total__c))</formula>
+        <name>Funnel Score Populates</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Managers_Email</fullName>
+        <field>Managers_Email__c</field>
+        <formula>Owner.Manager.Email</formula>
+        <name>Managers Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Margin_Field</fullName>
+        <field>Margin__c</field>
+        <literalValue>10</literalValue>
+        <name>Margin Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>PreviousValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Next_Steps_Last_Updated</fullName>
+        <field>Next_Steps_Last_Updated__c</field>
+        <formula>NOW()</formula>
+        <name>Next Steps Last Updated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Oppty_Stage_Finance_Review</fullName>
+        <field>StageName</field>
+        <literalValue>Finance Review</literalValue>
+        <name>Oppty Stage = Finance Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Place_in_the_Funnel_1_49</fullName>
+        <field>Place_in_the_Funnel__c</field>
+        <literalValue>0 – 49 Universe</literalValue>
+        <name>Place in the Funnel 1-49</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Place_in_the_Funnel_50_59_Above_Funnel</fullName>
+        <field>Place_in_the_Funnel__c</field>
+        <literalValue>50 – 59 Above the Funnel</literalValue>
+        <name>Place in the Funnel 50-59 Above Funnel</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Place_in_the_Funnel_60_79_In_Funnel</fullName>
+        <field>Place_in_the_Funnel__c</field>
+        <literalValue>60 – 79 In the Funnel</literalValue>
+        <name>Place in the Funnel 60 - 79 In Funnel</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Place_in_the_Funnel_80_100_Best_Few</fullName>
+        <field>Place_in_the_Funnel__c</field>
+        <literalValue>80 – 100 Best Few</literalValue>
+        <name>Place in the Funnel 80-100 Best Few</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Support_Team_Approval_to_True</fullName>
+        <field>Support_Team_Approval__c</field>
+        <literalValue>1</literalValue>
+        <name>Populate Support Team Approval to True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Retail_Status_Contacting_Customer</fullName>
+        <field>Retail_Status__c</field>
+        <literalValue>Contacting Customer</literalValue>
+        <name>Retail Status Contacting Customer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Retail_Status_Customer_Rejects_Proposal</fullName>
+        <field>Retail_Status__c</field>
+        <literalValue>Customer Rejects Proposal</literalValue>
+        <name>Retail Status-Customer Rejects Proposal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Retail_Status_Last_Modified_Date_Contact</fullName>
+        <field>Retail_Status_Last_Modified_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Retail Status Last Modified Date-Contact</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Retail_Status_Last_Modified_Date_Neg</fullName>
+        <field>Retail_Status_Last_Modified_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Retail Status Last Modified Date-Neg</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Retail_Status_Last_Modified_Date_Reject</fullName>
+        <field>Retail_Status_Last_Modified_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Retail Status Last Modified Date-Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Retail_Status_Last_Modified_Date_Won</fullName>
+        <field>Retail_Status_Last_Modified_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Retail Status Last Modified Date-Won</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Retail_Status_Negotiating_with_Customer</fullName>
+        <description>Updates the Retail Status to Negotiating with Customer</description>
+        <field>Retail_Status__c</field>
+        <literalValue>Negotiating with Customer</literalValue>
+        <name>Retail Status Negotiating with Customer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Retail_Status_Sales_Completed</fullName>
+        <field>Retail_Status__c</field>
+        <literalValue>Sale Completed</literalValue>
+        <name>Retail Status Sales Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Roll_up_Stage_Closing</fullName>
+        <description>Stage = Legal Approval, Financial Approval, Deal Closure Won, Deal Closed Lost; Sales Process = Closing</description>
+        <field>Sales_Process__c</field>
+        <literalValue>Closing</literalValue>
+        <name>Roll-up Stage-Closing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Roll_up_Stage_Developing</fullName>
+        <description>Stage = Develop Proposal, Proposal Presentation; Sales Process = Developing</description>
+        <field>Sales_Process__c</field>
+        <literalValue>Developing</literalValue>
+        <name>Roll-up Stage-Developing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Roll_up_Stage_Negotiating</fullName>
+        <description>Stage = Solution Discussion and Negotiation, Contact Preparation and Negotiation; Sales Process = Negotiating</description>
+        <field>Sales_Process__c</field>
+        <literalValue>Negotiating</literalValue>
+        <name>Roll-up Stage-Negotiating</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Roll_up_Stage_Prospecting</fullName>
+        <description>Stage = Identification, Conduct Due Diligence, Review Customer Requirements; Sales Process = Prospecting</description>
+        <field>Sales_Process__c</field>
+        <literalValue>Prospecting</literalValue>
+        <name>Roll-up Stage-Prospecting</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Roll_up_Stage_Qualifying</fullName>
+        <description>Stage=Determine Solution, Develop/Review Pricing Model, Finance Review; Sales Process = Qualifying</description>
+        <field>Sales_Process__c</field>
+        <literalValue>Qualifying</literalValue>
+        <name>Roll-up Stage-Qualifying</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Opportunity_Amount</fullName>
+        <field>Amount</field>
+        <formula>Estimated_Opportunity_Amount__c</formula>
+        <name>Update Opportunity Amount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_to_Deal_Closure_Won</fullName>
+        <field>StageName</field>
+        <literalValue>Deal Closure/Won</literalValue>
+        <name>Update Stage to Deal Closure/Won</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_to_Determine_Solution</fullName>
+        <field>StageName</field>
+        <literalValue>Determine Solution</literalValue>
+        <name>Update Stage to Determine Solution</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_to_Develop_Pricing_Model</fullName>
+        <field>StageName</field>
+        <literalValue>Develop/Review Pricing Model</literalValue>
+        <name>Update Stage to Develop Pricing Model</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_to_Develop_Proposal</fullName>
+        <field>StageName</field>
+        <literalValue>Develop Proposal</literalValue>
+        <name>Update Stage to Develop Proposal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_to_Finance_Review</fullName>
+        <field>StageName</field>
+        <literalValue>Finance Review</literalValue>
+        <name>Update Stage to Finance Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_to_Financial_Approval</fullName>
+        <field>StageName</field>
+        <literalValue>Financial Approval</literalValue>
+        <name>Update Stage to Financial Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_to_Review_Customer_Req</fullName>
+        <field>StageName</field>
+        <literalValue>Review Customer Requirements</literalValue>
+        <name>Update Stage to Review Customer Req</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_when_Send_to_Pricing_Team_i</fullName>
+        <field>StageName</field>
+        <literalValue>Finance Review</literalValue>
+        <name>Update Stage when Send to Pricing Team i</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_stage_to_develop_pricing</fullName>
+        <field>StageName</field>
+        <literalValue>Develop/Review Pricing Model</literalValue>
+        <name>Update stage to develop pricing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_Develop_Proposal</fullName>
+        <field>StageName</field>
+        <literalValue>Develop Proposal</literalValue>
+        <name>Update to Develop Proposal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Updated_Sales_Stage_to_Legal_Approval</fullName>
+        <field>StageName</field>
+        <literalValue>Legal Approval</literalValue>
+        <name>Updated Sales Stage to Legal Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Opportunity -  Commercial Record Type - Update</fullName>
+        <actions>
+            <name>Business_Commercial</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Updates Business field on Opportunity to be Commercial for reporting</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  CONTAINS(RecordType.DeveloperName, &quot;Commercial&quot;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - 15 5 0 days before and after close date - Email</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+            <value>Closed Lost,Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>notEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Email notification to Oppty Owner when the close date is in 15, 5, 0  days before and after</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opportunity_Closing_in_15_Days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opportunity_Closing_in_15_Days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>-5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opportunity_Closing_in_15_Days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opportunity_Closing_in_15_Days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>15</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opportunity_Closing_in_15_Days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Big Deal A%26E Alert - Email</fullName>
+        <actions>
+            <name>Win_Wire_AE</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Deal Closure/Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterOrEqual</operation>
+            <value>100000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Business__c</field>
+            <operation>equals</operation>
+            <value>A and E,Home Services</value>
+        </criteriaItems>
+        <description>Notify users when rule criteria are met.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Big Deal Alert - Email</fullName>
+        <actions>
+            <name>Win_Wire</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Deal Closure/Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterOrEqual</operation>
+            <value>100000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Business__c</field>
+            <operation>equals</operation>
+            <value>Commercial</value>
+        </criteriaItems>
+        <description>Notify users when rule criteria are met.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Big Deal Loss Alert - Email</fullName>
+        <actions>
+            <name>Loss_Wire</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterOrEqual</operation>
+            <value>100000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Business__c</field>
+            <operation>equals</operation>
+            <value>Commercial</value>
+        </criteriaItems>
+        <description>Notify users when rule criteria are met.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Blue Sheet Reviewed by Manager - Email</fullName>
+        <actions>
+            <name>Blue_Sheet_Reviewed_by_Manager</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.mh_Manager_Review_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>When the manager review date changes an email notification is sent to the Oppty owner.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - CF Win Wire - Email</fullName>
+        <actions>
+            <name>Commercial_Fitness_Win_Wire</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Products_Services__c</field>
+            <operation>includes</operation>
+            <value>Commercial Fitness</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Deal Closure/Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Shipping_Start_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;$10,000.00&quot;</value>
+        </criteriaItems>
+        <description>Commercial Fitness opportunity Win WIre</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - CF opportunity Lost - Email</fullName>
+        <actions>
+            <name>Fitness_opportunity_Lost</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Products_Services__c</field>
+            <operation>includes</operation>
+            <value>Commercial Fitness</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Reason_Lost__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Commercial Fitness opportunity lost</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Closed Lost Product Feedback - Email</fullName>
+        <actions>
+            <name>Opportunity_Closed_Lost_Product_Feedback_Email</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Email notification to gather product feedback for closed lost opportunities</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c), IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE), ISCHANGED(StageName),  ISPICKVAL(StageName, &quot;Closed Lost&quot;), OR( ISPICKVAL(Reason_Lost__c, &quot;Product Assortment did not meet customer needs&quot;), ISPICKVAL(Reason_Lost__c, &quot;Price offered did not meet customer perception of value&quot;) )  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Closing in 15 days - Email</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+            <value>Closed Lost,Deal Closure/Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>notEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Email notification to Oppty Owner when the close date is in 15 days</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opportunity_Closing_in_15_Days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Funnel Score Total Populates - Update</fullName>
+        <actions>
+            <name>Funnel_Score_Populates</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Funnel Scorecard Total will populate in this field for History Tracking.</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  NOT(ISBLANK(Funnel_Scorecard_Total__c)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Home Services Record Type - Update</fullName>
+        <actions>
+            <name>Business_Home_Services</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Updates Business field on Opportunity to be Home Services for reporting</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  CONTAINS(RecordType.DeveloperName, &quot;Home Services&quot;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Map Estimated Opportunity Amount - Update Field</fullName>
+        <actions>
+            <name>Update_Opportunity_Amount</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT(ISBLANK(Estimated_Opportunity_Amount__c))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Next Steps Last Updated - Update</fullName>
+        <actions>
+            <name>Next_Steps_Last_Updated</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>ISCHANGED (Next Steps) = True</description>
+        <formula>ISCHANGED ( NextStep ) = True</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Notification for Closed Opportunities - Email</fullName>
+        <actions>
+            <name>Email_Notification_for_Opportunities_Won_Lost</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND( OR(   ISPICKVAL(StageName, &#39;Deal Closure/Won&#39;),   ISPICKVAL(StageName, &#39;Closed Lost&#39;) ),    Owner.Profile.Name = &#39;Standard Inside Sales User&#39; )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Notify PM of Stage Change - Email</fullName>
+        <actions>
+            <name>Opportunity_Stage_Change_PM_BIT</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Used to notify BIT/Program Manager when AM changes the Opportunity Stage</description>
+        <formula>ISCHANGED( StageName )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Place in the Funnel 1-49 Universe - Update</fullName>
+        <actions>
+            <name>Place_in_the_Funnel_1_49</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the Funnel Scorecard Total is 1 - 49 Place in the Funnel = Universe</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISCHANGED(Funnel_Scorecard_Total__c),  Funnel_Scorecard_Total__c &gt;= 1,  Funnel_Scorecard_Total__c &lt;= 49  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Place in the Funnel 50-59 Above the Funnel - Update</fullName>
+        <actions>
+            <name>Place_in_the_Funnel_50_59_Above_Funnel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISCHANGED(Funnel_Scorecard_Total__c),  Funnel_Scorecard_Total__c &gt;= 50,  Funnel_Scorecard_Total__c &lt;= 59  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Place in the Funnel 60 - 79 - Update</fullName>
+        <actions>
+            <name>Place_in_the_Funnel_60_79_In_Funnel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISCHANGED(Funnel_Scorecard_Total__c), Funnel_Scorecard_Total__c &gt;= 60, Funnel_Scorecard_Total__c &lt;= 79 )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Place in the Funnel 80-100 - Update</fullName>
+        <actions>
+            <name>Place_in_the_Funnel_80_100_Best_Few</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISCHANGED(Funnel_Scorecard_Total__c), Funnel_Scorecard_Total__c &gt;= 80 )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Populate Managers Email - Update</fullName>
+        <actions>
+            <name>Managers_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.OwnerId</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Populates the Users Managers Email address in order to send notifications to Managers</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Roll-up Retail Status%5CContacting Customer in Roll-up - Update</fullName>
+        <actions>
+            <name>Retail_Status_Contacting_Customer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Retail_Status_Last_Modified_Date_Contact</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Roll-up Status based on Stage</description>
+        <formula>AND( ISCHANGED( StageName ), OR( ISPICKVAL( StageName , &quot;Identification&quot;), ISPICKVAL( StageName , &quot;Conduct Due Diligence&quot;), ISPICKVAL( StageName , &quot;Review Customer Requirements&quot;), ISPICKVAL( StageName , &quot;Determine Solution&quot;)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Roll-up Retail Status%5CCustomer Rejects Proposal - Update</fullName>
+        <actions>
+            <name>Retail_Status_Customer_Rejects_Proposal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Retail_Status_Last_Modified_Date_Reject</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Roll-up Status based on Stage</description>
+        <formula>AND(  ISCHANGED( StageName ),  OR(  ISPICKVAL( StageName , &quot;Closed Lost&quot;)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Roll-up Retail Status%5CNegotiating with Customer - Update</fullName>
+        <actions>
+            <name>Retail_Status_Last_Modified_Date_Neg</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Retail_Status_Negotiating_with_Customer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Roll-up Status based on Stage</description>
+        <formula>AND(  ISCHANGED( StageName ), OR( ISPICKVAL( StageName , &quot;Develop/Review Pricing Model&quot;),  ISPICKVAL( StageName , &quot;Finance Review&quot;),  ISPICKVAL( StageName , &quot;Develop Proposal&quot;),  ISPICKVAL( StageName , &quot;Proposal Presentation&quot;),  ISPICKVAL( StageName , &quot;Solution Discussion and Negotiation&quot;),  ISPICKVAL( StageName , &quot;Contract Preparation and Negotiation&quot;),  ISPICKVAL( StageName , &quot;Legal Approval&quot;),  ISPICKVAL( StageName , &quot;Financial Approval&quot;)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Roll-up Retail Status%5CSale Completed - Update</fullName>
+        <actions>
+            <name>Retail_Status_Last_Modified_Date_Won</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Retail_Status_Sales_Completed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Roll-up Status based on Stage</description>
+        <formula>AND(  ISCHANGED( StageName ),  OR(  ISPICKVAL( StageName , &quot;Deal Closure/Won&quot;)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Roll-up Stage%5CClosing - Update</fullName>
+        <actions>
+            <name>Roll_up_Stage_Closing</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Financial Approval,Closed Lost,Deal Closure/Won,Legal Approval</value>
+        </criteriaItems>
+        <description>Stage = Legal Approval, Financial Approval, Deal Closure Won, Deal Closed Lost; Sales Process = Closing</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Roll-up Stage%5CDeveloping - Update</fullName>
+        <actions>
+            <name>Roll_up_Stage_Developing</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Develop Proposal,Proposal Presentation</value>
+        </criteriaItems>
+        <description>Stage = Develop Proposal, Proposal Presentation; Sales Process = Developing</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Roll-up Stage%5CNegotiating - Update</fullName>
+        <actions>
+            <name>Roll_up_Stage_Negotiating</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Contract Preparation and Negotiation,Solution Discussion and Negotiation</value>
+        </criteriaItems>
+        <description>Stage = Solution Discussion and Negotiation, Contact Preparation and Negotiation; Sales Process = Negotiating</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Roll-up Stage%5CProspecting - Update</fullName>
+        <actions>
+            <name>Roll_up_Stage_Prospecting</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Identification,Conduct Due Diligence,Review Customer Requirements</value>
+        </criteriaItems>
+        <description>Stage = Identification, Conduct Due Diligence, Review Customer Requirements; Sales Process = Prospecting</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Roll-up Stage%5CQualifying - Update</fullName>
+        <actions>
+            <name>Roll_up_Stage_Qualifying</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Determine Solution,Develop/Review Pricing Model,Finance Review</value>
+        </criteriaItems>
+        <description>Stage=Determine Solution, Develop/Review Pricing Model, Finance Review; Sales Process = Qualifying</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity Closed</fullName>
+        <actions>
+            <name>Opportunity_Closed</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(
+AND(
+Owner.UserRole.Name  = &quot;National Segment Manager&quot;,
+Owner.UserRole.Name = &quot;SA Region, Strategic Accounts&quot;,  
+Owner.UserRole.Name = &quot;Sears Administrator&quot;,
+Owner.UserRole.Name = &quot;West Region, Central&quot;, 
+Owner.UserRole.Name = &quot;East Region, South East - SR&quot;),
+ISPICKVAL( StageName , &quot;Closed Won&quot;))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity Created</fullName>
+        <actions>
+            <name>Opportunity_Created</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <formula>OR( 
+CreatedBy.UserRole.Name = &quot;National Segment Manager&quot;, 
+CreatedBy.UserRole.Name = &quot;SA Region, Strategic Accounts&quot;, 
+CreatedBy.UserRole.Name = &quot;Sears Administrator&quot;, 
+CreatedBy.UserRole.Name = &quot;West Region, Central - SR&quot;, 
+CreatedBy.UserRole.Name = &quot;East Region, South East - SR&quot;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity Created Task</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Determine_Method_of_Payment_and_review_SC1_Application_requirements_with_custome</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Determine Method of Payment and review Commercial One Application requirements with customer (where appropriate)</subject>
+    </tasks>
+    <tasks>
+        <fullName>Get_Legal_Approval</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Get Legal approval for Opportunity</description>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Get Legal Approval</subject>
+    </tasks>
+    <tasks>
+        <fullName>Opportunity_Closed</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.CloseDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Completed</status>
+        <subject>Opportunity Closed</subject>
+    </tasks>
+    <tasks>
+        <fullName>Opportunity_Created</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Completed</status>
+        <subject>Opportunity Created</subject>
+    </tasks>
+    <tasks>
+        <fullName>Schedule_Initial_Appointment</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Schedule Initial Appointment</subject>
+    </tasks>
+    <tasks>
+        <fullName>Submit_Forecast_Worksheet</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Submit Forecast Worksheet</subject>
+    </tasks>
+    <tasks>
+        <fullName>Transition_to_Order_Management</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Transition to Order Management</subject>
+    </tasks>
+</Workflow>

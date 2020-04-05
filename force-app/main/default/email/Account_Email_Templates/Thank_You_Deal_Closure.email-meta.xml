@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Thank you for order/partnership</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Thank You (Deal Closure)</name>
+    <style>freeForm</style>
+    <subject>Thank you from Sears Commercial</subject>
+    <textOnly>{!Today}
+
+Dear {!Contact.Name}
+ 
+Thank you for choosing Sears Commercial, we really appreciate your business. We have just processed your order, and wanted to take time to thank you for being a loyal Sears Commercial customer. If there is anything more that we can provide you with, please reach out to us as we would be happy to help.
+ 
+Thank you for your continued support, and we look forward to working again with you in the future.
+ 
+Thank you,
+    	
+	{!User.FirstName} {!User.LastName}
+	{!User.Title}
+	{!User.Division}
+	{!User.CompanyName}
+	{!User.Email}
+	{!User.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,20 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p class="MsoNormal" style="text-align: right;"><font class="Apple-style-span" size="3"><span class="Apple-style-span" style="font-size: 13px;">{!Today}</span></font></p><p class="MsoNormal"><span style="font-size:10.0pt"><br></span></p><p class="MsoNormal"><span style="font-size:10.0pt">Dear&nbsp;{!Contact.Name},<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt">Thanks again for choosing
+Sears Commercial services. We just wanted to follow-up and ensure that you received
+the highest quality of service from our team, and to reiterate our appreciation
+of your business. If there are any additional inquiries that you may have,
+please let us know and we would be happy to assist you.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt">Thank you,<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt">Sears Commercial<o:p></o:p></span></p>]]></td>
+</tr>
+</table>

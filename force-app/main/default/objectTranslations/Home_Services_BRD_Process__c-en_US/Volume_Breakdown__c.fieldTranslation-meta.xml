@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Example: 2000 Collect Calls (1800 In Home; 200 CarryIn) 500 In Warranty (400 In Home; 100 CarryIn)
+Example: 5000 deliveries 4000 setups 500 installations --></help>
+    <label><!-- zDEL_Volume Breakdown --></label>
+    <name>Volume_Breakdown__c</name>
+</CustomFieldTranslation>

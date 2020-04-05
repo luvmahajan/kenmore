@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Message for SAP Maintenance to create a new SCOPES Account</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Creation of new SAP Account</name>
+    <style>none</style>
+    <subject>Attn: A SAP Account Needs to be Created</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

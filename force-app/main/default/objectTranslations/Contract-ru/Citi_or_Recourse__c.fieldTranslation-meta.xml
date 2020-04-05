@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Citi or Recourse --></label>
+    <name>Citi_or_Recourse__c</name>
+    <picklistValues>
+        <masterLabel>Citi</masterLabel>
+        <translation><!-- Citi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recourse</masterLabel>
+        <translation><!-- Recourse --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

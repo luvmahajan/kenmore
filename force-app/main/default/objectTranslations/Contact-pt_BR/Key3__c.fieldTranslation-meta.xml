@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Data.Key field populates based on Key 3 value --></help>
+    <label><!-- Key3 --></label>
+    <name>Key3__c</name>
+</CustomFieldTranslation>

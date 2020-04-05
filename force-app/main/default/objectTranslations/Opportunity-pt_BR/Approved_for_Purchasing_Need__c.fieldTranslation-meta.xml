@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If Sears Commercial 1 as Method of Payment is selected, then &quot;Approved for Purchasing Need&quot; is required --></help>
+    <label><!-- Approved for Purchasing Need --></label>
+    <name>Approved_for_Purchasing_Need__c</name>
+</CustomFieldTranslation>

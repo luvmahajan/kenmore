@@ -1,0 +1,26 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<P style="TEXT-ALIGN: right" class=MsoNormal><FONT class=Apple-style-span size=3><SPAN style="FONT-SIZE: 13px" class=Apple-style-span>{!Today}</SPAN></FONT></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><BR></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">Hello {!Lead.Name},<?xml:namespace prefix = o /><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">I just wanted to follow-up a voice message that I left for you a few days ago. I was hoping to discuss the many ways that Sears Commercial and {!Lead.Company} can work together to establish a successful partnership. I believe that our Commercial division of Sears can provide you with a variety of programs and services that fit the needs of&nbsp;{!Lead.Company}, such as:<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN-LEFT: 0.25in" class=MsoNormal><SPAN style="FONT-SIZE: 10pt">{!Lead.Products_Services__c}<o:p></o:p></SPAN></P>
+<P style="MARGIN-LEFT: 0.25in" class=MsoNormal><SPAN style="FONT-SIZE: 10pt">{!Lead.Programs__c}<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">Please feel free to schedule an appointment or respond to me via email or phone if you are interested, or if you have any questions. It would be my pleasure to discuss this further with you.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">Thank you,<o:p></o:p></SPAN></P>
+<P class=MsoNormal><FONT class=Apple-style-span size=3><SPAN style="FONT-SIZE: 13px" class=Apple-style-span><BR></SPAN></FONT></P>
+<P class=MsoNormal><FONT class=Apple-style-span size=3><SPAN style="FONT-SIZE: 13px" class=Apple-style-span></SPAN></FONT></P><FONT class=Apple-style-span size=3>
+<P class=MsoNormal><SPAN style="COLOR: black; FONT-SIZE: 10pt"><SPAN style="WHITE-SPACE: pre" class=Apple-tab-span></SPAN>{!User.FirstName} {!User.LastName}<?xml:namespace prefix = u2 /><u2:p></u2:p></SPAN><SPAN style="COLOR: black"><?xml:namespace prefix = u1 /><u1:p></u1:p><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: black; FONT-SIZE: 10pt"><SPAN style="WHITE-SPACE: pre" class=Apple-tab-span></SPAN>{!User.Title}</SPAN><SPAN style="COLOR: black"><u1:p></u1:p><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: black; FONT-SIZE: 10pt"><SPAN style="WHITE-SPACE: pre" class=Apple-tab-span></SPAN></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: black; FONT-SIZE: 10pt"><SPAN style="WHITE-SPACE: pre" class=Apple-tab-span></SPAN>{!User.CompanyName}</SPAN><SPAN style="COLOR: black"><u1:p></u1:p><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: black; FONT-SIZE: 10pt"><SPAN style="WHITE-SPACE: pre" class=Apple-tab-span></SPAN>{!User.Email}</SPAN><SPAN style="COLOR: black"><u1:p></u1:p><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: black; FONT-SIZE: 10pt"><SPAN style="WHITE-SPACE: pre" class=Apple-tab-span></SPAN>{!User.Phone}</SPAN><SPAN style="COLOR: black"><o:p></o:p></SPAN></P></FONT>
+<P></P>]]></td>
+</tr>
+</table>

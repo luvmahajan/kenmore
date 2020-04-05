@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The cabinets must be flush on bottom or have appropriate blocking (3” flush board on both sides of the cabinet opening and all the way back). --></help>
+    <label><!-- Cabinets Flush on the Bottom? --></label>
+    <name>Cabinets_Flush_on_the_Bottom__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

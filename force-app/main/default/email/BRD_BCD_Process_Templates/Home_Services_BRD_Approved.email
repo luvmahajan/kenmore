@@ -1,0 +1,15 @@
+Hello,
+
+This is a notification that a BRD has been approved!
+
+BRD Link: {!Home_Services_BRD_Process__c.Link}
+Opportunity: {!Opportunity.Name} ({!Opportunity.Link})
+Account: {!Home_Services_BRD_Process__c.Account__c}
+
+Please proceed with the next steps as follows:
+
+1. Visit the BRD ({!Home_Services_BRD_Process__c.Link}) to begin creating the Contract record.
+2. If you are using Sears/A&E contracts, please download the latest version from Content (within the 'Home Services: Contract Templates' library) and begin drafting the agreement.
+
+
+Thank you.

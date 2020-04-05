@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- NCM: Check this box if a BRD has been approved during weekly call. If so, Internal Approval via DocuSign is NOT needed. --></help>
+    <label><!-- Pre-Approved --></label>
+    <name>Pre_Approved__c</name>
+</CustomFieldTranslation>

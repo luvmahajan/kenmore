@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When this box is checked, the Opportunity will appear on the District, Region and Sears Commercial Business Dashboards. --></help>
+    <label><!-- Watchlist --></label>
+    <name>Watchlist__c</name>
+</CustomFieldTranslation>

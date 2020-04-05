@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 01	AppSel
+02	InsPort
+03	InsSF
+04	InsNV
+05	HW --></help>
+    <label><!-- Customer Group 2 --></label>
+    <name>Customer_Group_2__c</name>
+    <picklistValues>
+        <masterLabel>01</masterLabel>
+        <translation><!-- 01 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>02</masterLabel>
+        <translation><!-- 02 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>03</masterLabel>
+        <translation><!-- 03 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>04</masterLabel>
+        <translation><!-- 04 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>05</masterLabel>
+        <translation><!-- 05 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

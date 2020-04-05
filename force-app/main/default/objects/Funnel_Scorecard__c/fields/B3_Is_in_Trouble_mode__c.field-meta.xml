@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B3_Is_in_Trouble_mode__c</fullName>
+    <description>Client description of their customers’ dissatisfaction: poor/missed deliveries/timelines/budget, etc.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Client description of their customers’ dissatisfaction: poor/missed deliveries/timelines/budget, etc.</inlineHelpText>
+    <label>B3 Is in Trouble mode</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>7</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

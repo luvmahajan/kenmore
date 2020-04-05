@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- -Describe their current vendor relationship; provide examples. 
+-Examples where fees where high, but service/relationship proved most important. --></help>
+    <label><!-- B1 Service/relationship trumps price --></label>
+    <name>B1_Service_relationship_trumps_price__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9</masterLabel>
+        <translation><!-- 9 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

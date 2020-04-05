@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Delivery_Charges_for_Child</fullName>
+    <active>true</active>
+    <description>Prevent Users to enter Delivery Charges for Child Accounts</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(ParentId)),
+OR(
+NOT(ISBLANK( Delivery_Charge_First__c )),
+NOT(ISBLANK( Delivery_Charge_Subsequent__c ))
+)
+)</errorConditionFormula>
+    <errorMessage>A child account cannot have default delivery charges</errorMessage>
+</ValidationRule>

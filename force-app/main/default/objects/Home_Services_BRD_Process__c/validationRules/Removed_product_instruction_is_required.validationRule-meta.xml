@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Removed_product_instruction_is_required</fullName>
+    <active>true</active>
+    <description>If Haul Away is &quot;Yes&quot;, then What should be done with removed product is required</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL( Haul_Away__c , &quot;Yes&quot;),
+  ISBLANK( What_should_be_done_with_removed_product__c )
+)</errorConditionFormula>
+    <errorDisplayField>What_should_be_done_with_removed_product__c</errorDisplayField>
+    <errorMessage>If Haul Away = &quot;Yes&quot;, What should be done with removed product is required</errorMessage>
+</ValidationRule>

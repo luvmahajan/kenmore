@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The due date that should be used when creating a task from the merged record during an automatic merge. --></help>
+    <label><!-- Task Due Date --></label>
+    <name>CRMfusionDBR101__Task_Due_Date__c</name>
+    <picklistValues>
+        <masterLabel>1 Day</masterLabel>
+        <translation><!-- 1 Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 Month</masterLabel>
+        <translation><!-- 1 Month --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 Week</masterLabel>
+        <translation><!-- 1 Week --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 Year</masterLabel>
+        <translation><!-- 1 Year --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10 Months</masterLabel>
+        <translation><!-- 10 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>11 Months</masterLabel>
+        <translation><!-- 11 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 Days</masterLabel>
+        <translation><!-- 2 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 Months</masterLabel>
+        <translation><!-- 2 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 Weeks</masterLabel>
+        <translation><!-- 2 Weeks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 Years</masterLabel>
+        <translation><!-- 2 Years --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 Days</masterLabel>
+        <translation><!-- 3 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 Months</masterLabel>
+        <translation><!-- 3 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 Weeks</masterLabel>
+        <translation><!-- 3 Weeks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 Days</masterLabel>
+        <translation><!-- 4 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 Months</masterLabel>
+        <translation><!-- 4 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5 Days</masterLabel>
+        <translation><!-- 5 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5 Months</masterLabel>
+        <translation><!-- 5 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6 Days</masterLabel>
+        <translation><!-- 6 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6 Months</masterLabel>
+        <translation><!-- 6 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 Months</masterLabel>
+        <translation><!-- 7 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8 Months</masterLabel>
+        <translation><!-- 8 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9 Months</masterLabel>
+        <translation><!-- 9 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Immediate</masterLabel>
+        <translation><!-- Immediate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

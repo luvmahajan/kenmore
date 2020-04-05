@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Sector__c</fullName>
+    <description>This is the child relationship to the Business Sector Object</description>
+    <externalId>false</externalId>
+    <label>Business Sector</label>
+    <referenceTo>Business_Sector__c</referenceTo>
+    <relationshipLabel>Industry Segments</relationshipLabel>
+    <relationshipName>Industry_Segments</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

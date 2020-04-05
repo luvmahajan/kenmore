@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- In order to track the effectiveness of marketing activities, please enter the influencing campaign that led to the procurement of this lead.  A campaign may be AM activities such as telephone Cold Calls or marketing activities such as a $1000 off postcard --></help>
+    <label><!-- Campaign Source --></label>
+    <name>Campaign_Source__c</name>
+    <relationshipLabel><!-- Leads --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Name and Phone Number --></help>
+    <label><!-- Who is the primary technical contact --></label>
+    <name>Who_is_the_primary_technical_contact__c</name>
+</CustomFieldTranslation>

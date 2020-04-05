@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Disqualified__c</fullName>
+    <description>Pick the reason why a Lead may be Disqualified</description>
+    <externalId>false</externalId>
+    <label>Reason Disqualified</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer has explicitly requested that we stop contacting them</fullName>
+                <default>false</default>
+                <label>Customer has explicitly requested that we stop contacting them</label>
+            </value>
+            <value>
+                <fullName>Customer is an unauthorized re-seller</fullName>
+                <default>false</default>
+                <label>Customer is an unauthorized re-seller</label>
+            </value>
+            <value>
+                <fullName>Lead has no needs and therefore would never be a customer (i.e. has absolutely no need for appliances or anything else we offer)</fullName>
+                <default>false</default>
+                <label>Lead has no needs and therefore would never be a customer (i.e. has absolutely no need for appliances or anything else we offer)</label>
+            </value>
+            <value>
+                <fullName>Bad contact information (i.e. phone and email are non-functional)</fullName>
+                <default>false</default>
+                <label>Bad contact information (i.e. phone and email are non-functional)</label>
+            </value>
+            <value>
+                <fullName>Not a valid business partner</fullName>
+                <default>false</default>
+                <label>Not a valid business partner</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Sales Qualified Lead</controllingFieldValue>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Customer has explicitly requested that we stop contacting them</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Qualified Lead</controllingFieldValue>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Customer is an unauthorized re-seller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Qualified Lead</controllingFieldValue>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Lead has no needs and therefore would never be a customer (i.e. has absolutely no need for appliances or anything else we offer)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Qualified Lead</controllingFieldValue>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Bad contact information (i.e. phone and email are non-functional)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Schedule__c</fullName>
+    <externalId>false</externalId>
+    <label>Delivery Schedule</label>
+    <referenceTo>Delivery_Schedule__c</referenceTo>
+    <relationshipLabel>Delivery Line Items</relationshipLabel>
+    <relationshipName>Delivery_Line_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto generated response sent to new leads with Augusta contact information</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Web Lead Response Baltimore Blitz</name>
+    <style>freeForm</style>
+    <subject>Thank you for your interest in Sears Commercial</subject>
+    <textOnly>Hello {!Lead.Name},
+
+&lt;?xml:namespace prefix = o /&gt;
+
+Thank you for taking the time today to discuss the value of Sears Commercial.  Our goal is to enhance your business by providing high quality products, programs, and services.
+
+
+In order to determine how we might best align in order to help meet your business objectives, your local Sears Commercial Account Manager will contact you within the next 2-3 business days to follow-up on the items discussed today.  If you require immediate assistance, please contact our National Support Center at 1-800-359-2000.
+
+Thanks again for speaking with us today, and we look forward to working with you very soon.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

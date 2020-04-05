@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template to use when a lead is assigned to queue</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Queue Lead Assignment Notification</name>
+    <style>none</style>
+    <subject>A new lead has been assigned to {!Lead.OwnerFullName}</subject>
+    <textOnly>Hello {!Lead.OwnerFirstName},
+
+
+
+A new lead has been assigned to you. Basic information about this lead is below: 
+
+
+
+
+ 
+ 
+ Rating:
+ 
+ 
+ {!Lead.Rating}
+ 
+ 
+ 
+ 
+ Segment: 
+ 
+ 
+ {!Lead.SHC_Segment_del__c} 
+ 
+ 
+ 
+ 
+ Product Interest: 
+ 
+ 
+ {!Lead.Products_Services__c} 
+ 
+ 
+ 
+ 
+ Program Interest: 
+ 
+ 
+ {!Lead.Programs__c}
+ 
+ 
+ 
+ 
+ City: 
+ 
+ 
+ {!Lead.City} 
+ 
+ 
+ 
+ 
+ State: 
+ 
+ 
+ {!Lead.State}
+ 
+ 
+ 
+
+
+
+
+Please Click Here to log in to Salesforce to view detailed information about this lead.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

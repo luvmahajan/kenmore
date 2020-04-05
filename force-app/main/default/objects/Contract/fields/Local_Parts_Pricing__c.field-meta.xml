@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Local_Parts_Pricing__c</fullName>
+    <externalId>false</externalId>
+    <label>Local Parts Pricing</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cost + 10%</fullName>
+                <default>false</default>
+                <label>Cost + 10%</label>
+            </value>
+            <value>
+                <fullName>Cost + 15%</fullName>
+                <default>false</default>
+                <label>Cost + 15%</label>
+            </value>
+            <value>
+                <fullName>Cost + 18%</fullName>
+                <default>false</default>
+                <label>Cost + 18%</label>
+            </value>
+            <value>
+                <fullName>Cost + 20%</fullName>
+                <default>false</default>
+                <label>Cost + 20%</label>
+            </value>
+            <value>
+                <fullName>Cost + 25%</fullName>
+                <default>false</default>
+                <label>Cost + 25%</label>
+            </value>
+            <value>
+                <fullName>Cost + 30%</fullName>
+                <default>false</default>
+                <label>Cost + 30%</label>
+            </value>
+            <value>
+                <fullName>Cost + 35%</fullName>
+                <default>false</default>
+                <label>Cost + 35%</label>
+            </value>
+            <value>
+                <fullName>Cost + 40%</fullName>
+                <default>false</default>
+                <label>Cost + 40%</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

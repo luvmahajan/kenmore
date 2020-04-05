@@ -1,0 +1,2 @@
+<apex:page showHeader="false" standardController="Delivery_Estimate__c" extensions="RouteDeliveryEstimateController" action="{!routeHandler}" lightningStylesheets="true">
+</apex:page>

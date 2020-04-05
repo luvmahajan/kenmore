@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Can_you_give_us_a_reason_for_not_work__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for not working with us currently</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Delivery Failure</fullName>
+                <default>false</default>
+                <label>Delivery Failure</label>
+            </value>
+            <value>
+                <fullName>Installation Issues</fullName>
+                <default>false</default>
+                <label>Installation Issues</label>
+            </value>
+            <value>
+                <fullName>Economy</fullName>
+                <default>false</default>
+                <label>Economy</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Credit Terms</fullName>
+                <default>false</default>
+                <label>Credit Terms</label>
+            </value>
+            <value>
+                <fullName>Lost AM</fullName>
+                <default>false</default>
+                <label>Lost AM</label>
+            </value>
+            <value>
+                <fullName>No access to local rep</fullName>
+                <default>false</default>
+                <label>No access to local rep</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

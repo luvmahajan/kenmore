@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status Update / Confirmation --></label>
+    <name>Status_Update_Confirmation__c</name>
+    <picklistValues>
+        <masterLabel>APPSEL</masterLabel>
+        <translation><!-- APPSEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit</masterLabel>
+        <translation><!-- Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Solutions</masterLabel>
+        <translation><!-- Credit Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Del / Inst Team</masterLabel>
+        <translation><!-- Del / Inst Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-Commerce</masterLabel>
+        <translation><!-- E-Commerce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Resolution</masterLabel>
+        <translation><!-- Product Resolution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard OM</masterLabel>
+        <translation><!-- Standard OM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

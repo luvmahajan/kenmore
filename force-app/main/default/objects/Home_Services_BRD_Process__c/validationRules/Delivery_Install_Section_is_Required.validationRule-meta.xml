@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Install_Section_is_Required</fullName>
+    <active>true</active>
+    <description>If Type of Services is Delivery or Install this whole section is required – If the Type of Service is of any other type this section is not required</description>
+    <errorConditionFormula>AND(
+  OR(
+    INCLUDES( Type_of_Services__c , &quot;Recall&quot;),
+    INCLUDES( Type_of_Services__c , &quot;Rework&quot;)
+  ),
+  OR(
+    ISBLANK( Date_list_will_be_available_attached__c ),
+    INCLUDES( Merchandise_Location__c , &quot;&quot;),
+    ISPICKVAL( Pieces_per_stop__c , &quot;&quot;),
+    ISPICKVAL( Who_provides_installation_materials__c , &quot;&quot;),
+    INCLUDES( Order_Injection__c , &quot;&quot;),
+    ISPICKVAL( Haul_Away__c , &quot;&quot;),
+    ISBLANK( What_should_be_done_with_removed_product__c ),
+    ISPICKVAL( Relocate_product__c , &quot;&quot;),
+    ISPICKVAL( Merchandise_at_customer_home__c , &quot;&quot;),
+    INCLUDES( Customer_Support__c , &quot;&quot;),
+    ISBLANK( Service_Recovery__c ),
+    INCLUDES( Field_Support__c , &quot;&quot;),
+    ISPICKVAL( Will_customers_be_surveyed__c , &quot;&quot;),
+    ISPICKVAL( Pre_call_their_customers__c , &quot;&quot;),
+    ISBLANK( How_will_Delivery_Install_be_set__c )
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Type_of_Services__c</errorDisplayField>
+    <errorMessage>If Type of Services = &#39;Delivery&#39; or &#39;Install&#39;, the entire Delivery &amp; Install section is required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Related_Opportunity</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Check_here_to_Confirm_Delivery_Estimate__c = TRUE, 
+ ISNULL(Opportunity_Name__c ))</errorConditionFormula>
+    <errorMessage>The Delivery Estimate must be tied to an Opportunity</errorMessage>
+</ValidationRule>

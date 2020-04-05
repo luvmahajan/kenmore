@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- - Evidence of challenges with multiple locations, delivery needs, billing issues, etc.
+- More complex =  better we can support) 
+- An indication of valuing multiple ordering options (AM, NSC, Ecommerce) --></help>
+    <label><!-- B6 Complex operational/logistic needs --></label>
+    <name>B6_Complex_operational_logistic_needs__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5</masterLabel>
+        <translation><!-- 5 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

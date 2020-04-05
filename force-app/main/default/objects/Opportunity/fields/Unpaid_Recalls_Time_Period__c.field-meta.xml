@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unpaid_Recalls_Time_Period__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter whether the vendor will pay for recalls. Also enter (if applicable) the time frame within which the vendor will not pay for recalls</inlineHelpText>
+    <label>Recall Payments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

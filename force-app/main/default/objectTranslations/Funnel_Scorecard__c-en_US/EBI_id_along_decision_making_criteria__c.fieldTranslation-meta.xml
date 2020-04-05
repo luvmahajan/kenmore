@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Have you identified the final decision-maker and do you know their criteria for making their selection? --></help>
+    <label><!-- EBI id along decision making criteria --></label>
+    <name>EBI_id_along_decision_making_criteria__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt">Hello File
+Administration,</p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt">A new SAP
+account was created that was designated as <b><i>Tax Exempt</i></b>. This is a friendly
+notification for follow-up by your team. Click on the link below to
+access the account in SFDC and obtain the SAP ID.</p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><br></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><br></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p style="font-size: 12pt;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Account Name:&nbsp;</span></o:p><font face="Arial, Helvetica, sans-serif"><span style="font-size: 12px;">{!Account.Name}</span></font></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; font-size: 12pt;"><o:p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Account Owner: {!Account.OwnerFullName}</span></o:p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; font-size: 12pt;"><o:p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Link :&nbsp;</span></o:p><span style="font-size: 12pt;">{!Account.Link}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><o:p>&nbsp;</o:p></p>]]></td>
+</tr>
+</table>

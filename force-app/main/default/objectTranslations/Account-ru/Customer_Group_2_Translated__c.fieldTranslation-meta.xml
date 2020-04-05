@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 001	AppSel
+002	InsPort
+003	InsSF
+004	InsNV
+005	HW --></help>
+    <label><!-- Customer Group 2 Translated --></label>
+    <name>Customer_Group_2_Translated__c</name>
+</CustomFieldTranslation>

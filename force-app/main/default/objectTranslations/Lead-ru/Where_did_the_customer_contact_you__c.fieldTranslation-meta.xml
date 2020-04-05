@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select Augusta if a customer is calling into Augusta Center.  Select Full Line Stores, if the form is being filled at a retail store. --></help>
+    <label><!-- Where did the customer contact you? --></label>
+    <name>Where_did_the_customer_contact_you__c</name>
+    <picklistValues>
+        <masterLabel>Augusta</masterLabel>
+        <translation><!-- Augusta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Line Stores</masterLabel>
+        <translation><!-- Full Line Stores --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

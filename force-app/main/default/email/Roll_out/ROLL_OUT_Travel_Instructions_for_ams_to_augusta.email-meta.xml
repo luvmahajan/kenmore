@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>ROLL-OUT: Travel Instructions for Account Managers to Augusta</name>
+    <style>formalLetter</style>
+    <subject>Please book airfare to Augusta, GA for Salesforce.com Training - Instructions Below</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Your classroom training session, Effective Selling Using Salesforce.com, is scheduled to be completed at the Sears Commercial Order Management Center in Augusta, GA.  During the week of August 2nd, 2010.  
+ 
+You previously received a Save-the-date notification indicating the date of your training. Please plan to travel to Augusta the day before training and to depart Augusta after 5pm on the day of training.  
+ 
+Your hotel is being reserved in as part of a group reservation.  You will receive confirmation of your hotel stay in the coming week.
+ 
+Please consider the following points when making travel reservations:
+
+Airfare needs to be booked at the most economical rate possible so please consider various times as well as flight options to Augusta and Atlanta.
+Rental cars should not be reserved or rented at this time, unless you are able to coordinate a group of 3 or more.  Transportation will be coordinated once all air travel has been booked.  
+If it is practical for you drive rather than fly, please do so.
+Please book your airfare by Monday, July 19th.  Instructions to book your travel are provided below:
+ 
+STEP 1:  Click Below to access the Travel Portal
+https://sso.searshc.com/auth.php?p=ccr   (use your enterprise ID and password)
+ 
+STEP 2:  Click on the “Travel” Link in the Top Tool Bar *(very important!)
+ 
+STEP 3:  Click on &quot;Meetings&quot; Link in the Travel drop-down menu
+ 
+STEP 4:  Select the Meeting that you have been invited for (Salesforce.com Training for Account Managers, at Augusta, GA) to begin the registration and travel booking process.
+ 
+STEP 5:  The Meeting Registration will now begin, please follow the steps as you will be prompted.  Please be concious of your arrival and departure dates and remember to book the most economical flight available.
+ 
+*It&#39;s very important that you click on the Travel and Meetings Link in the Top Tool Bar AND to select this particular meeting.  If you book through the regular front page of the travel web site it will not pre-fill in the pertinent meeting OR billing information for this particular meeting.  There is no way to reverse a charge if you do not follow these instructions.
+ 
+Finally, please accept my apology for the late delivery of these travel instructions.  Your prompt action is appreciated.
+ 
+Best,
+{!User.FirstName}
+ 
+salesforce.com
+Sears Commercial has partnered with Salesforce.com to bring the world’s leading sales enablement technology to its Account Managers.  Click on the link above to login to Salesforce.com and begin seeing the positive impact in sales revenues which has been achieved by Salesforce.com customers across its base of over 77,500 companies and over 2,000,000 sales users.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

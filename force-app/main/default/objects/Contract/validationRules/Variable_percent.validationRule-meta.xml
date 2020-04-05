@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Variable_percent</fullName>
+    <active>true</active>
+    <description>If Percent = variable then variable percent is required.</description>
+    <errorConditionFormula>AND(ISPICKVAL(Percent__c, &quot;Variable&quot;), ISBLANK(Variable_Percent__c))</errorConditionFormula>
+    <errorDisplayField>Percent__c</errorDisplayField>
+    <errorMessage>If Percent = variable then variable percent is required.</errorMessage>
+</ValidationRule>

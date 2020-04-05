@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Template used when CSS takes over an order. External email sent to Customer.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CSS Auto Email to Contact</name>
+    <style>none</style>
+    <subject>Sears Customer Support Specialist Introduction</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

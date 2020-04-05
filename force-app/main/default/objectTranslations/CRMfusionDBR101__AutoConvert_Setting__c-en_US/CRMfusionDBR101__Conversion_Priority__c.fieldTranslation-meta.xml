@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field specifies the order in which multiple auto-convert scenarios are acted upon.  The lower the number, the higher the priority.  Lead to Contact  auto-convert scenarios always execute before Lead to Account auto-convert scenarios. --></help>
+    <label><!-- Conversion Priority --></label>
+    <name>CRMfusionDBR101__Conversion_Priority__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- zFTC_How will we handle parts --></label>
+    <name>zHow_will_we_handle_parts__c</name>
+</CustomFieldTranslation>

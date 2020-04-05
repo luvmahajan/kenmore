@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Checked: A settings change or rule change has rendered this scenario&apos;s match data obsolete.  Click the &quot;Rebuild Scenario Keys&quot; button to update the match data.
+Unchecked:  All keys are up-to-date, no action necessary. --></help>
+    <label><!-- Rebuild Needed --></label>
+    <name>CRMfusionDBR101__Rebuild_Needed__c</name>
+</CustomFieldTranslation>

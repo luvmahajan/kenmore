@@ -1,0 +1,3 @@
+A Commercial Fitness opportunity with our {!Opportunity.Account} account was just lost.  The opportunity was lost because {!Opportunity.Reason_Lost__c}. {!Opportunity.Reason_Lost_Description__c}
+
+To review additional detail about this opportunity and the associated account click here {!Opportunity.Link}, or contact {!Opportunity.OwnerFullName} (copied) at {!Opportunity.OwnerPhone}.

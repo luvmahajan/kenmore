@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Who is your competition and who is the coach for your competition?  Have you identified the anti-sponsor? --></help>
+    <label><!-- Identified anti-sponsor &amp; competition --></label>
+    <name>Identified_anti_sponsor_competition__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+{!Receiving_User.FirstName}: 
+
+Case {!Case.CaseNumber} was submitted {!Case.CreatedDate} by {!Case.CreatedBy} and has not been addressed.  Please help. 
+
+{!Case.Link} 
+
+Thank you.

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Development_Manager__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Development Manager</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ben Mueller - 56358</fullName>
+                <default>false</default>
+                <label>Ben Mueller - 56358</label>
+            </value>
+            <value>
+                <fullName>Brian Hale - 51041</fullName>
+                <default>false</default>
+                <label>Brian Hale - 51041</label>
+            </value>
+            <value>
+                <fullName>Gecova (Jay) Doyal - 56357</fullName>
+                <default>false</default>
+                <label>Gecova (Jay) Doyal - 56357</label>
+            </value>
+            <value>
+                <fullName>Kevin Piotrowski - 51038</fullName>
+                <default>false</default>
+                <label>Kevin Piotrowski - 51038</label>
+            </value>
+            <value>
+                <fullName>Kevin Wilch - 50538</fullName>
+                <default>false</default>
+                <label>Kevin Wilch - 50538</label>
+            </value>
+            <value>
+                <fullName>Lindy Ely - 50716</fullName>
+                <default>false</default>
+                <label>Lindy Ely - 50716</label>
+            </value>
+            <value>
+                <fullName>Nick Bodmer - 55376</fullName>
+                <default>false</default>
+                <label>Nick Bodmer - 55376</label>
+            </value>
+            <value>
+                <fullName>Peggy D&#39;Alessandro - 50715</fullName>
+                <default>false</default>
+                <label>Peggy D&#39;Alessandro - 50715</label>
+            </value>
+            <value>
+                <fullName>Rod Pasion - 50713</fullName>
+                <default>false</default>
+                <label>Rod Pasion - 50713</label>
+            </value>
+            <value>
+                <fullName>Scott Ferguson - 54401</fullName>
+                <default>false</default>
+                <label>Scott Ferguson - 54401</label>
+            </value>
+            <value>
+                <fullName>Thyra Landis - 53406</fullName>
+                <default>false</default>
+                <label>Thyra Landis - 53406</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

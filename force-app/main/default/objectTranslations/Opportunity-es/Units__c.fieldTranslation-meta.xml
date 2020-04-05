@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Units --></label>
+    <name>Units__c</name>
+    <picklistValues>
+        <masterLabel>0-100</masterLabel>
+        <translation><!-- 0-100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>101-250</masterLabel>
+        <translation><!-- 101-250 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>251-500</masterLabel>
+        <translation><!-- 251-500 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt; 500</masterLabel>
+        <translation><!-- &gt; 500 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

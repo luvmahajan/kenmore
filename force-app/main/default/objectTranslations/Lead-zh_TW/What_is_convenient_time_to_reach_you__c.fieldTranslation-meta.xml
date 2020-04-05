@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What is convenient time to reach you? --></label>
+    <name>What_is_convenient_time_to_reach_you__c</name>
+    <picklistValues>
+        <masterLabel>12 PM to 4 PM</masterLabel>
+        <translation><!-- 12 PM to 4 PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 PM to 8 PM</masterLabel>
+        <translation><!-- 4 PM to 8 PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8 AM to 12 PM</masterLabel>
+        <translation><!-- 8 AM to 12 PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>During Business Hours</masterLabel>
+        <translation><!-- During Business Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Information Available</masterLabel>
+        <translation><!-- No Information Available --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

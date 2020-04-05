@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Credit Specialist to input the Status of the Chargeback --></help>
+    <label><!-- Chargeback Status --></label>
+    <name>Chargeback_Status__c</name>
+    <picklistValues>
+        <masterLabel>Augusta Working</masterLabel>
+        <translation><!-- Augusta Working --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bankruptcy</masterLabel>
+        <translation><!-- Bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collected/Paid</masterLabel>
+        <translation><!-- Collected/Paid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-house Collections</masterLabel>
+        <translation><!-- In-house Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Plan</masterLabel>
+        <translation><!-- Payment Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Additional Information from Sears Member</masterLabel>
+        <translation><!-- Pending Additional Information from Sears Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Member Response</masterLabel>
+        <translation><!-- Pending Member Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Resolution with Member</masterLabel>
+        <translation><!-- Pending Resolution with Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recovered</masterLabel>
+        <translation><!-- Recovered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to 3rd Party Collections</masterLabel>
+        <translation><!-- Referred to 3rd Party Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sears Accepted Settlement </masterLabel>
+        <translation><!-- Sears Accepted Settlement  --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement</masterLabel>
+        <translation><!-- Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uncollectible</masterLabel>
+        <translation><!-- Uncollectible --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

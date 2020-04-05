@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If the account is an existing customer, this field will represent SHC&apos;s total sales to this customer during fiscal 2012. --></help>
+    <label><!-- F2012 Sales --></label>
+    <name>F2012_Sales__c</name>
+</CustomFieldTranslation>

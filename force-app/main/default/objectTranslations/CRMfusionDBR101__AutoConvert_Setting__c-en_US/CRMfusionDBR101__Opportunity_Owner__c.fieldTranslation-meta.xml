@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Owner of the opportunity that is created during an automatic lead conversion if opportunity creation is selected. --></help>
+    <label><!-- Opportunity Owner --></label>
+    <name>CRMfusionDBR101__Opportunity_Owner__c</name>
+    <picklistValues>
+        <masterLabel>Account Owner</masterLabel>
+        <translation><!-- Account Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact Owner</masterLabel>
+        <translation><!-- Contact Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Current User</masterLabel>
+        <translation><!-- Current User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Owner</masterLabel>
+        <translation><!-- Lead Owner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

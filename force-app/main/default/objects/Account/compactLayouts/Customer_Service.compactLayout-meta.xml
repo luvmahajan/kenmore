@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Service</fullName>
+    <fields>Type</fields>
+    <fields>Phone</fields>
+    <fields>Email_Address__c</fields>
+    <fields>Website</fields>
+    <fields>SAP_Account_ID__c</fields>
+    <fields>SCO_Account_ID__c</fields>
+    <fields>AccountNumber</fields>
+    <label>Customer Service</label>
+</CompactLayout>

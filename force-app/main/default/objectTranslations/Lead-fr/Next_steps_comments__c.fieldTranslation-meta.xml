@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Add comments regarding the next steps --></help>
+    <label><!-- Next steps comments --></label>
+    <name>Next_steps_comments__c</name>
+</CustomFieldTranslation>

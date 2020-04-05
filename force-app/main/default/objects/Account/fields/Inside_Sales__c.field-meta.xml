@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inside_Sales__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Look up the Inside Sales name. Only enter in this field if different from the Account Owner and they are Inside Sales.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Look up the Inside Sales name. Only enter in this field if different from the Account Owner and they are Inside Sales.</inlineHelpText>
+    <label>Inside Sales</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>User.Title</field>
+            <operation>equals</operation>
+            <value>Inside Sales</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Accounts3</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

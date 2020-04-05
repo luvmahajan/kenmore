@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Variable_Percent__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to describe the tiered cut-offs and varaible percentage rebates applicable to this agreement.</inlineHelpText>
+    <label>Variable Percent</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

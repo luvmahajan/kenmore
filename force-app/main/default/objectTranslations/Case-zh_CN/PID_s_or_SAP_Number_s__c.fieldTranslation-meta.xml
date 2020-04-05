@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 11-digits, i.e., 02270211000
+Separate multiple PIDs or SAP Numbers by a semi-colon, i.e., 02270211000; 02270212000 --></help>
+    <label><!-- PID(s) or SAP Number(s) --></label>
+    <name>PID_s_or_SAP_Number_s__c</name>
+</CustomFieldTranslation>

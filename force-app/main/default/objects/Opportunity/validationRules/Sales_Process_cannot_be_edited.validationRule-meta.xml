@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Process_cannot_be_edited</fullName>
+    <active>false</active>
+    <description>Field is automatically calculated based on the Opportunity Stage and cannot be edited. Only the administrator can change the Sales Process.</description>
+    <errorConditionFormula>AND( 
+ISCHANGED( Sales_Process__c ), $User.ProfileId &lt;&gt; &quot;00e30000001FeAR&quot;)</errorConditionFormula>
+    <errorDisplayField>Sales_Process__c</errorDisplayField>
+    <errorMessage>Field is automatically calculated based on the Opportunity Stage and cannot be edited. Only the administrator can change the Sales Process.</errorMessage>
+</ValidationRule>

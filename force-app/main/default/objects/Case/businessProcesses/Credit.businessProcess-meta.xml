@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit</fullName>
+    <description>Credit Support Process</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Approved for Signature</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Audit for Signature</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Collections</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Notary Completed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Open</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Open%2FPending Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending Notary Signature</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Reopened</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Resolved</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Reviewed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Reviewed%2C Pending Case Owner Action</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Reviewed%2C Pending Outside Assistance</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Signing Completed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Submitted</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

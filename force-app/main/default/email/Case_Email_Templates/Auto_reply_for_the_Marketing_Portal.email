@@ -1,0 +1,10 @@
+Hi {!Case.CreatedBy},
+
+Please refer to the marketing portal for all your marketing asset needs: http://www.scmarketingtools.com/login.php. 
+
+If you cannot find what you're looking for or have any additional questions, please add a comment to your Salesforce case.
+
+Case Number:  #{!Case.CaseNumber}.
+Case Link: {!Case.Link}
+
+We will address your need as soon as possible.

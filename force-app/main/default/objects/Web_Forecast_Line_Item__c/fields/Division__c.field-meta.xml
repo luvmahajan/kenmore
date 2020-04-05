@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Division__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Only the major appliance divisions can be forecast:  20, 22, 26 and 46</inlineHelpText>
+    <label>Division</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>020</fullName>
+                <default>false</default>
+                <label>020</label>
+            </value>
+            <value>
+                <fullName>022</fullName>
+                <default>false</default>
+                <label>022</label>
+            </value>
+            <value>
+                <fullName>026</fullName>
+                <default>false</default>
+                <label>026</label>
+            </value>
+            <value>
+                <fullName>046</fullName>
+                <default>false</default>
+                <label>046</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

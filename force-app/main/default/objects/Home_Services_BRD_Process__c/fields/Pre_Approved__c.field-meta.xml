@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pre_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used for BRDs that have been pre-approved by the NCM during weekly calls. If the box is checked, Internal Approval via DocuSign is NOT needed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>NCM: Check this box if a BRD has been approved during weekly call. If so, Internal Approval via DocuSign is NOT needed.</inlineHelpText>
+    <label>Pre-Approved</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

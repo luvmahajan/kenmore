@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Change Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Change Requests</value>
+    </caseValues>
+    <layouts>
+        <layout>Admin Change Request Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Approver Details --></label>
+            <section>Approver Details</section>
+        </sections>
+        <sections>
+            <label><!-- Change Request Details --></label>
+            <section>Change Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing and New Modifying Section --></label>
+            <section>Existing and New Modifying Section</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Tier Exception --></label>
+            <section>Pricing Tier Exception</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Change Request Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Approver Details --></label>
+            <section>Approver Details</section>
+        </sections>
+        <sections>
+            <label><!-- Change Request Details --></label>
+            <section>Change Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing and New Modifying Section --></label>
+            <section>Existing and New Modifying Section</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Tier Exception --></label>
+            <section>Pricing Tier Exception</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Tier_Exception_Request --></label>
+        <name>Tier_Exception_Request</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Call_Center_Support_Requests_Req</fullName>
+    <active>true</active>
+    <description>Custom Call Center Support Requests is required when Type of Service = Deliver or Install (Multi select)</description>
+    <errorConditionFormula>AND(
+  OR(
+    INCLUDES( Type_of_Services__c , &quot;Delivery&quot;),
+    INCLUDES( Type_of_Services__c, &quot;Install&quot;)
+  ),
+  ISBLANK( Custom_Call_Center_Support_Requests__c )
+)</errorConditionFormula>
+    <errorDisplayField>Custom_Call_Center_Support_Requests__c</errorDisplayField>
+    <errorMessage>If Type of Service = Delivery or Install then Custom Call Center Support Requests is Required.</errorMessage>
+</ValidationRule>

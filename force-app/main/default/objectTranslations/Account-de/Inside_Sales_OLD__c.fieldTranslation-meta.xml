@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Fill in if there is an Inside Sales person working on the account --></help>
+    <label><!-- Inside Sales OLD --></label>
+    <name>Inside_Sales_OLD__c</name>
+    <relationshipLabel><!-- Accounts (Inside Sales OLD) --></relationshipLabel>
+</CustomFieldTranslation>

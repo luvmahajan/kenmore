@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select as many as applicable --></help>
+    <label><!-- Brand Of Competitor Working With --></label>
+    <name>Brand_Of_Competitor_Working_With__c</name>
+    <picklistValues>
+        <masterLabel>Amana</masterLabel>
+        <translation><!-- Amana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bosch</masterLabel>
+        <translation><!-- Bosch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do not have a regularly used brand</masterLabel>
+        <translation><!-- Do not have a regularly used brand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrolux</masterLabel>
+        <translation><!-- Electrolux --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frigidaire</masterLabel>
+        <translation><!-- Frigidaire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GE</masterLabel>
+        <translation><!-- GE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JennAir</masterLabel>
+        <translation><!-- JennAir --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kenmore</masterLabel>
+        <translation><!-- Kenmore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kitchen Aid</masterLabel>
+        <translation><!-- Kitchen Aid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LG</masterLabel>
+        <translation><!-- LG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maytag</masterLabel>
+        <translation><!-- Maytag --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Samsung</masterLabel>
+        <translation><!-- Samsung --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Whirlpool</masterLabel>
+        <translation><!-- Whirlpool --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wilmar</masterLabel>
+        <translation><!-- Wilmar --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

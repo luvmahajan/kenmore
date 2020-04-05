@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Must be a Project Manager Team Member --></help>
+    <label><!-- Project Manager --></label>
+    <lookupFilter>
+        <errorMessage><!-- Can only be a user on the Project Management Team --></errorMessage>
+    </lookupFilter>
+    <name>Project_Manager__c</name>
+    <relationshipLabel><!-- Contracts (Project Manager) --></relationshipLabel>
+</CustomFieldTranslation>

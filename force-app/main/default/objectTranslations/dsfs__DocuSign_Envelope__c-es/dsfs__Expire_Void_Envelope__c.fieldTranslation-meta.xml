@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>En ocasiones, es posible que deba pedirles a sus destinatarios que completen un sobre con mayor rapidez. Una vez caducado un sobre, DocuSign para Salesforce lo anulará y enviará una notificación tanto al remitente como al destinatario.</help>
+    <label><!-- Expire/Void Envelope --></label>
+    <name>dsfs__Expire_Void_Envelope__c</name>
+</CustomFieldTranslation>

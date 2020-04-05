@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The dollar amount of an opportunity is determined by the amount of the estimated spend for that specific bid, project, or actual business development opportunity. --></help>
+    <label><!-- Estimated Opportunity Amount --></label>
+    <name>Estimated_Opportunity_Amount__c</name>
+</CustomFieldTranslation>

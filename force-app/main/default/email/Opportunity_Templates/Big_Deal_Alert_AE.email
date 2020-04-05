@@ -1,0 +1,11 @@
+Great News!!
+
+{!Opportunity.OwnerFullName} just closed a {!Opportunity.Amount} opportunity with our {!Opportunity.Account} account.
+
+The opportunity closed on {!Opportunity.CloseDate}.  
+
+If you would like to congratulate {!Opportunity.OwnerFirstName} on this win, you may post to the Opportunity Chatter feed at the top of opportunity record using the link below, or email {!Opportunity.OwnerFirstName} directly: 
+
+{!Opportunity.Link} 
+
+{!Opportunity.OwnerEmail}

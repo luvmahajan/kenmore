@@ -1,0 +1,15 @@
+Hello,
+
+This is a notification that a Contract has been approved! 
+
+Contract Link: {!Contract.Link}
+Opportunity: {!Contract.Opportunity__c}
+Account: {!Contract.Account}
+
+Please proceed with the next steps as follows: 
+
+1. Visit the Contract ({!Contract.Link}) to verify you have downloaded the most up-to-date version of the contract. 
+2. Initiate the eSignature process to send the approved contract to the Sears and customer signers by clicking the 'Send to Customer' button.
+
+
+Thank you.

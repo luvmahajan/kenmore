@@ -1,0 +1,11 @@
+This is a notification that a Lead has been created, and has been idle for more than 24 hours.  
+
+Lead Name: {!Lead.Name}
+Lead Owner: {!Lead.OwnerFullName}
+Created Date: {!Lead.CreatedDate}
+
+Please log into Salesforce.com and click on the link below to view the details of this Lead:
+
+{!Lead.Link}
+
+Thank you.

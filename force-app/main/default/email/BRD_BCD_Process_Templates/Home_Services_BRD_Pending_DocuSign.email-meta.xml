@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Prompts BIT that BRD needs DocuSign approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Home Services BRD Pending DocuSign</name>
+    <style>none</style>
+    <subject>BRD Needs DocuSign Approval</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

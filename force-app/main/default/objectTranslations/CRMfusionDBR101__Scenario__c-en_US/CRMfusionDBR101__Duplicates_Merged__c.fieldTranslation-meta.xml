@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total number of duplicates that were identified by this scenario and then merged or converted. --></help>
+    <label><!-- Duplicates Merged --></label>
+    <name>CRMfusionDBR101__Duplicates_Merged__c</name>
+</CustomFieldTranslation>

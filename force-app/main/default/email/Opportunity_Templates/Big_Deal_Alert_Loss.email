@@ -1,0 +1,7 @@
+{!Opportunity.OwnerFullName} just closed lost a {!Opportunity.Amount} opportunity with our {!Opportunity.Account} account.
+
+The opportunity was lost because of the Lost Reason - {!Opportunity.Reason_Lost__c}. {!Opportunity.Reason_Lost_Description__c} 
+
+{!Opportunity.Link}
+
+{!Opportunity.OwnerEmail}

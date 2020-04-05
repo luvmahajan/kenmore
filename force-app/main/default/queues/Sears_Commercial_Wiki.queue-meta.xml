@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>cswiki@searshc.com</email>
+    <name>Sears Commercial Wiki</name>
+    <queueMembers>
+        <users>
+            <user>william.pope@kenmoredirect.com</user>
+            <user>kristyna.miller@searshc.com</user>
+            <user>melanie.leyendecker@searshc.com</user>
+            <user>ryan.ly@kenmoredirect.com</user>
+            <user>sara.kimball@kenmoredirect.com</user>
+            <user>sonia.chu@searshc.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

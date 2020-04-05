@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Assigned Credit Specialist working the Chargeback --></help>
+    <label><!-- Credit Solutions Specialist --></label>
+    <name>Credit_Solutions_Specialist__c</name>
+    <relationshipLabel><!-- Customer Service (Credit Solutions Specialist) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status_DocuSign__c</fullName>
+    <description>Capacity/Routing, Carry-In, CCN, Compliance, Engineering, Legal, NCC, Parts, STAC</description>
+    <externalId>false</externalId>
+    <formula>DocuSign_Envelope__r.dsfs__Envelope_Status__c</formula>
+    <inlineHelpText>Capacity/Routing, Carry-In, CCN, Compliance, Engineering, Legal, NCC, Parts, STAC</inlineHelpText>
+    <label>Approval Status (DocuSign)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

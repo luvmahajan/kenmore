@@ -1,0 +1,11 @@
+Hi {!NullValue(Contact.FirstName, "Sir or Madam")}, 
+
+Thank you for contacting Sears Commercial.  I am a sales representative that can help assist you with any of your B2B {!NullValue(Lead.Products_Services__c, "appliance")} needs.  Please let me know if there was something specific that you were looking for so that I can help direct you to the right resource.  
+
+Looking forward to hearing from you! 
+
+{!User.FirstName} {!User.LastName} 
+{!User.Title} 
+{!User.Email} 
+931-221-2488 
+Sears Commercial

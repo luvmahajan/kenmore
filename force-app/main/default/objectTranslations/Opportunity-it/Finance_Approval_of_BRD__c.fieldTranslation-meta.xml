@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Finance to enter the date in which they have reviewed and approve the terms of the BRD. --></help>
+    <label><!-- Finance Approval of BRD --></label>
+    <name>Finance_Approval_of_BRD__c</name>
+</CustomFieldTranslation>

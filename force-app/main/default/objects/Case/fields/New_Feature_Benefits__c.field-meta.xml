@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Feature_Benefits__c</fullName>
+    <description>Description of benefits of new feature requests in SAP.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe the benefits of your required new feature.</inlineHelpText>
+    <label>New Feature Benefits</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

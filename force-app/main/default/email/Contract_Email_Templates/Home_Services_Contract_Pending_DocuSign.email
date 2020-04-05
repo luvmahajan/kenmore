@@ -1,0 +1,15 @@
+Hello,
+
+This is a notification that a Contract still requires Internal Approval via DocuSign.  Please remember all records that have not been pre-approved during a BRD/Contract meeting must be sent for Internal Approval via DocuSign.
+
+Contract Link: {!Contract.Link} 
+Opportunity: {!Contract.Opportunity__c} 
+Account: {!Contract.Account} 
+
+If you indeed sent a DocuSign envelope for approval, you may be receiving this message for the following reasons:
+1. The Contract was Pre-Approved, but not marked in Salesforce. Please reach out to Misty Wolfe or Elizabeth Castaneda.
+2. The "Approval Status (DocuSign)" field is blank. Please make sure the envelope number is entered into the "DocuSign Envelope - Sears Team Approval" lookup field.
+3. The DocuSign envelope still has not been completed by all approvers. Please follow up with Misty Wolfe or Elizabeth Castaneda.
+ 
+
+Thank you.

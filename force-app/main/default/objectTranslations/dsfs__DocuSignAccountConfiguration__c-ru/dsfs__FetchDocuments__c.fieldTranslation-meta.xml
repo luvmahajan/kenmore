@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>В этом режиме поддерживаются большие конверты DocuSign, т. к. они отправляются без данных документов, которые могут извлекаться средствами DocuSign. Его следует включать, если объем конвертов превышает ограничения на внешние вызовы Salesforce.</help>
+    <label><!-- Fetch Documents --></label>
+    <name>dsfs__FetchDocuments__c</name>
+</CustomFieldTranslation>

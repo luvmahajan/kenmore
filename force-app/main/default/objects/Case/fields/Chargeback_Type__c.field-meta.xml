@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chargeback_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Chargeback Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>21-Damage Mdse</fullName>
+                <default>false</default>
+                <label>21-Damage Mdse</label>
+            </value>
+            <value>
+                <fullName>22-Duplicate Sale</fullName>
+                <default>false</default>
+                <label>22-Duplicate Sale</label>
+            </value>
+            <value>
+                <fullName>23-Invoice Detail Needed</fullName>
+                <default>false</default>
+                <label>23-Invoice Detail Needed</label>
+            </value>
+            <value>
+                <fullName>24-Incorrect PO#</fullName>
+                <default>false</default>
+                <label>24-Incorrect PO#</label>
+            </value>
+            <value>
+                <fullName>25-Signature Request</fullName>
+                <default>false</default>
+                <label>25-Signature Request</label>
+            </value>
+            <value>
+                <fullName>26-Did Not Receive Mdse</fullName>
+                <default>false</default>
+                <label>26-Did Not Receive Mdse</label>
+            </value>
+            <value>
+                <fullName>27-POD</fullName>
+                <default>false</default>
+                <label>27-POD</label>
+            </value>
+            <value>
+                <fullName>28-Pricing</fullName>
+                <default>false</default>
+                <label>28-Pricing</label>
+            </value>
+            <value>
+                <fullName>29-Poor Service</fullName>
+                <default>false</default>
+                <label>29-Poor Service</label>
+            </value>
+            <value>
+                <fullName>31-RMA</fullName>
+                <default>false</default>
+                <label>31-RMA</label>
+            </value>
+            <value>
+                <fullName>32-Shipping &amp; Freight</fullName>
+                <default>false</default>
+                <label>32-Shipping &amp; Freight</label>
+            </value>
+            <value>
+                <fullName>36-Unauthorized Sales</fullName>
+                <default>false</default>
+                <label>36-Unauthorized Sales</label>
+            </value>
+            <value>
+                <fullName>403-Recourse Concession</fullName>
+                <default>false</default>
+                <label>403-Recourse Concession</label>
+            </value>
+            <value>
+                <fullName>41-Credit Issued in Error</fullName>
+                <default>false</default>
+                <label>41-Credit Issued in Error</label>
+            </value>
+            <value>
+                <fullName>50-Unauthorized Buyer</fullName>
+                <default>false</default>
+                <label>50-Unauthorized Buyer</label>
+            </value>
+            <value>
+                <fullName>51-Cancellation</fullName>
+                <default>false</default>
+                <label>51-Cancellation</label>
+            </value>
+            <value>
+                <fullName>52-Bldr Charged in Error</fullName>
+                <default>false</default>
+                <label>52-Bldr Charged in Error</label>
+            </value>
+            <value>
+                <fullName>54-Sales Amount Exceeds Authorization Amount</fullName>
+                <default>false</default>
+                <label>54-Sales Amount Exceeds Authorization Amount</label>
+            </value>
+            <value>
+                <fullName>56-Small Balance</fullName>
+                <default>false</default>
+                <label>56-Small Balance</label>
+            </value>
+            <value>
+                <fullName>58-Partial Shipment</fullName>
+                <default>false</default>
+                <label>58-Partial Shipment</label>
+            </value>
+            <value>
+                <fullName>87-Sales Tax</fullName>
+                <default>false</default>
+                <label>87-Sales Tax</label>
+            </value>
+            <value>
+                <fullName>90-No Matching Auth</fullName>
+                <default>false</default>
+                <label>90-No Matching Auth</label>
+            </value>
+            <value>
+                <fullName>D28-Require Auth</fullName>
+                <default>false</default>
+                <label>D28-Require Auth</label>
+            </value>
+            <value>
+                <fullName>D29-Customer Disputes Merchandise</fullName>
+                <default>false</default>
+                <label>D29-Customer Disputes Merchandise</label>
+            </value>
+            <value>
+                <fullName>D30-Declined Authorization</fullName>
+                <default>false</default>
+                <label>D30-Declined Authorization</label>
+            </value>
+            <value>
+                <fullName>Dispute to Chargeback - BT</fullName>
+                <default>false</default>
+                <label>Dispute to Chargeback - BT</label>
+            </value>
+            <value>
+                <fullName>Dispute to Chargeback - Citi</fullName>
+                <default>false</default>
+                <label>Dispute to Chargeback - Citi</label>
+            </value>
+            <value>
+                <fullName>Misc/Non Lender Related Charge back</fullName>
+                <default>false</default>
+                <label>Misc/Non Lender Related Charge back</label>
+            </value>
+            <value>
+                <fullName>Recourse-Cont</fullName>
+                <default>false</default>
+                <label>Recourse-Cont</label>
+            </value>
+            <value>
+                <fullName>Third Party Chargeback</fullName>
+                <default>false</default>
+                <label>Third Party Chargeback</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call</fullName>
+    <active>true</active>
+    <description>Used to log inbound and outbound call types</description>
+    <label>Call</label>
+    <picklistValues>
+        <picklist>Account_Status__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Status__c</picklist>
+        <values>
+            <fullName>Call %E2%80%93 First contact with decision maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call %E2%80%93 Follow up with decision maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call %E2%80%93 Left message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call %E2%80%93 No answer%2Fno message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call %E2%80%93 Reached gatekeeper</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_Lost__c</picklist>
+        <values>
+            <fullName>Contract terms did not meet customer needs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit solution did not meet customer needs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer lost bid or project was cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price offered did not meet customer perception of value</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product assortment did not meet customer needs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service failure %28e%2Eg%2E delivery%2C billing%2C order management%29 caused the customer to purchase elsewhere</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delegated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>24 hour order check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72 hour Pre-call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit %2F Billing %2F Pricing Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Status %2F Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordering Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-delivery call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To-do</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty %2F Protection Agreement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>24 hour order check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72 hour Pre-call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check in%2FFollow up with client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete%2FSend Contract Package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obtain Credit Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-delivery call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule Follow up Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule Upcoming Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Survey</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Business__c</picklist>
+        <values>
+            <fullName>Builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government Entity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Realtor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Call__c</picklist>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

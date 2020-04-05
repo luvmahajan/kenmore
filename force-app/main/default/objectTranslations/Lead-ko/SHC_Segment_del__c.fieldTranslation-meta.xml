@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SHC Segment --></label>
+    <name>SHC_Segment_del__c</name>
+    <picklistValues>
+        <masterLabel>Alliance</masterLabel>
+        <translation><!-- Alliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apartment Complexes</masterLabel>
+        <translation><!-- Apartment Complexes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotive</masterLabel>
+        <translation><!-- Automotive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Best Western</masterLabel>
+        <translation><!-- Best Western --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Builder Radio</masterLabel>
+        <translation><!-- Builder Radio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Building, Remodeling, Moving (BRM)</masterLabel>
+        <translation><!-- Building, Remodeling, Moving (BRM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Marketplace</masterLabel>
+        <translation><!-- Commercial Marketplace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education</masterLabel>
+        <translation><!-- Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee Purchase Plan</masterLabel>
+        <translation><!-- Employee Purchase Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government</masterLabel>
+        <translation><!-- Government --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HUD</masterLabel>
+        <translation><!-- HUD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Inspection Services</masterLabel>
+        <translation><!-- Home Inspection Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Warranty</masterLabel>
+        <translation><!-- Home Warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitality</masterLabel>
+        <translation><!-- Hospitality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance</masterLabel>
+        <translation><!-- Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Replacement</masterLabel>
+        <translation><!-- Insurance Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufactured Housing</masterLabel>
+        <translation><!-- Manufactured Housing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical</masterLabel>
+        <translation><!-- Medical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military</masterLabel>
+        <translation><!-- Military --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-Family</masterLabel>
+        <translation><!-- Multi-Family --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One Time Buy</masterLabel>
+        <translation><!-- One Time Buy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Original Equipment Manufacturers (OEM’s)</masterLabel>
+        <translation><!-- Original Equipment Manufacturers (OEM’s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property Management</masterLabel>
+        <translation><!-- Property Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Realty</masterLabel>
+        <translation><!-- Realty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remodeling</masterLabel>
+        <translation><!-- Remodeling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rent-to-own</masterLabel>
+        <translation><!-- Rent-to-own --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retailers</masterLabel>
+        <translation><!-- Retailers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHIP (Sears Home Improvement)</masterLabel>
+        <translation><!-- SHIP (Sears Home Improvement) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Family</masterLabel>
+        <translation><!-- Single Family --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Administrators (TPA’s)</masterLabel>
+        <translation><!-- Third Party Administrators (TPA’s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transportation</masterLabel>
+        <translation><!-- Transportation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weatherization</masterLabel>
+        <translation><!-- Weatherization --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

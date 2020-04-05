@@ -1,0 +1,3 @@
+<apex:page controller="AccountCreationFlowController">
+    <flow:interview name="Account_Creation" interview="{!accountFlow}" finishLocation="{!prFinishLocation}" />
+</apex:page>

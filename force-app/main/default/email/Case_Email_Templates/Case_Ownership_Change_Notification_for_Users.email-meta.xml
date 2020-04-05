@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email notification to the creator of a case when the case owner changes</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case Ownership Change Notification for Users</name>
+    <style>none</style>
+    <subject>Case {!Case.CaseNumber} - {!Case.RecordType}, {!Case.Type} Ownership Assignment</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

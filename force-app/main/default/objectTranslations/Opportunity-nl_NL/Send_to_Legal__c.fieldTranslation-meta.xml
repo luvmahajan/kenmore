@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used by the Director of Nat&apos;l &amp; Gov&apos;l Sales when a contract needs Legal&apos;s approval for contracts between $75k - $250k on Customer PO/Agreement --></help>
+    <label><!-- Send to Legal --></label>
+    <name>Send_to_Legal__c</name>
+</CustomFieldTranslation>

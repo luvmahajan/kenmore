@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>更改此默认电子邮件主题文本，它将显示为通知中的主题行以签署您的 DocuSign 收件人。</help>
+    <label><!-- EmailSubject --></label>
+    <name>dsfs__EmailSubject__c</name>
+</CustomFieldTranslation>

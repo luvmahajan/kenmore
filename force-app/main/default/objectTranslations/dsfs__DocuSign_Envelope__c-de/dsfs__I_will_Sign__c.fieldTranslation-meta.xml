@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Klicken Sie auf dieses Kästchen, um als zusätzlicher Empfänger/Signaturgeber für das Dokument aufgenommen zu werden. Andernfalls erhalten Sie eine Benachrichtigung, wenn die Signatur mit DocuSign vorgenommen wurde, können aber nicht selbst signieren.</help>
+    <label><!-- I will also Sign --></label>
+    <name>dsfs__I_will_Sign__c</name>
+</CustomFieldTranslation>

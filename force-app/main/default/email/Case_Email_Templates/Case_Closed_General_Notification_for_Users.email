@@ -1,0 +1,16 @@
+Hello {!Case.CreatedBy}, 
+
+The {!Case.Type} Case you submitted on {!Case.CreatedDate} regarding "{!Case.Subject}" has been {!Case.Status}. Your support partner has provided the following solution(s): 
+
+Comments: {!Case.Last_Case_Comment}
+
+Solution Reference (if applicable): {!Case.Solution_Subject_and_Description} 
+
+Case Number: {!Case.CaseNumber}
+Subject: {!Case.Subject} 
+Description: {!Case.Description} 
+Case Link: {!Case.Link}
+
+If you have additional questions please login to Salesforce and add a comment to your case.
+
+Thank you.

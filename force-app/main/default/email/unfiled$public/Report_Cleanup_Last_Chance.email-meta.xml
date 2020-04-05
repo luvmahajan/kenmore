@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is a template to be emailed to report owners that have been identified in the Salesforce Report Cleanup process as owning reports that haven&#39;t been ran in more than 2 years.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Report Cleanup - Last Chance</name>
+    <style>none</style>
+    <subject>Salesforce Report Cleanup</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

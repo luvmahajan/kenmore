@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Opportunities__c</fullName>
+    <description>Calculates the sum of all opportunities</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Calculates the sum of all opportunities</inlineHelpText>
+    <label>All Opportunities</label>
+    <summarizedField>Opportunity.Amount</summarizedField>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

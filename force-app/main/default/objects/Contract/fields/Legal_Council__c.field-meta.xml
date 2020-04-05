@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Council__c</fullName>
+    <externalId>false</externalId>
+    <label>Legal Council</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mike Mitchell</fullName>
+                <default>false</default>
+                <label>Mike Mitchell</label>
+            </value>
+            <value>
+                <fullName>Tom Shanahan</fullName>
+                <default>false</default>
+                <label>Tom Shanahan</label>
+            </value>
+            <value>
+                <fullName>Donna Carollo</fullName>
+                <default>false</default>
+                <label>Donna Carollo</label>
+            </value>
+            <value>
+                <fullName>Ted Koerth</fullName>
+                <default>false</default>
+                <label>Ted Koerth</label>
+            </value>
+            <value>
+                <fullName>Brian Bichkoff</fullName>
+                <default>false</default>
+                <label>Brian Bichkoff</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

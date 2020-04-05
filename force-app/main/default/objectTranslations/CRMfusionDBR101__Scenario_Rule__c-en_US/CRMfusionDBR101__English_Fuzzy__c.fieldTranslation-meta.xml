@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Convert the field to the English phonetic equivalent for matching. --></help>
+    <label><!-- English Fuzzy --></label>
+    <name>CRMfusionDBR101__English_Fuzzy__c</name>
+</CustomFieldTranslation>

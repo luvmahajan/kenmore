@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Client statements supporting value to all 4 pillars (i.e. no points for a GC who loves 2 &amp; 3 but not 1 &amp; 4) --></help>
+    <label><!-- B2 Values all 4 Pillars --></label>
+    <name>B2_Values_all_4_Pillars__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8</masterLabel>
+        <translation><!-- 8 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

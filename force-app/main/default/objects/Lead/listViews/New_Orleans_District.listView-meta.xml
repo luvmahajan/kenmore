@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Orleans_District</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.TITLE</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>SCOPES_ID__c</columns>
+    <columns>LEAD.CITY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>Sector__c</columns>
+    <columns>LEAD.RATING</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Products_Services__c</columns>
+    <columns>Programs__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Disqualified</value>
+    </filters>
+    <filters>
+        <field>LEAD.CONVERTED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Gulf Coast District</label>
+    <queue>GulfCoastDistrict</queue>
+    <sharedTo>
+        <role>Sears_Commercial_Executive</role>
+        <role>Sears_Commercial_Leadership</role>
+    </sharedTo>
+</ListView>

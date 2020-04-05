@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Account_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select User to register this Contact for setup on the E-Commerse site</inlineHelpText>
+    <label>User Account Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>User</fullName>
+                <default>false</default>
+                <label>User</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

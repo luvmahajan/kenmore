@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Delivery_Estimate_Detail_Non_MDO_Notification</fullName>
+        <description>Delivery Estimate Detail Non-MDO Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration.user@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Delivery_Estimate_Feedback_Non_MDO_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Delivery_Estimate_Feedback_Non_MDO_Notification</fullName>
+        <description>Delivery Estimate Feedback Non-MDO Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration.user@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Delivery_Estimate_Feedback_Non_MDO_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Delivery_Estimate_Feedback_Notification_to_Creator_Feedback_Object</fullName>
+        <description>Delivery Estimate Feedback Notification to Creator (Feedback Object)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Delivery_Estimate_Creator_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>District_Manger_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Operations_Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <recipient>Delivery_Managers</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>greg.kogut@kenmoredirect.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Delivery_Estimate/Delivery_Estimate_Feedback_Notification_to_Creator</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Delivery_Estimate_Creator_Email_Update</fullName>
+        <field>Delivery_Estimate_Creator_Email__c</field>
+        <formula>Delivery_Estimate__r.CreatedBy.Email</formula>
+        <name>Delivery Estimate Creator Email Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_District_Manager_Email</fullName>
+        <field>District_Manger_Email__c</field>
+        <formula>Delivery_Estimate__r.CreatedBy.Manager.Email</formula>
+        <name>Update District Manager Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Ops_Manager_Email</fullName>
+        <field>Operations_Manager_Email__c</field>
+        <formula>Delivery_Estimate__r.Operations_Manager__r.Email</formula>
+        <name>Update Ops Manager Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Delivery Estimate Feedback - Non-MDO - Email Notification</fullName>
+        <actions>
+            <name>Delivery_Estimate_Feedback_Non_MDO_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Delivery_Estimate_Feedback__c.Non_MDO__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>When a delivery estimate feedback is marked as non-MDO, send an email notification to Weston Smith</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Delivery Estimate Feedback - Update Ops Manger Email - Update</fullName>
+        <actions>
+            <name>Delivery_Estimate_Creator_Email_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_District_Manager_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Ops_Manager_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Delivery_Estimate__c.Operations_Manager__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Delivery Estimate Feedback Creation Email</fullName>
+        <actions>
+            <name>Delivery_Estimate_Feedback_Notification_to_Creator_Feedback_Object</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>When a Delivery Estimate Feedback record is created, a notification email is send to the Delivery Estimate Creator</description>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

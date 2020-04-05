@@ -1,0 +1,836 @@
+<apex:page controller="StandaloneEditController" lightningStylesheets="true" docType="html-5.0"  >
+    <apex:form >
+        
+        <style type = "text/css">
+            .colCenter {text-align:center;}     
+            .colRight {text-align:right;}     
+            .colLeft {text-align:left;} 
+            .row {
+            display: flex; 
+            width: 100%
+            }
+            
+            .row::after {
+            display: block;
+            clear: both;
+            content: "";
+            }
+            
+            .col-1 {width: 8.33%};
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            * {
+            box-sizing: border-box;
+            }
+            
+            [class*="col-"]{
+            float: left;
+            font-size: 0.8rem;
+            padding: 0.1rem 2px;
+            }
+        </style><!--
+            <apex:pageMessages id="showmsg3"></apex:pageMessages> 
+        <apex:outputPanel id="accountselectId">
+        <apex:outputPanel id="accountselectId2" rendered="{!NOT(renProduct)}">
+            
+            <apex:pageBlock title="Search Account" id="ac"  >
+                
+                <div class="row">
+                    <div class="col-4" >
+                        <b>Adjustment</b>
+                    </div>
+                    <div class="col-4" >
+                        <b>Account</b>
+                    </div>
+                    <div class="col-4" >
+                        <b></b>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-4" >
+                        <apex:selectList value="{!selectedAdjustment}" size="1">
+                            <apex:selectoptions value="{!AdjustmentSelection}"/>
+                        </apex:selectList>
+                    </div>
+                    <div class="col-4" >
+                        <apex:inputText value="{!selectedSCOAccount}" style="float:left"/>
+                    </div>
+                    <div class="col-4" >
+                <apex:actionStatus id="findAccountStatus">
+                <apex:facet name="stop">
+                    <apex:commandButton value="Find Account" status="findAccountStatus" action="{!actionLoadProducts}" id="findId" style="float:left;"  reRender="showmsg3, accountselectId, accountselectId2, addproduct, addproduct2, searchproductsid, searchproductsid2"/>
+                </apex:facet>
+                <apex:facet name="start">
+                    <apex:commandButton value="Loading Account..." disabled="true" status="findAccountStatus" />
+                </apex:facet>
+            </apex:actionStatus>
+                    </div>
+                    
+                    
+                </div>
+                <br/><br/>
+                
+                
+                <br/>
+                
+            </apex:pageBlock>
+            
+        </apex:outputPanel>
+    </apex:outputPanel>
+        -->
+        <apex:outputPanel id="idpgbtn">
+            <apex:outputPanel id="idpgbtn2" rendered="{!renBtn}" >
+                <apex:pageBlock >
+                    <apex:pageBlockButtons location="top" >
+                		<apex:commandButton value="Submit Order" action="{!actionGoToSubmission}" style="color:white;background:#0070d2;" reRender="showmsg5"/>
+                        <apex:commandButton value="Cancel" action="{!gotoOrder}"/>
+                    </apex:pageBlockButtons>
+                </apex:pageBlock>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        
+            <apex:pageMessages id="showmsg5"></apex:pageMessages> 
+            <apex:outputPanel id="searchproductsid">
+            <apex:outputPanel id="searchproductsid2" rendered="{!AND(isMemo, renMemo)}" >
+            
+            <apex:pageBlock title="Search Products"  >
+                <!--
+                <br/><br/>                
+                
+                <div class="row">
+                    <div class="col-6" >
+                        <b>Keyword/Part#</b>
+                    </div>
+                    <div class="col-6" >
+                        <b>Adjustment Part#</b>
+                    </div>
+                </div>
+                <br/>               
+                <div class="row">
+                    <div class="col-6" >
+                        <apex:inputText value="{!selectedmemoproductcode}" style="float:left"/>
+                        <apex:commandButton id="Find" value="Find" action="{!FindProducts}" style="float:left"  reRender="showmsg5, ospart, osptable, searchproductsid, searchproductsid2">
+                            <apex:param name="type" value="prod"/>
+                        </apex:commandButton>
+                    </div>
+                    <div class="col-6" >
+                        <apex:selectList value="{!selectedpart}" size="1">
+                            <apex:selectoptions value="{!AdjPart}"/>
+                        </apex:selectList>
+                        <apex:commandButton id="AddAdj" value="Add" action="{!FindProducts}" reRender="showmsg5, ospart, osptable, searchproductsid, searchproductsid2"> 
+                            <apex:param name="type" value="part"/>
+                        </apex:commandButton>
+                    </div>
+                </div>
+                -->
+                <br/><br/>                
+                
+                
+                <div class="row">
+                    <div class="col-6" >
+                        <b>Protection Agreement/ Extended Warranty part #</b>
+                    </div>
+                    <div class="col-6" >
+                        <b>Installation Services part #</b>
+                    </div>
+                </div>
+                <br/>                
+                <div class="row">
+                    <div class="col-6" >
+                        <apex:selectList value="{!selectedprotection}" size="1" style="float:left">
+                            <apex:selectoptions value="{!PAWarrantyPart}"/>
+                        </apex:selectList>
+                   <apex:commandButton id="Addprot" value="Add" action="{!FindProducts}" style="float:left" reRender="showmsg5, ospart, osptable, searchproductsid, searchproductsid2"> 
+                            <apex:param name="type" value="prot"/>
+                        </apex:commandButton>
+                    </div>
+                    <div class="col-6" >
+                        <apex:selectList value="{!selectedinstall}" size="1" style="float:left">
+                            <apex:selectoptions value="{!InstallPart}"/>
+                        </apex:selectList>
+                        <apex:commandButton id="Addinstall" value="Add" action="{!FindProducts}" style="float:left" reRender="showmsg5, ospart, osptable, searchproductsid, searchproductsid2">
+                            <apex:param name="type" value="inst"/>
+                        </apex:commandButton> 
+                    </div>
+                </div>
+                
+                <br/><br/>                
+                
+                <div class="row">
+                    <div class="col-6" >
+                        <b>Adjustment Part#</b>
+                    </div>
+                    <div class="col-6" />
+                </div>
+                <br/>               
+                <div class="row">
+                    <div class="col-6" >
+                        <apex:selectList value="{!selectedpart}" size="1">
+                            <apex:selectoptions value="{!AdjPart}"/>
+                        </apex:selectList>
+                        <apex:commandButton id="AddAdj" value="Add" action="{!FindProducts}" reRender="showmsg5, ospart, osptable, searchproductsid, searchproductsid2"> 
+                            <apex:param name="type" value="part"/>
+                        </apex:commandButton>
+                    </div>
+                    <div class="col-6" />
+                </div>
+                
+                
+            </apex:pageBlock>
+                </apex:outputPanel>
+        </apex:outputPanel>
+        
+            <apex:outputPanel id="ospart">
+            
+        <apex:pageBlock title="{!objOSPart.ProductName}"  id="osptable" rendered="{!AND(renObjOrder, NOT(renObjOrderMessage))}">
+            <apex:pageBlockTable value="{!objOSPart}" var="osp"  >
+                <apex:column headerValue="PRODUCT">
+                    <apex:outputText value="{!osp.ProductCode}"></apex:outputText> 
+                </apex:column>                
+                <apex:column headerValue="Quantity" >
+                    <apex:inputText value="{!osp.Quantity}"></apex:inputText> 
+                </apex:column>
+                <apex:column headerValue="Price" >
+                    <apex:inputText value="{!osp.NetUnitPrice}"></apex:inputText> 
+                </apex:column>
+            </apex:pageBlockTable>
+            
+            <br/><br/>
+            <apex:commandButton id="Add2Adjust" value="Add to Adjustment" action="{!actionAddtoAdjustment}" style="float:right" reRender="showmsg5, ospart, selectedCI, selectionpart, searchproductsid, searchproductsid2">
+    <!--   standalonesecid, standalonesecid2----->
+<br/><br/><br/><br/>
+            </apex:commandButton>
+            </apex:pageBlock>
+        <apex:pageBlock id="notosptable" rendered="{!renObjOrderMessage}">
+            <apex:outputPanel style="color:red">
+                The product selected is invalid !!!
+            </apex:outputPanel>
+                </apex:pageBlock>
+                
+                
+            </apex:outputPanel>
+            
+        
+        
+        <apex:outputPanel id="addproduct">
+        <apex:outputPanel id="addproduct2" rendered="{!renProduct}"><!--
+        
+            <apex:pageBlock title="Search Products" id="sp" rendered="{!NOT(isMemo)}" >-->
+            <apex:pageBlock title="Search Products" id="sp" >
+                <div class="row">
+                    <div class="col-4" >
+                        <b>Zip Code</b>
+                    </div>
+                    <div class="col-4" >
+                        <b>Keyword/Part#</b>
+                    </div>
+                    <div class="col-4" >
+                        <b></b>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-4" >
+                        <apex:inputText value="{!selectedzipcode}" style="float:left"/>
+                    </div>
+                    <div class="col-4" >
+                        <apex:inputText value="{!selectedproductcode}" style="float:left"/>
+                    </div>
+                    <div class="col-4" >
+                <apex:actionStatus id="findProductStatus">
+                <apex:facet name="stop">
+                    <apex:commandButton value="Find Product" status="findProductStatus" action="{!actionLoadAccessories}" id="findId" style="float:left;"  reRender="showmsg, prodaccid, prodaccid2, standalonesecid, standalonesecid2"/>
+                </apex:facet>
+                <apex:facet name="start">
+                    <apex:commandButton value="Loading Product..." disabled="true" status="findProductStatus" />
+                </apex:facet>
+            </apex:actionStatus>
+                    </div>
+                </div>
+                <br/><br/>
+                
+                
+                <br/>
+                
+            </apex:pageBlock>
+        
+            <apex:pageMessages id="showmsg"></apex:pageMessages> 
+        
+        
+        <apex:outputPanel id="prodaccid">
+        <apex:outputPanel id="prodaccid2" rendered="{!renAccessories}">
+        <apex:pageBlock title="{!selectedproductcode}" rendered="{!lenMapOptionProduct>0}"  >
+            <!--
+            <apex:outputText value="{!selectedproductcode}" escape="false" style="font-weight: bold" ></apex:outputText>
+			-->
+            <br/>
+            
+                <apex:actionStatus id="addToListStatus">
+                <apex:facet name="stop">
+                    <apex:commandButton value="Add to List" status="addToListStatus" action="{!actionAddToList}" id="addListId" style="float:left;"  reRender="showmsg, prodaccid, prodaccid2, standalonesecid, standalonesecid2, selectedCI, selectionpart"/>
+                </apex:facet>
+                <apex:facet name="start">
+                    <apex:commandButton value="Adding to List..." disabled="true" status="addToListStatus" />
+                </apex:facet>
+            </apex:actionStatus>
+                            <br/><br/><br/>
+            
+                <div class="row">
+                    <div class="col-6" >
+                        <b>Quantity</b>
+                    </div>
+                    <div class="col-6" >
+                        <b>Price</b>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-6" >
+                        <apex:inputText value="{!selectedProductQuantity}" style="float:left"/>
+                    </div>
+                    <div class="col-6" >
+                        <apex:inputText value="{!selectedProductPrice}" style="float:left"/>
+                    </div>
+                </div>
+                <br/><br/>
+            
+            
+            <apex:pageBlock title="Parts" rendered="{!mapFeatureRender['Parts']}">
+                
+            <apex:pageBlockTable value="{!mapOptionProduct['PartsSelect_All']}" var="psa"  rendered="{!renFeatureSelect['PartsSelect_All']}">
+                <apex:column style="width:10%" headerValue="Select All">
+                    <apex:inputCheckbox value="{!psa.is_selected}"/>
+                </apex:column>
+                <apex:column value="{!psa.product_code}" headerValue="PID" style="width:25%" />
+                <apex:column value="{!psa.product_name}" headerValue="Name" style="width:25%" />
+                <apex:column value="{!psa.list_price}" style="width:25%" headerValue="List Price" />
+            </apex:pageBlockTable>
+                
+            <apex:pageBlockTable value="{!mapOptionProduct['PartsSelect_One']}" var="pso"  rendered="{!renFeatureSelect['PartsSelect_One']}">
+                <apex:column style="width:10%" headerValue="Select One">
+                    <input type="radio" name="{!('PartsSelect_One')}" value="{!pso.sel_button}">
+                        <apex:actionSupport event="onclick" action="{!actionSelected}" rerender="Selected_PBS" >
+                            <apex:param name="prcd" value="{!pso.product_code}"/>
+                            <apex:param name="key" value="{!('PartsSelect_One')}"/>
+                        </apex:actionSupport>
+                    </input>
+                </apex:column>  
+                <apex:column value="{!pso.product_code}" headerValue="PID" style="width:25%" />
+                <apex:column value="{!pso.product_name}" headerValue="Name" style="width:25%" />
+                <apex:column value="{!pso.list_price}" style="width:25%" headerValue="List Price" />
+            </apex:pageBlockTable>
+                
+            </apex:pageBlock>
+            
+    <apex:pageBlock title="Services" rendered="{!mapFeatureRender['Services']}">
+        <apex:outputPanel id="table_service">
+        <apex:pageBlockTable value="{!mapOptionProduct['ServicesSelect_All']}" var="ssa"  rendered="{!renFeatureSelect['ServicesSelect_All']}">
+            <apex:column style="width:10%" headerValue="Select All">
+                <apex:inputCheckbox value="{!ssa.is_selected}"/>
+            </apex:column>
+            <apex:column value="{!ssa.product_code}" headerValue="PID" style="width:25%" />
+            <apex:column value="{!ssa.product_name}" headerValue="Name" style="width:25%" />
+            <apex:column value="{!ssa.list_price}" style="width:25%" headerValue="List Price" />
+        </apex:pageBlockTable>
+        
+        <apex:pageBlockTable value="{!mapOptionProduct['ServicesSelect_One']}" var="sso"  rendered="{!renFeatureSelect['ServicesSelect_One']}">
+            <apex:column style="width:10%" headerValue="Select One">
+                <input type="radio" name="{!('ServicesSelect_One')}" value="{!sso.sel_button}">
+                <apex:actionSupport event="onclick" action="{!actionSelected}" rerender="Selected_PBS, install">
+                    <apex:param name="prcd" value="{!sso.product_code}"/>
+                    <apex:param name="key" value="{!('ServicesSelect_One')}"/>
+                </apex:actionSupport>
+            </input>
+        </apex:column>  
+        <apex:column value="{!sso.product_code}" headerValue="PID" style="width:25%" />
+        <apex:column value="{!sso.product_name}" headerValue="Name" style="width:25%" />
+        <apex:column value="{!sso.list_price}" style="width:25%" headerValue="List Price" />
+    </apex:pageBlockTable>
+            </apex:outputPanel>
+         
+            
+    <apex:outputPanel id="install">
+    <apex:outputPanel id="install1" rendered="{!renInstallation}" >
+        <br/>
+        Service PID:
+        <br/>
+        <apex:selectList value="{!selInstallation}" size="1" >
+            <apex:selectoptions value="{!InstallationService}"/>
+            <apex:actionSupport event="onchange" rerender="install2" action="{!actionInstallation}">
+                    <apex:param name="key" value="{!('ServicesInstall')}"/>
+            </apex:actionSupport>
+        </apex:selectList>
+    </apex:outputPanel>
+        
+        <apex:outputPanel id="install2" >
+        <apex:outputPanel id="install22" rendered="{!renInstallprice}" >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${!selInstallPrice}
+            </apex:outputPanel>
+        </apex:outputPanel>
+    </apex:outputPanel>
+        <br/><br/><br/>
+            
+<!--            
+<apex:pageBlockTable value="{!mapOptionProduct['ServicesOptional']}" var="so"  rendered="{!renFeatureSelect['ServicesOptional']}">
+    <apex:column style="width:10%" headerValue="Optional">
+        <apex:inputCheckbox value="{!so.is_selected}"/>
+    </apex:column>
+    <apex:column value="{!so.product_code}" headerValue="PID" style="width:25%" />
+    <apex:column value="{!so.product_name}" headerValue="Name" style="width:25%" />
+    <apex:column value="{!so.list_price}" style="width:25%" headerValue="List Price" />
+</apex:pageBlockTable>
+-->
+</apex:pageBlock>
+            
+        <apex:pageBlock title="Configuration" rendered="{!mapFeatureRender['Config']}">
+            <apex:pageBlockTable value="{!mapOptionProduct['ConfigSelect_One']}" var="cos"  rendered="{!renFeatureSelect['ConfigSelect_One']}">
+                <apex:column style="width:10%" headerValue="Select One">
+                    <input type="radio" name="{!('ConfigSelect_One')}" value="{!cos.sel_button}">
+                        <apex:actionSupport event="onclick" action="{!actionSelected}" rerender="Selected_PBS" >
+                            <apex:param name="prcd" value="{!cos.product_code}"/>
+                            <apex:param name="key" value="{!('ConfigSelect_One')}"/>
+                        </apex:actionSupport>
+                    </input>
+                </apex:column>  
+                <apex:column value="{!cos.product_code}" headerValue="PID" style="width:25%" />
+                <apex:column value="{!cos.product_name}" headerValue="Name" style="width:25%" />
+                <apex:column value="{!cos.list_price}" style="width:25%" headerValue="List Price" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+            
+        
+            
+        </apex:pageBlock>
+        </apex:outputPanel>
+        </apex:outputPanel>
+        
+
+<apex:outputPanel id="standalonesecid">
+    <apex:outputPanel id="standalonesecid2" rendered="{!NOT(renAccessories)}">
+        
+        <apex:outputPanel id="orderheaderid">
+            <!--
+<apex:pageBlock title="Order Details" rendered="{!IF(lstOrderSelection.size>0,true,false)}" >-->
+            <apex:pageBlock title="Order Details" >
+                <div class="row">
+                    <div class="col-12" />
+                </div>
+                
+                <div class="row">
+                    <div class="col-2" align="right" ><b>Reason Code: </b><b style="color:red">*</b></div>
+                    <div class="col-3">
+                        <apex:selectList value="{!objOrderOverviewQry.Reason_Code__c}" size="1">
+                            <apex:selectoptions value="{!HeaderReasonCode}"/>
+                        </apex:selectList>
+                    </div>
+                    <div class="col-1" />
+                    <div class="col-2" align="right"><b>Purchase Order Number: </b><b style="color:red">*</b></div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.Purchase_Number__c}" />
+                    </div>
+                    <div class="col-1" />
+                </div>
+                
+                
+                <br/><br/>                
+                
+                
+                
+                <div class="row">
+                    <div class="col-2" align="right"><b>Pick-up Contact: </b><b style="color:red">*</b></div>
+                    <div class="col-10" />
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-2" align="right">Pick-up Contact First Name:</div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.Shipping_Contact_First_Name__c}" /> 
+                    </div>
+                    <div class="col-1" />
+                    <div class="col-2" align="right">Pick-up Contact Last Name:</div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.Shipping_Contact_Last_Name__c}" /> 
+                    </div>
+                    <div class="col-1" />
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-2" align="right">Pick-up Contact Phone:</div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.Shipping_Contact_Phone__c}" />
+                    </div>
+                    <div class="col-1" />
+                    <div class="col-2" align="right">Pick-up Contact Email:</div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.Shipping_Contact_Email__c}" />
+                    </div>
+                    <div class="col-1" />
+                </div>
+                
+                
+                <br/><br/>                
+                
+                
+                
+                <div class="row">
+                    <div class="col-2" align="right"><b>Pick-up Address: </b><b style="color:red">*</b></div>
+                    <div class="col-10" />
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-2" align="right">Pick-up Street:</div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.ShippingStreet}" /> 
+                    </div>
+                    <div class="col-1" />
+                    <div class="col-2" align="right">Pick-up City:</div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.ShippingCity}" /> 
+                    </div>
+                    <div class="col-1" />
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-2" align="right">Pick-up State:</div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.ShippingState}" />
+                    </div>
+                    <div class="col-1" />
+                    <div class="col-2" align="right">Pick-up Zip Code:</div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.ShippingPostalCode}" />
+                    </div>
+                    <div class="col-1" />
+                </div>
+                
+                
+                <br/><br/>                
+                
+                
+                <div class="row">
+                    <div class="col-2" align="right"><b>Billing Address: </b><b style="color:red">*</b></div>
+                    <div class="col-10" />
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-2" align="right">Billing Street:</div>
+                    <div class="col-3"> 
+                        <apex:inputField value="{!objOrderOverviewQry.BillingStreet}" /> 
+                    </div>
+                    <div class="col-1" />
+                    <div class="col-2" align="right">Billing City:</div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.BillingCity}" /> 
+                    </div>
+                    <div class="col-1" />
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-2" align="right">Billing State:</div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.BillingState}" />
+                    </div>
+                    <div class="col-1" />
+                    <div class="col-2" align="right">Billing Zip Code:</div>
+                    <div class="col-3">
+                        <apex:inputField value="{!objOrderOverviewQry.BillingPostalCode}" /> 
+                    </div>
+                    <div class="col-1" />
+                </div>
+                <br/><br/><br/> 
+                
+                <apex:outputPanel rendered="{!NOT(isMemo)}" >
+                
+                <div class="row">
+                    <div class="col-2" align="right"><b>SAP Order Reference:</b></div>
+                    <div class="col-10" />
+                </div>
+                <br/> 
+                <div class="row">
+                    <div class="col-4" >
+                        DOS Order Number:<b style="color:red">*</b>
+                    </div>
+                    <div class="col-4" >
+                        RMA Order Number:<b style="color:red">*</b>
+                    </div>
+                    <div class="col-4" >
+                        Origin Order Date:<b style="color:red">*</b>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4" >
+                        <apex:inputField value="{!objOrderOverviewQry.DOS_Order_Number__c}" style="float:left"/>
+                    </div>
+                    <div class="col-4" >
+                        <apex:inputField value="{!objOrderOverviewQry.RMA_Order_Number__c}" style="float:left"/>
+                    </div>
+                    <div class="col-4" >
+                        <apex:inputField showDatePicker="true" value="{!objOrderOverviewQry.Origin_Order_Date__c}" style="float:left"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                    <div class="col-12" >
+                        <apex:inputField value="{!objOrderOverviewQry.isCommonCarrier__c}" style="float:left"/>
+                        Common Carrier {!selectedAdjustment}
+                    </div>
+                </div>
+                <br/><br/>
+                </apex:outputPanel>
+                
+            </apex:pageBlock>
+            
+        </apex:outputPanel>
+        
+        
+        <apex:pageMessages id="showmsg2"></apex:pageMessages>
+         <apex:outputPanel id="selectedCI">
+             <apex:outputPanel id="selectionpart">
+                 
+                 <apex:pageBlock title="Selected Order Items" >
+                     <apex:pageBlockButtons location="top" >
+                         <apex:actionStatus id="saveAdjustment">
+                             <apex:facet name="stop">
+                                 <apex:commandButton value="Save Adjustment" status="saveAdjustment" action="{!checkAddress}" style="color:white;background:#0070d2;" reRender="showmsg2,selectedCI,selectionpart, addproduct,addproduct2, addrval, addrval2, searchproductsid, searchproductsid2, idpgbtn, idpgbtn2"/>
+                             </apex:facet>
+                             <apex:facet name="start">
+                                 <apex:commandButton value="Saving Adjustment..." disabled="true" status="saveAdjustment" />
+                             </apex:facet>
+                         </apex:actionStatus>
+                     </apex:pageBlockButtons>
+                     
+                        <apex:outputPanel id="chargeselectid" >
+                            
+                    <div class="row">
+                        <div class="col-4"><!--
+                            <apex:inputCheckbox id="chk_dc" value="{!isSelectedDeliveryCharge}" />-->
+                            Delivery Charge:
+                        </div>
+                        <div class="col-4"><!--
+                            <apex:inputCheckbox id="chk_pdc" value="{!isSelectedPremiumDeliveryCharge}" />-->
+                            Premium Delivery Charge:
+                        </div>
+                        <div class="col-4"><!--
+                            <apex:inputCheckbox id="chk_hc" value="{!isSelectedHaulawayCharge}" />-->
+                            Haulaway Charge:
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-4">
+                        <apex:inputField value="{!objOrderOverviewQry.Delivery_Charge__c}"  />
+                        </div>
+                        <div class="col-4">
+                        <apex:inputField value="{!objOrderOverviewQry.Premium_Delivery_Charge__c}"  />
+                        </div>
+                        <div class="col-4">
+                        <apex:inputField value="{!objOrderOverviewQry.Haulaway_Charge__c}"  />
+                        </div>
+                    </div>
+                    <br/><br/>
+                            
+                        </apex:outputPanel>
+                     
+                     
+                     <apex:pageBlockTable value="{!lstPartsOrderSelection}" var="os" rendered="{!IF(lstPartsOrderSelection.size>0,true,false)}"  >
+                         <!--
+                    <apex:column >
+                    <apex:commandLink value="DEL" action="{!actionDelete}"  rendered="{!os.ParentPartNumber==null}" style="color:red">
+                        <apex:param name="sid" value="{!os.Sel_AdjId}" />
+                    </apex:commandLink>
+                    </apex:column>
+                         -->
+                         <!--
+                    <apex:column >
+                        <apex:outputPanel rendered="{!NOT(os.ParentPartNumber==null)}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputPanel rendered="{!os.ParentPartNumber==null}">&or;&nbsp;&nbsp;</apex:outputPanel> 
+                    <apex:commandLink value="DEL" action="{!actionDelete}" style="color:red">
+                        <apex:param name="sid" value="{!os.Sel_AdjId}" />
+                    </apex:commandLink>
+                    </apex:column>
+                    <apex:column headerValue="Product Name">
+                        <apex:outputPanel rendered="{!NOT(os.ParentPartNumber==null)}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputPanel rendered="{!os.ParentPartNumber==null}">&or;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputText value="{!os.ProductName}"></apex:outputText> <br/>
+                        <apex:outputPanel rendered="{!NOT(os.ParentPartNumber==null)}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputPanel rendered="{!os.ParentPartNumber==null}">&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputText value="{!os.ProductCode}"></apex:outputText> 
+                    </apex:column>
+                    <apex:column headerClass="colLeft" styleClass="colLeft" headerValue="Reason"  rendered="{!AND(NOT(isMemo), os.ParentPartNumber==null)}" >
+                        <apex:selectList value="{!os.ReasonCode}" size="1">
+                            <apex:selectoptions value="{!mapItemReasonSel[os.AdjId]}"/>
+                        </apex:selectList>
+                    </apex:column>
+                    <apex:column headerClass="colLeft" styleClass="colLeft" headerValue="Reason"  rendered="{!AND(NOT(isMemo), os.ParentPartNumber!=null)}" >
+                    </apex:column>
+					-->
+                    <apex:column >
+                        <apex:outputPanel rendered="{!AND(os.ParentPartNumber!=null, !mapisChildReasonDisplay[os.AdjId])}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputPanel rendered="{!OR(os.ParentPartNumber==null, mapisChildReasonDisplay[os.AdjId])}">&or;&nbsp;&nbsp;</apex:outputPanel> 
+                    <apex:commandLink value="DEL" action="{!actionDelete}" style="color:red">
+                        <apex:param name="sid" value="{!os.Sel_AdjId}" />
+                    </apex:commandLink>
+                    </apex:column>
+                    <apex:column headerValue="Product Name">
+                        <apex:outputPanel rendered="{!AND(os.ParentPartNumber!=null, !mapisChildReasonDisplay[os.AdjId])}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputPanel rendered="{!OR(os.ParentPartNumber==null, mapisChildReasonDisplay[os.AdjId])}">&or;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputText value="{!os.ProductName}"></apex:outputText> <br/>
+                        <apex:outputPanel rendered="{!AND(os.ParentPartNumber!=null, !mapisChildReasonDisplay[os.AdjId])}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputPanel rendered="{!OR(os.ParentPartNumber==null, mapisChildReasonDisplay[os.AdjId])}">&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputPanel> 
+                        <apex:outputText value="{!os.ProductCode}"></apex:outputText> 
+                    </apex:column>
+                    <apex:column headerClass="colLeft" styleClass="colLeft" headerValue="Reason"  rendered="{!AND(NOT(isMemo), OR(os.ParentPartNumber==null, mapisChildReasonDisplay[os.AdjId]))}" >
+                        <apex:selectList value="{!os.ReasonCode}" size="1">
+                            <apex:selectoptions value="{!mapItemReasonSel[os.AdjId]}"/>
+                        </apex:selectList>
+                    </apex:column>
+                    <apex:column headerClass="colLeft" styleClass="colLeft" headerValue="Reason"  rendered="{!AND(NOT(isMemo), AND(os.ParentPartNumber!=null, !mapisChildReasonDisplay[os.AdjId]))}" >
+                    </apex:column>
+                    <!--
+                    <apex:column headerValue="AdjId"  headerClass="colRight" styleClass="colRight" >
+                        <apex:outputText value="{!os.AdjId}" />
+                    </apex:column>
+                    <apex:column headerValue="SelId"  headerClass="colRight" styleClass="colRight" >
+                        <apex:outputText value="{!os.SelId}" />
+                    </apex:column>
+                    <apex:column headerValue="Sel_AdjId"  headerClass="colRight" styleClass="colRight" >
+                        <apex:outputText value="{!os.Sel_AdjId}" />
+                    </apex:column>
+                    <apex:column headerValue="SeqNumber"  headerClass="colRight" styleClass="colRight" >
+                        <apex:outputText value="{!os.SeqNumber}" />
+                    </apex:column>
+                    <apex:column headerValue="ParentPartNumber"  headerClass="colRight" styleClass="colRight" >
+                        <apex:outputText value="{!os.ParentPartNumber}" />
+                    </apex:column>
+                    <apex:column headerValue="Quantity"  headerClass="colRight" styleClass="colRight" >
+                        <apex:outputText value="{0, number, 0}" >
+                            <apex:param value="{!os.Quantity}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Price"  headerClass="colRight" styleClass="colRight">
+                        <apex:outputText value="{0, number, $0.00}" >
+                            <apex:param value="{!os.NetUnitPrice}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Total"  headerClass="colRight" styleClass="colRight">
+                        <apex:outputText value="{0, number, $0.00}" >
+                            <apex:param value="{!os.NetTotalPrice}" />
+                        </apex:outputText>
+                    </apex:column>
+					--
+                         
+                    <apex:column headerValue="Original Price" >
+                        <apex:inputText value="{!os.ListUnitPrice}" rendered="{!OR(os.Feature==null, os.Feature=='', os.Feature=='Parts', os.ParentPartNumber==null )}" />
+                    </apex:column>-->
+                    <apex:column headerValue="Quantity" >
+                        <apex:inputText value="{!os.Quantity}" rendered="{!os.ParentPartNumber==null}" />
+                    </apex:column>
+                    <apex:column headerValue="Price" >
+                        <apex:inputText value="{!os.NetUnitPrice}" />
+                    </apex:column>
+                    <apex:column headerValue="Total"  headerClass="colRight" styleClass="colRight">
+                        <apex:outputText value="{0, number, $0.00}" >
+                            <apex:param value="{!os.NetTotalPrice}" />
+                        </apex:outputText>
+                    </apex:column>
+                         <!--
+                    <apex:column headerValue="Quantity"  headerClass="colRight" styleClass="colRight" >
+                        <apex:outputText value="{0, number, 0}" >
+                            <apex:param value="{!os.Quantity}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Quantity"  headerClass="colRight" styleClass="colRight" >
+                        <apex:outputText value="{0, number, 0}" >
+                            <apex:param value="{!os.Quantity}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Price"  headerClass="colRight" styleClass="colRight">
+                        <apex:outputText value="{0, number, $0.00}" >
+                            <apex:param value="{!os.NetUnitPrice}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Total"  headerClass="colRight" styleClass="colRight">
+                        <apex:outputText value="{0, number, $0.00}" >
+                            <apex:param value="{!os.NetTotalPrice}" />
+                        </apex:outputText>
+                    </apex:column>
+                         -->
+                    </apex:pageBlockTable>
+                    <br/><br/>
+                        
+                                            
+                 </apex:pageBlock>                 
+             </apex:outputPanel>        
+        </apex:outputPanel>        
+        
+        
+        
+    </apex:outputPanel>
+</apex:outputPanel>
+
+    </apex:outputPanel>
+</apex:outputPanel>
+
+        <apex:pageMessages id="showmsg4"></apex:pageMessages>
+        <apex:outputPanel id="addrval">
+        <apex:outputPanel id="addrval2" rendered="{!renAddress}">
+            <apex:pageBlock >
+                        <br/><br/>
+                    <apex:outputPanel id="delinstid" >
+                        <div class="row">
+                            <div class="col-12" >
+                                <b>Pick-up Instruction:</b> <i>(Please limit to 140 characters)</i>
+                                &nbsp;&nbsp;
+                                <apex:inputTextarea value="{!objOrderOverviewQry.Delivery_Instruction__c}"/>
+                            </div>
+                        </div>
+                        <br/>
+                    </apex:outputPanel>
+                <br/><br/>
+        <apex:outputPanel id="addrval3" styleClass="colCenter" >
+            <b>Select County</b>
+            <br/>
+                        <apex:selectList value="{!selectedAddr}" size="1">
+                            <apex:selectoptions value="{!AddressList}"/>
+                        </apex:selectList>
+            
+                <br/><br/><br/>
+            
+                         <apex:actionStatus id="confirmAddress">
+                             <apex:facet name="stop">
+                                 <apex:commandButton value="Confirm County" status="confirmAddress" action="{!actionSaveAdjustment}" style="color:white;background:#0070d2;" reRender="showmsg4, addrval, addrval2, addrval3, selectedCI,selectionpart"/>
+                             </apex:facet>
+                             <apex:facet name="start">
+                                 <apex:commandButton value="Saving Adjustment..." disabled="true" status="confirmAddress" />
+                             </apex:facet>
+                         </apex:actionStatus>
+                </apex:outputPanel>
+            
+                <!--
+                <apex:pageBlockTable value="{!l_addressList}" var="addr"> 
+                    <apex:column headerValue="geoCode" >{!addr.geoCode}</apex:column>
+                    <apex:column headerValue="countyCode" >{!addr.countyCode}</apex:column>
+                    <apex:column headerValue="countyName" >{!addr.countyName}</apex:column>
+                </apex:pageBlockTable>
+            -->
+            </apex:pageBlock>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+    
+
+    </apex:form>
+</apex:page>

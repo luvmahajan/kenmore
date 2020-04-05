@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Influencer_comments__c</fullName>
+    <description>Add comments regarding the conversation with the buying influencer</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Add comments regarding the conversation with the buying influencer</inlineHelpText>
+    <label>Influencer comments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

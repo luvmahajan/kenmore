@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cuda_signnow__SignNow_TempSetting_2_0</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>SignNow TempSetting 2.0</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/signnow_templates?id={!cuda_signnow__CudaSign_Document__c.Id}&amp;type=cuda_signnow__CudaSign_Document__c&amp;template_setting=a0yd000000Kzl0q</url>
+</WebLink>

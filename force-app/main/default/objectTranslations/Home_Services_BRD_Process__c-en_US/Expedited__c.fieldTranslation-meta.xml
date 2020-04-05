@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- BIT to check if a BRD needs to be expedited through the process --></help>
+    <label><!-- Expedited --></label>
+    <name>Expedited__c</name>
+</CustomFieldTranslation>

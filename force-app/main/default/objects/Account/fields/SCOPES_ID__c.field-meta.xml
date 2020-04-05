@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOPES_ID__c</fullName>
+    <description>SCOPES ID</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Scopes ID # must not have any Dashes entered
+CU numbers must be complete (0&#39;s must be included in the account number)</inlineHelpText>
+    <label>SCOPES ID</label>
+    <length>11</length>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

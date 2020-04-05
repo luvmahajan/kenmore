@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>这是一系列位于组织的 Salesforce“文档”选项卡中的 PDF 文档。  为了使用 DocuSign 进行发送，您必须将 PDF 添加到 Salesforce 中的“文档”选项卡的任意文件夹中。  要使用其他格式进行发送，请单击“了解详情”。</help>
+    <label><!-- Document Name --></label>
+    <name>dsfs__Document_Name__c</name>
+</CustomFieldTranslation>

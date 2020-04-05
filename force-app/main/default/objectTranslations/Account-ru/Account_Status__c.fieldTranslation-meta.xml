@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Prospect = Never purchased before
+Customer = Has purchased within the last 12 months
+Inactive = Has not purchased within the last 12 months
+Former = Stopped doing business with us for a specific reason
+Hold = Active Customer, on hold (No Order Placed) --></help>
+    <label><!-- Account Status --></label>
+    <name>Account_Status__c</name>
+    <picklistValues>
+        <masterLabel>At Risk</masterLabel>
+        <translation><!-- At Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Former</masterLabel>
+        <translation><!-- Former --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hold</masterLabel>
+        <translation><!-- Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inactive</masterLabel>
+        <translation><!-- Inactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospect</masterLabel>
+        <translation><!-- Prospect --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

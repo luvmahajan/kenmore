@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Business Integration, Channel Operations, Client Support, Finance, In-Home Operations, Pricing, Sales --></help>
+    <label><!-- Approval Status (Salesforce) --></label>
+    <name>Approval_Status_Salesforce__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending BIT</masterLabel>
+        <translation><!-- Pending BIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending BRD Review</masterLabel>
+        <translation><!-- Pending BRD Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Business Integration</masterLabel>
+        <translation><!-- Pending Business Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Internal</masterLabel>
+        <translation><!-- Pending Internal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recalled</masterLabel>
+        <translation><!-- Recalled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

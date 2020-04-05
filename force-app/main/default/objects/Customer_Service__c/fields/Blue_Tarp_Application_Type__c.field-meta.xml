@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blue_Tarp_Application_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Blue Tarp Application Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Comm Pro - Ext Terms</fullName>
+                <default>false</default>
+                <label>Comm Pro - Ext Terms</label>
+            </value>
+            <value>
+                <fullName>Consent Form</fullName>
+                <default>false</default>
+                <label>Consent Form</label>
+            </value>
+            <value>
+                <fullName>Service Account</fullName>
+                <default>false</default>
+                <label>Service Account</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

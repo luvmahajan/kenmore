@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Products --></label>
+    <name>Products__c</name>
+    <picklistValues>
+        <masterLabel>Air Conditioners</masterLabel>
+        <translation><!-- Air Conditioners --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business to Business Paid Service</masterLabel>
+        <translation><!-- Business to Business Paid Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carry-in Repair</masterLabel>
+        <translation><!-- Carry-in Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleaning</masterLabel>
+        <translation><!-- Cleaning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Fitness</masterLabel>
+        <translation><!-- Commercial Fitness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Mattresses</masterLabel>
+        <translation><!-- Commercial Mattresses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Parts</masterLabel>
+        <translation><!-- Commercial Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial TVs</masterLabel>
+        <translation><!-- Commercial TVs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cook-top</masterLabel>
+        <translation><!-- Cook-top --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery</masterLabel>
+        <translation><!-- Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dishwasher</masterLabel>
+        <translation><!-- Dishwasher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dryer</masterLabel>
+        <translation><!-- Dryer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fitness Equipment</masterLabel>
+        <translation><!-- Fitness Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Floor Care</masterLabel>
+        <translation><!-- Floor Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Footwear</masterLabel>
+        <translation><!-- Footwear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gift Cards</masterLabel>
+        <translation><!-- Gift Cards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haul-Away</masterLabel>
+        <translation><!-- Haul-Away --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Improvement</masterLabel>
+        <translation><!-- Home Improvement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Home Repair</masterLabel>
+        <translation><!-- In-Home Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection</masterLabel>
+        <translation><!-- Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installation</masterLabel>
+        <translation><!-- Installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lawn &amp; Garden</masterLabel>
+        <translation><!-- Lawn &amp; Garden --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Major Appliances</masterLabel>
+        <translation><!-- Major Appliances --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mattresses</masterLabel>
+        <translation><!-- Mattresses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microwave</masterLabel>
+        <translation><!-- Microwave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of Warranty Repair</masterLabel>
+        <translation><!-- Out of Warranty Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA &amp; Warranty</masterLabel>
+        <translation><!-- PA &amp; Warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preventative Maintenance</masterLabel>
+        <translation><!-- Preventative Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Refurbishment</masterLabel>
+        <translation><!-- Product Refurbishment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Range</masterLabel>
+        <translation><!-- Range --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recalls/Reworks</masterLabel>
+        <translation><!-- Recalls/Reworks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refrigerator</masterLabel>
+        <translation><!-- Refrigerator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replacements</masterLabel>
+        <translation><!-- Replacements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Contracts</masterLabel>
+        <translation><!-- Service Contracts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small Appliances</masterLabel>
+        <translation><!-- Small Appliances --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small Refrigerator</masterLabel>
+        <translation><!-- Small Refrigerator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TVs &amp; Electronics</masterLabel>
+        <translation><!-- TVs &amp; Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tool Calibration</masterLabel>
+        <translation><!-- Tool Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tools</masterLabel>
+        <translation><!-- Tools --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty Repair</masterLabel>
+        <translation><!-- Warranty Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Washer</masterLabel>
+        <translation><!-- Washer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Heaters</masterLabel>
+        <translation><!-- Water Heaters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Treatment</masterLabel>
+        <translation><!-- Water Treatment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Window AC (12,000 BTU &amp; Above)</masterLabel>
+        <translation><!-- Window AC (12,000 BTU &amp; Above) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Window AC (Under 12,000 BTU)</masterLabel>
+        <translation><!-- Window AC (Under 12,000 BTU) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

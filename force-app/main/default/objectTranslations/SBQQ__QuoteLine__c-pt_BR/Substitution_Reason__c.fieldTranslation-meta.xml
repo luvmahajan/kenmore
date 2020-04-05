@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Substitution Reason --></label>
+    <name>Substitution_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Availability Date too late for customer</masterLabel>
+        <translation><!-- Availability Date too late for customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Companion Item not available</masterLabel>
+        <translation><!-- Companion Item not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient Quantity Available</masterLabel>
+        <translation><!-- Insufficient Quantity Available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Not Available/On Order</masterLabel>
+        <translation><!-- Product Not Available/On Order --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

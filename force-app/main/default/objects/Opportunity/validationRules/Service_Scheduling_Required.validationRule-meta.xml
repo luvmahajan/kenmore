@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Scheduling_Required</fullName>
+    <active>false</active>
+    <description>When Type = Renewal, Service Scheduling is a required field</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(  StageName  , &quot;Renewal&quot;),  LEN(   Service_Scheduling__c ) = 0)</errorConditionFormula>
+    <errorDisplayField>Service_Scheduling__c</errorDisplayField>
+    <errorMessage>Field required when Type = Renewal</errorMessage>
+</ValidationRule>

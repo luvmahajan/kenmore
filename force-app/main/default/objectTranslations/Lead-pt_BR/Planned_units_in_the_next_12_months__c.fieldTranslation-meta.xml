@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How many units/houses do you (plan to build / have under management) in next 12 months? --></help>
+    <label><!-- Planned units in the next 12 months --></label>
+    <name>Planned_units_in_the_next_12_months__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1-10</masterLabel>
+        <translation><!-- 1-10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10-50</masterLabel>
+        <translation><!-- 10-50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>100-300</masterLabel>
+        <translation><!-- 100-300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>300+</masterLabel>
+        <translation><!-- 300+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>50-100</masterLabel>
+        <translation><!-- 50-100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No info available</masterLabel>
+        <translation><!-- No info available --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

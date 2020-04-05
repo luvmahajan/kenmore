@@ -1,0 +1,22 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p class="MsoNormal" style="text-align: left;"><span class="Apple-style-span" style="font-size: 13px;">Hello {!Lead.Name},</span></p>
+
+<p class="MsoNormal"><span style="font-size: 10pt;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size: 10pt;">Thank you for expressing your
+interest in Sears Commercial. At Sears Commercial, our goal is to enhance your
+business, and make your life easier by providing high quality products,
+programs, and services.&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-size: 10pt;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size: 10pt;">To determine how best we can help meet your business objectives, your local Sears Commercial Account Manager will contact you within 2 business days to follow-up on the inquiry you submitted today. &nbsp;If you need our help immediately, your Account Manager's contact information is below:</span></p><p class="MsoNormal"><br><span style="font-size: 10pt;"><o:p></o:p></span></p><p class="MsoNormal"><span style="font-size: 10pt;"><br></span></p><p class="MsoNormal"><font class="Apple-style-span" size="3"><span class="Apple-style-span" style="font-size: 13px;">{!Lead.OwnerFullName}</span></font></p><p class="MsoNormal"><font class="Apple-style-span" size="3"><span class="Apple-style-span" style="font-size: 13px;"><br></span></font></p><p class="MsoNormal"><font class="Apple-style-span" size="3"><span class="Apple-style-span" style="font-size: 13px;">{!Lead.OwnerTitle}</span></font></p><p class="MsoNormal"><font class="Apple-style-span" size="3"><span class="Apple-style-span" style="font-size: 13px;"><br></span></font></p><p class="MsoNormal"><font class="Apple-style-span" size="3"><span class="Apple-style-span" style="font-size: 13px;">{!Lead.OwnerPhone}</span></font></p><p class="MsoNormal"><font class="Apple-style-span" size="3"><span class="Apple-style-span" style="font-size: 13px;"><br></span></font></p><p class="MsoNormal"><font class="Apple-style-span" size="3"><span class="Apple-style-span" style="font-size: 13px;">{!Lead.OwnerEmail}</span></font></p>
+
+<p class="MsoNormal"><span style="font-size: 10pt;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size: 10pt;">Thanks again for reaching out
+to Sears Commercial; we look forward to working with you!</span></p>]]></td>
+</tr>
+</table>

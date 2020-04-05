@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If Sears Commercial 1 as Method of Payment is selected, then Application and Required Docs submitted is required --></help>
+    <label><!-- Application and Required Docs Submitted --></label>
+    <name>Application_and_Required_Docs_Submitted__c</name>
+</CustomFieldTranslation>

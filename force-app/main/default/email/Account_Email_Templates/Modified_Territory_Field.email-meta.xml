@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Message for DM When Territory Field has been Modified</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Modified Territory Field</name>
+    <style>none</style>
+    <subject>Attn: The Territory Field has been Modified</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer plans on paying for purchases --></label>
+    <name>Customer_plans_on_paying_for_purchases__c</name>
+    <picklistValues>
+        <masterLabel>3rd Party Credit</masterLabel>
+        <translation><!-- 3rd Party Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check / Wire Transfer</masterLabel>
+        <translation><!-- Check / Wire Transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Credit</masterLabel>
+        <translation><!-- Commercial Credit --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

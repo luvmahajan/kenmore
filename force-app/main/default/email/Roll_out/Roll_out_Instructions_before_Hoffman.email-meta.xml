@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>Instructions before classroom - Hoffman</name>
+    <style>formalLetter</style>
+    <subject>Effective Selling with Salesforce.com - instructions before classroom session</subject>
+    <textOnly>Dear {!Contact.FirstName},
+The ready access to Account, Opportunity and Lead information that is enabled by Salesforce.com will help us improve customer relationships, reduce manual tasks and more easily access information while on the go.  I am excited to work with you as you learn how to use this tool to grow sales in your territory.  The purpose of this note is to provide guidance coming into our Classroom Training session next week.
+(1) How should I prepare for the meetings?Complete the e-Learning courses outlined in your Training Roadmap during our Kick-off Call (hint: there are only 2 - &quot;Salesforce.com Fundamentals&quot; and &quot;Sales Representative Fundamentals&quot;)Mark Complete, and Save your Task to &quot;Please Review User Profile&quot;Watch the Learning Transition video (3 minutes) to better understand the next steps in your training.  Click this link (or paste it into your browser window) and select Learning Transition Video - http://hslearning.intra.sears.com/HSL/Training/Salesforce-Training.aspx(2) What do I need to bring?  What should I wear?Your Sears photo ID badge, if you have one.  (Note: visitor badges will be provided)Laptop and chargerDriver&#39;s license or other photo IDDress code - http://inside.intra.sears.com/Inside2000/hoffman/dresscode.html(3) What is the agenda?Your classroom training session will build on the skills you learned through e-Learning and use case studies and role plays to help you understand how Salesforce will support your role as Account Manager.  Here are the times:Arrive at Sears Holdings Headquarters (3333 Beverly Rd. - Hoffman Estates, IL  60179) prior to 8am CT on the morning of your training session.  Class will run from 8am to 5pm with a group lunch, a short break in the morning and one in the afternoon.Last Friday you received a new Task Request from me in Salesforce.  Your data, including Accounts and Opportunities has been loaded and is ready for use.  There are a few places where you may need to edit and update your data.  We have created special instructions and special Views within Salesforce to streamline this process.  Your requested due date for this task was today.  If you have not completed it, please update the completion date on your task, then plan to spend about an hour reviewing and updating your Account and Opportunity data.
+I look forward to seeing you next week.
+Best,{!User.FirstName}
+salesforce.comSears Commercial has partnered with Salesforce.com to bring the world’s leading sales enablement technology to its Account Managers.  Click on the link above to login to Salesforce.com and begin seeing the positive impact in sales revenues which has been achieved by Salesforce.com customers across its base of over 77,500 companies and over 2,000,000 sales users.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Credit Specialist to use if an Account has been closed due to credit reasons --></help>
+    <label><!-- Account Closed --></label>
+    <name>Account_Closed__c</name>
+    <picklistValues>
+        <masterLabel>Account Status Change</masterLabel>
+        <translation><!-- Account Status Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chargeback</masterLabel>
+        <translation><!-- Chargeback --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zIW_Lwn_Grdn_engine_transmission_claims__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If the service is IW Lawn and Garden, will the client handle engine and transmission claims?</inlineHelpText>
+    <label>zFTC_IW Lwn/Grdn, engine/trans claims</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

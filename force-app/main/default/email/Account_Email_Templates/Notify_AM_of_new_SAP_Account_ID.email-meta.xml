@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify AM&#39;s of new SAP Account ID&#39;s</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Notify AM of new SAP Account ID</name>
+    <style>none</style>
+    <subject>A SAP Account ID has been added to your {!Account.Name} Account</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Which appliance brand did the customer want to purchase? --></help>
+    <label><!-- Brand --></label>
+    <name>Brand__c</name>
+    <picklistValues>
+        <masterLabel>Afresh</masterLabel>
+        <translation><!-- Afresh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amana</masterLabel>
+        <translation><!-- Amana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blakeslee</masterLabel>
+        <translation><!-- Blakeslee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bosch</masterLabel>
+        <translation><!-- Bosch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dacor</masterLabel>
+        <translation><!-- Dacor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Daewood</masterLabel>
+        <translation><!-- Daewood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electricord</masterLabel>
+        <translation><!-- Electricord --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrolux</masterLabel>
+        <translation><!-- Electrolux --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fisher &amp; Paykel</masterLabel>
+        <translation><!-- Fisher &amp; Paykel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frigidaire</masterLabel>
+        <translation><!-- Frigidaire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frigidaire Gallary</masterLabel>
+        <translation><!-- Frigidaire Gallary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GE</masterLabel>
+        <translation><!-- GE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GE Artistry Series</masterLabel>
+        <translation><!-- GE Artistry Series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GE Café</masterLabel>
+        <translation><!-- GE Café --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GE Profile Series</masterLabel>
+        <translation><!-- GE Profile Series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gladiator Garage Works</masterLabel>
+        <translation><!-- Gladiator Garage Works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haier</masterLabel>
+        <translation><!-- Haier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haier Appliances</masterLabel>
+        <translation><!-- Haier Appliances --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heartland</masterLabel>
+        <translation><!-- Heartland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hello Kitty</masterLabel>
+        <translation><!-- Hello Kitty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Holiday</masterLabel>
+        <translation><!-- Holiday --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HotPoint</masterLabel>
+        <translation><!-- HotPoint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Idylis</masterLabel>
+        <translation><!-- Idylis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kenmore</masterLabel>
+        <translation><!-- Kenmore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kenmore Elite</masterLabel>
+        <translation><!-- Kenmore Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kenmore Pro</masterLabel>
+        <translation><!-- Kenmore Pro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KitchenAide</masterLabel>
+        <translation><!-- KitchenAide --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LG Appliances</masterLabel>
+        <translation><!-- LG Appliances --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liebherr</masterLabel>
+        <translation><!-- Liebherr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marvel</masterLabel>
+        <translation><!-- Marvel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marvel Comics</masterLabel>
+        <translation><!-- Marvel Comics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maxx Cold</masterLabel>
+        <translation><!-- Maxx Cold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maxx Ice</masterLabel>
+        <translation><!-- Maxx Ice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maytag</masterLabel>
+        <translation><!-- Maytag --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Brand</masterLabel>
+        <translation><!-- National Brand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nostalgia Electrics</masterLabel>
+        <translation><!-- Nostalgia Electrics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premier</masterLabel>
+        <translation><!-- Premier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Samsung</masterLabel>
+        <translation><!-- Samsung --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smart Choice</masterLabel>
+        <translation><!-- Smart Choice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Summit Brands</masterLabel>
+        <translation><!-- Summit Brands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tappn</masterLabel>
+        <translation><!-- Tappn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermador</masterLabel>
+        <translation><!-- Thermador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unbranded</masterLabel>
+        <translation><!-- Unbranded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Watts industries</masterLabel>
+        <translation><!-- Watts industries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Whirlpool</masterLabel>
+        <translation><!-- Whirlpool --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

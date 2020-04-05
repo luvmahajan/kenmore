@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Services --></label>
+    <name>Type_of_Services__c</name>
+    <picklistValues>
+        <masterLabel>CarryIn</masterLabel>
+        <translation><!-- CarryIn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery</masterLabel>
+        <translation><!-- Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Home</masterLabel>
+        <translation><!-- In-Home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install</masterLabel>
+        <translation><!-- Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM Check</masterLabel>
+        <translation><!-- PM Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair-Replace</masterLabel>
+        <translation><!-- Repair-Replace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Store Stock</masterLabel>
+        <translation><!-- Store Stock --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

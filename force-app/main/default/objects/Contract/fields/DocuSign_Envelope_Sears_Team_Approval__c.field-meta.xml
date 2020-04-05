@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSign_Envelope_Sears_Team_Approval__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Used to link the DocuSign envelope sent out for Sears Team approval</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please indicate which DocuSign envelope corresponds to the document sent for Sears Team for approval</inlineHelpText>
+    <label>DocuSign Envelope - Sears Team Approval</label>
+    <referenceTo>dsfs__DocuSign_Status__c</referenceTo>
+    <relationshipLabel>Contracts (Sears Team Approval)</relationshipLabel>
+    <relationshipName>Contracts_Sears</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

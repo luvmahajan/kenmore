@@ -1,0 +1,7 @@
+This is a notification that the Contract for “{!Contract.Account}” has been Activated as of {!Contract.ActivatedDate} and includes a {!Contract.Referral_Fee_or_Rebate__c}. The contract language reads as follows: 
+
+{!Contract.Referral_Fee_Rebate_Language__c} 
+
+Please proceed with the appropriate reporting based on this language and distribute to the Account Manager for client review then payment processing. 
+
+Thanks.

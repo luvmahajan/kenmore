@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- NCM to enter any special pricing details. --></help>
+    <label><!-- Pricing Details --></label>
+    <name>Pricing_Details__c</name>
+</CustomFieldTranslation>

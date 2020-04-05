@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scorecard_O7_through_O10_Commercial__c</fullName>
+    <description>Commercial Scores Only</description>
+    <externalId>false</externalId>
+    <formula>VALUE(TEXT(  O7_Right_team_is_aligned_with_BI_s__c  ))+ 
+VALUE(TEXT(  O8_Identified_Anti_sponsor_Competition__c  ))+ 
+VALUE(TEXT(  O9_Taught_BI_something_new_valuable__c  ))+ 
+VALUE(TEXT(  O10_We_are_not_matching_comps__c  ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Scorecard O7 through O10 Commercial</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

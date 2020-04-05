@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Steve_Notaro</fullName>
+    <columns>NAME</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Approval_Status__c</columns>
+    <columns>Approval_Status_Salesforce__c</columns>
+    <columns>A_E_or_Sears__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Approval_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>equals</operation>
+        <value>Steve Notaro</value>
+    </filters>
+    <label>Steve Notaro</label>
+    <sharedTo>
+        <group>HomeServicesBRDTeam</group>
+    </sharedTo>
+</ListView>

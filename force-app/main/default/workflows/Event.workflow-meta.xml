@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Event_Type_Field</fullName>
+        <field>Activity_Type_2__c</field>
+        <formula>TEXT(  Type  )</formula>
+        <name>Event Type Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Event - Activity Type 2 prepopulates - Update</fullName>
+        <actions>
+            <name>Event_Type_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Event.Type</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>When Type is selected Activity Type 2 will prepopulate</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

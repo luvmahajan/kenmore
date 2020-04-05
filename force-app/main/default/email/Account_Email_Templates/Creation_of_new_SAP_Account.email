@@ -1,0 +1,9 @@
+Hello,
+
+{!Account.OwnerFullName} has created a new Salesforce.com Account for {!Account.Name}.  Please click on the link below and use the information in this Account record to create a new SAP Account.  
+
+{!Account.Link}
+
+Once you have created a SAP Account, please update the SAP ID on the {!Account.Name} Salesforce.com Account with the newly created SAP ID, and Save the Account. 
+
+Thank you.

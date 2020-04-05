@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commercial_Credit_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Commercial Credit Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Sent to Citi</fullName>
+                <default>false</default>
+                <label>Sent to Citi</label>
+            </value>
+            <value>
+                <fullName>Sent to Blue Tarp</fullName>
+                <default>false</default>
+                <label>Sent to Blue Tarp</label>
+            </value>
+            <value>
+                <fullName>Sent to Recourse</fullName>
+                <default>false</default>
+                <label>Sent to Recourse</label>
+            </value>
+            <value>
+                <fullName>Exception Review</fullName>
+                <default>false</default>
+                <label>Exception Review</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Received</fullName>
+                <default>false</default>
+                <label>Received</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

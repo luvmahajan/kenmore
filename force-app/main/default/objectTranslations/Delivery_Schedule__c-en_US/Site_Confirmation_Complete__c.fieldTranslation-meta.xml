@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Site Confirmation Task Created --></label>
+    <name>Site_Confirmation_Complete__c</name>
+</CustomFieldTranslation>

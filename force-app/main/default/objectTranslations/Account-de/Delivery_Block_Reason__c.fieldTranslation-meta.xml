@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 01	Credit limit
+02	Political reasons
+03	Bottleneck material
+04	Export papers missing
+05	Check free of ch.dlv
+06	No printing
+07	Change in quantity
+08	Kanban Delivery
+09	JIT delivery (PDS)
+30	Price Chg. Appproval --></help>
+    <label><!-- Delivery Block Reason --></label>
+    <name>Delivery_Block_Reason__c</name>
+    <picklistValues>
+        <masterLabel>01</masterLabel>
+        <translation><!-- 01 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>02</masterLabel>
+        <translation><!-- 02 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>03</masterLabel>
+        <translation><!-- 03 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>04</masterLabel>
+        <translation><!-- 04 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>05</masterLabel>
+        <translation><!-- 05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>06</masterLabel>
+        <translation><!-- 06 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>07</masterLabel>
+        <translation><!-- 07 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>08</masterLabel>
+        <translation><!-- 08 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>09</masterLabel>
+        <translation><!-- 09 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30</masterLabel>
+        <translation><!-- 30 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

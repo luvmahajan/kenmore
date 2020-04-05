@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- AMERINET
+BENEPLACE
+BEST WESTERN
+BUILDERS CLUB
+CHOICE HOTELS
+COMM PRO - SERVICE ONLY
+ECOMMERCE CUSTOMER
+EQUITY OPS
+EQUITY REHAB
+ESUPPLY
+Healthtrust
+MEDASSETS
+NOVATION
+OBNET
+OPSTECH
+PREMIER
+REPONE
+ROI
+YARDI --></help>
+    <label><!-- Operational Group --></label>
+    <name>Operational_Group__c</name>
+    <picklistValues>
+        <masterLabel>AMERINET</masterLabel>
+        <translation><!-- AMERINET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BENEPLACE</masterLabel>
+        <translation><!-- BENEPLACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEST WESTERN</masterLabel>
+        <translation><!-- BEST WESTERN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BUILDERS CLUB</masterLabel>
+        <translation><!-- BUILDERS CLUB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHOICE HOTELS</masterLabel>
+        <translation><!-- CHOICE HOTELS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COMM PRO - SERVICE ONLY</masterLabel>
+        <translation><!-- COMM PRO - SERVICE ONLY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ECOMMERCE CUSTOMER</masterLabel>
+        <translation><!-- ECOMMERCE CUSTOMER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EQUITY OPS</masterLabel>
+        <translation><!-- EQUITY OPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EQUITY REHAB</masterLabel>
+        <translation><!-- EQUITY REHAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESUPPLY</masterLabel>
+        <translation><!-- ESUPPLY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthtrust</masterLabel>
+        <translation><!-- Healthtrust --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MEDASSETS</masterLabel>
+        <translation><!-- MEDASSETS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOVATION</masterLabel>
+        <translation><!-- NOVATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBNET</masterLabel>
+        <translation><!-- OBNET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPSTECH</masterLabel>
+        <translation><!-- OPSTECH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PREMIER</masterLabel>
+        <translation><!-- PREMIER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REPONE</masterLabel>
+        <translation><!-- REPONE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROI</masterLabel>
+        <translation><!-- ROI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YARDI</masterLabel>
+        <translation><!-- YARDI --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

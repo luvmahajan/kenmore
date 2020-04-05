@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Choice Hotel Introduction with Products</name>
+    <style>freeForm</style>
+    <subject>Sears Commercial</subject>
+    <textOnly>Dear {!Lead.Name}, &lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; /&gt;
+
+
+I am happy to inform you that Sears Commercial is now a Qualified Vendor for all Choice Hotels!!!  This mutual partnership offers you the opportunity to take advantage of the numerous resources that Sears Commercial can offer.
+
+As your local account manager, I will be happy to take care of your product and service needs on behalf of Sears Commercial.
+
+Below are some of the solutions we can offer you.
+
+Upgrade or replace TVs with LG Commercial televisions- residential models also available
+Upgrade or replace fitness equipment with the BEST deals on Light Commercial Grade Fitness Equipment from the top brands like FreeMotion and Sole.
+Access to exclusive &lt;?xml:namespace prefix = st1 ns = &quot;urn:schemas-microsoft-com:office:smarttags&quot; /&gt;Kenmore appliances and small in-room appliances at great pricing
+Easy ordering by a phone call, fax, or on-line.
+And SO MUCH MORE…
+
+Sears Commercial is very excited for the opportunity to partner with Choice Hotels and provide quality products, great service, and exclusive deals to your property.
+
+Please let me know how I can best be of service.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

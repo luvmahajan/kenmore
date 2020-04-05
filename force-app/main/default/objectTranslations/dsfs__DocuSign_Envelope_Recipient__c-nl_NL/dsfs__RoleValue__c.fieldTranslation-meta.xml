@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Waarde gekoppeld aan de rol van de DocuSign-ontvanger. Deze waarde wordt gebruikt om aan standaard ankertags in documenten toe te wijzen.</help>
+    <label><!-- RoleValue --></label>
+    <name>dsfs__RoleValue__c</name>
+</CustomFieldTranslation>

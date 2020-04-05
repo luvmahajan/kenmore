@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used by Sys admin to trigger field updates and automated processes. Does not need to be on the layout.</description>
+    <externalId>false</externalId>
+    <label>Audit</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

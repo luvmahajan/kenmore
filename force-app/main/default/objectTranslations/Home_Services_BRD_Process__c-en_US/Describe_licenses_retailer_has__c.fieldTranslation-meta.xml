@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Attach a document with additional license details if you run out of room in the field --></help>
+    <label><!-- Describe licenses retailer has --></label>
+    <name>Describe_licenses_retailer_has__c</name>
+</CustomFieldTranslation>

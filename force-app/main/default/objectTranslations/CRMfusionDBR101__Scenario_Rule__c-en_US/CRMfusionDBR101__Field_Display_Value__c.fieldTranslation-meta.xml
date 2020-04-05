@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The primary field used in this scenario rule. --></help>
+    <label><!-- Field --></label>
+    <name>CRMfusionDBR101__Field_Display_Value__c</name>
+</CustomFieldTranslation>

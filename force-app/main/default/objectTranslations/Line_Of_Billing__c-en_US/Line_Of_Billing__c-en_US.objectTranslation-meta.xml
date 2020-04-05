@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Line Of Billing</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lines Of Billing</value>
+    </caseValues>
+    <layouts>
+        <layout>Line Of Billing Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Line of Billing Details --></label>
+            <section>Line of Billing Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Line of Billing Name cannot be editied --></errorMessage>
+        <name>Cannot_Edit_Line_Of_Billing_Name</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Line_Of_Billing__c.Total_Revenue__c:SUM
+
+/
+IF(Today()&gt;= DATE(2018,08,06) &amp;&amp; Today() &lt;= DATE(2018,11,04), TODAY()- DATE(2018,08,06),NULL)
+
+*
+
+IF(Today()&gt;= DATE(2018,08,06) &amp;&amp; Today() &lt;= DATE(2018,11,04),  DATE(2018,11,04)-TODAY(),NULL)
+
++
+Line_Of_Billing__c.Total_Revenue__c:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>On Pace to Sell</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Line_Of_Billing__c.Total_Revenue__c:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Sold So Far</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF(Today()&gt;= DATE(2018,08,06) &amp;&amp; Today() &lt;= DATE(2018,11,04), TODAY()- DATE(2018,08,06),NULL)
+
+/
+
+(IF(Today()&gt;= DATE(2018,08,06) &amp;&amp; Today() &lt;= DATE(2018,11,04), TODAY()- DATE(2018,08,06),NULL)
++
+
+IF(Today()&gt;= DATE(2018,08,06) &amp;&amp; Today() &lt;= DATE(2018,11,04), DATE(2018,11,04)-TODAY() ,NULL))
+
+
+*
+Account.Owner.Quarterly_Sales_Goal__c:AVG</calculatedFormula>
+        <datatype>currency</datatype>
+        <description>Where you should be today</description>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Should Be Today</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Account.Owner.Quarterly_Sales_Goal__c:AVG</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Quarterly Sales Target</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Line_Of_Billing__c.Total_Revenue__c:SUM
+/
+(
+IF(Today()&gt;= DATE(2018,05,07) &amp;&amp; Today() &lt;= DATE(2018,08,05), TODAY()- DATE(2018,05,07),NULL)
+
+/
+
+(IF(Today()&gt;= DATE(2018,05,07) &amp;&amp; Today() &lt;= DATE(2018,08,05), TODAY()- DATE(2018,05,07),NULL)
++
+
+IF(Today()&gt;= DATE(2018,05,07) &amp;&amp; Today() &lt;= DATE(2018,08,05), DATE(2018,08,05)-TODAY() ,NULL))
+
+
+*
+Account.Owner.Quarterly_Sales_Goal__c:AVG 
+
+)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA5</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% to Quarter-To-Date $ Goal</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA4</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA2</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA3</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account$Owner</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Tiny</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.Line_Of_Billings__r$Order_Date_Entered__c</field>
+    </columns>
+    <columns>
+        <field>Account.Line_Of_Billings__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Line_Of_Billings__r$Order_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account.Line_Of_Billings__r$State__c</field>
+    </columns>
+    <columns>
+        <field>Account$Chargeback_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Line_Of_Billings__r$Total_Cost__c</field>
+    </columns>
+    <columns>
+        <field>Account.Line_Of_Billings__r$Invoice_Territory__c</field>
+    </columns>
+    <columns>
+        <field>Account.Line_Of_Billings__r$Order_Source__c</field>
+    </columns>
+    <columns>
+        <field>Account.Line_Of_Billings__r$Order_Group__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Owner</field>
+        <sortByName>FORMULA3</sortByName>
+        <sortOrder>Asc</sortOrder>
+        <sortType>CustomSummaryFormula</sortType>
+    </groupingsDown>
+    <name>Quarterly Pacing Report - Dashboard Src</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Line_of_Billing__c</reportType>
+    <scope>team</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Line_Of_Billings__r$CreatedDate</dateColumn>
+        <endDate>2020-04-04</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-04-04</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Can_we_alternate_source_bo_parts_del__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Can we search for and purchase parts outside of the client to meet the commitment to the client and can we charge the client for those parts at the purchase cost?</inlineHelpText>
+    <label>Can we alternate source b/o parts</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

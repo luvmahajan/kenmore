@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name</fullName>
+    <inlineHelpText>Naming Protocol:
+(Commercial) Project Name or Company Name - Rebate
+(Home Sevices/A&amp;E) EMC Name &quot;Company name date&quot;, i.e. AE Lambert 04/19/10</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+</CustomField>

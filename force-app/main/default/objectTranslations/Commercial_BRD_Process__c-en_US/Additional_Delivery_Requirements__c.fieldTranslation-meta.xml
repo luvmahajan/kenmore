@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Describe the requirement so that it is understandable to the customer/end user; make sure to have adequate precision for completeness and freedom from ambiguity. --></help>
+    <label><!-- Additional Delivery Requirements --></label>
+    <name>Additional_Delivery_Requirements__c</name>
+</CustomFieldTranslation>

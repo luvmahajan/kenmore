@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When a case was submitted to the Incorrect Team</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case Referred to Product Manager Support</name>
+    <style>none</style>
+    <subject>Case Referral {!Case.CaseNumber} - {!Case.Priority} Priority</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Servicer Charges Section:  Include&apos;s Late Fees --></help>
+    <label><!-- NCC Payment (including Late Fee&apos;s) --></label>
+    <name>NCC_Payment_including_Late_Fee_s__c</name>
+</CustomFieldTranslation>

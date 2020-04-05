@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Servicer Charges or Pricing Exhibit Sections.  This language is different for OEM&apos;s --></help>
+    <label><!-- Service Attempt --></label>
+    <name>Service_Attempt__c</name>
+</CustomFieldTranslation>

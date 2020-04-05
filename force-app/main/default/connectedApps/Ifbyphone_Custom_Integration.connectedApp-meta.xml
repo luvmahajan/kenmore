@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>ce@ifbyphone.com</contactEmail>
+    <label>Ifbyphone Custom Integration</label>
+    <oauthConfig>
+        <callbackUrl>https://secure.ifbyphone.com</callbackUrl>
+        <consumerKey>3MVG99OxTyEMCQ3ikjRkfVwXObLWKX3kcRuFk390mTa_3b7kFGxCdHZtrdbl9e8dtSE8ZAad.e1jo6XwrGAH4</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Api</scopes>
+    </oauthConfig>
+</ConnectedApp>

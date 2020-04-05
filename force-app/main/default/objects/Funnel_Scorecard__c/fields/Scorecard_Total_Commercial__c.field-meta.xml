@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scorecard_Total_Commercial__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Funnel_Scorecard_Test__c = 0,
+IF( Completed_Call_Planner__c =TRUE,7,0)+
+IF(  Min_1_ea_high_influence_UBI_TBI__c  =TRUE,5,0)+
+IF(  EBI_id_along_decision_making_criteria__c  =TRUE,9,0)+
+IF(  Influential_coach_who_shares_opp_insight__c  =TRUE,8,0)+
+IF(  BI_objections_id_with_clear_resolution_s__c  =TRUE,7,0)+
+IF(  BI_in_trouble_mode_ready_to_take_action__c  =TRUE,8,0)+
+IF(  BI_engage_in_open_honest_communication__c =TRUE,6,0)+
+IF(  Identified_anti_sponsor_competition__c  =TRUE,7,0)+
+IF(  Seller_has_id_BI_pain_pts_solution__c  =TRUE,7,0)+
+IF(  Taught_BI_something_new_valuable__c =TRUE,6,0)+
+IF(  Service_relationship_trumps_lowest_price__c  =TRUE,6,0)+
+IF(  Right_SC_team_aligned_in_opportunity__c  =TRUE,4,0)+
+IF(  No_RFP_or_we_wrote_it_not_matching_comps__c =TRUE,8,0)+
+IF(  BI_understands_appreciates_our_brand__c  =TRUE,5,0)+
+IF(  BI_understands_aligns_with_value_prop__c  =TRUE,7,0),
+Funnel_Scorecard_Test__c
+)</formula>
+    <label>Funnel Scorecard Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

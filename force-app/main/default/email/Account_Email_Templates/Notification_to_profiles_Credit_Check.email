@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial;"><font face="arial">Please investigate this {!Account.Name} as it has been flagged as a credit check.&nbsp;</font></div><div style="color: rgb(0, 0, 0); font-family: arial;"><font face="arial">The Account Owner is: {!Account.OwnerFullName}.&nbsp;</font></div><div><font face="arial" style="color: rgb(0, 0, 0); font-family: arial;">Please contact the&nbsp;</font><span style="font-family: arial;">{!Account.OwnerFullName} with the updated status</span><font face="arial" style="color: rgb(0, 0, 0); font-family: arial;">.</font></div>]]></td>
+</tr>
+</table>

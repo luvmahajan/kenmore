@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Invoice_PDF_Footer_COM1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invoice PDF Footer COM1</shortDescription>
+        <value>Please notate invoice number on check remittances.&lt;br&gt;If you have any questions, please call 800-359-2000, press 8&lt;br&gt;&lt;br&gt;Remit Payment to:&lt;br&gt;Sears Commercial Credits Services&lt;br&gt;1820 East Sky Harbor Circle South Ste. 150&lt;br&gt;Phoenix, AZ 85034&lt;br&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_PDF_Footer_CPRO</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invoice PDF Footer COMMPRO</shortDescription>
+        <value>Please notate invoice number on check remittances.&lt;br&gt;If you have any questions, please call 800-359-2000, press 8&lt;br&gt;&lt;br&gt;Remit Payment to: &lt;br&gt;Sears Commercial Pro&lt;br&gt;Post Office Box 105525&lt;br&gt;Augusta, GA 30348-5525&lt;br&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Line_Break</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Line Break</shortDescription>
+        <value>-
+-</value>
+    </labels>
+    <labels>
+        <fullName>National_Account_DM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>National Account DM</shortDescription>
+        <value>0053000000CTaQJAA1</value>
+    </labels>
+    <labels>
+        <fullName>WebforecastHeaderFieldId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WebforecastHeaderFieldId</shortDescription>
+        <value>CF00N3A00000Cmq1v_lkid</value>
+    </labels>
+    <labels>
+        <fullName>invoicePDFFooter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>invoicePDFFooter</shortDescription>
+        <value>Please notate invoice number on check remittances.&lt;br&gt;If you have any questions, please call 800-359-2000, press 8&lt;br&gt;&lt;br&gt;Remit Payment to:&lt;br&gt;Attention: Accounting&lt;br&gt;Kenmore Direct&lt;br&gt;2417 Regency Blvd, Ste 6&lt;br&gt;Augusta, GA 30904&lt;br&gt;</value>
+    </labels>
+</CustomLabels>

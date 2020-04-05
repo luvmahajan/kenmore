@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Manager__c</fullName>
+    <description>The contact on the Business Integration team who will project manage this BRD.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The contact on the Business Integration team who will project manage this BRD.</inlineHelpText>
+    <label>Program Manager</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Brian Susmarski</fullName>
+                <default>false</default>
+                <label>Brian Susmarski</label>
+            </value>
+            <value>
+                <fullName>Christina DePasquale</fullName>
+                <default>false</default>
+                <label>Christina DePasquale</label>
+            </value>
+            <value>
+                <fullName>Don MacKay</fullName>
+                <default>false</default>
+                <label>Don MacKay</label>
+            </value>
+            <value>
+                <fullName>Lorinda Hansen</fullName>
+                <default>false</default>
+                <label>Lorinda Hansen</label>
+            </value>
+            <value>
+                <fullName>Vaibhav Khanna</fullName>
+                <default>false</default>
+                <label>Vaibhav Khanna</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

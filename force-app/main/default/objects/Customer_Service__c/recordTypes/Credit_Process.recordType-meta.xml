@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Process</fullName>
+    <active>true</active>
+    <description>Credit Process</description>
+    <label>Credit Process</label>
+    <picklistValues>
+        <picklist>Augusta_Requesting_Consent_Form__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Blue_Tarp_Application_Type__c</picklist>
+        <values>
+            <fullName>Comm Pro - Ext Terms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consent Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Blue_Tarp_Response__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blue Tarp Recourse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paperwork Incomplete</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Chargeback_Category__c</picklist>
+        <values>
+            <fullName>3rd Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BT Chargeback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BT Reject</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispute Chargeback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier Chargeback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recourse-CONT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recourse-GEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recourse-MIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retainage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Balance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Chargeback_Status__c</picklist>
+        <values>
+            <fullName>Augusta Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collected%2FPaid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to 3rd Party Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncollectible</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Chargeback_Type__c</picklist>
+        <values>
+            <fullName>Recourse-Cont</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Citi_s_Response__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paperwork Incomplete</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commercial_Credit_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exception Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to Blue Tarp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to Citi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to Recourse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Final_Credit_Response__c</picklist>
+        <values>
+            <fullName>Approved Blue Tarp Service Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved Exception Service Account BT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved by Blue Tarp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved by Citi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved by Recourse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Declined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lender__c</picklist>
+        <values>
+            <fullName>3rd Party Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Receivable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Pro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recourse_Response__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Type__c</picklist>
+        <values>
+            <fullName>Commercial One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Pro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create New Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Line Increase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplemental Contract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resolved_By__c</picklist>
+        <values>
+            <fullName>Carol A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceildeth Xmair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chad Moody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Christie D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gina R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenyetta L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michelle Wiggins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monica G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rae Ann Ladd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sabina O</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shantonette McKenizie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sheila S</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

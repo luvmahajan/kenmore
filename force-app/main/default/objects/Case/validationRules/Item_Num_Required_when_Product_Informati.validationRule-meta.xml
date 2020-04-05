@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Item_Num_Required_when_Product_Informati</fullName>
+    <active>false</active>
+    <description>Item Number required when Product Information is picked for the type</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(   Type  , &quot;Product Information&quot;),  LEN(  Item__c  ) = 0)</errorConditionFormula>
+    <errorDisplayField>Item__c</errorDisplayField>
+    <errorMessage>Field required when Type = Product Information</errorMessage>
+</ValidationRule>

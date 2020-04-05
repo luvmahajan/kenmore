@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Item_Length</fullName>
+    <active>false</active>
+    <description>Item length should be 4 or 5 length</description>
+    <errorConditionFormula>LEN( Item__c ) &lt;&gt; 4 || LEN( Item__c ) &lt;&gt; 5</errorConditionFormula>
+    <errorDisplayField>Item__c</errorDisplayField>
+    <errorMessage>Item length should be 4 or 5 characters</errorMessage>
+</ValidationRule>

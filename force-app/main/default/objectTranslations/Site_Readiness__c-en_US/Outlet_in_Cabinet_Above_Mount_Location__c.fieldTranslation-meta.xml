@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The outlet must be in the cabinet directly above MHC and no higher than 6” from the bottom of the cabinet to accommodate the cord. No extension cords are permitted. --></help>
+    <label><!-- Outlet in Cabinet Above Mount Location? --></label>
+    <name>Outlet_in_Cabinet_Above_Mount_Location__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Where will we SHC/A&amp;E be picking up merchandise? --></help>
+    <label><!-- Merchandise Location --></label>
+    <name>Merchandise_Location__c</name>
+    <picklistValues>
+        <masterLabel>Client Premise</masterLabel>
+        <translation><!-- Client Premise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Premise</masterLabel>
+        <translation><!-- Customer Premise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sears Premise</masterLabel>
+        <translation><!-- Sears Premise --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

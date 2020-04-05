@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>SCO User Created</name>
+    <style>formalLetter</style>
+    <subject>Welcome to KenmoreDirect.com - customer registration</subject>
+    <textOnly>Welcome {!Contact.FirstName} {!Contact.LastName}
+
+An account has been created for you www.kenmoredirect.com.
+You will now receive a copy of the order confirmation email when this customer places an order on the web.
+
+Please see below for details of the registration.
+
+Account Name: {!Account.Name}
+UserID / Email: {!Contact.Email}
+
+1. Go to www.kenmoredirect.com.
+2. select Sign In at the top of the page
+3. enter your email address and select Password Assistance
+
+A confirmation e-mail will be sent to you and allow you to confirm your account.  The confirmation is good for 24-hours (repeat steps above after that time)
+
+Thank you for choosing Kenmore Direct</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

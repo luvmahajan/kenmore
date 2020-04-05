@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Entity Type --></label>
+    <name>Entity_Type__c</name>
+    <picklistValues>
+        <masterLabel>Corporation</masterLabel>
+        <translation><!-- Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LLC</masterLabel>
+        <translation><!-- LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partnership</masterLabel>
+        <translation><!-- Partnership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sole Proprietor</masterLabel>
+        <translation><!-- Sole Proprietor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

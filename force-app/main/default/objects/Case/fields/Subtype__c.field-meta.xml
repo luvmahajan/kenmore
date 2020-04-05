@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtype__c</fullName>
+    <externalId>false</externalId>
+    <label>Subtype</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+                <label>Advertisement</label>
+            </value>
+            <value>
+                <fullName>Customer Landing Page</fullName>
+                <default>false</default>
+                <label>Customer Landing Page</label>
+            </value>
+            <value>
+                <fullName>Digital Catalog</fullName>
+                <default>false</default>
+                <label>Digital Catalog</label>
+            </value>
+            <value>
+                <fullName>Email/ Keywords</fullName>
+                <default>false</default>
+                <label>Email/ Keywords</label>
+            </value>
+            <value>
+                <fullName>Exhibit</fullName>
+                <default>false</default>
+                <label>Exhibit</label>
+            </value>
+            <value>
+                <fullName>Flyer/ Brochure</fullName>
+                <default>false</default>
+                <label>Flyer/ Brochure</label>
+            </value>
+            <value>
+                <fullName>Membership Dues</fullName>
+                <default>false</default>
+                <label>Membership Dues</label>
+            </value>
+            <value>
+                <fullName>Microsite</fullName>
+                <default>false</default>
+                <label>Microsite</label>
+            </value>
+            <value>
+                <fullName>Post Cards</fullName>
+                <default>false</default>
+                <label>Post Cards</label>
+            </value>
+            <value>
+                <fullName>Presentation Support</fullName>
+                <default>false</default>
+                <label>Presentation Support</label>
+            </value>
+            <value>
+                <fullName>Product Images</fullName>
+                <default>false</default>
+                <label>Product Images</label>
+            </value>
+            <value>
+                <fullName>Program Advertisement</fullName>
+                <default>false</default>
+                <label>Program Advertisement</label>
+            </value>
+            <value>
+                <fullName>Qualified Leads</fullName>
+                <default>false</default>
+                <label>Qualified Leads</label>
+            </value>
+            <value>
+                <fullName>RFPs</fullName>
+                <default>false</default>
+                <label>RFPs</label>
+            </value>
+            <value>
+                <fullName>Show Special</fullName>
+                <default>false</default>
+                <label>Show Special</label>
+            </value>
+            <value>
+                <fullName>Sponssorship</fullName>
+                <default>false</default>
+                <label>Sponssorship</label>
+            </value>
+            <value>
+                <fullName>MarcomCentral</fullName>
+                <default>false</default>
+                <label>MarcomCentral</label>
+            </value>
+            <value>
+                <fullName>Salesforce.com</fullName>
+                <default>false</default>
+                <label>Salesforce.com</label>
+            </value>
+            <value>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+                <label>Pardot</label>
+            </value>
+            <value>
+                <fullName>SAP</fullName>
+                <default>false</default>
+                <label>SAP</label>
+            </value>
+            <value>
+                <fullName>Mainframe</fullName>
+                <default>false</default>
+                <label>Mainframe</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Boilerplate Information</fullName>
+                <default>false</default>
+                <label>Boilerplate Information</label>
+            </value>
+            <value>
+                <fullName>Non-boilerplate Information</fullName>
+                <default>false</default>
+                <label>Non-boilerplate Information</label>
+            </value>
+            <value>
+                <fullName>Copyrighting</fullName>
+                <default>false</default>
+                <label>Copyrighting</label>
+            </value>
+            <value>
+                <fullName>Design</fullName>
+                <default>false</default>
+                <label>Design</label>
+            </value>
+            <value>
+                <fullName>Trade Show Assets - Brochures</fullName>
+                <default>false</default>
+                <label>Trade Show Assets - Brochures</label>
+            </value>
+            <value>
+                <fullName>Marketing Assets</fullName>
+                <default>false</default>
+                <label>Marketing Assets</label>
+            </value>
+            <value>
+                <fullName>Business Cards</fullName>
+                <default>false</default>
+                <label>Business Cards</label>
+            </value>
+            <value>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+                <label>Trade Show</label>
+            </value>
+            <value>
+                <fullName>New/Custom Marketing Materials</fullName>
+                <default>false</default>
+                <label>New/Custom Marketing Materials</label>
+            </value>
+            <value>
+                <fullName>Suggestions</fullName>
+                <default>false</default>
+                <label>Suggestions</label>
+            </value>
+            <value>
+                <fullName>High Resolution Logo Request</fullName>
+                <default>false</default>
+                <label>High Resolution Logo Request</label>
+            </value>
+            <value>
+                <fullName>Status of Existing Order from Printer</fullName>
+                <default>false</default>
+                <label>Status of Existing Order from Printer</label>
+            </value>
+            <value>
+                <fullName>Collateral Customization</fullName>
+                <default>false</default>
+                <label>Collateral Customization</label>
+            </value>
+            <value>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+                <label>Password Reset</label>
+            </value>
+            <value>
+                <fullName>Trade Show Assets - Table Skirts</fullName>
+                <default>false</default>
+                <label>Trade Show Assets - Table Skirts</label>
+            </value>
+            <value>
+                <fullName>New User Access</fullName>
+                <default>false</default>
+                <label>New User Access</label>
+            </value>
+            <value>
+                <fullName>User Add/Change/Delete</fullName>
+                <default>false</default>
+                <label>User Add/Change/Delete</label>
+            </value>
+            <value>
+                <fullName>Workstation Set Up</fullName>
+                <default>false</default>
+                <label>Workstation Set Up</label>
+            </value>
+            <value>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+                <label>Telecom</label>
+            </value>
+            <value>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+                <label>Inquiry</label>
+            </value>
+            <value>
+                <fullName>KAP/Tier</fullName>
+                <default>false</default>
+                <label>KAP/Tier</label>
+            </value>
+            <value>
+                <fullName>System</fullName>
+                <default>false</default>
+                <label>System</label>
+            </value>
+            <value>
+                <fullName>Interface</fullName>
+                <default>false</default>
+                <label>Interface</label>
+            </value>
+            <value>
+                <fullName>Product configuration</fullName>
+                <default>false</default>
+                <label>Product configuration</label>
+            </value>
+            <value>
+                <fullName>Product information</fullName>
+                <default>false</default>
+                <label>Product information</label>
+            </value>
+            <value>
+                <fullName>Replacement number</fullName>
+                <default>false</default>
+                <label>Replacement number</label>
+            </value>
+            <value>
+                <fullName>Spec sheet support</fullName>
+                <default>false</default>
+                <label>Spec sheet support</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Marketing Portal</controllingFieldValue>
+            <valueName>High Resolution Logo Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing Portal</controllingFieldValue>
+            <valueName>Status of Existing Order from Printer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing Portal</controllingFieldValue>
+            <valueName>Collateral Customization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing Portal</controllingFieldValue>
+            <valueName>Password Reset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing Portal</controllingFieldValue>
+            <valueName>New User Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Password Reset</controllingFieldValue>
+            <valueName>SAP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Password Reset</controllingFieldValue>
+            <valueName>Mainframe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Password Reset</controllingFieldValue>
+            <controllingFieldValue>SAP Issue</controllingFieldValue>
+            <controllingFieldValue>AGS Admin</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP Issue</controllingFieldValue>
+            <valueName>System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SAP Issue</controllingFieldValue>
+            <valueName>Interface</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFP Information Request</controllingFieldValue>
+            <valueName>Boilerplate Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFP Information Request</controllingFieldValue>
+            <valueName>Non-boilerplate Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFP Service Request</controllingFieldValue>
+            <valueName>Copyrighting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFP Service Request</controllingFieldValue>
+            <valueName>Design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Request</controllingFieldValue>
+            <valueName>Trade Show Assets - Brochures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Request</controllingFieldValue>
+            <valueName>Marketing Assets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Request</controllingFieldValue>
+            <valueName>Business Cards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset Request</controllingFieldValue>
+            <valueName>Trade Show Assets - Table Skirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AGS Admin</controllingFieldValue>
+            <valueName>User Add/Change/Delete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AGS Admin</controllingFieldValue>
+            <valueName>Workstation Set Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AGS Admin</controllingFieldValue>
+            <valueName>Telecom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <valueName>Trade Show</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <valueName>New/Custom Marketing Materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <valueName>Suggestions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <valueName>Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <valueName>KAP/Tier</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

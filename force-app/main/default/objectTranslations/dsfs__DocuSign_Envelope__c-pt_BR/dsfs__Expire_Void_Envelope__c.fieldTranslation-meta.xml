@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Às vezes, pode ser necessário incentivar seus destinatários a preencherem um envelope mais rapidamente. Após a expiração de um envelope, o DocuSign para Salesforce anula-o e envia uma notificação tanto ao remetente quanto ao destinatário.</help>
+    <label><!-- Expire/Void Envelope --></label>
+    <name>dsfs__Expire_Void_Envelope__c</name>
+</CustomFieldTranslation>

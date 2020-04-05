@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- IW - In warranty, SC - service contract, OOW - out of warranty, PT- payroll transfer, CC - collect calls, No Coverage - unknown, Other - send details to PM --></help>
+    <label><!-- zFTC_Type of Services --></label>
+    <name>zType_of_Services__c</name>
+    <picklistValues>
+        <masterLabel>CarryIn</masterLabel>
+        <translation><!-- CarryIn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery</masterLabel>
+        <translation><!-- Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Home</masterLabel>
+        <translation><!-- In-Home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install</masterLabel>
+        <translation><!-- Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM Check</masterLabel>
+        <translation><!-- PM Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recall</masterLabel>
+        <translation><!-- Recall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair-Replace</masterLabel>
+        <translation><!-- Repair-Replace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rework</masterLabel>
+        <translation><!-- Rework --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Setup</masterLabel>
+        <translation><!-- Setup --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

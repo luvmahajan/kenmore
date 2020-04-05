@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>csprdmgr@searshc.com</email>
+    <name>Product Managers</name>
+    <queueMembers>
+        <users>
+            <user>andrea.luckey@kenmoredirect.com</user>
+            <user>chill42@searshc.com</user>
+            <user>dzakrz1@searshc.com</user>
+            <user>ghunt4@searshc.com</user>
+            <user>nikhil.ketkar@searshc.com</user>
+            <user>sara.kimball@kenmoredirect.com</user>
+            <user>teresa.hobson@kenmoredirect.com</user>
+            <user>vwrig03@searshc.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

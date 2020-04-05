@@ -1,0 +1,12 @@
+Hello,
+
+This is a notification that the following Contract was sent out for eSignature. 
+
+Contract Link: {!Contract.Link} 
+Opportunity: {!Contract.Opportunity__c} 
+Account: {!Contract.Account} 
+
+Please expect an email from the Account Manager via DocuSign for approval or eSignature.
+
+
+Thank you.

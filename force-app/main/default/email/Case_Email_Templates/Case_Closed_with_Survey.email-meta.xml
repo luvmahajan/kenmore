@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Case Closed with Survey</name>
+    <style>freeForm</style>
+    <subject>Case {!Case.Status} - {!Case.CaseNumber}</subject>
+    <textOnly>Hello {!Case.CreatedBy},
+ 
+The {!Case.Type} Case you submitted on {!Case.CreatedDate} regarding &quot;{!Case.Subject}&quot; has been {!Case.Status}.  Please review your Case Comments below:   
+ 
+{!Case.Comments__c}
+ 
+{!Case.Solution_Subject_and_Description}
+ 
+We are committed to your success.  If you feel this case has not been adequately addressed, please reply to this email - your case will be re-opened and worked to resolution.  
+ 
+We are also interested in your feedback.  Please click the link below to provide your assessment of theSalesforce.com Support experience: 
+https://www.surveymonkey.com/s/78J7CYR</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

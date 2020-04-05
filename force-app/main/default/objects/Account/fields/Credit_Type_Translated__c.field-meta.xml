@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Type_Translated__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Credit_Type__c,
+&quot;0004&quot;, &quot;Diners Club Card&quot;,
+&quot;ACH&quot;, &quot;Automated Clrg House&quot;,
+&quot;AMEX&quot;, &quot;American Express&quot;,
+&quot;AR&quot;, &quot;Account Receivable&quot;,
+&quot;CASH&quot;, &quot;Cash&quot;,
+&quot;CHCK&quot;, &quot;Physical Check&quot;,
+&quot;COM1&quot;, &quot;Commercial One&quot;,
+&quot;CPRO&quot;, &quot;Commercial Pro&quot;, 
+&quot;DISC&quot;, &quot;Discover Card&quot;,
+&quot;ECHK&quot;, &quot;E-check&quot;,
+&quot;GC&quot;, &quot;Sears Gift Card&quot;,
+&quot;INTL&quot;, &quot;Sears Internal&quot;,
+&quot;MC&quot;, &quot;Master Card&quot;,
+&quot;SCHG&quot;, &quot;Sears Charge Card&quot;,
+&quot;SMC&quot;, &quot;Sears Master Card&quot;,
+&quot;VISA&quot;, &quot;Visa Card&quot;,
+&quot;WIRE&quot;, &quot;Wire&quot;,
+&quot;&quot;)</formula>
+    <label>Credit Type Translated</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

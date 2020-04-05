@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The first 2-digits of each NAICS code represent a company&apos;s sector. The values in the field represent all of the NAICS sector descriptions. --></help>
+    <label><!-- Sector --></label>
+    <name>Sector__c</name>
+    <picklistValues>
+        <masterLabel>Accommodation and Food Services</masterLabel>
+        <translation><!-- Accommodation and Food Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administrative and Support and Waste Management and Remediation Services</masterLabel>
+        <translation><!-- Administrative and Support and Waste Management and Remediation Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agriculture, Forestry, Fishing and Hunting</masterLabel>
+        <translation><!-- Agriculture, Forestry, Fishing and Hunting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arts, Entertainment, and Recreation</masterLabel>
+        <translation><!-- Arts, Entertainment, and Recreation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction</masterLabel>
+        <translation><!-- Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Educational Services</masterLabel>
+        <translation><!-- Educational Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance and Insurance</masterLabel>
+        <translation><!-- Finance and Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health Care and Social Assistance</masterLabel>
+        <translation><!-- Health Care and Social Assistance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information</masterLabel>
+        <translation><!-- Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management of Companies and Enterprises</masterLabel>
+        <translation><!-- Management of Companies and Enterprises --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing</masterLabel>
+        <translation><!-- Manufacturing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mining</masterLabel>
+        <translation><!-- Mining --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Services (except Public Administration)</masterLabel>
+        <translation><!-- Other Services (except Public Administration) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional, Scientific, and Technical Services</masterLabel>
+        <translation><!-- Professional, Scientific, and Technical Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Administration</masterLabel>
+        <translation><!-- Public Administration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate and Rental and Leasing</masterLabel>
+        <translation><!-- Real Estate and Rental and Leasing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail Trade</masterLabel>
+        <translation><!-- Retail Trade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transportation and Warehousing</masterLabel>
+        <translation><!-- Transportation and Warehousing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities</masterLabel>
+        <translation><!-- Utilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wholesale Trade</masterLabel>
+        <translation><!-- Wholesale Trade --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

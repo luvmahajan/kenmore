@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Delivery Schedule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Delivery Schedules</value>
+    </caseValues>
+    <layouts>
+        <layout>Delivery Schedual Layout</layout>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Site Confirmation --></label>
+            <section>Site Confirmation</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Delivery Line Item --></label>
+        <name>Delivery_Line_Item</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>New_Task</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please complete Site Confirmation Section before updating status. --></errorMessage>
+        <name>Must_be_Answered_for_Status_Update</name>
+    </validationRules>
+    <workflowTasks>
+        <name>External_Call</name>
+        <subject><!-- External Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Large_Order_Notification</name>
+        <subject><!-- Large Order Notification --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Site_Confirmation_Task</name>
+        <subject><!-- Site Confirmation Task --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>X48_Hour_Pre_Call</name>
+        <subject><!-- 48 Hour Pre Call --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>X72_Hour_Pre_Call</name>
+        <subject><!-- 72 Hour Pre Call --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

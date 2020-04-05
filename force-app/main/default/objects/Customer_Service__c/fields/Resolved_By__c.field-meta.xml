@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolved_By__c</fullName>
+    <externalId>false</externalId>
+    <label>Resolved By</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Carol A</fullName>
+                <default>false</default>
+                <label>Carol A</label>
+            </value>
+            <value>
+                <fullName>Ceildeth Xmair</fullName>
+                <default>false</default>
+                <label>Ceildeth Xmair</label>
+            </value>
+            <value>
+                <fullName>Chad Moody</fullName>
+                <default>false</default>
+                <label>Chad Moody</label>
+            </value>
+            <value>
+                <fullName>Christie D</fullName>
+                <default>false</default>
+                <label>Christie D</label>
+            </value>
+            <value>
+                <fullName>Gina R</fullName>
+                <default>false</default>
+                <label>Gina R</label>
+            </value>
+            <value>
+                <fullName>Kenyetta L</fullName>
+                <default>false</default>
+                <label>Kenyetta L</label>
+            </value>
+            <value>
+                <fullName>Michelle Wiggins</fullName>
+                <default>false</default>
+                <label>Michelle Wiggins</label>
+            </value>
+            <value>
+                <fullName>Monica G</fullName>
+                <default>false</default>
+                <label>Monica G</label>
+            </value>
+            <value>
+                <fullName>Rae Ann Ladd</fullName>
+                <default>false</default>
+                <label>Rae Ann Ladd</label>
+            </value>
+            <value>
+                <fullName>Sabina O</fullName>
+                <default>false</default>
+                <label>Sabina O</label>
+            </value>
+            <value>
+                <fullName>Shantonette McKenizie</fullName>
+                <default>false</default>
+                <label>Shantonette McKenizie</label>
+            </value>
+            <value>
+                <fullName>Sheila S</fullName>
+                <default>false</default>
+                <label>Sheila S</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

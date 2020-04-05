@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territory_Manager_OLD__c</fullName>
+    <externalId>false</externalId>
+    <label>Territory Manager OLD</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ben Mueller</fullName>
+                <default>false</default>
+                <label>Ben Mueller</label>
+            </value>
+            <value>
+                <fullName>Brian Hale</fullName>
+                <default>false</default>
+                <label>Brian Hale</label>
+            </value>
+            <value>
+                <fullName>Gecova (Jay) Doyal</fullName>
+                <default>false</default>
+                <label>Gecova (Jay) Doyal</label>
+            </value>
+            <value>
+                <fullName>Kevin Piotrowski</fullName>
+                <default>false</default>
+                <label>Kevin Piotrowski</label>
+            </value>
+            <value>
+                <fullName>Kevin Wilch</fullName>
+                <default>false</default>
+                <label>Kevin Wilch</label>
+            </value>
+            <value>
+                <fullName>Lindy Ely</fullName>
+                <default>false</default>
+                <label>Lindy Ely</label>
+            </value>
+            <value>
+                <fullName>Nick Bodmer</fullName>
+                <default>false</default>
+                <label>Nick Bodmer</label>
+            </value>
+            <value>
+                <fullName>Peggy D&#39;Alessandro</fullName>
+                <default>false</default>
+                <label>Peggy D&#39;Alessandro</label>
+            </value>
+            <value>
+                <fullName>Rod Pasion</fullName>
+                <default>false</default>
+                <label>Rod Pasion</label>
+            </value>
+            <value>
+                <fullName>Scott Ferguson</fullName>
+                <default>false</default>
+                <label>Scott Ferguson</label>
+            </value>
+            <value>
+                <fullName>Thyra Landis</fullName>
+                <default>false</default>
+                <label>Thyra Landis</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

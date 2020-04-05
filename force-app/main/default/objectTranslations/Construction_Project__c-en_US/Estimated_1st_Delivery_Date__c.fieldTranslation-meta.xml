@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This drives --></help>
+    <label><!-- Estimated 1st Delivery Date --></label>
+    <name>Estimated_1st_Delivery_Date__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>場合によっては、受信者がエンベロープの処理をもっと迅速に完了するように促さなければなりません。 エンベロープの有効期限が過ぎると、DocuSign for Salesforce によってエンベロープが無効化され、差出人および受信者の両方に通知が送信されます。</help>
+    <label><!-- Expire/Void Envelope --></label>
+    <name>dsfs__Expire_Void_Envelope__c</name>
+</CustomFieldTranslation>

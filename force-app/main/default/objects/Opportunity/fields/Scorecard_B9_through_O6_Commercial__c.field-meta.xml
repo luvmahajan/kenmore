@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scorecard_B9_through_O6_Commercial__c</fullName>
+    <externalId>false</externalId>
+    <label>Scorecard B9 through O6 Commercial</label>
+    <summarizedField>Funnel_Scorecard__c.Scorecard_B9_through_O6_Commercial__c</summarizedField>
+    <summaryForeignKey>Funnel_Scorecard__c.Opportunity_Name__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

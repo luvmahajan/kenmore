@@ -1,0 +1,13 @@
+Dear Master Data, 
+
+Please review the healthcare section of this account and make the corresponding manual changes in SAP:
+ 
+1. Add the Special Notes/Delivery Information: {!Account.Special_Notes_or_Delivery_Information__c}
+
+2. GPO field: add the operational tag to the GPO name checked: {!Account.GPO__c}
+
+3. GPO field: if there is anything in the GPO field: tie the account to KAP - PL64 
+
+4. RepOne field: add the operational tag "RepOne" based on whether the RepOne is listed as true.  Field information equals {!Account.Check_if_RepONE_is_the_reporting_Group__c}    
+ 
+NOTE: an account can have TWO operational tags so they may have both RepOne - and a GPO tag.

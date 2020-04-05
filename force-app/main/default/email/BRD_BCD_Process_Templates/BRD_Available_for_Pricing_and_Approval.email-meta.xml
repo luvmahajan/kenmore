@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Message for pricing lead for new opportunity</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BRD Available for Pricing and Approval</name>
+    <style>none</style>
+    <subject>BRD Available for Pricing &amp; Approval</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_Brand__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Which appliance brand did the customer want to purchase?</inlineHelpText>
+    <label>Requested Brand</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason_Lost__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Afresh</fullName>
+                <default>false</default>
+                <label>Afresh</label>
+            </value>
+            <value>
+                <fullName>Amana</fullName>
+                <default>false</default>
+                <label>Amana</label>
+            </value>
+            <value>
+                <fullName>Blakeslee</fullName>
+                <default>false</default>
+                <label>Blakeslee</label>
+            </value>
+            <value>
+                <fullName>Bosch</fullName>
+                <default>false</default>
+                <label>Bosch</label>
+            </value>
+            <value>
+                <fullName>Dacor</fullName>
+                <default>false</default>
+                <label>Dacor</label>
+            </value>
+            <value>
+                <fullName>Daewood</fullName>
+                <default>false</default>
+                <label>Daewood</label>
+            </value>
+            <value>
+                <fullName>Electricord</fullName>
+                <default>false</default>
+                <label>Electricord</label>
+            </value>
+            <value>
+                <fullName>Electrolux</fullName>
+                <default>false</default>
+                <label>Electrolux</label>
+            </value>
+            <value>
+                <fullName>Fisher &amp; Paykel</fullName>
+                <default>false</default>
+                <label>Fisher &amp; Paykel</label>
+            </value>
+            <value>
+                <fullName>Frigidaire</fullName>
+                <default>false</default>
+                <label>Frigidaire</label>
+            </value>
+            <value>
+                <fullName>Frigidaire Gallary</fullName>
+                <default>false</default>
+                <label>Frigidaire Gallary</label>
+            </value>
+            <value>
+                <fullName>GE Artistry Series</fullName>
+                <default>false</default>
+                <label>GE Artistry Series</label>
+            </value>
+            <value>
+                <fullName>GE Café</fullName>
+                <default>false</default>
+                <label>GE Café</label>
+            </value>
+            <value>
+                <fullName>GE Profile Series</fullName>
+                <default>false</default>
+                <label>GE Profile Series</label>
+            </value>
+            <value>
+                <fullName>GE</fullName>
+                <default>false</default>
+                <label>GE</label>
+            </value>
+            <value>
+                <fullName>Gladiator Garage Works</fullName>
+                <default>false</default>
+                <label>Gladiator Garage Works</label>
+            </value>
+            <value>
+                <fullName>Haier Appliances</fullName>
+                <default>false</default>
+                <label>Haier Appliances</label>
+            </value>
+            <value>
+                <fullName>Haier</fullName>
+                <default>false</default>
+                <label>Haier</label>
+            </value>
+            <value>
+                <fullName>Heartland</fullName>
+                <default>false</default>
+                <label>Heartland</label>
+            </value>
+            <value>
+                <fullName>Hello Kitty</fullName>
+                <default>false</default>
+                <label>Hello Kitty</label>
+            </value>
+            <value>
+                <fullName>Holiday</fullName>
+                <default>false</default>
+                <label>Holiday</label>
+            </value>
+            <value>
+                <fullName>HotPoint</fullName>
+                <default>false</default>
+                <label>HotPoint</label>
+            </value>
+            <value>
+                <fullName>Idylis</fullName>
+                <default>false</default>
+                <label>Idylis</label>
+            </value>
+            <value>
+                <fullName>Kenmore</fullName>
+                <default>false</default>
+                <label>Kenmore</label>
+            </value>
+            <value>
+                <fullName>Kenmore Elite</fullName>
+                <default>false</default>
+                <label>Kenmore Elite</label>
+            </value>
+            <value>
+                <fullName>Kenmore Pro</fullName>
+                <default>false</default>
+                <label>Kenmore Pro</label>
+            </value>
+            <value>
+                <fullName>KitchenAide</fullName>
+                <default>false</default>
+                <label>KitchenAide</label>
+            </value>
+            <value>
+                <fullName>LG Appliances</fullName>
+                <default>false</default>
+                <label>LG Appliances</label>
+            </value>
+            <value>
+                <fullName>Liebherr</fullName>
+                <default>false</default>
+                <label>Liebherr</label>
+            </value>
+            <value>
+                <fullName>Marvel Comics</fullName>
+                <default>false</default>
+                <label>Marvel Comics</label>
+            </value>
+            <value>
+                <fullName>Marvel</fullName>
+                <default>false</default>
+                <label>Marvel</label>
+            </value>
+            <value>
+                <fullName>Maxx Cold</fullName>
+                <default>false</default>
+                <label>Maxx Cold</label>
+            </value>
+            <value>
+                <fullName>Maxx Ice</fullName>
+                <default>false</default>
+                <label>Maxx Ice</label>
+            </value>
+            <value>
+                <fullName>Maytag</fullName>
+                <default>false</default>
+                <label>Maytag</label>
+            </value>
+            <value>
+                <fullName>National Brand</fullName>
+                <default>false</default>
+                <label>National Brand</label>
+            </value>
+            <value>
+                <fullName>Nostalgia Electrics</fullName>
+                <default>false</default>
+                <label>Nostalgia Electrics</label>
+            </value>
+            <value>
+                <fullName>Premier</fullName>
+                <default>false</default>
+                <label>Premier</label>
+            </value>
+            <value>
+                <fullName>Samsung</fullName>
+                <default>false</default>
+                <label>Samsung</label>
+            </value>
+            <value>
+                <fullName>Smart Choice</fullName>
+                <default>false</default>
+                <label>Smart Choice</label>
+            </value>
+            <value>
+                <fullName>Summit Brands</fullName>
+                <default>false</default>
+                <label>Summit Brands</label>
+            </value>
+            <value>
+                <fullName>Tappn</fullName>
+                <default>false</default>
+                <label>Tappn</label>
+            </value>
+            <value>
+                <fullName>Thermador</fullName>
+                <default>false</default>
+                <label>Thermador</label>
+            </value>
+            <value>
+                <fullName>Unbranded</fullName>
+                <default>false</default>
+                <label>Unbranded</label>
+            </value>
+            <value>
+                <fullName>Watts industries</fullName>
+                <default>false</default>
+                <label>Watts industries</label>
+            </value>
+            <value>
+                <fullName>Whirlpool</fullName>
+                <default>false</default>
+                <label>Whirlpool</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Afresh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Amana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Blakeslee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Bosch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Dacor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Daewood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Electricord</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Electrolux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Fisher &amp; Paykel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Frigidaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Frigidaire Gallary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>GE Artistry Series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>GE Café</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>GE Profile Series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>GE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Gladiator Garage Works</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Haier Appliances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Haier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Heartland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Hello Kitty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Holiday</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>HotPoint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Idylis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Kenmore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Kenmore Elite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Kenmore Pro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>KitchenAide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>LG Appliances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Liebherr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Marvel Comics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Marvel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Maxx Cold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Maxx Ice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Maytag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>National Brand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Nostalgia Electrics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Premier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Samsung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Smart Choice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Summit Brands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Tappn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Thermador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Unbranded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Watts industries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Whirlpool</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product assortment did not meet customer needs</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

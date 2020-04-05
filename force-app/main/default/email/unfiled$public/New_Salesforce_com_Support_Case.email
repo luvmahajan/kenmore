@@ -1,0 +1,7 @@
+A new Salesforce.com Support case has been created. See details below
+
+https://kenmoredirect.my.salesforce.com/{!Case.Id}
+
+Subject: {!Case.Subject}
+Created by: {!Case.CreatedBy}
+Description: {!Case.Description}

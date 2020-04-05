@@ -1,0 +1,9 @@
+{!Opportunity.Program_Manager__c},
+
+A BRD for {!Opportunity.Name} has been assigned to you.  Following is a link to that Opportunity:
+
+{!Opportunity.Link}
+
+Thanks,
+
+Salesforce.com

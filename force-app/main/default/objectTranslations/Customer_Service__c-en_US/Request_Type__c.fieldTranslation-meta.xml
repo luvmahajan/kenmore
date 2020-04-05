@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the type of credit request --></help>
+    <label><!-- Request Type --></label>
+    <name>Request_Type__c</name>
+    <picklistValues>
+        <masterLabel>Commercial One</masterLabel>
+        <translation><!-- Commercial One --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Pro</masterLabel>
+        <translation><!-- Commercial Pro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create New Account</masterLabel>
+        <translation><!-- Create New Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Line Increase</masterLabel>
+        <translation><!-- Credit Line Increase --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Account</masterLabel>
+        <translation><!-- Service Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplemental Contract</masterLabel>
+        <translation><!-- Supplemental Contract --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

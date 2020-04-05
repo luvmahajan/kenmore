@@ -1,0 +1,3 @@
+<apex:page controller="OrderAvailabilityController" lightningStylesheets="true"  action="{!redirectQLE}">
+   Order Availability
+</apex:page>

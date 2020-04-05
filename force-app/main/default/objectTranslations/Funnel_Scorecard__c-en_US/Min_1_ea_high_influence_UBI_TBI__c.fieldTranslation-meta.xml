@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Do you have multiple contacts within the opportunity with people who will influence the decision? --></help>
+    <label><!-- Min 1 ea: high influence UBI, TBI --></label>
+    <name>Min_1_ea_high_influence_UBI_TBI__c</name>
+</CustomFieldTranslation>

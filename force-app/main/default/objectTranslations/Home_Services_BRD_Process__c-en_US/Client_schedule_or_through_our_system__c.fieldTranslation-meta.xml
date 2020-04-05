@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Does the client do the scheduling (i.e. commit a delivery date to the customer), or would they do that through our systems? --></help>
+    <label><!-- Client schedule or through our system --></label>
+    <name>Client_schedule_or_through_our_system__c</name>
+</CustomFieldTranslation>

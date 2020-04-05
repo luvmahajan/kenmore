@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Administration_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Contract Administration Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open (O)</fullName>
+                <default>false</default>
+                <label>Open (O)</label>
+            </value>
+            <value>
+                <fullName>Future (F)</fullName>
+                <default>false</default>
+                <label>Future (F)</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Incomplete (ID) (1)</fullName>
+                <default>false</default>
+                <label>Incomplete (ID) (1)</label>
+            </value>
+            <value>
+                <fullName>Incomplete (IC) (2)</fullName>
+                <default>false</default>
+                <label>Incomplete (IC) (2)</label>
+            </value>
+            <value>
+                <fullName>Declined (D)</fullName>
+                <default>false</default>
+                <label>Declined (D)</label>
+            </value>
+            <value>
+                <fullName>Closed (C)</fullName>
+                <default>false</default>
+                <label>Closed (C)</label>
+            </value>
+            <value>
+                <fullName>Approved But Incomplete (AI)</fullName>
+                <default>false</default>
+                <label>Approved But Incomplete (AI)</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Der Wert, der der DocuSign-Empfängerrolle zugewiesen ist. Anhand dieses Wertes erfolgt die Zuordnung zu Standard-Anker-Tags in Dokumenten.</help>
+    <label><!-- RoleValue --></label>
+    <name>dsfs__RoleValue__c</name>
+</CustomFieldTranslation>

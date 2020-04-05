@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- POD/SOF --></label>
+    <name>POD_SOF__c</name>
+    <picklistValues>
+        <masterLabel>Proof of Delivery</masterLabel>
+        <translation><!-- Proof of Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signature on File</masterLabel>
+        <translation><!-- Signature on File --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

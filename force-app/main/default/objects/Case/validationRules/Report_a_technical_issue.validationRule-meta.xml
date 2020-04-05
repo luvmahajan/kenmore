@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Report_a_technical_issue</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Type,&quot;Report a Technical Issue&quot;),
+OR(
+ISPICKVAL( Browser__c, &quot;&quot;),
+ISPICKVAL( Platform__c ,&quot;&quot;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Browser__c</errorDisplayField>
+    <errorMessage>How the site was viewed AND the platform are required for the case type &quot;Report a Technical Issue&quot;</errorMessage>
+</ValidationRule>

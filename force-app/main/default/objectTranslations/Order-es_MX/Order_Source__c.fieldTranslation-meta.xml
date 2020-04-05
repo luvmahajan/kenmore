@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Order Source --></label>
+    <name>Order_Source__c</name>
+    <picklistValues>
+        <masterLabel>Contract Team</masterLabel>
+        <translation><!-- Contract Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inside Sales Team</masterLabel>
+        <translation><!-- Inside Sales Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opstech</masterLabel>
+        <translation><!-- Opstech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premier Team</masterLabel>
+        <translation><!-- Premier Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce</masterLabel>
+        <translation><!-- Salesforce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Team</masterLabel>
+        <translation><!-- Standard Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web Team</masterLabel>
+        <translation><!-- Web Team --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

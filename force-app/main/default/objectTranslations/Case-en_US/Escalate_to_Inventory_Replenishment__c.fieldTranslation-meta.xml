@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Administrator use only --></help>
+    <label><!-- Escalate to Inventory Replenishment --></label>
+    <name>Escalate_to_Inventory_Replenishment__c</name>
+</CustomFieldTranslation>

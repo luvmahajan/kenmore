@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Opportunity Stage Contract</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Please confirm you have completed following steps:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Negotiations occur during this stage.&lt;/li&gt;&lt;li&gt;Prepare and send contract package.&lt;/li&gt;&lt;li&gt;Send credit application to prospect.&lt;/li&gt;&lt;li&gt;Review site readiness requirements with the prospect.&lt;/li&gt;&lt;li&gt;Arrange the site survey with Field Ops.&lt;/li&gt;&lt;li&gt;Communicate with Contract Desk and prospect to hand-off project.&lt;/li&gt;&lt;li&gt;Conduct check-ins with the prospect and handle business issues quickly if they arise.&lt;/li&gt;&lt;li&gt;Create for and submit a forecast seven weeks before delivery date.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Awaiting Credit</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Please confirm you have completed following steps:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Continue to conduct check-ins with the customer.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closed Won</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Please confirm you have completed following steps:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Schedule a meeting with the prospect to present the solution.&lt;/li&gt;&lt;li&gt;Present solution and proposal to the prospect.&lt;/li&gt;&lt;li&gt;Be on alert for and quickly respond to any inquiries from the prospect.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Finalizing</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Commercial_Project</recordTypeName>
+</PathAssistant>

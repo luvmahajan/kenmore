@@ -1,0 +1,8 @@
+Hello {!Contact.Name},
+
+Thank you for choosing Sears as your appliance provider. My name is {!Case.OwnerFirstName} and I will be your support contact for order {!Case.Order_Number__c}.   Please contact me using the information below with any updates or inquiries you have. 
+
+Thank you for choosing Sears,
+{!Case.OwnerFullName}
+{!Case.OwnerPhone}
+CSIST@searshc.com

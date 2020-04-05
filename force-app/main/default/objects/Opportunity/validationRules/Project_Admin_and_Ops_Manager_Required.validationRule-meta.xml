@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Admin_and_Ops_Manager_Required</fullName>
+    <active>true</active>
+    <description>Project Administrator and Operations Manager are required if Contract Desk is required or if the Opportunity Stage Closed Won.</description>
+    <errorConditionFormula>AND(
+IF(ISCHANGED(Automation_Control__c), 
+IF( CONTAINS(Automation_Control_Type__c, &quot;Validation&quot;),FALSE,TRUE),TRUE),
+(RecordType.DeveloperName = &quot;Commercial_Project&quot;), 
+(ISPICKVAL(Contract_Desk__c, &quot;Yes&quot;)),
+(ISPICKVAL(StageName, &quot;Closed Won&quot;)),
+(ISBLANK(Project_Administrator__c)),
+(ISBLANK(Operations_Manager__c))
+)</errorConditionFormula>
+    <errorDisplayField>Project_Administrator__c</errorDisplayField>
+    <errorMessage>Please ensure the Project Administrator and Operations Manager fields are completed if  the Opportunity Stage is Closed Won.</errorMessage>
+</ValidationRule>

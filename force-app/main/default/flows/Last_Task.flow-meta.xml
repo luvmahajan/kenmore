@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Fire_Last_Task_Email</name>
+        <label>Fire Last Task Email</label>
+        <locationX>321</locationX>
+        <locationY>376</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>LastTaskEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Opportunity Last Task - Notification</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>Joseph.Shao@searshc.com, Geralyn.Shaffer@searshc.com</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <interviewLabel>Last Task {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Last Task</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Task_Owner_Name</name>
+        <label>Get Task Owner Name</label>
+        <locationX>317</locationX>
+        <locationY>254</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Fire_Last_Task_Email</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varTaskOwner</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputAssignments>
+            <assignToReference>varTaskOwnerName</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+    </recordLookups>
+    <startElementReference>Get_Task_Owner_Name</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <name>LastTaskEmail</name>
+        <text>The Last Task field was selected on the Task, {!varTaskSubject}, indicating that the Opportunity was closed by {!varTaskOwnerName}
+
+Please click on the link to review the opportunity: ( https://na1.salesforce.com/{!varOpportunityId} )</text>
+    </textTemplates>
+    <variables>
+        <name>varActivityId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varOpportunityId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varTaskOwner</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varTaskOwnerName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varTaskSubject</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

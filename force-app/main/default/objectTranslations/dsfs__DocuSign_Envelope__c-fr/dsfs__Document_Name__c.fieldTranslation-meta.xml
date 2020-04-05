@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Liste de documents PDF sous l&#39;onglet Documents Salesforce de votre société.  Pour envoyer via DocuSign, ajouter un PDF à l&#39;un des dossiers de l’onglet Documents Salesforce.  Pour effectuer des envois sous d&#39;autres formats, cliquer sur « En savoir plus ».</help>
+    <label><!-- Document Name --></label>
+    <name>dsfs__Document_Name__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Field to map Lead Source to Account Source --></help>
+    <label><!-- Account Source Text --></label>
+    <name>Account_Source_Text__c</name>
+</CustomFieldTranslation>

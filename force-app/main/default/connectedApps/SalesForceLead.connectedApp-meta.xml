@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>alice.reji@searshc.com</contactEmail>
+    <iconUrl>https://login.salesforce.com/logos/Salesforce/AppLauncher/icon.png</iconUrl>
+    <label>SalesForceLead</label>
+    <logoUrl>https://login.salesforce.com/logos/Salesforce/AppLauncher/logo.png</logoUrl>
+    <mobileAppConfig>
+        <applicationBinaryFile/>
+        <applicationInstallUrl>alice.reji@searshc.com</applicationInstallUrl>
+        <devicePlatform>android</devicePlatform>
+        <deviceType>phone</deviceType>
+        <privateApp>false</privateApp>
+        <version>1</version>
+    </mobileAppConfig>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/token</callbackUrl>
+        <consumerKey>3MVG99OxTyEMCQ3ikjRkfVwXObNV8rkiXx.dSFcG5g.8pMTw1VH3Q8HF5EBagQ8v64g3lV6P5l4w_W4xdcZOP</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+        <scopes>CustomPermissions</scopes>
+    </oauthConfig>
+</ConnectedApp>

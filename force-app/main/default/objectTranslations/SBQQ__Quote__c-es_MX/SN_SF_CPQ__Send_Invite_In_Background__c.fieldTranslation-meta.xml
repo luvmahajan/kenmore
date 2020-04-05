@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Send Invite In Background --></label>
+    <name>SN_SF_CPQ__Send_Invite_In_Background__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PID_s_or_SAP_Number_s__c</fullName>
+    <description>Product ID or SAP Number</description>
+    <externalId>false</externalId>
+    <inlineHelpText>11-digits, i.e., 02270211000
+Separate multiple PIDs or SAP Numbers by a semi-colon, i.e., 02270211000; 02270212000</inlineHelpText>
+    <label>PID(s) or SAP Number(s)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

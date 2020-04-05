@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the calculated display value of the target field.  Use this field when designing page layouts and reports. --></help>
+    <label><!-- Target Field --></label>
+    <name>CRMfusionDBR101__Target_Field_Display__c</name>
+</CustomFieldTranslation>

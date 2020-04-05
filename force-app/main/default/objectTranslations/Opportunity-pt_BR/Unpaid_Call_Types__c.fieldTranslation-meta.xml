@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter any call types that will not be paid for by the vendor eg. customer instruct, no problem found, recalls --></help>
+    <label><!-- Unpaid Call Types --></label>
+    <name>Unpaid_Call_Types__c</name>
+</CustomFieldTranslation>

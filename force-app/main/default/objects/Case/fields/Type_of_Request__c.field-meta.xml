@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Request__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>120 Day Past Due Notice</fullName>
+                <default>false</default>
+                <label>120 Day Past Due Notice</label>
+            </value>
+            <value>
+                <fullName>150 Day Past Due Notice</fullName>
+                <default>false</default>
+                <label>150 Day Past Due Notice</label>
+            </value>
+            <value>
+                <fullName>180 Day Past Due Notice</fullName>
+                <default>false</default>
+                <label>180 Day Past Due Notice</label>
+            </value>
+            <value>
+                <fullName>1st Request - Initial</fullName>
+                <default>false</default>
+                <label>1st Request - Initial</label>
+            </value>
+            <value>
+                <fullName>2nd Follow Up</fullName>
+                <default>false</default>
+                <label>2nd Follow Up</label>
+            </value>
+            <value>
+                <fullName>30 Day Past Due Notice</fullName>
+                <default>false</default>
+                <label>30 Day Past Due Notice</label>
+            </value>
+            <value>
+                <fullName>3rd Follow up</fullName>
+                <default>false</default>
+                <label>3rd Follow up</label>
+            </value>
+            <value>
+                <fullName>Other 3rd Party</fullName>
+                <default>false</default>
+                <label>3rd Party Chargeback</label>
+            </value>
+            <value>
+                <fullName>3rd Party Lender</fullName>
+                <default>false</default>
+                <label>3rd Party Lender</label>
+            </value>
+            <value>
+                <fullName>3rd Party Manufacture/ Non KD Purchase</fullName>
+                <default>false</default>
+                <label>3rd Party Manufacture/ Non KD Purchase</label>
+            </value>
+            <value>
+                <fullName>60 Day Past Due Notice</fullName>
+                <default>false</default>
+                <label>60 Day Past Due Notice</label>
+            </value>
+            <value>
+                <fullName>90 Day Past Due Notice</fullName>
+                <default>false</default>
+                <label>90 Day Past Due Notice</label>
+            </value>
+            <value>
+                <fullName>Account Assignment</fullName>
+                <default>false</default>
+                <label>Account Assignment</label>
+            </value>
+            <value>
+                <fullName>Account Current</fullName>
+                <default>false</default>
+                <label>Account Current</label>
+            </value>
+            <value>
+                <fullName>Account Hold Notice</fullName>
+                <default>false</default>
+                <label>Account Hold Notice</label>
+            </value>
+            <value>
+                <fullName>Accounting Services</fullName>
+                <default>false</default>
+                <label>Accounting Services</label>
+            </value>
+            <value>
+                <fullName>Account Reconciliation Request</fullName>
+                <default>false</default>
+                <label>Account Reconciliation Request</label>
+            </value>
+            <value>
+                <fullName>Account Updates</fullName>
+                <default>false</default>
+                <label>Account Updates</label>
+            </value>
+            <value>
+                <fullName>Application Inquiry</fullName>
+                <default>false</default>
+                <label>Application Inquiry</label>
+            </value>
+            <value>
+                <fullName>AR</fullName>
+                <default>false</default>
+                <label>AR</label>
+            </value>
+            <value>
+                <fullName>BOL Request / Not in Descartes</fullName>
+                <default>false</default>
+                <label>BOL Request / Not in Descartes</label>
+            </value>
+            <value>
+                <fullName>Claim</fullName>
+                <default>false</default>
+                <label>Claim</label>
+            </value>
+            <value>
+                <fullName>CME Request</fullName>
+                <default>false</default>
+                <label>CME Request</label>
+            </value>
+            <value>
+                <fullName>COI</fullName>
+                <default>false</default>
+                <label>COI</label>
+            </value>
+            <value>
+                <fullName>Collections</fullName>
+                <default>false</default>
+                <label>Collections</label>
+            </value>
+            <value>
+                <fullName>Common Carrier Damaged</fullName>
+                <default>false</default>
+                <label>Common Carrier Damaged</label>
+            </value>
+            <value>
+                <fullName>Citi</fullName>
+                <default>false</default>
+                <label>Comm One - Citi</label>
+            </value>
+            <value>
+                <fullName>Bluetarp</fullName>
+                <default>false</default>
+                <label>Comm Pro – BT</label>
+            </value>
+            <value>
+                <fullName>Contact Customer</fullName>
+                <default>false</default>
+                <label>Contact Customer</label>
+            </value>
+            <value>
+                <fullName>Contract</fullName>
+                <default>false</default>
+                <label>Contract</label>
+            </value>
+            <value>
+                <fullName>Contract Appl/Package</fullName>
+                <default>false</default>
+                <label>Contract Appl/Package</label>
+            </value>
+            <value>
+                <fullName>Contract Recon</fullName>
+                <default>false</default>
+                <label>Contract Recon</label>
+            </value>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Credit/Billing/Dispute Related</fullName>
+                <default>false</default>
+                <label>Credit/Billing/Dispute Related</label>
+            </value>
+            <value>
+                <fullName>Credit Account Referral/Order Holds</fullName>
+                <default>false</default>
+                <label>Credit Account Referral/Order Holds</label>
+            </value>
+            <value>
+                <fullName>Credit Line Increase Request</fullName>
+                <default>false</default>
+                <label>Credit Line Increase Request</label>
+            </value>
+            <value>
+                <fullName>CSAT</fullName>
+                <default>false</default>
+                <label>CSAT</label>
+            </value>
+            <value>
+                <fullName>CSG Installation</fullName>
+                <default>false</default>
+                <label>CSG Installation</label>
+            </value>
+            <value>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+                <label>Customer Request</label>
+            </value>
+            <value>
+                <fullName>Delivery failure</fullName>
+                <default>false</default>
+                <label>Delivery failure</label>
+            </value>
+            <value>
+                <fullName>Delivery Notifications</fullName>
+                <default>false</default>
+                <label>Delivery Notifications</label>
+            </value>
+            <value>
+                <fullName>Delivery question</fullName>
+                <default>false</default>
+                <label>Delivery question</label>
+            </value>
+            <value>
+                <fullName>Dispute</fullName>
+                <default>false</default>
+                <label>Dispute</label>
+            </value>
+            <value>
+                <fullName>Dispute to CB – Comm One</fullName>
+                <default>false</default>
+                <label>Dispute to CB – Comm One</label>
+            </value>
+            <value>
+                <fullName>Dispute to CB – Comm Pro</fullName>
+                <default>false</default>
+                <label>Dispute to CB – Comm Pro</label>
+            </value>
+            <value>
+                <fullName>Dispute to Chargeback - BT</fullName>
+                <default>false</default>
+                <label>Dispute to Chargeback - BT</label>
+            </value>
+            <value>
+                <fullName>Dispute to Chargeback - Citi</fullName>
+                <default>false</default>
+                <label>Dispute to Chargeback - Citi</label>
+            </value>
+            <value>
+                <fullName>Earlier Delivery</fullName>
+                <default>false</default>
+                <label>Earlier Delivery</label>
+            </value>
+            <value>
+                <fullName>EE1: Service Related</fullName>
+                <default>false</default>
+                <label>EE1: Service Related</label>
+            </value>
+            <value>
+                <fullName>EE2: Damaged within 48 hrs</fullName>
+                <default>false</default>
+                <label>EE2: Damaged within 48 hrs</label>
+            </value>
+            <value>
+                <fullName>EE3: Damaged outside 48 hrs</fullName>
+                <default>false</default>
+                <label>EE3: Damaged outside 48 hrs</label>
+            </value>
+            <value>
+                <fullName>EE4: Free of Charge Sample</fullName>
+                <default>false</default>
+                <label>EE4: Free of Charge Sample</label>
+            </value>
+            <value>
+                <fullName>EE5: Customer Satisfaction</fullName>
+                <default>false</default>
+                <label>EE5: Customer Satisfaction</label>
+            </value>
+            <value>
+                <fullName>EE6: Wrong Product Ordered by Customer</fullName>
+                <default>false</default>
+                <label>EE6: Wrong Product Ordered by Customer</label>
+            </value>
+            <value>
+                <fullName>EE7: Wrong Product Ordered by Kenmore</fullName>
+                <default>false</default>
+                <label>EE7: Wrong Product Ordered by Kenmore</label>
+            </value>
+            <value>
+                <fullName>EE8: Kenmore Ordering Error</fullName>
+                <default>false</default>
+                <label>EE8: Kenmore Ordering Error</label>
+            </value>
+            <value>
+                <fullName>Exchange</fullName>
+                <default>false</default>
+                <label>Exchange</label>
+            </value>
+            <value>
+                <fullName>Existing Comm One Child Accounts Requests</fullName>
+                <default>false</default>
+                <label>Existing Comm One Child Accounts Requests</label>
+            </value>
+            <value>
+                <fullName>Follow Up Needed</fullName>
+                <default>false</default>
+                <label>Follow Up Needed</label>
+            </value>
+            <value>
+                <fullName>Full</fullName>
+                <default>false</default>
+                <label>Full</label>
+            </value>
+            <value>
+                <fullName>General Administration</fullName>
+                <default>false</default>
+                <label>General Administration</label>
+            </value>
+            <value>
+                <fullName>Increase Quantity</fullName>
+                <default>false</default>
+                <label>Increase Quantity</label>
+            </value>
+            <value>
+                <fullName>Inquires</fullName>
+                <default>false</default>
+                <label>Inquires</label>
+            </value>
+            <value>
+                <fullName>Intake</fullName>
+                <default>false</default>
+                <label>Intake</label>
+            </value>
+            <value>
+                <fullName>Invoices Only</fullName>
+                <default>false</default>
+                <label>Invoices Only</label>
+            </value>
+            <value>
+                <fullName>In Warranty</fullName>
+                <default>false</default>
+                <label>In Warranty</label>
+            </value>
+            <value>
+                <fullName>Later Delivery</fullName>
+                <default>false</default>
+                <label>Later Delivery</label>
+            </value>
+            <value>
+                <fullName>Lien Waiver Submission</fullName>
+                <default>false</default>
+                <label>Lien Waiver Submission</label>
+            </value>
+            <value>
+                <fullName>Master Purchasing Agreement/SLA</fullName>
+                <default>false</default>
+                <label>Master Purchasing Agreement/SLA</label>
+            </value>
+            <value>
+                <fullName>MDO Damaged</fullName>
+                <default>false</default>
+                <label>MDO Damaged</label>
+            </value>
+            <value>
+                <fullName>MDO Response</fullName>
+                <default>false</default>
+                <label>MDO Response</label>
+            </value>
+            <value>
+                <fullName>Misc / Non-Lender Related</fullName>
+                <default>false</default>
+                <label>Misc / Non-Lender Related</label>
+            </value>
+            <value>
+                <fullName>New Vendor Setup/Forms</fullName>
+                <default>false</default>
+                <label>New Vendor Setup/Forms</label>
+            </value>
+            <value>
+                <fullName>Nexcus</fullName>
+                <default>false</default>
+                <label>Nexcus</label>
+            </value>
+            <value>
+                <fullName>Non-Contract Acct</fullName>
+                <default>false</default>
+                <label>Non-Contract Acct</label>
+            </value>
+            <value>
+                <fullName>Non Credit Order Release Requests</fullName>
+                <default>false</default>
+                <label>Non Credit Order Release Requests</label>
+            </value>
+            <value>
+                <fullName>Non – Lender Related</fullName>
+                <default>false</default>
+                <label>Non – Lender Related</label>
+            </value>
+            <value>
+                <fullName>Notification of Chargeback</fullName>
+                <default>false</default>
+                <label>Notification of Chargeback</label>
+            </value>
+            <value>
+                <fullName>Notifications</fullName>
+                <default>false</default>
+                <label>Notifications</label>
+            </value>
+            <value>
+                <fullName>Notivius</fullName>
+                <default>false</default>
+                <label>Notivius</label>
+            </value>
+            <value>
+                <fullName>Opstech</fullName>
+                <default>false</default>
+                <label>Opstech</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Out of Warranty/CA or CC Call</fullName>
+                <default>false</default>
+                <label>Out of Warranty/CA or CC Call</label>
+            </value>
+            <value>
+                <fullName>Partial</fullName>
+                <default>false</default>
+                <label>Partial</label>
+            </value>
+            <value>
+                <fullName>Parts Department</fullName>
+                <default>false</default>
+                <label>Parts Department</label>
+            </value>
+            <value>
+                <fullName>Pay Applications</fullName>
+                <default>false</default>
+                <label>Pay Applications</label>
+            </value>
+            <value>
+                <fullName>Payment Application Submission</fullName>
+                <default>false</default>
+                <label>Payment Application Submission</label>
+            </value>
+            <value>
+                <fullName>Place an order</fullName>
+                <default>false</default>
+                <label>Place an order</label>
+            </value>
+            <value>
+                <fullName>Pricing/Tier</fullName>
+                <default>false</default>
+                <label>Pricing/Tier Updates</label>
+            </value>
+            <value>
+                <fullName>Product Damaged</fullName>
+                <default>false</default>
+                <label>Product Damaged</label>
+            </value>
+            <value>
+                <fullName>Product Liability</fullName>
+                <default>false</default>
+                <label>Product Liability</label>
+            </value>
+            <value>
+                <fullName>Quote Request</fullName>
+                <default>false</default>
+                <label>Quote Request</label>
+            </value>
+            <value>
+                <fullName>R1: Service Related</fullName>
+                <default>false</default>
+                <label>R1: Service Related</label>
+            </value>
+            <value>
+                <fullName>R2: Damaged within 48 hrs</fullName>
+                <default>false</default>
+                <label>R2: Damaged within 48 hrs</label>
+            </value>
+            <value>
+                <fullName>R3: Damaged outside 48 hrs</fullName>
+                <default>false</default>
+                <label>R3: Damaged outside 48 hrs</label>
+            </value>
+            <value>
+                <fullName>R4: Free of Charge Sample</fullName>
+                <default>false</default>
+                <label>R4: Free of Charge Sample</label>
+            </value>
+            <value>
+                <fullName>R5: Customer Satisfaction</fullName>
+                <default>false</default>
+                <label>R5: Customer Satisfaction</label>
+            </value>
+            <value>
+                <fullName>R6: Wrong Product Ordered by Customer</fullName>
+                <default>false</default>
+                <label>R6: Wrong Product Ordered by Customer</label>
+            </value>
+            <value>
+                <fullName>R7: Wrong Product Ordered by Kenmore</fullName>
+                <default>false</default>
+                <label>R7: Wrong Product Ordered by Kenmore</label>
+            </value>
+            <value>
+                <fullName>R8: Kenmore Ordering Error</fullName>
+                <default>false</default>
+                <label>R8: Kenmore Ordering Error</label>
+            </value>
+            <value>
+                <fullName>Recourse Concession</fullName>
+                <default>false</default>
+                <label>Recourse Concession</label>
+            </value>
+            <value>
+                <fullName>Recovery</fullName>
+                <default>false</default>
+                <label>Recovery</label>
+            </value>
+            <value>
+                <fullName>Reduce Quantity</fullName>
+                <default>false</default>
+                <label>Reduce Quantity</label>
+            </value>
+            <value>
+                <fullName>Request for credit/billing</fullName>
+                <default>false</default>
+                <label>Request for credit/billing</label>
+            </value>
+            <value>
+                <fullName>Request Invoice</fullName>
+                <default>false</default>
+                <label>Request Invoice</label>
+            </value>
+            <value>
+                <fullName>Request to order</fullName>
+                <default>false</default>
+                <label>Request to order</label>
+            </value>
+            <value>
+                <fullName>Retainage</fullName>
+                <default>false</default>
+                <label>Retainage</label>
+            </value>
+            <value>
+                <fullName>Return</fullName>
+                <default>false</default>
+                <label>Return</label>
+            </value>
+            <value>
+                <fullName>Return of Parts</fullName>
+                <default>false</default>
+                <label>Return of Parts</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Service Recall</fullName>
+                <default>false</default>
+                <label>Service Recall</label>
+            </value>
+            <value>
+                <fullName>Service Related</fullName>
+                <default>false</default>
+                <label>Service Related</label>
+            </value>
+            <value>
+                <fullName>Shipped Not Invoiced Reviews</fullName>
+                <default>false</default>
+                <label>Shipped Not Invoiced Reviews</label>
+            </value>
+            <value>
+                <fullName>Site Damaged</fullName>
+                <default>false</default>
+                <label>Site Damaged</label>
+            </value>
+            <value>
+                <fullName>Standard App</fullName>
+                <default>false</default>
+                <label>Standard Comm Pro</label>
+            </value>
+            <value>
+                <fullName>Status of adjustment</fullName>
+                <default>false</default>
+                <label>Status of adjustment</label>
+            </value>
+            <value>
+                <fullName>Status of parts order</fullName>
+                <default>false</default>
+                <label>Status of parts order</label>
+            </value>
+            <value>
+                <fullName>Submission</fullName>
+                <default>false</default>
+                <label>Submission</label>
+            </value>
+            <value>
+                <fullName>Tax Exemption Administration</fullName>
+                <default>false</default>
+                <label>Tax Exemption Administration</label>
+            </value>
+            <value>
+                <fullName>Textura</fullName>
+                <default>false</default>
+                <label>Textura</label>
+            </value>
+            <value>
+                <fullName>UE1: Service Related</fullName>
+                <default>false</default>
+                <label>UE1: Service Related</label>
+            </value>
+            <value>
+                <fullName>UE2: Damaged within 48 hrs</fullName>
+                <default>false</default>
+                <label>UE2: Damaged within 48 hrs</label>
+            </value>
+            <value>
+                <fullName>UE3: Damaged outside 48 hrs</fullName>
+                <default>false</default>
+                <label>UE3: Damaged outside 48 hrs</label>
+            </value>
+            <value>
+                <fullName>UE4: Free of Charge Sample</fullName>
+                <default>false</default>
+                <label>UE4: Free of Charge Sample</label>
+            </value>
+            <value>
+                <fullName>UE5: Customer Satisfaction</fullName>
+                <default>false</default>
+                <label>UE5: Customer Satisfaction</label>
+            </value>
+            <value>
+                <fullName>UE6: Wrong Product Ordered by Customer</fullName>
+                <default>false</default>
+                <label>UE6: Wrong Product Ordered by Customer</label>
+            </value>
+            <value>
+                <fullName>UE7: Wrong Product Ordered by Kenmore</fullName>
+                <default>false</default>
+                <label>UE7: Wrong Product Ordered by Kenmore</label>
+            </value>
+            <value>
+                <fullName>UE8: Kenmore Ordering Error</fullName>
+                <default>false</default>
+                <label>UE8: Kenmore Ordering Error</label>
+            </value>
+            <value>
+                <fullName>W-9</fullName>
+                <default>false</default>
+                <label>W-9</label>
+            </value>
+            <value>
+                <fullName>Yardi/Café’</fullName>
+                <default>false</default>
+                <label>Yardi/Café’</label>
+            </value>
+            <value>
+                <fullName>Property Management / MPA Setup</fullName>
+                <default>false</default>
+                <label>Property Management / MPA Setup</label>
+            </value>
+            <value>
+                <fullName>Contract Credit Package</fullName>
+                <default>false</default>
+                <label>Contract Credit Package</label>
+            </value>
+            <value>
+                <fullName>Existing Credit Line Increase</fullName>
+                <default>false</default>
+                <label>Existing Credit Line Increase</label>
+            </value>
+            <value>
+                <fullName>Credit Acct Setup Inquiry</fullName>
+                <default>false</default>
+                <label>Credit Acct Setup Inquiry</label>
+            </value>
+            <value>
+                <fullName>Credit Acct Setup Submission</fullName>
+                <default>false</default>
+                <label>Credit Acct Setup Submission</label>
+            </value>
+            <value>
+                <fullName>Credit Acct Setup Lender Update/Notifications</fullName>
+                <default>false</default>
+                <label>Credit Acct Setup Lender Update/Notifications</label>
+            </value>
+            <value>
+                <fullName>SFDC Account Assignment Request</fullName>
+                <default>false</default>
+                <label>SFDC Account Assignment Request</label>
+            </value>
+            <value>
+                <fullName>SFDC Account Geo Update</fullName>
+                <default>false</default>
+                <label>SFDC Account Geo Update</label>
+            </value>
+            <value>
+                <fullName>Tax Exception Admin</fullName>
+                <default>false</default>
+                <label>Tax Exception Admin</label>
+            </value>
+            <value>
+                <fullName>Customer Contact Request</fullName>
+                <default>false</default>
+                <label>Customer Contact Request</label>
+            </value>
+            <value>
+                <fullName>3rd Party Chargeback</fullName>
+                <default>false</default>
+                <label>3rd Party Chargeback</label>
+            </value>
+            <value>
+                <fullName>Vendor Setup (Portal)</fullName>
+                <default>false</default>
+                <label>Vendor Setup (Portal)</label>
+            </value>
+            <value>
+                <fullName>New Vendor Setup/Portal</fullName>
+                <default>false</default>
+                <label>New Vendor Setup/Portal</label>
+            </value>
+            <value>
+                <fullName>Contact Customer/Compliance Agent</fullName>
+                <default>false</default>
+                <label>Contact Customer/Compliance Agent</label>
+            </value>
+            <value>
+                <fullName>Compliance Renewals</fullName>
+                <default>false</default>
+                <label>Compliance Renewals</label>
+            </value>
+            <value>
+                <fullName>New/Update Acct Request</fullName>
+                <default>false</default>
+                <label>New/Update Acct Request</label>
+            </value>
+            <value>
+                <fullName>Credit Hold/Decline</fullName>
+                <default>false</default>
+                <label>Credit Hold/Decline</label>
+            </value>
+            <value>
+                <fullName>CASH/AR Order</fullName>
+                <default>false</default>
+                <label>CASH/AR Order</label>
+            </value>
+            <value>
+                <fullName>Credit Account Review Request</fullName>
+                <default>false</default>
+                <label>Credit Account Review Request</label>
+            </value>
+            <value>
+                <fullName>ACH/Check Rec’d Notifications</fullName>
+                <default>false</default>
+                <label>ACH/Check Rec’d Notifications</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Billing Submission</controllingFieldValue>
+            <controllingFieldValue>Billing Inquiry</controllingFieldValue>
+            <controllingFieldValue>Chargeback</controllingFieldValue>
+            <controllingFieldValue>Request Invoice</controllingFieldValue>
+            <controllingFieldValue>Inquires/Requests</controllingFieldValue>
+            <controllingFieldValue>Invoice Inquires</controllingFieldValue>
+            <controllingFieldValue>Invoice Notifications</controllingFieldValue>
+            <valueName>Other 3rd Party</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing Submission</controllingFieldValue>
+            <controllingFieldValue>Billing Inquiry</controllingFieldValue>
+            <controllingFieldValue>Request Invoice</controllingFieldValue>
+            <controllingFieldValue>Inquires/Requests</controllingFieldValue>
+            <controllingFieldValue>Invoice Inquires</controllingFieldValue>
+            <controllingFieldValue>Invoice Notifications</controllingFieldValue>
+            <valueName>Invoices Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing Submission</controllingFieldValue>
+            <controllingFieldValue>Billing Inquiry</controllingFieldValue>
+            <controllingFieldValue>Request Invoice</controllingFieldValue>
+            <controllingFieldValue>Inquires/Requests</controllingFieldValue>
+            <controllingFieldValue>Invoice Inquires</controllingFieldValue>
+            <controllingFieldValue>Invoice Notifications</controllingFieldValue>
+            <controllingFieldValue>Billing Administration</controllingFieldValue>
+            <valueName>Lien Waiver Submission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing Submission</controllingFieldValue>
+            <controllingFieldValue>Billing Inquiry</controllingFieldValue>
+            <valueName>Nexcus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing Submission</controllingFieldValue>
+            <controllingFieldValue>Billing Inquiry</controllingFieldValue>
+            <controllingFieldValue>Request Invoice</controllingFieldValue>
+            <controllingFieldValue>Inquires/Requests</controllingFieldValue>
+            <controllingFieldValue>Invoice Inquires</controllingFieldValue>
+            <controllingFieldValue>Invoice Notifications</controllingFieldValue>
+            <valueName>Notivius</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing Submission</controllingFieldValue>
+            <controllingFieldValue>Billing Inquiry</controllingFieldValue>
+            <controllingFieldValue>Request Invoice</controllingFieldValue>
+            <controllingFieldValue>Inquires/Requests</controllingFieldValue>
+            <controllingFieldValue>Invoice Inquires</controllingFieldValue>
+            <controllingFieldValue>Invoice Notifications</controllingFieldValue>
+            <valueName>Opstech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing Submission</controllingFieldValue>
+            <controllingFieldValue>Billing Inquiry</controllingFieldValue>
+            <controllingFieldValue>Request Invoice</controllingFieldValue>
+            <controllingFieldValue>Inquires/Requests</controllingFieldValue>
+            <controllingFieldValue>Invoice Inquires</controllingFieldValue>
+            <controllingFieldValue>Invoice Notifications</controllingFieldValue>
+            <controllingFieldValue>Billing Administration</controllingFieldValue>
+            <valueName>Pay Applications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing Submission</controllingFieldValue>
+            <controllingFieldValue>Billing Inquiry</controllingFieldValue>
+            <controllingFieldValue>Request Invoice</controllingFieldValue>
+            <controllingFieldValue>Inquires/Requests</controllingFieldValue>
+            <controllingFieldValue>Invoice Inquires</controllingFieldValue>
+            <controllingFieldValue>Invoice Notifications</controllingFieldValue>
+            <valueName>Textura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing Submission</controllingFieldValue>
+            <controllingFieldValue>Billing Inquiry</controllingFieldValue>
+            <controllingFieldValue>Request Invoice</controllingFieldValue>
+            <controllingFieldValue>Inquires/Requests</controllingFieldValue>
+            <controllingFieldValue>Invoice Inquires</controllingFieldValue>
+            <controllingFieldValue>Invoice Notifications</controllingFieldValue>
+            <valueName>Yardi/Café’</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RMS / 3rd Party Collections</controllingFieldValue>
+            <valueName>Inquires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RMS / 3rd Party Collections</controllingFieldValue>
+            <valueName>Intake</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RMS / 3rd Party Collections</controllingFieldValue>
+            <valueName>Notifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RMS / 3rd Party Collections</controllingFieldValue>
+            <valueName>Recovery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RMS / 3rd Party Collections</controllingFieldValue>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>Submission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancellation</controllingFieldValue>
+            <valueName>Full</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancellation</controllingFieldValue>
+            <valueName>Partial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <valueName>3rd Party Manufacture/ Non KD Purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Disputes</controllingFieldValue>
+            <valueName>Contact Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <valueName>Follow Up Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <valueName>In Warranty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <valueName>Out of Warranty/CA or CC Call</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <valueName>Service Recall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>EE1: Service Related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>EE2: Damaged within 48 hrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>EE3: Damaged outside 48 hrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>EE4: Free of Charge Sample</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>EE5: Customer Satisfaction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>EE6: Wrong Product Ordered by Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>EE7: Wrong Product Ordered by Kenmore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>EE8: Kenmore Ordering Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>R1: Service Related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>R2: Damaged within 48 hrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>R3: Damaged outside 48 hrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>R4: Free of Charge Sample</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>R5: Customer Satisfaction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>R6: Wrong Product Ordered by Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>R7: Wrong Product Ordered by Kenmore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>R8: Kenmore Ordering Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>UE1: Service Related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>UE2: Damaged within 48 hrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>UE3: Damaged outside 48 hrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>UE4: Free of Charge Sample</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>UE5: Customer Satisfaction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>UE6: Wrong Product Ordered by Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>UE7: Wrong Product Ordered by Kenmore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return/Exchange Requests</controllingFieldValue>
+            <valueName>UE8: Kenmore Ordering Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claims</controllingFieldValue>
+            <valueName>Common Carrier Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claims</controllingFieldValue>
+            <valueName>CSG Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claims</controllingFieldValue>
+            <valueName>MDO Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claims</controllingFieldValue>
+            <valueName>Product Liability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claims</controllingFieldValue>
+            <valueName>Service Related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CMR/DMR Requests</controllingFieldValue>
+            <valueName>Request for credit/billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CMR/DMR Requests</controllingFieldValue>
+            <valueName>Status of adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Date Change</controllingFieldValue>
+            <valueName>Earlier Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Date Change</controllingFieldValue>
+            <valueName>Later Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>1st Request - Initial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>2nd Follow Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>3rd Follow up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>BOL Request / Not in Descartes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>CME Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>Contract Recon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>Credit/Billing/Dispute Related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>Customer Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>Delivery Notifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>MDO Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POD Request</controllingFieldValue>
+            <valueName>Notification of Chargeback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quantity Change</controllingFieldValue>
+            <valueName>Increase Quantity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quantity Change</controllingFieldValue>
+            <valueName>Reduce Quantity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order_Request</controllingFieldValue>
+            <valueName>Place an order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delivery Complaint</controllingFieldValue>
+            <valueName>Product Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delivery Complaint</controllingFieldValue>
+            <valueName>Site Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product not Working</controllingFieldValue>
+            <valueName>Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product not Working</controllingFieldValue>
+            <valueName>Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product not Working</controllingFieldValue>
+            <valueName>Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parts Request</controllingFieldValue>
+            <valueName>Parts Department</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parts Request</controllingFieldValue>
+            <valueName>Request to order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parts Request</controllingFieldValue>
+            <valueName>Return of Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parts Request</controllingFieldValue>
+            <valueName>Status of parts order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit Applications</controllingFieldValue>
+            <valueName>Property Management / MPA Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit Applications</controllingFieldValue>
+            <valueName>Contract Credit Package</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit Applications</controllingFieldValue>
+            <valueName>Existing Credit Line Increase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit Applications</controllingFieldValue>
+            <valueName>Credit Acct Setup Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit Applications</controllingFieldValue>
+            <valueName>Credit Acct Setup Submission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit Applications</controllingFieldValue>
+            <valueName>Credit Acct Setup Lender Update/Notifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Updates</controllingFieldValue>
+            <valueName>SFDC Account Assignment Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Updates</controllingFieldValue>
+            <valueName>SFDC Account Geo Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Updates</controllingFieldValue>
+            <valueName>Tax Exception Admin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Updates</controllingFieldValue>
+            <valueName>Customer Contact Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disputes</controllingFieldValue>
+            <valueName>3rd Party Lender</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disputes</controllingFieldValue>
+            <valueName>Citi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disputes</controllingFieldValue>
+            <valueName>Bluetarp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disputes</controllingFieldValue>
+            <valueName>Non – Lender Related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chargeback</controllingFieldValue>
+            <valueName>Dispute to CB – Comm One</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chargeback</controllingFieldValue>
+            <valueName>Dispute to CB – Comm Pro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chargeback</controllingFieldValue>
+            <valueName>Misc / Non-Lender Related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chargeback</controllingFieldValue>
+            <valueName>Recourse Concession</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chargeback</controllingFieldValue>
+            <valueName>Retainage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transactions Support</controllingFieldValue>
+            <valueName>Credit Hold/Decline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transactions Support</controllingFieldValue>
+            <valueName>CASH/AR Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transactions Support</controllingFieldValue>
+            <valueName>Credit Account Review Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transactions Support</controllingFieldValue>
+            <valueName>ACH/Check Rec’d Notifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vendor Setups/Compliance Renewals</controllingFieldValue>
+            <valueName>COI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vendor Setups/Compliance Renewals</controllingFieldValue>
+            <valueName>New Vendor Setup/Forms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vendor Setups/Compliance Renewals</controllingFieldValue>
+            <valueName>W-9</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vendor Setups/Compliance Renewals</controllingFieldValue>
+            <valueName>Compliance Renewals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vendor Setups/Compliance Renewals</controllingFieldValue>
+            <valueName>New/Update Acct Request</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Open_Work_Items</fullName>
+    <columns>NAME</columns>
+    <columns>agf__Subject__c</columns>
+    <columns>agf__Status__c</columns>
+    <columns>agf__Story_Points__c</columns>
+    <columns>agf__Epic__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>agf__Status__c</field>
+        <operation>equals</operation>
+        <value>New,Acknowledged,Triaged,In Progress,Investigating,Ready for Review,Fixed,QA In Progress,Waiting,Integrate,Pending Release</value>
+    </filters>
+    <label>My Open Work Items</label>
+</ListView>

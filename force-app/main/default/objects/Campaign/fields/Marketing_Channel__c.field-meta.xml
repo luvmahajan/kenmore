@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Channel__c</fullName>
+    <externalId>false</externalId>
+    <label>Marketing Channel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Natural Search</fullName>
+                <default>false</default>
+                <label>Natural Search</label>
+            </value>
+            <value>
+                <fullName>Online Display</fullName>
+                <default>false</default>
+                <label>Online Display</label>
+            </value>
+            <value>
+                <fullName>Other Offline (Capture it All Bucket)</fullName>
+                <default>false</default>
+                <label>Other Offline (Capture it All Bucket)</label>
+            </value>
+            <value>
+                <fullName>Self Generated/Misc.</fullName>
+                <default>false</default>
+                <label>Self Generated/Misc.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

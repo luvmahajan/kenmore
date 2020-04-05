@@ -1,0 +1,14 @@
+Hello {!Case.CreatedBy},
+
+You are receiving this e-mail because you have been added to the referenced {!Case.RecordType} case by a colleague or the case has been updated.
+
+Case Number: {!Case.CaseNumber}
+Case Subject: {!Case.Subject}
+Severity Level: {!Case.Priority}
+Case Description: {!Case.Description}
+Created Date/Time: {!Case.CreatedDate}
+
+Last Case Comments:
+{!Case.HasSelfServiceComments}
+
+{!Case.OwnerFullName}

@@ -1,0 +1,48 @@
+<!--
+<apex:page standardController="SBQQ__Quote__c" extensions="QuoteButtonGroupController" lightningStylesheets="true" >
+-->
+
+<apex:page Controller="ContractButtonGroupController" lightningStylesheets="true" >
+
+    <apex:form >
+        <!--
+        <apex:pageBlock >
+            <br/>
+            Status: {!status}
+            <br/>
+            Record Type: {!recordtype}
+            <br/>
+<apex:outputLink value="{!URLFOR($Action.Contract.New)}" >Create New Contract</apex:outputLink>
+            <br/>
+        </apex:pageBlock>  
+-->
+        <apex:pageBlock rendered="{!AND(renLock,renPermission)}">
+            <apex:pageBlockButtons location="bottom" >
+                <apex:commandButton value="Attach Customer Paper" action="{!gotoContractAttachment}" style="float:left" rendered="{!OR(status=='Build Contract')}" />
+                <apex:commandButton value="Attach Contract Rider" action="{!gotoContractRider}" style="float:left" rendered="{!OR(status=='Build Contract')}" />
+                <apex:commandButton value="Go to Forecast" action="{!gotoForecast}" style="float:left" rendered="{!OR(status=='Forecast')}" />
+                <apex:outputLink value="{!URLFOR($Action.Web_Forecast__c.New)}" style="float:left" rendered="{!OR(status=='Forecast')}" styleClass="btn" >Create Forecast</apex:outputLink>
+                <apex:commandButton value="Credit Application" action="{!gotoCustomerSign2}" style="float:left" rendered="{!AND(status=='Credit', NOT(renOnboarded))}" />
+                <apex:commandButton value="Send to Customer" action="{!gotoCustomerSign}" style="float:left" rendered="{!status=='Send to Customer'}" />
+                <apex:commandButton value="Send to Legal" action="{!gotoApproval}" style="float:left" rendered="{!status=='Send to Legal'}" />
+                <apex:commandButton value="Create Order" action="{!gotoCreateOrder}" style="float:left" rendered="{!OR(status=='Order')}" />
+			</apex:pageBlockButtons>
+            <apex:outputPanel rendered="{!AND(status=='Credit', renOnboarded)}">
+                The Customer is onboarded.<br/>
+                You can move to the next stage.
+            </apex:outputPanel>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!NOT(renLock)}">
+            <apex:outputPanel style="color:red">
+                The Contract is locked because it is sent for Approval.<br/>
+                This record can be edited, once a decision is made on the contract.
+            </apex:outputPanel>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!NOT(renPermission)}">
+            <apex:outputPanel style="color:red">
+                The Contract is locked and cannot be edited for your permissions.<br/>
+            </apex:outputPanel>
+        </apex:pageBlock>
+      </apex:form>  
+    
+</apex:page>

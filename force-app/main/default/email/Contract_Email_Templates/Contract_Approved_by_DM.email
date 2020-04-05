@@ -1,0 +1,7 @@
+Hello,
+
+This is a notification that a Contract has been approved by your District Manager.  Please click on the link below to view the details of this Contract:
+
+{!Opportunity.Link}
+
+Thank you.

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Realtor Monthly Deals (Alan Ball)</name>
+    <style>freeForm</style>
+    <subject>Sears Commercial Monthly Realtor Specials</subject>
+    <textOnly>Sears Commercial Monthly Realtor Specials
+ 
+Great prices this month on a 4.0 CF front load  washer
+Only $440
+Also matching 7.3 CF dryer Kenmore
+$440
+ 
+  
+For your Kitchen 
+In Black or white 
+ 
+Self cleaning Smooth top range
+$442
+Energy star qualified dishwasher
+$209
+Micro Hood combination
+$126
+ 
+ 
+Please click on the link below to view the flyer for specific items, or call Kelly Payne (615)731-9572
+Or Alan Ball, (615)364-7163, for details or pricing
+ 
+ 
+https://na1.salesforce.com/sfc/p/30000000lp1bhjkOSiPWxKZlR0LP1RXZfEm4.48=
+ 
+ 
+Remember we have all the major brands in appliances, as well as other items for the Home, like, Mattresses, exercise equipment, tractors, mowers, TV’s, game tables, and more.  Always lower than retail sale prices.
+ 
+5% off sears Gift cards
+Sears Gift cards can be used at Sears, Outlet stores, LandsEnd, and Kmart stores.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

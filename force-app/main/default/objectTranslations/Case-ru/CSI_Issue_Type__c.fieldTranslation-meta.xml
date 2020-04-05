@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Describes the type of issue that needs to be addressed by the CSI Team --></help>
+    <label><!-- CSI Issue Type --></label>
+    <name>CSI_Issue_Type__c</name>
+    <picklistValues>
+        <masterLabel>Freight Lane Issue</masterLabel>
+        <translation><!-- Freight Lane Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Issue</masterLabel>
+        <translation><!-- Product Issue --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

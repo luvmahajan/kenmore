@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRT__c</fullName>
+    <externalId>false</externalId>
+    <label>Credit/Chargeback Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type_of_Request__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>D1-Builder charged in Error</fullName>
+                <default>false</default>
+                <label>D1-Builder charged in Error</label>
+            </value>
+            <value>
+                <fullName>D2-Damaged Mdse</fullName>
+                <default>false</default>
+                <label>D2-Damaged Mdse</label>
+            </value>
+            <value>
+                <fullName>D3-Did not receive Mdse</fullName>
+                <default>false</default>
+                <label>D3-Did not receive Mdse</label>
+            </value>
+            <value>
+                <fullName>D4-Duplicate Sales/Billing</fullName>
+                <default>false</default>
+                <label>D4-Duplicate Sales/Billing</label>
+            </value>
+            <value>
+                <fullName>D5-Incorrect Purchase Order#</fullName>
+                <default>false</default>
+                <label>D5-Incorrect Purchase Order#</label>
+            </value>
+            <value>
+                <fullName>D6-Invoice Detail Needed</fullName>
+                <default>false</default>
+                <label>D6-Invoice Detail Needed</label>
+            </value>
+            <value>
+                <fullName>D7-Legacy</fullName>
+                <default>false</default>
+                <label>D7-Legacy</label>
+            </value>
+            <value>
+                <fullName>D8-Merchandise Cancelled</fullName>
+                <default>false</default>
+                <label>D8-Merchandise Cancelled</label>
+            </value>
+            <value>
+                <fullName>D9-No/Incorrect Purchase Order</fullName>
+                <default>false</default>
+                <label>D9-No/Incorrect Purchase Order</label>
+            </value>
+            <value>
+                <fullName>D10-Partial discount</fullName>
+                <default>false</default>
+                <label>D10-Partial discount</label>
+            </value>
+            <value>
+                <fullName>D11-Payment Sent to Merchant</fullName>
+                <default>false</default>
+                <label>D11-Payment Sent to Merchant</label>
+            </value>
+            <value>
+                <fullName>D12-Payment Sent to Sears</fullName>
+                <default>false</default>
+                <label>D12-Payment Sent to Sears</label>
+            </value>
+            <value>
+                <fullName>D13-Pricing</fullName>
+                <default>false</default>
+                <label>D13-Pricing</label>
+            </value>
+            <value>
+                <fullName>D14-Pricing Dispute</fullName>
+                <default>false</default>
+                <label>D14-Pricing Dispute</label>
+            </value>
+            <value>
+                <fullName>D15-Pricing Service</fullName>
+                <default>false</default>
+                <label>D15-Pricing Service</label>
+            </value>
+            <value>
+                <fullName>D16-Proof of Delivery</fullName>
+                <default>false</default>
+                <label>D16-Proof of Delivery</label>
+            </value>
+            <value>
+                <fullName>D17-Return material Authorization</fullName>
+                <default>false</default>
+                <label>D17-Return material Authorization</label>
+            </value>
+            <value>
+                <fullName>D18-Shipping &amp; Freight</fullName>
+                <default>false</default>
+                <label>D18-Shipping &amp; Freight</label>
+            </value>
+            <value>
+                <fullName>D19-Signature Request</fullName>
+                <default>false</default>
+                <label>D19-Signature Request</label>
+            </value>
+            <value>
+                <fullName>D20-Small Balance Charge Off</fullName>
+                <default>false</default>
+                <label>D20-Small Balance Charge Off</label>
+            </value>
+            <value>
+                <fullName>D21-Tax</fullName>
+                <default>false</default>
+                <label>D21-Tax</label>
+            </value>
+            <value>
+                <fullName>D22-Unauthorized Buyer</fullName>
+                <default>false</default>
+                <label>D22-Unauthorized Buyer</label>
+            </value>
+            <value>
+                <fullName>D23-Unauthorized Mdse Sold</fullName>
+                <default>false</default>
+                <label>D23-Unauthorized Mdse Sold</label>
+            </value>
+            <value>
+                <fullName>D24-Under Warranty</fullName>
+                <default>false</default>
+                <label>D24-Under Warranty</label>
+            </value>
+            <value>
+                <fullName>D25-Transcation Amt Differs</fullName>
+                <default>false</default>
+                <label>D25-Transcation Amt Differs</label>
+            </value>
+            <value>
+                <fullName>D26-Poor Service</fullName>
+                <default>false</default>
+                <label>D26-Poor Service</label>
+            </value>
+            <value>
+                <fullName>D27-Unidentified Sale</fullName>
+                <default>false</default>
+                <label>D27-Unidentified Sale</label>
+            </value>
+            <value>
+                <fullName>D28-Require Auth</fullName>
+                <default>false</default>
+                <label>D28-Require Auth</label>
+            </value>
+            <value>
+                <fullName>D29-Customer Disputes Merchandise</fullName>
+                <default>false</default>
+                <label>D29-Customer Disputes Merchandise</label>
+            </value>
+            <value>
+                <fullName>D30-Declined Authorization</fullName>
+                <default>false</default>
+                <label>D30-Declined Authorization</label>
+            </value>
+            <value>
+                <fullName>CB1-Visa Chargeback</fullName>
+                <default>false</default>
+                <label>CB1-Visa Chargeback</label>
+            </value>
+            <value>
+                <fullName>CB2-MasterCard Chargeback</fullName>
+                <default>false</default>
+                <label>CB2-MasterCard Chargeback</label>
+            </value>
+            <value>
+                <fullName>CB3-AMEX Chargeback</fullName>
+                <default>false</default>
+                <label>CB3-AMEX Chargeback</label>
+            </value>
+            <value>
+                <fullName>CB4-Discover Chargeback</fullName>
+                <default>false</default>
+                <label>CB4-Discover Chargeback</label>
+            </value>
+            <value>
+                <fullName>CBA-Blue Tarp Chargeback</fullName>
+                <default>false</default>
+                <label>CBA-Blue Tarp Chargeback</label>
+            </value>
+            <value>
+                <fullName>CBB-Citibank Chargeback</fullName>
+                <default>false</default>
+                <label>CBB-Citibank Chargeback</label>
+            </value>
+            <value>
+                <fullName>CBC-Blue Tarp Auth Rejects</fullName>
+                <default>false</default>
+                <label>CBC-Blue Tarp Auth Rejects</label>
+            </value>
+            <value>
+                <fullName>CBD-Bankruptcy</fullName>
+                <default>false</default>
+                <label>CBD-Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>CBE-RMS Collection Fees</fullName>
+                <default>false</default>
+                <label>CBE-RMS Collection Fees</label>
+            </value>
+            <value>
+                <fullName>CBF-Account/Extended/ Finance Fees</fullName>
+                <default>false</default>
+                <label>CBF-Account/Extended/ Finance Fees</label>
+            </value>
+            <value>
+                <fullName>Contract</fullName>
+                <default>false</default>
+                <label>Contract</label>
+            </value>
+            <value>
+                <fullName>Invalid PO/CC Account #</fullName>
+                <default>false</default>
+                <label>Invalid PO/CC Account #</label>
+            </value>
+            <value>
+                <fullName>Manual Entry</fullName>
+                <default>false</default>
+                <label>Manual Entry</label>
+            </value>
+            <value>
+                <fullName>Non-Contract Acct</fullName>
+                <default>false</default>
+                <label>Non-Contract Acct</label>
+            </value>
+            <value>
+                <fullName>Point of Sale Back Charge</fullName>
+                <default>false</default>
+                <label>Point of Sale Back Charge</label>
+            </value>
+            <value>
+                <fullName>Retainage</fullName>
+                <default>false</default>
+                <label>Retainage</label>
+            </value>
+            <value>
+                <fullName>Third Party Chargeback</fullName>
+                <default>false</default>
+                <label>Third Party Chargeback</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Dispute to CB – Comm Pro</controllingFieldValue>
+            <controllingFieldValue>Misc / Non-Lender Related</controllingFieldValue>
+            <controllingFieldValue>Recourse Concession</controllingFieldValue>
+            <controllingFieldValue>Retainage</controllingFieldValue>
+            <controllingFieldValue>Other 3rd Party</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>CB1-Visa Chargeback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to CB – Comm Pro</controllingFieldValue>
+            <controllingFieldValue>Misc / Non-Lender Related</controllingFieldValue>
+            <controllingFieldValue>Recourse Concession</controllingFieldValue>
+            <controllingFieldValue>Retainage</controllingFieldValue>
+            <controllingFieldValue>Other 3rd Party</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>CB2-MasterCard Chargeback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to CB – Comm Pro</controllingFieldValue>
+            <controllingFieldValue>Misc / Non-Lender Related</controllingFieldValue>
+            <controllingFieldValue>Recourse Concession</controllingFieldValue>
+            <controllingFieldValue>Retainage</controllingFieldValue>
+            <controllingFieldValue>Other 3rd Party</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>CB3-AMEX Chargeback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to CB – Comm Pro</controllingFieldValue>
+            <controllingFieldValue>Misc / Non-Lender Related</controllingFieldValue>
+            <controllingFieldValue>Recourse Concession</controllingFieldValue>
+            <controllingFieldValue>Retainage</controllingFieldValue>
+            <controllingFieldValue>Other 3rd Party</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>CB4-Discover Chargeback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to CB – Comm Pro</controllingFieldValue>
+            <controllingFieldValue>Misc / Non-Lender Related</controllingFieldValue>
+            <controllingFieldValue>Recourse Concession</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Retainage</controllingFieldValue>
+            <controllingFieldValue>Other 3rd Party</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>CBA-Blue Tarp Chargeback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to CB – Comm Pro</controllingFieldValue>
+            <controllingFieldValue>Misc / Non-Lender Related</controllingFieldValue>
+            <controllingFieldValue>Recourse Concession</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Retainage</controllingFieldValue>
+            <controllingFieldValue>Other 3rd Party</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>CBB-Citibank Chargeback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to CB – Comm Pro</controllingFieldValue>
+            <controllingFieldValue>Misc / Non-Lender Related</controllingFieldValue>
+            <controllingFieldValue>Recourse Concession</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Retainage</controllingFieldValue>
+            <controllingFieldValue>Other 3rd Party</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>CBC-Blue Tarp Auth Rejects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to CB – Comm Pro</controllingFieldValue>
+            <controllingFieldValue>Misc / Non-Lender Related</controllingFieldValue>
+            <controllingFieldValue>Recourse Concession</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Retainage</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Other 3rd Party</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>CBD-Bankruptcy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to CB – Comm Pro</controllingFieldValue>
+            <controllingFieldValue>Misc / Non-Lender Related</controllingFieldValue>
+            <controllingFieldValue>Recourse Concession</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Retainage</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Other 3rd Party</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>CBE-RMS Collection Fees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to CB – Comm Pro</controllingFieldValue>
+            <controllingFieldValue>Misc / Non-Lender Related</controllingFieldValue>
+            <controllingFieldValue>Recourse Concession</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Retainage</controllingFieldValue>
+            <controllingFieldValue>Other 3rd Party</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>CBF-Account/Extended/ Finance Fees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recourse Concession</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D16-Proof of Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D1-Builder charged in Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D2-Damaged Mdse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D3-Did not receive Mdse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D4-Duplicate Sales/Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D5-Incorrect Purchase Order#</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D6-Invoice Detail Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D7-Legacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D8-Merchandise Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D9-No/Incorrect Purchase Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D10-Partial discount</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D11-Payment Sent to Merchant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D12-Payment Sent to Sears</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D13-Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D14-Pricing Dispute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D15-Pricing Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D17-Return material Authorization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D18-Shipping &amp; Freight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D19-Signature Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D20-Small Balance Charge Off</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D21-Tax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D22-Unauthorized Buyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D23-Unauthorized Mdse Sold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D24-Under Warranty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D25-Transcation Amt Differs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D26-Poor Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D27-Unidentified Sale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D30-Declined Authorization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - Citi</controllingFieldValue>
+            <valueName>Invalid PO/CC Account #</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D28-Require Auth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dispute to Chargeback - BT</controllingFieldValue>
+            <controllingFieldValue>Dispute</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Contact Customer</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Bluetarp</controllingFieldValue>
+            <controllingFieldValue>Dispute to CB – Comm One</controllingFieldValue>
+            <valueName>D29-Customer Disputes Merchandise</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

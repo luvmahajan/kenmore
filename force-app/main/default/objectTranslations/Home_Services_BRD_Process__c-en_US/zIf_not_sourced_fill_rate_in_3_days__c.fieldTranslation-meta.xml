@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If the part is not sourced, what is the percent fill rate in 3 days? --></help>
+    <label><!-- zFTC_If not sourced, % fill rate 3 days --></label>
+    <name>zIf_not_sourced_fill_rate_in_3_days__c</name>
+</CustomFieldTranslation>

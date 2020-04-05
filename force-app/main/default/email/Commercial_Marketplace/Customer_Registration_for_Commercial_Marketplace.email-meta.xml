@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Customer Registration for Commercial Marketplace</name>
+    <style>freeForm</style>
+    <subject>Thank you for your interest</subject>
+    <textOnly>Thank you for your interest in Sears Commercial Marketplace and Realty Home Advantage. This document contains some important information for you regarding these 2 programs.
+ 
+ 
+Account Manager Name:   {!Account.OwnerFullName}
+ 
+Account Manager Phone:   {!Account.OwnerPhone}
+ 
+Account Manager Email:    {!Account.OwnerEmail}
+ 
+(A) Your Sears Commercial Customer Number:   {!Account.SCOPES_ID__c}
+ 
+(B) To Register for Realty Home Advantage:
+Visit www.realtyhomeadvantage.scmarketingtools.com
+Click on the register today button
+Fill out the required information on the form. For confirmation code use SCM1011 and for Sears Commercial Account Number, use the number in item (A) above.
+You will then be sent a confirmation email. In this email is an activation link. Click this link to finish your account set up. You will then be able to login using your email address and password you established at the time of registration.
+ 
+(C) To establish your Sears Commercial Marketplace account:
+Contact your local account manager.
+They will set up the account and provide you with a current invitation code (and expiration date) for you to share with your customers.
+Current Invitation Code:   {!Account.Commercial_Marketplace_Invitation_Code__c}
+ 
+Expiration Date:   {!Account.Invitation_Code_Expiration_Date__c}
+ 
+You will need to obtain a new code on a monthly basis. Once expired, a new code can be obtained via your account manager or calling 800-735-6000.
+Use the Invitation Code and Expiration Date to send out an email to your customers using the Email Generator in Realty Home Advantage.
+ </textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

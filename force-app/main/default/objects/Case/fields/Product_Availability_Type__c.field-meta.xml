@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Availability_Type__c</fullName>
+    <description>Select the availability of the new product that is being requested</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the availability of the new product that is being requested</inlineHelpText>
+    <label>Product Availability Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Currently available from Sears (Sears Item #)</fullName>
+                <default>false</default>
+                <label>Currently available from Sears (Sears Item #)</label>
+            </value>
+            <value>
+                <fullName>Currently available from Kmart (Kmart Item #)</fullName>
+                <default>false</default>
+                <label>Currently available from Kmart (Kmart Item #)</label>
+            </value>
+            <value>
+                <fullName>Currently available from TGI (TGI Item #)</fullName>
+                <default>false</default>
+                <label>Currently available from TGI (TGI Item #)</label>
+            </value>
+            <value>
+                <fullName>Sears Marketplace Item (displayed on sears.com, offered from a different company)</fullName>
+                <default>false</default>
+                <label>Sears Marketplace Item (displayed on sears.com, offered from a different company)</label>
+            </value>
+            <value>
+                <fullName>Other vendor/manufacturer/retailer</fullName>
+                <default>false</default>
+                <label>Other vendor/manufacturer/retailer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

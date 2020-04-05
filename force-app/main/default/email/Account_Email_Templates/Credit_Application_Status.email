@@ -1,0 +1,8 @@
+Dear {!Account.OwnerFirstName},
+
+The status of your credit request for {!Account.Name} has been changed to {!Customer_Service__c.Commercial_Credit_Status__c}.  Credit Comments have been added as follows:  {!Customer_Service__c.Credit_Comments__c}.  Please click on the link below to review the account for more details.  
+
+{!Account.Link}
+
+Sincerely, 
+{!Customer_Service__c.Credit_Solutions_Specialist__c}

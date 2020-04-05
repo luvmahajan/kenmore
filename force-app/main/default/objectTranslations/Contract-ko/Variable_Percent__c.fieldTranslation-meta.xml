@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use this field to describe the tiered cut-offs and varaible percentage rebates applicable to this agreement. --></help>
+    <label><!-- Variable Percent --></label>
+    <name>Variable_Percent__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>District Lead Routing SF Update</name>
+    <style>freeForm</style>
+    <subject>Salesforce.com District Lead Routing Update</subject>
+    <textOnly>Dear {!Receiving_User.FirstName},
+ 
+In support of Sears Commercial’s 2011 strategy, and as previously announced, we have completed configuration of Salesforce.com (SFDC) to effectively route new Leads to the District Manager.  The purpose of this email is to gain your awareness for new leads, to describe the lead management process, and to present guidance on how we can support your 2011 District plan through the development of Lead Assignment rules.
+ 
+As of today, all new inbound leads (i.e. from searscommercial.com, the Augusta Order Management Center, SHC’s retail formats and trade show marketing) will be entered into SFDC and automatically assigned, based on the “State” field, to a Queue named for each district and owned by the District Manager.  Once the lead has been created, please be aware of the following:
+
+  1.  As the owner of your District’s Queue, you will receive an email notification with a link to the SFDC Lead record 
+  2.  The prospective customer will receive an email receipt stating that he/she will hear from a Sears Commercial Account Manager within 48 business hours.
+ 
+As the district Queue Owner you are responsible for lead qualification (disqualification) or for delegating this responsibility to a member of your team.  Your district Queue may own several Leads and you may view all of these using the View dropdown on the Leads tab.  To assign a Lead, simply open the Lead record, click “Change” in the Lead Owner field, then select the name of the appropriate new Lead Owner.  We recommend that you also click “Send Notification Email” to alert the new Lead Owner of their qualification responsibility.
+ 
+As you are aware, some states are covered by 1 or more district.  In these cases, the Lead Assignment rules will route all leads for the state to the District Manager whose district covers the largest metro area in the state.  If you receive a lead that should be routed to another district, simply use the process above to assign the lead to the other district’s queue.
+ 
+Over the past 6 months, each District has received approximately 5 new leads per day.  Since all leads from our largest annual trade show (IBS) were assigned in January, and because 2 significant database merge activities were also completed in January, we anticipate fewer than 5 leads per day to be assigned to each District Queue during the next 60 days.
+ 
+Over the coming weeks, please consider the benefits of this new lead routing process:
+  -  You are able rate each Lead and assign the most appropriate team member to secure sales for your district 
+  -  You will be able to test the appropriate generalist or specialist model to drive sales in your district 
+  -  You will have greater awareness of the new business potential for your district
+ 
+As you finalize your 2011 district plans, you may choose to maintain control of incoming leads through this configuration, or you may choose to incorporate Lead Assignment rules into your district plan.  
+ 
+Below are some of the options to consider if you decide to incorporate Lead Assignment rules:
+
+  -  Route leads to a specific Account Manager based on the Lead’s 
+
+          -  State, and/or 
+          -  Segment, and/or 
+          -  Product interest, and/or 
+          -  Program interest
+  -  Notify all Account Managers in your district when a new lead is assigned to the District Queue, then any available Account Manager may change him/herself to the lead owner and pursue qualification 
+  -  Create one or more additional Queues in order to route leads to smaller groups of Account Managers within your district (e.g. by state, segment, etc.)
+ 
+As you finalize your 2011 District Sales plans, I will be available to work with you to discuss the pros/cons of each Lead Assignment tactic and, where appropriate, to configure Lead Assignment rules to support your plan.  I just ask that you create a Case in order to request my assistance.
+ 
+Please &lt;a href=&quot; https://na1.salesforce.com/setup/own/entityruledetail.jsp?id=01Q30000000CuV8&amp;setupid=LeadRules&quot;&gt;Click Here&lt;/a&gt; to log into Salesforce to view the current rules in place for each District..
+ 
+I am happy to support our Direct Sales teams and look forward to helping you drive success in 2011. 
+ 
+Sincerely,  
+{!User.Name}
+ </textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

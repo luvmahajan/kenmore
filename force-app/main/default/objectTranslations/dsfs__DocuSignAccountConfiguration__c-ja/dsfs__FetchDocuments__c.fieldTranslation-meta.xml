@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>文書データなしでエンベロープを DocuSign に送信し、DocuSign が必要に応じて文書データを取得できるように許可することで、大規模な DocuSign エンベロープをサポートします。 エンベロープの送信が Salesforce のコールアウト制限を超える場合のみ有効にしてください。</help>
+    <label><!-- Fetch Documents --></label>
+    <name>dsfs__FetchDocuments__c</name>
+</CustomFieldTranslation>

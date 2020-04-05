@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Do you have a coach who can and will help you win, to the exclusion of others? --></help>
+    <label><!-- Influential coach who shares opp insight --></label>
+    <name>Influential_coach_who_shares_opp_insight__c</name>
+</CustomFieldTranslation>

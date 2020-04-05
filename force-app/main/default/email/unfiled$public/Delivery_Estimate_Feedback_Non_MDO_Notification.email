@@ -1,0 +1,14 @@
+Hi Weston, 
+
+A delivery estimate feedback was marked as Non-MDO.  Please review the details.
+
+Delivery Estimate Feedback Name: {!Delivery_Estimate_Feedback__c.Name}
+Delivery Estimate: {!Delivery_Estimate_Feedback__c.Delivery_Estimate__c}
+Opportunity Name: {!Delivery_Estimate__c.Opportunity_Name__c}
+
+Created Date: {!Delivery_Estimate_Feedback__c.CreatedDate}
+Created By: {!Delivery_Estimate_Feedback__c.CreatedBy}
+
+Link to the Delivery Estimate Feedback: {!Delivery_Estimate_Feedback__c.Link}
+
+Link to the Opportunity: {!Opportunity.Link}

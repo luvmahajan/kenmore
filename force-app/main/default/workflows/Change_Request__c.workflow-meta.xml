@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Change_Request_Completed_Email_Notification_1</fullName>
+        <description>Change Request Completed Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Completed_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Request_Completed_Email_Notification_2</fullName>
+        <description>Change Request Completed Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Completed_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Request_Completed_Email_Notification_3</fullName>
+        <description>Change Request Completed Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Completed_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Request_Completed_Email_Notification_4</fullName>
+        <description>Change Request Completed Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Completed_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Request_Completed_Email_Notification_5</fullName>
+        <description>Change Request Completed Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Completed_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Request_Completed_Notification</fullName>
+        <description>Change Request Completed Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Completed_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Request_Rejected_Email_Notification_1</fullName>
+        <description>Change Request Rejected Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Rejected_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Request_Rejected_Email_Notification_2</fullName>
+        <description>Change Request Rejected Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Rejected_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Request_Rejected_Email_Notification_3</fullName>
+        <description>Change Request Rejected Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Rejected_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Request_Rejected_Email_Notification_4</fullName>
+        <description>Change Request Rejected Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Rejected_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Request_Rejected_Email_Notification_5</fullName>
+        <description>Change Request Rejected Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Rejected_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Request_Rejected_Notification</fullName>
+        <description>Change Request Rejected Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Change_Request_Rejected_Email_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_Comment_Requested</fullName>
+        <field>Approval_Comment_Check__c</field>
+        <literalValue>Requested</literalValue>
+        <name>Approval Comment Requested</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Comment_Required</fullName>
+        <field>Approval_Comment_Check__c</field>
+        <literalValue>Required</literalValue>
+        <name>Approval Comment Required</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approver_Status_Updated_to_Accept</fullName>
+        <description>On approval of District Manager, the Approver Status will be updated to Accepted.</description>
+        <field>Approver_Status__c</field>
+        <literalValue>Accepted</literalValue>
+        <name>Approver Status Updated to Accept</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approver_Status_field_update</fullName>
+        <description>On approving by the District manager, the status is set to Accepted</description>
+        <field>Approver_Status__c</field>
+        <literalValue>Accepted</literalValue>
+        <name>Approver Status field update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approver_Stauts_field_update</fullName>
+        <description>On approving by the District manager, the status is set to Accepted</description>
+        <field>Approver_Status__c</field>
+        <literalValue>Accepted</literalValue>
+        <name>Approver Stauts field update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Request_Approved_Update</fullName>
+        <field>Request_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Change Request Approved Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Request_Denied_Update</fullName>
+        <field>Request_Status__c</field>
+        <literalValue>Denied</literalValue>
+        <name>Change Request Denied Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_DM_Reject</fullName>
+        <description>Approval Status Reject</description>
+        <field>Approver_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Field Update DM Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_File_Admin_Accept</fullName>
+        <description>Status Field Update to Accept</description>
+        <field>Approver_Status__c</field>
+        <literalValue>Accepted</literalValue>
+        <name>Field Update File Admin Accept</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_File_Admin_Reject</fullName>
+        <description>Status Field Update to Reject</description>
+        <field>Approver_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Field Update File Admin Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_of_Request_Status_field</fullName>
+        <description>On click of Submit to Approval, the Request Status will change to Submitted.</description>
+        <field>Request_Status__c</field>
+        <literalValue>Submitted</literalValue>
+        <name>Field Update of Request Status field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>File_Admin_Approval_Status_is_Approved</fullName>
+        <description>File Admin Approval Status is Approved</description>
+        <field>File_Admin_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>File Admin Approval Status is Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>File_Admin_Approval_Status_is_Updated</fullName>
+        <description>On approval by the File Admin, the status will be updated to Accepted.</description>
+        <field>File_Admin_Status__c</field>
+        <literalValue>Accepted</literalValue>
+        <name>File Admin Approval Status is Updated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>File_Admin_Status_Updated_to_Pending</fullName>
+        <description>On approval of District Manager, the Net Admin Status field will be updated to Pending.</description>
+        <field>File_Admin_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>File Admin Status Updated to Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_the_approver_name</fullName>
+        <field>Approver_Name__c</field>
+        <formula>$User.FirstName + $User.LastName</formula>
+        <name>update the approver name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_the_approver_name_on_reject</fullName>
+        <field>Approver_Name__c</field>
+        <formula>$User.FirstName + $User.LastName</formula>
+        <name>update the approver name on reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_the_file_admin_name</fullName>
+        <field>File_Net_Admin_Name__c</field>
+        <formula>$User.FirstName + $User.LastName</formula>
+        <name>update the file admin name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_the_file_admin_name_on_reject</fullName>
+        <field>File_Net_Admin_Name__c</field>
+        <formula>$User.FirstName + $User.LastName</formula>
+        <name>update the file admin name on reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Change Request - Update Approval Comment Flag - Update</fullName>
+        <actions>
+            <name>Approval_Comment_Requested</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Change_Request__c.Approval_Comment_Check__c</field>
+            <operation>equals</operation>
+            <value>Required</value>
+        </criteriaItems>
+        <description>Change the approval comment check value from required to requested.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Local_Service_Area__c</fullName>
+    <description>Shows the City and State if Local Service is required</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Shows the City and State if Local Service is required</inlineHelpText>
+    <label>Local Service Area</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,79 @@
+<apex:page docType="html-5.0" sidebar="false" showHeader="false" standardStylesheets="false" controller="SetTimeZoneController" >
+    <html ng-app="SetTimeZone">
+        <head>
+            <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/1.0.0-beta.14/css/ionic.min.css"/>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.4/jstz.min.js"></script>
+            <script src="https://code.ionicframework.com/1.0.0-beta.14/js/ionic.bundle.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-cookies.min.js"></script>
+        </head>
+        <body ng-controller="main" ng-init="showDiv=false">
+             <div class="list card" ng-show="showDiv" >
+                <div class="item item-text-wrap">
+                    <p>Current Timezone is different from your Salesforce Timezone!</p>
+                    <a class="button button-small button-full button-calm" href="" ng-click="setTimeZone();">Change Timezone</a>
+                </div>
+              </div>
+        </body>   
+             
+        <script>
+                var tz = jstz.determine(); 
+                var tzid = tz.name();
+                angular.module('SetTimeZone', ['ionic','ngCookies'])
+                    .controller('main', ['$scope', '$ionicModal','$cookies', function($scope,$ionicModal,$cookies) {
+                      
+                     Visualforce.remoting.Manager.invokeAction(
+                        '{!$RemoteAction.SetTimeZoneController.getPreference}',
+                        tzid, 
+                        function(result, event){
+                            if (event.status) {
+                                var resultJson = JSON.parse(result);
+                                switch(resultJson.message){
+                                    case 'None':
+                                        $scope.navigationS1();
+                                        break;
+                                    case 'Prompt':
+                                        $scope.showDiv = true;
+                                        $scope.$apply();
+                                        break;
+                                    case 'Auto':
+                                        $scope.setTimeZone();
+                                        break;
+                                    default:
+                                        break;
+                                }
+                            } else {
+                                console.log('Error getting user preference', event.message);
+                                $scope.navigationS1();
+                            } 
+                        }, 
+                        {escape: false}
+                    );   
+         
+                    $scope.setTimeZone = function(){
+                       Visualforce.remoting.Manager.invokeAction(
+                            '{!$RemoteAction.SetTimeZoneController.setTimeZone}',
+                            tzid, 
+                            function(result, event){
+                                if (event.status) {
+                                    $scope.showDiv = false;
+                                    $scope.$apply();
+                                } else {
+                                    alert('Error while changing time zone');
+                                    console.log('Error in changing time zone', event.message);
+                                }
+                                $scope.navigationS1();
+                            }, 
+                            {escape: false}
+                        ); 
+                    } 
+                     
+                    $scope.navigationS1 = function(){
+                       if(typeof sforce !== "undefined" && sforce !== null) {
+                            sforce.one.navigateToURL('/_ui/core/chatter/ui/ChatterPage');
+                       } 
+                    }    
+                     
+                }]);
+            </script>
+    </html>
+</apex:page>

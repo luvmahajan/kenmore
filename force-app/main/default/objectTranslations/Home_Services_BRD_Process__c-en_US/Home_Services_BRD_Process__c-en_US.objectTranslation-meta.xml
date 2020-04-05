@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>BRD</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>BRD</value>
+    </caseValues>
+    <layouts>
+        <layout>Home Services</layout>
+        <sections>
+            <label><!-- Approval Information --></label>
+            <section>Approval Information</section>
+        </sections>
+        <sections>
+            <label><!-- Call Center --></label>
+            <section>Call Center</section>
+        </sections>
+        <sections>
+            <label><!-- Claims --></label>
+            <section>Claims</section>
+        </sections>
+        <sections>
+            <label><!-- Compliance --></label>
+            <section>Compliance</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery &amp; Install (additional information) --></label>
+            <section>Delivery &amp; Install (additional information)</section>
+        </sections>
+        <sections>
+            <label><!-- DocuSign Comments --></label>
+            <section>DocuSign Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Finance --></label>
+            <section>Finance</section>
+        </sections>
+        <sections>
+            <label><!-- Functional --></label>
+            <section>Functional</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Information --></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Parts --></label>
+            <section>Parts</section>
+        </sections>
+        <sections>
+            <label><!-- Recall Rework --></label>
+            <section>Recall Rework</section>
+        </sections>
+        <sections>
+            <label><!-- Reminder --></label>
+            <section>Reminder</section>
+        </sections>
+        <sections>
+            <label><!-- STAC --></label>
+            <section>STAC</section>
+        </sections>
+        <sections>
+            <label><!-- Service Requests --></label>
+            <section>Service Requests</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Home Services (Administrator)</layout>
+        <sections>
+            <label><!-- Approval Information --></label>
+            <section>Approval Information</section>
+        </sections>
+        <sections>
+            <label><!-- Call Center --></label>
+            <section>Call Center</section>
+        </sections>
+        <sections>
+            <label><!-- Claims --></label>
+            <section>Claims</section>
+        </sections>
+        <sections>
+            <label><!-- Compliance --></label>
+            <section>Compliance</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery &amp; Install (additional information) --></label>
+            <section>Delivery &amp; Install (additional information)</section>
+        </sections>
+        <sections>
+            <label><!-- DocuSign Comments --></label>
+            <section>DocuSign Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Finance --></label>
+            <section>Finance</section>
+        </sections>
+        <sections>
+            <label><!-- Functional --></label>
+            <section>Functional</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Information --></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Parts --></label>
+            <section>Parts</section>
+        </sections>
+        <sections>
+            <label><!-- Recall Rework --></label>
+            <section>Recall Rework</section>
+        </sections>
+        <sections>
+            <label><!-- Reminder --></label>
+            <section>Reminder</section>
+        </sections>
+        <sections>
+            <label><!-- STAC --></label>
+            <section>STAC</section>
+        </sections>
+        <sections>
+            <label><!-- Service Requests --></label>
+            <section>Service Requests</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Home Services (Approved)</layout>
+        <sections>
+            <label><!-- Approval Information --></label>
+            <section>Approval Information</section>
+        </sections>
+        <sections>
+            <label><!-- Call Center --></label>
+            <section>Call Center</section>
+        </sections>
+        <sections>
+            <label><!-- Claims --></label>
+            <section>Claims</section>
+        </sections>
+        <sections>
+            <label><!-- Compliance --></label>
+            <section>Compliance</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery &amp; Install (additional information) --></label>
+            <section>Delivery &amp; Install (additional information)</section>
+        </sections>
+        <sections>
+            <label><!-- DocuSign Comments --></label>
+            <section>DocuSign Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Finance --></label>
+            <section>Finance</section>
+        </sections>
+        <sections>
+            <label><!-- Functional --></label>
+            <section>Functional</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Information --></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Parts --></label>
+            <section>Parts</section>
+        </sections>
+        <sections>
+            <label><!-- Recall Rework --></label>
+            <section>Recall Rework</section>
+        </sections>
+        <sections>
+            <label><!-- Reminder --></label>
+            <section>Reminder</section>
+        </sections>
+        <sections>
+            <label><!-- STAC --></label>
+            <section>STAC</section>
+        </sections>
+        <sections>
+            <label><!-- Service Requests --></label>
+            <section>Service Requests</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Home Services BRD Process Layout</layout>
+        <sections>
+            <label><!-- BRD Items --></label>
+            <section>BRD Items</section>
+        </sections>
+        <sections>
+            <label><!-- Call Center --></label>
+            <section>Call Center</section>
+        </sections>
+        <sections>
+            <label><!-- Claims --></label>
+            <section>Claims</section>
+        </sections>
+        <sections>
+            <label><!-- Compliance --></label>
+            <section>Compliance</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery &amp; Install (additional information) --></label>
+            <section>Delivery &amp; Install (additional information)</section>
+        </sections>
+        <sections>
+            <label><!-- DocuSign Comments --></label>
+            <section>DocuSign Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Functional --></label>
+            <section>Functional</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Information --></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Parts --></label>
+            <section>Parts</section>
+        </sections>
+        <sections>
+            <label><!-- Recall Rework --></label>
+            <section>Recall Rework</section>
+        </sections>
+        <sections>
+            <label><!-- STAC --></label>
+            <section>STAC</section>
+        </sections>
+        <sections>
+            <label><!-- Service Requests --></label>
+            <section>Service Requests</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Home Services --></label>
+        <name>Home_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Records that have been approved --></description>
+        <label><!-- Home Services (Approved) --></label>
+        <name>Home_Services_Approved</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Any products DOT hazardous is a required when Client Type = &quot;OEM&quot; &amp; BRD Type = &quot;Recall&quot; or &quot;Rework&quot; --></errorMessage>
+        <name>Any_products_DOT_hazardous</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Authorization $$ limit if yes is required when Authorization $$ limit = Yes --></errorMessage>
+        <name>Authorization_Limit_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Projected CPSC Announced Date is required --></errorMessage>
+        <name>CPSC_Date_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Way to set service is &quot;Other&quot;, Client MSO needs/requirements is required --></errorMessage>
+        <name>Client_MSO_Needs_Requirements_is_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Type of Service = Delivery or Install then Custom Call Center Support Requests is Required. --></errorMessage>
+        <name>Custom_Call_Center_Support_Requests_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Type of Services = &apos;Delivery&apos; or &apos;Install&apos;, the entire Delivery &amp; Install section is required --></errorMessage>
+        <name>Delivery_Install_Section_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Describe licenses retailer has is required when Install/Services on behalf of retailer is &quot;Yes&quot; --></errorMessage>
+        <name>Describe_licenses_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Details of hazardous products is a required when Any products DOT hazardous is &quot;Yes&quot; --></errorMessage>
+        <name>Details_of_hazardous_products_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Existing Operational Metrics is Required when BRD Type is Renewal --></errorMessage>
+        <name>Existing_Operational_Metrics_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- IW Lwn/Grdn, engine/transmission claims is required when Products/Services on the Opportunity page includes Lawn &amp; Garden --></errorMessage>
+        <name>IW_Lwn_Grdn_claims_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Previous profitability per call is required when BRD Type is Renewal --></errorMessage>
+        <name>Previous_Profitability_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Process changes if renewal are required --></errorMessage>
+        <name>Process_Changes_if_Renewal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If BRD Type = &apos;Recall&apos; or &apos;Rework&apos;, the entire Recall/Rework section is required --></errorMessage>
+        <name>Recall_Rework_Section_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Haul Away = &quot;Yes&quot;, What should be done with removed product is required --></errorMessage>
+        <name>Removed_product_instruction_is_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Internal_Approval_via_DocuSign --></label>
+        <name>Internal_Approval_via_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Home_Services_BRD --></label>
+        <name>New_Home_Services_BRD</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>Send_with_DocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

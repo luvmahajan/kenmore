@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Support --></label>
+    <name>Customer_Support__c</name>
+    <picklistValues>
+        <masterLabel>Concession Processing</masterLabel>
+        <translation><!-- Concession Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post-Fulfillment &amp;  Service Recovery</masterLabel>
+        <translation><!-- Post-Fulfillment &amp;  Service Recovery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Fulfillment</masterLabel>
+        <translation><!-- Pre-Fulfillment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

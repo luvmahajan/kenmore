@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territory_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>only enter in this field if different from the Account Owner and they are a Territory Manager</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Look up the Territory Manager name. Only enter in this field if different from the Account Owner and they are a Territory Manager</inlineHelpText>
+    <label>Territory Manager</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Accounts1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

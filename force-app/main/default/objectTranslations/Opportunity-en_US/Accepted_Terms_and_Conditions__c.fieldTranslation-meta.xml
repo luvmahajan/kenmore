@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Checked if the customer agreed to the Terms and Conditions --></help>
+    <label><!-- Accepted Terms and Conditions --></label>
+    <name>Accepted_Terms_and_Conditions__c</name>
+</CustomFieldTranslation>

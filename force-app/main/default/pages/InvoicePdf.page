@@ -1,0 +1,196 @@
+<apex:page controller="VFInvoicePdfController" standardStylesheets="false" applyBodyTag="false"
+           showHeader="true" title="{!PdfTitle}"
+           renderAs="PDF" >
+
+    <apex:stylesheet value="{! $Resource.InvoicePdfCSS }"/>
+
+    <div class="footer">
+        Page <span class="page-number"></span> of <span class="page-count"></span>
+    </div>
+
+    <div class="content">
+        <apex:image id="logo" styleClass="logo" width="250" height="60" value="{!$Resource.KenmoreLogo}"/>
+        <div class="invoicelabel">Invoice</div>
+        <table class="h1panel headertablepos">
+            <tr>
+                <td width="35%">
+
+                    <!--Bill-To-Party-->
+                    <table class="h1panel">
+                        <thead>
+                        <tr>
+                            <th>&nbsp;Bill-To-Party</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-align_left">{!Invoice.Record.Parent_Account__r.Name}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-align_left">{!Invoice.Record.Parent_Account__r.BillingStreet}</td>
+                               <!-- &nbsp;{!Invoice.Record.Parent_Account__r.BillingCity}</td> -->
+                        </tr>
+                      <!--  <tr>
+                            <td class="text-align_left">{!Invoice.Record.Parent_Account__r.BillingCity}</td>
+                        </tr> -->
+                        <tr>
+                            <td class="text-align_left">{!Invoice.Record.Parent_Account__r.BillingCity},
+                                &nbsp;{!Invoice.Record.Parent_Account__r.BillingState}
+                                &nbsp;{!Invoice.Record.Parent_Account__r.BillingPostalCode}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <p></p>
+
+                    <!--Ship-To-Party-->
+                    <table class="h1panel">
+                        <thead>
+                        <tr>
+                            <th>&nbsp;Ship-To-Party</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-align_left">{!Invoice.Record.Parent_Account__r.Name}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-align_left">{!Invoice.Record.ADDR1__c}
+                                &nbsp; {!Invoice.Record.ADDR2__c}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-align_left">{!Invoice.Record.City__c},
+                                &nbsp;{!Invoice.Record.State__c}
+                                &nbsp;{!Invoice.Record.Zip__c}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+
+                <td width="5px"></td>
+
+                <td width="50%">
+                    <!--Order Information-->
+
+                    <table class="h1panel">
+                        <thead>
+                        <tr>
+                            <th colspan="2">&nbsp;Order Information</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-align_left">Invoice No</td>
+                            <td class="text-align_right">{!Invoice.Record.Invoice_Number__c}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-align_left">Invoice Date</td>
+                            <td class="text-align_right">{!Invoice.invoicedateformatted}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-align_left">Order No</td>
+                            <td class="text-align_right">{!Invoice.Record.Order_Number__c}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-align_left">Customer No</td>
+                            <td class="text-align_right">{!Invoice.Record.Ship_to_Name__c}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-align_left">Purchase Order No</td>
+                            <td class="text-align_right">{!Invoice.Record.Customer_PO__c}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-align_left">Amount Due</td>
+                            <td class="text-align_right">${!Invoice.Record.Grand_Total__c}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-align_left">Payment Due Date</td>
+                            <td class="text-align_right">{!Invoice.invoiceduedate}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+
+
+        <table class="h1panel itemheadpos">
+            <thead>
+            <tr>
+                <th>&nbsp;Material Information</th>
+            </tr>
+            </thead>
+        </table>
+
+        <!-- Detail table of invoice line items -->
+        <div class="itemtableoutercontainer">
+            <table class="itemtable">
+                <thead>
+                <tr>
+                    <th class="row-1 row-seq">Seq</th>
+                    <th class="row-2 row-mat">Material No</th>
+                    <th class="row-3 row-des">Description</th>
+                    <th class="row-4 row-quan">Quantity</th>
+                    <th class="row-5 row-untpr">Unit Price</th>
+                    <th class="row-6 row-amt">Amount</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <apex:repeat value="{! Invoice.LineItems }" var="lineItem">
+                    <tr>
+                        <td>
+                            <apex:outputField value="{! lineItem.Record.Sequence__c }"/>
+                        </td>
+                        <td>
+                            <apex:outputField value="{! lineItem.Record.product__r.ProductCode }"/>
+                        </td>
+                        <td>
+                            <apex:outputField value="{! lineItem.Record.product__r.Name }"/>
+                        </td>
+                        <td class="row-4 row-quan">
+                            <apex:outputField value="{! lineItem.Record.Quantity__c }"/>
+                        </td>
+                        <td class="row-4 row-untpr">
+                            <apex:outputField value="{! lineItem.Record.Unit_Price__c }"/>
+                        </td>
+                        <td class="row-4 row-amt">
+                            $
+                            <apex:outputField value="{! lineItem.Record.Total_Price__c }"/>
+                        </td>
+                    </tr>
+                </apex:repeat>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!--Total $-->
+        <table class="totalpanel">
+
+            <tr>
+                <td class="text-align_right">Subtotal</td>
+                <td class="text-align_right"> ${!Invoice.Record.Invoice_Total__c}</td>
+            </tr>
+            <tr>
+                <td class="text-align_right">Tax</td>
+                <td class="text-align_right"> ${!Invoice.Record.Tax_Total__c}</td>
+            </tr>
+            <tr>
+                <td class="text-align_right text-format_bold">Grand Total</td>
+                <td class="text-align_right text-format_bold"> ${!Invoice.Record.Grand_Total__c}</td>
+            </tr>
+        </table>
+
+        <br style="line-height:5"/>
+
+        <div class="remit">
+            <apex:outputText escape="false" value="{!$Label.invoicePDFFooter}" rendered="true"/>
+           <!-- <apex:outputText> escape="false" value="{!Invoice.Record.Pay_Type__c=='CPRO'},"/> -->
+        </div>
+
+    </div>
+
+</apex:page>

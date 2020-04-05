@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Credit/Chargeback Reason --></label>
+    <name>CRT__c</name>
+    <picklistValues>
+        <masterLabel>CB1-Visa Chargeback</masterLabel>
+        <translation><!-- CB1-Visa Chargeback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CB2-MasterCard Chargeback</masterLabel>
+        <translation><!-- CB2-MasterCard Chargeback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CB3-AMEX Chargeback</masterLabel>
+        <translation><!-- CB3-AMEX Chargeback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CB4-Discover Chargeback</masterLabel>
+        <translation><!-- CB4-Discover Chargeback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBA-Blue Tarp Chargeback</masterLabel>
+        <translation><!-- CBA-Blue Tarp Chargeback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBB-Citibank Chargeback</masterLabel>
+        <translation><!-- CBB-Citibank Chargeback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBC-Blue Tarp Auth Rejects</masterLabel>
+        <translation><!-- CBC-Blue Tarp Auth Rejects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBD-Bankruptcy</masterLabel>
+        <translation><!-- CBD-Bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBE-RMS Collection Fees</masterLabel>
+        <translation><!-- CBE-RMS Collection Fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBF-Account/Extended/ Finance Fees</masterLabel>
+        <translation><!-- CBF-Account/Extended/ Finance Fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract</masterLabel>
+        <translation><!-- Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D1-Builder charged in Error</masterLabel>
+        <translation><!-- D1-Builder charged in Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D10-Partial discount</masterLabel>
+        <translation><!-- D10-Partial discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D11-Payment Sent to Merchant</masterLabel>
+        <translation><!-- D11-Payment Sent to Merchant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D12-Payment Sent to Sears</masterLabel>
+        <translation><!-- D12-Payment Sent to Sears --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D13-Pricing</masterLabel>
+        <translation><!-- D13-Pricing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D14-Pricing Dispute</masterLabel>
+        <translation><!-- D14-Pricing Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D15-Pricing Service</masterLabel>
+        <translation><!-- D15-Pricing Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D16-Proof of Delivery</masterLabel>
+        <translation><!-- D16-Proof of Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D17-Return material Authorization</masterLabel>
+        <translation><!-- D17-Return material Authorization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D18-Shipping &amp; Freight</masterLabel>
+        <translation><!-- D18-Shipping &amp; Freight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D19-Signature Request</masterLabel>
+        <translation><!-- D19-Signature Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D2-Damaged Mdse</masterLabel>
+        <translation><!-- D2-Damaged Mdse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D20-Small Balance Charge Off</masterLabel>
+        <translation><!-- D20-Small Balance Charge Off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D21-Tax</masterLabel>
+        <translation><!-- D21-Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D22-Unauthorized Buyer</masterLabel>
+        <translation><!-- D22-Unauthorized Buyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D23-Unauthorized Mdse Sold</masterLabel>
+        <translation><!-- D23-Unauthorized Mdse Sold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D24-Under Warranty</masterLabel>
+        <translation><!-- D24-Under Warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D25-Transcation Amt Differs</masterLabel>
+        <translation><!-- D25-Transcation Amt Differs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D26-Poor Service</masterLabel>
+        <translation><!-- D26-Poor Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D27-Unidentified Sale</masterLabel>
+        <translation><!-- D27-Unidentified Sale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D28-Require Auth</masterLabel>
+        <translation><!-- D28-Require Auth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D29-Customer Disputes Merchandise</masterLabel>
+        <translation><!-- D29-Customer Disputes Merchandise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D3-Did not receive Mdse</masterLabel>
+        <translation><!-- D3-Did not receive Mdse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D30-Declined Authorization</masterLabel>
+        <translation><!-- D30-Declined Authorization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D4-Duplicate Sales/Billing</masterLabel>
+        <translation><!-- D4-Duplicate Sales/Billing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D5-Incorrect Purchase Order#</masterLabel>
+        <translation><!-- D5-Incorrect Purchase Order# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D6-Invoice Detail Needed</masterLabel>
+        <translation><!-- D6-Invoice Detail Needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D7-Legacy</masterLabel>
+        <translation><!-- D7-Legacy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D8-Merchandise Cancelled</masterLabel>
+        <translation><!-- D8-Merchandise Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D9-No/Incorrect Purchase Order</masterLabel>
+        <translation><!-- D9-No/Incorrect Purchase Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invalid PO/CC Account #</masterLabel>
+        <translation><!-- Invalid PO/CC Account # --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual Entry</masterLabel>
+        <translation><!-- Manual Entry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Contract Acct</masterLabel>
+        <translation><!-- Non-Contract Acct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Point of Sale Back Charge</masterLabel>
+        <translation><!-- Point of Sale Back Charge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retainage</masterLabel>
+        <translation><!-- Retainage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Chargeback</masterLabel>
+        <translation><!-- Third Party Chargeback --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

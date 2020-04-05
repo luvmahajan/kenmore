@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parts_Compensation_Terms_Required</fullName>
+    <active>false</active>
+    <description>When Type = Renewal, Parts Compensation Terms is a required field</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(  StageName  , &quot;Renewal&quot;),  LEN(   Parts_Compensation_Terms__c  ) = 0)</errorConditionFormula>
+    <errorDisplayField>Parts_Compensation_Terms__c</errorDisplayField>
+    <errorMessage>Field required when Type = Renewal</errorMessage>
+</ValidationRule>

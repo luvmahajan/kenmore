@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scorecard_B9_through_O6__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(TEXT( B9_Client_engages_in_open_communication__c ))+
+VALUE(TEXT( B10_Client_innovative_open_to_change__c ))+
+VALUE(TEXT( O1_The_EBI_supports_our_solution__c ))+
+VALUE(TEXT( O2_Coach_identified_and_is_influential__c ))+
+VALUE(TEXT( O3_SHC_Uniquely_qualified_solution__c ))+
+VALUE(TEXT( O4_We_know_the_BI_s_Win_Results__c ))+
+VALUE(TEXT( O5_EBI_to_allocate_resources_for_the_SSO__c ))+
+VALUE(TEXT( O6_Validated_solution_image_close_date__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Scorecard B9 through O6</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

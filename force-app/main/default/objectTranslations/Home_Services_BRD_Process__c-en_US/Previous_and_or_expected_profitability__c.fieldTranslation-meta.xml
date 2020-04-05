@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- zDEL_Previous and/or expected profit --></label>
+    <name>Previous_and_or_expected_profitability__c</name>
+</CustomFieldTranslation>

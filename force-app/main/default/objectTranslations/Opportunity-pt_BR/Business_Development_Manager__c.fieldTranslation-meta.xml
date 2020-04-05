@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Development Manager --></label>
+    <name>Business_Development_Manager__c</name>
+    <picklistValues>
+        <masterLabel>Ben Mueller - 56358</masterLabel>
+        <translation><!-- Ben Mueller - 56358 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brian Hale - 51041</masterLabel>
+        <translation><!-- Brian Hale - 51041 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gecova (Jay) Doyal - 56357</masterLabel>
+        <translation><!-- Gecova (Jay) Doyal - 56357 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kevin Piotrowski - 51038</masterLabel>
+        <translation><!-- Kevin Piotrowski - 51038 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kevin Wilch - 50538</masterLabel>
+        <translation><!-- Kevin Wilch - 50538 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lindy Ely - 50716</masterLabel>
+        <translation><!-- Lindy Ely - 50716 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nick Bodmer - 55376</masterLabel>
+        <translation><!-- Nick Bodmer - 55376 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peggy D&#39;Alessandro - 50715</masterLabel>
+        <translation><!-- Peggy D&apos;Alessandro - 50715 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rod Pasion - 50713</masterLabel>
+        <translation><!-- Rod Pasion - 50713 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scott Ferguson - 54401</masterLabel>
+        <translation><!-- Scott Ferguson - 54401 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thyra Landis - 53406</masterLabel>
+        <translation><!-- Thyra Landis - 53406 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

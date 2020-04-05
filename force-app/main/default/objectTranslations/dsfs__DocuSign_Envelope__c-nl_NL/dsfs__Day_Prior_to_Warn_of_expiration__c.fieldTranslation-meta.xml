@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Geef aan hoeveel dagen voor de verloopdatum een e-mail moet worden verzonden aan ontvangers om aan te geven dat een deadline voor voltooiing aanstaande is. Dit bericht wordt alleen verzonden aan ontvangers die de transactie nog niet hebben voltooid.</help>
+    <label><!-- Warn of expiration in N day(s) prior --></label>
+    <name>dsfs__Day_Prior_to_Warn_of_expiration__c</name>
+</CustomFieldTranslation>

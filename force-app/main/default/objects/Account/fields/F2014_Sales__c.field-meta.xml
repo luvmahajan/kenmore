@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>F2014_Sales__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If the account is an existing customer, this field will represent SHC&#39;s total sales to this customer during fiscal 2014.</inlineHelpText>
+    <label>F2014 Sales</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

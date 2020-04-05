@@ -1,0 +1,151 @@
+<apex:page controller="ProductAccesorriesController" lightningStylesheets="true" action="{!redirectQLE}">
+    <apex:form >
+        <apex:outputPanel rendered="false">
+        RW_Message = {!RW_Message} <br/>
+        RW_Code = {!RW_Code} <br/>
+        </apex:outputPanel>
+        
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="top">
+            <apex:pageMessages id="showmsg"></apex:pageMessages> 
+                <apex:commandButton value="Save" action="{!actionSave}" reRender="showmsg" style="color:white;background:#0070d2;"/>
+                <apex:commandButton value="Cancel" action="{!gotoProducts}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+        <apex:repeat value="{!lstProductCode}" var="prod" id="product">
+        <apex:pageBlock title="{!prod}" >
+            <apex:outputText value="{!mapProductCodeName[prod]}" escape="false" style="font-weight: bold" ></apex:outputText>
+            <br/><br/>
+            <!--
+        <apex:pageBlock title="Parts" rendered="{!mapFeatureSelect[prod+'Parts']!=null}">-->
+        <apex:pageBlock title="Parts" rendered="{!mapFeatureRender[prod+'Parts']}"><!--
+            <apex:pageBlockTable value="{!mapOptionProduct[prod+'PartsSelect_All']}" var="psa"  rendered="{!mapOptionProduct[prod+'PartsSelect_All']!=null}">-->
+            <apex:pageBlockTable value="{!mapOptionProduct[prod+'PartsSelect_All']}" var="psa"  rendered="{!renFeatureSelect[prod+'PartsSelect_All']}">
+                <apex:column style="width:10%" headerValue="Select All">
+                    <apex:inputCheckbox value="{!psa.is_selected}"/>
+                </apex:column>
+                <apex:column value="{!psa.product_code}" headerValue="PID" style="width:25%" />
+                <apex:column value="{!psa.product_name}" headerValue="Name" style="width:25%" />
+                <apex:column value="{!psa.list_price}" style="width:25%" headerValue="List Price" />
+            </apex:pageBlockTable>
+            <!--
+            <apex:pageBlockTable value="{!mapOptionProduct[prod+'PartsSelect_One']}" var="pso"  rendered="{!renFeatureSelect[prod+'PartsSelect_One']}">-->
+            <apex:pageBlockTable value="{!mapOptionProduct[prod+'PartsSelect_One']}" var="pso"  rendered="{!renFeatureSelect[prod+'PartsSelect_One']}">
+                <apex:column style="width:10%" headerValue="Select One">
+                    <input type="radio" name="{!(prod+'PartsSelect_One')}" value="{!pso.sel_button}">
+                        <apex:actionSupport event="onclick" action="{!actionSelected}" rerender="Selected_PBS" >
+                            <apex:param name="prod" value="{!prod}"/>
+                            <apex:param name="prcd" value="{!pso.product_code}"/>
+                            <apex:param name="key" value="{!(prod+'PartsSelect_One')}"/>
+                        </apex:actionSupport>
+                    </input>
+                </apex:column>  
+                <apex:column value="{!pso.product_code}" headerValue="PID" style="width:25%" />
+                <apex:column value="{!pso.product_name}" headerValue="Name" style="width:25%" />
+                <apex:column value="{!pso.list_price}" style="width:25%" headerValue="List Price" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    <!--
+    <apex:pageBlock title="Services" rendered="{!mapFeatureSelect[prod+'Services']!=null}">-->
+    <apex:pageBlock title="Services" rendered="{!mapFeatureRender[prod+'Services']}">
+        <apex:outputPanel id="table_service">
+        <apex:pageBlockTable value="{!mapOptionProduct[prod+'ServicesSelect_All']}" var="ssa"  rendered="{!renFeatureSelect[prod+'ServicesSelect_All']}">
+            <apex:column style="width:10%" headerValue="Select All">
+                <apex:inputCheckbox value="{!ssa.is_selected}"/>
+            </apex:column>
+            <apex:column value="{!ssa.product_code}" headerValue="PID" style="width:25%" />
+            <apex:column value="{!ssa.product_name}" headerValue="Name" style="width:25%" />
+            <apex:column value="{!ssa.list_price}" style="width:25%" headerValue="List Price" />
+        </apex:pageBlockTable>
+        
+        <apex:pageBlockTable value="{!mapOptionProduct[prod+'ServicesSelect_One']}" var="sso"  rendered="{!renFeatureSelect[prod+'ServicesSelect_One']}">
+            <apex:column style="width:10%" headerValue="Select One">
+                <input type="radio" name="{!(prod+'ServicesSelect_One')}" value="{!sso.sel_button}">
+                <apex:actionSupport event="onclick" action="{!actionSelected}" rerender="Selected_PBS, install">
+                    <apex:param name="prod" value="{!prod}"/>
+                    <apex:param name="prcd" value="{!sso.product_code}"/>
+                    <apex:param name="key" value="{!(prod+'ServicesSelect_One')}"/>
+                </apex:actionSupport>
+            </input>
+        </apex:column>  
+        <apex:column value="{!sso.product_code}" headerValue="PID" style="width:25%" />
+        <apex:column value="{!sso.product_name}" headerValue="Name" style="width:25%" />
+        <apex:column value="{!sso.list_price}" style="width:25%" headerValue="List Price" />
+    </apex:pageBlockTable>
+            </apex:outputPanel>
+            
+    <apex:outputPanel id="install" >
+    <apex:outputPanel id="install1" rendered="{!maprenInstallation[prod]}">
+        <br/>
+        Service PID:
+        <br/>
+        <apex:selectList value="{!mapselInstallation[prod]}" size="1" >
+            <apex:selectoptions value="{!InstallationService}"/>
+            <apex:actionSupport event="onchange" rerender="install2" action="{!actionInstallation}">
+                    <apex:param name="prod" value="{!prod}"/>
+                    <apex:param name="key" value="{!(prod+'ServicesInstall')}"/>
+            </apex:actionSupport>
+        </apex:selectList>
+    </apex:outputPanel>
+        
+        <apex:outputPanel id="install2" rendered="{!maprenInstallation[prod]}" >
+        <apex:outputPanel rendered="{!maprenInstallprice[prod]}" id="install22">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$
+            {!mapInstallationPrice[prod+mapselInstallation[prod]]}
+            </apex:outputPanel>
+        </apex:outputPanel>
+    </apex:outputPanel>
+        <br/><br/><br/>
+    <!--
+    <apex:pageBlockTable value="{!mapOptionProduct1['ServicesInstall']}" var="si"  rendered="{!renFeatureSelect['ServicesInstall']}">
+        <apex:column style="width:10%" headerValue="Install">
+            <input type="radio" name="ServicesInstall" value="{!si.sel_button}">
+            <apex:actionSupport event="onclick" action="{!actionSelected}" rerender="Selected_PBS">
+                <apex:param name="prid" value="{!si.product_id}"/>
+                <apex:param name="feat" value="Services"/>
+                <apex:param name="select" value="Install"/>
+            </apex:actionSupport>
+        </input>
+    </apex:column>  
+    <apex:column value="{!si.product_code}" headerValue="PID" style="width:25%" />
+    <apex:column value="{!si.product_name}" headerValue="Name" style="width:25%" />
+    <apex:column value="{!si.list_price}" style="width:25%" headerValue="List Price" />
+</apex:pageBlockTable>
+-->
+<apex:pageBlockTable value="{!mapOptionProduct[prod+'ServicesOptional']}" var="so"  rendered="{!renFeatureSelect[prod+'ServicesOptional']}">
+    <apex:column style="width:10%" headerValue="Optional">
+        <apex:inputCheckbox value="{!so.is_selected}"/>
+    </apex:column>
+    <apex:column value="{!so.product_code}" headerValue="PID" style="width:25%" />
+    <apex:column value="{!so.product_name}" headerValue="Name" style="width:25%" />
+    <apex:column value="{!so.list_price}" style="width:25%" headerValue="List Price" />
+</apex:pageBlockTable>
+
+</apex:pageBlock>
+        
+        <apex:pageBlock title="Configuration" rendered="{!mapFeatureRender[prod+'Config']}">
+            <apex:pageBlockTable value="{!mapOptionProduct[prod+'ConfigSelect_One']}" var="cos"  rendered="{!renFeatureSelect[prod+'ConfigSelect_One']}">
+                <apex:column style="width:10%" headerValue="Select One">
+                    <input type="radio" name="{!(prod+'ConfigSelect_One')}" value="{!cos.sel_button}">
+                        <apex:actionSupport event="onclick" action="{!actionSelected}" rerender="Selected_PBS" >
+                            <apex:param name="prod" value="{!prod}"/>
+                            <apex:param name="prcd" value="{!cos.product_code}"/>
+                            <apex:param name="key" value="{!(prod+'ConfigSelect_One')}"/>
+                        </apex:actionSupport>
+                    </input>
+                </apex:column>  
+                <apex:column value="{!cos.product_code}" headerValue="PID" style="width:25%" />
+                <apex:column value="{!cos.product_name}" headerValue="Name" style="width:25%" />
+                <apex:column value="{!cos.list_price}" style="width:25%" headerValue="List Price" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+
+        
+        
+    </apex:pageBlock>
+</apex:repeat>
+
+</apex:form>    
+
+</apex:page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Grandparent_Accounts</fullName>
+    <active>true</active>
+    <description>Prevent parent account from also being a child account.</description>
+    <errorConditionFormula>AND( 
+NOT(ISBLANK(ParentId)), 
+NOT(ISBLANK(Parent.ParentId)))</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>The Parent record can not be a Child of another record.</errorMessage>
+</ValidationRule>

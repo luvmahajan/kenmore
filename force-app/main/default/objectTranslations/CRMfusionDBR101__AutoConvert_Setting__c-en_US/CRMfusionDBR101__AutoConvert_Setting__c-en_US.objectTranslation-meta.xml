@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage><!-- The Contact Owner must be set for Lead to Account Auto-Convert scenarios. --></errorMessage>
+        <name>CRMfusionDBR101__Contact_Owner_Null_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Conversion Target must be specified. --></errorMessage>
+        <name>CRMfusionDBR101__Conversion_Target_Not_Null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Opportunity Close Date cannot be null if Create Opportunity is selected. --></errorMessage>
+        <name>CRMfusionDBR101__Opportunity_Close_Date_Null_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Opportunity Name must be set if Create Opportunity is checked. --></errorMessage>
+        <name>CRMfusionDBR101__Opportunity_Name_Null_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Opportunity Stage must be set if Create Opportunity is checked. --></errorMessage>
+        <name>CRMfusionDBR101__Opportunity_Stage_Null_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Save as Task option is selected, you must provide a task due date. --></errorMessage>
+        <name>CRMfusionDBR101__Task_Due_Date_Null_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Save as Task option is selected, you must select a Task Owner. --></errorMessage>
+        <name>CRMfusionDBR101__Task_Owner_Null_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Save as Task option is selected, a Task Subject must be provided. --></errorMessage>
+        <name>CRMfusionDBR101__Task_Subject_Check_Null</name>
+    </validationRules>
+</CustomObjectTranslation>

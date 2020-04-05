@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cotação</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cotações</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Calculating Fields --></label>
+        <name>SBQQ__CalculatingFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Non-Current Quote Locked Fields --></label>
+        <name>SBQQ__NonCurrentQuoteLockedFields</name>
+    </fieldSets>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Amended Quote</layout>
+        <sections>
+            <label>Informação de endereço</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Change Details --></label>
+            <section>Change Details</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Recalculando</label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contract Quote</layout>
+        <sections>
+            <label>Informação de endereço</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Recalculando</label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número da cotação</nameFieldLabel>
+    <quickActions>
+        <label><!-- Amend Quote --></label>
+        <name>Amend_Quote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create New Contract --></label>
+        <name>CreateContract</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Amendment Quote --></label>
+        <name>Amendment_Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Commercial - Flow Business --></label>
+        <name>Commercial_Flow_Business</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Commercial - Contract --></label>
+        <name>Commercial_Project</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please mark the Quote as Primary --></errorMessage>
+        <name>A_new_quote_should_always_be_primary</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot skip a stage. --></errorMessage>
+        <name>Do_not_allow_skipping_of_stages_amendmen</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot skip a stage. --></errorMessage>
+        <name>Do_not_allow_skipping_of_stages_contract</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot skip a stage. --></errorMessage>
+        <name>Do_not_allow_skipping_of_stages_flow</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The status of quote once completed, cannot be changed --></errorMessage>
+        <name>Quote_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The End Date must come after the Start Date. --></errorMessage>
+        <name>SBQQ__End_Date_Before_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Segment Term End Date must fall between Quote Start Date and Quote End Date --></errorMessage>
+        <name>SBQQ__Invalid_First_Segment_Term_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The subscription term must be a positive number. --></errorMessage>
+        <name>SBQQ__Invalid_Subscription_Term</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Quote_Flow --></label>
+        <name>New_Quote_Flow</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Quote_Project --></label>
+        <name>New_Quote_Project</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CalculateQuote --></label>
+        <name>SBQQ__CalculateQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrderFromQuote --></label>
+        <name>SBQQ__CreateOrderFromQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditLines --></label>
+        <name>SBQQ__EditLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateDocument --></label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ImportLines --></label>
+        <name>SBQQ__ImportLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- IncludeDocument --></label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ModifyQuoteTerms --></label>
+        <name>SBQQ__ModifyQuoteTerms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewDocument --></label>
+        <name>SBQQ__PreviewDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshMultiplePrices --></label>
+        <name>SBQQ__RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshPrices --></label>
+        <name>SBQQ__RefreshPrices</name>
+    </webLinks>
+</CustomObjectTranslation>

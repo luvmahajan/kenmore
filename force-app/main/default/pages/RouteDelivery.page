@@ -1,0 +1,2 @@
+<apex:page Controller="RouteDeliveryController" lightningStylesheets="true" action="{!redirectQLE}">
+</apex:page>

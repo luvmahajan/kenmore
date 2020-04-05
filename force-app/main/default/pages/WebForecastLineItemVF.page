@@ -1,0 +1,177 @@
+<apex:page id="WebForecastLineItemVF"
+           standardController="Web_Forecast_Line_Item__c"
+           extensions="WebForecastLineItem_Controller"
+           docType="html-5.0">
+    
+    <apex:form >
+        <apex:pageBlock mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Save" rendered="{!mode == 'edit'}"/>
+                <apex:commandButton action="{!edit}" value="Edit" rendered="{!mode == 'view'}"/>
+                <apex:commandButton action="{!URLFOR($Action.Web_Forecast_Line_Item__c.Clone, Web_Forecast_Line_Item__c.id)}"
+                                    value="Clone" rendered="{!mode == 'view'}"/>
+                <apex:commandButton action="{!gotoHeader}" value="Cancel & BacktoHeader" immediate="true" rendered="{!mode == 'edit'}"
+                                    html-formnovalidate="formnovalidate"/>
+                <apex:commandButton action="{!gotoHeader}" value="Back to Header" rendered="{!mode == 'view'}"/>
+                
+            </apex:pageBlockButtons>
+            <apex:pageMessages />
+            <apex:pageBlockSection title="Line Item" columns="1">
+                
+                <!--Header-->
+                <apex:inputField value="{!Web_Forecast_Line_Item__c.Web_Forecast_Header__c}"
+                                 rendered="{!mode == 'edit'}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Web_Forecast_Header__c}"
+                                  rendered="{!mode == 'view'}"/>
+                
+                <!--Division__c-->
+                <apex:pageBlockSection columns="2">
+                    <apex:inputField value="{!Web_Forecast_Line_Item__c.Division__c}" required="true"
+                                     rendered="{!mode == 'edit'}"/>
+                    <apex:outputField value="{!Web_Forecast_Line_Item__c.Division__c}" rendered="{!mode == 'view'}"
+                                      style="display:inline-block"/>
+                    <apex:outputText style="font-style:italic"
+                                     value="{!$ObjectType.Web_Forecast_Line_Item__c.fields.Division__c.InlineHelpText}"/>
+                </apex:pageBlockSection>
+                
+                <!--Item__c-->
+                <apex:pageBlockSection columns="2">
+                    <apex:inputField type="text" value="{!Web_Forecast_Line_Item__c.Item__c}" required="true"
+                                     rendered="{!mode == 'edit'}"/>
+                    <apex:outputField value="{!Web_Forecast_Line_Item__c.Item__c}" rendered="{!mode == 'view'}"/>
+                    <apex:outputText style="font-style:italic"
+                                     value="{!$ObjectType.Web_Forecast_Line_Item__c.fields.Item__c.InlineHelpText}"/>
+                </apex:pageBlockSection>
+                
+                <!--Price__c-->
+                <apex:pageBlockSection columns="2">
+                    <apex:inputField type="text" value="{!Web_Forecast_Line_Item__c.Price__c}"
+                                     rendered="{!mode == 'edit'}"/>
+                    <apex:outputField value="{!Web_Forecast_Line_Item__c.Price__c}" rendered="{!mode == 'view'}"/>
+                    <apex:outputText style="font-style:italic"
+                                     value="{!$ObjectType.Web_Forecast_Line_Item__c.fields.Price__c.InlineHelpText}"/>
+                </apex:pageBlockSection>
+                
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.DDC_Item__c}" rendered="{!mode == 'view'}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.RRC_Item__c}" rendered="{!mode == 'view'}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Item_Dist_Type__c}"
+                                  rendered="{!mode == 'view'}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Item_Rank__c}" rendered="{!mode == 'view'}"/>
+                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Weekly Quantity Inputs" columns="1">
+                
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week1__c}" label="{!Weeklabels[0]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week14__c}" label="{!Weeklabels[13]}" />
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week2__c}" label="{!Weeklabels[1]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week15__c}" label="{!Weeklabels[14]}" />                       
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week3__c}" label="{!Weeklabels[2]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week16__c}" label="{!Weeklabels[15]}" />                       
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week4__c}" label="{!Weeklabels[3]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week17__c}" label="{!Weeklabels[16]}" />                       
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week5__c}" label="{!Weeklabels[4]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week18__c}" label="{!Weeklabels[17]}" />                       
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week6__c}" label="{!Weeklabels[5]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week19__c}" label="{!Weeklabels[18]}" />                       
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week7__c}" label="{!Weeklabels[6]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week20__c}" label="{!Weeklabels[19]}" />                       
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week8__c}" label="{!Weeklabels[7]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week21__c}" label="{!Weeklabels[20]}" />                       
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week9__c}" label="{!Weeklabels[8]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week22__c}" label="{!Weeklabels[21]}" />                       
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week10__c}" label="{!Weeklabels[9]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week23__c}" label="{!Weeklabels[22]}" />                       
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week11__c}" label="{!Weeklabels[10]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week24__c}" label="{!Weeklabels[23]}" />                       
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week12__c}" label="{!Weeklabels[11]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week25__c}" label="{!Weeklabels[24]}" />                       
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!mode == 'edit'}">
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week13__c}" label="{!Weeklabels[12]}" />
+                    <apex:inputField type="number" value="{!Web_Forecast_Line_Item__c.Qty_Week26__c}" label="{!Weeklabels[25]}" />                       
+                </apex:pageBlockSection>
+                
+               
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week1__c}" label="{!Weeklabels[0]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week1__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week2__c}" label="{!Weeklabels[1]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week2__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week3__c}" label="{!Weeklabels[2]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week3__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week4__c}" label="{!Weeklabels[3]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week4__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week5__c}" label="{!Weeklabels[4]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week5__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week6__c}" label="{!Weeklabels[5]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week6__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week7__c}" label="{!Weeklabels[6]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week7__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week8__c}" label="{!Weeklabels[7]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week8__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week9__c}" label="{!Weeklabels[8]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week9__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week10__c}" label="{!Weeklabels[9]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week10__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week11__c}" label="{!Weeklabels[10]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week11__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week12__c}" label="{!Weeklabels[11]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week12__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week13__c}" label="{!Weeklabels[12]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week13__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week14__c}" label="{!Weeklabels[13]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week14__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week15__c}" label="{!Weeklabels[14]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week15__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week16__c}" label="{!Weeklabels[15]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week16__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week17__c}" label="{!Weeklabels[16]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week17__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week18__c}" label="{!Weeklabels[17]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week18__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week19__c}" label="{!Weeklabels[18]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week19__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week20__c}" label="{!Weeklabels[19]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week20__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week21__c}" label="{!Weeklabels[20]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week21__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week22__c}" label="{!Weeklabels[21]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week22__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week23__c}" label="{!Weeklabels[22]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week23__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week24__c}" label="{!Weeklabels[23]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week24__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week25__c}" label="{!Weeklabels[24]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week25__c != null)}"/>
+                <apex:outputField value="{!Web_Forecast_Line_Item__c.Qty_Week26__c}" label="{!Weeklabels[25]}"
+                                  rendered="{!AND(mode == 'view',Web_Forecast_Line_Item__c.Qty_Week26__c != null)}"/>
+                
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

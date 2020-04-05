@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How this lead is routed depends on the pick list value selected from the website searscommercial.com --></help>
+    <label><!-- Contact Us Form --></label>
+    <name>Contact_Us_Form__c</name>
+    <picklistValues>
+        <masterLabel>I am ready to place an order</masterLabel>
+        <translation><!-- I am ready to place an order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I want to learn more</masterLabel>
+        <translation><!-- I want to learn more --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

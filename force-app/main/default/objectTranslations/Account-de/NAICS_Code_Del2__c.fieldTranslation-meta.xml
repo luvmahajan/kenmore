@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 2-digit to 8-digit code representing the market segment of the company with which you are doing business --></help>
+    <label><!-- NAICS Code Del 2 --></label>
+    <name>NAICS_Code_Del2__c</name>
+</CustomFieldTranslation>

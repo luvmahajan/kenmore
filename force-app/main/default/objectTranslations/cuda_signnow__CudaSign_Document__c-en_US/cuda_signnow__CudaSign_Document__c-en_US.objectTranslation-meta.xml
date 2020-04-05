@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <label><!-- SignNow_TempSetting_2_0 --></label>
+        <name>cuda_signnow__SignNow_TempSetting_2_0</name>
+    </webLinks>
+</CustomObjectTranslation>

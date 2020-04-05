@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How has the BI tied our value proposition back to addressing their needs? --></help>
+    <label><!-- BI understands &amp; aligns with value prop --></label>
+    <name>BI_understands_aligns_with_value_prop__c</name>
+</CustomFieldTranslation>

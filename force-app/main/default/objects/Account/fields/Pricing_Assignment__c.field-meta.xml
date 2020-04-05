@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricing_Assignment__c</fullName>
+    <description>Select which pricing to be standard on the Account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select what is standard pricing module for this Account.</inlineHelpText>
+    <label>Pricing Assignment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NPL 10</fullName>
+                <default>false</default>
+                <label>NPL 10</label>
+            </value>
+            <value>
+                <fullName>NPL 20</fullName>
+                <default>false</default>
+                <label>NPL 20</label>
+            </value>
+            <value>
+                <fullName>NPL 30</fullName>
+                <default>false</default>
+                <label>NPL 30</label>
+            </value>
+            <value>
+                <fullName>CPL (Custom Price List)</fullName>
+                <default>false</default>
+                <label>CPL (Custom Price List)</label>
+            </value>
+            <value>
+                <fullName>GPL (District Price List)</fullName>
+                <default>false</default>
+                <label>GPL (District Price List)</label>
+            </value>
+            <value>
+                <fullName>OB</fullName>
+                <default>false</default>
+                <label>OB</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

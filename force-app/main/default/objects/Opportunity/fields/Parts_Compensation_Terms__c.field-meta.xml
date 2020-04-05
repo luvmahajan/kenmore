@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parts_Compensation_Terms__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the existing parts compensation language in the contract</inlineHelpText>
+    <label>Parts Compensation Terms</label>
+    <length>32000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

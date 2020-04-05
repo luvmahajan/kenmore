@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAP_Account_Create_Request</fullName>
+    <availability>online</availability>
+    <description>This button forwards to the UpdateAccountDetails page, checks to make sure all SAP mapped fields are populated and no basic company info is missing.  Once all checks are made, sets the flag for SAP creation.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>SAP Account Create Request</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>{!$Site.BaseUrl}/apex/UpdateAccountDetails?id={!Account.Id}</url>
+</WebLink>

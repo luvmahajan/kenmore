@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zPayment_type__c</fullName>
+    <externalId>false</externalId>
+    <label>zFTC_Payment type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OEM In Warranty</fullName>
+                <default>false</default>
+                <label>OEM In Warranty</label>
+            </value>
+            <value>
+                <fullName>Client Service Contract</fullName>
+                <default>false</default>
+                <label>Client Service Contract</label>
+            </value>
+            <value>
+                <fullName>Client Paid Out of Warranty</fullName>
+                <default>false</default>
+                <label>Client Paid Out of Warranty</label>
+            </value>
+            <value>
+                <fullName>Customer Paid Out of Warranty</fullName>
+                <default>false</default>
+                <label>Customer Paid Out of Warranty</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

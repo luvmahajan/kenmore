@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>New Account Manager Emails to Customers and Prospects</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>New Account Manager</name>
+    <style>none</style>
+    <subject>Greetings from your Sears Commerical Account Manager</subject>
+    <textOnly>Your First and Last Name
+{!Account.OwnerEmail}
+Your Phone Number
+
+
+Best Regards,
+
+Your First and Last Name
+Sears Commercial
+
+
+
+
+Unsubscribe | Privacy Policy | SearsCommercial.com
+
+©2014 Sears Holdings Corporation, 3333 Beverly Rd. Hoffman Estates, IL 60179</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

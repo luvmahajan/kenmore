@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Account Manager --></label>
+    <name>Account_Manager__c</name>
+    <picklistValues>
+        <masterLabel>Albert Nelson - 01506</masterLabel>
+        <translation><!-- Albert Nelson - 01506 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Andrew Davis - 02201</masterLabel>
+        <translation><!-- Andrew Davis - 02201 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Andrew Schanuth - 02908</masterLabel>
+        <translation><!-- Andrew Schanuth - 02908 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bill Boney - 04609</masterLabel>
+        <translation><!-- Bill Boney - 04609 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bill Gillette - 06025</masterLabel>
+        <translation><!-- Bill Gillette - 06025 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brad Bodnar - 05038</masterLabel>
+        <translation><!-- Brad Bodnar - 05038 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brian Blodgett - 04707</masterLabel>
+        <translation><!-- Brian Blodgett - 04707 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carl Cramer - 04816</masterLabel>
+        <translation><!-- Carl Cramer - 04816 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charles Davis - 01206</masterLabel>
+        <translation><!-- Charles Davis - 01206 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chris Harris -  09014</masterLabel>
+        <translation><!-- Chris Harris -  09014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Christine Smith - 01712</masterLabel>
+        <translation><!-- Christine Smith - 01712 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Christopher Smith - 04607</masterLabel>
+        <translation><!-- Christopher Smith - 04607 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Curt Thrasher - 00209</masterLabel>
+        <translation><!-- Curt Thrasher - 00209 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>David Anderson - 00207</masterLabel>
+        <translation><!-- David Anderson - 00207 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>David Taylor - 07002</masterLabel>
+        <translation><!-- David Taylor - 07002 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deb Caton - 01901</masterLabel>
+        <translation><!-- Deb Caton - 01901 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deborah Beeman - 04803</masterLabel>
+        <translation><!-- Deborah Beeman - 04803 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Don Huff - 01411</masterLabel>
+        <translation><!-- Don Huff - 01411 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Don Stoeckel - 02222</masterLabel>
+        <translation><!-- Don Stoeckel - 02222 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Douglas Walker - 03011</masterLabel>
+        <translation><!-- Douglas Walker - 03011 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ed Abraham - 01936</masterLabel>
+        <translation><!-- Ed Abraham - 01936 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ed Osborne - 04809</masterLabel>
+        <translation><!-- Ed Osborne - 04809 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edward Breaux - 02602</masterLabel>
+        <translation><!-- Edward Breaux - 02602 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edward Novak III - 01603</masterLabel>
+        <translation><!-- Edward Novak III - 01603 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edward Ramos - 00203</masterLabel>
+        <translation><!-- Edward Ramos - 00203 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eric Johnson - 01110</masterLabel>
+        <translation><!-- Eric Johnson - 01110 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eric Strait - 09018</masterLabel>
+        <translation><!-- Eric Strait - 09018 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erik Baez - 01601</masterLabel>
+        <translation><!-- Erik Baez - 01601 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Francisco Pérez - XXX</masterLabel>
+        <translation><!-- Francisco Pérez - XXX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fred Matos - 02011</masterLabel>
+        <translation><!-- Fred Matos - 02011 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fredrickson, Victor - 03863</masterLabel>
+        <translation><!-- Fredrickson, Victor - 03863 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gail Cairnie - 03845</masterLabel>
+        <translation><!-- Gail Cairnie - 03845 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gary Coley - 00050</masterLabel>
+        <translation><!-- Gary Coley - 00050 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>George Spady - 00055</masterLabel>
+        <translation><!-- George Spady - 00055 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gerry Gargaro - 02704</masterLabel>
+        <translation><!-- Gerry Gargaro - 02704 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greg Shaw - 05039</masterLabel>
+        <translation><!-- Greg Shaw - 05039 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guy Stricker - 01709</masterLabel>
+        <translation><!-- Guy Stricker - 01709 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harris Fujita - 02311</masterLabel>
+        <translation><!-- Harris Fujita - 02311 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ignacio Socorro - 02016</masterLabel>
+        <translation><!-- Ignacio Socorro - 02016 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>James Maggio - 03705</masterLabel>
+        <translation><!-- James Maggio - 03705 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jay Levine - 02309</masterLabel>
+        <translation><!-- Jay Levine - 02309 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jeffrey Turner - 04806</masterLabel>
+        <translation><!-- Jeffrey Turner - 04806 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jennifer Breunig - 03840</masterLabel>
+        <translation><!-- Jennifer Breunig - 03840 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jennifer Brown - 02813</masterLabel>
+        <translation><!-- Jennifer Brown - 02813 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joe Swafford - 02102</masterLabel>
+        <translation><!-- Joe Swafford - 02102 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>John Martinez - 03801</masterLabel>
+        <translation><!-- John Martinez - 03801 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>John Washington - 04408</masterLabel>
+        <translation><!-- John Washington - 04408 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joseph Rosenblum - 01608</masterLabel>
+        <translation><!-- Joseph Rosenblum - 01608 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kathy Loftus - 03709</masterLabel>
+        <translation><!-- Kathy Loftus - 03709 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kent Redmond - 05041</masterLabel>
+        <translation><!-- Kent Redmond - 05041 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kenton Evans - 01129</masterLabel>
+        <translation><!-- Kenton Evans - 01129 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kevin McGinnis - 03832</masterLabel>
+        <translation><!-- Kevin McGinnis - 03832 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kristin Wieczorkowski - 07029</masterLabel>
+        <translation><!-- Kristin Wieczorkowski - 07029 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kurt Habenicht - 07021</masterLabel>
+        <translation><!-- Kurt Habenicht - 07021 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kurt Hinchman - 07021</masterLabel>
+        <translation><!-- Kurt Hinchman - 07021 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lorri Tomasino - 07046</masterLabel>
+        <translation><!-- Lorri Tomasino - 07046 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mark Christofaro - 01910</masterLabel>
+        <translation><!-- Mark Christofaro - 01910 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mark Mitchell - 01716</masterLabel>
+        <translation><!-- Mark Mitchell - 01716 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Martin Waite - 07001</masterLabel>
+        <translation><!-- Martin Waite - 07001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mary Conway - 02703</masterLabel>
+        <translation><!-- Mary Conway - 02703 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Melinda Moody - 05029</masterLabel>
+        <translation><!-- Melinda Moody - 05029 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Michael Armstrong - 01439</masterLabel>
+        <translation><!-- Michael Armstrong - 01439 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Michael Gersztyn -  00313</masterLabel>
+        <translation><!-- Michael Gersztyn -  00313 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Michael Surina - 01199</masterLabel>
+        <translation><!-- Michael Surina - 01199 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mike Simones - 02710</masterLabel>
+        <translation><!-- Mike Simones - 02710 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paula Matthews - 03310</masterLabel>
+        <translation><!-- Paula Matthews - 03310 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ralph Cole - 04617</masterLabel>
+        <translation><!-- Ralph Cole - 04617 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Randy Nehl - 01431</masterLabel>
+        <translation><!-- Randy Nehl - 01431 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Randy Rust - 01706</masterLabel>
+        <translation><!-- Randy Rust - 01706 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raymond Phillips - 02502</masterLabel>
+        <translation><!-- Raymond Phillips - 02502 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rick Kops - 02517</masterLabel>
+        <translation><!-- Rick Kops - 02517 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Robert Elson - 00057</masterLabel>
+        <translation><!-- Robert Elson - 00057 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Robert Wiggins - 07049</masterLabel>
+        <translation><!-- Robert Wiggins - 07049 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rod Simsiman - 02303</masterLabel>
+        <translation><!-- Rod Simsiman - 02303 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rudy Becerra - 04701</masterLabel>
+        <translation><!-- Rudy Becerra - 04701 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ryan Myers - 02806</masterLabel>
+        <translation><!-- Ryan Myers - 02806 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sally Karpen - 04280</masterLabel>
+        <translation><!-- Sally Karpen - 04280 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sara Antes - 00047</masterLabel>
+        <translation><!-- Sara Antes - 00047 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scott Scheyer - 01616</masterLabel>
+        <translation><!-- Scott Scheyer - 01616 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steve Avakian - 04712</masterLabel>
+        <translation><!-- Steve Avakian - 04712 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steve Kramer - 03601</masterLabel>
+        <translation><!-- Steve Kramer - 03601 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steve Ricci - 02223</masterLabel>
+        <translation><!-- Steve Ricci - 02223 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steven Sisler - 07064</masterLabel>
+        <translation><!-- Steven Sisler - 07064 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thaddeus Lazorka - 02520</masterLabel>
+        <translation><!-- Thaddeus Lazorka - 02520 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tim (George) Frye - 04409</masterLabel>
+        <translation><!-- Tim (George) Frye - 04409 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tim Bodnar - 02421</masterLabel>
+        <translation><!-- Tim Bodnar - 02421 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Timothy McClintic - 02503</masterLabel>
+        <translation><!-- Timothy McClintic - 02503 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Timothy McCurry - 04615</masterLabel>
+        <translation><!-- Timothy McCurry - 04615 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tom Richardson - 05042</masterLabel>
+        <translation><!-- Tom Richardson - 05042 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tony Karlovich - 01107</masterLabel>
+        <translation><!-- Tony Karlovich - 01107 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>William Hunter - 00306</masterLabel>
+        <translation><!-- William Hunter - 00306 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zachery Hopson - 06016</masterLabel>
+        <translation><!-- Zachery Hopson - 06016 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

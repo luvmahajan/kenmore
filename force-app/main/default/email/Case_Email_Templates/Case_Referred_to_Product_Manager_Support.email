@@ -1,0 +1,23 @@
+Hi {!Contact.FirstName}, 
+
+The Case you created was submitted to Inventory Replenishment with the following information:  
+
+Item #: {!Case.Item__c}
+Quantity: {!Case.Quantity_Requested__c}
+For delivery: {!Case.Estimated_Delivery_Date__c}
+To be delivered to (zip): {!Case.Delivery_Zip_Code__c}
+Subject: {!Case.Subject}
+Message: {!Case.Description}
+
+This is related to the following:
+Account: {!Case.Account}
+Opportunity: {!Case.Opportunity__c}
+Sales Order #: {!Case.Sales_Order__c}
+
+This is a case was not submitted to the appropriate Team.  I will change the case owner to Product Manager Support for your convience, but going forward please make sure all cases are submitted to the appropriate party.  
+
+The Product Manager Support team will respond shortly with an update to your case.
+
+
+Thank you,
+{!User.FirstName}

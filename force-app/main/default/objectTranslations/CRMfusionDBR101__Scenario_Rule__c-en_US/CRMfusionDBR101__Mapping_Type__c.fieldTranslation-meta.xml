@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Mapping Type --></label>
+    <name>CRMfusionDBR101__Mapping_Type__c</name>
+    <picklistValues>
+        <masterLabel>Acronym</masterLabel>
+        <translation><!-- Acronym --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acronym (Cleaned Name)</masterLabel>
+        <translation><!-- Acronym (Cleaned Name) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clean Account Name</masterLabel>
+        <translation><!-- Clean Account Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Country Match</masterLabel>
+        <translation><!-- Country Match --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domain</masterLabel>
+        <translation><!-- Domain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exact</masterLabel>
+        <translation><!-- Exact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Name</masterLabel>
+        <translation><!-- First Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First XX Letters</masterLabel>
+        <translation><!-- First XX Letters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First XX Words</masterLabel>
+        <translation><!-- First XX Words --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Numeric</masterLabel>
+        <translation><!-- Numeric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regular Expression</masterLabel>
+        <translation><!-- Regular Expression --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regular Expression Y/N</masterLabel>
+        <translation><!-- Regular Expression Y/N --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relaxed Domain</masterLabel>
+        <translation><!-- Relaxed Domain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relaxed NA Phone Match</masterLabel>
+        <translation><!-- Relaxed NA Phone Match --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relaxed Street Address Match</masterLabel>
+        <translation><!-- Relaxed Street Address Match --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce.com ID Match</masterLabel>
+        <translation><!-- Salesforce.com ID Match --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State Match</masterLabel>
+        <translation><!-- State Match --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Address Match</masterLabel>
+        <translation><!-- Street Address Match --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zip 5 and 9</masterLabel>
+        <translation><!-- Zip 5 and 9 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Who are your selling partners? Operations? Credit? Home Services? Innovel? Executive Sponsor? --></help>
+    <label><!-- Right SC team aligned in opportunity --></label>
+    <name>Right_SC_team_aligned_in_opportunity__c</name>
+</CustomFieldTranslation>

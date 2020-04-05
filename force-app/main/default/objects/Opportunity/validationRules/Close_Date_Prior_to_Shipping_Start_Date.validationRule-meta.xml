@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Date_Prior_to_Shipping_Start_Date</fullName>
+    <active>false</active>
+    <description>Close Date must be prior to shipping start date</description>
+    <errorConditionFormula>AND(IF(ISCHANGED(Automation_Control__c),
+IF( CONTAINS(Automation_Control_Type__c, &quot;Validation&quot;),FALSE,TRUE),TRUE),
+$RecordType.Name = &quot;Commercial - Project&quot;,
+OR(
+ISNEW(),
+ISCHANGED(CloseDate),
+ISCHANGED(Shipping_Start_Date__c)), 
+CloseDate &gt; Shipping_Start_Date__c)</errorConditionFormula>
+    <errorDisplayField>Shipping_Start_Date__c</errorDisplayField>
+    <errorMessage>Shipping Start Date must be after Close Date</errorMessage>
+</ValidationRule>

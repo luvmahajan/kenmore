@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Contract_will_Expire_in_60_Days</fullName>
+        <description>Contract will Expire in 60 Days</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>melanie.leyendecker@searshc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BRD_BCD_Process_Templates/Contract_Expiration_Date_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>BRD_Approval_Status_Update_to_Compliance</fullName>
+        <description>Update the Approval Status field to Pending Compliance Approval</description>
+        <field>BRD_Stage_Details__c</field>
+        <literalValue>Pending Compliance Approval</literalValue>
+        <name>BRD Approval Status Update to Compliance</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>BRD_Approval_Status_to_Support</fullName>
+        <description>When Support Teams are select Approval Status = Pending Support Approval</description>
+        <field>BRD_Stage_Details__c</field>
+        <literalValue>Pending Support Approval</literalValue>
+        <name>BRD Approval Status to Support</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>BRD_Stage_Pre_Distribution</fullName>
+        <field>BRD_Stage__c</field>
+        <literalValue>Pre Distribution</literalValue>
+        <name>BRD Stage - Pre Distribution</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Business_Integration_Manager</fullName>
+        <field>Business_Integration_Manager_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 3, 
+6, BRD_Support_Distributed_Date__c + 4, 
+5, BRD_Support_Distributed_Date__c + 5, 
+4, BRD_Support_Distributed_Date__c + 5, 
+3, BRD_Support_Distributed_Date__c + 5, 
+2, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 3, 
+DATE(9999,01,01))</formula>
+        <name>Business Integration Manager</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CCN_Due_Date_pre_populate</fullName>
+        <field>CCN_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7),
+0, BRD_Support_Distributed_Date__c + 3,
+6, BRD_Support_Distributed_Date__c + 4,
+5, BRD_Support_Distributed_Date__c + 5,
+4, BRD_Support_Distributed_Date__c + 5,
+3, BRD_Support_Distributed_Date__c + 5,
+2, BRD_Support_Distributed_Date__c + 3,
+1, BRD_Support_Distributed_Date__c + 3,
+DATE(9999,01,01))</formula>
+        <name>CCN Due Date pre-populate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Carry_In_Due_Date</fullName>
+        <description>Due Date prepopulates to next Thursday</description>
+        <field>Carry_in_Due_Date__c</field>
+        <formula>CASE( 
+MOD(BRD_Support_Distributed_Date__c - DATE(1900, 1, 8), 7), 
+3, BRD_Support_Distributed_Date__c + 7, 
+4, BRD_Support_Distributed_Date__c + 6, 
+5, BRD_Support_Distributed_Date__c + 5, 
+6, BRD_Support_Distributed_Date__c + 4, 
+0, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 2, 
+2, BRD_Support_Distributed_Date__c + 1, 
+DATE(9999,01,01))</formula>
+        <name>Carry-In Due Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Channel_Manager</fullName>
+        <description>Channel Manager Due Date following Thursday</description>
+        <field>Channel_Manager_Due_Date__c</field>
+        <formula>CASE( 
+MOD(BRD_Support_Distributed_Date__c - DATE(1900, 1, 8), 7), 
+3, BRD_Support_Distributed_Date__c + 7, 
+4, BRD_Support_Distributed_Date__c + 6, 
+5, BRD_Support_Distributed_Date__c + 5, 
+6, BRD_Support_Distributed_Date__c + 4, 
+0, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 2, 
+2, BRD_Support_Distributed_Date__c + 1, 
+DATE(9999,01,01))</formula>
+        <name>Channel Manager</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Channel_Managers_Today_3</fullName>
+        <field>Channel_Manager_Due_Date__c</field>
+        <formula>Today() + 3</formula>
+        <name>Channel Managers =  Today + 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Communications_Today_3</fullName>
+        <field>Communications_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 3, 
+6, BRD_Support_Distributed_Date__c + 4, 
+5, BRD_Support_Distributed_Date__c + 5, 
+4, BRD_Support_Distributed_Date__c + 5, 
+3, BRD_Support_Distributed_Date__c + 5, 
+2, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 3, 
+DATE(9999,01,01))</formula>
+        <name>Communications = Today + 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Compliance_Today_3</fullName>
+        <field>Compliance_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 3, 
+6, BRD_Support_Distributed_Date__c + 4, 
+5, BRD_Support_Distributed_Date__c + 5, 
+4, BRD_Support_Distributed_Date__c + 5, 
+3, BRD_Support_Distributed_Date__c + 5, 
+2, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 3, 
+DATE(9999,01,01))</formula>
+        <name>Compliance = Today + 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Delivery_Install_Today_3</fullName>
+        <field>Delivery_Install_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 3, 
+6, BRD_Support_Distributed_Date__c + 4, 
+5, BRD_Support_Distributed_Date__c + 5, 
+4, BRD_Support_Distributed_Date__c + 5, 
+3, BRD_Support_Distributed_Date__c + 5, 
+2, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 3, 
+DATE(9999,01,01))</formula>
+        <name>Delivery/Install = Today + 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Engineering_Today_3</fullName>
+        <field>Engineering_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 3, 
+6, BRD_Support_Distributed_Date__c + 4, 
+5, BRD_Support_Distributed_Date__c + 5, 
+4, BRD_Support_Distributed_Date__c + 5, 
+3, BRD_Support_Distributed_Date__c + 5, 
+2, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 3, 
+DATE(9999,01,01))</formula>
+        <name>Engineering = Today +3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Finance_Today_5</fullName>
+        <field>Finance_Due_Date__c</field>
+        <formula>CASE( MOD ( BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 5, 
+6, BRD_Support_Distributed_Date__c + 6, 
+5, BRD_Support_Distributed_Date__c + 7, 
+4, BRD_Support_Distributed_Date__c + 7, 
+3, BRD_Support_Distributed_Date__c + 7, 
+2, BRD_Support_Distributed_Date__c + 7, 
+1, BRD_Support_Distributed_Date__c + 7, 
+DATE(9999,01,01))</formula>
+        <name>Finance = Today + 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>In_home_Due_Date</fullName>
+        <field>In_home_Due_Date__c</field>
+        <formula>CASE( 
+MOD(BRD_Support_Distributed_Date__c - DATE(1900, 1, 8), 7), 
+3, BRD_Support_Distributed_Date__c + 7, 
+4, BRD_Support_Distributed_Date__c + 6, 
+5, BRD_Support_Distributed_Date__c + 5, 
+6, BRD_Support_Distributed_Date__c + 4, 
+0, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 2, 
+2, BRD_Support_Distributed_Date__c + 1, 
+DATE(9999,01,01))</formula>
+        <name>In-home Due Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Leadership_Team_Today_3</fullName>
+        <field>Leadership_Team_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 3, 
+6, BRD_Support_Distributed_Date__c + 4, 
+5, BRD_Support_Distributed_Date__c + 5, 
+4, BRD_Support_Distributed_Date__c + 5, 
+3, BRD_Support_Distributed_Date__c + 5, 
+2, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 3, 
+DATE(9999,01,01))</formula>
+        <name>Leadership Team = Today + 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Today_3</fullName>
+        <field>Legal_Licensing_Due_Date__c</field>
+        <formula>Today() + 3</formula>
+        <name>Legal = Today + 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Marketing_Today_3</fullName>
+        <field>Marketing_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 3, 
+6, BRD_Support_Distributed_Date__c + 4, 
+5, BRD_Support_Distributed_Date__c + 5, 
+4, BRD_Support_Distributed_Date__c + 5, 
+3, BRD_Support_Distributed_Date__c + 5, 
+2, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 3, 
+DATE(9999,01,01))</formula>
+        <name>Marketing = Today + 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NCC_Due_Date</fullName>
+        <field>NCC_Due_Date__c</field>
+        <formula>CASE(
+MOD(BRD_Support_Distributed_Date__c  - DATE(1900, 1, 8), 7),
+3, BRD_Support_Distributed_Date__c + 7,
+4, BRD_Support_Distributed_Date__c + 6,
+5, BRD_Support_Distributed_Date__c + 5,
+6, BRD_Support_Distributed_Date__c + 4,
+0, BRD_Support_Distributed_Date__c + 3,
+1, BRD_Support_Distributed_Date__c + 2,
+2, BRD_Support_Distributed_Date__c + 1,
+DATE(9999,01,01))</formula>
+        <name>NCC Due Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NCC_Today_3</fullName>
+        <field>NCC_Due_Date__c</field>
+        <formula>Today() + 3</formula>
+        <name>NCC Today + 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Parts_Today_3</fullName>
+        <field>Parts_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 3, 
+6, BRD_Support_Distributed_Date__c + 4, 
+5, BRD_Support_Distributed_Date__c + 5, 
+4, BRD_Support_Distributed_Date__c + 5, 
+3, BRD_Support_Distributed_Date__c + 5, 
+2, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 3, 
+DATE(9999,01,01))</formula>
+        <name>Parts = Today +3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Price_Floor_Due_Date_pre_populate</fullName>
+        <field>Pricing_Due_Date__c</field>
+        <formula>Today() + 3</formula>
+        <name>Price Floor Due Date pre-populate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pricing_Today_3</fullName>
+        <field>NCC_Due_Date__c</field>
+        <formula>Today() + 3</formula>
+        <name>Pricing = Today +3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pricing_Today_4</fullName>
+        <field>Pricing_Due_Date__c</field>
+        <formula>CASE( MOD ( BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7),
+0, BRD_Support_Distributed_Date__c + 4,
+6, BRD_Support_Distributed_Date__c + 5,
+5, BRD_Support_Distributed_Date__c + 6,
+4, BRD_Support_Distributed_Date__c + 6,
+3, BRD_Support_Distributed_Date__c + 6,
+2, BRD_Support_Distributed_Date__c + 6,
+1, BRD_Support_Distributed_Date__c + 4,
+DATE(9999,01,01))</formula>
+        <name>Pricing = Today +4</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Product_Manager_Today_3</fullName>
+        <field>Program_Manager_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 3, 
+6, BRD_Support_Distributed_Date__c + 4, 
+5, BRD_Support_Distributed_Date__c + 5, 
+4, BRD_Support_Distributed_Date__c + 5, 
+3, BRD_Support_Distributed_Date__c + 5, 
+2, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 3, 
+DATE(9999,01,01))</formula>
+        <name>Product Manager = Today + 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>STAC_Today_3</fullName>
+        <field>STAC_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 3, 
+6, BRD_Support_Distributed_Date__c + 4, 
+5, BRD_Support_Distributed_Date__c + 5, 
+4, BRD_Support_Distributed_Date__c + 5, 
+3, BRD_Support_Distributed_Date__c + 5, 
+2, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 3, 
+DATE(9999,01,01))</formula>
+        <name>STAC = Today + 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Contract_Today_3</fullName>
+        <field>Service_Contract_Due_Date__c</field>
+        <formula>CASE( MOD (BRD_Support_Distributed_Date__c - DATE(1900, 1, 7), 7), 
+0, BRD_Support_Distributed_Date__c + 3, 
+6, BRD_Support_Distributed_Date__c + 4, 
+5, BRD_Support_Distributed_Date__c + 5, 
+4, BRD_Support_Distributed_Date__c + 5, 
+3, BRD_Support_Distributed_Date__c + 5, 
+2, BRD_Support_Distributed_Date__c + 3, 
+1, BRD_Support_Distributed_Date__c + 3, 
+DATE(9999,01,01))</formula>
+        <name>Service Contract = Today + 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_Details_BRD_Approval</fullName>
+        <field>BRD_Stage__c</field>
+        <literalValue>BRD Approval</literalValue>
+        <name>Stage Details = BRD Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_Details_Closed</fullName>
+        <field>BRD_Stage__c</field>
+        <literalValue>Closed</literalValue>
+        <name>Stage Details= Closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_Details_Get_Contract</fullName>
+        <field>BRD_Stage__c</field>
+        <literalValue>Get Contract</literalValue>
+        <name>Stage Details= Get Contract</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_Details_Launch</fullName>
+        <field>BRD_Stage__c</field>
+        <literalValue>Launch</literalValue>
+        <name>Stage Details = Launch</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_Details_Post_Launch_Audit</fullName>
+        <field>BRD_Stage__c</field>
+        <literalValue>Post Launch Audit</literalValue>
+        <name>Stage Details= Post Launch Audit</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_Details_Setup_Testing</fullName>
+        <field>BRD_Stage__c</field>
+        <literalValue>Setup &amp; Testing</literalValue>
+        <name>Stage Details = Setup &amp; Testing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Field_Ops_Due_Date</fullName>
+        <description>Update Date when BRD Distributed = TODAY</description>
+        <field>Delivery_Install_Due_Date__c</field>
+        <formula>Today() + 3</formula>
+        <name>Update Field Ops Due Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>BRD Checklist - Contract Expires in 60 Days - Email</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Approval_Process__c.Contract_Expiration_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>BRD Contract Expiration date is in 60 days</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Contract_will_Expire_in_60_Days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Approval_Process__c.Contract_Expiration_Date__c</offsetFromField>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>BRD Checklist - Due Date Pre-Populates %233 - Update</fullName>
+        <actions>
+            <name>Carry_In_Due_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Channel_Manager</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>In_home_Due_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>NCC_Due_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Approval_Process__c.BRD_Support_Distributed_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>NCC, In-home,Carry-in, Channel Manager Due Date is Next Thursday after Distribution</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD Checklist - Due Date pre-populate %232 - Update</fullName>
+        <actions>
+            <name>Business_Integration_Manager</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Finance_Today_5</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Leadership_Team_Today_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Pricing_Today_4</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Product_Manager_Today_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Approval_Process__c.BRD_Support_Distributed_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Finance, Business Integratioin Manager, Product Manager, Leadership Team, Pricing dates prepopulate</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD Checklist - Due Date pre-populates - Update</fullName>
+        <actions>
+            <name>CCN_Due_Date_pre_populate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Communications_Today_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Compliance_Today_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Delivery_Install_Today_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Engineering_Today_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Parts_Today_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>STAC_Today_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Service_Contract_Today_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Approval_Process__c.BRD_Support_Distributed_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Due Date pre-populates for CCN, Parts, Delivery/Install, STAC, Engeneering, Compliance, Service Contract, Communications.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD Checklist - Stage Details %3D BRD Approval - Update</fullName>
+        <actions>
+            <name>Stage_Details_BRD_Approval</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Approval_Process__c.BRD_Stage_Details__c</field>
+            <operation>equals</operation>
+            <value>BRD Distributed,Waiting on Delinquent Approval,BRD Approval - Additional question for AM,Solution Development</value>
+        </criteriaItems>
+        <description>When BRD Stage Details = BRD Distributed, BRD Approval - Additional question for AM, Solution Development, Waiting on Delinquent Approval ; then Stage is updated to BRD Approval</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD Checklist - Stage Details %3D Launch - Update</fullName>
+        <actions>
+            <name>Stage_Details_Launch</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Approval_Process__c.BRD_Stage_Details__c</field>
+            <operation>equals</operation>
+            <value>Waiting on Compliance,Waiting for Launch</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD Checklist - Stage Details %3D Setup %26 Testing - Update</fullName>
+        <actions>
+            <name>Stage_Details_Setup_Testing</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Approval_Process__c.BRD_Stage_Details__c</field>
+            <operation>equals</operation>
+            <value>Setup,Contract Approved,Testing</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD Checklist - Stage Details%3D Get Contract - Update</fullName>
+        <actions>
+            <name>Stage_Details_Get_Contract</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Approval_Process__c.BRD_Stage_Details__c</field>
+            <operation>equals</operation>
+            <value>Get Contract</value>
+        </criteriaItems>
+        <description>When Stage Details = Get Contract; Approval Stage = Get Contract</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD Checklist - Stage Details%3D Post Launch Audit - Update</fullName>
+        <actions>
+            <name>Stage_Details_Post_Launch_Audit</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Approval_Process__c.BRD_Stage_Details__c</field>
+            <operation>equals</operation>
+            <value>Post Launch Audit,Transferred to CM</value>
+        </criteriaItems>
+        <description>When Stage Details = Post Launch Audit or Transferred to CM then Approval Stage = Post Launch Audit</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>BRD Checklist - Stage Details%3DClosed - Update</fullName>
+        <actions>
+            <name>Stage_Details_Closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Approval_Process__c.BRD_Stage_Details__c</field>
+            <operation>equals</operation>
+            <value>Cancelled / Closed Lost,BRD Rejected</value>
+        </criteriaItems>
+        <description>When Stage Details = Cancelled / Closed Lost, BRD Rejected then Stage = Closed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Stage Details %3D Pre Distribution</fullName>
+        <actions>
+            <name>BRD_Stage_Pre_Distribution</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Approval_Process__c.BRD_Stage_Details__c</field>
+            <operation>equals</operation>
+            <value>Pre Dist - Additional Question for AM,Submitted</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

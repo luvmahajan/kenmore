@@ -1,0 +1,8 @@
+Dear {!Receiving_User.FirstName},
+
+The status of {!Opportunity.Name} opportunity has been updated. To view the details of this opportunity please click the link below.
+
+{!Opportunity.Link}
+
+
+Thank you.

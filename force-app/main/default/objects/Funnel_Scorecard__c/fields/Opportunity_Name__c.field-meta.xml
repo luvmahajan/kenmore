@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Opportunity_Name</label>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Funnel Scorecards</relationshipLabel>
+    <relationshipName>Funnel_Scorecards</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

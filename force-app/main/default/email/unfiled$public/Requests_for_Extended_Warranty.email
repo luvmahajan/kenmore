@@ -1,0 +1,238 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p style=""></p><p class="MsoNormal">Hello, <o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Listed below are the details for the extended warranty
+request.<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="margin-left:.25in;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Customer #<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;{!Account.SCO_Account_ID__c}</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Customer Name<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;{!Case.Account}</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Customer phone<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;{!Contact.Phone}</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Customer email address<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;{!Contact.Email}</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Selling unit #<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:5">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Selling associate #<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:6">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">MPA or RPA<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:7">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">PA purchase date<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:8">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">PA expiration date<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:9">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Merchandise item(s) covered<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:10">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Shop or Home service location<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:11">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">PA price<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:12">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Tax<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:13">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Total paid<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:14">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Payment method: CASH<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:15">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Expiration date<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:16;mso-yfti-lastrow:yes">
+  <td width="240" valign="top" style="width:179.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal">Do you want us to schedule service?<o:p></o:p></p>
+  </td>
+  <td width="240" valign="top" style="width:179.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p><p class="MsoNormal"><o:p>{!Case.Thread_Id}</o:p></p><br><p></p>]]></td>
+</tr>
+</table>

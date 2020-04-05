@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Assign_Account_Information</name>
+        <label>Assign Account Information</label>
+        <locationX>420</locationX>
+        <locationY>292</locationY>
+        <assignmentItems>
+            <assignToReference>var_NewAcctName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Full_Legal_Account_Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_NewAcctCity</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>New_City</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_NewAcctState</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>New_State</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_NewAcctPostalCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>New_Acct_PostalCode</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_NewAcctWebsite</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>New_Website</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_AssocParent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Does_this_Account_belong_to_a_Parent_Account</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_ParentAcct</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Is_this_a_Parent_Account</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_NewAcctSector</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_NewAcctPhoneNumber</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>New_PhoneNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_NewAcctProject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Is_this_a_Project</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_NewAcctPotentialSalesVolume</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Potential_Sales_Volume</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_NewAcctLeadSource</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Lead_Source</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Look_for_Account_in_System</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>A</name>
+        <choiceText>A</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>A</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>B</name>
+        <choiceText>B</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>B</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>C</name>
+        <choiceText>C</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>C</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choose_One</name>
+        <choiceText>Choose One</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Choose One</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Construction_Developer_Multi_Family</name>
+        <choiceText>Construction - Developer Multi Family (land is owned by the same company constructing)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Construction - Developer Multi Family (land is owned by the same company constructing)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Construction_Developer_Single_Family</name>
+        <choiceText>Construction - Developer Single Family (land is owned by the same company constructing)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Construction - Developer Single Family (land is owned by the same company constructing)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Construction_Multi_Family_General_Contractors</name>
+        <choiceText>Construction - Multi Family General Contractors</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Construction - Multi Family General Contractors</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Construction_Residential_Remodeler</name>
+        <choiceText>Construction - Residential Remodeler</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Construction - Residential Remodeler</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Construction_Single_Family_General_Contractors</name>
+        <choiceText>Construction - Single Family General Contractors (including assembly of pre-manufactured homes onsite by GC)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Construction - Single Family General Contractors (including assembly of pre-manufactured homes onsite by GC)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Customer_Referral</name>
+        <choiceText>Customer Referral</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Customer Referral</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>D</name>
+        <choiceText>D</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>D</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>E</name>
+        <choiceText>E</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>E</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Education_Colleges_and_Universities</name>
+        <choiceText>Education - Colleges and Universities</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Education - Colleges and Universities</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Education_Elementary_and_Secondary_School</name>
+        <choiceText>Education - Elementary and Secondary School</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Education - Elementary and Secondary School</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Education_Junior_Colleges</name>
+        <choiceText>Education - Junior Colleges</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Education - Junior Colleges</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Education_Other</name>
+        <choiceText>Education - Other</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Education - Other</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Entertainment_Amusement_Gambling_except_Casino_Hotels_and_Recreation_Industries</name>
+        <choiceText>Entertainment - Amusement, Gambling (except Casino Hotels), and Recreation Industries</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Entertainment - Amusement, Gambling (except Casino Hotels), and Recreation Industries</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Entertainment_Museums_Historical_Sites_and_Similar_Institutions</name>
+        <choiceText>Entertainment - Museums, Historical Sites, and Similar Institutions</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Entertainment - Museums, Historical Sites, and Similar Institutions</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>EntertainmentPerformingArtsSpectatorSportsandRelatedIndustries</name>
+        <choiceText>Entertainment - Performing Arts, Spectator Sports, and Related Industries</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Entertainment - Performing Arts, Spectator Sports, and Related Industries</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>F</name>
+        <choiceText>F</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>F</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Field_Sales</name>
+        <choiceText>Field Sales</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Field Sales</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Headquarters</name>
+        <choiceText>Headquarters</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Headquarters</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Healthcare_Hospitals</name>
+        <choiceText>Healthcare - Hospitals</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Healthcare - Hospitals</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Healthcare_Nursing_and_Residential_Care_Facilities</name>
+        <choiceText>Healthcare - Nursing and Residential Care Facilities</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Healthcare - Nursing and Residential Care Facilities</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Healthcare_Other</name>
+        <choiceText>Healthcare - Other</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Healthcare - Other</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Healthcare_Outpatient_Clinics</name>
+        <choiceText>Healthcare - Outpatient Clinics</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Healthcare - Outpatient Clinics</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Healthcare_Private_Social_Services</name>
+        <choiceText>Healthcare - Private Social Services</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Healthcare - Private Social Services</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No_Project</name>
+        <choiceText>No</choiceText>
+        <dataType>Boolean</dataType>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Parent_Account_No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Parent_AccountYes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Headquarters</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ParentAccountNotListed</name>
+        <choiceText>Not Listed</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Real_Estate_Rental_and_Leasing_Other</name>
+        <choiceText>Real Estate Rental and Leasing - Other</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Real Estate Rental and Leasing - Other</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Real_Estate_Rental_and_Leasing_Real_Estate_Agents_and_Brokers</name>
+        <choiceText>Real Estate Rental and Leasing - Real Estate Agents and Brokers</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Real Estate Rental and Leasing - Real Estate Agents and Brokers</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Real_Estate_Rental_and_Leasing_Rent_to_Own</name>
+        <choiceText>Real Estate Rental and Leasing - Rent-to-Own</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Real Estate Rental and Leasing - Rent-to-Own</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Real_Estate_Rental_and_Leasing_Residential_Property_Management</name>
+        <choiceText>Real Estate Rental and Leasing - Residential Property Management</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Real Estate Rental and Leasing - Residential Property Management</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Real_Estate_Rental_and_Leasing_Residential_Rental_Property_Owner_Lessor</name>
+        <choiceText>Real Estate Rental and Leasing - Residential Rental Property Owner/Lessor</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Real Estate Rental and Leasing - Residential Rental Property Owner/Lessor</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Retail_FLS</name>
+        <choiceText>Retail (FLS)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Retail (FLS)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Construction</name>
+        <choiceText>Construction</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Construction</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Education</name>
+        <choiceText>Education</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Education</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Entertainment</name>
+        <choiceText>Entertainment</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Entertainment</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Healthcare</name>
+        <choiceText>Healthcare</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Healthcare</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Home_Inspection_Services</name>
+        <choiceText>Home Inspection Services</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Home Inspection Services</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Hospitality</name>
+        <choiceText>Hospitality</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Hospitality</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Insurance_Replacement</name>
+        <choiceText>Insurance Replacement</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Insurance Replacement</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Manufacturing</name>
+        <choiceText>Manufacturing</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Manufacturing</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Other</name>
+        <choiceText>Other</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Other</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Public_Administration</name>
+        <choiceText>Public Administration (Government)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Pulbic Administration</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Real_Estate_Rental_and_Leasing</name>
+        <choiceText>Real Estate Rental and Leasing</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Real Estate Rental and Leasing</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Retail_Trade</name>
+        <choiceText>Retail Trade</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Retail Trade</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Transportation</name>
+        <choiceText>Transportation</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>sec_Utilities</name>
+        <choiceText>Utilities</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Utilities</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>sec_Wholesale_Trade</name>
+        <choiceText>Wholesale Trade</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Tradeshows</name>
+        <choiceText>Tradeshows</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Tradeshows</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Utilities_Electric</name>
+        <choiceText>Utilities - Electric</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Utilities - Electric</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Utilities_Natural_Gas</name>
+        <choiceText>Utilities - Natural Gas</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Utilities - Natural Gas</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Utilities_Other</name>
+        <choiceText>Utilities - Other</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Utilities - Other</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Utilities_Sewage_Treatment</name>
+        <choiceText>Utilities - Sewage Treatment</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Utilities - Sewage Treatment</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Utilities_Water_Supply_and_Irrigation</name>
+        <choiceText>Utilities - Water Supply and Irrigation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Utilities - Water Supply and Irrigation</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Website</name>
+        <choiceText>Website</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Website</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes1</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes_Project</name>
+        <choiceText>Yes</choiceText>
+        <dataType>Boolean</dataType>
+        <value>
+            <booleanValue>true</booleanValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>dec_AssocParentAccount</name>
+        <label>Associate Parent Account</label>
+        <locationX>417</locationX>
+        <locationY>609</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>AssocParentAcctYes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_AssocParent</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>No_Existing_Account_Verify_Account_Info_is_Correct_1</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+        <rules>
+            <name>No_Parent_Account_Decision</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_AssocParent</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>No</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>No_Existing_Account_Verify_Account_Info_is_Correct_1_0</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Account_Exist</name>
+        <label>Does Account Exist?</label>
+        <locationX>419</locationX>
+        <locationY>490</locationY>
+        <defaultConnector>
+            <targetReference>dec_AssocParentAccount</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Look_for_Account_in_System</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>var_NewAcctProject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Account_Exists</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <dynamicChoiceSets>
+        <name>BusinessSectorChoices</name>
+        <dataType>String</dataType>
+        <displayField>Name</displayField>
+        <object>Business_Sector__c</object>
+        <outputAssignments>
+            <assignToReference>chosenBusinessSector</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <sortField>Name</sortField>
+        <sortOrder>Asc</sortOrder>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>dcAccountExists</name>
+        <dataType>String</dataType>
+        <displayField>FlowAcctCreationAcctExisstsDynamicChoice__c</displayField>
+        <filters>
+            <field>BillingPostalCode</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_NewAcctPostalCode</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <elementReference>var_NewAcctName</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputAssignments>
+            <assignToReference>var_AcctExistFlowSearchName</assignToReference>
+            <field>FlowAcctCreationAcctExisstsDynamicChoice__c</field>
+        </outputAssignments>
+        <sortField>FlowAcctCreationAcctExisstsDynamicChoice__c</sortField>
+        <sortOrder>Asc</sortOrder>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>dcParentAcct</name>
+        <dataType>String</dataType>
+        <displayField>flowAcctCreationParentAcct__c</displayField>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <elementReference>If_yes_please_provide_the_name_of_the_parent_account_so_we_can_search_for_it</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Site</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Headquarters</stringValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputAssignments>
+            <assignToReference>var_NewAcctParentID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>var_NewAcctParentName</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+        <sortField>flowAcctCreationParentAcct__c</sortField>
+        <sortOrder>Asc</sortOrder>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>IndustrySegmentChoices</name>
+        <dataType>String</dataType>
+        <displayField>Name</displayField>
+        <filters>
+            <field>Business_Sector__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>chosenBusinessSector</elementReference>
+            </value>
+        </filters>
+        <object>Industry_Segment__c</object>
+        <outputAssignments>
+            <assignToReference>chosenIndustrySegment</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <sortField>Name</sortField>
+        <sortOrder>Asc</sortOrder>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
+    <formulas>
+        <name>AccountNameAbbreviations</name>
+        <dataType>Boolean</dataType>
+        <expression>true</expression>
+    </formulas>
+    <formulas>
+        <name>for_PhoneNumber</name>
+        <dataType>Boolean</dataType>
+        <expression>NOT(REGEX({!New_PhoneNumber}, &quot;\\D*?(\\d\\D*?){10}&quot;))</expression>
+    </formulas>
+    <interviewLabel>Account Creation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account Creation</label>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_a_New_Account</name>
+        <label>Create a New Account</label>
+        <locationX>414</locationX>
+        <locationY>875</locationY>
+        <assignRecordIdToReference>CreatedAccountId</assignRecordIdToReference>
+        <connector>
+            <targetReference>rerenderPage</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountSource</field>
+            <value>
+                <elementReference>var_NewAcctLeadSource</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingCity</field>
+            <value>
+                <elementReference>var_NewAcctCity</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingPostalCode</field>
+            <value>
+                <elementReference>var_NewAcctPostalCode</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingState</field>
+            <value>
+                <elementReference>var_NewAcctState</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingStreet</field>
+            <value>
+                <elementReference>var_NewAcctStreet</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Business_Sector__c</field>
+            <value>
+                <elementReference>chosenBusinessSector</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Has_Parent__c</field>
+            <value>
+                <elementReference>var_AssocParent</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Industry_Segment__c</field>
+            <value>
+                <elementReference>chosenIndustrySegment</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Is_Project__c</field>
+            <value>
+                <elementReference>var_NewAcctProject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>var_NewAcctName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>var_NewAcctParentID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone</field>
+            <value>
+                <elementReference>var_NewAcctPhoneNumber</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Potential_Annual_Sales__c</field>
+            <value>
+                <elementReference>var_NewAcctPotentialSalesVolume</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sector__c</field>
+            <value>
+                <elementReference>var_NewAcctSector</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Segment_Description__c</field>
+            <value>
+                <elementReference>var_SegmentDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Site</field>
+            <value>
+                <elementReference>var_ParentAcct</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Website</field>
+            <value>
+                <elementReference>var_NewAcctWebsite</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordCreates>
+    <recordLookups>
+        <description>This is the record lookup to search SFDC for an existing account</description>
+        <name>Look_for_Account_in_System</name>
+        <label>Look for Account in System</label>
+        <locationX>422</locationX>
+        <locationY>398</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Does_Account_Exist</targetReference>
+        </connector>
+        <filters>
+            <field>BillingPostalCode</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_NewAcctPostalCode</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <elementReference>var_NewAcctName</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <sortField>Name</sortField>
+        <sortOrder>Asc</sortOrder>
+    </recordLookups>
+    <screens>
+        <name>Account_Exists</name>
+        <label>Account Exists</label>
+        <locationX>615</locationX>
+        <locationY>494</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>AccountExistsTitle</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;It appears that this account already exists in Salesforce.&lt;/FONT&gt;&lt;/SPAN&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>DT</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Check the dropdown to get details on the existing  account. &lt;/FONT&gt;&lt;/SPAN&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>DT7</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Click finish to exit.&lt;/FONT&gt;&lt;/SPAN&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>List_of_Existing_Accounts</name>
+            <choiceReferences>dcAccountExists</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Matching Accounts</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Check_for_Account</name>
+        <label>Enter Basic Account Info</label>
+        <locationX>419</locationX>
+        <locationY>46</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Industry_Segment_Screen</targetReference>
+        </connector>
+        <fields>
+            <name>LookupAcct</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Verdana&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Tell us about your new account. &lt;/FONT&gt;&lt;/SPAN&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Verdana&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>DT4</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Newblank1</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Full_Legal_Account_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Full Legal Account Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>Account Name cannot be greater than 40 characters. 
+
+Use abbreviations if needed (i.e.: Incorporated – Inc., Corporation - Corp., Limited Company – Ltd, Limited Liability Corp. - LLC.)</errorMessage>
+                <formulaExpression>LEN({!Full_Legal_Account_Name}) &lt;= 40</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <name>DT5</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>New_PhoneNumber</name>
+            <dataType>String</dataType>
+            <fieldText>Phone Number</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>US phone numbers should be in this format: (999) 999-9999.</errorMessage>
+                <formulaExpression>{!for_PhoneNumber}</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <name>Newblank2</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>New_Street</name>
+            <dataType>String</dataType>
+            <fieldText>Street</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>Billing Street cannot be greater than 60 characters. 
+
+Use abbreviations if needed. 
+
+Examples: 
+Avenue – Ave. 
+Apartment – Apt. 
+Boulevard – Blvd. 
+Building – Bldg. 
+Court – Ct. 
+Department – Dept. 
+Drive – Dr. 
+Highway – Hwy. 
+Parkway – Pkwy. 
+Road – Rd.</errorMessage>
+                <formulaExpression>LEN( {!New_Street} ) &lt;= 60</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <name>newblank4</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>New_City</name>
+            <dataType>String</dataType>
+            <fieldText>City</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>DisplayText8</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>New_State</name>
+            <dataType>String</dataType>
+            <fieldText>State</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>Please use the two-character abbreviation for the state. ex. IL</errorMessage>
+                <formulaExpression>AND(
+LEN(New_State) = 2,
+CONTAINS(&quot;AL:AK:AZ:AR:CA:CO:CT:DE:DC:FL:GA:HI:ID:&quot; &amp;
+&quot;IL:IN:IA:KS:KY:LA:ME:MD:MA:MI:MN:MS:MO:MT:NE:NV:NH:&quot; &amp;
+&quot;NJ:NM:NY:NC:ND:OH:OK:OR:PA:RI:SC:SD:TN:TX:UT:VT:VA:&quot; &amp;
+&quot;WA:WV:WI:WY&quot;, New_State)
+)</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <name>newblank5</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>New_Acct_PostalCode</name>
+            <dataType>String</dataType>
+            <fieldText>Postal Code</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>Zip/Postal Codes must be in the following format 99999 or 99999-9999</errorMessage>
+                <formulaExpression>REGEX(New_Acct_PostalCode, &quot;\\d{5}(-\\d{4})?&quot;)</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <name>DT10</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Lead_Source</name>
+            <choiceReferences>Field_Sales</choiceReferences>
+            <choiceReferences>Website</choiceReferences>
+            <choiceReferences>Retail_FLS</choiceReferences>
+            <choiceReferences>Tradeshows</choiceReferences>
+            <choiceReferences>Customer_Referral</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Lead Source</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>newblank6</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>New_Website</name>
+            <dataType>String</dataType>
+            <fieldText>Website</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>DisplayText5</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Potential_Sales_Volume</name>
+            <choiceReferences>A</choiceReferences>
+            <choiceReferences>B</choiceReferences>
+            <choiceReferences>C</choiceReferences>
+            <choiceReferences>D</choiceReferences>
+            <choiceReferences>E</choiceReferences>
+            <choiceReferences>F</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Potential Sales Volume</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <helpText>A - &gt; $500,000 
+B - $250,000 - $499,999 
+C - $100,000 - $249,999 
+D - $50,000 - $99,999 
+E - $20,000 - $49,999 
+F - &lt; $20,000</helpText>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Display10</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Business_Sector</name>
+            <choiceReferences>BusinessSectorChoices</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Business Sector</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>DisplayText6</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Is_this_a_Project</name>
+            <choiceReferences>Yes_Project</choiceReferences>
+            <choiceReferences>No_Project</choiceReferences>
+            <dataType>Boolean</dataType>
+            <fieldText>Is this a Project?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>DT6</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Is_this_a_Parent_Account</name>
+            <choiceReferences>Parent_AccountYes</choiceReferences>
+            <choiceReferences>Parent_Account_No</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Is this a Parent Account?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>DT1</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Does_this_Account_belong_to_a_Parent_Account</name>
+            <choiceReferences>Yes1</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Does this Account belong to a Parent Account?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>DT2</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>If_yes_please_provide_the_name_of_the_parent_account_so_we_can_search_for_it</name>
+            <dataType>String</dataType>
+            <fieldText>Search for the Parent Account</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Industry_Segment_Screen</name>
+        <label>Industry Segment</label>
+        <locationX>420</locationX>
+        <locationY>157</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Account_Information</targetReference>
+        </connector>
+        <fields>
+            <name>IndustrySegmentScreen</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;You chose {!Business_Sector} as your business sector.  &lt;/FONT&gt;&lt;/SPAN&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Please choose the proper segment.  &lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Industry_Segment_DropDown</name>
+            <choiceReferences>IndustrySegmentChoices</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Industry Segment</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>We didn&#39;t find an existing account, please complete your new account information.</description>
+        <name>No_Existing_Account_Verify_Account_Info_is_Correct_1</name>
+        <label>No Existing Account, Verify Account Info is Correct</label>
+        <locationX>416</locationX>
+        <locationY>766</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Create_a_New_Account</targetReference>
+        </connector>
+        <fields>
+            <name>Isthisyouraccount_1</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;We didn&amp;apos;t find an existing account.&lt;/FONT&gt;&lt;/SPAN&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Please confirm that the account information is correct. &lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>AllNewAccountInfotoVerify_1</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:18px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;{!Full_Legal_Account_Name}&lt;/B&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;{!New_Street}, &lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;{!New_City}, {!New_State}, &lt;FONT KERNING=&quot;1&quot;&gt;{!New_Acct_PostalCode}&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;{!var_NewAcctPhoneNumber}&lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Blank_1</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Please choose the Parent Account. &lt;/FONT&gt;&lt;/SPAN&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Choose_Parent_Account</name>
+            <choiceReferences>dcParentAcct</choiceReferences>
+            <choiceReferences>ParentAccountNotListed</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Parent Account List</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>We didn&#39;t find an existing account, please complete your new account information.</description>
+        <name>No_Existing_Account_Verify_Account_Info_is_Correct_1_0</name>
+        <label>No Existing Account, Verify Account Info is Correct</label>
+        <locationX>612</locationX>
+        <locationY>772</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Create_a_New_Account</targetReference>
+        </connector>
+        <fields>
+            <name>Isthisyouraccount_1_0</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;We didn&amp;apos;t find an existing account.&lt;/FONT&gt;&lt;/SPAN&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt; &lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Please confirm that the account information is correct.&lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Click next to proceed.&lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>AllNewAccountInfotoVerify_1_0</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:18px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;{!Full_Legal_Account_Name}&lt;/B&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;{!New_Street}, &lt;/FONT&gt;&lt;/DIV&gt;&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;{!New_City}, {!New_State}, &lt;FONT KERNING=&quot;1&quot;&gt;{!New_Acct_PostalCode}&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Blank_1_0</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>rerenderPage</name>
+        <label>Account created successfully</label>
+        <locationX>620</locationX>
+        <locationY>873</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ExitMessage</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Verdana&quot; STYLE=&quot;font-size:20px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Click the &amp;quot;Finish&amp;quot; button in the bottom right corner to navigate to the created Account.&lt;/FONT&gt;&lt;/SPAN&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Check_for_Account</startElementReference>
+    <status>Obsolete</status>
+    <textTemplates>
+        <name>HelpTextPotentialSalesVolume</name>
+        <text>A - &gt; $500,000 
+B - $250,000 - $499,999 
+C - $100,000 - $249,999 
+D - $50,000 - $99,999 
+E - $20,000 - $49,999 
+F - &lt; $20,000</text>
+    </textTemplates>
+    <variables>
+        <name>chosenBusinessSector</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>chosenIndustrySegment</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>CreateContactVar</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <name>CreatedAccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>cvar_Sector</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>ParentId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>var_AcctExistFlowSearchName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_AssocParent</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>var_NewAcctApt_Unit</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_NewAcctCity</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>New_City</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>var_NewAcctIndustrySegment</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>var_NewAcctLeadSource</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_NewAcctName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>Full_Legal_Account_Name</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>var_NewAcctParentID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>Choose_Parent_Account</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>var_NewAcctParentName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>var_NewAcctPhoneNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>var_NewAcctPostalCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>New_Acct_PostalCode</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>var_NewAcctPotentialSalesVolume</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_NewAcctProject</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>var_NewAcctSector</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>var_NewAcctSegment</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>var_NewAcctState</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>New_State</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>var_NewAcctStreet</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>New_Street</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>var_NewAcctWebsite</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>New_Website</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>var_ParentAcct</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_SegmentDescription</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

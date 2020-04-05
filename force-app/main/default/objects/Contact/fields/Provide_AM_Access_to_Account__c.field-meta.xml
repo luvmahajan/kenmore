@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provide_AM_Access_to_Account__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check box to request AM&#39;s to be provided access to the eCommerce site in order to help setup lists and pricings for their customers.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Request access to your customers eCommerce site inorder to help establish lists and pricing</inlineHelpText>
+    <label>Provide AM Access to Account</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

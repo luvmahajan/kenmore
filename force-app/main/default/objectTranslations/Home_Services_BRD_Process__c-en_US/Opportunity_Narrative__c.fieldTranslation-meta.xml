@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please provide us with a detailed summary of the opportunity including Major Requirements, Items out of scope, and Assumptions. This is also the section to include any &quot;other&quot; information you may have from any question on the BRD. --></help>
+    <label><!-- Opportunity Narrative --></label>
+    <name>Opportunity_Narrative__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roll_out</letterhead>
+    <name>Save-the-date:  AM Classroom Augusta 8/2</name>
+    <style>formalLetter</style>
+    <subject>Save-the-date:  Account Manager Classroom Training for Salesforce.com</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+In our Salesforce.com Kick-off conference call, scheduled for Tuesday, July 13th, you will learn more about the detailed training plan which has been prepared in order to enable your success with Salesforce.com.  As part of your training curriculm, we will conduct a 1 day classroom session focused on Effective Selling with Salesforce.com.  Please plan to attend the classroom session on Tuesday, August 2nd, in Augusta, GA.  Your session will begin promptly at 8am, so you should plan to arrive the preceeding day.  In the coming weeks you will receive instructions to book your travel arrangements.
+ 
+Regards,
+{!User.FirstName}
+ 
+{!User.Name}
+{!User.Title}
+{!User.CompanyName}
+ 
+salesforce.com
+Sears Commercial is partnering with Salesforce.com (NYSE: CRM) to bring the world’s leading sales enablement technology to its Account Managers.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

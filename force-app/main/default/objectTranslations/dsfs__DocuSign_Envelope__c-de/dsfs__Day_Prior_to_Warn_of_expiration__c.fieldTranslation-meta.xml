@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Damit geben Sie an, wie viele Tage vor dem Ablauf die Empfänger in einer E-Mail-Nachricht daran erinnert werden sollen, dass ein Termin demnächst abläuft. Diese Nachricht wird nur an Empfänger gesendet, die die Transaktion noch nicht abgeschlossen haben.</help>
+    <label><!-- Warn of expiration in N day(s) prior --></label>
+    <name>dsfs__Day_Prior_to_Warn_of_expiration__c</name>
+</CustomFieldTranslation>

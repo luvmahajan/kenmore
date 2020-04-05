@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If the service is subject to tax, who is responsible for collecting and submitting the taxes? --></help>
+    <label><!-- zFTC_Who submits and pays tax --></label>
+    <name>zWho_submits_and_pays_tax__c</name>
+</CustomFieldTranslation>

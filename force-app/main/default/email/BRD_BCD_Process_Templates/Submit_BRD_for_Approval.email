@@ -1,0 +1,9 @@
+Hello, 
+
+This is a notification that a BRD needs to be submitted for approval. Please click on the link below to view the details of this Opportunity: 
+
+{!Opportunity.Link} 
+
+Press the 'Submit for Approval' button on the Opportunity record or Approval History related list to submit the record to finance for approval.
+
+Thank you.

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Building_Count__c</fullName>
+    <description>How many buildings does the delivery site consist of?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many buildings does the delivery site consist of?</inlineHelpText>
+    <label>Building Count</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

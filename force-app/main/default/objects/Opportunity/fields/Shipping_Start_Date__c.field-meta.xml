@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Start_Date__c</fullName>
+    <description>The date of the first product shipment.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date of the first product shipment.</inlineHelpText>
+    <label>Shipping Start Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Date</type>
+</CustomField>

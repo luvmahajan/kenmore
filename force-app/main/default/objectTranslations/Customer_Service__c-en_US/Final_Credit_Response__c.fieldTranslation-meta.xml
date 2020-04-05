@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Data in this field will populated based on the Creditors response of Approved or Declined --></help>
+    <label><!-- Final Credit Response --></label>
+    <name>Final_Credit_Response__c</name>
+    <picklistValues>
+        <masterLabel>Approved Blue Tarp Service Account</masterLabel>
+        <translation><!-- Approved Blue Tarp Service Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved Exception Service Account BT</masterLabel>
+        <translation><!-- Approved Exception Service Account BT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Blue Tarp</masterLabel>
+        <translation><!-- Approved by Blue Tarp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Citi</masterLabel>
+        <translation><!-- Approved by Citi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by Recourse</masterLabel>
+        <translation><!-- Approved by Recourse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Declined</masterLabel>
+        <translation><!-- Credit Declined --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

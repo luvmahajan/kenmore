@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- In Days --></help>
+    <label><!-- Planned Review Customer Req Duration --></label>
+    <name>Planned_Review_Customer_Req_Duration__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Message for SCOPES Maintenance to modify a SCOPES Account</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Modify a SCOPES Account</name>
+    <style>none</style>
+    <subject>Attn: A SCOPES Account Needs to be Modified</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

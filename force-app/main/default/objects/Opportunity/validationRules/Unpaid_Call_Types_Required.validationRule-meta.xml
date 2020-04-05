@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unpaid_Call_Types_Required</fullName>
+    <active>false</active>
+    <description>When Type = Renewal, Unpaid Call Types is a required field</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(  StageName  , &quot;Renewal&quot;),  LEN(   Unpaid_Call_Types__c   ) = 0)</errorConditionFormula>
+    <errorDisplayField>Unpaid_Call_Types__c</errorDisplayField>
+    <errorMessage>Field required when Type = Renewal</errorMessage>
+</ValidationRule>

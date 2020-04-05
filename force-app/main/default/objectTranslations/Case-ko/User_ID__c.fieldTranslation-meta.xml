@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The 5 to 8 character ID you use to log into the requested application --></help>
+    <label><!-- User ID --></label>
+    <name>User_ID__c</name>
+</CustomFieldTranslation>

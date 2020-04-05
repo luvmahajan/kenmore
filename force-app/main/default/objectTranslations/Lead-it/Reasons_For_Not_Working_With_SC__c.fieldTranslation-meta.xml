@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What is the primary reason for the customer for not working with SC? --></help>
+    <label><!-- Reasons For Not Working With SC --></label>
+    <name>Reasons_For_Not_Working_With_SC__c</name>
+    <picklistValues>
+        <masterLabel>Customer is no longer in the business</masterLabel>
+        <translation><!-- Customer is no longer in the business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer requesting no additional contact</masterLabel>
+        <translation><!-- Customer requesting no additional contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Very few/no projects in the past year</masterLabel>
+        <translation><!-- Very few/no projects in the past year --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working with a competition</masterLabel>
+        <translation><!-- Working with a competition --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

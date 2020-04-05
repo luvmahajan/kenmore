@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Who confirms that the customer that they qualify for the recall, us or the client? --></help>
+    <label><!-- Who entitles customer that they qualify --></label>
+    <name>Who_entitles_customer_that_they_qualify__c</name>
+    <picklistValues>
+        <masterLabel>Client</masterLabel>
+        <translation><!-- Client --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sears</masterLabel>
+        <translation><!-- Sears --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

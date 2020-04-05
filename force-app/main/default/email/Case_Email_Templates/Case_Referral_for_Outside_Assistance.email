@@ -1,0 +1,19 @@
+Hi {!Contact.FirstName}, 
+
+I am referring this case to you because I believe you are better able to provide assistance.  {!Case.CreatedBy} has requested support with the following:
+Item #: {!Case.Item__c}
+Quantity: {!Case.Quantity_Requested__c}
+For delivery: {!Case.Estimated_Delivery_Date__c}
+To be delivered to (zip): {!Case.Delivery_Zip_Code__c}
+Subject: {!Case.Subject}
+Message: {!Case.Description}
+
+This is related to the following:
+Account: {!Case.Account}
+Opportunity: {!Case.Opportunity__c}
+Sales Order #: {!Case.Sales_Order__c}
+
+Please update me via email when you have resolved this issue, so that the Case may be closed.
+
+Thank you,
+{!User.FirstName}

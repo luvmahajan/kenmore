@@ -1,0 +1,11 @@
+Great News!!
+
+{!Opportunity.OwnerFullName} just closed a {!Opportunity.Amount} opportunity with our {!Opportunity.Account} account.
+
+The opportunity will begin shipping on {!Opportunity.CloseDate}.  This customer chose to purchase {!Opportunity.Products_Services__c}.
+
+If you would like to congratulate {!Opportunity.OwnerFirstName} on this win, you may post to the Opportunity Chatter feed or email {!Opportunity.OwnerFirstName} using the links below:
+
+{!Opportunity.Link}
+
+{!Opportunity.OwnerEmail}

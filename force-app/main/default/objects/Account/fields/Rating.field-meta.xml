@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rating</fullName>
+    <inlineHelpText>High = &gt; $250k annually OR &gt; 30k servce calls annually
+Medium = $10K-$250K annually OR 10k-30k service calls annually
+Low = &lt; $10k annually OR &lt; 10k service calls</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

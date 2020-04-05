@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_is_Required_for_Inventory_Rep</fullName>
+    <active>false</active>
+    <description>Account is a required field</description>
+    <errorConditionFormula>AND ( 
+ISPICKVAL( Type , &quot;Inventory Replenishment&quot;), ISBLANK( Account.Name ))</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Account is Required when Type = &quot;Inventory Replenishment&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Pilot_define_success_criteria__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Define location, duration, and success measurements.</inlineHelpText>
+    <label>If Pilot, define success criteria</label>
+    <length>500</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

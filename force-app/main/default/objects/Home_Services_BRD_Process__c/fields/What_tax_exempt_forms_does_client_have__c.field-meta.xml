@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_tax_exempt_forms_does_client_have__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What tax exemption forms does the client have if any? Need to be provided if they have these forms.</inlineHelpText>
+    <label>What tax exempt forms does client have</label>
+    <length>500</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

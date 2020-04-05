@@ -1,0 +1,17 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<SPAN lang=EN>
+<P>{!Contact.FirstName}, thanks for your time. </P>
+<P>&nbsp;</P>
+<P>You will get an email in a couple of days from Sears Commercial which will allow you access to the administrative side and your special pricing for </SPAN><A href="https://na1.salesforce.com/p/email/template/EmailTemplateEditorUi/www.searscommercial.com"><U><FONT color=#0000ff><FONT color=#0000ff><SPAN lang=EN>www.searscommercial.com</U></FONT></FONT></SPAN></A>.&nbsp; <SPAN lang=EN>This is one way to quickly check on&nbsp;pricing, availability, set standards, order and check your order history.</SPAN></P>
+<P><SPAN lang=EN></SPAN>&nbsp;</P>
+<P><SPAN lang=EN>I’ll go over this exclusive portal briefly with you when you have a minute. If you need anything in the meantime, please email or call.</SPAN></P>
+<P><SPAN lang=EN></SPAN>&nbsp;</P>
+<P><SPAN lang=EN>Warm Regards, </SPAN></P>
+<P><SPAN lang=EN>{!Contact.OwnerFullName}</SPAN></P>
+<P><SPAN lang=EN>{!Contact.OwnerTitle}</SPAN></P>
+<P><SPAN lang=EN>{!Contact.OwnerPhone}</SPAN></P>
+<P><SPAN lang=EN>{!Contact.OwnerEmail}</P></SPAN>]]></td>
+</tr>
+</table>

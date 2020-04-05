@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Term Section 30 is standard (Could see 60 or 90 Day). --></help>
+    <label><!-- Termination Clause --></label>
+    <name>Day_Termination_Clause__c</name>
+</CustomFieldTranslation>

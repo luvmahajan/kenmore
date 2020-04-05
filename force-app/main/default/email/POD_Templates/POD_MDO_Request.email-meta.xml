@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>POD MDO Request</name>
+    <style>none</style>
+    <subject>{!Case.CDC__c} {!Case.DOS_UNIT__c} {!Case.Estimated_Delivery_Date__c} / {!Case.CaseNumber}</subject>
+    <textOnly>Hello,
+
+Kenmore Direct has a customer that is disputing the delivery of material for an order that has been shipped confirmed or requesting proof of a delivery for billing and invoicing purposes. Descartes has been researched and there is no signature present or uploaded.  Please see the attached sales order information that contents the DOS order detail-
+
+Please email manifests or inquires to KDPODS@kenmoredirect.com.  POD requests outside of this address should be redirected to CSPOD for researching.
+
+In the event the manifest/CME is not provided within 14 days, the below amount will be charged back to your unit.
+
+Order/Chargeback Value: $__________________
+
+Kenmore Direct Post Delivery team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

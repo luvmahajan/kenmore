@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Email_with_Files</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Generate Files and Send Email</masterLabel>
+    <openType>replace</openType>
+    <page>WebForecastEmailFiles</page>
+    <protected>false</protected>
+</WebLink>

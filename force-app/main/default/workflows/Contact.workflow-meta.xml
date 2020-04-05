@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>KD_Survey_Request</fullName>
+        <description>KD Survey Request</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/KD_Survey_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>SCO_User_Account_Setup_Confirmation</fullName>
+        <description>SCO User Account Setup Confirmation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>csecom1@searshc.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SCO_User_Account_Setup_Confirmation</template>
+    </alerts>
+    <alerts>
+        <fullName>SCO_User_Account_Setup_Declined</fullName>
+        <description>SCO User Account Setup Declined</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>csecom1@searshc.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SCO_User_Account_Setup_Declined</template>
+    </alerts>
+    <alerts>
+        <fullName>SCO_User_Created</fullName>
+        <description>SCO User Created</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Email_Templates/SCO_User_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>Survey_Request</fullName>
+        <description>Survey Request</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Customer_Survey_Request</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Key_3_Field_populates_Data_com_Key</fullName>
+        <description>Key 3 field populates Data.com Key field</description>
+        <field>Jigsaw</field>
+        <formula>Key3__c</formula>
+        <name>Key 3 Field populates Data.com Key</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sears_Commercial_Online_Setup_Status</fullName>
+        <description>When an Account Manager requests a contact to receive access to Sears Commercial Online, this workflow rule will update the status field so the AM knows the request has been submitted to SCOPES Maintenance. Once setup, SCOPES Maintenance will update.</description>
+        <field>User_Account_Setup_Status__c</field>
+        <literalValue>Requested</literalValue>
+        <name>Sears Commercial Online Setup Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>eNewsletter_is_False_when_Email_Opt_Out</fullName>
+        <field>Send_eNewsletter__c</field>
+        <literalValue>0</literalValue>
+        <name>eNewsletter is False when Email Opt Out</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Contact - Key 3 field population - Update</fullName>
+        <actions>
+            <name>Key_3_Field_populates_Data_com_Key</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Key 3 field populates the Data.com field</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  NOT(ISBLANK(Key3__c))  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact - SCO Account Setup Confirmation - Email</fullName>
+        <actions>
+            <name>SCO_User_Account_Setup_Confirmation</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Sears Commercial Online User Account Setup Confirmation</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISCHANGED(User_Account_Setup_Status__c),  ISPICKVAL(User_Account_Setup_Status__c, &quot;Active&quot;)  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact - SCO User Account Declined - Email</fullName>
+        <actions>
+            <name>SCO_User_Account_Setup_Declined</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Sears Commercial Online User Account Setup Declined</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISCHANGED(User_Account_Setup_Status__c),  ISPICKVAL(User_Account_Setup_Status__c, &quot;Declined&quot;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact - SCO User Account Request - Update</fullName>
+        <actions>
+            <name>Sears_Commercial_Online_Setup_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Sears Commercial Online User Account Setup Request</description>
+        <formula>AND(  IF(ISCHANGED(Automation_Control__c),  IF(CONTAINS(Automation_Control_Type__c, &quot;Workflow&quot;), FALSE,TRUE),TRUE),  ISCHANGED(User_Account_Type__c), ISCHANGED(User_Account_Setup_Status__c),  ISPICKVAL(User_Account_Type__c, &quot;User&quot;), NOT(ISPICKVAL(User_Account_Setup_Status__c, &quot;&quot;)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

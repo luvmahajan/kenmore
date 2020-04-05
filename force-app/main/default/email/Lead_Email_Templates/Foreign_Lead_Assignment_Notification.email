@@ -1,0 +1,75 @@
+Hello {!Contact.Name},<br><br>
+
+A new lead has been identified and below is the basic information to allow you to follow-up with this customer. <br><br>
+
+<table>
+  <tr>
+    <td width="20%">
+      Name: 
+    </td>
+    <td width="80%">
+      {!Lead.Name}
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">
+      Address:  
+    </td>
+    <td width="80%">
+     {!Lead.Address}
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">
+      Phone:  
+    </td>
+    <td width="80%">
+     {!Lead.Phone}
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">
+      Email:   
+    </td>
+    <td width="80%">
+     {!Lead.Email}
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">
+      Description:  
+    </td>
+    <td width="80%">
+     {!Lead.Description}
+    </td>
+  </tr>
+    <td width="20%">
+      Segment: 
+    </td>
+    <td width="80%">
+      {!Lead.SHC_Segment_del__c} 
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">
+      Product Interest:  
+    </td>
+    <td width="80%">
+     {!Lead.Products_Services__c} 
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">
+      Program Interest:  
+    </td>
+    <td width="80%">
+     {!Lead.Programs__c}
+    </td>
+  </tr>
+  <tr>
+</table>
+<br>
+</table>
+<br>
+
+Thank you for being part of the Sears team.

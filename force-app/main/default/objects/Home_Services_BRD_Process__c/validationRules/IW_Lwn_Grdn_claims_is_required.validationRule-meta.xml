@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IW_Lwn_Grdn_claims_is_required</fullName>
+    <active>true</active>
+    <description>If Products/Services on Opportunity includes &quot;Lawn &amp; Garden&quot;, IW Lwn/Grdn, engine/transmission claims? is required</description>
+    <errorConditionFormula>AND(
+  INCLUDES( Opportunity__r.Products_Services__c , &quot;Lawn &amp; Garden&quot;),
+  ISPICKVAL( IW_Lwn_Grdn_engine_transmission_claims__c,&quot;&quot; )
+)</errorConditionFormula>
+    <errorDisplayField>IW_Lwn_Grdn_engine_transmission_claims__c</errorDisplayField>
+    <errorMessage>IW Lwn/Grdn, engine/transmission claims is required when Products/Services on the Opportunity page includes Lawn &amp; Garden</errorMessage>
+</ValidationRule>

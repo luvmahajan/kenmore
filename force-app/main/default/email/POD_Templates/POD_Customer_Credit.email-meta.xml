@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>POD Customer Credit</name>
+    <style>none</style>
+    <subject>Kenmore Direct POD Request Notification/ Sales order #{!Case.Sales_Order__c}, Inv # {!Case.Invoice__c} and Customer PO {!Case.cust_po__c}</subject>
+    <textOnly>Hello,
+
+Kenmore Direct has completed the request for proof of delivery/ bill of lading of invoice {!Case.Invoice__c} associated to sales order#{!Case.Sales_Order__c} /purchase order# {!Case.cust_po__c}  Due to there being no signature present or not legible, Kenmore Direct will be issuing a credit in the amount of the dispute/billing in question.
+
+Please allow 7-10 business days to process this credit and allow it to post to the original method of payment; check refunds may take up to 20 days to receive.  For status of credit/check refund, please email: kdcreditmgmt@kenmorediect.com for additional assistance.
+
+Thank you for your business -
+
+Kenmore Direct Post Delivery team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

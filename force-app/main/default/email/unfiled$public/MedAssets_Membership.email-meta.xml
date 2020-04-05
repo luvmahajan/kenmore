@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>MedAssets Membership</name>
+    <style>freeForm</style>
+    <subject>New Account with MedAssets</subject>
+    <textOnly>{!Today}
+ 
+Hi Again {!Contact.FirstName},  
+ 
+Attached, for your reference, is the merchandise price sheet we discussed for MedAssets members.  MedAssets is one of the largest GPO’s in the country with over 30,000 members like hospitals, nursing homes, and health centers.  Like LeadingAge members (formerly AAHSA), that have been doing business with us for years and now is part of the MedAssets membership, MedAssets members buy from us and if the lead is qualified they must have their own account.  MedAssets just does their merchandising and price negotiation functions with the various vendors, we being one of them.  I attached a fax/email order form that the account can use if they rather not call Augusta.  It can be faxed or emailed, and the number or email address is right on the sheet.  As with any list, the price schedule may have a few numbers that have gone into transition already, and will be changing shortly.  You should also know that some health centers or health related facilities may be tax exempt, so you may want to ask about that if it applies to your account.  The Augusta Corp Desk is aware of this contract, and the pricing is in SCOPES if the account is set up as outlined below.  
+ 
+Your initial set-up and account update in Salesforce should reflect the information below.  Please send me a note when this prospect gets their LOC and a new Comm-One Account number.  Thanks for your help {!Contact.FirstName}, and please call if you have any questions.  
+ 
+
+
+ME3 Market Segment
+
+CPL590012
+
+NPL30 (col default)
+
+DLPMU Delivery
+
+Operational Group need to be set up as:  MEDASSETS
+ 
+Sincerely, 
+{!Lead.OwnerFullName}
+{!Lead.OwnerTitle}
+{!Lead.OwnerPhone}
+{!Lead.OwnerEmail}
+ </textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

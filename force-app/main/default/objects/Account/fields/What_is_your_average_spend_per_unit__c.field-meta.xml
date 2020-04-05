@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_is_your_average_spend_per_unit__c</fullName>
+    <externalId>false</externalId>
+    <label>What is your average spend per unit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>$500-$1000</fullName>
+                <default>false</default>
+                <label>$500-$1000</label>
+            </value>
+            <value>
+                <fullName>$1001-$2500</fullName>
+                <default>false</default>
+                <label>$1001-$2500</label>
+            </value>
+            <value>
+                <fullName>$2501-$5000</fullName>
+                <default>false</default>
+                <label>$2501-$5000</label>
+            </value>
+            <value>
+                <fullName>$5001+</fullName>
+                <default>false</default>
+                <label>$5001+</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

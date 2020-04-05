@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bill_per_trip_or_per_repair__c</fullName>
+    <externalId>false</externalId>
+    <label>Bill per trip or per repair</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Per Trip</fullName>
+                <default>false</default>
+                <label>Per Trip</label>
+            </value>
+            <value>
+                <fullName>Per Repair</fullName>
+                <default>false</default>
+                <label>Per Repair</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

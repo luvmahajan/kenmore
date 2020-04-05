@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- EBI acknowledges a fit between their Concept and our Solution. --></help>
+    <label><!-- O2 EBI Supports our solution --></label>
+    <name>O2_EBI_Supports_our_solution__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7</masterLabel>
+        <translation><!-- 7 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

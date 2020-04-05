@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Any_products_DOT_hazardous</fullName>
+    <active>true</active>
+    <description>Any products DOT hazardous is a required when Client Type = &quot;OEM&quot; &amp; BRD Type = &quot;Recall&quot; or &quot;Rework&quot;</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL( Client_Type__c ,&quot;OEM&quot;),
+  OR(
+    ISPICKVAL( BRD_Type__c , &quot;Recall&quot;),
+    ISPICKVAL( BRD_Type__c , &quot;Rework&quot;)
+  ), 
+  ISPICKVAL( Any_products_DOT_hazardous__c  ,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Any_products_DOT_hazardous__c</errorDisplayField>
+    <errorMessage>Any products DOT hazardous is a required when Client Type = &quot;OEM&quot; &amp; BRD Type = &quot;Recall&quot; or &quot;Rework&quot;</errorMessage>
+</ValidationRule>

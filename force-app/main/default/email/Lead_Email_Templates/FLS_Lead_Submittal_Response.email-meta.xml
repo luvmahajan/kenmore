@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto generated response sent to new leads with Augusta contact information</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>FLS Lead Submittal Response</name>
+    <style>freeForm</style>
+    <subject>Thank you for your interest in Sears Commercial</subject>
+    <textOnly>Hello {!Lead.Name},
+
+ 
+
+Thank you for expressing your
+interest in Sears Commercial. At Sears Commercial, our goal is to enhance your
+business, and make your life easier by providing high quality products,
+programs, and services. 
+
+ 
+
+To determine how best we can help meet your business objectives, your local Sears Commercial Account Manager will contact you within 2 business days to follow-up on the inquiry you submitted today.  If you need our help immediately, please contact our Support Center at 1-800-359-2000.   
+
+Thanks again for reaching out
+to Sears Commercial; we look forward to working with you!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

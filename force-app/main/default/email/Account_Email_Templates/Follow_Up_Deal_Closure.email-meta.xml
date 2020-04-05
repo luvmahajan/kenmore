@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow-up after sale</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>Follow-Up (Deal Closure)</name>
+    <style>freeForm</style>
+    <subject>Follow-Up with Sears Commercial</subject>
+    <textOnly>{!Today}
+
+Dear {!Contact.Name},
+ 
+Thanks again for choosing Sears Commercial services. We just wanted to follow-up and ensure that you received the highest quality of service from our team, and to reiterate our appreciation of your business. If there are any additional inquiries that you may have, please let us know and we would be happy to assist you.
+ 
+Thank you,
+Sears Commercial</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

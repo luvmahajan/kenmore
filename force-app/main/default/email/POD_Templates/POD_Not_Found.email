@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Hello,</p>
+
+<p>Kenmore Direct has a customer that is disputing the delivery of material for an order that has been shipped confirmed or requesting proof of a delivery for billing and invoicing purposes. Descartes has been researched and there is no signature present or uploaded.&nbsp; Please see the attached sales order information that contents the DOS order detail-</p>
+
+<p>Please email manifests or inquires to KDPODS@kenmoredirect.com.&nbsp; POD requests outside of this address should be redirected to KDPODS for researching.</p>
+
+<p>In the event the manifest/CME is not provided within 14 days, the below amount will be charged back to your unit.</p>
+
+<p>Order/Chargeback Value: $<u>{!Case.COST_VALUE_OF_PRODUCT__c}</u></p>
+
+<p>Thank you,&nbsp;</p>
+
+<p>Kenmore Direct Post Delivery team</p>
+</body>
+</html>

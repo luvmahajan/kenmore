@@ -1,0 +1,178 @@
+<apex:page controller="QuoteLineProductsController" lightningStylesheets="true">
+    <apex:form >
+        <style type = "text/css">
+            .colCenter {text-align:center;}     
+            .colRight {text-align:right;}     
+            .colLeft {text-align:left;} 
+            .row {
+            display: flex;
+            width: 100%
+            }
+            
+            .row::after {
+            display: block;
+            clear: both;
+            content: "";
+            }
+            
+            .col-1 {width: 8.33%};
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            * {
+            box-sizing: border-box;
+            }
+            
+            [class*="col-"]{
+            float: left;
+            font-size: 1rem;
+            padding: 1rem 2px;
+            }
+            
+        .custPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 500px;
+            margin-left: -250px;
+            top:100px;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+            
+            
+            
+            
+        </style>
+        
+        <apex:pageBlock >
+        
+            <apex:pageBlockButtons location="top">
+                <apex:pageMessages id="showmsg"></apex:pageMessages>
+                <apex:commandButton value="Apply Filter" action="{!actionApplyFilter}" reRender="prodsel, showmsg"/>
+                <apex:commandButton value="Cancel" action="{!gotoEditor}" reRender="prodsel, showmsg" />
+            </apex:pageBlockButtons>
+            
+            <div class="row">
+                <div class="col-3" align="right">PID:</div>
+                <div class="col-3"><apex:inputText value="{!selCode}" /></div>
+                <div class="col-3" align="right">Product Name:</div>
+                <div class="col-3"><apex:inputText value="{!selName}" /></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-3" align="right">Product Family:</div>
+                <div class="col-3">
+                    <apex:selectList value="{!selFamily}" size="1">
+                        <apex:selectoptions value="{!ProductFamily}"/>
+                    </apex:selectList>
+                </div>
+                <div class="col-3" align="right">Division:</div>
+                <div class="col-3"><apex:inputText value="{!selDivision}" /></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-3" align="right">Brand:</div>
+                <div class="col-3"><apex:inputText value="{!selBrand}" /></div>
+                <div class="col-3" align="right">Color:</div>
+                <div class="col-3"><apex:inputText value="{!selColor}" /></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-3" align="right">Product Length(in):</div>
+                <div class="col-3">
+                    <apex:selectList value="{!selLength_op}" size="1">
+                        <apex:selectoptions value="{!ProductOperator}"/>
+                    </apex:selectList>
+                    <apex:inputText value="{!selLength}" />
+                </div>
+                <div class="col-3" align="right">Product Width(in):</div>
+                <div class="col-3">
+                    <apex:selectList value="{!selWidth_op}" size="1">
+                        <apex:selectoptions value="{!ProductOperator}"/>
+                    </apex:selectList>
+                    <apex:inputText value="{!selWidth}" />
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-3" align="right">Product Height(in):</div>
+                <div class="col-3">
+                    <apex:selectList value="{!selheight_op}" size="1">
+                        <apex:selectoptions value="{!ProductOperator}"/>
+                    </apex:selectList>
+                    <apex:inputText value="{!selheight}" />
+                </div>
+                <div class="col-3" align="right">Product Weight(lbs):</div>
+                <div class="col-3">
+                    <apex:selectList value="{!selWeight_op}" size="1">
+                        <apex:selectoptions value="{!ProductOperator}"/>
+                    </apex:selectList>
+                    <apex:inputText value="{!selWeight}" />
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-3" align="right">ADA Compliant:</div>
+                <div class="col-3">
+                    <apex:selectList value="{!selADACompliant}" size="1">
+                        <apex:selectoptions value="{!Certification}"/>
+                    </apex:selectList>
+                </div>
+                <div class="col-3" align="right">Energy Star Compliant:</div>
+                <div class="col-3">
+                    <apex:selectList value="{!selEnergyCompliant}" size="1">
+                        <apex:selectoptions value="{!Certification}"/>
+                    </apex:selectList>
+                </div>
+            </div>
+            
+            </apex:pageBlock>
+        
+        <apex:pageBlock title="Product Selection" id="prodsel" >
+            <apex:pageBlockTable value="{!lstLineProduct}" var="pline" id="prodtable">
+                <apex:column value="{!pline.seq_no}" headerValue="#" style="width:3%"/>
+                <apex:column headerValue="PID" style="width:15%"> 
+                    <apex:commandLink value="{!pline.product_code}" action="{!actionProduct}" >
+                        <apex:param name="pid" value="{!pline.product_id}" />
+                    </apex:commandLink>
+                </apex:column> 
+                <apex:column value="{!pline.product_name}" headerValue="Name" style="width:20%" />
+                <apex:column headerValue="Description"  style="width:40%">
+                    <apex:outputLabel escape="false" value="{!pline.description}" />
+                </apex:column>
+                <apex:column headerValue="List Price" style="text-align:right;width:22%;" headerClass="colRight" >
+                    <apex:outputText value="{0, number, Currency}">
+                        <apex:param value="{!pline.list_price}" />
+                    </apex:outputText>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

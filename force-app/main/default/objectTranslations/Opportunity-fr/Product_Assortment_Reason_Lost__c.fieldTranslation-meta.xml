@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the reason the product assortment did not meet the customer’s needs. --></help>
+    <label><!-- Product Assortment Reason Lost --></label>
+    <name>Product_Assortment_Reason_Lost__c</name>
+    <picklistValues>
+        <masterLabel>ADA not offered</masterLabel>
+        <translation><!-- ADA not offered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brand not offered</masterLabel>
+        <translation><!-- Brand not offered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Color not offered</masterLabel>
+        <translation><!-- Color not offered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engergy Star not offered</masterLabel>
+        <translation><!-- Engergy Star not offered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inventory not available</masterLabel>
+        <translation><!-- Inventory not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Luxury</masterLabel>
+        <translation><!-- Luxury --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Size not offered</masterLabel>
+        <translation><!-- Size not offered --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

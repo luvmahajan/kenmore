@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- New Customer Group --></label>
+    <name>New_Customer_Group__c</name>
+    <picklistValues>
+        <masterLabel>01	Educational Services</masterLabel>
+        <translation><!-- 01	Educational Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>02	Govt &amp; Military</masterLabel>
+        <translation><!-- 02	Govt &amp; Military --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>03	Health Care &amp; Social</masterLabel>
+        <translation><!-- 03	Health Care &amp; Social --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>04	Property Mgmt</masterLabel>
+        <translation><!-- 04	Property Mgmt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>05	Builders</masterLabel>
+        <translation><!-- 05	Builders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>07	Others</masterLabel>
+        <translation><!-- 07	Others --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

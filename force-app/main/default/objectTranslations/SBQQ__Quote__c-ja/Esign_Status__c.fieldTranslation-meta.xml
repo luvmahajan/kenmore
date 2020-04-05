@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Esign Status --></label>
+    <name>Esign_Status__c</name>
+    <picklistValues>
+        <masterLabel>Saved</masterLabel>
+        <translation><!-- Saved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sent</masterLabel>
+        <translation><!-- Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed</masterLabel>
+        <translation><!-- Signed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working</masterLabel>
+        <translation><!-- Working --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

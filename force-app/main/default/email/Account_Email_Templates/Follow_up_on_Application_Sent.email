@@ -1,0 +1,5 @@
+Hey, 
+
+The Application was sent to {!Account.Name} on {!Customer_Service__c.Application_Sent__c}.  Please follow-up on the request.  You can click on the link below to view the Account details.
+
+{!Account.Link}

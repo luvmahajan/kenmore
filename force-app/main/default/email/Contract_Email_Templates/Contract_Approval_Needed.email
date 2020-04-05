@@ -1,0 +1,8 @@
+*** NEW CONTRACT APPROVAL NOTIFICATION *** 
+
+The following contract needs your approval:
+
+Company: {!Opportunity.Account}
+Opportunity Name: {!Opportunity.Name}
+
+Click on the link to access the contract directly: {!Opportunity.Link}

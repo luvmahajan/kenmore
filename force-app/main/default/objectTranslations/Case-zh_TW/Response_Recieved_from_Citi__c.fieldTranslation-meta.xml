@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Response Recieved from Citi --></label>
+    <name>Response_Recieved_from_Citi__c</name>
+</CustomFieldTranslation>

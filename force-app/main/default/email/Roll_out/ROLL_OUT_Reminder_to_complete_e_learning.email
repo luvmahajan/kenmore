@@ -1,0 +1,23 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<FONT face=Arial,Sans-Serif>Dear {!Receiving_User.FirstName},</FONT>]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<P><FONT face=Arial,Sans-Serif>On Wednesday, July 14th, all Sears Commercial Account Managers will receive access to Salesforce.com.&nbsp; Your Training Roadmap was structured to help you&nbsp;become familiar with&nbsp;the system before that time.&nbsp; Please remember to complete the e-Learning modules outlined in your Training Roadmap, including:</FONT></P>
+<UL>
+<LI>Salesforce.com Fundamentals, and 
+<LI>Salesforce.com Representative Fundamentals.</LI></UL>
+<P>All Training Roadmaps are posted in the Custom Links section of your Salesforce.com Home Page as is Job Aid #2 which provides instruction for e-Learning Navigation.</P>
+<P>&nbsp;</P>
+<P>The District Manager Training Roadmap is intended for all Sales Management and Administrative professionals.&nbsp; If have a question on which roadmap is appropriate for you, please let me know.</P>
+<P>&nbsp;</P>
+<P>Sincerely,</P>
+<P><FONT face=Arial,Sans-Serif>{!User.FirstName}</FONT></P>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[<P align=center><SPAN style="FONT-FAMILY: Arial; COLOR: blue; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><A href="https://login.salesforce.com/"><FONT color=#606420 size=2 face=Arial,Sans-Serif>salesforce.com</FONT></A></SPAN><SPAN style="FONT-FAMILY: Arial; COLOR: #666666; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><BR></SPAN><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 7.5pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><FONT size=2 face=Arial,Sans-Serif>Sears Commercial has partnered with Salesforce.com to bring the world’s leading sales enablement technology to its Account Managers.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Click on the link above to login to Salesforce.com and begin seeing the positive impact in sales revenues which has been achieved by Salesforce.com customers across its base of over 65,000 companies and over 2,000,000 sales users.</FONT></SPAN></P>]]></td>
+</tr>
+</table>

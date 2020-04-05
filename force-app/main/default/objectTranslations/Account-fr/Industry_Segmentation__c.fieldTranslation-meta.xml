@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Industry --></label>
+    <name>Industry_Segmentation__c</name>
+    <picklistValues>
+        <masterLabel>Administrative and Support and Waste Management and Remediation Services</masterLabel>
+        <translation><!-- Administrative and Support and Waste Management and Remediation Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agriculture, Forestry, Fishing and Hunting</masterLabel>
+        <translation><!-- Agriculture, Forestry, Fishing and Hunting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arts, Entertainment, and Recreation</masterLabel>
+        <translation><!-- Arts, Entertainment, and Recreation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Builders</masterLabel>
+        <translation><!-- Builders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education</masterLabel>
+        <translation><!-- Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government</masterLabel>
+        <translation><!-- Government --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare &amp; Social Assistance</masterLabel>
+        <translation><!-- Healthcare &amp; Social Assistance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information</masterLabel>
+        <translation><!-- Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Companies</masterLabel>
+        <translation><!-- Insurance Companies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lodging</masterLabel>
+        <translation><!-- Lodging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management of Companies and Enterprises</masterLabel>
+        <translation><!-- Management of Companies and Enterprises --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing</masterLabel>
+        <translation><!-- Manufacturing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military</masterLabel>
+        <translation><!-- Military --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mining, Quarrying, and Oil and Gas</masterLabel>
+        <translation><!-- Mining, Quarrying, and Oil and Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Services (except Public Administration)</masterLabel>
+        <translation><!-- Other Services (except Public Administration) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional, Scientific, and Technical Services</masterLabel>
+        <translation><!-- Professional, Scientific, and Technical Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property Management</masterLabel>
+        <translation><!-- Property Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail Trade</masterLabel>
+        <translation><!-- Retail Trade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transportation and Warehousing</masterLabel>
+        <translation><!-- Transportation and Warehousing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities</masterLabel>
+        <translation><!-- Utilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wholesale Trade</masterLabel>
+        <translation><!-- Wholesale Trade --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

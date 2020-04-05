@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Services__c</fullName>
+    <externalId>false</externalId>
+    <label>Services</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Business__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>Haul-Away</fullName>
+                <default>false</default>
+                <label>Haul-Away</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>Carry-in Repair</fullName>
+                <default>false</default>
+                <label>Carry-in Repair</label>
+            </value>
+            <value>
+                <fullName>Cleaning</fullName>
+                <default>false</default>
+                <label>Cleaning</label>
+            </value>
+            <value>
+                <fullName>Home Improvement</fullName>
+                <default>false</default>
+                <label>Home Improvement</label>
+            </value>
+            <value>
+                <fullName>In-Home Repair</fullName>
+                <default>false</default>
+                <label>In-Home Repair</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Preventative Maintenance</fullName>
+                <default>false</default>
+                <label>Preventative Maintenance</label>
+            </value>
+            <value>
+                <fullName>Product Refurbishment</fullName>
+                <default>false</default>
+                <label>Product Refurbishment</label>
+            </value>
+            <value>
+                <fullName>Recalls/Reworks</fullName>
+                <default>false</default>
+                <label>Recalls/Reworks</label>
+            </value>
+            <value>
+                <fullName>Replacements</fullName>
+                <default>false</default>
+                <label>Replacements</label>
+            </value>
+            <value>
+                <fullName>Business to Business Paid Service</fullName>
+                <default>false</default>
+                <label>Business to Business Paid Service</label>
+            </value>
+            <value>
+                <fullName>Service Contracts</fullName>
+                <default>false</default>
+                <label>Service Contracts</label>
+            </value>
+            <value>
+                <fullName>Warranty Repair</fullName>
+                <default>false</default>
+                <label>Warranty Repair</label>
+            </value>
+            <value>
+                <fullName>Out of Warranty Repair</fullName>
+                <default>false</default>
+                <label>Out of Warranty Repair</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Haul-Away</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Carry-in Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Home Improvement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>In-Home Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Preventative Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Product Refurbishment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Recalls/Reworks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Replacements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Business to Business Paid Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Service Contracts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Warranty Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Services</controllingFieldValue>
+            <controllingFieldValue>A and E</controllingFieldValue>
+            <valueName>Out of Warranty Repair</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

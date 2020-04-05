@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 01	Not in SF
+02	No activity &gt;2yrs
+03	Credit issues
+04	Duplicate Account
+05	Out of Business
+06	Expired Contract
+07	Ineligible Reseller
+08	See Account Notes --></help>
+    <label><!-- Transaction Block Reason --></label>
+    <name>Transaction_Block_Reason__c</name>
+</CustomFieldTranslation>

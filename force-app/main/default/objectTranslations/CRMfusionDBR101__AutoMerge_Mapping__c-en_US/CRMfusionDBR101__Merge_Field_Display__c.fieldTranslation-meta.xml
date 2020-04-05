@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select a field to define the merge action and over-ride the default merge action and/or include in task options. --></help>
+    <label><!-- Merge Field --></label>
+    <name>CRMfusionDBR101__Merge_Field_Display__c</name>
+</CustomFieldTranslation>

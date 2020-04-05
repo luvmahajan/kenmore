@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Explain process if necessary? --></help>
+    <label><!-- Alternate source search on parts be done --></label>
+    <name>Alternate_source_search_on_parts_be_done__c</name>
+</CustomFieldTranslation>

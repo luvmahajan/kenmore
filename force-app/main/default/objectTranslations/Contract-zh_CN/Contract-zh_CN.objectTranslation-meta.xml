@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Active Contract Lookup --></label>
+        <name>SBQQ__ActiveContractLookup</name>
+    </fieldSets>
+    <layouts>
+        <layout>Contract Layout</layout>
+        <sections>
+            <label><!-- Commercial Information --></label>
+            <section>Commercial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Home Services and A&amp;E Information --></label>
+            <section>Home Services and A&amp;E Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Home Services</layout>
+        <sections>
+            <label><!-- Approval Information --></label>
+            <section>Approval Information</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Requirements --></label>
+            <section>Operational Requirements</section>
+        </sections>
+        <sections>
+            <label><!-- Parts --></label>
+            <section>Parts</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Terms --></label>
+            <section>Payment Terms</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Recommended Contract Language --></label>
+            <section>Recommended Contract Language</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Notes --></label>
+            <section>Renewal Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Signature Information --></label>
+            <section>Signature Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Home Services (Administrator)</layout>
+        <sections>
+            <label><!-- Approval Information --></label>
+            <section>Approval Information</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Requirements --></label>
+            <section>Operational Requirements</section>
+        </sections>
+        <sections>
+            <label><!-- Parts --></label>
+            <section>Parts</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Terms --></label>
+            <section>Payment Terms</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Recommended Contract Language --></label>
+            <section>Recommended Contract Language</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Notes --></label>
+            <section>Renewal Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Signer Information --></label>
+            <section>Signer Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Home Services (Approved)</layout>
+        <sections>
+            <label><!-- Approval Information --></label>
+            <section>Approval Information</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Requirements --></label>
+            <section>Operational Requirements</section>
+        </sections>
+        <sections>
+            <label><!-- Parts --></label>
+            <section>Parts</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Terms --></label>
+            <section>Payment Terms</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Recommended Contract Language --></label>
+            <section>Recommended Contract Language</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Notes --></label>
+            <section>Renewal Notes</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Contract CPQ --></label>
+        <name>Contract_CPQ</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The status of contract once completed, cannot be changed --></errorMessage>
+        <name>Contract_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Projects can only be created when a delivery date has been populated. --></errorMessage>
+        <name>Project_Cant_be_Created</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Special Labor Rate = Yes, then Special Labor Rate Details is Required --></errorMessage>
+        <name>Special_Labor_Rate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Percent = variable then variable percent is required. --></errorMessage>
+        <name>Variable_percent</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Internal_Approval_via_DocuSign --></label>
+        <name>Internal_Approval_via_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Contract --></label>
+        <name>New_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Home_Services_Contract --></label>
+        <name>New_Home_Services_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend --></label>
+        <name>SBQQ__Amend</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RenewContracts --></label>
+        <name>SBQQ__RenewContracts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Customer --></label>
+        <name>Send_to_Customer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- zInternal_Approval_via_DocuSign --></label>
+        <name>zInternal_Approval_via_DocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

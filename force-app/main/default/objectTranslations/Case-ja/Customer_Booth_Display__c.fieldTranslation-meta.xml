@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Booth Size Greater Than 10x10 --></help>
+    <label><!-- Customer Booth Display --></label>
+    <name>Customer_Booth_Display__c</name>
+</CustomFieldTranslation>

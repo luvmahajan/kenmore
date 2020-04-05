@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Home_Services_Contract</fullName>
+    <availability>online</availability>
+    <description>Used to create Home Services Contract records from the BRD record</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Home Services Contract</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/800/e?CF00N3000000AT9tR={!Home_Services_BRD_Process__c.Name}
+&amp;CF00N3000000AT9tR_lkid={!Home_Services_BRD_Process__c.Id}
+&amp;CF00N30000004NxXH={!Home_Services_BRD_Process__c.Opportunity__c}
+&amp;CF00N30000004NxXH_lkid={!Home_Services_BRD_Process__c.OpportunityId__c}
+&amp;ctrc7={!Home_Services_BRD_Process__c.Account__c}
+&amp;ctrc7_lkid={!Home_Services_BRD_Process__c.AccountId__c}
+&amp;00N30000004NwrF=&quot;Home Services&quot;
+&amp;CF00N3000000AT9tQ={!Home_Services_BRD_Process__c.BIT__c}
+&amp;CF00N3000000AT9tQ_lkid={!Home_Services_BRD_Process__c.BITId__c}
+&amp;retURL=%2F{!Home_Services_BRD_Process__c.Id}
+&amp;RecordType=01230000001Gche&amp;ent=Contract</url>
+</WebLink>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_available_on_Sears_com__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Product available on Sears.com?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Product available on Sears.com?</inlineHelpText>
+    <label>Product available on Sears.com?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+Hi {!Case.CreatedBy},
+
+Please refer to the link below for all business card requests:
+
+https://sso.searshc.com/auth.php?p=ikon&target=%2Fwebprint%2Fhome%2Fhome.jspa%3Fnull
+
+If you have additional questions, please add a comment to your Salesforce case. 
+
+Case Number: {!Case.CaseNumber}
+Case Link: {!Case.Link}
+
+We will address you need as soon as possible.

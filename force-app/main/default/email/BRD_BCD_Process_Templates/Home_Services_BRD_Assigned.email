@@ -1,0 +1,10 @@
+Hello,
+
+This is a notification that a BRD has been assigned to {!Home_Services_BRD_Process__c.BIT__c}.  At this point, the Account Manager and BIT should work together prepare the BRD for approval submission.  Click on the link below for further information.
+
+BRD Link: {!Home_Services_BRD_Process__c.Link}
+Opportunity: {!Opportunity.Name} ({!Opportunity.Link})
+Account: {!Home_Services_BRD_Process__c.Account__c}
+ 
+
+Thank you.

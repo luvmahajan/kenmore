@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Catalog</fullName>
+                <default>false</default>
+                <label>Catalog</label>
+            </value>
+            <value>
+                <fullName>Adjustment</fullName>
+                <default>false</default>
+                <label>Adjustment</label>
+            </value>
+            <value>
+                <fullName>OrderItem</fullName>
+                <default>false</default>
+                <label>OrderItem</label>
+            </value>
+            <value>
+                <fullName>PAWarranty</fullName>
+                <default>false</default>
+                <label>PAWarranty</label>
+            </value>
+            <value>
+                <fullName>InstallationService</fullName>
+                <default>false</default>
+                <label>InstallationService</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

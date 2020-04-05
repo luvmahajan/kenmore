@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Date_DocuSign__c</fullName>
+    <description>Capacity/Routing, Carry-In, CCN, Compliance, Engineering, Legal, NCC, Parts, STAC</description>
+    <externalId>false</externalId>
+    <formula>DocuSign_Envelope__r.dsfs__Completed_Date_Time__c</formula>
+    <label>Approval Date (DocuSign)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

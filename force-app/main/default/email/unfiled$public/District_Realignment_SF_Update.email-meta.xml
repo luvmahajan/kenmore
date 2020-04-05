@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Kenmore_Direct_STD_0001</letterhead>
+    <name>District Realignment SF Update</name>
+    <style>freeForm</style>
+    <subject>Salesforce.com District Realignment Update</subject>
+    <textOnly>Dear {!Contact.FirstName},
+ 
+We are fortunate to begin 2011 with a newly aligned Sales structure that supports our strategy to become the B2B selling channel for Sears Holdings.  In order to enable your team’s success, we have configured Salesforce.com to reflect the appropriate geographic coverage, team member reporting changes and district naming conventions previously announced.  In addition, the system has been adjusted so as to continue providing activity, account and opportunity record visibility for you and your teams, plus performance insight through district dashboards and reports.  
+ 
+Below is a description of the system changes along with some simple tests to help us confirm the accuracy of the implemented changes together.    
+ 
+The Role Hierarchy has been updated to reflect the District Re-alignment.  District names have been updated for all aspects of the system including Roles, Dashboards, Reports, Groups and Folders.  Security has been maintained so that you may still modify all records owned my members of your district and view all Sears Commercial records (e.g. Leads, Accounts, Contacts, Opportunities). 
+ 
+Sales Teams:  To confirm the changes made in the Account Manager realignment, please click on the below link to view the report of your team members: https://na1.salesforce.com/00O30000005GRHU
+
+Lead Routing:  The new geographic sales structure renders our Builder and Property Manager Zip Code-based lead routing obsolete.  For the next 2 weeks, leads will continue to route based on the old methodology; however, we will be implementing new lead routing rules mid-February.  As you determine the appropriate coverage model for your district, please create a case to request Salesforce.com Support and we will work with you to develop rules that support the goals for your market.  For districts where these rules are not identified, all leads will route to District Manager based on the customer&#39;s State/Province.  From our experience over the past 6 months total lead volume is expected to be approximately 5 leads per district per day.  
+
+Page Layout:  You may notice a few changes to the page layouts. For each object, we have moved the Custom Links section to the top of the page for easier access.  This will help allow the Account Managers to better perform their due diligence and access important websites.  Where our reports indicated that certain fields were not being used, we eliminated those in order to simplify navigation.
+
+Chatter Groups:  Many DMs have chosen to create and utilize Chatter groups for team communications and as a repository of information. If you are an administrator of a district Chatter group, ask each new team member to join the group.
+
+Dashboards:   The district dashboard is a great way to rally around team objectives and discuss the behaviors needed to meet your goals. Please ask each of your Account Managers to “follow” the District Dashboard.
+
+If you have any issues or questions regarding any of the changes, please submit a case to Salesforce.com Support.  As always, District Manager Cases will be addressed with hightened priority (i.e. Cases submitted as Medium priority will be addressed as High priority).  The Salesforce.com Support team looks forward to working with you to accomplish our sales goals in 2011! 
+
+Best, 
+{!User.FirstName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
